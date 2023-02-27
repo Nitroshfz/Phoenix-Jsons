@@ -1,0 +1,447 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_1",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleSpawn_1",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "SplashDensity",
+      "ParamMode": "DPM_Direct",
+      "Constant": 20.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_WaterFallBaseFoam_01:ParticleModuleRequired_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_WaterFallBaseFoam_01:ParticleModuleLifetime_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_WaterFallBaseFoam_01:ParticleModuleSize_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.8"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_WaterFallBaseFoam_01:ParticleModuleVelocity_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_WaterFallBaseFoam_01:ParticleModuleColorOverLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_WaterFallBaseFoam_01:ParticleModuleSizeMultiplyLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.9"
+        },
+        {
+          "ObjectName": "ParticleModuleOrientationAxisLock'P_WaterFallBaseFoam_01:ParticleModuleOrientationAxisLock_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.6"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityOverLifetime'P_WaterFallBaseFoam_01:ParticleModuleVelocityOverLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.12"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_WaterFallBaseFoam_01:ParticleModuleSpawn_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.10"
+      },
+      "PeakActiveParticles": 38
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.25,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.0,
+            0.071428575,
+            0.14285715,
+            0.21428575,
+            0.21428569,
+            0.14285713,
+            0.07142852,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.5,
+        "MaxValue": 1.75,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.5,
+            1.75
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrientationAxisLock",
+    "Name": "ParticleModuleOrientationAxisLock_0",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleOrientationAxisLock'",
+    "Properties": {
+      "LockAxisFlags": "EPAL_Z",
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'MI_WaterfallBaseFoam'",
+        "ObjectPath": "/Game/Environment/Sanctuary/Biome_Forest/Materials/MI_WaterfallBaseFoam.0"
+      },
+      "ScreenAlignment": "PSA_Rectangle",
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_WaterFallBaseFoam_01:ParticleModuleRequired_1.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 156.0,
+        "MaxValue": 500.0,
+        "MinValueVec": {
+          "X": 156.0,
+          "Y": 256.0,
+          "Z": 256.0
+        },
+        "MaxValueVec": {
+          "X": 500.0,
+          "Y": 500.0,
+          "Z": 500.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            156.0,
+            156.0,
+            256.0,
+            500.0,
+            500.0,
+            500.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.0,
+          "Values": [
+            0.5,
+            0.0,
+            0.0,
+            0.52380955,
+            0.52380955,
+            0.52380955,
+            0.7619048,
+            0.7619048,
+            0.7619048,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 4,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_WaterFallBaseFoam_01:ParticleModuleSpawn_1.DistributionFloatParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.2"
+        },
+        "Table": {
+          "Values": [
+            20.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_WaterFallBaseFoam_01:ParticleModuleSpawn_1.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -50.0,
+        "MaxValue": 225.0,
+        "MinValueVec": {
+          "X": 300.0,
+          "Y": -50.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 225.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            300.0,
+            -50.0,
+            0.0,
+            225.0,
+            50.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityOverLifetime",
+    "Name": "ParticleModuleVelocityOverLifetime_0",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleModuleVelocityOverLifetime'",
+    "Properties": {
+      "VelOverLife": {
+        "MinValue": 0.25,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.25,
+          "Y": 0.25,
+          "Z": 0.25
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_WaterFallBaseFoam_01:ParticleSpriteEmitter_1.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_WaterFallBaseFoam_01",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_WaterFallBaseFoam_01:ParticleSpriteEmitter_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_WaterFallBaseFoam_01.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -6762.113,
+          "Y": -6758.4,
+          "Z": -11709.727
+        },
+        "Max": {
+          "X": 7493.305,
+          "Y": 6758.4,
+          "Z": 6980.7266
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

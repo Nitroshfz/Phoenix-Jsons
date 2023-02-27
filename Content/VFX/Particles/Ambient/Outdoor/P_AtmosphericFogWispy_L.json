@@ -1,0 +1,470 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleColorScaleOverLife_0",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "Alpha",
+      "Constant": 0.5
+    }
+  },
+  {
+    "Type": "DistributionVectorParticleParameter",
+    "Name": "DistributionVectorParticleParameter_0",
+    "Outer": "ParticleModuleColorScaleOverLife_0",
+    "Class": "UScriptClass'DistributionVectorParticleParameter'",
+    "Properties": {
+      "ParameterName": "Color",
+      "Constant": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "bIsDirty": false
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_AtmosphericFogWispy_L:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.10"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_AtmosphericFogWispy_L:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_AtmosphericFogWispy_L:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.11"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_AtmosphericFogWispy_L:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.13"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_AtmosphericFogWispy_L:ParticleModuleLocationPrimitiveCylinder_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_AtmosphericFogWispy_L:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.6"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife'P_AtmosphericFogWispy_L:ParticleModuleColorScaleOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.7"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_AtmosphericFogWispy_L:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.12"
+      },
+      "PeakActiveParticles": 26
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.048728257,
+            0.17542945,
+            0.35203534,
+            0.5499209,
+            0.7406851,
+            0.89592934,
+            0.9871325,
+            0.98713243,
+            0.8959292,
+            0.740685,
+            0.54992074,
+            0.3520352,
+            0.17542939,
+            0.04872807,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleColorScaleOverLife'",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": {
+          "ObjectName": "DistributionVectorParticleParameter'P_AtmosphericFogWispy_L:ParticleModuleColorScaleOverLife_0.DistributionVectorParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.4"
+        },
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "AlphaScaleOverLife": {
+        "MinValue": 0.4,
+        "MaxValue": 0.4,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_AtmosphericFogWispy_L:ParticleModuleColorScaleOverLife_0.DistributionFloatParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.3"
+        },
+        "Table": {
+          "Values": [
+            0.4
+          ]
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 6.0,
+        "MaxValue": 8.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0,
+            8.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 1024.0,
+        "MaxValue": 1024.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1024.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "MaxValue": 128.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            128.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AtmosphericFogWispy_L:ParticleModuleLocationPrimitiveCylinder_0.DistributionVelocityScale'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.0"
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'MI_VolFog_Wispy'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Volume/MatInstance/MI_VolFog_Wispy.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AtmosphericFogWispy_L:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.1"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 512.0,
+        "MaxValue": 1024.0,
+        "MinValueVec": {
+          "X": 512.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1024.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            512.0,
+            512.0,
+            512.0,
+            1024.0,
+            1024.0,
+            1024.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AtmosphericFogWispy_L:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -40.0,
+        "MaxValue": 40.0,
+        "MinValueVec": {
+          "X": -40.0,
+          "Y": -40.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 40.0,
+          "Y": 40.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -40.0,
+            -40.0,
+            0.0,
+            40.0,
+            40.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_AtmosphericFogWispy_L:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.5"
+        }
+      ],
+      "DetailModeBitmask": 6
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_AtmosphericFogWispy_L",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "WarmupTime": 8.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_AtmosphericFogWispy_L:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_AtmosphericFogWispy_L.14"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

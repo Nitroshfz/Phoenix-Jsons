@@ -1,0 +1,780 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 5.0
+    }
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "Spawnrate",
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionVectorParticleParameter",
+    "Name": "DistributionVectorParticleParameter_0",
+    "Outer": "ParticleModuleColorOverLife_0",
+    "Class": "UScriptClass'DistributionVectorParticleParameter'",
+    "Properties": {
+      "ParameterName": "ParticleColor",
+      "Constant": {
+        "X": 0.145813,
+        "Y": 0.379889,
+        "Z": 0.654902
+      },
+      "bIsDirty": false,
+      "bBakedDataSuccesfully": true
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Dust_Magical:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Dust_Magical:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Dust_Magical:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Dust_Magical:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Dust_Magical:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.5"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_Dust_Magical:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.7"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_Dust_Magical:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.11"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Dust_Magical:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.10"
+      },
+      "PeakActiveParticles": 17
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": {
+          "ObjectName": "DistributionVectorParticleParameter'P_Dust_Magical:ParticleModuleColorOverLife_0.DistributionVectorParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.3"
+        },
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 31.0,
+          "Values": [
+            0.1,
+            0.13225807,
+            0.16451612,
+            0.1967742,
+            0.22903225,
+            0.2612903,
+            0.29354838,
+            0.32580644,
+            0.3580645,
+            0.3903226,
+            0.4225806,
+            0.4548387,
+            0.48709676,
+            0.5193548,
+            0.55161285,
+            0.58387095,
+            0.61612904,
+            0.6483871,
+            0.6806452,
+            0.7129033,
+            0.74516124,
+            0.77741927,
+            0.8096774,
+            0.8419355,
+            0.87419355,
+            0.9064516,
+            0.93870974,
+            0.9709678,
+            0.9601984,
+            0.64516217,
+            0.32258078,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -600.0,
+        "MaxValue": 600.0,
+        "MinValueVec": {
+          "X": -600.0,
+          "Y": -600.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 600.0,
+          "Y": 600.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -600.0,
+            -600.0,
+            0.0,
+            600.0,
+            600.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'MI_Pollen_01'",
+        "ObjectPath": "/Game/Environment/Sanctuary/Biome_Forest/Materials/MI_Pollen_01.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Dust_Magical:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "NormalsSphereCenter": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 510.0
+      },
+      "MaxDrawCount": 1000,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 7.0,
+        "MaxValue": 13.0,
+        "MinValueVec": {
+          "X": 7.0,
+          "Y": 7.0,
+          "Z": 7.0
+        },
+        "MaxValueVec": {
+          "X": 13.0,
+          "Y": 13.0,
+          "Z": 13.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            7.0,
+            7.0,
+            7.0,
+            13.0,
+            13.0,
+            13.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 100.0,
+        "MaxValue": 100.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_Dust_Magical:ParticleModuleSpawn_0.DistributionFloatParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.2"
+        },
+        "Table": {
+          "Values": [
+            100.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Dust_Magical:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_Dust_Magical:ParticleModuleRequired_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.8"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_Dust_Magical:ParticleModuleSpawn_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.10"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_Dust_Magical:ParticleModuleRequired_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.8"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_Dust_Magical:ParticleModuleLifetime_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.6"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_Dust_Magical:ParticleModuleSize_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.9"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity'P_Dust_Magical:ParticleModuleVelocity_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.12"
+          },
+          {
+            "ObjectName": "ParticleModuleLocation'P_Dust_Magical:ParticleModuleLocation_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.7"
+          }
+        ],
+        "InvMaxSize": {
+          "X": 0.07692308,
+          "Y": 0.07692308
+        },
+        "InvRotationRateScale": 0.2,
+        "MaxLifetime": 5.0,
+        "MaxParticleCount": 17,
+        "ScreenAlignment": "PSA_Square",
+        "DynamicColor": {
+          "MinValue": 0.145813,
+          "MaxValue": 0.654902,
+          "MinValueVec": {
+            "X": 0.145813,
+            "Y": 0.379889,
+            "Z": 0.654902
+          },
+          "MaxValueVec": {
+            "X": 0.145813,
+            "Y": 0.379889,
+            "Z": 0.654902
+          },
+          "Distribution": {
+            "ObjectName": "DistributionVectorParticleParameter'P_Dust_Magical:ParticleModuleColorOverLife_0.DistributionVectorParticleParameter_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.3"
+          },
+          "Table": {
+            "Values": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 82,
+            "Hex": "52000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 164,
+            "Hex": "A4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 245,
+            "Hex": "F5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 245,
+            "Hex": "F5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 164,
+            "Hex": "A4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 82,
+            "Hex": "52000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "ColorBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 13.0,
+          "Y": 13.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 5.0,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -1.0,
+        "MaxValue": 4.0,
+        "MinValueVec": {
+          "X": -1.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 4.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            -1.0,
+            0.0,
+            1.0,
+            1.0,
+            4.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Dust_Magical:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.4"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Dust_Magical",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Dust_Magical:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_Dust_Magical.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -435.3322,
+          "Y": -625.94324,
+          "Z": -20.12181
+        },
+        "Max": {
+          "X": 491.21527,
+          "Y": 429.57544,
+          "Z": 429.21838
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true,
+      "bRegenerateLODDuplicate": true
+    }
+  }
+]

@@ -1,0 +1,409 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_VFX_CabbageImpact_Ground:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.5"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_VFX_CabbageImpact_Ground:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_VFX_CabbageImpact_Ground:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.7"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_VFX_CabbageImpact_Ground:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_VFX_CabbageImpact_Ground:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.3"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_VFX_CabbageImpact_Ground:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_VFX_CabbageImpact_Ground:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.8"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_VFX_CabbageImpact_Ground:ParticleModuleAccelerationDrag_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.2"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_VFX_CabbageImpact_Ground:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.9"
+      },
+      "PeakActiveParticles": 104
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.737095,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 0.884717,
+          "Z": 0.737095
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.894007,
+          "Z": 0.745697
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            0.884717,
+            0.737095
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.1,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.1,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.4,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.4,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_CloudLit'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_CloudLit.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_VFX_CabbageImpact_Ground:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 25.0,
+        "MaxValue": 40.0,
+        "MinValueVec": {
+          "X": 25.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 40.0,
+          "Y": 40.0,
+          "Z": 40.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            25.0,
+            25.0,
+            25.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.2,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.2,
+          "Y": 0.2,
+          "Z": 0.2
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.2,
+            0.2,
+            0.2,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 100,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bProcessBurstList": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -50.0,
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": -50.0,
+          "Y": -50.0,
+          "Z": 10.0
+        },
+        "MaxValueVec": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -50.0,
+            -50.0,
+            10.0,
+            50.0,
+            50.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_VFX_CabbageImpact_Ground:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.1"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_VFX_CabbageImpact_Ground",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_VFX_CabbageImpact_Ground:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_CabbageImpact_Ground.11"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

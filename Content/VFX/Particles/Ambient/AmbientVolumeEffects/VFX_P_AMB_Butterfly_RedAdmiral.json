@@ -1,0 +1,1195 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_1",
+    "Outer": "ParticleModuleSpawn_1",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "Spawnrate",
+      "MinInput": 0.2,
+      "MaxInput": 100.0,
+      "MinOutput": 0.2,
+      "MaxOutput": 100.0,
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleRequired_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleColor'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleColor_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.4"
+        },
+        {
+          "ObjectName": "ParticleModuleLifetime'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleLifetime_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleSize_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.10"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.6"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.7"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleVelocityCone_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.11"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleParameterDynamic_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.8"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleTypeDataMesh_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.13"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleSpawn_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.12"
+      },
+      "PeakActiveParticles": 17
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_0",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleColor'",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 1.959793,
+        "MaxValue": 3.0,
+        "MinValueVec": {
+          "X": 3.0,
+          "Y": 2.952579,
+          "Z": 1.959793
+        },
+        "MaxValueVec": {
+          "X": 3.0,
+          "Y": 2.952579,
+          "Z": 1.959793
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            2.952579,
+            1.959793
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 15.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            15.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -1000.0,
+        "MaxValue": 1000.0,
+        "MinValueVec": {
+          "X": -1000.0,
+          "Y": -1000.0,
+          "Z": 20.0
+        },
+        "MaxValueVec": {
+          "X": 1000.0,
+          "Y": 1000.0,
+          "Z": 150.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1000.0,
+            -1000.0,
+            20.0,
+            1000.0,
+            1000.0,
+            150.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MaxValue": 12.0,
+        "MaxValueVec": {
+          "X": 12.0,
+          "Y": 12.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            12.0,
+            12.0,
+            12.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 2
+        }
+      },
+      "RotationAmount": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": -1.0,
+          "Y": -1.0,
+          "Z": -1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateAmount": {
+        "MaxValue": 0.3,
+        "MinValueVec": {
+          "X": 0.1,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.3,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.1,
+            0.0,
+            0.0,
+            0.3,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_0",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleParameterDynamic'",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "FlapSpeed",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 0.15924625,
+            "MaxValue": 4.9930463,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 183.02351,
+              "TimeBias": 0.11079027,
+              "Values": [
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.490659,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.961771,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                4.4930897,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                0.15924625,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                4.9930463,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                0.15950076,
+                4.495798
+              ],
+              "Op": 1,
+              "EntryCount": 128,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Displacement",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 0.14757586,
+            "MaxValue": 4.9661736,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 185.37837,
+              "TimeBias": 0.092974916,
+              "Values": [
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.38392,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.9661736,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                4.392483,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                0.14757586,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                4.890061,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                0.16869003,
+                4.411327
+              ],
+              "Op": 1,
+              "EntryCount": 128,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "BodyWobble",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 0.45147136,
+            "MaxValue": 0.45147136,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                0.45147136
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "PerlinStrengthLarge",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 15.471649,
+            "MaxValue": 101.19683,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 460.10745,
+              "TimeBias": 0.3,
+              "Values": [
+                56.130127,
+                56.149616,
+                56.20745,
+                56.302685,
+                56.434376,
+                56.601562,
+                56.80331,
+                57.03867,
+                57.306686,
+                57.60642,
+                57.936928,
+                58.29724,
+                58.68644,
+                59.10356,
+                59.547653,
+                60.01779,
+                60.513,
+                61.032356,
+                61.574886,
+                62.139664,
+                62.725742,
+                63.33216,
+                63.957973,
+                64.60226,
+                65.26402,
+                65.94237,
+                66.6363,
+                67.3449,
+                68.06724,
+                68.80232,
+                69.54924,
+                70.307014,
+                71.074715,
+                71.85141,
+                72.63612,
+                73.42792,
+                74.22586,
+                75.02899,
+                75.83636,
+                76.64702,
+                77.46002,
+                78.274445,
+                79.0893,
+                79.90367,
+                80.7166,
+                81.52712,
+                82.334335,
+                83.137245,
+                83.93492,
+                84.726425,
+                85.5108,
+                86.287094,
+                87.05438,
+                87.81169,
+                88.5581,
+                89.292625,
+                90.01436,
+                90.72231,
+                91.41557,
+                92.09317,
+                92.75418,
+                93.39763,
+                94.022606,
+                94.62812,
+                95.21325,
+                95.777054,
+                96.31857,
+                96.83684,
+                97.33095,
+                97.79992,
+                98.24282,
+                98.65869,
+                99.04661,
+                99.40561,
+                99.73473,
+                100.033066,
+                100.29963,
+                100.533485,
+                100.73369,
+                100.89931,
+                101.029366,
+                101.122925,
+                101.179054,
+                101.196556,
+                101.05431,
+                100.659515,
+                100.02421,
+                99.16044,
+                98.080215,
+                96.79561,
+                95.318665,
+                93.66137,
+                91.83583,
+                89.85406,
+                87.72805,
+                85.46989,
+                83.0916,
+                80.6053,
+                78.022896,
+                75.35656,
+                72.61818,
+                69.819885,
+                66.9737,
+                64.09175,
+                61.18591,
+                58.268387,
+                55.35105,
+                52.446037,
+                49.56537,
+                46.72116,
+                43.92531,
+                41.18992,
+                38.52712,
+                35.948784,
+                33.467037,
+                31.09391,
+                28.841518,
+                26.721767,
+                24.746815,
+                22.928577,
+                21.279171,
+                19.810625,
+                18.534977,
+                17.46431,
+                16.610594,
+                15.985881,
+                15.602221,
+                15.471649
+              ],
+              "Op": 1,
+              "EntryCount": 128,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 15,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_Butterfly_P_RedAdmiral'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/MaterialInstance/VFX_MI_Butterfly_P_RedAdmiral.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "SortMode": "PSORTMODE_DistanceToView",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleRequired_1.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 1.75,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.75,
+          "Y": 2.0,
+          "Z": 1.75
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.75,
+            1.75,
+            1.75,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.0000001,
+        "MaxValueVec": {
+          "X": 1.0000001,
+          "Y": 1.0000001,
+          "Z": 1.0000001
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 63.801098,
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0819158,
+            0.0819158,
+            0.0819158,
+            0.1638316,
+            0.1638316,
+            0.1638316,
+            0.24574742,
+            0.24574742,
+            0.24574742,
+            0.3276632,
+            0.3276632,
+            0.3276632,
+            0.40957907,
+            0.40957907,
+            0.40957907,
+            0.49149483,
+            0.49149483,
+            0.49149483,
+            0.5734106,
+            0.5734106,
+            0.5734106,
+            0.6553264,
+            0.6553264,
+            0.6553264,
+            0.7372423,
+            0.7372423,
+            0.7372423,
+            0.81915814,
+            0.81915814,
+            0.81915814,
+            0.9010739,
+            0.9010739,
+            0.9010739,
+            0.976577,
+            0.976577,
+            0.976577,
+            0.98245317,
+            0.98245317,
+            0.98245317,
+            0.98284507,
+            0.98284507,
+            0.98284507,
+            0.9832369,
+            0.9832369,
+            0.9832369,
+            0.9836288,
+            0.9836288,
+            0.9836288,
+            0.98402065,
+            0.98402065,
+            0.98402065,
+            0.98441255,
+            0.98441255,
+            0.98441255,
+            0.9848044,
+            0.9848044,
+            0.9848044,
+            0.9851963,
+            0.9851963,
+            0.9851963,
+            0.98558813,
+            0.98558813,
+            0.98558813,
+            0.98598003,
+            0.98598003,
+            0.98598003,
+            0.98637193,
+            0.98637193,
+            0.98637193,
+            0.9867638,
+            0.9867638,
+            0.9867638,
+            0.9871556,
+            0.9871556,
+            0.9871556,
+            0.9875475,
+            0.9875475,
+            0.9875475,
+            0.9879394,
+            0.9879394,
+            0.9879394,
+            0.98833126,
+            0.98833126,
+            0.98833126,
+            0.98872316,
+            0.98872316,
+            0.98872316,
+            0.989115,
+            0.989115,
+            0.989115,
+            0.9895069,
+            0.9895069,
+            0.9895069,
+            0.98989874,
+            0.98989874,
+            0.98989874,
+            0.99029064,
+            0.99029064,
+            0.99029064,
+            0.9906825,
+            0.9906825,
+            0.9906825,
+            0.9910744,
+            0.9910744,
+            0.9910744,
+            0.9914662,
+            0.9914662,
+            0.9914662,
+            0.9918581,
+            0.9918581,
+            0.9918581,
+            0.99225,
+            0.99225,
+            0.99225,
+            0.99264187,
+            0.99264187,
+            0.99264187,
+            0.9930337,
+            0.9930337,
+            0.9930337,
+            0.9934256,
+            0.9934256,
+            0.9934256,
+            0.9938175,
+            0.9938175,
+            0.9938175,
+            0.99420935,
+            0.99420935,
+            0.99420935,
+            0.99460125,
+            0.99460125,
+            0.99460125,
+            0.9949931,
+            0.9949931,
+            0.9949931,
+            0.995385,
+            0.995385,
+            0.995385,
+            0.99577683,
+            0.99577683,
+            0.99577683,
+            0.99616873,
+            0.99616873,
+            0.99616873,
+            0.9965606,
+            0.9965606,
+            0.9965606,
+            0.9969525,
+            0.9969525,
+            0.9969525,
+            0.9973443,
+            0.9973443,
+            0.9973443,
+            0.9977362,
+            0.9977362,
+            0.9977362,
+            0.99812806,
+            0.99812806,
+            0.99812806,
+            0.99851996,
+            0.99851996,
+            0.99851996,
+            0.9989118,
+            0.9989118,
+            0.9989118,
+            0.9993037,
+            0.9993037,
+            0.9993037,
+            0.99969554,
+            0.99969554,
+            0.99969554,
+            0.9570947,
+            0.9570947,
+            0.9570947,
+            0.7826743,
+            0.7826743,
+            0.7826743,
+            0.6049486,
+            0.6049486,
+            0.6049486,
+            0.42722353,
+            0.42722353,
+            0.42722353,
+            0.24949647,
+            0.24949647,
+            0.24949647,
+            0.07177137,
+            0.07177137,
+            0.07177137
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleSpawn_1.DistributionFloatParticleParameter_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.2"
+        },
+        "Table": {
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_AMB_Butterfly_RedAdmiral:ParticleModuleSpawn_1.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleTypeDataMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Butterfly_01_Flying'",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_Butterfly_01_Flying.2"
+      },
+      "bOverrideMaterial": true,
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 30.0,
+        "MaxValue": 150.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            30.0,
+            150.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Butterfly_Monarch",
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'VFX_P_AMB_Butterfly_RedAdmiral:ParticleSpriteEmitter_1.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "VFX_P_AMB_Butterfly_RedAdmiral",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'VFX_P_AMB_Butterfly_RedAdmiral:ParticleSpriteEmitter_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/VFX_P_AMB_Butterfly_RedAdmiral.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

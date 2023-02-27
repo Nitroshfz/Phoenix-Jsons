@@ -1,0 +1,357 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_VFX_Cabbage_AttackSwoosh:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.5"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_VFX_Cabbage_AttackSwoosh:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_VFX_Cabbage_AttackSwoosh:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.6"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_VFX_Cabbage_AttackSwoosh:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_VFX_Cabbage_AttackSwoosh:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.3"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_VFX_Cabbage_AttackSwoosh:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.7"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataRibbon'P_VFX_Cabbage_AttackSwoosh:ParticleModuleTypeDataRibbon_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.9"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_VFX_Cabbage_AttackSwoosh:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.8"
+      },
+      "PeakActiveParticles": 109
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.367483,
+        "MaxValue": 2.0,
+        "MinValueVec": {
+          "X": 0.590532,
+          "Y": 1.0,
+          "Z": 0.367483
+        },
+        "MaxValueVec": {
+          "X": 1.253944,
+          "Y": 2.0,
+          "Z": 0.944446
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.253944,
+            2.0,
+            0.944446,
+            0.590532,
+            1.0,
+            0.367483
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.02,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.02
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.3,
+        "MaxValue": 0.3,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.3
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_Ribbon_Unlit_AncientMagicWispTrail01'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_Ribbon_Unlit_AncientMagicWispTrail01.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_VFX_Cabbage_AttackSwoosh:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 25.0,
+        "MaxValue": 25.0,
+        "MinValueVec": {
+          "X": 25.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 25.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            25.0,
+            25.0,
+            25.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.5,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_VFX_Cabbage_AttackSwoosh:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataRibbon",
+    "Name": "ParticleModuleTypeDataRibbon_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleTypeDataRibbon'",
+    "Properties": {
+      "MaxParticleInTrailCount": 50,
+      "bTangentRecalculationEveryFrame": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 10.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_VFX_Cabbage_AttackSwoosh:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_VFX_Cabbage_AttackSwoosh",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_VFX_Cabbage_AttackSwoosh:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/ChompingCabbage/P_VFX_Cabbage_AttackSwoosh.11"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

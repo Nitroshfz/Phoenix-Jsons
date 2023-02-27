@@ -1,0 +1,672 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "Spawnrate",
+      "MaxInput": 1000.0,
+      "MaxOutput": 1000.0,
+      "Constant": 200.0
+    }
+  },
+  {
+    "Type": "DistributionVectorParticleParameter",
+    "Name": "DistributionVectorParticleParameter_0",
+    "Outer": "ParticleModuleColorOverLife_0",
+    "Class": "UScriptClass'DistributionVectorParticleParameter'",
+    "Properties": {
+      "ParameterName": "ParticleColor",
+      "Constant": {
+        "X": 0.85,
+        "Y": 0.85,
+        "Z": 0.85
+      },
+      "bIsDirty": false,
+      "bBakedDataSuccesfully": true
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_AMB_DustDungeons:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_AMB_DustDungeons:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.7"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_AMB_DustDungeons:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_AMB_DustDungeons:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.6"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_AMB_DustDungeons:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.10"
+        },
+        {
+          "ObjectName": "ParticleModuleVectorFieldLocal'P_AMB_DustDungeons:ParticleModuleVectorFieldLocal_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.15"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_AMB_DustDungeons:ParticleModuleLocationPrimitiveCylinder_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.8"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_AMB_DustDungeons:ParticleModuleRotationRate_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.11"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_AMB_DustDungeons:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.14"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_AMB_DustDungeons:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.13"
+      },
+      "PeakActiveParticles": 1207
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.479167,
+        "MaxValue": 0.479167,
+        "MinValueVec": {
+          "X": 0.479167,
+          "Y": 0.479167,
+          "Z": 0.479167
+        },
+        "MaxValueVec": {
+          "X": 0.479167,
+          "Y": 0.479167,
+          "Z": 0.479167
+        },
+        "Distribution": {
+          "ObjectName": "DistributionVectorParticleParameter'P_AMB_DustDungeons:ParticleModuleColorOverLife_0.DistributionVectorParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.4"
+        },
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.0,
+            0.47619048,
+            0.95238096,
+            1.0,
+            1.0,
+            0.95238084,
+            0.47619012,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 4.0,
+        "MaxValue": 6.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            6.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 300.0,
+        "MaxValue": 300.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            300.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "MinValue": 400.0,
+        "MaxValue": 400.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            400.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_DustDungeons:ParticleModuleLocationPrimitiveCylinder_0.DistributionVelocityScale'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.0"
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Dust'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Dust.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_DustDungeons:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.1"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.4,
+        "MaxValue": 0.4,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.4,
+            0.4
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 500.0,
+        "MaxValue": 500.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_AMB_DustDungeons:ParticleModuleSpawn_0.DistributionFloatParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.3"
+        },
+        "Table": {
+          "Values": [
+            500.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_DustDungeons:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_AMB_DustDungeons:ParticleModuleRequired_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.9"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_AMB_DustDungeons:ParticleModuleSpawn_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.13"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_AMB_DustDungeons:ParticleModuleRequired_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.9"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_AMB_DustDungeons:ParticleModuleLifetime_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.7"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_AMB_DustDungeons:ParticleModuleSize_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.12"
+          },
+          {
+            "ObjectName": "ParticleModuleRotation'P_AMB_DustDungeons:ParticleModuleRotation_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.10"
+          },
+          {
+            "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_AMB_DustDungeons:ParticleModuleLocationPrimitiveCylinder_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.8"
+          },
+          {
+            "ObjectName": "ParticleModuleRotationRate'P_AMB_DustDungeons:ParticleModuleRotationRate_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.11"
+          }
+        ],
+        "LocalVectorField": {
+          "Field": {
+            "ObjectName": "VectorFieldStatic'VF_CurlNoise'",
+            "ObjectPath": "/Game/VFX/VectorFields/VF_CurlNoise.0"
+          },
+          "Transform": {
+            "Scale3D": {
+              "X": 3.0,
+              "Y": 3.0,
+              "Z": 3.0
+            }
+          },
+          "Intensity": 3.0,
+          "Tightness": 0.1,
+          "bTileX": true,
+          "bTileY": true,
+          "bTileZ": true,
+          "bUseFixDT": true
+        },
+        "InvMaxSize": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "InvRotationRateScale": 0.41666666,
+        "MaxLifetime": 6.0,
+        "MaxParticleCount": 1207,
+        "ScreenAlignment": "PSA_Square",
+        "DynamicColor": {
+          "MinValue": 0.85,
+          "MaxValue": 0.85,
+          "MinValueVec": {
+            "X": 0.85,
+            "Y": 0.85,
+            "Z": 0.85
+          },
+          "MaxValueVec": {
+            "X": 0.85,
+            "Y": 0.85,
+            "Z": 0.85
+          },
+          "Distribution": {
+            "ObjectName": "DistributionVectorParticleParameter'P_AMB_DustDungeons:ParticleModuleColorOverLife_0.DistributionVectorParticleParameter_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.4"
+          },
+          "Table": {
+            "Values": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        }
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 121,
+            "Hex": "79000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 242,
+            "Hex": "F2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 242,
+            "Hex": "F2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 121,
+            "Hex": "79000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "ColorBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 2.4,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVectorFieldLocal",
+    "Name": "ParticleModuleVectorFieldLocal_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleModuleVectorFieldLocal'",
+    "Properties": {
+      "VectorField": {
+        "ObjectName": "VectorFieldStatic'VF_CurlNoise'",
+        "ObjectPath": "/Game/VFX/VectorFields/VF_CurlNoise.0"
+      },
+      "RelativeScale3D": {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 3.0
+      },
+      "Intensity": 3.0,
+      "Tightness": 0.1,
+      "bTileX": true,
+      "bTileY": true,
+      "bTileZ": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_AMB_DustDungeons:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.5"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_AMB_DustDungeons",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_AMB_DustDungeons:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_DustDungeons.16"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -310.49042,
+          "Y": -316.78275,
+          "Z": -198.49084
+        },
+        "Max": {
+          "X": 325.71515,
+          "Y": 319.1107,
+          "Z": 199.8147
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": -500.0,
+          "Y": -500.0,
+          "Z": 300.0
+        },
+        "Max": {
+          "X": 500.0,
+          "Y": 500.0,
+          "Z": -100.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

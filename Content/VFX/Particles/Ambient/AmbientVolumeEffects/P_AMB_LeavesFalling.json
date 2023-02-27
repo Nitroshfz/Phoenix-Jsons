@@ -1,0 +1,586 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveSphere_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "Spawnrate",
+      "MaxInput": 200.0,
+      "MaxOutput": 200.0,
+      "Constant": 6.0
+    }
+  },
+  {
+    "Type": "DistributionVectorParticleParameter",
+    "Name": "DistributionVectorParticleParameter_0",
+    "Outer": "ParticleModuleColorOverLife_0",
+    "Class": "UScriptClass'DistributionVectorParticleParameter'",
+    "Properties": {
+      "ParameterName": "ParticleColor",
+      "Constant": {
+        "X": 1.0,
+        "Y": 0.462745,
+        "Z": 0.301961
+      },
+      "bIsDirty": false
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_AMB_LeavesFalling:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.12"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_AMB_LeavesFalling:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_AMB_LeavesFalling:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.14"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_AMB_LeavesFalling:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.7"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere'P_AMB_LeavesFalling:ParticleModuleLocationPrimitiveSphere_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.9"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_AMB_LeavesFalling:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.11"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationOverLifetime'P_AMB_LeavesFalling:ParticleModuleRotationOverLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.13"
+        },
+        {
+          "ObjectName": "ParticleModuleMeshRotationRate'P_AMB_LeavesFalling:ParticleModuleMeshRotationRate_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.10"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_AMB_LeavesFalling:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.6"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh'P_AMB_LeavesFalling:ParticleModuleTypeDataMesh_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.16"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_AMB_LeavesFalling:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.15"
+      },
+      "PeakActiveParticles": 62
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MinValue": -50.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -50.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -50.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            -50.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.301961,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 0.462745,
+          "Z": 0.301961
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.462745,
+          "Z": 0.301961
+        },
+        "Distribution": {
+          "ObjectName": "DistributionVectorParticleParameter'P_AMB_LeavesFalling:ParticleModuleColorOverLife_0.DistributionVectorParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.4"
+        },
+        "Table": {
+          "Values": [
+            1.0,
+            0.462745,
+            0.301961
+          ]
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 9.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            9.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveSphere'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 500.0,
+        "MaxValue": 500.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            500.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_LeavesFalling:ParticleModuleLocationPrimitiveSphere_0.DistributionVelocityScale'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.0"
+        }
+      },
+      "StartLocation": {
+        "MaxValue": 750.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 750.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 750.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            750.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleMeshRotationRate",
+    "Name": "ParticleModuleMeshRotationRate_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleMeshRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MaxValue": 20.0,
+        "MaxValueVec": {
+          "X": 20.0,
+          "Y": 20.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationAmount": {
+        "MinValue": -0.1,
+        "MaxValue": 0.1,
+        "MinValueVec": {
+          "X": -0.1,
+          "Y": -0.1,
+          "Z": -0.1
+        },
+        "MaxValueVec": {
+          "X": 0.1,
+          "Y": 0.1,
+          "Z": 0.1
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.1,
+            -0.1,
+            -0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateAmount": {
+        "MinValue": -0.5,
+        "MaxValue": 0.5,
+        "MinValueVec": {
+          "X": -0.5,
+          "Y": -0.5,
+          "Z": -0.5
+        },
+        "MaxValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.5,
+            -0.5,
+            -0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MM_Masked_2Sided_Leaf_Basic'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MM_Masked_2Sided_Leaf_Basic.0"
+      },
+      "bKillOnCompleted": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_LeavesFalling:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.1"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationOverLifetime",
+    "Name": "ParticleModuleRotationOverLifetime_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleRotationOverLifetime'",
+    "Properties": {
+      "RotationOverLife": {
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            10.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 0.3,
+        "MinValueVec": {
+          "X": 0.2,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.3,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.2,
+            0.0,
+            0.0,
+            0.3,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 6.0,
+        "MaxValue": 6.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_AMB_LeavesFalling:ParticleModuleSpawn_0.DistributionFloatParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.3"
+        },
+        "Table": {
+          "Values": [
+            6.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_LeavesFalling:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleModuleTypeDataMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Twisted_Plane'",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_Twisted_Plane.2"
+      },
+      "bOverrideMaterial": true,
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_AMB_LeavesFalling:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.5"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_AMB_LeavesFalling",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_AMB_LeavesFalling:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_LeavesFalling.17"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -1000.0,
+          "Y": -1000.0,
+          "Z": -1000.0
+        },
+        "Max": {
+          "X": 1000.0,
+          "Y": 1000.0,
+          "Z": 500.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

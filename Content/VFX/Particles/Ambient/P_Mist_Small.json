@@ -1,0 +1,563 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Mist_Small:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Mist_Small:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.4"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_Mist_Small:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Mist_Small:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Mist_Small:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.12"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Mist_Small:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.3"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Mist_Small:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.7"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_Mist_Small:ParticleModuleRotationRate_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.8"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_Mist_Small:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.11"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Mist_Small:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.10"
+      },
+      "PeakActiveParticles": 37
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.004767,
+        "MaxValue": 0.005,
+        "MinValueVec": {
+          "X": 0.004986,
+          "Y": 0.005,
+          "Z": 0.004767
+        },
+        "MaxValueVec": {
+          "X": 0.004986,
+          "Y": 0.005,
+          "Z": 0.004767
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.004986,
+            0.005,
+            0.004767
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.2,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.0,
+            0.039403345,
+            0.120666765,
+            0.18843296,
+            0.18935241,
+            0.12189362,
+            0.039914664,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 4.0,
+        "MaxValue": 7.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            7.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -500.0,
+        "MaxValue": 500.0,
+        "MinValueVec": {
+          "X": -500.0,
+          "Y": -500.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 500.0,
+          "Y": 500.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -500.0,
+            -500.0,
+            0.0,
+            500.0,
+            500.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_Unlit_Mist'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_Unlit_Mist.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Mist_Small:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.05,
+        "MaxValue": 0.05,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.05,
+            0.05
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 200.0,
+        "MaxValue": 400.0,
+        "MinValueVec": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 400.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            200.0,
+            200.0,
+            200.0,
+            400.0,
+            400.0,
+            400.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 4.735939,
+        "MaxValue": 4.735939,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.735939
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Mist_Small:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_Mist_Small:ParticleModuleRequired_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.6"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_Mist_Small:ParticleModuleSpawn_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.10"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_Mist_Small:ParticleModuleRequired_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.6"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_Mist_Small:ParticleModuleLifetime_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.4"
+          },
+          {
+            "ObjectName": "ParticleModuleLocation'P_Mist_Small:ParticleModuleLocation_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.5"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_Mist_Small:ParticleModuleSize_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.9"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity'P_Mist_Small:ParticleModuleVelocity_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.12"
+          },
+          {
+            "ObjectName": "ParticleModuleRotation'P_Mist_Small:ParticleModuleRotation_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.7"
+          },
+          {
+            "ObjectName": "ParticleModuleRotationRate'P_Mist_Small:ParticleModuleRotationRate_0'",
+            "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.8"
+          }
+        ],
+        "InvMaxSize": {
+          "X": 0.0025,
+          "Y": 0.0025
+        },
+        "InvRotationRateScale": 2.857143,
+        "MaxLifetime": 7.0,
+        "MaxParticleCount": 37,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 252,
+            "Hex": "FC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 0.27528068
+        },
+        "ColorBias": {
+          "X": 0.004986,
+          "Y": 0.005,
+          "Z": 0.004767,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 400.0,
+          "Y": 400.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 0.35,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -10.0,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": -10.0,
+          "Y": -10.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 10.0,
+          "Y": -40.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -10.0,
+            -10.0,
+            0.0,
+            10.0,
+            -40.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Mist_Small:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Mist_Small",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Mist_Small:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_Mist_Small.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -440.0,
+          "Y": -440.0,
+          "Z": -440.0
+        },
+        "Max": {
+          "X": 440.0,
+          "Y": 440.0,
+          "Z": 440.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

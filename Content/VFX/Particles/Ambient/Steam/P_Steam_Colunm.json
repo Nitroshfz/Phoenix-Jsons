@@ -1,0 +1,1782 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_2",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_1",
+    "Outer": "ParticleModuleSpawn_2",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "SpawnRateScale",
+      "MaxInput": 1000.0,
+      "MaxOutput": 1000.0,
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_5",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Steam_Colunm:ParticleModuleRequired_2'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Steam_Colunm:ParticleModuleLifetime_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.6"
+        },
+        {
+          "ObjectName": "ParticleModuleColor'P_Steam_Colunm:ParticleModuleColor_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.4"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_Steam_Colunm:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.7"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Steam_Colunm:ParticleModuleSize_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.11"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeScale'P_Steam_Colunm:ParticleModuleSizeScale_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.13"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Steam_Colunm:ParticleModuleSizeMultiplyLife_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.12"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Steam_Colunm:ParticleModuleRotation_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Steam_Colunm:ParticleModuleColorOverLife_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.5"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Steam_Colunm:ParticleModuleVelocity_3'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.16"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Steam_Colunm:ParticleModuleSubUV_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.15"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_Steam_Colunm:ParticleModuleAccelerationDrag_4'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.3"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic'P_Steam_Colunm:ParticleModuleParameterDynamic_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.8"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Steam_Colunm:ParticleModuleSpawn_2'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.14"
+      },
+      "PeakActiveParticles": 17
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_4",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 0.25,
+        "MaxValue": 0.25,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.25
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_1",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleColor'",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "MaxValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.15024804,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.951159,
+          "TimeBias": -0.0032667872,
+          "Values": [
+            0.0,
+            0.14648372,
+            0.13074854,
+            0.11701737,
+            0.104984395,
+            0.09435849,
+            0.08483895,
+            0.07613061,
+            0.06793572,
+            0.059957292,
+            0.051898237,
+            0.04346206,
+            0.034350086,
+            0.02426844,
+            0.0129147535,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            3.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -50.0,
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": -50.0,
+          "Y": -50.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -50.0,
+            -50.0,
+            0.0,
+            50.0,
+            50.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_0",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleParameterDynamic'",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "alphaClipMultiplier",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 10.0,
+            "MaxValue": 10.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                10.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "GlowMultiplier",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 0.0,
+            "MaxValue": 0.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                0.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "DephFadeDistance",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 600.0,
+            "MaxValue": 600.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                600.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "NearCameraFade",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 300.0,
+            "MaxValue": 300.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                300.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'MI_Incendio_SmokeLit_01'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/Incendio/MI_Incendio_SmokeLit_01.0"
+      },
+      "SortMode": "PSORTMODE_Age_OldestFirst",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Steam_Colunm:ParticleModuleRequired_2.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.0"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 4,
+      "RandomImageTime": 1.0,
+      "UVFlippingMode": "EParticleUVFlipMode::RandomFlipUOnly",
+      "CutoutTexture": {
+        "ObjectName": "Texture2D'VFX_T_Smoke_8x4_D'",
+        "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x4_D.0"
+      },
+      "LODValidity": 1
+    },
+    "BoundingGeometry": [
+      {
+        "X": 0.26809648,
+        "Y": 0.5959119
+      },
+      {
+        "X": 0.45906252,
+        "Y": 0.7363281
+      },
+      {
+        "X": 0.58683896,
+        "Y": 0.7363281
+      },
+      {
+        "X": 0.7490133,
+        "Y": 0.62338525
+      },
+      {
+        "X": 0.7235327,
+        "Y": 0.24542245
+      },
+      {
+        "X": 0.41666245,
+        "Y": 0.2730063
+      },
+      {
+        "X": 0.24107143,
+        "Y": 0.39006695
+      },
+      {
+        "X": 0.2354389,
+        "Y": 0.40696457
+      },
+      {
+        "X": 0.22070312,
+        "Y": 0.6191406
+      },
+      {
+        "X": 0.5398995,
+        "Y": 0.77873886
+      },
+      {
+        "X": 0.7642822,
+        "Y": 0.6291504
+      },
+      {
+        "X": 0.74752367,
+        "Y": 0.3849539
+      },
+      {
+        "X": 0.62327665,
+        "Y": 0.24414062
+      },
+      {
+        "X": 0.3671875,
+        "Y": 0.24414062
+      },
+      {
+        "X": 0.2265625,
+        "Y": 0.38476562
+      },
+      {
+        "X": 0.22070312,
+        "Y": 0.39648438
+      },
+      {
+        "X": 0.31946582,
+        "Y": 0.71278155
+      },
+      {
+        "X": 0.5874215,
+        "Y": 0.7547505
+      },
+      {
+        "X": 0.8830295,
+        "Y": 0.5657552
+      },
+      {
+        "X": 0.6620394,
+        "Y": 0.23426999
+      },
+      {
+        "X": 0.421875,
+        "Y": 0.2421875
+      },
+      {
+        "X": 0.3615057,
+        "Y": 0.25727984
+      },
+      {
+        "X": 0.21842448,
+        "Y": 0.37174478
+      },
+      {
+        "X": 0.17134233,
+        "Y": 0.4659091
+      },
+      {
+        "X": 0.24394807,
+        "Y": 0.64834124
+      },
+      {
+        "X": 0.58658856,
+        "Y": 0.81966144
+      },
+      {
+        "X": 0.7941497,
+        "Y": 0.6121003
+      },
+      {
+        "X": 0.7666097,
+        "Y": 0.36635873
+      },
+      {
+        "X": 0.632843,
+        "Y": 0.23046875
+      },
+      {
+        "X": 0.42578125,
+        "Y": 0.23046875
+      },
+      {
+        "X": 0.2265625,
+        "Y": 0.33007812
+      },
+      {
+        "X": 0.19306025,
+        "Y": 0.39708263
+      },
+      {
+        "X": 0.23632812,
+        "Y": 0.6503906
+      },
+      {
+        "X": 0.5643184,
+        "Y": 0.8143858
+      },
+      {
+        "X": 0.80078125,
+        "Y": 0.6209162
+      },
+      {
+        "X": 0.80078125,
+        "Y": 0.3871745
+      },
+      {
+        "X": 0.6340998,
+        "Y": 0.22604907
+      },
+      {
+        "X": 0.41140717,
+        "Y": 0.22852343
+      },
+      {
+        "X": 0.2076823,
+        "Y": 0.35221353
+      },
+      {
+        "X": 0.18554688,
+        "Y": 0.39648438
+      },
+      {
+        "X": 0.26427528,
+        "Y": 0.71848005
+      },
+      {
+        "X": 0.47070312,
+        "Y": 0.7597656
+      },
+      {
+        "X": 0.6640625,
+        "Y": 0.7597656
+      },
+      {
+        "X": 0.8088942,
+        "Y": 0.6149339
+      },
+      {
+        "X": 0.7749683,
+        "Y": 0.35483533
+      },
+      {
+        "X": 0.68684894,
+        "Y": 0.22265625
+      },
+      {
+        "X": 0.40960428,
+        "Y": 0.22265625
+      },
+      {
+        "X": 0.16857046,
+        "Y": 0.36300504
+      },
+      {
+        "X": 0.24765494,
+        "Y": 0.6990881
+      },
+      {
+        "X": 0.42450944,
+        "Y": 0.7580396
+      },
+      {
+        "X": 0.6506271,
+        "Y": 0.7523867
+      },
+      {
+        "X": 0.8066406,
+        "Y": 0.6242327
+      },
+      {
+        "X": 0.8066406,
+        "Y": 0.38671875
+      },
+      {
+        "X": 0.6907552,
+        "Y": 0.21289062
+      },
+      {
+        "X": 0.41703868,
+        "Y": 0.21289062
+      },
+      {
+        "X": 0.1581205,
+        "Y": 0.35054332
+      },
+      {
+        "X": 0.22958894,
+        "Y": 0.62875974
+      },
+      {
+        "X": 0.44915015,
+        "Y": 0.77689743
+      },
+      {
+        "X": 0.6903261,
+        "Y": 0.7197768
+      },
+      {
+        "X": 0.80971223,
+        "Y": 0.6217096
+      },
+      {
+        "X": 0.76401484,
+        "Y": 0.23480481
+      },
+      {
+        "X": 0.35137552,
+        "Y": 0.18764605
+      },
+      {
+        "X": 0.17382812,
+        "Y": 0.38085938
+      },
+      {
+        "X": 0.16859612,
+        "Y": 0.3913234
+      },
+      {
+        "X": 0.21818747,
+        "Y": 0.62084824
+      },
+      {
+        "X": 0.4128418,
+        "Y": 0.7591553
+      },
+      {
+        "X": 0.42322975,
+        "Y": 0.7643493
+      },
+      {
+        "X": 0.69098115,
+        "Y": 0.7240859
+      },
+      {
+        "X": 0.81148344,
+        "Y": 0.62177265
+      },
+      {
+        "X": 0.7629826,
+        "Y": 0.18203181
+      },
+      {
+        "X": 0.390594,
+        "Y": 0.21974206
+      },
+      {
+        "X": 0.14878029,
+        "Y": 0.34064892
+      },
+      {
+        "X": 0.25390625,
+        "Y": 0.6875
+      },
+      {
+        "X": 0.41921264,
+        "Y": 0.77015316
+      },
+      {
+        "X": 0.7018863,
+        "Y": 0.7320624
+      },
+      {
+        "X": 0.81188375,
+        "Y": 0.6177513
+      },
+      {
+        "X": 0.759918,
+        "Y": 0.14031571
+      },
+      {
+        "X": 0.25976562,
+        "Y": 0.27734375
+      },
+      {
+        "X": 0.23632812,
+        "Y": 0.2890625
+      },
+      {
+        "X": 0.115234375,
+        "Y": 0.41015625
+      },
+      {
+        "X": 0.28800318,
+        "Y": 0.7734375
+      },
+      {
+        "X": 0.8317578,
+        "Y": 0.7734375
+      },
+      {
+        "X": 0.77804863,
+        "Y": 0.299533
+      },
+      {
+        "X": 0.7734375,
+        "Y": 0.29492188
+      },
+      {
+        "X": 0.619043,
+        "Y": 0.1953125
+      },
+      {
+        "X": 0.41015625,
+        "Y": 0.1953125
+      },
+      {
+        "X": 0.19401042,
+        "Y": 0.3033854
+      },
+      {
+        "X": 0.1438616,
+        "Y": 0.40368304
+      },
+      {
+        "X": 0.38011086,
+        "Y": 0.7805015
+      },
+      {
+        "X": 0.7207469,
+        "Y": 0.7468861
+      },
+      {
+        "X": 0.8135441,
+        "Y": 0.608822
+      },
+      {
+        "X": 0.7714105,
+        "Y": 0.23705494
+      },
+      {
+        "X": 0.53761446,
+        "Y": 0.19271432
+      },
+      {
+        "X": 0.251545,
+        "Y": 0.26778218
+      },
+      {
+        "X": 0.21854074,
+        "Y": 0.28428432
+      },
+      {
+        "X": 0.08101456,
+        "Y": 0.48140517
+      },
+      {
+        "X": 0.16998817,
+        "Y": 0.5022387
+      },
+      {
+        "X": 0.29464445,
+        "Y": 0.741444
+      },
+      {
+        "X": 0.40234375,
+        "Y": 0.77734375
+      },
+      {
+        "X": 0.65234375,
+        "Y": 0.77734375
+      },
+      {
+        "X": 0.82477784,
+        "Y": 0.70837015
+      },
+      {
+        "X": 0.7738091,
+        "Y": 0.24065706
+      },
+      {
+        "X": 0.51171875,
+        "Y": 0.19300427
+      },
+      {
+        "X": 0.12282324,
+        "Y": 0.29906666
+      },
+      {
+        "X": 0.3958579,
+        "Y": 0.79429543
+      },
+      {
+        "X": 0.82754153,
+        "Y": 0.744311
+      },
+      {
+        "X": 0.7778623,
+        "Y": 0.25993848
+      },
+      {
+        "X": 0.63604265,
+        "Y": 0.21266526
+      },
+      {
+        "X": 0.35458985,
+        "Y": 0.22490235
+      },
+      {
+        "X": 0.24179688,
+        "Y": 0.2625
+      },
+      {
+        "X": 0.22287327,
+        "Y": 0.27669272
+      },
+      {
+        "X": 0.078853786,
+        "Y": 0.4772913
+      },
+      {
+        "X": 0.40251312,
+        "Y": 0.80372125
+      },
+      {
+        "X": 0.8105469,
+        "Y": 0.74744076
+      },
+      {
+        "X": 0.8105469,
+        "Y": 0.3203125
+      },
+      {
+        "X": 0.7753906,
+        "Y": 0.28515625
+      },
+      {
+        "X": 0.6286515,
+        "Y": 0.2077106
+      },
+      {
+        "X": 0.3266736,
+        "Y": 0.22244123
+      },
+      {
+        "X": 0.19318181,
+        "Y": 0.279652
+      },
+      {
+        "X": 0.096275374,
+        "Y": 0.47346488
+      },
+      {
+        "X": 0.31714708,
+        "Y": 0.7890625
+      },
+      {
+        "X": 0.66477275,
+        "Y": 0.7890625
+      },
+      {
+        "X": 0.75,
+        "Y": 0.7421875
+      },
+      {
+        "X": 0.8200632,
+        "Y": 0.6721243
+      },
+      {
+        "X": 0.7790841,
+        "Y": 0.28509974
+      },
+      {
+        "X": 0.6270559,
+        "Y": 0.20703125
+      },
+      {
+        "X": 0.26608455,
+        "Y": 0.20703125
+      },
+      {
+        "X": 0.13158175,
+        "Y": 0.38291952
+      },
+      {
+        "X": 0.3398214,
+        "Y": 0.82218593
+      },
+      {
+        "X": 0.83884364,
+        "Y": 0.7589296
+      },
+      {
+        "X": 0.7704991,
+        "Y": 0.26498523
+      },
+      {
+        "X": 0.30759984,
+        "Y": 0.22754484
+      },
+      {
+        "X": 0.22459239,
+        "Y": 0.255214
+      },
+      {
+        "X": 0.13476562,
+        "Y": 0.36914062
+      },
+      {
+        "X": 0.1328125,
+        "Y": 0.37304688
+      },
+      {
+        "X": 0.12935548,
+        "Y": 0.38341796
+      },
+      {
+        "X": 0.25390625,
+        "Y": 0.6347656
+      },
+      {
+        "X": 0.42974502,
+        "Y": 0.814791
+      },
+      {
+        "X": 0.8261719,
+        "Y": 0.7681526
+      },
+      {
+        "X": 0.8261719,
+        "Y": 0.6328125
+      },
+      {
+        "X": 0.7669224,
+        "Y": 0.24887607
+      },
+      {
+        "X": 0.25785348,
+        "Y": 0.21870902
+      },
+      {
+        "X": 0.22265625,
+        "Y": 0.25390625
+      },
+      {
+        "X": 0.121416114,
+        "Y": 0.37580764
+      },
+      {
+        "X": 0.3458724,
+        "Y": 0.82846355
+      },
+      {
+        "X": 0.73049974,
+        "Y": 0.78512526
+      },
+      {
+        "X": 0.8364955,
+        "Y": 0.6791295
+      },
+      {
+        "X": 0.77304685,
+        "Y": 0.29843748
+      },
+      {
+        "X": 0.6933594,
+        "Y": 0.21875
+      },
+      {
+        "X": 0.27539062,
+        "Y": 0.21875
+      },
+      {
+        "X": 0.16861978,
+        "Y": 0.2721354
+      },
+      {
+        "X": 0.11816406,
+        "Y": 0.37304688
+      },
+      {
+        "X": 0.4435405,
+        "Y": 0.8287232
+      },
+      {
+        "X": 0.84725344,
+        "Y": 0.76389337
+      },
+      {
+        "X": 0.7709629,
+        "Y": 0.29562733
+      },
+      {
+        "X": 0.6030561,
+        "Y": 0.21289062
+      },
+      {
+        "X": 0.2734375,
+        "Y": 0.21289062
+      },
+      {
+        "X": 0.22734375,
+        "Y": 0.2359375
+      },
+      {
+        "X": 0.12109375,
+        "Y": 0.3671875
+      },
+      {
+        "X": 0.08686267,
+        "Y": 0.43564966
+      },
+      {
+        "X": 0.45507812,
+        "Y": 0.8378906
+      },
+      {
+        "X": 0.8481015,
+        "Y": 0.74628365
+      },
+      {
+        "X": 0.7649167,
+        "Y": 0.3127146
+      },
+      {
+        "X": 0.656374,
+        "Y": 0.22588046
+      },
+      {
+        "X": 0.26953125,
+        "Y": 0.203125
+      },
+      {
+        "X": 0.22851562,
+        "Y": 0.23046875
+      },
+      {
+        "X": 0.12890625,
+        "Y": 0.36328125
+      },
+      {
+        "X": 0.08540879,
+        "Y": 0.45027617
+      },
+      {
+        "X": 0.3013193,
+        "Y": 0.7219826
+      },
+      {
+        "X": 0.7556819,
+        "Y": 0.8128551
+      },
+      {
+        "X": 0.8345424,
+        "Y": 0.6551339
+      },
+      {
+        "X": 0.7644231,
+        "Y": 0.30453727
+      },
+      {
+        "X": 0.6386719,
+        "Y": 0.22070312
+      },
+      {
+        "X": 0.40625,
+        "Y": 0.20898438
+      },
+      {
+        "X": 0.23590945,
+        "Y": 0.21990365
+      },
+      {
+        "X": 0.11122198,
+        "Y": 0.38689578
+      },
+      {
+        "X": 0.24765494,
+        "Y": 0.69518185
+      },
+      {
+        "X": 0.5558594,
+        "Y": 0.79791665
+      },
+      {
+        "X": 0.83525234,
+        "Y": 0.7616991
+      },
+      {
+        "X": 0.7725645,
+        "Y": 0.30925626
+      },
+      {
+        "X": 0.63071644,
+        "Y": 0.20898438
+      },
+      {
+        "X": 0.26367188,
+        "Y": 0.20898438
+      },
+      {
+        "X": 0.23296274,
+        "Y": 0.22433895
+      },
+      {
+        "X": 0.15449001,
+        "Y": 0.33250406
+      },
+      {
+        "X": 0.49429086,
+        "Y": 0.7755408
+      },
+      {
+        "X": 0.7664751,
+        "Y": 0.7949826
+      },
+      {
+        "X": 0.8211842,
+        "Y": 0.67980546
+      },
+      {
+        "X": 0.76491296,
+        "Y": 0.29394543
+      },
+      {
+        "X": 0.37890625,
+        "Y": 0.22070312
+      },
+      {
+        "X": 0.27083334,
+        "Y": 0.21654648
+      },
+      {
+        "X": 0.23883547,
+        "Y": 0.21900785
+      },
+      {
+        "X": 0.10536808,
+        "Y": 0.38661808
+      },
+      {
+        "X": 0.269274,
+        "Y": 0.5909184
+      },
+      {
+        "X": 0.421875,
+        "Y": 0.703125
+      },
+      {
+        "X": 0.58203125,
+        "Y": 0.7832031
+      },
+      {
+        "X": 0.7705078,
+        "Y": 0.7832031
+      },
+      {
+        "X": 0.80816567,
+        "Y": 0.7078874
+      },
+      {
+        "X": 0.7619789,
+        "Y": 0.267898
+      },
+      {
+        "X": 0.28952953,
+        "Y": 0.21248727
+      },
+      {
+        "X": 0.19258823,
+        "Y": 0.22864415
+      },
+      {
+        "X": 0.22313653,
+        "Y": 0.55907404
+      },
+      {
+        "X": 0.35817307,
+        "Y": 0.6941106
+      },
+      {
+        "X": 0.74600494,
+        "Y": 0.8165838
+      },
+      {
+        "X": 0.7875566,
+        "Y": 0.7334806
+      },
+      {
+        "X": 0.771985,
+        "Y": 0.28857833
+      },
+      {
+        "X": 0.62109375,
+        "Y": 0.23828125
+      },
+      {
+        "X": 0.26367188,
+        "Y": 0.22265625
+      },
+      {
+        "X": 0.21771044,
+        "Y": 0.22265625
+      },
+      {
+        "X": 0.24069786,
+        "Y": 0.60148704
+      },
+      {
+        "X": 0.418155,
+        "Y": 0.7221579
+      },
+      {
+        "X": 0.80533683,
+        "Y": 0.831363
+      },
+      {
+        "X": 0.75570583,
+        "Y": 0.32264465
+      },
+      {
+        "X": 0.62537825,
+        "Y": 0.2299116
+      },
+      {
+        "X": 0.23828125,
+        "Y": 0.23828125
+      },
+      {
+        "X": 0.23046875,
+        "Y": 0.2734375
+      },
+      {
+        "X": 0.20596011,
+        "Y": 0.39802307
+      },
+      {
+        "X": 0.29868984,
+        "Y": 0.7008953
+      },
+      {
+        "X": 0.6777344,
+        "Y": 0.7949219
+      },
+      {
+        "X": 0.7832218,
+        "Y": 0.8153388
+      },
+      {
+        "X": 0.8019789,
+        "Y": 0.39642993
+      },
+      {
+        "X": 0.632843,
+        "Y": 0.22460938
+      },
+      {
+        "X": 0.31396484,
+        "Y": 0.22460938
+      },
+      {
+        "X": 0.20117188,
+        "Y": 0.375
+      },
+      {
+        "X": 0.16845703,
+        "Y": 0.4404297
+      },
+      {
+        "X": 0.24492255,
+        "Y": 0.62327564
+      },
+      {
+        "X": 0.42158434,
+        "Y": 0.73799103
+      },
+      {
+        "X": 0.7484305,
+        "Y": 0.8109029
+      },
+      {
+        "X": 0.8019173,
+        "Y": 0.5990948
+      },
+      {
+        "X": 0.76359886,
+        "Y": 0.28707287
+      },
+      {
+        "X": 0.48839614,
+        "Y": 0.1494715
+      },
+      {
+        "X": 0.22293527,
+        "Y": 0.3390864
+      },
+      {
+        "X": 0.18343838,
+        "Y": 0.38704693
+      },
+      {
+        "X": 0.24956597,
+        "Y": 0.6579861
+      },
+      {
+        "X": 0.421875,
+        "Y": 0.7441406
+      },
+      {
+        "X": 0.73635584,
+        "Y": 0.80965745
+      },
+      {
+        "X": 0.8179857,
+        "Y": 0.57039744
+      },
+      {
+        "X": 0.7468732,
+        "Y": 0.21483478
+      },
+      {
+        "X": 0.3853824,
+        "Y": 0.21898986
+      },
+      {
+        "X": 0.20117188,
+        "Y": 0.34179688
+      },
+      {
+        "X": 0.17729492,
+        "Y": 0.38955078
+      },
+      {
+        "X": 0.22958894,
+        "Y": 0.62290037
+      },
+      {
+        "X": 0.44915015,
+        "Y": 0.77103806
+      },
+      {
+        "X": 0.6903261,
+        "Y": 0.71391743
+      },
+      {
+        "X": 0.80971223,
+        "Y": 0.6158502
+      },
+      {
+        "X": 0.76401484,
+        "Y": 0.22894543
+      },
+      {
+        "X": 0.35137552,
+        "Y": 0.18178667
+      },
+      {
+        "X": 0.17382812,
+        "Y": 0.375
+      },
+      {
+        "X": 0.16859612,
+        "Y": 0.385464
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0
+      }
+    ]
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 360.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            360.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MaxValue": 200.0,
+        "MinValueVec": {
+          "X": 50.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0,
+            0.0,
+            0.0,
+            200.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.5,
+        "MaxValue": 1.3,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "MaxValueVec": {
+          "X": 1.3,
+          "Y": 1.3,
+          "Z": 1.3
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.5,
+            0.5,
+            0.5,
+            1.3,
+            1.3,
+            1.3
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeScale",
+    "Name": "ParticleModuleSizeScale_1",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleSizeScale'",
+    "Properties": {
+      "SizeScale": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "MinValueVec": {
+          "X": 3.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 3.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 3.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_Steam_Colunm:ParticleModuleSpawn_2.DistributionFloatParticleParameter_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.1"
+        },
+        "Table": {
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_2",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleSubUV'",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 32.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 31.0,
+          "Values": [
+            0.0,
+            0.09823213,
+            0.3832035,
+            0.8420456,
+            1.4618899,
+            2.2298675,
+            3.1331103,
+            4.15875,
+            5.2939167,
+            6.525744,
+            7.84136,
+            9.228124,
+            10.672931,
+            12.162781,
+            13.684797,
+            15.226122,
+            16.773878,
+            18.315197,
+            19.83722,
+            21.327072,
+            22.771873,
+            24.158638,
+            25.474255,
+            26.706081,
+            27.841248,
+            28.866886,
+            29.770134,
+            30.53811,
+            31.157951,
+            31.616798,
+            31.901766,
+            32.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_3",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            25.0,
+            0.0,
+            0.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_3",
+    "Outer": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Smoke",
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Steam_Colunm:ParticleSpriteEmitter_3.ParticleLODLevel_5'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Steam_Colunm",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "WarmupTime": 7.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Steam_Colunm:ParticleSpriteEmitter_3'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Steam/P_Steam_Colunm.17"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        1200.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -204.0861,
+          "Y": -341.92938,
+          "Z": -251.75699
+        },
+        "Max": {
+          "X": 496.60315,
+          "Y": 291.4574,
+          "Z": 366.43674
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

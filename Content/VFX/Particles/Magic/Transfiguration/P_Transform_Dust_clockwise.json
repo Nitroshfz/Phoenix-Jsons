@@ -1,0 +1,756 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Transform_Dust_clockwise:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Transform_Dust_clockwise:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Transform_Dust_clockwise:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.8"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Transform_Dust_clockwise:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_Transform_Dust_clockwise:ParticleModuleVelocityCone_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.12"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_Transform_Dust_clockwise:ParticleModuleAccelerationDrag_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.2"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Transform_Dust_clockwise:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.7"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Transform_Dust_clockwise:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.3"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_Transform_Dust_clockwise:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Transform_Dust_clockwise:ParticleModuleSubUV_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.11"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Transform_Dust_clockwise:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.10"
+      },
+      "PeakActiveParticles": 41
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.258824,
+        "MaxValue": 0.384314,
+        "MinValueVec": {
+          "X": 0.384314,
+          "Y": 0.321569,
+          "Z": 0.258824
+        },
+        "MaxValueVec": {
+          "X": 0.384314,
+          "Y": 0.321569,
+          "Z": 0.258824
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.384314,
+            0.321569,
+            0.258824
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.3,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.13,
+            0.17857143,
+            0.22714287,
+            0.2757143,
+            0.25238094,
+            0.15714283,
+            0.07142852,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 2.0,
+        "MaxValue": 2.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0,
+            2.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MaxValue": 160.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 160.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            50.0,
+            0.0,
+            0.0,
+            160.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationAmount": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateAmount": {
+        "MaxValue": 0.7,
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.5
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 10.0,
+          "Values": [
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.3,
+            0.0,
+            0.0,
+            0.6,
+            0.0,
+            0.0,
+            0.4,
+            0.0,
+            0.0,
+            0.69710344,
+            0.0,
+            0.0,
+            0.49760965,
+            0.0,
+            0.0,
+            0.54249996,
+            0.0,
+            0.0,
+            0.3875,
+            0.0,
+            0.0,
+            0.385,
+            0.0,
+            0.0,
+            0.275,
+            0.0,
+            0.0,
+            0.22749998,
+            0.0,
+            0.0,
+            0.16250001,
+            0.0,
+            0.0,
+            0.07059053,
+            0.0,
+            0.0,
+            0.05042181,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 8,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateOptions": {
+        "bProcessDuringSpawn": false,
+        "bProcessDuringUpdate": true
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Transform_Dust'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Transform_Dust.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "EmitterDuration": 2.0,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Transform_Dust_clockwise:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.0"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 8,
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 20.0,
+        "MaxValue": 30.0,
+        "MinValueVec": {
+          "X": 20.0,
+          "Y": 20.0,
+          "Z": 20.0
+        },
+        "MaxValueVec": {
+          "X": 30.0,
+          "Y": 30.0,
+          "Z": 30.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0,
+            20.0,
+            20.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 5.0,
+          "Z": 5.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            1.1587301,
+            1.1587301,
+            1.1587301,
+            1.3174603,
+            1.3174603,
+            1.3174603,
+            1.4761906,
+            1.4761906,
+            1.4761906,
+            1.6349206,
+            1.6349206,
+            1.6349206,
+            1.7936509,
+            1.7936509,
+            1.7936509,
+            1.9523811,
+            1.9523811,
+            1.9523811,
+            2.1111112,
+            2.1111112,
+            2.1111112,
+            2.2698412,
+            2.2698412,
+            2.2698412,
+            2.4285715,
+            2.4285715,
+            2.4285715,
+            2.5873017,
+            2.5873017,
+            2.5873017,
+            2.7460318,
+            2.7460318,
+            2.7460318,
+            2.904762,
+            2.904762,
+            2.904762,
+            3.0634923,
+            3.0634923,
+            3.0634923,
+            3.2222223,
+            3.2222223,
+            3.2222223,
+            3.3809526,
+            3.3809526,
+            3.3809526,
+            3.5396824,
+            3.5396824,
+            3.5396824,
+            3.6984127,
+            3.6984127,
+            3.6984127,
+            3.8571427,
+            3.8571427,
+            3.8571427,
+            3.9975538,
+            3.9975538,
+            3.9975538,
+            4.0249434,
+            4.0249434,
+            4.0249434,
+            4.047619,
+            4.047619,
+            4.047619,
+            4.070295,
+            4.070295,
+            4.070295,
+            4.0929704,
+            4.0929704,
+            4.0929704,
+            4.1156464,
+            4.1156464,
+            4.1156464,
+            4.138322,
+            4.138322,
+            4.138322,
+            4.160998,
+            4.160998,
+            4.160998,
+            4.1836734,
+            4.1836734,
+            4.1836734,
+            4.2063494,
+            4.2063494,
+            4.2063494,
+            4.229025,
+            4.229025,
+            4.229025,
+            4.2517004,
+            4.2517004,
+            4.2517004,
+            4.2743764,
+            4.2743764,
+            4.2743764,
+            4.297052,
+            4.297052,
+            4.297052,
+            4.319728,
+            4.319728,
+            4.319728,
+            4.3424034,
+            4.3424034,
+            4.3424034,
+            4.3650794,
+            4.3650794,
+            4.3650794,
+            4.387755,
+            4.387755,
+            4.387755,
+            4.4104304,
+            4.4104304,
+            4.4104304,
+            4.4331064,
+            4.4331064,
+            4.4331064,
+            4.455782,
+            4.455782,
+            4.455782,
+            4.478458,
+            4.478458,
+            4.478458,
+            4.501134,
+            4.501134,
+            4.501134,
+            4.52381,
+            4.52381,
+            4.52381,
+            4.5464854,
+            4.5464854,
+            4.5464854,
+            4.5691614,
+            4.5691614,
+            4.5691614,
+            4.591837,
+            4.591837,
+            4.591837,
+            4.614513,
+            4.614513,
+            4.614513,
+            4.6371884,
+            4.6371884,
+            4.6371884,
+            4.6598644,
+            4.6598644,
+            4.6598644,
+            4.68254,
+            4.68254,
+            4.68254,
+            4.705216,
+            4.705216,
+            4.705216,
+            4.7278914,
+            4.7278914,
+            4.7278914,
+            4.750567,
+            4.750567,
+            4.750567,
+            4.773243,
+            4.773243,
+            4.773243,
+            4.7959185,
+            4.7959185,
+            4.7959185,
+            4.8185945,
+            4.8185945,
+            4.8185945,
+            4.84127,
+            4.84127,
+            4.84127,
+            4.863946,
+            4.863946,
+            4.863946,
+            4.8866215,
+            4.8866215,
+            4.8866215,
+            4.909297,
+            4.909297,
+            4.909297,
+            4.931973,
+            4.931973,
+            4.931973,
+            4.9546485,
+            4.9546485,
+            4.9546485,
+            4.9773245,
+            4.9773245,
+            4.9773245,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 40,
+          "CountLow": 20,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleSubUV'",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 120.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            120.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 20.0,
+        "MaxValue": 60.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0,
+            60.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Transform_Dust_clockwise:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.1"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Transform_Dust_clockwise",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Transform_Dust_clockwise:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Transfiguration/P_Transform_Dust_clockwise.13"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

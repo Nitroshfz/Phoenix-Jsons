@@ -1,0 +1,178 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_HW_Dishes_Stack_Shard_4",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "FAAD8D904F3BA3BD686B8B9E8D65F76F",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x292F"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_HW_Dishes_Stack_Shard_4",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2993"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_HW_Dishes_Stack_Shard_4",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_Dishes_PlateStack_Porcelain'",
+            "ObjectPath": "/Game/Environment/Hogwarts/Blueprints/Interactables/Materials/MI_HW_Dishes_PlateStack_Porcelain.0"
+          },
+          "MaterialSlotName": "M_HW_Dishes_PlateStack_B",
+          "ImportedMaterialSlotName": "M_HW_Dishes_PlateStack_B",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 164.11821,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 164.11821,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 9.536743E-07,
+          "Y": -9.536743E-07,
+          "Z": 3.8146973E-06
+        },
+        "BoxExtent": {
+          "X": 8.369055,
+          "Y": 6.474572,
+          "Z": 2.0609703
+        },
+        "SphereRadius": 9.69402
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_HW_Dishes_Stack_Shard_4:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Particles/Destruction/VFX_DM_Hogwarts/VFX_SM_HW_Dishes_Stack_Shard_4.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_HW_Dishes_Stack_Shard_4:NavCollision_0'",
+      "ObjectPath": "/Game/VFX/Particles/Destruction/VFX_DM_Hogwarts/VFX_SM_HW_Dishes_Stack_Shard_4.1"
+    },
+    "LightingGuid": "7B1082D8-42F2C3F5-2628F4A1-D0E66B0B",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 38,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 57,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 58
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 58,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 58
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 9.536743E-07,
+          "Y": -9.536743E-07,
+          "Z": 3.8146973E-06
+        },
+        "BoxExtent": {
+          "X": 8.369055,
+          "Y": 6.474572,
+          "Z": 2.0609703
+        },
+        "SphereRadius": 9.69402
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.022482667,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

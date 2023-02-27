@@ -1,0 +1,860 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_2",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_BirdsSmallBurstB:ParticleModuleRequired_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_BirdsSmallBurstB:ParticleModuleLifetime_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_BirdsSmallBurstB:ParticleModuleSize_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.9"
+        },
+        {
+          "ObjectName": "ParticleModuleAttractorParticle'P_BirdsSmallBurstB:ParticleModuleAttractorParticle_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.3"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_BirdsSmallBurstB:ParticleModuleAccelerationDrag_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.2"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_BirdsSmallBurstB:ParticleModuleSizeMultiplyLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColor'P_BirdsSmallBurstB:ParticleModuleColor_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.4"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_BirdsSmallBurstB:ParticleModuleVelocityCone_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.14"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_BirdsSmallBurstB:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.6"
+        },
+        {
+          "ObjectName": "ParticleModuleParameterDynamic'P_BirdsSmallBurstB:ParticleModuleParameterDynamic_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.7"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_BirdsSmallBurstB:ParticleModuleVelocity_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.13"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh'P_BirdsSmallBurstB:ParticleModuleTypeDataMesh_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.12"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_BirdsSmallBurstB:ParticleModuleSpawn_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.11"
+      },
+      "PeakActiveParticles": 16
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAttractorParticle",
+    "Name": "ParticleModuleAttractorParticle_0",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleAttractorParticle'",
+    "Properties": {
+      "EmitterName": "Attractor",
+      "Range": {
+        "MinValue": 25000.0,
+        "MaxValue": 25000.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            25000.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bStrengthByDistance": false,
+      "Strength": {
+        "MinValue": 1000.0,
+        "MaxValue": 1000.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1000.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAffectBaseVelocity": true,
+      "LastSelIndex": 1,
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleColor'",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.953125,
+        "MaxValue": 0.979167,
+        "MinValueVec": {
+          "X": 0.953125,
+          "Y": 0.947809,
+          "Z": 0.824056
+        },
+        "MaxValueVec": {
+          "X": 0.979167,
+          "Y": 0.821072,
+          "Z": 0.821072
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.953125,
+            0.953125,
+            0.953125,
+            0.979167,
+            0.979167,
+            0.979167
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 2.0,
+        "MaxValue": 2.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0,
+            2.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -50.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -50.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            -50.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleParameterDynamic",
+    "Name": "ParticleModuleParameterDynamic_0",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleParameterDynamic'",
+    "Properties": {
+      "DynamicParams": [
+        {
+          "ParamName": "Time Offset",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": true,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 0.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                0.0,
+                1.0
+              ],
+              "Op": 2,
+              "EntryCount": 1,
+              "EntryStride": 2,
+              "SubEntryStride": 1,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param2",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param3",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        },
+        {
+          "ParamName": "Param4",
+          "bUseEmitterTime": false,
+          "bSpawnTimeOnly": false,
+          "ValueMethod": "EDPV_UserSet",
+          "bScaleVelocityByParamValue": false,
+          "ParamValue": {
+            "MinValue": 1.0,
+            "MaxValue": 1.0,
+            "Distribution": null,
+            "Table": {
+              "TimeScale": 0.0,
+              "TimeBias": 0.0,
+              "Values": [
+                1.0
+              ],
+              "Op": 1,
+              "EntryCount": 1,
+              "EntryStride": 1,
+              "SubEntryStride": 0,
+              "LockFlag": 0
+            }
+          }
+        }
+      ],
+      "UpdateFlags": 14,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_VAT_Soft_BirdSmall'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/VAT/MatInstances/VFX_MI_VAT_Soft_BirdSmall.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "bUseLocalSpace": true,
+      "bKillOnDeactivate": true,
+      "bUseLegacyEmitterTime": false,
+      "EmitterDuration": 0.5,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_BirdsSmallBurstB:ParticleModuleRequired_1.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 0.7,
+        "MaxValue": 0.8,
+        "MinValueVec": {
+          "X": 0.7,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.8,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.7,
+            0.7,
+            0.7,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.31746036,
+            0.31746036,
+            0.31746036,
+            0.6349207,
+            0.6349207,
+            0.6349207,
+            0.94750655,
+            0.94750655,
+            0.94750655,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9501307,
+            0.9501307,
+            0.9501307,
+            0.7936499,
+            0.7936499,
+            0.7936499,
+            0.6349202,
+            0.6349202,
+            0.6349202,
+            0.4761892,
+            0.4761892,
+            0.4761892,
+            0.3174595,
+            0.3174595,
+            0.3174595,
+            0.15872972,
+            0.15872972,
+            0.15872972,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 25.0,
+        "MaxValue": 25.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            25.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 2,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_1",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleTypeDataMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_BirdSmall_Flying_VAT'",
+        "ObjectPath": "/Game/VFX/Meshes/VAT/SM_BirdSmall_Flying_VAT.2"
+      },
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_2",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -900.0,
+        "MaxValue": 900.0,
+        "MinValueVec": {
+          "X": -900.0,
+          "Y": -600.0,
+          "Z": -200.0
+        },
+        "MaxValueVec": {
+          "X": 900.0,
+          "Y": 600.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -900.0,
+            -600.0,
+            -200.0,
+            900.0,
+            600.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_2",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.25,
+        "MaxValue": 0.35,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.25,
+            0.35
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 700.0,
+        "MaxValue": 900.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            700.0,
+            900.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "Direction": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_2",
+    "Outer": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "birds",
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_BirdsSmallBurstB:ParticleSpriteEmitter_2.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.1"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_BirdsSmallBurstB",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_BirdsSmallBurstB:ParticleSpriteEmitter_2'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_BirdsSmallBurstB.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -500.0,
+          "Y": -500.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 500.0,
+          "Y": 500.0,
+          "Z": 930.54144
+        },
+        "IsValid": 1
+      },
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

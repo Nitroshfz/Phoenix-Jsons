@@ -1,0 +1,370 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_VFX_UI_DustMotes:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_VFX_UI_DustMotes:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_VFX_UI_DustMotes:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.7"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_VFX_UI_DustMotes:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_VFX_UI_DustMotes:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.3"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_VFX_UI_DustMotes:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.5"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_VFX_UI_DustMotes:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.8"
+      },
+      "PeakActiveParticles": 102
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.0861,
+        "MaxValue": 0.359375,
+        "MinValueVec": {
+          "X": 0.0861,
+          "Y": 0.185829,
+          "Z": 0.276042
+        },
+        "MaxValueVec": {
+          "X": 0.116455,
+          "Y": 0.240662,
+          "Z": 0.359375
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0861,
+            0.240662,
+            0.359375,
+            0.116455,
+            0.185829,
+            0.276042
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.06666667,
+            0.13333334,
+            0.2,
+            0.26666668,
+            0.33333334,
+            0.4,
+            0.4666667,
+            0.46666664,
+            0.39999995,
+            0.3333333,
+            0.26666662,
+            0.19999997,
+            0.13333328,
+            0.06666664,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -300.0,
+        "MaxValue": 300.0,
+        "MinValueVec": {
+          "X": -300.0,
+          "Y": -300.0,
+          "Z": -300.0
+        },
+        "MaxValueVec": {
+          "X": 300.0,
+          "Y": 300.0,
+          "Z": 300.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -300.0,
+            -300.0,
+            -300.0,
+            300.0,
+            300.0,
+            300.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_BasicGlow_Add'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_BasicGlow_Add.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_VFX_UI_DustMotes:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 3.0,
+        "MaxValue": 4.5,
+        "MinValueVec": {
+          "X": 3.0,
+          "Y": 3.0,
+          "Z": 3.0
+        },
+        "MaxValueVec": {
+          "X": 4.5,
+          "Y": 4.5,
+          "Z": 4.5
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            3.0,
+            3.0,
+            4.5,
+            4.5,
+            4.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_VFX_UI_DustMotes:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -30.0,
+        "MaxValue": 30.0,
+        "MinValueVec": {
+          "X": -30.0,
+          "Y": -30.0,
+          "Z": -30.0
+        },
+        "MaxValueVec": {
+          "X": 30.0,
+          "Y": 30.0,
+          "Z": 30.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -30.0,
+            -30.0,
+            -30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_VFX_UI_DustMotes:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_VFX_UI_DustMotes",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_VFX_UI_DustMotes:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/P_VFX_UI_DustMotes.10"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

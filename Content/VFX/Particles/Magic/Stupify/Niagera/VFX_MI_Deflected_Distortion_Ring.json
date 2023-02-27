@@ -1,0 +1,174 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_Deflected_Distortion_Ring",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material VFX_MM_Refraction",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/VFX_MM_Refraction.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "DistortionStrengthMax",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.2,
+          "ExpressionGUID": "53457F5A-42C2E2F7-00E0539F-9C823350"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionTileX",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "B59FFE54-411F9A73-13984186-92C170E7"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionTileY",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "E4C14882-40E9D3E6-ECF7D39C-1CDA562E"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionPanX",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.5,
+          "ExpressionGUID": "591F1BFF-4FD3BE49-AF6BCBA5-6DD17D97"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionPanY",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.2,
+          "ExpressionGUID": "1EC776F6-4DD173F7-D21E3B93-0DF09569"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionStrengthMin",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.1,
+          "ExpressionGUID": "BD981048-4A5F6149-E9181097-3D48259E"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "PanX",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.5,
+          "ExpressionGUID": "C1493F42-46D91E51-B3EFA8BF-54310CF3"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "PanY",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.5,
+          "ExpressionGUID": "87C202B5-4E655753-A1976390-3E7CCD19"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Mask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D VFX_T_Ring02_D",
+            "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Ring02_D.0"
+          },
+          "ExpressionGUID": "A989F41E-4006E4BB-9B324DBB-E7EEEB36"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Normal Map",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D VFX_T_DistortionNoise_N",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_DistortionNoise_N.0"
+          },
+          "ExpressionGUID": "0F3EE00C-41F114E9-136861B3-445AFF30"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionTexture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D VFX_T_RibbonOffset_N",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+          },
+          "ExpressionGUID": "670613CB-40A7D435-E5524E9B-7705834F"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.0
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "UseUVDistortion",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "4DF1EEE5-478250B6-620B16A0-22825072"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "UVOffset",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "7B16AB69-4AFA6946-53682194-53D56F56"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        {
+          "ObjectName": "Texture2D VFX_T_RibbonOffset_N",
+          "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_Circle_Sphere_D",
+          "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Circle_Sphere_D.0"
+        }
+      ]
+    }
+  }
+]

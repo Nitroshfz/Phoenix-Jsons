@@ -1,0 +1,449 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Atmospheric_Fog_Dense:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Atmospheric_Fog_Dense:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Atmospheric_Fog_Dense:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.9"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Atmospheric_Fog_Dense:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Atmospheric_Fog_Dense:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.5"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Atmospheric_Fog_Dense:ParticleModuleLocationPrimitiveCylinder_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.7"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_Atmospheric_Fog_Dense:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.4"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Atmospheric_Fog_Dense:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.10"
+      },
+      "PeakActiveParticles": 10
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 5.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 5.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.569092,
+        "MaxValue": 0.916667,
+        "MinValueVec": {
+          "X": 0.569092,
+          "Y": 0.701259,
+          "Z": 0.916667
+        },
+        "MaxValueVec": {
+          "X": 0.569092,
+          "Y": 0.701259,
+          "Z": 0.916667
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.569092,
+            0.701259,
+            0.916667
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.6,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.076966815,
+            0.2532775,
+            0.44845447,
+            0.5816919,
+            0.5954765,
+            0.5654874,
+            0.5124938,
+            0.4426758,
+            0.3621885,
+            0.27718633,
+            0.19382696,
+            0.1182852,
+            0.05667536,
+            0.015238643,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 6.0,
+        "MaxValue": 8.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0,
+            8.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 1024.0,
+        "MaxValue": 1024.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1024.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "MaxValue": 128.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            128.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Atmospheric_Fog_Dense:ParticleModuleLocationPrimitiveCylinder_0.DistributionVelocityScale'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.0"
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'MI_VolFog_Dense'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Volume/MatInstance/MI_VolFog_Dense.0"
+      },
+      "ScreenAlignment": "PSA_Rectangle",
+      "bUseLocalSpace": true,
+      "SortMode": "PSORTMODE_Age_NewestFirst",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Atmospheric_Fog_Dense:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.1"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 900.0,
+        "MaxValue": 1024.0,
+        "MinValueVec": {
+          "X": 900.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1024.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            900.0,
+            900.0,
+            900.0,
+            1024.0,
+            1024.0,
+            1024.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Atmospheric_Fog_Dense:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -30.0,
+        "MaxValue": 30.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -30.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 30.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            -30.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Atmospheric_Fog_Dense:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.3"
+        }
+      ],
+      "DetailModeBitmask": 6
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Atmospheric_Fog_Dense",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "WarmupTime": 3.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Atmospheric_Fog_Dense:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/Outdoor/P_Atmospheric_Fog_Dense.12"
+        }
+      ],
+      "CurveEdSetup": null,
+      "MacroUVRadius": 2500.0,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -4096.0,
+          "Y": -4096.0,
+          "Z": -4096.0
+        },
+        "Max": {
+          "X": 4096.0,
+          "Y": 4096.0,
+          "Z": 4096.0
+        },
+        "IsValid": 1
+      },
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

@@ -1,0 +1,718 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_0",
+    "Outer": "ParticleModuleSpawn_1",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "Spawnrate",
+      "MaxInput": 10.0,
+      "MaxOutput": 10.0,
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionVectorParticleParameter",
+    "Name": "DistributionVectorParticleParameter_0",
+    "Outer": "ParticleModuleColorOverLife_1",
+    "Class": "UScriptClass'DistributionVectorParticleParameter'",
+    "Properties": {
+      "ParameterName": "ParticleColor",
+      "Constant": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "bIsDirty": false
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_AMB_Butterflies_White:ParticleModuleRequired_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_AMB_Butterflies_White:ParticleModuleLifetime_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_AMB_Butterflies_White:ParticleModuleSize_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_AMB_Butterflies_White:ParticleModuleColorOverLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.5"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_AMB_Butterflies_White:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.7"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_AMB_Butterflies_White:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.8"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_AMB_Butterflies_White:ParticleModuleVelocityCone_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_AMB_Butterflies_White:ParticleModuleSizeMultiplyLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.11"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh'P_AMB_Butterflies_White:ParticleModuleTypeDataMesh_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.13"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_AMB_Butterflies_White:ParticleModuleSpawn_1'",
+        "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.12"
+      },
+      "PeakActiveParticles": 12
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": {
+          "ObjectName": "DistributionVectorParticleParameter'P_AMB_Butterflies_White:ParticleModuleColorOverLife_1.DistributionVectorParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.3"
+        },
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "AlphaOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 6.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            6.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -800.0,
+        "MaxValue": 800.0,
+        "MinValueVec": {
+          "X": -800.0,
+          "Y": -800.0,
+          "Z": -100.0
+        },
+        "MaxValueVec": {
+          "X": 800.0,
+          "Y": 800.0,
+          "Z": 180.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -800.0,
+            -800.0,
+            -100.0,
+            800.0,
+            800.0,
+            180.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 30.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            30.0,
+            0.0,
+            0.0,
+            50.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationAmount": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": -1.0,
+          "Y": -1.0,
+          "Z": -1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateAmount": {
+        "MaxValue": 0.3,
+        "MinValueVec": {
+          "X": 0.1,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.3,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.1,
+            0.0,
+            0.0,
+            0.3,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_Flying_Butterfly_White'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MI_Flying_Butterfly_White.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "SortMode": "PSORTMODE_DistanceToView",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_Butterflies_White:ParticleModuleRequired_1.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 2.5,
+        "MaxValue": 3.5,
+        "MinValueVec": {
+          "X": 2.5,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 3.5,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.5,
+            2.5,
+            2.5,
+            3.5,
+            3.5,
+            3.5
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.15873018,
+            0.15873018,
+            0.15873018,
+            0.31746036,
+            0.31746036,
+            0.31746036,
+            0.4761905,
+            0.4761905,
+            0.4761905,
+            0.63492066,
+            0.63492066,
+            0.63492066,
+            0.7936508,
+            0.7936508,
+            0.7936508,
+            0.9501313,
+            0.9501313,
+            0.9501313,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            0.9501307,
+            0.9501307,
+            0.9501307,
+            0.7936499,
+            0.7936499,
+            0.7936499,
+            0.6349202,
+            0.6349202,
+            0.6349202,
+            0.4761892,
+            0.4761892,
+            0.4761892,
+            0.3174595,
+            0.3174595,
+            0.3174595,
+            0.15872972,
+            0.15872972,
+            0.15872972,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_AMB_Butterflies_White:ParticleModuleSpawn_1.DistributionFloatParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.2"
+        },
+        "Table": {
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_AMB_Butterflies_White:ParticleModuleSpawn_1.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleTypeDataMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Butterfly_01_Flying'",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_Butterfly_01_Flying.2"
+      },
+      "bOverrideMaterial": true,
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 100.0,
+        "MaxValue": 200.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            100.0,
+            200.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_AMB_Butterflies_White:ParticleSpriteEmitter_1.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.4"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_AMB_Butterflies_White",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_AMB_Butterflies_White:ParticleSpriteEmitter_1'",
+          "ObjectPath": "/Game/VFX/Particles/Ambient/AmbientVolumeEffects/P_AMB_Butterflies_White.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]
