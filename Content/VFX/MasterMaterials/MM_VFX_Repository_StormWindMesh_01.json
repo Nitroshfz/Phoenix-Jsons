@@ -1,0 +1,292 @@
+[
+  {
+    "Type": "Material",
+    "Name": "MM_VFX_Repository_StormWindMesh_01",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_19",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Additive",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "DitherOpacityMask": true,
+      "bCastRayTracedShadows": false,
+      "StateId": "4F27BF6F-4E461781-1AFC1394-A9BCB431",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              889128805716334556,
+              13658388032557156228
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "emissiveIntensity_A",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "maskPower",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "E8C75B90-4F9FAF1E-6B985E81-E18A22F0",
+              "D0ACC609-4A96EC56-CC36A3A7-3115D23F"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              2116332231992987232,
+              10039585361126264756
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "colorFront",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "colorRear",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "92841E75-4CBA0B98-8F2CD5B3-3FC3CF6C",
+              "CB259A5B-49EEBADC-08F3E3A4-DFD9C13C"
+            ]
+          },
+          "ScalarValues": [
+            50.0,
+            1.0
+          ],
+          "VectorValues": [
+            {
+              "R": 1.0,
+              "G": 0.013544,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF1E00"
+            },
+            {
+              "R": 1.0,
+              "G": 0.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FFFF0000"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          null,
+          {
+            "ObjectName": "Texture2D'DefaultTexture'",
+            "ObjectPath": "/Engine/EngineResources/DefaultTexture.0"
+          },
+          {
+            "ObjectName": "Texture2D'DefaultNormal'",
+            "ObjectPath": "/Engine/EngineMaterials/DefaultNormal.0"
+          },
+          {
+            "ObjectName": "Texture2D'DefaultDiffuse'",
+            "ObjectPath": "/Engine/EngineMaterials/DefaultDiffuse.0"
+          },
+          {
+            "ObjectName": "Texture2D'LowResBlurredNoise'",
+            "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_TiledNoise_01_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_TiledNoise_01_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_FX_Flowmap_FM'",
+            "ObjectPath": "/Game/VFX/Textures/Flowmaps/T_FX_Flowmap_FM.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_MarbleSkin_01_BPF_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_MarbleSkin_01_BPF_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "96872B42-4096FD7E-643536BE-214F7ABA",
+            "Function": {
+              "ObjectName": "MaterialFunction'TwoSidedTexturing'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions03/Texturing/TwoSidedTexturing.0"
+            }
+          },
+          {
+            "StateId": "8AEA8FB3-4033A6EE-275AFFBB-348D9CAD",
+            "Function": {
+              "ObjectName": "MaterialFunction'LinearSine'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/LinearSine.0"
+            }
+          },
+          {
+            "StateId": "8189A4A8-40E739E1-E4FFE09C-1092124E",
+            "Function": {
+              "ObjectName": "MaterialFunction'AddComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents.0"
+            }
+          },
+          {
+            "StateId": "8189A4A8-40E739E1-E4FFE09C-1092124E",
+            "Function": {
+              "ObjectName": "MaterialFunction'AddComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents.0"
+            }
+          },
+          {
+            "StateId": "F5C2D477-4BA63455-E32B4B96-0D7674B6",
+            "Function": {
+              "ObjectName": "MaterialFunction'BlendAngleCorrectedNormals'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+            "Function": {
+              "ObjectName": "MaterialFunction'Transform3x3Matrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.0"
+            }
+          },
+          {
+            "StateId": "C90913CC-475A15CC-96C0E383-A61AAE63",
+            "Function": {
+              "ObjectName": "MaterialFunction'MakeVectorsOrthogonal'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal.0"
+            }
+          },
+          {
+            "StateId": "3161742E-4800C603-B145E1AF-56D3BE63",
+            "Function": {
+              "ObjectName": "MaterialFunction'TimeWithSpeedVariable'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable.0"
+            }
+          },
+          {
+            "StateId": "F6745FF2-4B5889BF-BD1154AB-BB7C2986",
+            "Function": {
+              "ObjectName": "MaterialFunction'FlowMaps_Simple'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/FlowMaps_Simple.0"
+            }
+          },
+          {
+            "StateId": "8AEA8FB3-4033A6EE-275AFFBB-348D9CAD",
+            "Function": {
+              "ObjectName": "MaterialFunction'LinearSine'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/LinearSine.0"
+            }
+          },
+          {
+            "StateId": "8189A4A8-40E739E1-E4FFE09C-1092124E",
+            "Function": {
+              "ObjectName": "MaterialFunction'AddComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents.0"
+            }
+          },
+          {
+            "StateId": "8189A4A8-40E739E1-E4FFE09C-1092124E",
+            "Function": {
+              "ObjectName": "MaterialFunction'AddComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents.0"
+            }
+          },
+          {
+            "StateId": "F5C2D477-4BA63455-E32B4B96-0D7674B6",
+            "Function": {
+              "ObjectName": "MaterialFunction'BlendAngleCorrectedNormals'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+            "Function": {
+              "ObjectName": "MaterialFunction'Transform3x3Matrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.0"
+            }
+          },
+          {
+            "StateId": "C90913CC-475A15CC-96C0E383-A61AAE63",
+            "Function": {
+              "ObjectName": "MaterialFunction'MakeVectorsOrthogonal'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal.0"
+            }
+          },
+          {
+            "StateId": "3161742E-4800C603-B145E1AF-56D3BE63",
+            "Function": {
+              "ObjectName": "MaterialFunction'TimeWithSpeedVariable'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable.0"
+            }
+          },
+          {
+            "StateId": "F6745FF2-4B5889BF-BD1154AB-BB7C2986",
+            "Function": {
+              "ObjectName": "MaterialFunction'FlowMaps_Simple'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/FlowMaps_Simple.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 2.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_FX_Flowmap_FM"
+        },
+        {
+          "SamplingScale": 0.8125,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_MarbleSkin_01_BPF_D"
+        },
+        {
+          "SamplingScale": 0.8125,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_TiledNoise_01_D"
+        }
+      ]
+    }
+  }
+]

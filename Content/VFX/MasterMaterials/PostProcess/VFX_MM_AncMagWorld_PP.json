@@ -1,0 +1,183 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_AncMagWorld_PP",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_3",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "1C1595E1-45ED14AD-A29934B0-58F892D2",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              1007219309932694278,
+              6777813781704501084,
+              7128325432387590509,
+              10371715421228879687
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Exp",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Edge Falloff (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "MaskHardness",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Param",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "40A2F847-4A128F05-171E79BC-9A061CA3",
+              "CB5599B4-4BE6AF9D-95103FB8-D0D3263B",
+              "EC58B7F4-47F1B50E-B29D4EB7-FB26B599",
+              "CFE5C861-42DE8257-329B799D-A69BF608"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              11879671844243006560,
+              17158387976899476410
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "EmColor_Blue",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "EmColor_Red",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "B876982F-47CB8720-3A5234B1-986E483E",
+              "BFF63610-44AB39D8-9286048A-C2C1F900"
+            ]
+          },
+          "ScalarValues": [
+            1.0,
+            0.12,
+            0.790476,
+            0.584126
+          ],
+          "VectorValues": [
+            {
+              "R": 0.152541,
+              "G": 0.393885,
+              "B": 0.755208,
+              "A": 1.0,
+              "Hex": "FF6DA9E2"
+            },
+            {
+              "R": 1.0,
+              "G": 0.095486164,
+              "B": 0.095486164,
+              "A": 0.0,
+              "Hex": "FF5757"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_NoiseCaustics01_Color_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_NoiseCaustics01_Color_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "16251E37-4498E0D2-9BBF7786-F6DC9F67",
+            "Function": {
+              "ObjectName": "MaterialFunction'VFX_MF_SphereMaskForSprite'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_SphereMaskForSprite.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FDF0E218-49F6EE8B-E9059C85-221B2F68",
+            "Function": {
+              "ObjectName": "MaterialFunction'Pi'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Pi.0"
+            }
+          },
+          {
+            "StateId": "1B367198-438F63C6-B7351099-C757F38C",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_PolarCoordinates'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_PolarCoordinates.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "9DEEF089-488C7FFC-CBA6D499-986AEB61",
+            "Function": {
+              "ObjectName": "MaterialFunction'BoxMask-2D'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/BoxMask-2D.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "CED8583A-4D5FE256-DBF56BA3-35DDEA29",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'M_SliceCollection'",
+              "ObjectPath": "/Game/Gameplay/Blueprints/Sanctum_Dungeon/Materials/M_SliceCollection.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

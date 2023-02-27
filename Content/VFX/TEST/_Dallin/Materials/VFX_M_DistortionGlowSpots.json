@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_DistortionGlowSpots",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_4",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "bUsedWithParticleSprites": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "ED315AAA-43FFAF1A-29C8029A-138A68D4",
+      "CachedExpressionData": {
+        "Parameters": {},
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'T_Noise01'",
+            "ObjectPath": "/Engine/MaterialTemplates/Textures/T_Noise01.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Noise06_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Noise06_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Noise04_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Noise04_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_clouds_D'",
+            "ObjectPath": "/Game/VFX/Textures/TEST/VFX_T_clouds_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_WhispyCausticA_D'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_WhispyCausticA_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "FC5000CA-4D8CA069-2B6968BF-9ED68904",
+            "Function": {
+              "ObjectName": "MaterialFunction'DeriveHDRfromLDR'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/DeriveHDRfromLDR.0"
+            }
+          },
+          {
+            "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+            "Function": {
+              "ObjectName": "MaterialFunction'ExponentialDensity'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+            }
+          },
+          {
+            "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+            "Function": {
+              "ObjectName": "MaterialFunction'ExponentialDensity'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+            }
+          },
+          {
+            "StateId": "235C8133-44D704CA-0297108A-59B9F710",
+            "Function": {
+              "ObjectName": "MaterialFunction'RadialGradientExponential'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "UV_Tile_1",
+          "UV_Tile_2",
+          "HDR_Intensity_Mult",
+          "Radial_Gradient_Density"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.09375,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Noise01"
+        },
+        {
+          "SamplingScale": 0.796875,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Noise06_D"
+        }
+      ]
+    }
+  }
+]

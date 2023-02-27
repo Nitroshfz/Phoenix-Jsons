@@ -1,0 +1,231 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "VFX_SM_Spider_Poisionous_Spit_Pro",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -4.6,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 9.5,
+            "Length": 20.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "B4DE19B343D104951F50549578F3A428",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x4564"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_Spider_Poisionous_Spit_Pro",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x45C8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Spider_Poisionous_Spit_Pro",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_Spider_Poisonous_Venom'",
+            "ObjectPath": "/Game/VFX/Enemies/Spider/Spider_Venom_Pro/VFX_MI_Spider_Poisonous_Venom.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 62.01833,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 62.01833,
+      "LightMapResolution": 32,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.618511,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 19.563202,
+          "Y": 9.647419,
+          "Z": 9.647419
+        },
+        "SphereRadius": 20.185854
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_Spider_Poisionous_Spit_Pro:BodySetup_1'",
+      "ObjectPath": "/Game/VFX/Enemies/Spider/Spider_Venom_Pro/VFX_SM_Spider_Poisionous_Spit_Pro.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_Spider_Poisionous_Spit_Pro:NavCollision_2'",
+      "ObjectPath": "/Game/VFX/Enemies/Spider/Spider_Venom_Pro/VFX_SM_Spider_Poisionous_Spit_Pro.1"
+    },
+    "LightingGuid": "5F23219C-493E2758-A89326BE-4060A53E",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 108,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 76,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 77
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 77,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 77
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 54,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 45,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 4.134129,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 46
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 46,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 46
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -4.618511,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 19.563202,
+          "Y": 9.647419,
+          "Z": 9.647419
+        },
+        "SphereRadius": 20.185854
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.027056,
+        "NaN",
+        0.023528,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

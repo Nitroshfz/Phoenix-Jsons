@@ -1,0 +1,606 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkinFX_SkinChar_C",
+    "Super": "BP_SkinFX_NoGraph_Parent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkinFX_SkinChar_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_SkinChar.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkinFX_SkinChar_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_SkinChar.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkinFX_NoGraph_Parent_C'",
+      "ObjectPath": "/SkinFX/BP_SkinFX_NoGraph_Parent.1"
+    },
+    "ClassFlags": 8653332,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkinFX_SkinChar_C'Default__BP_SkinFX_SkinChar_C'",
+      "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_SkinChar.1"
+    }
+  },
+  {
+    "Type": "BP_SkinFX_SkinChar_C",
+    "Name": "Default__BP_SkinFX_SkinChar_C",
+    "Template": "Default__BP_SkinFX_NoGraph_Parent_C",
+    "Class": "BlueprintGeneratedClass'/Game/VFX/SkinFX/BP_SkinFX_SkinChar.BP_SkinFX_SkinChar_C'",
+    "Properties": {
+      "Priority": "ESkinFXEffectPriority::High",
+      "ASREnvelope": {
+        "AttackDuration": 2.0,
+        "AttackEase": {
+          "BlendExp": 0.0,
+          "Steps": 0
+        },
+        "SustainDuration": 100.0,
+        "bSustainHold": true,
+        "ReleaseDuration": 0.0,
+        "ReleaseEase": {
+          "BlendExp": 1.0,
+          "Steps": 3
+        },
+        "bInfiniteSustain": true
+      },
+      "Scalars": [
+        {
+          "MaterialParameter": {
+            "Name": "Tiling U (S) Emmis"
+          },
+          "Scalar": 0.25,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Tiling V (S) Emmis"
+          },
+          "Scalar": 0.25,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "ScalarCurves": [
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXRadius"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": -0.0033386871,
+                  "Value": 0.055600166,
+                  "ArriveTangent": 49.925903,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 49.925903,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 3.0,
+                  "Value": 150.0,
+                  "ArriveTangent": 49.925903,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 49.925903,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Alpha Erosion Softness"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 1.0,
+                  "ArriveTangent": 0.15358052,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.15358052,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Height Scale (S)"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": -2.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Emissive Growth Fader"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.5,
+                  "Value": 0.1,
+                  "ArriveTangent": 0.0564614,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0564614,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 3.1566823,
+                  "Value": 0.25,
+                  "ArriveTangent": 0.056449126,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.056449126,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 6.434185,
+                  "Value": 0.43497956,
+                  "ArriveTangent": 0.056439176,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.056439176,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "Colors": [
+        {
+          "MaterialParameter": {
+            "Name": "AttachedImpactPoint"
+          },
+          "Color": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 100.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Hot Color"
+          },
+          "Color": {
+            "R": 3000.0,
+            "G": 361.9262,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFFFF00"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Cooling Color"
+          },
+          "Color": {
+            "R": 5.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Textiure Size (Alpha Mask)"
+          },
+          "Color": {
+            "R": 100.0,
+            "G": 100.0,
+            "B": 100.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Base Color Modifier"
+          },
+          "Color": {
+            "R": 0.333333,
+            "G": 0.333333,
+            "B": 0.333333,
+            "A": 1.0,
+            "Hex": "FF9C9C9C"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "Sockets": [
+        {
+          "MaterialParameter": {
+            "Name": "AttachedImpactPoint"
+          },
+          "Socket": {
+            "Name": "SKT_Spine1"
+          },
+          "Bone": {
+            "Name": "None"
+          },
+          "SocketOutput": "ESkinFXSocketOutput::SFXS_POSITION",
+          "SocketOutputAlpha": "ESkinFXSocketOutputAlphaPack::SFXSAP_NONE",
+          "bMultiplyColorByEnvelope": false,
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyScalarByEnvelope": false,
+          "Advanced": {
+            "UseSpecificComponent": "None",
+            "bEvaluateOnlyAtStart": false,
+            "bPreviewOnly": false
+          },
+          "bUseBone": false,
+          "bUseReferencePose": false
+        }
+      ],
+      "Textures": [
+        {
+          "MaterialParameter": {
+            "Name": "AlphaMask"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/T_White_4x4_D.T_White_4x4_D",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Emissive Mask"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/T_White_4x4_D.T_White_4x4_D",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Heat Temp anim B"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/TEST/T_VolcanicAshall_DSP.T_VolcanicAshall_DSP",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Emissive Mask (SC)"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/VFX_T_SkinBurn_Emiss_BPF_D.VFX_T_SkinBurn_Emiss_BPF_D",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkinFX_SkinChar_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkinFXPreviewComponent'",
+            "ObjectPath": "/Script/SkinFX"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkinFXPreviewComponent'BP_SkinFX_SkinChar_C:SkinFXPreview_GEN_VARIABLE'",
+            "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_SkinChar.6"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_SkinFX_NoGraph_Parent_C'",
+              "ObjectPath": "/SkinFX/BP_SkinFX_NoGraph_Parent.1"
+            },
+            "SCSVariableName": "SkinFXPreview",
+            "AssociatedGuid": "EC749EF5-409789A6-584497A9-AF8F9A55"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkinFX_SkinChar_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkinFX_SkinChar_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_SkinChar.3"
+      },
+      "VariableGuid": "8CCC7419-498C414F-EF83E394-CDF2EF27",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkinFX_SkinChar_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkinFX_SkinChar_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_SkinChar.4"
+      }
+    }
+  },
+  {
+    "Type": "SkinFXPreviewComponent",
+    "Name": "SkinFXPreview_GEN_VARIABLE",
+    "Outer": "BP_SkinFX_SkinChar_C",
+    "Template": "SkinFXPreview_GEN_VARIABLE",
+    "Class": "UScriptClass'SkinFXPreviewComponent'"
+  }
+]

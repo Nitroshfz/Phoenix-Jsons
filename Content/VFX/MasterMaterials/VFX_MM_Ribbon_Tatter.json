@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_Ribbon_Tatter",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameter2D_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "None",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Masked",
+      "DitherOpacityMask": true,
+      "bUsedWithNiagaraRibbons": true,
+      "StateId": "E27EC954-4957E34A-D1C298BE-386842F1",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              8798119968976525148,
+              10557341712365246595,
+              14506329291010788114,
+              14939135484064064720,
+              15710064247503353260
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Contrast (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Speed V (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Speed U (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Tiling U (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Tiling V (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "3C80CAEB-41ADCCAA-CECFA38C-32CFAA5D",
+              "B9C34779-4AEF12EE-3954238A-76AF4691",
+              "ED039DE8-40BA3BC2-73765B88-C46101D8",
+              "A5A361B1-41E340F4-E45576B7-F4160513",
+              "5E69AB0A-4297F65E-6E36EFAE-4D28E0C2"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              4093712129551234549,
+              4708953410708818575,
+              14722926206871010480
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Diffuse",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Normal",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "TatterTexture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "2A7D9FBB-4CEE4AA8-2A219E9C-14EBB78F",
+              "B784EDA1-42C3B256-09C223BD-639FF4E0",
+              "74C759CD-402DE0E3-3EAFD9B4-637B594A"
+            ]
+          },
+          "ScalarValues": [
+            4.415655,
+            0.165079,
+            -0.439117,
+            1.0,
+            1.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_Dementor_Ash_D'",
+              "ObjectPath": "/Game/VFX/Textures/VFX_T_Dementor_Ash_D.0"
+            },
+            {
+              "ObjectName": "Texture2D'VFX_T_Dementor_Ash_N'",
+              "ObjectPath": "/Game/VFX/Textures/VFX_T_Dementor_Ash_N.0"
+            },
+            {
+              "ObjectName": "Texture2D'T_dust_cloud_D'",
+              "ObjectPath": "/Game/VFX/Textures/T_dust_cloud_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_Dementor_Ribbon_pack_D'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Dementor_Ribbon_pack_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_dust_cloud_D'",
+            "ObjectPath": "/Game/VFX/Textures/T_dust_cloud_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Dementor_Ash_N'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Dementor_Ash_N.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Dementor_Ash_D'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Dementor_Ash_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+            "Function": {
+              "ObjectName": "MaterialFunction'LinearGradient'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+            }
+          },
+          {
+            "StateId": "1F3C7ECC-4653CAFB-2A6AEE82-B1F2F3A5",
+            "Function": {
+              "ObjectName": "MaterialFunction'CheapContrast'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.0"
+            }
+          },
+          {
+            "StateId": "FE22B7E5-4785062D-5883288D-6EA42030",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_TextureCoord_TileAndPan'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_TextureCoord_TileAndPan.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_dust_cloud_D"
+        },
+        {
+          "SamplingScale": 2.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Dementor_Ash_D"
+        },
+        {
+          "SamplingScale": 2.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Dementor_Ash_N"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Dementor_Ribbon_pack_D"
+        }
+      ]
+    }
+  }
+]

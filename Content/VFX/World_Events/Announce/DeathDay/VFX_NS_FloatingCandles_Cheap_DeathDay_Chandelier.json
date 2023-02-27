@@ -1,0 +1,6183 @@
+[
+  {
+    "Type": "NiagaraEmitter",
+    "Name": "VFX_NE_FloatingCandle_Cheap_2",
+    "Outer": "VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier",
+    "Class": "UScriptClass'NiagaraEmitter'",
+    "Properties": {
+      "UpdateScriptProps": {
+        "Script": {
+          "ObjectName": "NiagaraScript'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:VFX_NE_FloatingCandle_Cheap_2.UpdateScript_1'",
+          "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.6"
+        }
+      },
+      "SpawnScriptProps": {
+        "Script": {
+          "ObjectName": "NiagaraScript'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:VFX_NE_FloatingCandle_Cheap_2.SpawnScript_0'",
+          "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.5"
+        }
+      },
+      "SimTarget": "ENiagaraSimTarget::GPUComputeSim",
+      "FixedBounds": {
+        "Min": {
+          "X": -1000.0,
+          "Y": -1000.0,
+          "Z": -1000.0
+        },
+        "Max": {
+          "X": 1000.0,
+          "Y": 1000.0,
+          "Z": 1000.0
+        },
+        "IsValid": 1
+      },
+      "Platforms": {
+        "QualityLevelMask": 31
+      },
+      "bInterpolatedSpawning": true,
+      "bFixedBounds": true,
+      "UniqueEmitterName": "VFX_NE_FloatingCandle_Cheap",
+      "RendererProperties": [
+        {
+          "ObjectName": "NiagaraMeshRendererProperties'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:VFX_NE_FloatingCandle_Cheap_2.NiagaraMeshRendererProperties_0'",
+          "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.1"
+        },
+        {
+          "ObjectName": "NiagaraSpriteRendererProperties'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:VFX_NE_FloatingCandle_Cheap_2.NiagaraSpriteRendererProperties_0'",
+          "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.7"
+        }
+      ],
+      "GPUComputeScript": {
+        "ObjectName": "NiagaraScript'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:VFX_NE_FloatingCandle_Cheap_2.GPUComputeScript_4'",
+        "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.4"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraMeshRendererProperties",
+    "Name": "NiagaraMeshRendererProperties_0",
+    "Outer": "VFX_NE_FloatingCandle_Cheap_2",
+    "Class": "UScriptClass'NiagaraMeshRendererProperties'",
+    "Properties": {
+      "Meshes": [
+        {
+          "Mesh": {
+            "ObjectName": "StaticMesh'VFX_SM_Candle_3DParticle'",
+            "ObjectPath": "/Game/VFX/Niagara/Basic/Candle/VFX_SM_Candle_3DParticle.2"
+          },
+          "Scale": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "PivotOffset": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "PivotOffsetSpace": "ENiagaraMeshPivotOffsetSpace::Mesh"
+        }
+      ],
+      "SortMode": "ENiagaraSortMode::ViewDistance",
+      "bOverrideMaterials": true,
+      "OverrideMaterials": [
+        {
+          "ExplicitMat": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_Candles_3DParticle_DeathDay'",
+            "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_MI_Candles_3DParticle_DeathDay.0"
+          },
+          "UserParamBinding": {
+            "Parameter": {
+              "VarData": "",
+              "Name": "None",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'MaterialInterface'",
+                  "ObjectPath": "/Script/Engine"
+                },
+                "UnderlyingType": 1
+              }
+            }
+          }
+        }
+      ],
+      "PositionBinding": {
+        "ParamMapVariable": {
+          "Name": "Particles.HoverPosition",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "DataSetVariable": {
+          "VarData": "",
+          "Name": "HoverPosition",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "RootVariable": {
+          "VarData": "",
+          "Name": "HoverPosition",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "bBindingExistsOnSource": true
+      },
+      "ColorBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "MeshOrientationBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "ScaleBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "MaterialRandomBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "CustomSortingBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "NormalizedAgeBinding": {
+        "bBindingExistsOnSource": true
+      }
+    }
+  },
+  {
+    "Type": "NiagaraScript",
+    "Name": "SystemSpawnScript",
+    "Outer": "VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::SystemSpawnScript",
+      "RapidIterationParameters": {},
+      "ScriptExecutionParamStore": {
+        "ParameterSize": 4,
+        "PaddedParameterSize": 16,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "Emitter.RandomSeed",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::SystemSpawnScript",
+        "bUsesRapidIterationParams": false,
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            242,
+            229,
+            227,
+            123,
+            202,
+            244,
+            34,
+            236,
+            125,
+            156,
+            115,
+            162,
+            160,
+            245,
+            172,
+            157,
+            31,
+            160,
+            219,
+            107
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "ByteCode": [
+          91,
+          36,
+          0,
+          86,
+          1,
+          0,
+          0,
+          40,
+          0,
+          0,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          0,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          48,
+          0,
+          1,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          1,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          2,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          2,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          3,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          4,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          3,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          4,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          5,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          56,
+          0,
+          6,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          7,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          8,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          9,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          5,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          6,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          48,
+          0,
+          7,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          8,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          10,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          11,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          12,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          9,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          13,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          44,
+          0,
+          14,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          52,
+          0,
+          10,
+          0,
+          92,
+          0
+        ],
+        "NumTempRegisters": 1,
+        "ScriptLiterals": [
+          2,
+          0,
+          0,
+          0,
+          255,
+          255,
+          255,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          63
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Emitter.RandomSeed",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.bCompleteOnInactive",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.CurrentLoopDelay",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.CurrentLoopDuration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.ExecutionStateSource",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionStateSource'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.LoopCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "System.NormalizedLoopAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.CurrentLoopDelay",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.CurrentLoopDuration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.DistanceTraveled",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionStateSource",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionStateSource'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.Localspace",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.NormalizedLoopAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.Scalability.DistanceFraction",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.SpawnBurst_Instantaneous.SpawnBurst",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraSpawnInfo'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "SystemSpawnScript",
+            "FriendlyName": "SystemSpawnScript"
+          },
+          {
+            "FullName": "VFX_NE_FloatingCandle_Cheap",
+            "FriendlyName": "VFX_NE_FloatingCandle_Cheap"
+          },
+          {
+            "FullName": "SystemSpawnScript_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "SystemSpawnScript_MapMain",
+            "FriendlyName": "MapMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      },
+      "CachedParameterCollectionReferences": [
+        {
+          "ObjectName": "NiagaraParameterCollection'NPC_EnvironmentalGlobals'",
+          "ObjectPath": "/EnvironmentalGlobals/NPC_EnvironmentalGlobals.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "NiagaraScript",
+    "Name": "SystemUpdateScript",
+    "Outer": "VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::SystemUpdateScript",
+      "RapidIterationParameters": {},
+      "ScriptExecutionParamStore": {
+        "ParameterSize": 4,
+        "PaddedParameterSize": 16,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "Emitter.RandomSeed",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::SystemUpdateScript",
+        "bUsesRapidIterationParams": false,
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            98,
+            228,
+            105,
+            251,
+            211,
+            173,
+            24,
+            227,
+            68,
+            228,
+            249,
+            149,
+            226,
+            224,
+            151,
+            207,
+            225,
+            228,
+            239,
+            216
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "ByteCode": [
+          91,
+          36,
+          0,
+          77,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          77,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          77,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          78,
+          0,
+          0,
+          2,
+          0,
+          3,
+          0,
+          78,
+          0,
+          0,
+          3,
+          0,
+          4,
+          0,
+          77,
+          0,
+          0,
+          3,
+          0,
+          5,
+          0,
+          77,
+          0,
+          0,
+          6,
+          0,
+          6,
+          0,
+          77,
+          0,
+          0,
+          9,
+          0,
+          7,
+          0,
+          78,
+          0,
+          0,
+          5,
+          0,
+          8,
+          0,
+          78,
+          0,
+          0,
+          6,
+          0,
+          9,
+          0,
+          78,
+          0,
+          0,
+          7,
+          0,
+          10,
+          0,
+          78,
+          1,
+          0,
+          2,
+          0,
+          11,
+          0,
+          77,
+          1,
+          0,
+          0,
+          0,
+          12,
+          0,
+          77,
+          1,
+          0,
+          1,
+          0,
+          13,
+          0,
+          77,
+          1,
+          0,
+          2,
+          0,
+          14,
+          0,
+          77,
+          1,
+          0,
+          3,
+          0,
+          15,
+          0,
+          78,
+          1,
+          0,
+          3,
+          0,
+          16,
+          0,
+          77,
+          1,
+          0,
+          4,
+          0,
+          17,
+          0,
+          91,
+          40,
+          0,
+          91,
+          44,
+          0,
+          91,
+          48,
+          0,
+          41,
+          2,
+          0,
+          0,
+          52,
+          0,
+          18,
+          0,
+          43,
+          2,
+          18,
+          0,
+          56,
+          0,
+          2,
+          0,
+          19,
+          0,
+          1,
+          1,
+          0,
+          0,
+          5,
+          0,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          5,
+          0,
+          40,
+          0,
+          2,
+          0,
+          19,
+          0,
+          0,
+          0,
+          43,
+          2,
+          0,
+          0,
+          56,
+          0,
+          19,
+          0,
+          18,
+          0,
+          43,
+          2,
+          0,
+          0,
+          52,
+          0,
+          2,
+          0,
+          19,
+          0,
+          4,
+          0,
+          19,
+          0,
+          18,
+          0,
+          2,
+          0,
+          56,
+          2,
+          4,
+          0,
+          44,
+          0,
+          20,
+          0,
+          43,
+          2,
+          20,
+          0,
+          44,
+          0,
+          3,
+          0,
+          21,
+          0,
+          43,
+          2,
+          20,
+          0,
+          44,
+          0,
+          4,
+          0,
+          3,
+          0,
+          56,
+          2,
+          3,
+          0,
+          48,
+          0,
+          4,
+          0,
+          67,
+          0,
+          0,
+          0,
+          4,
+          0,
+          20,
+          0,
+          43,
+          2,
+          20,
+          0,
+          48,
+          0,
+          21,
+          0,
+          0,
+          0,
+          43,
+          2,
+          20,
+          0,
+          48,
+          0,
+          3,
+          0,
+          4,
+          0,
+          60,
+          2,
+          11,
+          0,
+          44,
+          0,
+          3,
+          0,
+          56,
+          2,
+          4,
+          0,
+          60,
+          0,
+          20,
+          0,
+          67,
+          0,
+          3,
+          0,
+          20,
+          0,
+          21,
+          0,
+          43,
+          0,
+          21,
+          0,
+          11,
+          0,
+          0,
+          0,
+          3,
+          0,
+          43,
+          2,
+          21,
+          0,
+          60,
+          0,
+          4,
+          0,
+          0,
+          0,
+          92,
+          91,
+          60,
+          0,
+          91,
+          64,
+          0,
+          59,
+          2,
+          16,
+          0,
+          44,
+          0,
+          4,
+          0,
+          28,
+          6,
+          12,
+          0,
+          52,
+          0,
+          68,
+          0,
+          11,
+          0,
+          59,
+          2,
+          0,
+          0,
+          44,
+          0,
+          12,
+          0,
+          60,
+          2,
+          8,
+          0,
+          64,
+          0,
+          16,
+          0,
+          60,
+          2,
+          8,
+          0,
+          72,
+          0,
+          20,
+          0,
+          67,
+          0,
+          16,
+          0,
+          20,
+          0,
+          21,
+          0,
+          67,
+          0,
+          12,
+          0,
+          21,
+          0,
+          16,
+          0,
+          56,
+          0,
+          9,
+          0,
+          0,
+          0,
+          12,
+          0,
+          67,
+          0,
+          16,
+          0,
+          12,
+          0,
+          20,
+          0,
+          43,
+          0,
+          20,
+          0,
+          3,
+          0,
+          8,
+          0,
+          12,
+          0,
+          43,
+          0,
+          20,
+          0,
+          0,
+          0,
+          9,
+          0,
+          8,
+          0,
+          60,
+          2,
+          3,
+          0,
+          44,
+          0,
+          9,
+          0,
+          60,
+          2,
+          0,
+          0,
+          44,
+          0,
+          16,
+          0,
+          67,
+          0,
+          9,
+          0,
+          16,
+          0,
+          20,
+          0,
+          60,
+          2,
+          12,
+          0,
+          64,
+          0,
+          9,
+          0,
+          60,
+          2,
+          12,
+          0,
+          72,
+          0,
+          16,
+          0,
+          67,
+          0,
+          9,
+          0,
+          16,
+          0,
+          21,
+          0,
+          67,
+          0,
+          20,
+          0,
+          21,
+          0,
+          9,
+          0,
+          56,
+          2,
+          8,
+          0,
+          48,
+          0,
+          16,
+          0,
+          67,
+          0,
+          9,
+          0,
+          16,
+          0,
+          20,
+          0,
+          43,
+          2,
+          20,
+          0,
+          48,
+          0,
+          12,
+          0,
+          9,
+          0,
+          43,
+          2,
+          20,
+          0,
+          48,
+          0,
+          8,
+          0,
+          12,
+          0,
+          60,
+          2,
+          3,
+          0,
+          44,
+          0,
+          8,
+          0,
+          59,
+          2,
+          0,
+          0,
+          60,
+          0,
+          16,
+          0,
+          67,
+          0,
+          8,
+          0,
+          16,
+          0,
+          20,
+          0,
+          60,
+          2,
+          9,
+          0,
+          64,
+          0,
+          8,
+          0,
+          60,
+          2,
+          9,
+          0,
+          72,
+          0,
+          16,
+          0,
+          67,
+          0,
+          8,
+          0,
+          16,
+          0,
+          21,
+          0,
+          67,
+          0,
+          20,
+          0,
+          21,
+          0,
+          8,
+          0,
+          56,
+          2,
+          12,
+          0,
+          48,
+          0,
+          16,
+          0,
+          67,
+          0,
+          8,
+          0,
+          16,
+          0,
+          20,
+          0,
+          43,
+          2,
+          20,
+          0,
+          48,
+          0,
+          9,
+          0,
+          8,
+          0,
+          43,
+          2,
+          20,
+          0,
+          48,
+          0,
+          12,
+          0,
+          9,
+          0,
+          60,
+          2,
+          8,
+          0,
+          44,
+          0,
+          12,
+          0,
+          67,
+          0,
+          4,
+          0,
+          12,
+          0,
+          16,
+          0,
+          60,
+          2,
+          9,
+          0,
+          44,
+          0,
+          4,
+          0,
+          67,
+          0,
+          16,
+          0,
+          4,
+          0,
+          12,
+          0,
+          60,
+          2,
+          8,
+          0,
+          64,
+          0,
+          4,
+          0,
+          60,
+          2,
+          8,
+          0,
+          72,
+          0,
+          16,
+          0,
+          67,
+          0,
+          4,
+          0,
+          16,
+          0,
+          20,
+          0,
+          67,
+          0,
+          12,
+          0,
+          20,
+          0,
+          4,
+          0,
+          56,
+          2,
+          9,
+          0,
+          64,
+          0,
+          12,
+          0,
+          67,
+          0,
+          4,
+          0,
+          12,
+          0,
+          16,
+          0,
+          43,
+          2,
+          16,
+          0,
+          64,
+          0,
+          8,
+          0,
+          4,
+          0,
+          43,
+          2,
+          16,
+          0,
+          64,
+          0,
+          9,
+          0,
+          8,
+          0,
+          3,
+          0,
+          14,
+          0,
+          14,
+          0,
+          9,
+          0,
+          5,
+          0,
+          13,
+          0,
+          13,
+          0,
+          9,
+          0,
+          12,
+          0,
+          5,
+          0,
+          15,
+          0,
+          15,
+          0,
+          12,
+          0,
+          9,
+          0,
+          9,
+          0,
+          9,
+          0,
+          12,
+          0,
+          4,
+          2,
+          12,
+          0,
+          76,
+          0,
+          9,
+          0,
+          25,
+          2,
+          7,
+          0,
+          80,
+          0,
+          12,
+          0,
+          1,
+          0,
+          9,
+          0,
+          12,
+          0,
+          7,
+          0,
+          92,
+          91,
+          72,
+          0,
+          2,
+          2,
+          5,
+          0,
+          0,
+          0,
+          9,
+          0,
+          10,
+          0,
+          9,
+          0,
+          12,
+          0,
+          3,
+          1,
+          84,
+          0,
+          17,
+          0,
+          9,
+          0,
+          30,
+          2,
+          9,
+          0,
+          56,
+          0,
+          13,
+          0,
+          40,
+          2,
+          12,
+          0,
+          52,
+          0,
+          9,
+          0,
+          10,
+          0,
+          5,
+          0,
+          14,
+          0,
+          37,
+          2,
+          14,
+          0,
+          52,
+          0,
+          15,
+          0,
+          67,
+          0,
+          9,
+          0,
+          15,
+          0,
+          14,
+          0,
+          71,
+          0,
+          13,
+          0,
+          9,
+          0,
+          43,
+          4,
+          14,
+          0,
+          9,
+          0,
+          44,
+          0,
+          13,
+          0,
+          92,
+          92,
+          92,
+          92,
+          86,
+          1,
+          0,
+          0,
+          88,
+          0,
+          9,
+          0,
+          84,
+          1,
+          0,
+          0,
+          9,
+          0,
+          32,
+          0,
+          0,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          5,
+          0,
+          0,
+          0,
+          84,
+          1,
+          0,
+          0,
+          9,
+          0,
+          88,
+          0,
+          1,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          1,
+          0,
+          1,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          18,
+          0,
+          2,
+          0,
+          84,
+          0,
+          0,
+          0,
+          9,
+          0,
+          3,
+          0,
+          2,
+          0,
+          84,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          3,
+          0,
+          84,
+          1,
+          0,
+          0,
+          9,
+          0,
+          44,
+          0,
+          4,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          19,
+          0,
+          3,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          2,
+          0,
+          4,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          5,
+          0,
+          5,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          6,
+          0,
+          6,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          1,
+          0,
+          7,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          18,
+          0,
+          8,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          7,
+          0,
+          9,
+          0,
+          84,
+          0,
+          0,
+          0,
+          9,
+          0,
+          4,
+          0,
+          5,
+          0,
+          84,
+          0,
+          0,
+          0,
+          9,
+          0,
+          8,
+          0,
+          6,
+          0,
+          84,
+          0,
+          0,
+          0,
+          9,
+          0,
+          10,
+          0,
+          7,
+          0,
+          84,
+          1,
+          0,
+          0,
+          9,
+          0,
+          44,
+          0,
+          8,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          19,
+          0,
+          10,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          2,
+          0,
+          11,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          11,
+          0,
+          12,
+          0,
+          84,
+          0,
+          0,
+          0,
+          9,
+          0,
+          13,
+          0,
+          9,
+          0,
+          83,
+          0,
+          0,
+          0,
+          9,
+          0,
+          12,
+          0,
+          13,
+          0,
+          83,
+          1,
+          0,
+          0,
+          9,
+          0,
+          52,
+          0,
+          14,
+          0,
+          84,
+          1,
+          0,
+          0,
+          9,
+          0,
+          44,
+          0,
+          10,
+          0,
+          92,
+          0
+        ],
+        "NumTempRegisters": 22,
+        "ScriptLiterals": [
+          5,
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          63,
+          2,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          71,
+          3,
+          128,
+          63,
+          4,
+          0,
+          0,
+          0,
+          0,
+          0,
+          200,
+          66,
+          32,
+          188,
+          190,
+          76,
+          0,
+          0,
+          122,
+          67,
+          255,
+          255,
+          255,
+          255
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Emitter.RandomSeed",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.bCompleteOnInactive",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.CurrentLoopDelay",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.CurrentLoopDuration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.ExecutionStateSource",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionStateSource'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.LoopCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "System.NormalizedLoopAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "VFX_NE_FloatingCandle_Cheap.Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.CurrentLoopDelay",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.CurrentLoopDuration",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.DistanceTraveled",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionStateSource",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionStateSource'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.Localspace",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.NormalizedLoopAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.Scalability.DistanceFraction",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "VFX_NE_FloatingCandle_Cheap.SpawnBurst_Instantaneous.SpawnBurst",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraSpawnInfo'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "SystemUpdateScript",
+            "FriendlyName": "SystemUpdateScript"
+          },
+          {
+            "FullName": "SystemState_Func_",
+            "FriendlyName": "SystemState"
+          },
+          {
+            "FullName": "VFX_NE_FloatingCandle_Cheap",
+            "FriendlyName": "VFX_NE_FloatingCandle_Cheap"
+          },
+          {
+            "FullName": "EmitterState_VFX_NE_FloatingCandle_Cheap_Func_",
+            "FriendlyName": "EmitterState_VFX_NE_FloatingCandle_Cheap"
+          },
+          {
+            "FullName": "SpawnBurst_Instantaneous_VFX_NE_FloatingCandle_Cheap_Func_",
+            "FriendlyName": "SpawnBurst_Instantaneous_VFX_NE_FloatingCandle_Cheap"
+          },
+          {
+            "FullName": "SystemUpdateScript_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "SystemUpdateScript_MapMain",
+            "FriendlyName": "MapMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      },
+      "CachedParameterCollectionReferences": [
+        {
+          "ObjectName": "NiagaraParameterCollection'NPC_EnvironmentalGlobals'",
+          "ObjectPath": "/EnvironmentalGlobals/NPC_EnvironmentalGlobals.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "NiagaraScript",
+    "Name": "GPUComputeScript_4",
+    "Outer": "VFX_NE_FloatingCandle_Cheap_2",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::ParticleGPUComputeScript",
+      "RapidIterationParameters": {},
+      "ScriptExecutionParamStore": {
+        "ParameterSize": 20,
+        "PaddedParameterSize": 64,
+        "PaddingInfo": [
+          {
+            "SrcOffset": 0,
+            "DestOffset": 0,
+            "SrcSize": 20,
+            "DestSize": 32
+          },
+          {
+            "SrcOffset": 20,
+            "DestOffset": 32,
+            "SrcSize": 20,
+            "DestSize": 20
+          }
+        ],
+        "SortedParameterOffsets": [
+          {
+            "Offset": 28,
+            "Name": "PREV_System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 20,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 24,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 32,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 36,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.SpawnRate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "VFX_NE_FloatingCandle_Cheap.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "VFX_NE_FloatingCandle_Cheap.SpawnRate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::ParticleGPUComputeScript",
+        "bUsesRapidIterationParams": false,
+        "bInterpolatedSpawn": true,
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            167,
+            130,
+            54,
+            15,
+            131,
+            108,
+            185,
+            137,
+            100,
+            238,
+            180,
+            144,
+            61,
+            65,
+            114,
+            42,
+            132,
+            166,
+            189,
+            43
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "CompileTags": [
+          {
+            "Variable": {
+              "VarData": "/////w==",
+              "Name": "bIsInfinitelyLived",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": ""
+          },
+          {
+            "Variable": {
+              "VarData": "AAAAAA==",
+              "Name": "bCanDieWhenEmitterDeactivates",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": ""
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.ImposterAlignment",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.ImposterSpriteSize",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector2D'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.VisibilityTag_Flame",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.InitialRotation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Quat'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.HoverOffset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          }
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "FlamePosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverCenterPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverLoopTime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "HoverStrength",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverTimeOffset",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "Initial.Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Lifetime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "MaterialRandom",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "MeshOrientation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Quat'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "NormalizedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.FlamePosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.HoverPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.MeshOrientation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Quat'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.SpriteAlignment",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.SpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "SpriteAlignment",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "SpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "UniqueID",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "GPUComputeScript_4",
+            "FriendlyName": "GPUComputeScript_4"
+          },
+          {
+            "FullName": "SetVariables_D1F5C3144B416D5266BDFEBA95F1C835_Emitter_Func_",
+            "FriendlyName": "SetVariables_D1F5C3144B416D5266BDFEBA95F1C835_Emitter"
+          },
+          {
+            "FullName": "SphereLocation_Emitter_Func_",
+            "FriendlyName": "SphereLocation_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_HoverOffset_PSpawn_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_HoverOffset_PSpawn_Emitter"
+          },
+          {
+            "FullName": "InitialMeshOrientation_Emitter_Func_",
+            "FriendlyName": "InitialMeshOrientation_Emitter"
+          },
+          {
+            "FullName": "Color_Emitter_Func_",
+            "FriendlyName": "Color_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_UVFlipping_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_UVFlipping_Emitter"
+          },
+          {
+            "FullName": "UpdateAge_Emitter_Func_",
+            "FriendlyName": "UpdateAge_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_Hover_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_Hover_Emitter"
+          },
+          {
+            "FullName": "SetVariables_19AB76094A3CFB21A6C5839743E51805_Emitter_Func_",
+            "FriendlyName": "SetVariables_19AB76094A3CFB21A6C5839743E51805_Emitter"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraScript",
+    "Name": "SpawnScript_0",
+    "Outer": "VFX_NE_FloatingCandle_Cheap_2",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::ParticleSpawnScriptInterpolated",
+      "RapidIterationParameters": {},
+      "ScriptExecutionParamStore": {
+        "ParameterSize": 36,
+        "PaddedParameterSize": 96,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 16,
+            "Name": "Engine.ExecutionCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 52,
+            "Name": "PREV_Engine.ExecutionCount",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 44,
+            "Name": "PREV_System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 36,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 40,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 64,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.InterpSpawnStartDt",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 48,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 68,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.SpawnGroup",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 60,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.SpawnInterval",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 56,
+            "Name": "PREV_VFX_NE_FloatingCandle_Cheap.SpawnRate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "VFX_NE_FloatingCandle_Cheap.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 28,
+            "Name": "VFX_NE_FloatingCandle_Cheap.InterpSpawnStartDt",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 32,
+            "Name": "VFX_NE_FloatingCandle_Cheap.SpawnGroup",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 24,
+            "Name": "VFX_NE_FloatingCandle_Cheap.SpawnInterval",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 20,
+            "Name": "VFX_NE_FloatingCandle_Cheap.SpawnRate",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::ParticleSpawnScriptInterpolated",
+        "bUsesRapidIterationParams": false,
+        "bInterpolatedSpawn": true,
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            167,
+            130,
+            54,
+            15,
+            131,
+            108,
+            185,
+            137,
+            100,
+            238,
+            180,
+            144,
+            61,
+            65,
+            114,
+            42,
+            132,
+            166,
+            189,
+            43
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "CompileTags": [
+          {
+            "Variable": {
+              "VarData": "/////w==",
+              "Name": "bIsInfinitelyLived",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": ""
+          },
+          {
+            "Variable": {
+              "VarData": "AAAAAA==",
+              "Name": "bCanDieWhenEmitterDeactivates",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": ""
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.ImposterAlignment",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.ImposterSpriteSize",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector2D'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.VisibilityTag_Flame",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.InitialRotation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Quat'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.HoverOffset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          }
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "FlamePosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverCenterPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverLoopTime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "HoverStrength",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverTimeOffset",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "Initial.Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Lifetime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "MaterialRandom",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "MeshOrientation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Quat'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "NormalizedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.FlamePosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.HoverPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.MeshOrientation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Quat'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.SpriteAlignment",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.SpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "SpriteAlignment",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "SpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "UniqueID",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "SpawnScript_0",
+            "FriendlyName": "SpawnScript_0"
+          },
+          {
+            "FullName": "SetVariables_D1F5C3144B416D5266BDFEBA95F1C835_Emitter_Func_",
+            "FriendlyName": "SetVariables_D1F5C3144B416D5266BDFEBA95F1C835_Emitter"
+          },
+          {
+            "FullName": "SphereLocation_Emitter_Func_",
+            "FriendlyName": "SphereLocation_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_HoverOffset_PSpawn_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_HoverOffset_PSpawn_Emitter"
+          },
+          {
+            "FullName": "InitialMeshOrientation_Emitter_Func_",
+            "FriendlyName": "InitialMeshOrientation_Emitter"
+          },
+          {
+            "FullName": "Color_Emitter_Func_",
+            "FriendlyName": "Color_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_UVFlipping_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_UVFlipping_Emitter"
+          },
+          {
+            "FullName": "UpdateAge_Emitter_Func_",
+            "FriendlyName": "UpdateAge_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_Hover_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_Hover_Emitter"
+          },
+          {
+            "FullName": "SetVariables_19AB76094A3CFB21A6C5839743E51805_Emitter_Func_",
+            "FriendlyName": "SetVariables_19AB76094A3CFB21A6C5839743E51805_Emitter"
+          },
+          {
+            "FullName": "SpawnScript_0_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "SpawnScript_0_MapSpawnMain",
+            "FriendlyName": "MapSpawnMain"
+          },
+          {
+            "FullName": "SpawnScript_0_MapUpdateMain",
+            "FriendlyName": "MapUpdateMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraScript",
+    "Name": "UpdateScript_1",
+    "Outer": "VFX_NE_FloatingCandle_Cheap_2",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::ParticleUpdateScript",
+      "RapidIterationParameters": {},
+      "ScriptExecutionParamStore": {
+        "ParameterSize": 12,
+        "PaddedParameterSize": 16,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 4,
+            "Name": "System.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionState",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'ENiagaraExecutionState'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 3
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "VFX_NE_FloatingCandle_Cheap.LoopedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::ParticleUpdateScript",
+        "bUsesRapidIterationParams": false,
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            78,
+            119,
+            202,
+            32,
+            88,
+            51,
+            20,
+            10,
+            59,
+            82,
+            223,
+            164,
+            76,
+            229,
+            172,
+            195,
+            237,
+            101,
+            131,
+            143
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "CompileTags": [
+          {
+            "Variable": {
+              "VarData": "/////w==",
+              "Name": "bIsInfinitelyLived",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": ""
+          },
+          {
+            "Variable": {
+              "VarData": "AAAAAA==",
+              "Name": "bCanDieWhenEmitterDeactivates",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": ""
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.HoverOffset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.ImposterAlignment",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.ImposterSpriteSize",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector2D'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.VisibilityTag_Flame",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          },
+          {
+            "Variable": {
+              "VarData": "",
+              "Name": "Particles.InitialRotation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Quat'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            "StringValue": "Trimmed"
+          }
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Age",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "FlamePosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverCenterPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverLoopTime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "HoverStrength",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "HoverTimeOffset",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Initial.Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Lifetime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "MaterialRandom",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "MeshOrientation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Quat'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "NormalizedAge",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.FlamePosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.HoverPosition",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.MeshOrientation",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Quat'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.SpriteAlignment",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Previous.SpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "Scale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "SpriteAlignment",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "SpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "",
+            "Name": "UniqueID",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraInt32'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "UpdateScript_1",
+            "FriendlyName": "UpdateScript_1"
+          },
+          {
+            "FullName": "UpdateAge_Emitter_Func_",
+            "FriendlyName": "UpdateAge_Emitter"
+          },
+          {
+            "FullName": "VFX_NMS_Hover_Emitter_Func_",
+            "FriendlyName": "VFX_NMS_Hover_Emitter"
+          },
+          {
+            "FullName": "SetVariables_19AB76094A3CFB21A6C5839743E51805_Emitter_Func_",
+            "FriendlyName": "SetVariables_19AB76094A3CFB21A6C5839743E51805_Emitter"
+          },
+          {
+            "FullName": "UpdateScript_1_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "UpdateScript_1_MapMain",
+            "FriendlyName": "MapMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraSpriteRendererProperties",
+    "Name": "NiagaraSpriteRendererProperties_0",
+    "Outer": "VFX_NE_FloatingCandle_Cheap_2",
+    "Class": "UScriptClass'NiagaraSpriteRendererProperties'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_CandleFlame_Particle'",
+        "ObjectPath": "/Game/VFX/Niagara/Basic/Candle/VFX_MI_CandleFlame_Particle.0"
+      },
+      "PivotInUVSpace": {
+        "X": 0.5,
+        "Y": 0.85
+      },
+      "SortMode": "ENiagaraSortMode::ViewDistance",
+      "PositionBinding": {
+        "ParamMapVariable": {
+          "Name": "Particles.FlamePosition",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "DataSetVariable": {
+          "VarData": "",
+          "Name": "FlamePosition",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "RootVariable": {
+          "VarData": "",
+          "Name": "FlamePosition",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'Vector'",
+              "ObjectPath": "/Script/CoreUObject"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "bBindingExistsOnSource": true
+      },
+      "ColorBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "SpriteSizeBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "SpriteAlignmentBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "MaterialRandomBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "CustomSortingBinding": {
+        "bBindingExistsOnSource": true
+      },
+      "NormalizedAgeBinding": {
+        "bBindingExistsOnSource": true
+      }
+    }
+  },
+  {
+    "Type": "NiagaraSystem",
+    "Name": "VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier",
+    "Class": "UScriptClass'NiagaraSystem'",
+    "Properties": {
+      "EffectType": {
+        "ObjectName": "NiagaraEffectType'VFX_NET_Environment_DistantInfinite'",
+        "ObjectPath": "/Game/VFX/Niagara/NiagaraEffectTypes/VFX_NET_Environment_DistantInfinite.0"
+      },
+      "EmitterHandles": [
+        {
+          "Id": "15475767-41245D49-820BC39B-E4BE99BE",
+          "IdName": "1547576741245D49820BC39BE4BE99BE",
+          "bIsEnabled": true,
+          "Name": "VFX_NE_FloatingCandle_Cheap",
+          "Instance": {
+            "ObjectName": "NiagaraEmitter'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:VFX_NE_FloatingCandle_Cheap_2'",
+            "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.0"
+          }
+        }
+      ],
+      "SystemSpawnScript": {
+        "ObjectName": "NiagaraScript'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:SystemSpawnScript'",
+        "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.2"
+      },
+      "SystemUpdateScript": {
+        "ObjectName": "NiagaraScript'VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier:SystemUpdateScript'",
+        "ObjectPath": "/Game/VFX/World_Events/Announce/DeathDay/VFX_NS_FloatingCandles_Cheap_DeathDay_Chandelier.3"
+      },
+      "SystemCompiledData": {
+        "DataSetCompiledData": {
+          "Variables": [
+            {
+              "VarData": "AAAAAA==",
+              "Name": "Emitter.RandomSeed",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.Age",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.bCompleteOnInactive",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.CurrentLoopDelay",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.CurrentLoopDuration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.ExecutionState",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'ENiagaraExecutionState'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 3
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.ExecutionStateSource",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'ENiagaraExecutionStateSource'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 3
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.LoopCount",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.LoopedAge",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "System.NormalizedLoopAge",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "VFX_NE_FloatingCandle_Cheap.Age",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.AlphaScale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.CurrentLoopDelay",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.CurrentLoopDuration",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.DistanceTraveled",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionState",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'ENiagaraExecutionState'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 3
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.ExecutionStateSource",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'ENiagaraExecutionStateSource'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 3
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.Localspace",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraBool'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.LoopCount",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.LoopedAge",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.NormalizedLoopAge",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.Scalability.DistanceFraction",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "VFX_NE_FloatingCandle_Cheap.SpawnBurst_Instantaneous.SpawnBurst",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraSpawnInfo'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            }
+          ],
+          "VariableLayouts": [
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 1,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 1,
+              "Int32ComponentStart": 1,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 1,
+              "Int32ComponentStart": 2,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 2,
+              "Int32ComponentStart": 2,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 3,
+              "Int32ComponentStart": 2,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 3,
+              "Int32ComponentStart": 3,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 3,
+              "Int32ComponentStart": 4,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 3,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 4,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 5,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 6,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 7,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 8,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 9,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 10,
+              "Int32ComponentStart": 5,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 10,
+              "Int32ComponentStart": 6,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 10,
+              "Int32ComponentStart": 7,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 10,
+              "Int32ComponentStart": 8,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 10,
+              "Int32ComponentStart": 9,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 11,
+              "Int32ComponentStart": 9,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 12,
+              "Int32ComponentStart": 9,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 13,
+              "Int32ComponentStart": 9,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1
+                ],
+                "Int32ComponentByteOffsets": [
+                  0,
+                  12
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0,
+                  1
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            }
+          ],
+          "TotalFloatComponents": 15,
+          "TotalInt32Components": 11
+        },
+        "SpawnInstanceParamsDataSetCompiledData": {
+          "Variables": [
+            {
+              "VarData": "",
+              "Name": "Engine.Emitter.InstanceSeed",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Engine.Emitter.TotalSpawnedParticles",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            }
+          ],
+          "VariableLayouts": [
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 1,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            }
+          ],
+          "TotalInt32Components": 2
+        },
+        "UpdateInstanceParamsDataSetCompiledData": {
+          "Variables": [
+            {
+              "VarData": "",
+              "Name": "Engine.Emitter.InstanceSeed",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Engine.Emitter.TotalSpawnedParticles",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Engine.Owner.ExecutionState",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'ENiagaraExecutionState'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 3
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "Engine.Owner.LODDistanceFraction",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "Engine.Owner.Velocity",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "Engine.VFX_NE_FloatingCandle_Cheap.NumParticles",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "Engine.VFX_NE_FloatingCandle_Cheap.SpawnCountScale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            }
+          ],
+          "VariableLayouts": [
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 1,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 2,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 3,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 1,
+              "Int32ComponentStart": 3,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 4,
+              "Int32ComponentStart": 3,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 4,
+              "Int32ComponentStart": 4,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            }
+          ],
+          "TotalFloatComponents": 5,
+          "TotalInt32Components": 4
+        },
+        "SpawnInstanceEmitterBindings": [
+          {
+            "FloatOffsets": [],
+            "Int32Offsets": []
+          }
+        ],
+        "UpdateInstanceSystemBinding": {
+          "FloatOffsets": [
+            {
+              "ParameterOffset": 8,
+              "DataSetComponentOffset": 0
+            }
+          ],
+          "Int32Offsets": [
+            {
+              "ParameterOffset": 16,
+              "DataSetComponentOffset": 2
+            }
+          ]
+        },
+        "UpdateInstanceOwnerBinding": {
+          "FloatOffsets": [
+            {
+              "ParameterOffset": 416,
+              "DataSetComponentOffset": 1
+            },
+            {
+              "ParameterOffset": 420,
+              "DataSetComponentOffset": 2
+            },
+            {
+              "ParameterOffset": 424,
+              "DataSetComponentOffset": 3
+            }
+          ]
+        },
+        "UpdateInstanceEmitterBindings": [
+          {
+            "FloatOffsets": [
+              {
+                "ParameterOffset": 8,
+                "DataSetComponentOffset": 4
+              }
+            ],
+            "Int32Offsets": [
+              {
+                "ParameterOffset": 0,
+                "DataSetComponentOffset": 3
+              }
+            ]
+          }
+        ]
+      },
+      "ExposedParameters": {}
+    },
+    "EmitterCompiledStructs": [
+      {
+        "SpawnAttributes": [
+          "VFX_NE_FloatingCandle_Cheap.SpawnBurst_Instantaneous.SpawnBurst"
+        ],
+        "EmitterSpawnIntervalVar": {
+          "VarData": "",
+          "Name": "VFX_NE_FloatingCandle_Cheap.SpawnInterval",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraFloat'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "EmitterInterpSpawnStartDTVar": {
+          "VarData": "",
+          "Name": "VFX_NE_FloatingCandle_Cheap.InterpSpawnStartDt",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraFloat'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "EmitterSpawnGroupVar": {
+          "VarData": "",
+          "Name": "VFX_NE_FloatingCandle_Cheap.SpawnGroup",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraInt32'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "EmitterAgeVar": {
+          "VarData": "",
+          "Name": "VFX_NE_FloatingCandle_Cheap.Age",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraFloat'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "EmitterRandomSeedVar": {
+          "VarData": "",
+          "Name": "VFX_NE_FloatingCandle_Cheap.RandomSeed",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraInt32'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "EmitterInstanceSeedVar": {
+          "VarData": "",
+          "Name": "Engine.VFX_NE_FloatingCandle_Cheap.InstanceSeed",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraInt32'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "EmitterTotalSpawnedParticlesVar": {
+          "VarData": "",
+          "Name": "Engine.VFX_NE_FloatingCandle_Cheap.TotalSpawnedParticles",
+          "TypeDef": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraInt32'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 2
+          }
+        },
+        "DataSetCompiledData": {
+          "Variables": [
+            {
+              "VarData": "AAAAAA==",
+              "Name": "Age",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Color",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'LinearColor'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "FlamePosition",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "HoverCenterPosition",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "HoverLoopTime",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "HoverPosition",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "HoverSize",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "HoverStrength",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "HoverTimeOffset",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAAAAAAAAAAAA",
+              "Name": "Initial.Position",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "Lifetime",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "MaterialRandom",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "MeshOrientation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Quat'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "NormalizedAge",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraFloat'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Position",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Previous.FlamePosition",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Previous.HoverPosition",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Previous.MeshOrientation",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Quat'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Previous.Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Previous.SpriteAlignment",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Previous.SpriteSize",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector2D'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "Scale",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "SpriteAlignment",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "",
+              "Name": "SpriteSize",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'Vector2D'",
+                  "ObjectPath": "/Script/CoreUObject"
+                },
+                "UnderlyingType": 2
+              }
+            },
+            {
+              "VarData": "AAAAAA==",
+              "Name": "UniqueID",
+              "TypeDef": {
+                "ClassStructOrEnum": {
+                  "ObjectName": "Class'NiagaraInt32'",
+                  "ObjectPath": "/Script/Niagara"
+                },
+                "UnderlyingType": 2
+              }
+            }
+          ],
+          "VariableLayouts": [
+            {
+              "FloatComponentStart": 0,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 1,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8,
+                  12
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 5,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 8,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 11,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 14,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 17,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 20,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 21,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 24,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 27,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 28,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 29,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8,
+                  12
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 33,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 34,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 37,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 40,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 43,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8,
+                  12
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2,
+                  3
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 47,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 50,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 53,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 55,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 58,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4,
+                  8
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1,
+                  2
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 61,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [
+                  0,
+                  4
+                ],
+                "FloatComponentRegisterOffsets": [
+                  0,
+                  1
+                ],
+                "Int32ComponentByteOffsets": [],
+                "Int32ComponentRegisterOffsets": [],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            },
+            {
+              "FloatComponentStart": 63,
+              "Int32ComponentStart": 0,
+              "HalfComponentStart": 0,
+              "LayoutInfo": {
+                "FloatComponentByteOffsets": [],
+                "FloatComponentRegisterOffsets": [],
+                "Int32ComponentByteOffsets": [
+                  0
+                ],
+                "Int32ComponentRegisterOffsets": [
+                  0
+                ],
+                "HalfComponentByteOffsets": [],
+                "HalfComponentRegisterOffsets": []
+              }
+            }
+          ],
+          "ID": {
+            "Name": "1547576741245D49820BC39BE4BE99BE",
+            "Type": "ENiagaraDataSetType::ParticleData"
+          },
+          "TotalFloatComponents": 63,
+          "TotalInt32Components": 1,
+          "TotalHalfComponents": 0,
+          "bRequiresPersistentIDs": false,
+          "SimTarget": "ENiagaraSimTarget::GPUComputeSim"
+        }
+      }
+    ]
+  }
+]

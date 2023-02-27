@@ -1,0 +1,1714 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionDragCoefficient",
+    "Outer": "ParticleModuleAccelerationDrag_2",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "ResilienceDistribution",
+    "Outer": "ParticleModuleCollisionGPU_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 0.2
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "ResilienceScaleOverLifeDistribution",
+    "Outer": "ParticleModuleCollisionGPU_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_6",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatParticleParameter",
+    "Name": "DistributionFloatParticleParameter_3",
+    "Outer": "ParticleModuleSpawn_7",
+    "Class": "UScriptClass'DistributionFloatParticleParameter'",
+    "Properties": {
+      "ParameterName": "SpawnRateScale",
+      "MaxInput": 1000.0,
+      "MaxOutput": 1000.0,
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionVectorUniform",
+    "Name": "DistributionOffsetAmount",
+    "Outer": "ParticleModuleOrbit_1",
+    "Class": "UScriptClass'DistributionVectorUniform'",
+    "Properties": {
+      "Max": {
+        "X": 8.0,
+        "Y": 5.0,
+        "Z": 0.0
+      },
+      "Min": {
+        "X": -8.0,
+        "Y": -5.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorUniform",
+    "Name": "DistributionRotationAmount",
+    "Outer": "ParticleModuleOrbit_1",
+    "Class": "UScriptClass'DistributionVectorUniform'",
+    "Properties": {
+      "Max": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorUniform",
+    "Name": "DistributionRotationRateAmount",
+    "Outer": "ParticleModuleOrbit_1",
+    "Class": "UScriptClass'DistributionVectorUniform'",
+    "Properties": {
+      "Max": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      "Min": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_FX_Goblin_Sword_Charge:ParticleModuleRequired_6'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.18"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_FX_Goblin_Sword_Charge:ParticleModuleLifetime_6'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_FX_Goblin_Sword_Charge:ParticleModuleSize_7'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.19"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_FX_Goblin_Sword_Charge:ParticleModuleVelocity_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.23"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere'P_FX_Goblin_Sword_Charge:ParticleModuleLocationPrimitiveSphere_5'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.15"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_FX_Goblin_Sword_Charge:ParticleModuleColorOverLife_2'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.13"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant'P_FX_Goblin_Sword_Charge:ParticleModuleAccelerationConstant_2'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.10"
+        },
+        {
+          "ObjectName": "ParticleModuleCollisionGPU'P_FX_Goblin_Sword_Charge:ParticleModuleCollisionGPU_0'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.12"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeScaleBySpeed'P_FX_Goblin_Sword_Charge:ParticleModuleSizeScaleBySpeed_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.20"
+        },
+        {
+          "ObjectName": "ParticleModulePivotOffset'P_FX_Goblin_Sword_Charge:ParticleModulePivotOffset_0'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.17"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_FX_Goblin_Sword_Charge:ParticleModuleOrbit_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.16"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_FX_Goblin_Sword_Charge:ParticleModuleAccelerationDrag_2'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.11"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_FX_Goblin_Sword_Charge:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.22"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_FX_Goblin_Sword_Charge:ParticleModuleSpawn_7'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.21"
+      },
+      "PeakActiveParticles": 82
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_1",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "Level": 1,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_FX_Goblin_Sword_Charge:ParticleModuleRequired_6'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.18"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_FX_Goblin_Sword_Charge:ParticleModuleLifetime_6'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_FX_Goblin_Sword_Charge:ParticleModuleSize_7'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.19"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_FX_Goblin_Sword_Charge:ParticleModuleVelocity_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.23"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveSphere'P_FX_Goblin_Sword_Charge:ParticleModuleLocationPrimitiveSphere_5'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.15"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_FX_Goblin_Sword_Charge:ParticleModuleColorOverLife_2'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.13"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant'P_FX_Goblin_Sword_Charge:ParticleModuleAccelerationConstant_2'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.10"
+        },
+        {
+          "ObjectName": "ParticleModuleCollisionGPU'P_FX_Goblin_Sword_Charge:ParticleModuleCollisionGPU_0'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.12"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeScaleBySpeed'P_FX_Goblin_Sword_Charge:ParticleModuleSizeScaleBySpeed_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.20"
+        },
+        {
+          "ObjectName": "ParticleModulePivotOffset'P_FX_Goblin_Sword_Charge:ParticleModulePivotOffset_0'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.17"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_FX_Goblin_Sword_Charge:ParticleModuleOrbit_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.16"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_FX_Goblin_Sword_Charge:ParticleModuleAccelerationDrag_2'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.11"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_FX_Goblin_Sword_Charge:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.22"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_FX_Goblin_Sword_Charge:ParticleModuleSpawn_7'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.21"
+      },
+      "PeakActiveParticles": 82
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_2",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleAccelerationConstant'",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -900.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "bEnabled": false,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_2",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_FX_Goblin_Sword_Charge:ParticleModuleAccelerationDrag_2.DistributionDragCoefficient'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.0"
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleCollisionGPU",
+    "Name": "ParticleModuleCollisionGPU_0",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleCollisionGPU'",
+    "Properties": {
+      "Resilience": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_FX_Goblin_Sword_Charge:ParticleModuleCollisionGPU_0.ResilienceDistribution'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.1"
+        }
+      },
+      "ResilienceScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_FX_Goblin_Sword_Charge:ParticleModuleCollisionGPU_0.ResilienceScaleOverLifeDistribution'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.2"
+        }
+      },
+      "Friction": 0.18,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_2",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MaxValue": 40.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.1111112,
+          "Values": [
+            40.0,
+            10.0,
+            0.5,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 3.3333333,
+          "TimeBias": 0.7,
+          "Values": [
+            1.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_6",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 4.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            4.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveSphere",
+    "Name": "ParticleModuleLocationPrimitiveSphere_5",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveSphere'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Negative_Z": false,
+      "Velocity": true,
+      "VelocityScale": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 5.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 5.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            5.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_1",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorUniform'P_FX_Goblin_Sword_Charge:ParticleModuleOrbit_1.DistributionOffsetAmount'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.5"
+        }
+      },
+      "RotationAmount": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorUniform'P_FX_Goblin_Sword_Charge:ParticleModuleOrbit_1.DistributionRotationAmount'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.6"
+        }
+      },
+      "RotationRateAmount": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorUniform'P_FX_Goblin_Sword_Charge:ParticleModuleOrbit_1.DistributionRotationRateAmount'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.7"
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModulePivotOffset",
+    "Name": "ParticleModulePivotOffset_0",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModulePivotOffset'",
+    "Properties": {
+      "bEnabled": false,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_6",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_BasicGlow_Add'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_BasicGlow_Add.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_FX_Goblin_Sword_Charge:ParticleModuleRequired_6.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.3"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_7",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 0.5,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 0.5,
+          "Y": 0.5,
+          "Z": 0.5
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5,
+            0.5,
+            0.5,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 3,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeScaleBySpeed",
+    "Name": "ParticleModuleSizeScaleBySpeed_1",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleSizeScaleBySpeed'",
+    "Properties": {
+      "SpeedScale": {
+        "X": 0.2,
+        "Y": 0.36
+      },
+      "MaxScale": {
+        "X": 1.0,
+        "Y": 3.0
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_7",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 10.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": {
+          "ObjectName": "DistributionFloatParticleParameter'P_FX_Goblin_Sword_Charge:ParticleModuleSpawn_7.DistributionFloatParticleParameter_3'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.4"
+        },
+        "Table": {
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_FX_Goblin_Sword_Charge:ParticleModuleRequired_6'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.18"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_FX_Goblin_Sword_Charge:ParticleModuleSpawn_7'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.21"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_FX_Goblin_Sword_Charge:ParticleModuleRequired_6'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.18"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_FX_Goblin_Sword_Charge:ParticleModuleLifetime_6'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.14"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_FX_Goblin_Sword_Charge:ParticleModuleSize_7'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.19"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity'P_FX_Goblin_Sword_Charge:ParticleModuleVelocity_1'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.23"
+          },
+          {
+            "ObjectName": "ParticleModuleLocationPrimitiveSphere'P_FX_Goblin_Sword_Charge:ParticleModuleLocationPrimitiveSphere_5'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.15"
+          }
+        ],
+        "OrbitOffsetBase": {
+          "X": -15.999999,
+          "Y": -4.9999995,
+          "Z": -0.0
+        },
+        "OrbitOffsetRange": {
+          "X": 31.999998,
+          "Y": 9.999998,
+          "Z": 0.0
+        },
+        "InvMaxSize": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "InvRotationRateScale": 0.25,
+        "MaxLifetime": 4.0,
+        "MaxParticleCount": 82,
+        "ScreenAlignment": "PSA_Velocity",
+        "bEnableCollision": true
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 255,
+            "G": 255,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00FFFF"
+          },
+          {
+            "B": 252,
+            "G": 252,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00FCFC"
+          },
+          {
+            "B": 249,
+            "G": 249,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00F9F9"
+          },
+          {
+            "B": 246,
+            "G": 246,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00F6F6"
+          },
+          {
+            "B": 243,
+            "G": 243,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00F3F3"
+          },
+          {
+            "B": 240,
+            "G": 240,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00F0F0"
+          },
+          {
+            "B": 237,
+            "G": 237,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00EDED"
+          },
+          {
+            "B": 234,
+            "G": 234,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00EAEA"
+          },
+          {
+            "B": 232,
+            "G": 232,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00E8E8"
+          },
+          {
+            "B": 229,
+            "G": 229,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00E5E5"
+          },
+          {
+            "B": 226,
+            "G": 226,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00E2E2"
+          },
+          {
+            "B": 223,
+            "G": 223,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00DFDF"
+          },
+          {
+            "B": 220,
+            "G": 220,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00DCDC"
+          },
+          {
+            "B": 217,
+            "G": 217,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00D9D9"
+          },
+          {
+            "B": 214,
+            "G": 214,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00D6D6"
+          },
+          {
+            "B": 211,
+            "G": 211,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00D3D3"
+          },
+          {
+            "B": 209,
+            "G": 209,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00D1D1"
+          },
+          {
+            "B": 206,
+            "G": 206,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00CECE"
+          },
+          {
+            "B": 203,
+            "G": 203,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00CBCB"
+          },
+          {
+            "B": 200,
+            "G": 200,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00C8C8"
+          },
+          {
+            "B": 197,
+            "G": 197,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00C5C5"
+          },
+          {
+            "B": 194,
+            "G": 194,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00C2C2"
+          },
+          {
+            "B": 191,
+            "G": 191,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00BFBF"
+          },
+          {
+            "B": 189,
+            "G": 189,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00BDBD"
+          },
+          {
+            "B": 186,
+            "G": 186,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00BABA"
+          },
+          {
+            "B": 183,
+            "G": 183,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00B7B7"
+          },
+          {
+            "B": 180,
+            "G": 180,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00B4B4"
+          },
+          {
+            "B": 177,
+            "G": 177,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00B1B1"
+          },
+          {
+            "B": 174,
+            "G": 174,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00AEAE"
+          },
+          {
+            "B": 171,
+            "G": 171,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00ABAB"
+          },
+          {
+            "B": 168,
+            "G": 168,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00A8A8"
+          },
+          {
+            "B": 166,
+            "G": 166,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00A6A6"
+          },
+          {
+            "B": 163,
+            "G": 163,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00A3A3"
+          },
+          {
+            "B": 160,
+            "G": 160,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF00A0A0"
+          },
+          {
+            "B": 157,
+            "G": 157,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF009D9D"
+          },
+          {
+            "B": 154,
+            "G": 154,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF009A9A"
+          },
+          {
+            "B": 151,
+            "G": 151,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF009797"
+          },
+          {
+            "B": 148,
+            "G": 148,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF009494"
+          },
+          {
+            "B": 146,
+            "G": 146,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF009292"
+          },
+          {
+            "B": 143,
+            "G": 143,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF008F8F"
+          },
+          {
+            "B": 140,
+            "G": 140,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF008C8C"
+          },
+          {
+            "B": 137,
+            "G": 137,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF008989"
+          },
+          {
+            "B": 134,
+            "G": 134,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF008686"
+          },
+          {
+            "B": 131,
+            "G": 131,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF008383"
+          },
+          {
+            "B": 128,
+            "G": 128,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF008080"
+          },
+          {
+            "B": 125,
+            "G": 125,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF007D7D"
+          },
+          {
+            "B": 123,
+            "G": 123,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF007B7B"
+          },
+          {
+            "B": 120,
+            "G": 120,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF007878"
+          },
+          {
+            "B": 117,
+            "G": 117,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF007575"
+          },
+          {
+            "B": 114,
+            "G": 114,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF007272"
+          },
+          {
+            "B": 111,
+            "G": 111,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF006F6F"
+          },
+          {
+            "B": 108,
+            "G": 108,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF006C6C"
+          },
+          {
+            "B": 105,
+            "G": 105,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF006969"
+          },
+          {
+            "B": 102,
+            "G": 102,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF006666"
+          },
+          {
+            "B": 100,
+            "G": 100,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF006464"
+          },
+          {
+            "B": 97,
+            "G": 97,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF006161"
+          },
+          {
+            "B": 94,
+            "G": 94,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF005E5E"
+          },
+          {
+            "B": 91,
+            "G": 91,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF005B5B"
+          },
+          {
+            "B": 88,
+            "G": 88,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF005858"
+          },
+          {
+            "B": 85,
+            "G": 85,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF005555"
+          },
+          {
+            "B": 82,
+            "G": 82,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF005252"
+          },
+          {
+            "B": 80,
+            "G": 80,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF005050"
+          },
+          {
+            "B": 77,
+            "G": 77,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF004D4D"
+          },
+          {
+            "B": 74,
+            "G": 74,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF004A4A"
+          },
+          {
+            "B": 71,
+            "G": 71,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF004747"
+          },
+          {
+            "B": 68,
+            "G": 68,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF004444"
+          },
+          {
+            "B": 65,
+            "G": 65,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF004141"
+          },
+          {
+            "B": 62,
+            "G": 62,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF003E3E"
+          },
+          {
+            "B": 59,
+            "G": 59,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF003B3B"
+          },
+          {
+            "B": 57,
+            "G": 57,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF003939"
+          },
+          {
+            "B": 54,
+            "G": 54,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF003636"
+          },
+          {
+            "B": 51,
+            "G": 51,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF003333"
+          },
+          {
+            "B": 48,
+            "G": 48,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF003030"
+          },
+          {
+            "B": 45,
+            "G": 45,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF002D2D"
+          },
+          {
+            "B": 42,
+            "G": 42,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF002A2A"
+          },
+          {
+            "B": 39,
+            "G": 39,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF002727"
+          },
+          {
+            "B": 37,
+            "G": 37,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF002525"
+          },
+          {
+            "B": 34,
+            "G": 34,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF002222"
+          },
+          {
+            "B": 31,
+            "G": 31,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF001F1F"
+          },
+          {
+            "B": 28,
+            "G": 28,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF001C1C"
+          },
+          {
+            "B": 25,
+            "G": 25,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF001919"
+          },
+          {
+            "B": 22,
+            "G": 22,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF001616"
+          },
+          {
+            "B": 19,
+            "G": 19,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF001313"
+          },
+          {
+            "B": 16,
+            "G": 16,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF001010"
+          },
+          {
+            "B": 14,
+            "G": 14,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000E0E"
+          },
+          {
+            "B": 11,
+            "G": 11,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000B0B"
+          },
+          {
+            "B": 8,
+            "G": 8,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000808"
+          },
+          {
+            "B": 5,
+            "G": 5,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000505"
+          },
+          {
+            "B": 2,
+            "G": 2,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000202"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 247,
+            "Hex": "F7000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 240,
+            "Hex": "F0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 234,
+            "Hex": "EA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 227,
+            "Hex": "E3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 220,
+            "Hex": "DC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 214,
+            "Hex": "D6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 207,
+            "Hex": "CF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 200,
+            "Hex": "C8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 194,
+            "Hex": "C2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 187,
+            "Hex": "BB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 180,
+            "Hex": "B4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 174,
+            "Hex": "AE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 167,
+            "Hex": "A7000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 160,
+            "Hex": "A0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 153,
+            "Hex": "99000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 147,
+            "Hex": "93000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 140,
+            "Hex": "8C000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 133,
+            "Hex": "85000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 127,
+            "Hex": "7F000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 120,
+            "Hex": "78000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 113,
+            "Hex": "71000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 107,
+            "Hex": "6B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 100,
+            "Hex": "64000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 93,
+            "Hex": "5D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 87,
+            "Hex": "57000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 80,
+            "Hex": "50000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 73,
+            "Hex": "49000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 66,
+            "Hex": "42000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 60,
+            "Hex": "3C000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 53,
+            "Hex": "35000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 46,
+            "Hex": "2E000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 40,
+            "Hex": "28000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 33,
+            "Hex": "21000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 26,
+            "Hex": "1A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 20,
+            "Hex": "14000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 13,
+            "Hex": "0D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 6,
+            "Hex": "06000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 1490.0001,
+          "Z": 1046.2318,
+          "W": 1.0
+        },
+        "ColorBias": {
+          "X": 0.0,
+          "Y": 10.0,
+          "Z": 7.892427,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.2,
+          "Y": 0.36,
+          "Z": 1.0,
+          "W": 3.0
+        },
+        "OrbitOffsetBase": {
+          "X": -4.0,
+          "Y": -2.5,
+          "Z": 0.0
+        },
+        "OrbitOffsetRange": {
+          "X": 8.0,
+          "Y": 5.0,
+          "Z": 0.0
+        },
+        "OrbitFrequencyBase": {
+          "X": 3.1415927,
+          "Y": 3.1415927,
+          "Z": -3.1415927
+        },
+        "OrbitFrequencyRange": {
+          "X": 9.424778,
+          "Y": 9.424778,
+          "Z": -9.424778
+        },
+        "OrbitPhaseBase": {
+          "X": 1.5707964,
+          "Y": 0.0,
+          "Z": 1.5707964
+        },
+        "OrbitPhaseRange": {
+          "X": 6.2831855,
+          "Y": 6.2831855,
+          "Z": -6.2831855
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "DragCoefficientBias": 1.0,
+        "ResilienceBias": 0.2,
+        "CollisionRadiusScale": 0.5,
+        "OneMinusFriction": 0.82,
+        "RotationRateScale": 4.0,
+        "ScreenAlignment": "PSA_Velocity"
+      },
+      "bClearExistingParticlesOnInit": true,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_1",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MaxValue": 100.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 50.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 100.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            50.0,
+            0.0,
+            0.0,
+            100.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Sparks_Ring",
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_FX_Goblin_Sword_Charge:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.8"
+        },
+        {
+          "ObjectName": "ParticleLODLevel'P_FX_Goblin_Sword_Charge:ParticleSpriteEmitter_0.ParticleLODLevel_1'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.9"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_FX_Goblin_Sword_Charge",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_FX_Goblin_Sword_Charge:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/P_FX_Goblin_Sword_Charge.24"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0,
+        2500.0
+      ],
+      "LODSettings": [
+        {},
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -157.84232,
+          "Y": -159.74869,
+          "Z": -97.709885
+        },
+        "Max": {
+          "X": 167.84607,
+          "Y": 161.82474,
+          "Z": 267.03394
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_MotionBlur_Texture",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "BlendMode": "BLEND_Translucent",
+      "wMotionDither": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_0",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "wMotion": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "bEnableResponsiveAA": true,
+      "bUsedWithMeshParticles": true,
+      "bUsedWithNiagaraSprites": true,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bwWritesMotionVector": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "bAllowMotionVectorRendering": true,
+      "StateId": "59D253A5-4BFD80D4-2EBA698A-FF2F052B",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              941084903761908469,
+              1275974321784923484,
+              4603736703977729178,
+              4625507759893821283,
+              4699539370346601235,
+              10787980590346791840,
+              14784546327614961129,
+              17320936364903824209
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Texture Tiling",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Pan V",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "MotionBlur Strength",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Distance Fade Start (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Test",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Distance Fade Length (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "SphereMask Hardness",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Pan U",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "EC06C32F-4DAA4DF1-D57E8FBD-036E0DB0",
+              "A0B244A3-437A9801-A79D209A-CBE1222A",
+              "27150B60-4B03F3D3-E9765E99-59CB045A",
+              "6586881F-4D583FB0-13756292-D995B05A",
+              "69422285-4CFADD7D-8CEB9784-CD95AF27",
+              "1504B2DB-413ED7F3-861ECF86-55FCCB89",
+              "D0984975-487A171C-E6AA62A4-7C748F01",
+              "D990C774-45735B55-43BFDFB9-5BC8D7CA"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              9370397008804753684
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "MotionVector_Texture (T2d)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "DE7EE49A-44215A9A-28F37E8A-17FEA019"
+            ]
+          },
+          "ScalarValues": [
+            1.380953,
+            -0.352381,
+            0.040814,
+            100.0,
+            0.168,
+            1850.0,
+            0.633333,
+            0.295238
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_RibbonOffset_N'",
+              "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'Good64x64TilingNoiseHighFreq'",
+            "ObjectPath": "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_RibbonOffset_N'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "71028A8D-47BF4037-3A3A0B8A-D7B60E53",
+            "Function": {
+              "ObjectName": "MaterialFunction'ScreenAlignedPixelToPixelUVs'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.0"
+            }
+          },
+          {
+            "StateId": "22D58D0F-45CC84AB-89A3628B-351D83C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'DitherTemporalAA'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.0"
+            }
+          },
+          {
+            "StateId": "DB3E993F-4E2E98B3-05AD13B9-2D8C5DA5",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraDepthFade'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.0"
+            }
+          },
+          {
+            "StateId": "00FD99B9-49B05308-CE4AACB3-E07E89A6",
+            "Function": {
+              "ObjectName": "MaterialFunction'VFX_MF_MotionBlur_ScreenSpaceTexture'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_MotionBlur_ScreenSpaceTexture.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "BlurStrength",
+          "Param2",
+          "Param3",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.375,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_RibbonOffset_N"
+        }
+      ]
+    }
+  }
+]

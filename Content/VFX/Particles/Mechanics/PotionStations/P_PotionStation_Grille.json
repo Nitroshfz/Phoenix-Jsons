@@ -1,0 +1,606 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstantCurve",
+    "Name": "DistributionFloatConstantCurve_0",
+    "Outer": "ParticleModuleSubUVMovie_0",
+    "Class": "UScriptClass'DistributionFloatConstantCurve'",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_PotionStation_Grille:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_PotionStation_Grille:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.7"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_PotionStation_Grille:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_PotionStation_Grille:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.6"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_PotionStation_Grille:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.10"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_PotionStation_Grille:ParticleModuleAccelerationDrag_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.5"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_PotionStation_Grille:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_PotionStation_Grille:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.12"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUVMovie'P_PotionStation_Grille:ParticleModuleSubUVMovie_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.14"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_PotionStation_Grille:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.8"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_PotionStation_Grille:ParticleModuleVelocityCone_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.15"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_PotionStation_Grille:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.13"
+      },
+      "PeakActiveParticles": 8
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MaxValue": 70.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 40.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 70.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            40.0,
+            0.0,
+            0.0,
+            70.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 1.5,
+        "MaxValue": 1.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.177083,
+        "MaxValue": 0.177083,
+        "MinValueVec": {
+          "X": 0.177083,
+          "Y": 0.177083,
+          "Z": 0.177083
+        },
+        "MaxValueVec": {
+          "X": 0.177083,
+          "Y": 0.177083,
+          "Z": 0.177083
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.177083,
+            0.177083,
+            0.177083
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            0.0,
+            0.06777085,
+            0.23853585,
+            0.46431285,
+            0.69711983,
+            0.88897455,
+            0.9919445,
+            0.99444443,
+            0.9865079,
+            0.9785714,
+            0.9706349,
+            0.9626984,
+            0.95476186,
+            0.9468254,
+            0.9388889,
+            0.93095237,
+            0.9230159,
+            0.91507936,
+            0.9071429,
+            0.8992063,
+            0.8912698,
+            0.88333327,
+            0.8753968,
+            0.8674603,
+            0.8595238,
+            0.85158724,
+            0.84365076,
+            0.8357143,
+            0.82777774,
+            0.8198412,
+            0.81190467,
+            0.8039682,
+            0.79603165,
+            0.7880952,
+            0.7801587,
+            0.77222216,
+            0.7642857,
+            0.75634915,
+            0.74841267,
+            0.7404762,
+            0.73253965,
+            0.7246032,
+            0.71666664,
+            0.70873016,
+            0.7011599,
+            0.69949645,
+            0.6928709,
+            0.6803704,
+            0.66275275,
+            0.6407766,
+            0.6151996,
+            0.58678037,
+            0.55627656,
+            0.5244468,
+            0.49204886,
+            0.45984113,
+            0.4285816,
+            0.39902857,
+            0.37193993,
+            0.34807405,
+            0.3281889,
+            0.31304285,
+            0.30339372,
+            0.3
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -20.0,
+        "MaxValue": 20.0,
+        "MinValueVec": {
+          "X": -20.0,
+          "Y": 0.0,
+          "Z": -20.0
+        },
+        "MaxValueVec": {
+          "X": 20.0,
+          "Y": 0.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -20.0,
+            0.0,
+            -20.0,
+            20.0,
+            0.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Smoke_wispy_heat'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Smoke_wispy_heat.0"
+      },
+      "SortMode": "PSORTMODE_Age_OldestFirst",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStation_Grille:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.0"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 8,
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 4.0,
+        "MaxValue": 6.0,
+        "MinValueVec": {
+          "X": 4.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 6.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            4.0,
+            4.0,
+            6.0,
+            6.0,
+            6.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 2.0,
+        "MaxValue": 15.0,
+        "MinValueVec": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        },
+        "MaxValueVec": {
+          "X": 15.0,
+          "Y": 15.0,
+          "Z": 15.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            2.0,
+            2.0,
+            2.0,
+            15.0,
+            15.0,
+            15.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStation_Grille:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUVMovie",
+    "Name": "ParticleModuleSubUVMovie_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleSubUVMovie'",
+    "Properties": {
+      "FrameRate": {
+        "MinValue": 35.0,
+        "MaxValue": 35.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            35.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartingFrame": 0,
+      "SubImageIndex": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstantCurve'P_PotionStation_Grille:ParticleModuleSubUVMovie_0.DistributionFloatConstantCurve_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_1",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Direction": {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Smoke",
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_PotionStation_Grille:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_PotionStation_Grille",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_PotionStation_Grille:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Grille.16"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

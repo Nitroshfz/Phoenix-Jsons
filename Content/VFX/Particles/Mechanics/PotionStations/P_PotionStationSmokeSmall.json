@@ -1,0 +1,563 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstantCurve",
+    "Name": "DistributionFloatConstantCurve_0",
+    "Outer": "ParticleModuleSubUVMovie_0",
+    "Class": "UScriptClass'DistributionFloatConstantCurve'",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_PotionStationSmokeSmall:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_PotionStationSmokeSmall:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.7"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_PotionStationSmokeSmall:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_PotionStationSmokeSmall:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.6"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_PotionStationSmokeSmall:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.9"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_PotionStationSmokeSmall:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_PotionStationSmokeSmall:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.11"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUVMovie'P_PotionStationSmokeSmall:ParticleModuleSubUVMovie_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.13"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_PotionStationSmokeSmall:ParticleModuleVelocityCone_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.14"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_PotionStationSmokeSmall:ParticleModuleAccelerationDrag_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.5"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_PotionStationSmokeSmall:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.12"
+      },
+      "PeakActiveParticles": 8
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 50.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 50.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            50.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.177083,
+        "MaxValue": 0.177083,
+        "MinValueVec": {
+          "X": 0.177083,
+          "Y": 0.177083,
+          "Z": 0.177083
+        },
+        "MaxValueVec": {
+          "X": 0.177083,
+          "Y": 0.177083,
+          "Z": 0.177083
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.177083,
+            0.177083,
+            0.177083
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            0.0,
+            0.06777085,
+            0.23853585,
+            0.46431285,
+            0.69711983,
+            0.88897455,
+            0.9919445,
+            0.99444443,
+            0.9865079,
+            0.9785714,
+            0.9706349,
+            0.9626984,
+            0.95476186,
+            0.9468254,
+            0.9388889,
+            0.93095237,
+            0.9230159,
+            0.91507936,
+            0.9071429,
+            0.8992063,
+            0.8912698,
+            0.88333327,
+            0.8753968,
+            0.8674603,
+            0.8595238,
+            0.85158724,
+            0.84365076,
+            0.8357143,
+            0.82777774,
+            0.8198412,
+            0.81190467,
+            0.8039682,
+            0.79603165,
+            0.7880952,
+            0.7801587,
+            0.77222216,
+            0.7642857,
+            0.75634915,
+            0.74841267,
+            0.7404762,
+            0.73253965,
+            0.7246032,
+            0.71666664,
+            0.70873016,
+            0.7011599,
+            0.69949645,
+            0.6928709,
+            0.6803704,
+            0.66275275,
+            0.6407766,
+            0.6151996,
+            0.58678037,
+            0.55627656,
+            0.5244468,
+            0.49204886,
+            0.45984113,
+            0.4285816,
+            0.39902857,
+            0.37193993,
+            0.34807405,
+            0.3281889,
+            0.31304285,
+            0.30339372,
+            0.3
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Smoke_wispy'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Smoke_wispy.0"
+      },
+      "SortMode": "PSORTMODE_Age_OldestFirst",
+      "bUseLegacyEmitterTime": false,
+      "bEmitterDurationUseRange": true,
+      "EmitterDuration": 2.0,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStationSmokeSmall:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.0"
+        }
+      },
+      "EmitterDelay": 1.0,
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "bEmitterDelayUseRange": true,
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 8,
+      "RandomImageTime": 1.0,
+      "bDurationRecalcEachLoop": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 4.0,
+        "MaxValue": 7.0,
+        "MinValueVec": {
+          "X": 4.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 7.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            4.0,
+            4.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 9.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 9.0,
+          "Y": 9.0,
+          "Z": 9.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            9.0,
+            9.0,
+            9.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStationSmokeSmall:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUVMovie",
+    "Name": "ParticleModuleSubUVMovie_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleSubUVMovie'",
+    "Properties": {
+      "FrameRate": {
+        "MinValue": 28.0,
+        "MaxValue": 28.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            28.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartingFrame": 0,
+      "SubImageIndex": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstantCurve'P_PotionStationSmokeSmall:ParticleModuleSubUVMovie_0.DistributionFloatConstantCurve_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.7,
+        "MaxValue": 0.7,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.7
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 10.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_PotionStationSmokeSmall:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_PotionStationSmokeSmall",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_PotionStationSmokeSmall:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmokeSmall.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

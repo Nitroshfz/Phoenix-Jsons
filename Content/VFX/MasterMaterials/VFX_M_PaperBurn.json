@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_PaperBurn",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_16",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Masked",
+      "bUsedWithNiagaraMeshParticles": true,
+      "StateId": "5E2AB681-446C8C3A-20A7DC97-A627C761",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              112836435987061177,
+              7123063324176563453,
+              7350596869229025732,
+              14244823414855202744,
+              14956943124152986941
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "temperature",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "TimeScale",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Burn",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Gradient",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Burn_1",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "2EADFFB8-4797E5D3-D44D6B9D-27EF19E8",
+              "ED226D59-4C9F83AD-7972F293-8FC1B109",
+              "2B0DC665-48CE02FC-51AD4192-EE6FC43E",
+              "DA87682C-435980E5-349B7DB8-F6BB7533",
+              "9B457DD6-47DDC637-44991EA4-CAAF7CBD"
+            ]
+          },
+          "ScalarValues": [
+            3200.0,
+            0.5,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'T_Smoke_Tiled_D'",
+            "ObjectPath": "/Game/VFX/Textures/T_Smoke_Tiled_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_1x1_Grid'",
+            "ObjectPath": "/Engine/EngineDebugMaterials/T_1x1_Grid.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+            "Function": {
+              "ObjectName": "MaterialFunction'LinearGradient'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+            }
+          },
+          {
+            "StateId": "E36855D3-4F101683-B3F0D590-4E53AD6F",
+            "Function": {
+              "ObjectName": "MaterialFunction'3ColorBlend'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.0"
+            }
+          },
+          {
+            "StateId": "0B3EAD8B-45552325-638DB789-823F414D",
+            "Function": {
+              "ObjectName": "MaterialFunction'PlotFunctionOnGraph'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Debug/PlotFunctionOnGraph.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Smoke_Tiled_D"
+        }
+      ]
+    }
+  }
+]

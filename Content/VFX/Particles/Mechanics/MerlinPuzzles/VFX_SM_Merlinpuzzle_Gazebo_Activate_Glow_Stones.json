@@ -1,0 +1,209 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "6BD009A142E565C8F158E6AD56B7E48B",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2A83"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2AE7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_Gazebo_Base_Stone_Glow'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/MerlinPuzzles/VFX_MI_Gazebo_Base_Stone_Glow.0"
+          },
+          "MaterialSlotName": "Base_Stone",
+          "ImportedMaterialSlotName": "Base_Stone",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 69.48965,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 69.48965,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.060562134,
+          "Y": -0.3085022,
+          "Z": -1.184381
+        },
+        "BoxExtent": {
+          "X": 178.49107,
+          "Y": 176.524,
+          "Z": 2.2697477
+        },
+        "SphereRadius": 178.52345
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Particles/Mechanics/MerlinPuzzles/VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones:NavCollision_2'",
+      "ObjectPath": "/Game/VFX/Particles/Mechanics/MerlinPuzzles/VFX_SM_Merlinpuzzle_Gazebo_Activate_Glow_Stones.1"
+    },
+    "LightingGuid": "5FF63A22-4E5A0967-358A6EB3-22655D1C",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 256,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 163,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 164
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 164,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 64,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 48,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 19.462414,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 49
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 49,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.060562134,
+          "Y": -0.3085022,
+          "Z": -1.184381
+        },
+        "BoxExtent": {
+          "X": 178.49107,
+          "Y": 176.524,
+          "Z": 2.2697477
+        },
+        "SphereRadius": 178.52345
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.036725335,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

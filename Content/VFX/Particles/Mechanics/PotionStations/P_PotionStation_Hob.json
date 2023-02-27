@@ -1,0 +1,561 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstantCurve",
+    "Name": "DistributionFloatConstantCurve_0",
+    "Outer": "ParticleModuleSubUVMovie_0",
+    "Class": "UScriptClass'DistributionFloatConstantCurve'",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_PotionStation_Hob:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_PotionStation_Hob:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.7"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_PotionStation_Hob:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_PotionStation_Hob:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.6"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_PotionStation_Hob:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.9"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_PotionStation_Hob:ParticleModuleAccelerationDrag_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.5"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_PotionStation_Hob:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_PotionStation_Hob:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.12"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUVMovie'P_PotionStation_Hob:ParticleModuleSubUVMovie_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.14"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_PotionStation_Hob:ParticleModuleVelocityCone_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.15"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_PotionStation_Hob:ParticleModuleRotationRate_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.10"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_PotionStation_Hob:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.13"
+      },
+      "PeakActiveParticles": 6
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 20.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 50.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            20.0,
+            0.0,
+            0.0,
+            50.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.177083,
+        "MaxValue": 0.177083,
+        "MinValueVec": {
+          "X": 0.177083,
+          "Y": 0.177083,
+          "Z": 0.177083
+        },
+        "MaxValueVec": {
+          "X": 0.177083,
+          "Y": 0.177083,
+          "Z": 0.177083
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.177083,
+            0.177083,
+            0.177083
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 31.0,
+          "Values": [
+            0.0,
+            0.11924408,
+            0.39599675,
+            0.71110475,
+            0.9454146,
+            0.99384165,
+            0.9762463,
+            0.958651,
+            0.9410557,
+            0.9234604,
+            0.90586513,
+            0.8882698,
+            0.8706745,
+            0.85307914,
+            0.8354839,
+            0.81788856,
+            0.80029327,
+            0.782698,
+            0.76510257,
+            0.74750733,
+            0.729912,
+            0.71231675,
+            0.6993121,
+            0.6681064,
+            0.60002464,
+            0.5058894,
+            0.39652237,
+            0.28274652,
+            0.17538445,
+            0.085257664,
+            0.023188688,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Smoke_wispy_heat_Hob'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Smoke_wispy_heat_Hob.0"
+      },
+      "SortMode": "PSORTMODE_Age_OldestFirst",
+      "bUseLegacyEmitterTime": false,
+      "bEmitterDurationUseRange": true,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStation_Hob:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.0"
+        }
+      },
+      "EmitterDelay": 1.0,
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "bEmitterDelayUseRange": true,
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 8,
+      "RandomImageTime": 1.0,
+      "bDurationRecalcEachLoop": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_1",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.1,
+        "MaxValue": 0.1,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.1,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 4.0,
+        "MaxValue": 7.0,
+        "MinValueVec": {
+          "X": 4.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 7.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            4.0,
+            4.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 3.0,
+        "MaxValue": 9.0,
+        "MinValueVec": {
+          "X": 3.0,
+          "Y": 3.0,
+          "Z": 3.0
+        },
+        "MaxValueVec": {
+          "X": 9.0,
+          "Y": 9.0,
+          "Z": 9.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            3.0,
+            3.0,
+            3.0,
+            9.0,
+            9.0,
+            9.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStation_Hob:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUVMovie",
+    "Name": "ParticleModuleSubUVMovie_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleSubUVMovie'",
+    "Properties": {
+      "FrameRate": {
+        "MinValue": 28.0,
+        "MaxValue": 28.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            28.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartingFrame": 0,
+      "SubImageIndex": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstantCurve'P_PotionStation_Hob:ParticleModuleSubUVMovie_0.DistributionFloatConstantCurve_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.7,
+        "MaxValue": 0.7,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.7
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 50.0,
+        "MaxValue": 50.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_PotionStation_Hob:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_PotionStation_Hob",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_PotionStation_Hob:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStation_Hob.16"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

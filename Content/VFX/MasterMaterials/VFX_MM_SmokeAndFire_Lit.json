@@ -1,0 +1,248 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_SmokeAndFire_Lit",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_4",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_5",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "TranslucencyLightingMode": "TLM_VolumetricDirectional",
+      "bUsedWithParticleSprites": true,
+      "bUsedWithNiagaraSprites": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "1719671D-4F7DE229-6BDC4590-5EB33A82",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              2804038217108082748,
+              4596945906353737216,
+              9369013111957629629
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "UseParallelFade",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "UseGreenForAlphaClip",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Normal_Power",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "3253EFE1-4AF69303-F4D721A2-717A754D",
+              "A5EE91FB-43BAA780-7103ADB7-81E03F20",
+              "8329216B-4164A0A9-D0D276BB-5C92A210"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              632270065815121703
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Smoke Color",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "EBC40561-44DF0766-3E3B4282-739FF27F"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              8045874165131959768,
+              14190460161452415262
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Normal_Testure",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "ParticleTexture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "DAC70B62-4A3861F5-BD44B2BD-0D5E1203",
+              "1D5FDA13-49A372EB-309608B6-A33D1DD6"
+            ]
+          },
+          "ScalarValues": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "VectorValues": [
+            {
+              "R": 0.05,
+              "G": 0.05,
+              "B": 0.05,
+              "A": 0.0,
+              "Hex": "3F3F3F"
+            }
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_Smoke_8x4_N'",
+              "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x4_N.0"
+            },
+            {
+              "ObjectName": "Texture2D'VFX_T_Smoke_8x4_D'",
+              "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x4_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_Smoke_8x4_D'",
+            "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x4_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Smoke_8x4_N'",
+            "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x4_N.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "4B8EBF11-45D10188-C49EF894-8787AE93",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraOffset'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.0"
+            }
+          },
+          {
+            "StateId": "DB3E993F-4E2E98B3-05AD13B9-2D8C5DA5",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraDepthFade'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "92BFDEE9-4115ED35-5EB10C80-106925DB",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ColorPower'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_ColorPower.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "alphaClipMultiplier",
+          "GlowMultiplier",
+          "DephFadeDistance",
+          "NearCameraFade"
+        ],
+        "QualityLevelsUsed": [
+          true,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

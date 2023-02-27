@@ -1,0 +1,174 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_VFX_Bread_Chunks_03",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "37D2AE0E4F5A6D67663D01913F163649",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x26B0"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "SM_VFX_Bread_Chunks_03",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2714"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_VFX_Bread_Chunks_03",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_CCL_Food_Bread'",
+            "ObjectPath": "/Game/Cinematics/Props/Materials/MI_CCL_Food_Bread.0"
+          },
+          "MaterialSlotName": "MI_CCL_Food_Bread",
+          "ImportedMaterialSlotName": "MI_CCL_Food_Bread",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 48.914917,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 48.914917,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 1.7028275,
+          "Y": 2.5469987,
+          "Z": 1.5536985
+        },
+        "SphereRadius": 3.051893
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_VFX_Bread_Chunks_03:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/World_Events/SuperSmashGhost/SM_VFX_Bread_Chunks_03.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_VFX_Bread_Chunks_03:NavCollision_1'",
+      "ObjectPath": "/Game/VFX/World_Events/SuperSmashGhost/SM_VFX_Bread_Chunks_03.1"
+    },
+    "LightingGuid": "8D3AAD28-431EF3AD-BCDDDE8D-105D37CE",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 28,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 53,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 54
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 54,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 1.7028275,
+          "Y": 2.5469987,
+          "Z": 1.5536985
+        },
+        "SphereRadius": 3.051893
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.021829333,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

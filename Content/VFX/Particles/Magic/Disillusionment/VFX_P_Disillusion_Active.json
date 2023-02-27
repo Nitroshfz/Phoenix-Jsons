@@ -1,0 +1,352 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'VFX_P_Disillusion_Active:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'VFX_P_Disillusion_Active:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'VFX_P_Disillusion_Active:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.7"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'VFX_P_Disillusion_Active:ParticleModuleVelocity_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'VFX_P_Disillusion_Active:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.3"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'VFX_P_Disillusion_Active:ParticleModuleLocation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.5"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'VFX_P_Disillusion_Active:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.8"
+      },
+      "PeakActiveParticles": 23
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 8.352981,
+          "Y": 9.493954,
+          "Z": 10.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            8.352981,
+            9.493954,
+            10.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.01,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.01
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -50.0,
+        "MaxValue": 50.0,
+        "MinValueVec": {
+          "X": -15.0,
+          "Y": -15.0,
+          "Z": -50.0
+        },
+        "MaxValueVec": {
+          "X": 15.0,
+          "Y": 15.0,
+          "Z": 50.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -15.0,
+            -15.0,
+            -50.0,
+            15.0,
+            15.0,
+            50.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_Flare'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_Flare.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_Disillusion_Active:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_Disillusion_Active:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -5.0,
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": -5.0,
+          "Y": -5.0,
+          "Z": -5.0
+        },
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 5.0,
+          "Z": 5.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -5.0,
+            -5.0,
+            -5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'VFX_P_Disillusion_Active:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "VFX_P_Disillusion_Active",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'VFX_P_Disillusion_Active:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Magic/Disillusionment/VFX_P_Disillusion_Active.10"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

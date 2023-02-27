@@ -1,0 +1,272 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_HW_SquidGrotto_Tiles_Body",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "A42CEDAD4F8D8B016CC5FC937AC0D5A2",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x10AD6"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VFX_SM_HW_SquidGrotto_Tiles_Body",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x10B3A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_HW_SquidGrotto_Tiles_Body",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_GroundsQ_Grotto_Mosaic'",
+            "ObjectPath": "/Game/Environment/Hogwarts/SUB_GroundsQ/Materials/MI_HW_GroundsQ_Grotto_Mosaic.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 606.3121,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 606.3121,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -13.477348,
+          "Y": -9.76762E-15,
+          "Z": 159.51733
+        },
+        "BoxExtent": {
+          "X": 125.46908,
+          "Y": 6.46175E-15,
+          "Z": 105.52838
+        },
+        "SphereRadius": 151.6251
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_HW_SquidGrotto_Tiles_Body:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/VFX_SM_HW_SquidGrotto_Tiles_Body.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_HW_SquidGrotto_Tiles_Body:NavCollision_1'",
+      "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/VFX_SM_HW_SquidGrotto_Tiles_Body.1"
+    },
+    "LightingGuid": "70F7F1B5-4C3DA15F-04ACAC90-E0571FD6",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4031,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 2238,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2239
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 2239,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 2239
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1008,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 694,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0013657603,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 695
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 695,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 695
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 252,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 240,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 3.2688172,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 241
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 241,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 241
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 63,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 57,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 40.82114,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 58
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 58,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 58
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -13.477348,
+          "Y": -9.76762E-15,
+          "Z": 159.51733
+        },
+        "BoxExtent": {
+          "X": 125.46908,
+          "Y": 6.46175E-15,
+          "Z": 105.52838
+        },
+        "SphereRadius": 151.6251
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.28335866,
+        "NaN",
+        0.08583966,
+        "NaN",
+        0.036459915,
+        "NaN",
+        0.024114978,
+        "NaN"
+      ]
+    }
+  }
+]

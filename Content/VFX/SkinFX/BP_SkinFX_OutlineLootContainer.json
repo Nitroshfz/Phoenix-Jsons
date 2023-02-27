@@ -1,0 +1,257 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkinFX_OutlineLootContainer_C",
+    "Super": "BP_SkinFX_NoGraph_Parent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkinFX_OutlineLootContainer_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_OutlineLootContainer.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkinFX_OutlineLootContainer_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_OutlineLootContainer.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkinFX_NoGraph_Parent_C'",
+      "ObjectPath": "/SkinFX/BP_SkinFX_NoGraph_Parent.1"
+    },
+    "ClassFlags": 8653332,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkinFX_OutlineLootContainer_C'Default__BP_SkinFX_OutlineLootContainer_C'",
+      "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_OutlineLootContainer.1"
+    }
+  },
+  {
+    "Type": "BP_SkinFX_OutlineLootContainer_C",
+    "Name": "Default__BP_SkinFX_OutlineLootContainer_C",
+    "Template": "Default__BP_SkinFX_NoGraph_Parent_C",
+    "Class": "BlueprintGeneratedClass'/Game/VFX/SkinFX/BP_SkinFX_OutlineLootContainer.BP_SkinFX_OutlineLootContainer_C'",
+    "Properties": {
+      "Priority": "ESkinFXEffectPriority::Low",
+      "MaterialSubTypeOverride": {
+        "Name": "Outline"
+      },
+      "ASREnvelope": {
+        "AttackDuration": 0.1,
+        "AttackEase": {
+          "Easing": "EEasingFunc::EaseIn"
+        },
+        "bSustainHold": true,
+        "ReleaseEase": {
+          "Easing": "EEasingFunc::EaseInOut"
+        }
+      },
+      "Scalars": [
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_Brightness"
+          },
+          "Scalar": 2.0,
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_Alpha"
+          },
+          "Scalar": 1.0,
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_NoiseMin"
+          },
+          "Scalar": 0.0,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_NoiseMax"
+          },
+          "Scalar": 1.0,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_NoiseSpeed"
+          },
+          "Scalar": 0.5,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_NoiseTiling"
+          },
+          "Scalar": 8.0,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "Colors": [
+        {
+          "MaterialParameter": {
+            "Name": "SkinFXOutline_Color"
+          },
+          "Color": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFFFF00"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkinFX_OutlineLootContainer_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkinFX_OutlineLootContainer_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkinFX_OutlineLootContainer_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_OutlineLootContainer.3"
+      },
+      "VariableGuid": "94FE3A2F-445ADCC8-C47F2F94-07AFF411",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkinFX_OutlineLootContainer_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkinFX_OutlineLootContainer_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_OutlineLootContainer.4"
+      }
+    }
+  }
+]

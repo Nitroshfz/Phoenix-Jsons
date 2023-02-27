@@ -1,0 +1,209 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_VFX_Goblin_Cheif_Rock_Toss_Pro",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "CEF279C6460177DBE7754C81F1FC1E69",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x26A4"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_VFX_Goblin_Cheif_Rock_Toss_Pro",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2708"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_VFX_Goblin_Cheif_Rock_Toss_Pro",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_TrollRock'",
+            "ObjectPath": "/Game/VFX/Enemies/Troll/Troll_Rock_Toss/Projectile/VFX_MI_TrollRock.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 165.16301,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 165.16301,
+      "LightMapResolution": 32,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.9073486E-05,
+          "Y": -7.6293945E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 19.794384,
+          "Y": 19.512154,
+          "Z": 11.672684
+        },
+        "SphereRadius": 22.587542
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_VFX_Goblin_Cheif_Rock_Toss_Pro:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Enemies/Goblin_Cheiften/VFX_Goblin_Cheif_Rock_Toss/SM_VFX_Goblin_Cheif_Rock_Toss_Pro.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_VFX_Goblin_Cheif_Rock_Toss_Pro:NavCollision_4'",
+      "ObjectPath": "/Game/VFX/Enemies/Goblin_Cheiften/VFX_Goblin_Cheif_Rock_Toss/SM_VFX_Goblin_Cheif_Rock_Toss_Pro.1"
+    },
+    "LightingGuid": "5EBC6A8A-4719C13A-2F92669E-B336B253",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 160,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 102,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 103
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 103,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 40,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 32,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 14.1926365,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 33
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 33,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1.9073486E-05,
+          "Y": -7.6293945E-06,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 19.794384,
+          "Y": 19.512154,
+          "Z": 11.672684
+        },
+        "SphereRadius": 22.587542
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.030453332,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2172 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_PotionStationSmoke:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_PotionStationSmoke:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_PotionStationSmoke:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_PotionStationSmoke:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.5"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_PotionStationSmoke:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.8"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_PotionStationSmoke:ParticleModuleAccelerationDrag_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_PotionStationSmoke:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.11"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_PotionStationSmoke:ParticleModuleVelocityCone_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.14"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_PotionStationSmoke:ParticleModuleRotationRate_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.9"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant'P_PotionStationSmoke:ParticleModuleAccelerationConstant_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.3"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_PotionStationSmoke:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.13"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_PotionStationSmoke:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.12"
+      },
+      "PeakActiveParticles": 23
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleAccelerationConstant'",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 60.0
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 1.7,
+        "MaxValue": 1.7,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.7
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.130208,
+        "MaxValue": 0.130208,
+        "MinValueVec": {
+          "X": 0.130208,
+          "Y": 0.130208,
+          "Z": 0.130208
+        },
+        "MaxValueVec": {
+          "X": 0.130208,
+          "Y": 0.130208,
+          "Z": 0.130208
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.130208,
+            0.130208,
+            0.130208
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            0.0,
+            0.06777085,
+            0.23853585,
+            0.46431285,
+            0.69711983,
+            0.88897455,
+            0.991907,
+            0.9925926,
+            0.9820106,
+            0.9714286,
+            0.9608466,
+            0.9502646,
+            0.93968254,
+            0.9291005,
+            0.91851854,
+            0.9079365,
+            0.8973545,
+            0.88677245,
+            0.8761905,
+            0.86560845,
+            0.8550264,
+            0.8444444,
+            0.8338624,
+            0.8232804,
+            0.81269836,
+            0.80211633,
+            0.79153436,
+            0.78095233,
+            0.77037036,
+            0.75978833,
+            0.7492063,
+            0.73862433,
+            0.7280423,
+            0.7174603,
+            0.7068783,
+            0.69629633,
+            0.68571424,
+            0.6751323,
+            0.66455024,
+            0.6539682,
+            0.64338624,
+            0.6328042,
+            0.62222224,
+            0.6116402,
+            0.60032487,
+            0.57142854,
+            0.53968245,
+            0.5079365,
+            0.4761903,
+            0.44444433,
+            0.41269827,
+            0.3809523,
+            0.34920612,
+            0.31746015,
+            0.2857141,
+            0.25396812,
+            0.22222202,
+            0.19047609,
+            0.15873002,
+            0.12698409,
+            0.095237866,
+            0.06349191,
+            0.031745955,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 2.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0,
+            3.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Smoke_Medium'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Smoke_Medium.0"
+      },
+      "SortMode": "PSORTMODE_Age_OldestFirst",
+      "bUseLegacyEmitterTime": false,
+      "bEmitterDurationUseRange": true,
+      "EmitterDuration": 3.0,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStationSmoke:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.0"
+        }
+      },
+      "EmitterDelay": 1.6,
+      "bEmitterDelayUseRange": true,
+      "RandomImageTime": 1.0,
+      "UVFlippingMode": "EParticleUVFlipMode::RandomFlipUVIndependent",
+      "bDurationRecalcEachLoop": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.1,
+        "MaxValue": 0.1,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.1,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 5.0,
+        "MaxValue": 8.0,
+        "MinValueVec": {
+          "X": 5.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 8.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            5.0,
+            5.0,
+            8.0,
+            8.0,
+            8.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 11.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 11.0,
+          "Y": 11.0,
+          "Z": 11.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            1.1058202,
+            1.1058202,
+            1.1058202,
+            1.2116401,
+            1.2116401,
+            1.2116401,
+            1.3174603,
+            1.3174603,
+            1.3174603,
+            1.4232805,
+            1.4232805,
+            1.4232805,
+            1.5291005,
+            1.5291005,
+            1.5291005,
+            1.6349206,
+            1.6349206,
+            1.6349206,
+            1.7407408,
+            1.7407408,
+            1.7407408,
+            1.846561,
+            1.846561,
+            1.846561,
+            1.9523809,
+            1.9523809,
+            1.9523809,
+            2.058201,
+            2.058201,
+            2.058201,
+            2.1640213,
+            2.1640213,
+            2.1640213,
+            2.2698414,
+            2.2698414,
+            2.2698414,
+            2.3756614,
+            2.3756614,
+            2.3756614,
+            2.4814816,
+            2.4814816,
+            2.4814816,
+            2.5873017,
+            2.5873017,
+            2.5873017,
+            2.693122,
+            2.693122,
+            2.693122,
+            2.7989419,
+            2.7989419,
+            2.7989419,
+            2.9047618,
+            2.9047618,
+            2.9047618,
+            3.0207593,
+            3.0207593,
+            3.0207593,
+            3.1995466,
+            3.1995466,
+            3.1995466,
+            3.3809524,
+            3.3809524,
+            3.3809524,
+            3.5623584,
+            3.5623584,
+            3.5623584,
+            3.7437642,
+            3.7437642,
+            3.7437642,
+            3.9251704,
+            3.9251704,
+            3.9251704,
+            4.106576,
+            4.106576,
+            4.106576,
+            4.287982,
+            4.287982,
+            4.287982,
+            4.469388,
+            4.469388,
+            4.469388,
+            4.650794,
+            4.650794,
+            4.650794,
+            4.8321996,
+            4.8321996,
+            4.8321996,
+            5.013606,
+            5.013606,
+            5.013606,
+            5.1950116,
+            5.1950116,
+            5.1950116,
+            5.3764176,
+            5.3764176,
+            5.3764176,
+            5.557823,
+            5.557823,
+            5.557823,
+            5.739229,
+            5.739229,
+            5.739229,
+            5.9206347,
+            5.9206347,
+            5.9206347,
+            6.1020412,
+            6.1020412,
+            6.1020412,
+            6.2834473,
+            6.2834473,
+            6.2834473,
+            6.4648533,
+            6.4648533,
+            6.4648533,
+            6.646259,
+            6.646259,
+            6.646259,
+            6.827665,
+            6.827665,
+            6.827665,
+            7.0090704,
+            7.0090704,
+            7.0090704,
+            7.1904764,
+            7.1904764,
+            7.1904764,
+            7.371882,
+            7.371882,
+            7.371882,
+            7.5532885,
+            7.5532885,
+            7.5532885,
+            7.734694,
+            7.734694,
+            7.734694,
+            7.9161,
+            7.9161,
+            7.9161,
+            8.097506,
+            8.097506,
+            8.097506,
+            8.278912,
+            8.278912,
+            8.278912,
+            8.460318,
+            8.460318,
+            8.460318,
+            8.641724,
+            8.641724,
+            8.641724,
+            8.823129,
+            8.823129,
+            8.823129,
+            9.004537,
+            9.004537,
+            9.004537,
+            9.185943,
+            9.185943,
+            9.185943,
+            9.367349,
+            9.367349,
+            9.367349,
+            9.548755,
+            9.548755,
+            9.548755,
+            9.730161,
+            9.730161,
+            9.730161,
+            9.911566,
+            9.911566,
+            9.911566,
+            10.092972,
+            10.092972,
+            10.092972,
+            10.274378,
+            10.274378,
+            10.274378,
+            10.455784,
+            10.455784,
+            10.455784,
+            10.637189,
+            10.637189,
+            10.637189,
+            10.818595,
+            10.818595,
+            10.818595,
+            11.0,
+            11.0,
+            11.0
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 7.0,
+        "MaxValue": 7.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            7.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_PotionStationSmoke:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_PotionStationSmoke:ParticleModuleRequired_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.7"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_PotionStationSmoke:ParticleModuleSpawn_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.12"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_PotionStationSmoke:ParticleModuleRequired_0'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.7"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_PotionStationSmoke:ParticleModuleLifetime_0'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.6"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_PotionStationSmoke:ParticleModuleSize_0'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.10"
+          },
+          {
+            "ObjectName": "ParticleModuleRotation'P_PotionStationSmoke:ParticleModuleRotation_0'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.8"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocityCone'P_PotionStationSmoke:ParticleModuleVelocityCone_0'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.14"
+          },
+          {
+            "ObjectName": "ParticleModuleRotationRate'P_PotionStationSmoke:ParticleModuleRotationRate_0'",
+            "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.9"
+          }
+        ],
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 60.0
+        },
+        "InvMaxSize": {
+          "X": 0.125,
+          "Y": 0.125
+        },
+        "InvRotationRateScale": 3.3333333,
+        "MaxLifetime": 3.0,
+        "MaxParticleCount": 23,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 17,
+            "Hex": "11000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 61,
+            "Hex": "3D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 119,
+            "Hex": "77000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 179,
+            "Hex": "B3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 228,
+            "Hex": "E4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 252,
+            "Hex": "FC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 249,
+            "Hex": "F9000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 246,
+            "Hex": "F6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 244,
+            "Hex": "F4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 241,
+            "Hex": "F1000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 238,
+            "Hex": "EE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 235,
+            "Hex": "EB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 233,
+            "Hex": "E9000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 230,
+            "Hex": "E6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 227,
+            "Hex": "E3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 225,
+            "Hex": "E1000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 222,
+            "Hex": "DE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 219,
+            "Hex": "DB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 216,
+            "Hex": "D8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 214,
+            "Hex": "D6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 211,
+            "Hex": "D3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 208,
+            "Hex": "D0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 206,
+            "Hex": "CE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 203,
+            "Hex": "CB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 200,
+            "Hex": "C8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 197,
+            "Hex": "C5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 195,
+            "Hex": "C3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 192,
+            "Hex": "C0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 189,
+            "Hex": "BD000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 187,
+            "Hex": "BB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 184,
+            "Hex": "B8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 181,
+            "Hex": "B5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 178,
+            "Hex": "B2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 176,
+            "Hex": "B0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 173,
+            "Hex": "AD000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 170,
+            "Hex": "AA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 168,
+            "Hex": "A8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 165,
+            "Hex": "A5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 162,
+            "Hex": "A2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 159,
+            "Hex": "9F000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 157,
+            "Hex": "9D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 154,
+            "Hex": "9A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 146,
+            "Hex": "92000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 138,
+            "Hex": "8A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 130,
+            "Hex": "82000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 122,
+            "Hex": "7A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 114,
+            "Hex": "72000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 106,
+            "Hex": "6A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 97,
+            "Hex": "61000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 89,
+            "Hex": "59000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 81,
+            "Hex": "51000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 73,
+            "Hex": "49000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 65,
+            "Hex": "41000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 57,
+            "Hex": "39000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 48,
+            "Hex": "30000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 40,
+            "Hex": "28000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 32,
+            "Hex": "20000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 24,
+            "Hex": "18000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 16,
+            "Hex": "10000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 8,
+            "Hex": "08000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "QuantizedMiscSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 1,
+            "R": 1,
+            "A": 0,
+            "Hex": "010100"
+          },
+          {
+            "B": 0,
+            "G": 2,
+            "R": 2,
+            "A": 0,
+            "Hex": "020200"
+          },
+          {
+            "B": 0,
+            "G": 4,
+            "R": 4,
+            "A": 0,
+            "Hex": "040400"
+          },
+          {
+            "B": 0,
+            "G": 5,
+            "R": 5,
+            "A": 0,
+            "Hex": "050500"
+          },
+          {
+            "B": 0,
+            "G": 6,
+            "R": 6,
+            "A": 0,
+            "Hex": "060600"
+          },
+          {
+            "B": 0,
+            "G": 8,
+            "R": 8,
+            "A": 0,
+            "Hex": "080800"
+          },
+          {
+            "B": 0,
+            "G": 9,
+            "R": 9,
+            "A": 0,
+            "Hex": "090900"
+          },
+          {
+            "B": 0,
+            "G": 10,
+            "R": 10,
+            "A": 0,
+            "Hex": "0A0A00"
+          },
+          {
+            "B": 0,
+            "G": 12,
+            "R": 12,
+            "A": 0,
+            "Hex": "0C0C00"
+          },
+          {
+            "B": 0,
+            "G": 13,
+            "R": 13,
+            "A": 0,
+            "Hex": "0D0D00"
+          },
+          {
+            "B": 0,
+            "G": 14,
+            "R": 14,
+            "A": 0,
+            "Hex": "0E0E00"
+          },
+          {
+            "B": 0,
+            "G": 16,
+            "R": 16,
+            "A": 0,
+            "Hex": "101000"
+          },
+          {
+            "B": 0,
+            "G": 17,
+            "R": 17,
+            "A": 0,
+            "Hex": "111100"
+          },
+          {
+            "B": 0,
+            "G": 18,
+            "R": 18,
+            "A": 0,
+            "Hex": "121200"
+          },
+          {
+            "B": 0,
+            "G": 20,
+            "R": 20,
+            "A": 0,
+            "Hex": "141400"
+          },
+          {
+            "B": 0,
+            "G": 21,
+            "R": 21,
+            "A": 0,
+            "Hex": "151500"
+          },
+          {
+            "B": 0,
+            "G": 22,
+            "R": 22,
+            "A": 0,
+            "Hex": "161600"
+          },
+          {
+            "B": 0,
+            "G": 24,
+            "R": 24,
+            "A": 0,
+            "Hex": "181800"
+          },
+          {
+            "B": 0,
+            "G": 25,
+            "R": 25,
+            "A": 0,
+            "Hex": "191900"
+          },
+          {
+            "B": 0,
+            "G": 26,
+            "R": 26,
+            "A": 0,
+            "Hex": "1A1A00"
+          },
+          {
+            "B": 0,
+            "G": 28,
+            "R": 28,
+            "A": 0,
+            "Hex": "1C1C00"
+          },
+          {
+            "B": 0,
+            "G": 29,
+            "R": 29,
+            "A": 0,
+            "Hex": "1D1D00"
+          },
+          {
+            "B": 0,
+            "G": 30,
+            "R": 30,
+            "A": 0,
+            "Hex": "1E1E00"
+          },
+          {
+            "B": 0,
+            "G": 32,
+            "R": 32,
+            "A": 0,
+            "Hex": "202000"
+          },
+          {
+            "B": 0,
+            "G": 33,
+            "R": 33,
+            "A": 0,
+            "Hex": "212100"
+          },
+          {
+            "B": 0,
+            "G": 34,
+            "R": 34,
+            "A": 0,
+            "Hex": "222200"
+          },
+          {
+            "B": 0,
+            "G": 36,
+            "R": 36,
+            "A": 0,
+            "Hex": "242400"
+          },
+          {
+            "B": 0,
+            "G": 37,
+            "R": 37,
+            "A": 0,
+            "Hex": "252500"
+          },
+          {
+            "B": 0,
+            "G": 38,
+            "R": 38,
+            "A": 0,
+            "Hex": "262600"
+          },
+          {
+            "B": 0,
+            "G": 40,
+            "R": 40,
+            "A": 0,
+            "Hex": "282800"
+          },
+          {
+            "B": 0,
+            "G": 41,
+            "R": 41,
+            "A": 0,
+            "Hex": "292900"
+          },
+          {
+            "B": 0,
+            "G": 42,
+            "R": 42,
+            "A": 0,
+            "Hex": "2A2A00"
+          },
+          {
+            "B": 0,
+            "G": 44,
+            "R": 44,
+            "A": 0,
+            "Hex": "2C2C00"
+          },
+          {
+            "B": 0,
+            "G": 45,
+            "R": 45,
+            "A": 0,
+            "Hex": "2D2D00"
+          },
+          {
+            "B": 0,
+            "G": 46,
+            "R": 46,
+            "A": 0,
+            "Hex": "2E2E00"
+          },
+          {
+            "B": 0,
+            "G": 48,
+            "R": 48,
+            "A": 0,
+            "Hex": "303000"
+          },
+          {
+            "B": 0,
+            "G": 49,
+            "R": 49,
+            "A": 0,
+            "Hex": "313100"
+          },
+          {
+            "B": 0,
+            "G": 50,
+            "R": 50,
+            "A": 0,
+            "Hex": "323200"
+          },
+          {
+            "B": 0,
+            "G": 53,
+            "R": 53,
+            "A": 0,
+            "Hex": "353500"
+          },
+          {
+            "B": 0,
+            "G": 55,
+            "R": 55,
+            "A": 0,
+            "Hex": "373700"
+          },
+          {
+            "B": 0,
+            "G": 57,
+            "R": 57,
+            "A": 0,
+            "Hex": "393900"
+          },
+          {
+            "B": 0,
+            "G": 59,
+            "R": 59,
+            "A": 0,
+            "Hex": "3B3B00"
+          },
+          {
+            "B": 0,
+            "G": 62,
+            "R": 62,
+            "A": 0,
+            "Hex": "3E3E00"
+          },
+          {
+            "B": 0,
+            "G": 64,
+            "R": 64,
+            "A": 0,
+            "Hex": "404000"
+          },
+          {
+            "B": 0,
+            "G": 66,
+            "R": 66,
+            "A": 0,
+            "Hex": "424200"
+          },
+          {
+            "B": 0,
+            "G": 69,
+            "R": 69,
+            "A": 0,
+            "Hex": "454500"
+          },
+          {
+            "B": 0,
+            "G": 71,
+            "R": 71,
+            "A": 0,
+            "Hex": "474700"
+          },
+          {
+            "B": 0,
+            "G": 73,
+            "R": 73,
+            "A": 0,
+            "Hex": "494900"
+          },
+          {
+            "B": 0,
+            "G": 76,
+            "R": 76,
+            "A": 0,
+            "Hex": "4C4C00"
+          },
+          {
+            "B": 0,
+            "G": 78,
+            "R": 78,
+            "A": 0,
+            "Hex": "4E4E00"
+          },
+          {
+            "B": 0,
+            "G": 80,
+            "R": 80,
+            "A": 0,
+            "Hex": "505000"
+          },
+          {
+            "B": 0,
+            "G": 82,
+            "R": 82,
+            "A": 0,
+            "Hex": "525200"
+          },
+          {
+            "B": 0,
+            "G": 85,
+            "R": 85,
+            "A": 0,
+            "Hex": "555500"
+          },
+          {
+            "B": 0,
+            "G": 87,
+            "R": 87,
+            "A": 0,
+            "Hex": "575700"
+          },
+          {
+            "B": 0,
+            "G": 89,
+            "R": 89,
+            "A": 0,
+            "Hex": "595900"
+          },
+          {
+            "B": 0,
+            "G": 92,
+            "R": 92,
+            "A": 0,
+            "Hex": "5C5C00"
+          },
+          {
+            "B": 0,
+            "G": 94,
+            "R": 94,
+            "A": 0,
+            "Hex": "5E5E00"
+          },
+          {
+            "B": 0,
+            "G": 96,
+            "R": 96,
+            "A": 0,
+            "Hex": "606000"
+          },
+          {
+            "B": 0,
+            "G": 98,
+            "R": 98,
+            "A": 0,
+            "Hex": "626200"
+          },
+          {
+            "B": 0,
+            "G": 101,
+            "R": 101,
+            "A": 0,
+            "Hex": "656500"
+          },
+          {
+            "B": 0,
+            "G": 103,
+            "R": 103,
+            "A": 0,
+            "Hex": "676700"
+          },
+          {
+            "B": 0,
+            "G": 105,
+            "R": 105,
+            "A": 0,
+            "Hex": "696900"
+          },
+          {
+            "B": 0,
+            "G": 108,
+            "R": 108,
+            "A": 0,
+            "Hex": "6C6C00"
+          },
+          {
+            "B": 0,
+            "G": 110,
+            "R": 110,
+            "A": 0,
+            "Hex": "6E6E00"
+          },
+          {
+            "B": 0,
+            "G": 112,
+            "R": 112,
+            "A": 0,
+            "Hex": "707000"
+          },
+          {
+            "B": 0,
+            "G": 115,
+            "R": 115,
+            "A": 0,
+            "Hex": "737300"
+          },
+          {
+            "B": 0,
+            "G": 117,
+            "R": 117,
+            "A": 0,
+            "Hex": "757500"
+          },
+          {
+            "B": 0,
+            "G": 119,
+            "R": 119,
+            "A": 0,
+            "Hex": "777700"
+          },
+          {
+            "B": 0,
+            "G": 121,
+            "R": 121,
+            "A": 0,
+            "Hex": "797900"
+          },
+          {
+            "B": 0,
+            "G": 124,
+            "R": 124,
+            "A": 0,
+            "Hex": "7C7C00"
+          },
+          {
+            "B": 0,
+            "G": 126,
+            "R": 126,
+            "A": 0,
+            "Hex": "7E7E00"
+          },
+          {
+            "B": 0,
+            "G": 128,
+            "R": 128,
+            "A": 0,
+            "Hex": "808000"
+          },
+          {
+            "B": 0,
+            "G": 131,
+            "R": 131,
+            "A": 0,
+            "Hex": "838300"
+          },
+          {
+            "B": 0,
+            "G": 133,
+            "R": 133,
+            "A": 0,
+            "Hex": "858500"
+          },
+          {
+            "B": 0,
+            "G": 135,
+            "R": 135,
+            "A": 0,
+            "Hex": "878700"
+          },
+          {
+            "B": 0,
+            "G": 137,
+            "R": 137,
+            "A": 0,
+            "Hex": "898900"
+          },
+          {
+            "B": 0,
+            "G": 140,
+            "R": 140,
+            "A": 0,
+            "Hex": "8C8C00"
+          },
+          {
+            "B": 0,
+            "G": 142,
+            "R": 142,
+            "A": 0,
+            "Hex": "8E8E00"
+          },
+          {
+            "B": 0,
+            "G": 144,
+            "R": 144,
+            "A": 0,
+            "Hex": "909000"
+          },
+          {
+            "B": 0,
+            "G": 147,
+            "R": 147,
+            "A": 0,
+            "Hex": "939300"
+          },
+          {
+            "B": 0,
+            "G": 149,
+            "R": 149,
+            "A": 0,
+            "Hex": "959500"
+          },
+          {
+            "B": 0,
+            "G": 151,
+            "R": 151,
+            "A": 0,
+            "Hex": "979700"
+          },
+          {
+            "B": 0,
+            "G": 154,
+            "R": 154,
+            "A": 0,
+            "Hex": "9A9A00"
+          },
+          {
+            "B": 0,
+            "G": 156,
+            "R": 156,
+            "A": 0,
+            "Hex": "9C9C00"
+          },
+          {
+            "B": 0,
+            "G": 158,
+            "R": 158,
+            "A": 0,
+            "Hex": "9E9E00"
+          },
+          {
+            "B": 0,
+            "G": 160,
+            "R": 160,
+            "A": 0,
+            "Hex": "A0A000"
+          },
+          {
+            "B": 0,
+            "G": 163,
+            "R": 163,
+            "A": 0,
+            "Hex": "A3A300"
+          },
+          {
+            "B": 0,
+            "G": 165,
+            "R": 165,
+            "A": 0,
+            "Hex": "A5A500"
+          },
+          {
+            "B": 0,
+            "G": 167,
+            "R": 167,
+            "A": 0,
+            "Hex": "A7A700"
+          },
+          {
+            "B": 0,
+            "G": 170,
+            "R": 170,
+            "A": 0,
+            "Hex": "AAAA00"
+          },
+          {
+            "B": 0,
+            "G": 172,
+            "R": 172,
+            "A": 0,
+            "Hex": "ACAC00"
+          },
+          {
+            "B": 0,
+            "G": 174,
+            "R": 174,
+            "A": 0,
+            "Hex": "AEAE00"
+          },
+          {
+            "B": 0,
+            "G": 176,
+            "R": 176,
+            "A": 0,
+            "Hex": "B0B000"
+          },
+          {
+            "B": 0,
+            "G": 179,
+            "R": 179,
+            "A": 0,
+            "Hex": "B3B300"
+          },
+          {
+            "B": 0,
+            "G": 181,
+            "R": 181,
+            "A": 0,
+            "Hex": "B5B500"
+          },
+          {
+            "B": 0,
+            "G": 183,
+            "R": 183,
+            "A": 0,
+            "Hex": "B7B700"
+          },
+          {
+            "B": 0,
+            "G": 186,
+            "R": 186,
+            "A": 0,
+            "Hex": "BABA00"
+          },
+          {
+            "B": 0,
+            "G": 188,
+            "R": 188,
+            "A": 0,
+            "Hex": "BCBC00"
+          },
+          {
+            "B": 0,
+            "G": 190,
+            "R": 190,
+            "A": 0,
+            "Hex": "BEBE00"
+          },
+          {
+            "B": 0,
+            "G": 193,
+            "R": 193,
+            "A": 0,
+            "Hex": "C1C100"
+          },
+          {
+            "B": 0,
+            "G": 195,
+            "R": 195,
+            "A": 0,
+            "Hex": "C3C300"
+          },
+          {
+            "B": 0,
+            "G": 197,
+            "R": 197,
+            "A": 0,
+            "Hex": "C5C500"
+          },
+          {
+            "B": 0,
+            "G": 199,
+            "R": 199,
+            "A": 0,
+            "Hex": "C7C700"
+          },
+          {
+            "B": 0,
+            "G": 202,
+            "R": 202,
+            "A": 0,
+            "Hex": "CACA00"
+          },
+          {
+            "B": 0,
+            "G": 204,
+            "R": 204,
+            "A": 0,
+            "Hex": "CCCC00"
+          },
+          {
+            "B": 0,
+            "G": 206,
+            "R": 206,
+            "A": 0,
+            "Hex": "CECE00"
+          },
+          {
+            "B": 0,
+            "G": 209,
+            "R": 209,
+            "A": 0,
+            "Hex": "D1D100"
+          },
+          {
+            "B": 0,
+            "G": 211,
+            "R": 211,
+            "A": 0,
+            "Hex": "D3D300"
+          },
+          {
+            "B": 0,
+            "G": 213,
+            "R": 213,
+            "A": 0,
+            "Hex": "D5D500"
+          },
+          {
+            "B": 0,
+            "G": 215,
+            "R": 215,
+            "A": 0,
+            "Hex": "D7D700"
+          },
+          {
+            "B": 0,
+            "G": 218,
+            "R": 218,
+            "A": 0,
+            "Hex": "DADA00"
+          },
+          {
+            "B": 0,
+            "G": 220,
+            "R": 220,
+            "A": 0,
+            "Hex": "DCDC00"
+          },
+          {
+            "B": 0,
+            "G": 222,
+            "R": 222,
+            "A": 0,
+            "Hex": "DEDE00"
+          },
+          {
+            "B": 0,
+            "G": 225,
+            "R": 225,
+            "A": 0,
+            "Hex": "E1E100"
+          },
+          {
+            "B": 0,
+            "G": 227,
+            "R": 227,
+            "A": 0,
+            "Hex": "E3E300"
+          },
+          {
+            "B": 0,
+            "G": 229,
+            "R": 229,
+            "A": 0,
+            "Hex": "E5E500"
+          },
+          {
+            "B": 0,
+            "G": 232,
+            "R": 232,
+            "A": 0,
+            "Hex": "E8E800"
+          },
+          {
+            "B": 0,
+            "G": 234,
+            "R": 234,
+            "A": 0,
+            "Hex": "EAEA00"
+          },
+          {
+            "B": 0,
+            "G": 236,
+            "R": 236,
+            "A": 0,
+            "Hex": "ECEC00"
+          },
+          {
+            "B": 0,
+            "G": 238,
+            "R": 238,
+            "A": 0,
+            "Hex": "EEEE00"
+          },
+          {
+            "B": 0,
+            "G": 241,
+            "R": 241,
+            "A": 0,
+            "Hex": "F1F100"
+          },
+          {
+            "B": 0,
+            "G": 243,
+            "R": 243,
+            "A": 0,
+            "Hex": "F3F300"
+          },
+          {
+            "B": 0,
+            "G": 245,
+            "R": 245,
+            "A": 0,
+            "Hex": "F5F500"
+          },
+          {
+            "B": 0,
+            "G": 248,
+            "R": 248,
+            "A": 0,
+            "Hex": "F8F800"
+          },
+          {
+            "B": 0,
+            "G": 250,
+            "R": 250,
+            "A": 0,
+            "Hex": "FAFA00"
+          },
+          {
+            "B": 0,
+            "G": 252,
+            "R": 252,
+            "A": 0,
+            "Hex": "FCFC00"
+          },
+          {
+            "B": 0,
+            "G": 255,
+            "R": 255,
+            "A": 0,
+            "Hex": "FFFF00"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 0.9925926
+        },
+        "ColorBias": {
+          "X": 0.130208,
+          "Y": 0.130208,
+          "Z": 0.130208,
+          "W": 0.0
+        },
+        "MiscScale": {
+          "X": 80.0,
+          "Y": 80.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 8.0,
+          "Y": 8.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 60.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "DragCoefficientBias": 1.7,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 0.3,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.7,
+        "MaxValue": 0.7,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.7
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 40.0,
+        "MaxValue": 40.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            40.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_PotionStationSmoke:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_PotionStationSmoke",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_PotionStationSmoke:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_PotionStationSmoke.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -50.0,
+          "Y": -50.0,
+          "Z": -50.0
+        },
+        "Max": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

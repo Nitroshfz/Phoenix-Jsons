@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_DistortionRing_Mesh",
+    "Class": "UScriptClass'MaterialInstanceConstant'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'VFX_MM_Refraction'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/VFX_MM_Refraction.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "MaskStrength",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "84EED8E5-427A1C1B-A763ACA6-FA6E1B4B"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionPanX",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.209524,
+          "ExpressionGUID": "591F1BFF-4FD3BE49-AF6BCBA5-6DD17D97"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "DistortionPanY",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.419048,
+          "ExpressionGUID": "1EC776F6-4DD173F7-D21E3B93-0DF09569"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Normal Map",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_FX_ripples_N'",
+            "ObjectPath": "/Game/VFX/Textures/T_FX_ripples_N.0"
+          },
+          "ExpressionGUID": "0F3EE00C-41F114E9-136861B3-445AFF30"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Mask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'VFX_T_Circle_LerpMask_D'",
+            "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Circle_LerpMask_D.0"
+          },
+          "ExpressionGUID": "A989F41E-4006E4BB-9B324DBB-E7EEEB36"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.0
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "UseUVDistortion",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "4DF1EEE5-478250B6-620B16A0-22825072"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        {
+          "ObjectName": "Texture2D'VFX_T_RibbonOffset_N'",
+          "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+        },
+        {
+          "ObjectName": "Texture2D'VFX_T_Circle_Sphere_D'",
+          "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Circle_Sphere_D.0"
+        }
+      ]
+    }
+  }
+]

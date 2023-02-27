@@ -1,0 +1,679 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_3",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'VFX_P_Healing_Bones:ParticleModuleRequired_3'",
+        "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'VFX_P_Healing_Bones:ParticleModuleLifetime_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.4"
+        },
+        {
+          "ObjectName": "ParticleModuleMeshRotation'VFX_P_Healing_Bones:ParticleModuleMeshRotation_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'VFX_P_Healing_Bones:ParticleModuleSize_2'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'VFX_P_Healing_Bones:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.3"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'VFX_P_Healing_Bones:ParticleModuleVelocityCone_2'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.13"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'VFX_P_Healing_Bones:ParticleModuleSizeMultiplyLife_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.10"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityInheritParent'VFX_P_Healing_Bones:ParticleModuleVelocityInheritParent_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.14"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'VFX_P_Healing_Bones:ParticleModuleLocationPrimitiveCylinder_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.5"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'VFX_P_Healing_Bones:ParticleModuleAcceleration_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.2"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'VFX_P_Healing_Bones:ParticleModuleOrbit_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.7"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh'VFX_P_Healing_Bones:ParticleModuleTypeDataMesh_4'",
+        "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.12"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'VFX_P_Healing_Bones:ParticleModuleSpawn_3'",
+        "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.11"
+      },
+      "PeakActiveParticles": 6
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MaxValue": 30.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 10.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 30.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            10.0,
+            0.0,
+            0.0,
+            30.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MaxValue": 0.635417,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.151042,
+          "Z": 0.1007
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.635417,
+          "Z": 0.412624
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.4285715,
+          "TimeBias": 0.3,
+          "Values": [
+            0.0,
+            0.635417,
+            0.412624,
+            0.0,
+            0.151042,
+            0.1007
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.2184554,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.1,
+            0.21840627,
+            0.19833893,
+            0.16954853,
+            0.11934282,
+            0.06369845,
+            0.018591952,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            2.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 3.0,
+        "MaxValue": 3.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "MinValue": 10.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "MinValue": 10.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            10.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "b3DDrawMode": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleMeshRotation",
+    "Name": "ParticleModuleMeshRotation_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleMeshRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MaxValue": 10.0,
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 10.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            10.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationAmount": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateAmount": {
+        "MaxValue": 0.3,
+        "MaxValueVec": {
+          "X": 0.3,
+          "Y": 0.3,
+          "Z": 0.3
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_Healing_Whips'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_Healing_Whips.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_Healing_Bones:ParticleModuleRequired_3.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 2,
+      "EmitterDurationLow": 0.5,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_2",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 0.2,
+        "MaxValue": 1.3,
+        "MinValueVec": {
+          "X": 0.2,
+          "Y": 0.2,
+          "Z": 0.2
+        },
+        "MaxValueVec": {
+          "X": 1.3,
+          "Y": 1.3,
+          "Z": 1.3
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.2,
+            0.2,
+            0.2,
+            1.3,
+            1.3,
+            1.3
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.17478125,
+        "MaxValue": 0.7285088,
+        "MinValueVec": {
+          "X": 0.18393576,
+          "Y": 0.17478125,
+          "Z": 0.17478125
+        },
+        "MaxValueVec": {
+          "X": 0.7231327,
+          "Y": 0.7269113,
+          "Z": 0.7285088
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 6.9808464,
+          "TimeBias": 0.008087641,
+          "Values": [
+            0.18393576,
+            0.17478125,
+            0.17478125,
+            0.2019106,
+            0.1934173,
+            0.20401259,
+            0.24884081,
+            0.24268235,
+            0.25234047,
+            0.31430268,
+            0.31267652,
+            0.31430805,
+            0.41904962,
+            0.42146382,
+            0.41755024,
+            0.55503565,
+            0.55895275,
+            0.55564255,
+            0.6728628,
+            0.6768623,
+            0.676618,
+            0.7231327,
+            0.7269113,
+            0.7285088
+          ],
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 3.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 1,
+          "CountLow": 1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_4",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleTypeDataMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Eropio_Proj'",
+        "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/SM_Eropio_Proj.2"
+      },
+      "bOverrideMaterial": true,
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_2",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 5.0,
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            10.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityInheritParent",
+    "Name": "ParticleModuleVelocityInheritParent_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleModuleVelocityInheritParent'",
+    "Properties": {
+      "Scale": {
+        "MinValue": 0.05,
+        "MaxValue": 0.3,
+        "MinValueVec": {
+          "X": 0.05,
+          "Y": 0.05,
+          "Z": 0.05
+        },
+        "MaxValueVec": {
+          "X": 0.3,
+          "Y": 0.3,
+          "Z": 0.3
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.05,
+            0.05,
+            0.05,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_3",
+    "Outer": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Mesh Swirl",
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'VFX_P_Healing_Bones:ParticleSpriteEmitter_3.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.1"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "VFX_P_Healing_Bones",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'VFX_P_Healing_Bones:ParticleSpriteEmitter_3'",
+          "ObjectPath": "/Game/VFX/Potions/VFX_P_Healing_Bones.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

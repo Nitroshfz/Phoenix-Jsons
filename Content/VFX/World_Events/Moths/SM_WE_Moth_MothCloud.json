@@ -1,0 +1,178 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_WE_Moth_MothCloud",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "3CC8AF7A498CD212EDC421B75DA63C32",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x23A5"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_WE_Moth_MothCloud",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2409"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_WE_Moth_MothCloud",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_Moth'",
+            "ObjectPath": "/Game/VFX/World_Events/Moths/VFX_MI_Moth.0"
+          },
+          "MaterialSlotName": "phong1",
+          "ImportedMaterialSlotName": "phong1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 5.565284,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 5.565284,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.48280454,
+          "Y": 4.7683716E-07,
+          "Z": 0.9562425
+        },
+        "BoxExtent": {
+          "X": 2.3064518,
+          "Y": 3.2506776,
+          "Z": 0.9813125
+        },
+        "SphereRadius": 3.9876497
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_WE_Moth_MothCloud:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/World_Events/Moths/SM_WE_Moth_MothCloud.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_WE_Moth_MothCloud:NavCollision_4'",
+      "ObjectPath": "/Game/VFX/World_Events/Moths/SM_WE_Moth_MothCloud.1"
+    },
+    "LightingGuid": "DC33E07E-42160801-7902A69A-2326AC55",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 20,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 31,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 32
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 32,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 32
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.48280454,
+          "Y": 4.7683716E-07,
+          "Z": 0.9562425
+        },
+        "BoxExtent": {
+          "X": 2.3064518,
+          "Y": 3.2506776,
+          "Z": 0.9813125
+        },
+        "SphereRadius": 3.9876497
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.021306666,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

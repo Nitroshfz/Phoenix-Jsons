@@ -1,0 +1,243 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_Shockwave_Fresnel_Refract",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_1",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "Refraction": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_0",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "bEnableResponsiveAA": true,
+      "bUsedWithParticleSprites": true,
+      "bUsedWithBeamTrails": true,
+      "bUsedWithMeshParticles": true,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bUsesDistortion": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "C212F7F7-4D649104-317B89BC-A464D6E2",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              2652717646222895593,
+              6546707246866225510,
+              8964382441194723817,
+              9135674607666928641,
+              14834425821552737684,
+              14973025152935682266
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "ExponentIn",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Camera Fade Distance",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "BaseReflectFractionIn",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Brightness Opacity Bias",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Depth Fade Distance",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Billboard Spherical Normal Strength",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "93A7A037-4A341B13-D2542383-39BDC49E",
+              "8145DEE4-494E9541-75AAF780-49480B7E",
+              "372E6035-4C81F1BE-B68C17AE-CDE9C012",
+              "AFF2D5E4-45FCFE7C-1D1D8E93-F6D2600B",
+              "6E19A940-4C33789B-3F0E78A8-4C8816DC",
+              "9AD405A4-42221E41-B569A3B9-8FC65F98"
+            ]
+          },
+          "ScalarValues": [
+            4.0,
+            20000.0,
+            0.05,
+            0.2,
+            100.0,
+            1.0
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'Good64x64TilingNoiseHighFreq'",
+            "ObjectPath": "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Sphere_N'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Sphere_N.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Circle_Sphere_D'",
+            "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Circle_Sphere_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_AutoAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_AutoAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "67008E08-400DF1C2-D9D3FCB3-E89F5FF7",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_AutoExposureAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "623C498B-44507F16-18A93CA5-432B71D8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_EmissiveAdaptation_DEPRECATED'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_EmissiveAdaptation_DEPRECATED.0"
+            }
+          },
+          {
+            "StateId": "71028A8D-47BF4037-3A3A0B8A-D7B60E53",
+            "Function": {
+              "ObjectName": "MaterialFunction'ScreenAlignedPixelToPixelUVs'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.0"
+            }
+          },
+          {
+            "StateId": "22D58D0F-45CC84AB-89A3628B-351D83C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'DitherTemporalAA'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.0"
+            }
+          },
+          {
+            "StateId": "51BE5DED-4471370E-91560F82-D950FB3B",
+            "Function": {
+              "ObjectName": "MaterialFunction'VFX_MF_DitheredRefraction'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_DitheredRefraction.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "5FF77166-4BCC6760-C89DDEA3-AF3FC6B0",
+            "Function": {
+              "ObjectName": "MaterialFunction'VFX_MF_CameraDistanceFade'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_CameraDistanceFade.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Circle_Sphere_D"
+        }
+      ]
+    }
+  }
+]

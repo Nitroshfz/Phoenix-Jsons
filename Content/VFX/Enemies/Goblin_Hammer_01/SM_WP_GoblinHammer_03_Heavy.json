@@ -1,0 +1,371 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_WP_GoblinHammer_03_Heavy",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 28.304024,
+                "Y": -14.876879,
+                "Z": 71.5
+              },
+              {
+                "X": 28.304024,
+                "Y": -14.876879,
+                "Z": 100.0
+              },
+              {
+                "X": 28.304024,
+                "Y": 14.875,
+                "Z": 100.0625
+              },
+              {
+                "X": 28.304024,
+                "Y": 14.875,
+                "Z": 71.52133
+              },
+              {
+                "X": -28.313639,
+                "Y": 14.875,
+                "Z": 71.5
+              },
+              {
+                "X": -28.313639,
+                "Y": 14.875,
+                "Z": 100.0
+              },
+              {
+                "X": -28.313639,
+                "Y": -14.876879,
+                "Z": 100.0625
+              },
+              {
+                "X": -28.313639,
+                "Y": -14.876879,
+                "Z": 71.52133
+              }
+            ],
+            "IndexData": [
+              0,
+              4,
+              3,
+              4,
+              2,
+              3,
+              2,
+              0,
+              3,
+              4,
+              0,
+              7,
+              0,
+              6,
+              7,
+              6,
+              4,
+              7,
+              0,
+              2,
+              1,
+              2,
+              6,
+              1,
+              6,
+              0,
+              1,
+              2,
+              4,
+              5,
+              4,
+              6,
+              5,
+              6,
+              2,
+              5
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -28.313639,
+                "Y": -14.876879,
+                "Z": 71.5
+              },
+              "Max": {
+                "X": 28.304024,
+                "Y": 14.875,
+                "Z": 100.0625
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            },
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "37326BB642FDA8FF67C96586BC9006D9",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 866,
+        "SizeOnDisk": 866,
+        "OffsetInFile": "0x4368"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_WP_GoblinHammer_03_Heavy",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x4712"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_WP_GoblinHammer_03_Heavy",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'M_Goblin_Goblin_BattleAxe_Glow_Core_Heavy'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Sword_01/M_Goblin_Goblin_BattleAxe_Glow_Core_Heavy.0"
+          },
+          "MaterialSlotName": "blinn2",
+          "ImportedMaterialSlotName": "blinn2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 22.122843,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_FX_GoblinHammer_3_Glow_Blade_Zero'",
+            "ObjectPath": "/Game/VFX/Enemies/Goblin_Hammer_01/MI_FX_GoblinHammer_3_Glow_Blade_Zero.0"
+          },
+          "MaterialSlotName": "blinn1",
+          "ImportedMaterialSlotName": "blinn1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 11.761684,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 13.539389,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.0048065186,
+          "Y": 6.198883E-05,
+          "Z": 85.78175
+        },
+        "BoxExtent": {
+          "X": 28.208832,
+          "Y": 14.778818,
+          "Z": 14.160423
+        },
+        "SphereRadius": 34.839893
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_WP_GoblinHammer_03_Heavy:BodySetup_1'",
+      "ObjectPath": "/Game/VFX/Enemies/Goblin_Hammer_01/SM_WP_GoblinHammer_03_Heavy.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_WP_GoblinHammer_03_Heavy:NavCollision_2'",
+      "ObjectPath": "/Game/VFX/Enemies/Goblin_Hammer_01/SM_WP_GoblinHammer_03_Heavy.1"
+    },
+    "LightingGuid": "588C7321-44631DF1-2EACFFB3-C3E56113",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 44,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 63,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 132,
+              "NumTriangles": 64,
+              "MinVertexIndex": 64,
+              "MaxVertexIndex": 191,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 192
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 192,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 192
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 0,
+              "NumTriangles": 2,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 3,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 6,
+              "NumTriangles": 52,
+              "MinVertexIndex": 4,
+              "MaxVertexIndex": 115,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 51.361706,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 116
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 116,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 116
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.0048065186,
+          "Y": 6.198883E-05,
+          "Z": 85.78175
+        },
+        "BoxExtent": {
+          "X": 28.208832,
+          "Y": 14.778818,
+          "Z": 14.160423
+        },
+        "SphereRadius": 34.839893
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.027056,
+        "NaN",
+        0.023528,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

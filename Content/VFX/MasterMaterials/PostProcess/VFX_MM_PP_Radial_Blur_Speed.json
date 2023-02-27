@@ -1,0 +1,258 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_PP_Radial_Blur_Speed",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "773747F5-4A670615-1DE21FA7-375A096C",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              1235028197651977881,
+              2173305486218162882,
+              3013656073826548667,
+              3596242482646411430,
+              4154452398476281462,
+              5335148570404845933,
+              6854880468380804726,
+              9506868997795850251,
+              11435915810916561832,
+              14012392229824694024,
+              14290471330546185530,
+              17149843304951874641
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Forward Mask Size",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Cloud Polar Length",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Backward Mask Size",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Edge Cloud Amount",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Spark Speed",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "CentreX",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Spark Polar Length",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Cloud Speed",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "CentreY",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Cloud Polar Radial",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Spark Polar Width",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Edge Spark Amount",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "6E8A4EB1-4F217D34-23C2A5A4-7C19DD6B",
+              "ED51E75F-4F752EDE-F7EBB1B6-D911EB4A",
+              "8E0791F1-4C1120D7-35B44AAC-E2DFEE76",
+              "3F19C046-4F81FFB3-2BF88AB6-0B462AEF",
+              "DE9B9FB1-4DE622B6-A560BBBD-3136FE5C",
+              "D1874FD5-4C8EA538-8505589C-29ED31EB",
+              "B039A632-437D03E7-7C2CBD94-E274083A",
+              "C9D682A6-4A66FD16-B67AD2A9-E20B789C",
+              "A553595B-426572CD-70EF1692-BA769488",
+              "1B95B377-403E58FF-D406BC98-6C229548",
+              "A2916135-4FE45F72-A2BBB9B4-FC1420BD",
+              "F7DCC09D-4AD162BF-C04AB28A-5E52CC37"
+            ]
+          },
+          "ScalarValues": [
+            0.8,
+            0.319048,
+            1.0,
+            2.0,
+            0.647619,
+            0.5,
+            0.161904,
+            0.647619,
+            0.5,
+            1.0,
+            0.161904,
+            0.2
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_Dots_E'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Dots_E.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_pc_calypsolightclouds_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_pc_calypsolightclouds_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "917EB268-40C7E267-26D08999-CBF02920",
+            "Function": {
+              "ObjectName": "MaterialFunction'TransformToClipSpace'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/TransformToClipSpace.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "083E709A-4D9D5041-D61E02BA-D49E33C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Fit01'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Fit01.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FDF0E218-49F6EE8B-E9059C85-221B2F68",
+            "Function": {
+              "ObjectName": "MaterialFunction'Pi'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Pi.0"
+            }
+          },
+          {
+            "StateId": "1B367198-438F63C6-B7351099-C757F38C",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_PolarCoordinates'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_PolarCoordinates.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FDF0E218-49F6EE8B-E9059C85-221B2F68",
+            "Function": {
+              "ObjectName": "MaterialFunction'Pi'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Pi.0"
+            }
+          },
+          {
+            "StateId": "1B367198-438F63C6-B7351099-C757F38C",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_PolarCoordinates'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_PolarCoordinates.0"
+            }
+          },
+          {
+            "StateId": "083E709A-4D9D5041-D61E02BA-D49E33C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Fit01'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Fit01.0"
+            }
+          },
+          {
+            "StateId": "083E709A-4D9D5041-D61E02BA-D49E33C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Fit01'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Fit01.0"
+            }
+          },
+          {
+            "StateId": "083E709A-4D9D5041-D61E02BA-D49E33C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Fit01'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Fit01.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "E4CA9390-48E21B59-508851BC-7AF21F17",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_PP_Radial_Blur'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/PostProcess/MP_PP_Radial_Blur.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          true,
+          false,
+          true,
+          false
+        ]
+      }
+    }
+  }
+]

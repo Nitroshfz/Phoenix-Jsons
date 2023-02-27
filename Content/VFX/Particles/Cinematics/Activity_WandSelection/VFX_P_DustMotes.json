@@ -1,0 +1,1001 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_3",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_3",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstantCurve",
+    "Name": "DistributionFloatConstantCurve_0",
+    "Outer": "ParticleModuleColorScaleOverLife_5",
+    "Class": "UScriptClass'DistributionFloatConstantCurve'",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 0.5,
+            "OutVal": 1.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorConstant",
+    "Name": "DistributionVectorConstant_0",
+    "Outer": "ParticleModuleColorScaleOverLife_5",
+    "Class": "UScriptClass'DistributionVectorConstant'",
+    "Properties": {
+      "Constant": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorUniform",
+    "Name": "DistributionOffsetAmount",
+    "Outer": "ParticleModuleOrbit_0",
+    "Class": "UScriptClass'DistributionVectorUniform'",
+    "Properties": {
+      "Max": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "Min": {
+        "X": -1.0,
+        "Y": -1.0,
+        "Z": -1.0
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorUniform",
+    "Name": "DistributionRotationAmount",
+    "Outer": "ParticleModuleOrbit_0",
+    "Class": "UScriptClass'DistributionVectorUniform'",
+    "Properties": {
+      "Max": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "DistributionVectorUniform",
+    "Name": "DistributionRotationRateAmount",
+    "Outer": "ParticleModuleOrbit_0",
+    "Class": "UScriptClass'DistributionVectorUniform'",
+    "Properties": {
+      "Max": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      },
+      "Min": {
+        "X": -1.0,
+        "Y": -1.0,
+        "Z": -1.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'VFX_P_DustMotes:ParticleModuleRequired_3'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.16"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'VFX_P_DustMotes:ParticleModuleLifetime_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.13"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'VFX_P_DustMotes:ParticleModuleVelocity_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.22"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'VFX_P_DustMotes:ParticleModuleSize_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.19"
+        },
+        {
+          "ObjectName": "ParticleModuleColor'VFX_P_DustMotes:ParticleModuleColor_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife'VFX_P_DustMotes:ParticleModuleColorScaleOverLife_5'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.12"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'VFX_P_DustMotes:ParticleModuleRotation_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.17"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant'VFX_P_DustMotes:ParticleModuleAccelerationConstant_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.10"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'VFX_P_DustMotes:ParticleModuleRotationRate_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.18"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'VFX_P_DustMotes:ParticleModuleLocation_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.14"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'VFX_P_DustMotes:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.15"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'VFX_P_DustMotes:ParticleModuleTypeDataGpu_2'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.21"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'VFX_P_DustMotes:ParticleModuleSpawn_3'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.20"
+      },
+      "PeakActiveParticles": 3620
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_1",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "Level": 1,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'VFX_P_DustMotes:ParticleModuleRequired_3'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.16"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'VFX_P_DustMotes:ParticleModuleLifetime_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.13"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'VFX_P_DustMotes:ParticleModuleVelocity_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.22"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'VFX_P_DustMotes:ParticleModuleSize_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.19"
+        },
+        {
+          "ObjectName": "ParticleModuleColor'VFX_P_DustMotes:ParticleModuleColor_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife'VFX_P_DustMotes:ParticleModuleColorScaleOverLife_5'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.12"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'VFX_P_DustMotes:ParticleModuleRotation_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.17"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant'VFX_P_DustMotes:ParticleModuleAccelerationConstant_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.10"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'VFX_P_DustMotes:ParticleModuleRotationRate_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.18"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'VFX_P_DustMotes:ParticleModuleLocation_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.14"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'VFX_P_DustMotes:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.15"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'VFX_P_DustMotes:ParticleModuleTypeDataGpu_2'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.21"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'VFX_P_DustMotes:ParticleModuleSpawn_3'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.20"
+      },
+      "PeakActiveParticles": 3620
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_2",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "Level": 2,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'VFX_P_DustMotes:ParticleModuleRequired_3'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.16"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'VFX_P_DustMotes:ParticleModuleLifetime_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.13"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'VFX_P_DustMotes:ParticleModuleVelocity_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.22"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'VFX_P_DustMotes:ParticleModuleSize_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.19"
+        },
+        {
+          "ObjectName": "ParticleModuleColor'VFX_P_DustMotes:ParticleModuleColor_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorScaleOverLife'VFX_P_DustMotes:ParticleModuleColorScaleOverLife_5'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.12"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'VFX_P_DustMotes:ParticleModuleRotation_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.17"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationConstant'VFX_P_DustMotes:ParticleModuleAccelerationConstant_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.10"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'VFX_P_DustMotes:ParticleModuleRotationRate_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.18"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'VFX_P_DustMotes:ParticleModuleLocation_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.14"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'VFX_P_DustMotes:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.15"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'VFX_P_DustMotes:ParticleModuleTypeDataGpu_2'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.21"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'VFX_P_DustMotes:ParticleModuleSpawn_3'",
+        "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.20"
+      },
+      "PeakActiveParticles": 3620
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationConstant",
+    "Name": "ParticleModuleAccelerationConstant_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleAccelerationConstant'",
+    "Properties": {
+      "Acceleration": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -0.5
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleColor",
+    "Name": "ParticleModuleColor_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleColor'",
+    "Properties": {
+      "StartColor": {
+        "MinValue": 0.30364,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 0.705683,
+          "Z": 0.30364
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.705683,
+          "Z": 0.30364
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            0.705683,
+            0.30364
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "StartAlpha": {
+        "MinValue": 0.5,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.5
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleColorScaleOverLife",
+    "Name": "ParticleModuleColorScaleOverLife_5",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleColorScaleOverLife'",
+    "Properties": {
+      "ColorScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorConstant'VFX_P_DustMotes:ParticleModuleColorScaleOverLife_5.DistributionVectorConstant_0'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.3"
+        }
+      },
+      "AlphaScaleOverLife": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstantCurve'VFX_P_DustMotes:ParticleModuleColorScaleOverLife_5.DistributionFloatConstantCurve_0'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.2"
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 2.0,
+        "MaxValue": 6.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0,
+            6.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -700.0,
+        "MaxValue": 500.0,
+        "MinValueVec": {
+          "X": -700.0,
+          "Y": -200.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 400.0,
+          "Y": 200.0,
+          "Z": 500.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -700.0,
+            -200.0,
+            0.0,
+            400.0,
+            200.0,
+            500.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorUniform'VFX_P_DustMotes:ParticleModuleOrbit_0.DistributionOffsetAmount'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.4"
+        }
+      },
+      "RotationAmount": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorUniform'VFX_P_DustMotes:ParticleModuleOrbit_0.DistributionRotationAmount'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.5"
+        }
+      },
+      "RotationRateAmount": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorUniform'VFX_P_DustMotes:ParticleModuleOrbit_0.DistributionRotationRateAmount'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.6"
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material'VFX_MM_SimpleMote_CIN'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Cinematic/VFX_MM_SimpleMote_CIN.0"
+      },
+      "bUseLocalSpace": true,
+      "bKillOnDeactivate": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_DustMotes:ParticleModuleRequired_3.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_2",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_2",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MaxValue": 0.2,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.2
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 1.0,
+        "MaxValue": 25.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 3.0,
+          "Y": 25.0,
+          "Z": 25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            25.0,
+            25.0,
+            3.0,
+            25.0,
+            25.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 600.0,
+        "MaxValue": 600.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            600.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'VFX_P_DustMotes:ParticleModuleSpawn_3.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.1"
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_2",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'VFX_P_DustMotes:ParticleModuleRequired_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.16"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'VFX_P_DustMotes:ParticleModuleSpawn_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.20"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'VFX_P_DustMotes:ParticleModuleRequired_3'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.16"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'VFX_P_DustMotes:ParticleModuleLifetime_3'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.13"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity'VFX_P_DustMotes:ParticleModuleVelocity_3'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.22"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'VFX_P_DustMotes:ParticleModuleSize_3'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.19"
+          },
+          {
+            "ObjectName": "ParticleModuleRotation'VFX_P_DustMotes:ParticleModuleRotation_2'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.17"
+          },
+          {
+            "ObjectName": "ParticleModuleRotationRate'VFX_P_DustMotes:ParticleModuleRotationRate_2'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.18"
+          },
+          {
+            "ObjectName": "ParticleModuleLocation'VFX_P_DustMotes:ParticleModuleLocation_3'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.14"
+          }
+        ],
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -0.5
+        },
+        "OrbitOffsetBase": {
+          "X": -1.9999999,
+          "Y": -0.9999999,
+          "Z": 8.742278E-08
+        },
+        "OrbitOffsetRange": {
+          "X": 3.9999998,
+          "Y": 1.9999996,
+          "Z": 6.357301E-08
+        },
+        "InvMaxSize": {
+          "X": 0.04,
+          "Y": 0.04
+        },
+        "InvRotationRateScale": 0.8333333,
+        "MaxLifetime": 6.0,
+        "MaxParticleCount": 3620,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 36,
+            "Hex": "24000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 72,
+            "Hex": "48000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 109,
+            "Hex": "6D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 145,
+            "Hex": "91000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 182,
+            "Hex": "B6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 218,
+            "Hex": "DA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 218,
+            "Hex": "DA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 182,
+            "Hex": "B6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 145,
+            "Hex": "91000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 109,
+            "Hex": "6D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 72,
+            "Hex": "48000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 36,
+            "Hex": "24000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 0.4666667
+        },
+        "ColorBias": {
+          "X": 1.0,
+          "Y": 0.705683,
+          "Z": 0.30364,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 25.0,
+          "Y": 25.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "ConstantAcceleration": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -0.5
+        },
+        "OrbitOffsetBase": {
+          "X": -0.5,
+          "Y": -0.5,
+          "Z": -0.5
+        },
+        "OrbitOffsetRange": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "OrbitFrequencyBase": {
+          "X": -6.2831855,
+          "Y": -6.2831855,
+          "Z": 6.2831855
+        },
+        "OrbitFrequencyRange": {
+          "X": 12.566371,
+          "Y": 12.566371,
+          "Z": -12.566371
+        },
+        "OrbitPhaseBase": {
+          "X": 1.5707964,
+          "Y": 0.0,
+          "Z": 1.5707964
+        },
+        "OrbitPhaseRange": {
+          "X": 6.2831855,
+          "Y": 6.2831855,
+          "Z": -6.2831855
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 1.2,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": -1.0,
+          "Y": -1.0,
+          "Z": -1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 7
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_3",
+    "Outer": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Motes DOF",
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'VFX_P_DustMotes:ParticleSpriteEmitter_3.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.7"
+        },
+        {
+          "ObjectName": "ParticleLODLevel'VFX_P_DustMotes:ParticleSpriteEmitter_3.ParticleLODLevel_1'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.8"
+        },
+        {
+          "ObjectName": "ParticleLODLevel'VFX_P_DustMotes:ParticleSpriteEmitter_3.ParticleLODLevel_2'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.9"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "VFX_P_DustMotes",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "WarmupTime": 3.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'VFX_P_DustMotes:ParticleSpriteEmitter_3'",
+          "ObjectPath": "/Game/VFX/Particles/Cinematics/Activity_WandSelection/VFX_P_DustMotes.23"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0,
+        2500.0,
+        5000.0
+      ],
+      "LODSettings": [
+        {},
+        {},
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -6000.0,
+          "Y": -6000.0,
+          "Z": -6000.0
+        },
+        "Max": {
+          "X": 6000.0,
+          "Y": 6000.0,
+          "Z": 6000.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

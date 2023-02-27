@@ -1,0 +1,178 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_VFX_ShufflingCard",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9E32F01F401210A8E30DF2A1A952DBD8",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x248C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_VFX_ShufflingCard",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x24F0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_VFX_ShufflingCard",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_SelfShufflingCards'",
+            "ObjectPath": "/Game/VFX/World_Events/SelfShufflingCards/VFX_MI_SelfShufflingCards.0"
+          },
+          "MaterialSlotName": "VFX_MI_SelfShufflingCards",
+          "ImportedMaterialSlotName": "VFX_MI_SelfShufflingCards",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 36.207436,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 36.207436,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.049999237
+        },
+        "BoxExtent": {
+          "X": 3.0,
+          "Y": 5.0,
+          "Z": 0.049999237
+        },
+        "SphereRadius": 5.682664
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_VFX_ShufflingCard:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/World_Events/SelfShufflingCards/SM_VFX_ShufflingCard.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_VFX_ShufflingCard:NavCollision_0'",
+      "ObjectPath": "/Game/VFX/World_Events/SelfShufflingCards/SM_VFX_ShufflingCard.1"
+    },
+    "LightingGuid": "E80FB37B-49067641-B8F679BA-E96E0126",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 28,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 35,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 36
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 36,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.049999237
+        },
+        "BoxExtent": {
+          "X": 3.0,
+          "Y": 5.0,
+          "Z": 0.049999237
+        },
+        "SphereRadius": 5.682664
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.021829333,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

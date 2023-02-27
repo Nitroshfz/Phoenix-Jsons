@@ -1,0 +1,556 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstantCurve",
+    "Name": "DistributionFloatConstantCurve_0",
+    "Outer": "ParticleModuleSubUVMovie_0",
+    "Class": "UScriptClass'DistributionFloatConstantCurve'",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_SmokeTestDense2:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_SmokeTestDense2:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_SmokeTestDense2:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_SmokeTestDense2:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.5"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_SmokeTestDense2:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.8"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_SmokeTestDense2:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_SmokeTestDense2:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.10"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUVMovie'P_SmokeTestDense2:ParticleModuleSubUVMovie_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.13"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_SmokeTestDense2:ParticleModuleSubUV_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.12"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_SmokeTestDense2:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.11"
+      },
+      "PeakActiveParticles": 12
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MaxValue": 40.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 10.0,
+          "Z": 40.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 20.0,
+          "Z": 40.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            10.0,
+            40.0,
+            0.0,
+            20.0,
+            40.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.101997,
+        "MaxValue": 0.166667,
+        "MinValueVec": {
+          "X": 0.103083,
+          "Y": 0.101997,
+          "Z": 0.104167
+        },
+        "MaxValueVec": {
+          "X": 0.166667,
+          "Y": 0.166667,
+          "Z": 0.166667
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.103083,
+            0.101997,
+            0.104167,
+            0.166667,
+            0.166667,
+            0.166667
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.5,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 62.999996,
+          "Values": [
+            0.0,
+            0.10165627,
+            0.35780376,
+            0.69646925,
+            1.0456797,
+            1.3334618,
+            1.4878604,
+            1.4888889,
+            1.4730158,
+            1.4571428,
+            1.4412698,
+            1.4253968,
+            1.4095237,
+            1.3936508,
+            1.3777778,
+            1.3619047,
+            1.3460318,
+            1.3301587,
+            1.3142858,
+            1.2984127,
+            1.2825397,
+            1.2666667,
+            1.2507936,
+            1.2349206,
+            1.2190475,
+            1.2031745,
+            1.1873015,
+            1.1714286,
+            1.1555555,
+            1.1396825,
+            1.1238095,
+            1.1079365,
+            1.0920634,
+            1.0761905,
+            1.0603175,
+            1.0444444,
+            1.0285714,
+            1.0126983,
+            1.0008339,
+            0.9962177,
+            0.98339295,
+            0.9623809,
+            0.93395776,
+            0.8989001,
+            0.8579837,
+            0.8119856,
+            0.7616816,
+            0.70784837,
+            0.6512618,
+            0.59269875,
+            0.5329352,
+            0.47274774,
+            0.4129121,
+            0.35420546,
+            0.29740345,
+            0.24328291,
+            0.19261967,
+            0.14619045,
+            0.10477128,
+            0.06913896,
+            0.040068787,
+            0.018338375,
+            0.004723263,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 64,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.5,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.5,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Smoke_Dense2'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Smoke_Dense2.0"
+      },
+      "SortMode": "PSORTMODE_Age_OldestFirst",
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_SmokeTestDense2:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.0"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 8,
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 25.0,
+        "MaxValue": 40.0,
+        "MinValueVec": {
+          "X": 25.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 40.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            25.0,
+            25.0,
+            25.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 8.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 8.0,
+          "Y": 8.0,
+          "Z": 8.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            8.0,
+            8.0,
+            8.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.4,
+        "MaxValue": 1.4,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.4
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_SmokeTestDense2:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleSubUV'",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 120.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 31.0,
+          "Values": [
+            0.0,
+            6.2590394,
+            12.410761,
+            18.451954,
+            24.379396,
+            30.189877,
+            35.880184,
+            41.447094,
+            46.8874,
+            52.197884,
+            57.37533,
+            62.415977,
+            67.31687,
+            72.07506,
+            76.68729,
+            81.15037,
+            85.46109,
+            89.61623,
+            93.61259,
+            97.41599,
+            100.942924,
+            104.18385,
+            107.13417,
+            109.79097,
+            112.15027,
+            114.20808,
+            115.960396,
+            117.40325,
+            118.53262,
+            119.34454,
+            119.83499,
+            120.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 1
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUVMovie",
+    "Name": "ParticleModuleSubUVMovie_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleModuleSubUVMovie'",
+    "Properties": {
+      "FrameRate": {
+        "MinValue": 30.0,
+        "MaxValue": 30.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            30.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartingFrame": 0,
+      "SubImageIndex": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstantCurve'P_SmokeTestDense2:ParticleModuleSubUVMovie_0.DistributionFloatConstantCurve_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_SmokeTestDense2:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_SmokeTestDense2",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_SmokeTestDense2:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/TEST/P_SmokeTestDense2.14"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

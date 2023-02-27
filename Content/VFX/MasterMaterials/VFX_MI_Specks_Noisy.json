@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_Specks_Noisy",
+    "Class": "UScriptClass'MaterialInstanceConstant'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'VFX_MM_Specks_Cheap'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/VFX_MM_Specks_Cheap.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Noise Tiling",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.7,
+          "ExpressionGUID": "3B4FE49C-41D85C68-4C70619B-1FB9CBF7"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Speed U (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.298412,
+          "ExpressionGUID": "6E91450A-4B437920-166C2E8C-374D4283"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Speed V (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": -0.514225,
+          "ExpressionGUID": "7F1E5002-4B246220-5CDC59A7-806D58BF"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "AlphaChannel",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.0,
+            "G": 1.0,
+            "B": 0.0,
+            "A": 0.0,
+            "Hex": "00FF00"
+          },
+          "ExpressionGUID": "D5EB0079-452CEE7D-827FDF99-16178DC1"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Mask_AlphaChannel",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 0.0,
+            "G": 1.0,
+            "B": 0.0,
+            "A": 0.0,
+            "Hex": "00FF00"
+          },
+          "ExpressionGUID": "EBB6FCAC-4C117344-20A842A0-7FA4BD70"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "MaskTex",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'VFX_T_Speck_HighCoverage_D'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Speck_HighCoverage_D.0"
+          },
+          "ExpressionGUID": "134AA557-46BDAAF1-507D149B-F0D94DD2"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "NoiseTex",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D'VFX_T_TankMoteNoiseVinceTest_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_TankMoteNoiseVinceTest_D.0"
+          },
+          "ExpressionGUID": "467390D7-4D922D60-D6EE709B-15BF50A6"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "UseEmissive",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "6C4EBDBC-41F3F17E-FF303381-B7DECA9F"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "UseNoise",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "5C6141E3-404B85E2-92BA6E9E-4FFA7E89"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "UseTexture",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "CAE69A93-461F321D-769F01BC-75BC3A68"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        {
+          "ObjectName": "Texture2D'VFX_T_SphereNormal_N'",
+          "ObjectPath": "/Game/VFX/Textures/VFX_T_SphereNormal_N.0"
+        },
+        {
+          "ObjectName": "Texture2D'VFX_T_Marble_01G_D'",
+          "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Marble_01G_D.0"
+        },
+        {
+          "ObjectName": "Texture2D'VFX_T_IceDecal_D'",
+          "ObjectPath": "/Game/VFX/Textures/VFX_T_IceDecal_D.0"
+        }
+      ],
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Speck_HighCoverage_D"
+        },
+        {
+          "SamplingScale": 0.703125,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_TankMoteNoiseVinceTest_D"
+        }
+      ]
+    }
+  }
+]

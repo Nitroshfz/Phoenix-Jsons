@@ -1,0 +1,150 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_LevelUp_Beam_Chromatic",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_1",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "Refraction": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionQualitySwitch_0",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "TranslucencyLightingMode": "TLM_VolumetricPerVertexNonDirectional",
+      "bUsedWithParticleSprites": true,
+      "bUsedWithMeshParticles": true,
+      "bUsesDistortion": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "4FBC6D8F-4C48F7B3-66DAA9B4-1C6C8617",
+      "CachedExpressionData": {
+        "Parameters": {},
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_SmokeRend_N'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_SmokeRend_N.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Noise_Plasma_Seamless_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Noise_Plasma_Seamless_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "FC5000CA-4D8CA069-2B6968BF-9ED68904",
+            "Function": {
+              "ObjectName": "MaterialFunction'DeriveHDRfromLDR'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/DeriveHDRfromLDR.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_AutoAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_AutoAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "67008E08-400DF1C2-D9D3FCB3-E89F5FF7",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_AutoExposureAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "623C498B-44507F16-18A93CA5-432B71D8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_EmissiveAdaptation_DEPRECATED'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_EmissiveAdaptation_DEPRECATED.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "RandX",
+          "RandY",
+          "Refraction",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.90527344,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Noise_Plasma_Seamless_D"
+        },
+        {
+          "SamplingScale": 0.90625,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_SmokeRend_N"
+        }
+      ]
+    }
+  }
+]

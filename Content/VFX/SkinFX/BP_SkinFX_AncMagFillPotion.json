@@ -1,0 +1,731 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_SkinFX_AncMagFillPotion",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_currentTime",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217730,
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Temp_struct_Variable",
+          "Flags": 1,
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'AkExternalSourceInfo'",
+            "ObjectPath": "/Script/AkAudio"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": 1,
+        "ElementSize": 20,
+        "PropertyFlags": 2,
+        "SignatureFunction": {
+          "ObjectName": "Class'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp_struct_Variable_1",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217730,
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Temp_struct_Variable_1",
+          "Flags": 1,
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'AkExternalSourceInfo'",
+            "ObjectPath": "/Script/AkAudio"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable_1",
+        "Flags": 1,
+        "ElementSize": 20,
+        "PropertyFlags": 2,
+        "SignatureFunction": {
+          "ObjectName": "Class'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp_struct_Variable_2",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217730,
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Temp_struct_Variable_2",
+          "Flags": 1,
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class'AkExternalSourceInfo'",
+            "ObjectPath": "/Script/AkAudio"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable_2",
+        "Flags": 1,
+        "ElementSize": 20,
+        "PropertyFlags": 2,
+        "SignatureFunction": {
+          "ObjectName": "Class'OnAkPostEventCallback__DelegateSignature'",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "K2Node_Event_endStyle",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ESkinFXEffectEndStyle'",
+          "ObjectPath": "/Script/SkinFX"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": 1,
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_currentTime_1",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAttachParentActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue_2",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "SkinFXNotifyRetrigger",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SkinFXDefinitionGraph:SkinFXNotifyRetrigger'",
+      "ObjectPath": "/Script/SkinFX"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "currentTime",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "SkinFXNotifyEnd",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SkinFXDefinitionGraph:SkinFXNotifyEnd'",
+      "ObjectPath": "/Script/SkinFX"
+    },
+    "ChildProperties": [
+      {
+        "Type": "EnumProperty",
+        "Name": "endStyle",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'ESkinFXEffectEndStyle'",
+          "ObjectPath": "/Script/SkinFX"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": 1,
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "currentTime",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "SkinFXNotifyStart",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SkinFXDefinitionGraph:SkinFXNotifyStart'",
+      "ObjectPath": "/Script/SkinFX"
+    },
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkinFX_AncMagFillPotion_C",
+    "Super": "BP_SkinFX_Graph_Parent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkinFX_AncMagFillPotion_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.9"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkinFX_AncMagFillPotion_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.6"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:ExecuteUbergraph_BP_SkinFX_AncMagFillPotion'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkinFX_Graph_Parent_C'",
+      "ObjectPath": "/SkinFX/BP_SkinFX_Graph_Parent.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:SkinFXNotifyStart'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.3"
+      },
+      {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:SkinFXNotifyEnd'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.2"
+      },
+      {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:SkinFXNotifyRetrigger'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.1"
+      },
+      {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:ExecuteUbergraph_BP_SkinFX_AncMagFillPotion'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_SkinFX_AncMagFillPotion": {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:ExecuteUbergraph_BP_SkinFX_AncMagFillPotion'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.0"
+      },
+      "SkinFXNotifyRetrigger": {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:SkinFXNotifyRetrigger'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.1"
+      },
+      "SkinFXNotifyEnd": {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:SkinFXNotifyEnd'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.2"
+      },
+      "SkinFXNotifyStart": {
+        "ObjectName": "Function'BP_SkinFX_AncMagFillPotion_C:SkinFXNotifyStart'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.3"
+      }
+    },
+    "ClassFlags": 8653332,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkinFX_AncMagFillPotion_C'Default__BP_SkinFX_AncMagFillPotion_C'",
+      "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.5"
+    }
+  },
+  {
+    "Type": "BP_SkinFX_AncMagFillPotion_C",
+    "Name": "Default__BP_SkinFX_AncMagFillPotion_C",
+    "Template": "Default__BP_SkinFX_Graph_Parent_C",
+    "Class": "BlueprintGeneratedClass'/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.BP_SkinFX_AncMagFillPotion_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MaterialSubTypeOverride": {
+        "Name": "Focus"
+      },
+      "ASREnvelope": {
+        "AttackDuration": 0.5,
+        "SustainDuration": 3.0,
+        "bSustainHold": true,
+        "ReleaseDuration": 2.0,
+        "ReleaseEase": {
+          "Easing": "EEasingFunc::EaseInOut"
+        }
+      },
+      "ScalarCurves": [
+        {
+          "MaterialParameter": {
+            "Name": "FX_Effect_Amount"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 10.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.28283772,
+                  "Value": 200.0,
+                  "ArriveTangent": -405.55652,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -405.61816,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.2,
+                  "Value": 50.0,
+                  "ArriveTangent": -55.95818,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -55.936317,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.9745741,
+                  "Value": 20.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "FX_OpacityMaskRadius"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_User",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 0.0,
+                  "ArriveTangent": -14.778052,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": -14.779194,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.71633035,
+                  "Value": 184.31477,
+                  "ArriveTangent": 160.31474,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 160.31474,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.2475458,
+                  "Value": 200.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "FX_Fresnel"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.1,
+                  "Value": 0.0,
+                  "ArriveTangent": 1.1111112,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 1.1111112,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.0,
+                  "Value": 1.0,
+                  "ArriveTangent": 1.1111112,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 1.1111112,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "FX_Blend_Brightness"
+          },
+          "ScalarCurve": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.0,
+                  "Value": 0.1,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 1.5,
+                  "Value": 1.5,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 1.0,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant",
+              "KeyHandlesToIndices": {}
+            },
+            "ExternalCurve": null
+          },
+          "OutputScale": 1.0,
+          "bStretchToEnvelope": false,
+          "bLoop": false,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "Sockets": [
+        {
+          "MaterialParameter": {
+            "Name": "HeadLoc"
+          },
+          "Socket": {
+            "Name": "None"
+          },
+          "Bone": {
+            "Name": "face"
+          },
+          "SocketOutput": "ESkinFXSocketOutput::SFXS_POSITION",
+          "SocketOutputAlpha": "ESkinFXSocketOutputAlphaPack::SFXSAP_NONE",
+          "bMultiplyColorByEnvelope": false,
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyScalarByEnvelope": false,
+          "Advanced": {
+            "UseSpecificComponent": "None",
+            "bEvaluateOnlyAtStart": false,
+            "bPreviewOnly": false
+          },
+          "bUseBone": true,
+          "bUseReferencePose": false
+        },
+        {
+          "MaterialParameter": {
+            "Name": "FX_Eye_Left"
+          },
+          "Socket": {
+            "Name": "None"
+          },
+          "Bone": {
+            "Name": "eye_left"
+          },
+          "SocketOutput": "ESkinFXSocketOutput::SFXS_POSITION",
+          "SocketOutputAlpha": "ESkinFXSocketOutputAlphaPack::SFXSAP_NONE",
+          "bMultiplyColorByEnvelope": false,
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyScalarByEnvelope": false,
+          "Advanced": {
+            "UseSpecificComponent": "None",
+            "bEvaluateOnlyAtStart": false,
+            "bPreviewOnly": false
+          },
+          "bUseBone": true,
+          "bUseReferencePose": false
+        },
+        {
+          "MaterialParameter": {
+            "Name": "FX_Eye_Right"
+          },
+          "Socket": {
+            "Name": "None"
+          },
+          "Bone": {
+            "Name": "eye_right"
+          },
+          "SocketOutput": "ESkinFXSocketOutput::SFXS_POSITION",
+          "SocketOutputAlpha": "ESkinFXSocketOutputAlphaPack::SFXSAP_NONE",
+          "bMultiplyColorByEnvelope": false,
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY",
+          "bMultiplyScalarByEnvelope": false,
+          "Advanced": {
+            "UseSpecificComponent": "None",
+            "bEvaluateOnlyAtStart": false,
+            "bPreviewOnly": false
+          },
+          "bUseBone": true,
+          "bUseReferencePose": false
+        }
+      ],
+      "Textures": [
+        {
+          "MaterialParameter": {
+            "Name": "Texture A"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/Noises/VFX_T_NoiseCaustics04_D.VFX_T_NoiseCaustics04_D",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Texture B"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/Noises/VFX_T_PlasmaSpell_D.VFX_T_PlasmaSpell_D",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkinFX_AncMagFillPotion_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.7"
+      },
+      "VariableGuid": "49D3C1E8-4AF0F25D-A0990595-47A03641",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkinFX_AncMagFillPotion_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkinFX_AncMagFillPotion_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_AncMagFillPotion.8"
+      }
+    }
+  }
+]

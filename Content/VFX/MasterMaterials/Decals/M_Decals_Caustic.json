@@ -1,0 +1,896 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_Decals_Caustic",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_DeferredDecal",
+      "BlendMode": "BLEND_Translucent",
+      "DecalBlendMode": "DBM_Emissive",
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "5908E907-4CB7A7F5-E0D81EA8-E28892C9",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              1735686034510298507,
+              4272836139060574129,
+              4596153055825153209,
+              4788805227935442984,
+              5700259902885241962,
+              7836261843062982621,
+              9969913998056191802,
+              14953435556073412981
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Density",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Radius",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Max Expensive Steps Debug Color",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Intensity",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "NormalTiling",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Global_SpeedScale",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Normal Flow Speed",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "NormalOffset",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "9D209132-4FAD7105-292ABA91-7B238C08",
+              "167CBD7B-4FA6829D-748AB2BB-6BEE523A",
+              "80AB74E0-489030C7-9AFE1987-8BD020D9",
+              "792ADEB2-4EEAE45B-EE288395-71AF4D3F",
+              "9E0A5CED-42E99ABA-D059D1AB-5BCEF9A3",
+              "F543050E-4036937E-5DAB0080-66343A75",
+              "0DFB8801-48415D0D-7F4BCD88-C65FF398",
+              "7ED82145-4C141C71-1CFA34BE-2B81B956"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              6338076585572178316
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Tint",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "0F981A5E-491161F1-9F01C7B5-21B5BCFE"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              13178007962320848332
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "CausticTexture_01",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "DAF7F7EF-4D2A9646-BAA683A9-8503F235"
+            ]
+          },
+          "ScalarValues": [
+            2.33,
+            0.5,
+            32.0,
+            1.0,
+            1.0,
+            1.0,
+            0.4,
+            1.0
+          ],
+          "VectorValues": [
+            {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFFFF"
+            }
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'T_Caustics_Colour_MSK'",
+              "ObjectPath": "/Game/Environment/Cavern_Dungeon/Materials/Water/Textures/T_Caustics_Colour_MSK.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'T_Caustics_Colour_MSK'",
+            "ObjectPath": "/Game/Environment/Cavern_Dungeon/Materials/Water/Textures/T_Caustics_Colour_MSK.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_Waves_N'",
+            "ObjectPath": "/Flow/Materials/RiverShaders/Textures/T_Waves_N.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_EV_BlankWhite_01'",
+            "ObjectPath": "/Engine/EngineVolumetrics/Fogsheet/Materials/T_EV_BlankWhite_01.0"
+          },
+          null,
+          {
+            "ObjectName": "Texture2D'T_Base_Tile_Normal'",
+            "ObjectPath": "/Engine/Engine_MI_Shaders/T_Base_Tile_Normal.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+            "Function": {
+              "ObjectName": "MaterialFunction'ExponentialDensity'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+            }
+          },
+          {
+            "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+            "Function": {
+              "ObjectName": "MaterialFunction'ExponentialDensity'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+            }
+          },
+          {
+            "StateId": "235C8133-44D704CA-0297108A-59B9F710",
+            "Function": {
+              "ObjectName": "MaterialFunction'RadialGradientExponential'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraDirectionVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+            }
+          },
+          {
+            "StateId": "057104BE-419EB8A2-40A62A8C-3874BCD2",
+            "Function": {
+              "ObjectName": "MaterialFunction'InverseTransformMatrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+            "Function": {
+              "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+            }
+          },
+          {
+            "StateId": "4A0C0323-41EFBE0F-65260B88-B780A3F3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TransformToZVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TransformToZVector.0"
+            }
+          },
+          {
+            "StateId": "00CC6072-4AC703D1-F736CFBE-45C8A122",
+            "Function": {
+              "ObjectName": "MaterialFunction'ParallaxOcclusionMapping'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/ParallaxOcclusionMapping.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "51BAB8B3-4E7EFBFD-B4515E9F-9703A6B1",
+            "Function": {
+              "ObjectName": "MaterialFunction'ComponentPivotLocation'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+            }
+          },
+          {
+            "StateId": "D4064605-44BED0EB-E28093AD-CB9E8887",
+            "Function": {
+              "ObjectName": "MaterialFunction'Sprite'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/Sprite.0"
+            }
+          },
+          {
+            "StateId": "2F912831-4E2F8A56-334DDABE-8D94F2B3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TextureBomb_SingleSample'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/TextureBomb_SingleSample.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraDirectionVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+            }
+          },
+          {
+            "StateId": "057104BE-419EB8A2-40A62A8C-3874BCD2",
+            "Function": {
+              "ObjectName": "MaterialFunction'InverseTransformMatrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+            "Function": {
+              "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+            }
+          },
+          {
+            "StateId": "4A0C0323-41EFBE0F-65260B88-B780A3F3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TransformToZVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TransformToZVector.0"
+            }
+          },
+          {
+            "StateId": "00CC6072-4AC703D1-F736CFBE-45C8A122",
+            "Function": {
+              "ObjectName": "MaterialFunction'ParallaxOcclusionMapping'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/ParallaxOcclusionMapping.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "51BAB8B3-4E7EFBFD-B4515E9F-9703A6B1",
+            "Function": {
+              "ObjectName": "MaterialFunction'ComponentPivotLocation'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+            }
+          },
+          {
+            "StateId": "D4064605-44BED0EB-E28093AD-CB9E8887",
+            "Function": {
+              "ObjectName": "MaterialFunction'Sprite'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/Sprite.0"
+            }
+          },
+          {
+            "StateId": "2F912831-4E2F8A56-334DDABE-8D94F2B3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TextureBomb_SingleSample'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/TextureBomb_SingleSample.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraDirectionVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+            }
+          },
+          {
+            "StateId": "057104BE-419EB8A2-40A62A8C-3874BCD2",
+            "Function": {
+              "ObjectName": "MaterialFunction'InverseTransformMatrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+            "Function": {
+              "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+            }
+          },
+          {
+            "StateId": "4A0C0323-41EFBE0F-65260B88-B780A3F3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TransformToZVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TransformToZVector.0"
+            }
+          },
+          {
+            "StateId": "00CC6072-4AC703D1-F736CFBE-45C8A122",
+            "Function": {
+              "ObjectName": "MaterialFunction'ParallaxOcclusionMapping'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/ParallaxOcclusionMapping.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "51BAB8B3-4E7EFBFD-B4515E9F-9703A6B1",
+            "Function": {
+              "ObjectName": "MaterialFunction'ComponentPivotLocation'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+            }
+          },
+          {
+            "StateId": "D4064605-44BED0EB-E28093AD-CB9E8887",
+            "Function": {
+              "ObjectName": "MaterialFunction'Sprite'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/Sprite.0"
+            }
+          },
+          {
+            "StateId": "2F912831-4E2F8A56-334DDABE-8D94F2B3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TextureBomb_SingleSample'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/TextureBomb_SingleSample.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+            "Function": {
+              "ObjectName": "MaterialFunction'CameraDirectionVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+            }
+          },
+          {
+            "StateId": "057104BE-419EB8A2-40A62A8C-3874BCD2",
+            "Function": {
+              "ObjectName": "MaterialFunction'InverseTransformMatrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+            "Function": {
+              "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+            }
+          },
+          {
+            "StateId": "4A0C0323-41EFBE0F-65260B88-B780A3F3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TransformToZVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TransformToZVector.0"
+            }
+          },
+          {
+            "StateId": "00CC6072-4AC703D1-F736CFBE-45C8A122",
+            "Function": {
+              "ObjectName": "MaterialFunction'ParallaxOcclusionMapping'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/ParallaxOcclusionMapping.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "51BAB8B3-4E7EFBFD-B4515E9F-9703A6B1",
+            "Function": {
+              "ObjectName": "MaterialFunction'ComponentPivotLocation'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+            }
+          },
+          {
+            "StateId": "D4064605-44BED0EB-E28093AD-CB9E8887",
+            "Function": {
+              "ObjectName": "MaterialFunction'Sprite'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/Sprite.0"
+            }
+          },
+          {
+            "StateId": "2F912831-4E2F8A56-334DDABE-8D94F2B3",
+            "Function": {
+              "ObjectName": "MaterialFunction'TextureBomb_SingleSample'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/TextureBomb_SingleSample.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "7A7CA8A8-4D2472CF-AA326387-EBA2DE06",
+            "Function": {
+              "ObjectName": "MaterialFunction'Swizzle'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/Swizzle.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "18E61A1E-44FD21A9-E7A816B1-E7B85641",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_4WayMotionBombed'",
+              "ObjectPath": "/Flow/Materials/MFs/MF_4WayMotionBombed.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.03125,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Waves_N"
+        }
+      ]
+    }
+  }
+]

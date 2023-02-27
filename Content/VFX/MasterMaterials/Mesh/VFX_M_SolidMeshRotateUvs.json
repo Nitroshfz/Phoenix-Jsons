@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_SolidMeshRotateUvs",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "Specular": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameter2D_5",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_9",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "747AFEC7-4F67D753-006786BB-6BCB0584",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              1228335140032643618,
+              7687686911229580042,
+              11308329045188882931,
+              14385738051276236979,
+              16415202724821406482
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Rotation",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Roughness Adjuster",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Diffuse Brightness",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Normal Height",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "UV scale",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "F54603D2-4614E691-0D370AAF-0769DA12",
+              "81CA7E90-4C047E24-FD899D92-E6D5A1BF",
+              "8A023439-4B8A7912-2102EA93-66DC3DB5",
+              "1DA01F08-44F0114D-D82C2EB8-C7BAB968",
+              "ADC46BFC-4CC39F17-389044A5-5DC37828"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              6792474360618410216,
+              12076515603125919684,
+              13690561732087317255
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "SRO Map",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Normal Map",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Diffuse Map",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "5F7E80F6-428EBB10-34760CB9-D1BCD92C",
+              "E96E6601-4DAE42AB-2FE48D96-8CA38B4C",
+              "8ACB59C7-42FAFDCA-B8D68D86-692665B1"
+            ]
+          },
+          "ScalarValues": [
+            0.0,
+            0.0,
+            0.5,
+            1.0,
+            1.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'T_HW_stonefloor_1_SRO'",
+              "ObjectPath": "/Game/Environment/Hogwarts/Common/Textures/Stone/T_HW_stonefloor_1_SRO.0"
+            },
+            {
+              "ObjectName": "Texture2D'T_HW_stonefloor_1_normal'",
+              "ObjectPath": "/Game/Environment/Hogwarts/Common/Textures/Stone/T_HW_stonefloor_1_normal.0"
+            },
+            {
+              "ObjectName": "Texture2D'T_Sanc_RoHT_StoneTiles_01_D'",
+              "ObjectPath": "/Game/Gameplay/Sanctuary/Textures/Structures/T_Sanc_RoHT_StoneTiles_01_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'T_HW_stonefloor_1_normal'",
+            "ObjectPath": "/Game/Environment/Hogwarts/Common/Textures/Stone/T_HW_stonefloor_1_normal.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_Sanc_RoHT_StoneTiles_01_D'",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Textures/Structures/T_Sanc_RoHT_StoneTiles_01_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_HW_stonefloor_1_SRO'",
+            "ObjectPath": "/Game/Environment/Hogwarts/Common/Textures/Stone/T_HW_stonefloor_1_SRO.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "A9E4F021-46161CC9-A22A4F96-722D7232",
+            "Function": {
+              "ObjectName": "MaterialFunction'SplitComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SplitComponents.0"
+            }
+          },
+          {
+            "StateId": "7560E2DA-4356343C-18E6818A-A015BAC5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MakeFloat2'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.0"
+            }
+          },
+          {
+            "StateId": "E54DABBE-476AFF47-BAEBFE8A-066AF9C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_NormalHeight'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_NormalHeight.0"
+            }
+          },
+          {
+            "StateId": "E572D701-496E6D38-CC53A5BD-C450B0ED",
+            "Function": {
+              "ObjectName": "MaterialFunction'CustomRotator'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_HW_stonefloor_1_normal"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_HW_stonefloor_1_SRO"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Sanc_RoHT_StoneTiles_01_D"
+        }
+      ]
+    }
+  }
+]

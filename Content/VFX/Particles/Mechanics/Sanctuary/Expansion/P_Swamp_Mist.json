@@ -1,0 +1,523 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "DistributionVelocityScale",
+    "Outer": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Swamp_Mist:ParticleModuleRequired_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.8"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Swamp_Mist:ParticleModuleLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Swamp_Mist:ParticleModuleSize_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Swamp_Mist:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Swamp_Mist:ParticleModuleSubUV_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.14"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Swamp_Mist:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.9"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Swamp_Mist:ParticleModuleLocationPrimitiveCylinder_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.7"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_Swamp_Mist:ParticleModuleRotationRate_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.10"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Swamp_Mist:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.12"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_Swamp_Mist:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.4"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Swamp_Mist:ParticleModuleSpawn_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.13"
+      },
+      "PeakActiveParticles": 9
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MinValue": -5.0,
+        "MaxValue": 10.0,
+        "MinValueVec": {
+          "X": -5.0,
+          "Y": 5.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": -10.0,
+          "Y": 10.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -5.0,
+            5.0,
+            0.0,
+            -10.0,
+            10.0,
+            0.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.100983,
+        "MaxValue": 0.15625,
+        "MinValueVec": {
+          "X": 0.100983,
+          "Y": 0.143698,
+          "Z": 0.15625
+        },
+        "MaxValueVec": {
+          "X": 0.100983,
+          "Y": 0.143698,
+          "Z": 0.15625
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.100983,
+            0.143698,
+            0.15625
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 31.0,
+          "Values": [
+            0.0,
+            0.10752687,
+            0.21505374,
+            0.32258064,
+            0.43010747,
+            0.5376344,
+            0.6451613,
+            0.7526881,
+            0.86021495,
+            0.9677419,
+            0.96774197,
+            0.921659,
+            0.8755761,
+            0.8294931,
+            0.7834102,
+            0.7373272,
+            0.6912443,
+            0.6451614,
+            0.5990783,
+            0.5529953,
+            0.5069125,
+            0.46082962,
+            0.41474658,
+            0.36866358,
+            0.3225807,
+            0.2764978,
+            0.2304147,
+            0.18433172,
+            0.13824892,
+            0.09216602,
+            0.04608298,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 32,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 5.0,
+        "MaxValue": 7.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            7.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 300.0,
+        "MaxValue": 300.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            300.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "StartHeight": {
+        "MinValue": 50.0,
+        "MaxValue": 50.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            50.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "VelocityScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Swamp_Mist:ParticleModuleLocationPrimitiveCylinder_0.DistributionVelocityScale'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.0"
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_Unlit_TrackingCoreDust'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_Unlit_TrackingCoreDust.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Swamp_Mist:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.1"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 8,
+      "RandomImageTime": 1.0,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": -0.03,
+        "MaxValue": 0.03,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.03,
+            0.03
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 200.0,
+        "MaxValue": 300.0,
+        "MinValueVec": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 300.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            200.0,
+            200.0,
+            200.0,
+            300.0,
+            300.0,
+            300.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 1.0,
+        "MaxValue": 2.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        },
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            1.0,
+            1.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Swamp_Mist:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleModuleSubUV'",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 64.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            64.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Swamp_Mist:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Swamp_Mist",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Swamp_Mist:ParticleSpriteEmitter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/Expansion/P_Swamp_Mist.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

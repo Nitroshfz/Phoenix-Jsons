@@ -1,0 +1,232 @@
+[
+  {
+    "Type": "Material",
+    "Name": "MM_ConjuredDragon_Eye",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Masked",
+      "bUsedWithSkeletalMesh": true,
+      "StateId": "1CBE8BF8-463A5EF3-821D8AAB-1AFCF05F",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              191542103333114479,
+              440574345582452634,
+              2000651472171670817,
+              3784574829911485831,
+              11626686839899268361,
+              12480560331980335184,
+              14293101438686167145,
+              16636113120094965145
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "SphereMaskHardness",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "roughness",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "innerDensity",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "SphereRadiusMax",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "baseColorHueShift",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "innerIntensiity",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "innerRadius",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "baseIntensity",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "8BA8B545-4A75C187-38957586-51F5C67C",
+              "FDB04BE6-47779A2C-1F7DA791-F2E3A44B",
+              "103C915A-403FD270-1672CBB9-A32EA948",
+              "89700844-4A879F2F-09F9D286-528366DC",
+              "335AD850-48CA8E21-AF0BDC87-275CC658",
+              "52649D9B-4D9779DC-4751C5BA-0A091F0A",
+              "1DFFF791-4EF154B0-2C3DC588-E18AD031",
+              "D5840110-45951BED-9382C29C-09094799"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              9520962191712031716
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "opacityMask",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "F83C13E4-4E99B865-F54FB891-696830A9"
+            ]
+          },
+          "ScalarValues": [
+            0.2,
+            0.0,
+            2.55,
+            3500.0,
+            0.0,
+            20.0,
+            0.1,
+            1.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_CausticNoise_C_Seamless_D'",
+              "ObjectPath": "/Game/VFX/Textures/Liquid/VFX_T_CausticNoise_C_Seamless_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'Good64x64TilingNoiseHighFreq'",
+            "ObjectPath": "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_DragonEye_Iris_D'",
+            "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Dragons/HebrideanBlack/Textures/T_DragonEye_Iris_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'T_CorruptedSpider_Eye_D'",
+            "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Spiders/Acromantula_Corrupted/Textures/T_CorruptedSpider_Eye_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_CausticNoise_C_Seamless_D'",
+            "ObjectPath": "/Game/VFX/Textures/Liquid/VFX_T_CausticNoise_C_Seamless_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "B6067F67-4AC0092A-9D7DF581-EBEEE180",
+            "Function": {
+              "ObjectName": "MaterialFunction'HueShift'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/HueShift.0"
+            }
+          },
+          {
+            "StateId": "71028A8D-47BF4037-3A3A0B8A-D7B60E53",
+            "Function": {
+              "ObjectName": "MaterialFunction'ScreenAlignedPixelToPixelUVs'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.0"
+            }
+          },
+          {
+            "StateId": "22D58D0F-45CC84AB-89A3628B-351D83C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'DitherTemporalAA'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "B2F4A5A7-4EDE33D8-E70A4A83-A28D1503",
+            "Function": {
+              "ObjectName": "MaterialFunction'ScaleUVsByCenter'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/ScaleUVsByCenter.0"
+            }
+          },
+          {
+            "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+            "Function": {
+              "ObjectName": "MaterialFunction'ExponentialDensity'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+            }
+          },
+          {
+            "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+            "Function": {
+              "ObjectName": "MaterialFunction'ExponentialDensity'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+            }
+          },
+          {
+            "StateId": "235C8133-44D704CA-0297108A-59B9F710",
+            "Function": {
+              "ObjectName": "MaterialFunction'RadialGradientExponential'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "82BC5FC0-4A441319-BA988193-3218E26B",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'VFX_MP_ConjuredDragon'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/ParameterCollections/VFX_MP_ConjuredDragon.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_CorruptedSpider_Eye_D"
+        },
+        {
+          "SamplingScale": 2.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_DragonEye_Iris_D"
+        }
+      ]
+    }
+  }
+]

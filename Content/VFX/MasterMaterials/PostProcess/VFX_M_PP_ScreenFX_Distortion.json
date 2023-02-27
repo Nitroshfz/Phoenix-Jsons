@@ -1,0 +1,224 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_PP_ScreenFX_Distortion",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionComponentMask_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "6113420F-434DDCAE-7CB654AC-543124D3",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              84165556448032355,
+              3841872880641903957,
+              4615474501828765782,
+              5567566558821581330,
+              6584052485624400278,
+              7521391281770040808,
+              13586005002335275284,
+              17885150562564902808
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Outward Pan",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Distortion_Animate",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "ShrinkFlare",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Rotation Pan",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Distortion Power",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Tile U",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Tile V",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Mask Bias",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "E69FD5AD-4D841312-BDB43589-6A5C8803",
+              "816D2157-460958AE-0E4ECD90-9120C635",
+              "DAF7B962-4D6BF0CE-E46CC594-0B75454E",
+              "E562DF29-4BFF13ED-91106192-52C92FD0",
+              "13DBB45B-4F729E4D-6D715994-FF25BAE0",
+              "973E2D11-45DB5BC3-7A1262AC-58311698",
+              "1C3837F2-42322967-78D402AA-606310FA",
+              "8DEED0F9-4DBFDBEA-F23D59B2-00FB8565"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              8528486868982685662
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Mask Channels",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "C12B0819-41923BB3-3010ACAB-CD30BD13"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              524571140051731458,
+              10390377617205102563
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Mask Texture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Distortion Noise",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "4E1DF3A1-400E88FC-A3606C81-9F0EE83B",
+              "6C87BA44-41BD76CA-DEC6BCAF-E17198A3"
+            ]
+          },
+          "ScalarValues": [
+            0.25,
+            1.0,
+            1.0,
+            0.0,
+            2.0,
+            1.0,
+            0.3,
+            0.5
+          ],
+          "VectorValues": [
+            {
+              "R": 0.3,
+              "G": 0.4,
+              "B": 0.3,
+              "A": 0.0,
+              "Hex": "95AA95"
+            }
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_Intruding_ScreenFX_Fade_D'",
+              "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Intruding_ScreenFX_Fade_D.0"
+            },
+            {
+              "ObjectName": "Texture2D'VFX_T_Noise_Anisotropic2_height_N'",
+              "ObjectPath": "/Game/VFX/Textures/VFX_T_Noise_Anisotropic2_height_N.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_Intruding_ScreenFX_Fade_D'",
+            "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Intruding_ScreenFX_Fade_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Noise_Anisotropic2_height_N'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Noise_Anisotropic2_height_N.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FDF0E218-49F6EE8B-E9059C85-221B2F68",
+            "Function": {
+              "ObjectName": "MaterialFunction'Pi'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Pi.0"
+            }
+          },
+          {
+            "StateId": "1B367198-438F63C6-B7351099-C757F38C",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_PolarCoordinates'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_PolarCoordinates.0"
+            }
+          },
+          {
+            "StateId": "FE22B7E5-4785062D-5883288D-6EA42030",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_TextureCoord_TileAndPan'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_TextureCoord_TileAndPan.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "75B1ACF2-4A7C2369-2360AEB0-F9152AAD",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'VFX_MP_Danger_RedCreep'",
+              "ObjectPath": "/Game/VFX/Screen_FX/Danger/VFX_MP_Danger_RedCreep.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

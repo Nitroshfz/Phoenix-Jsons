@@ -1,0 +1,228 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkinFX_DeathExplodeCinBeastMontage_C",
+    "Super": "BP_SkinFX_NoGraph_Parent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SkinFX_DeathExplodeCinBeastMontage_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_DeathExplodeCinBeastMontage.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SkinFX_DeathExplodeCinBeastMontage_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_DeathExplodeCinBeastMontage.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SkinFX_NoGraph_Parent_C'",
+      "ObjectPath": "/SkinFX/BP_SkinFX_NoGraph_Parent.1"
+    },
+    "ClassFlags": 8653332,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkinFX_DeathExplodeCinBeastMontage_C'Default__BP_SkinFX_DeathExplodeCinBeastMontage_C'",
+      "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_DeathExplodeCinBeastMontage.1"
+    }
+  },
+  {
+    "Type": "BP_SkinFX_DeathExplodeCinBeastMontage_C",
+    "Name": "Default__BP_SkinFX_DeathExplodeCinBeastMontage_C",
+    "Template": "Default__BP_SkinFX_NoGraph_Parent_C",
+    "Class": "BlueprintGeneratedClass'/Game/VFX/SkinFX/BP_SkinFX_DeathExplodeCinBeastMontage.BP_SkinFX_DeathExplodeCinBeastMontage_C'",
+    "Properties": {
+      "MaterialSubTypeOverride": {
+        "Name": "Deathexplode"
+      },
+      "ASREnvelope": {
+        "AttackDuration": 2.5,
+        "AttackEase": {
+          "Easing": "EEasingFunc::CircularInOut",
+          "BlendExp": 3.0,
+          "Steps": 25
+        },
+        "bSustainHold": true,
+        "ReleaseDuration": 2.0
+      },
+      "Scalars": [
+        {
+          "MaterialParameter": {
+            "Name": "Dissolve"
+          },
+          "Scalar": 1.0,
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Offset Ammout"
+          },
+          "Scalar": 75.0,
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Tiling"
+          },
+          "Scalar": 600.0,
+          "bMultiplyByASREnvelope": false,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        },
+        {
+          "MaterialParameter": {
+            "Name": "Glow_Value"
+          },
+          "Scalar": 300.0,
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false
+            },
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "Colors": [
+        {
+          "MaterialParameter": {
+            "Name": "Glow_Color"
+          },
+          "Color": {
+            "R": 10.0,
+            "G": 0.097438,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF5800"
+          },
+          "EnvelopeColorMod": "ESkinFXEnvelopeColorMod::RGBONLY",
+          "bMultiplyByASREnvelope": true,
+          "Advanced": {
+            "FunctionMod": {
+              "Function": {
+                "Name": "None"
+              },
+              "Scale": 1.0,
+              "Op": "ESkinFXFunctionModOp::Add",
+              "ClampMin": 0.0,
+              "ClampMax": 1.0,
+              "bClampMin": false,
+              "bClampMax": false,
+              "ColorMod": "ESkinFXEnvelopeColorMod::ALPHAONLY"
+            },
+            "Convert": "ESkinFXColorConvert::None",
+            "bPreviewOnly": false
+          }
+        }
+      ],
+      "Textures": [
+        {
+          "MaterialParameter": {
+            "Name": "Distortion Texture"
+          },
+          "Texture": {
+            "AssetPathName": "/Game/VFX/Textures/VFX_T_FirePlasma_D.VFX_T_FirePlasma_D",
+            "SubPathString": ""
+          },
+          "Advanced": {
+            "bPreviewOnly": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SkinFX_DeathExplodeCinBeastMontage_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SkinFX_DeathExplodeCinBeastMontage_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SkinFX_DeathExplodeCinBeastMontage_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_DeathExplodeCinBeastMontage.3"
+      },
+      "VariableGuid": "C21CBB40-40CE62F4-34C84D98-D4BB4AD3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SkinFX_DeathExplodeCinBeastMontage_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SkinFX_DeathExplodeCinBeastMontage_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_DeathExplodeCinBeastMontage.4"
+      }
+    }
+  }
+]

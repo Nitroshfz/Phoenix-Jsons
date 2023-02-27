@@ -1,0 +1,252 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_Orbit_Spline_Thicken",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_1",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "WorldPositionOffset": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "Refraction": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_0",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "bUsedWithMeshParticles": true,
+      "bUsesDistortion": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "6719E415-47777B31-65570799-733505BD",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              13574984594942950721
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Width",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "9A489A6C-4D1A7096-0DC23086-28A2FE7C"
+            ]
+          },
+          "ScalarValues": [
+            20.0
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_Gradient_Packed_D'",
+            "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Gradient_Packed_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Soft_Energy_Trail_D'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Soft_Energy_Trail_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+            "Function": {
+              "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+            "Function": {
+              "ObjectName": "MaterialFunction'Transform3x3Matrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.0"
+            }
+          },
+          {
+            "StateId": "2C0AFCEF-4B67951F-85943A89-8827DBDF",
+            "Function": {
+              "ObjectName": "MaterialFunction'TangentBasis'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/TangentBasis.0"
+            }
+          },
+          {
+            "StateId": "F5C2D477-4BA63455-E32B4B96-0D7674B6",
+            "Function": {
+              "ObjectName": "MaterialFunction'BlendAngleCorrectedNormals'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+            "Function": {
+              "ObjectName": "MaterialFunction'Transform3x3Matrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "972EFAAA-4C1C2B16-4BC287A2-B11C51DA",
+            "Function": {
+              "ObjectName": "MaterialFunction'SafeNormalize'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize.0"
+            }
+          },
+          {
+            "StateId": "B404464D-42313D79-E67091AA-AD61BE51",
+            "Function": {
+              "ObjectName": "MaterialFunction'CreateThirdOrthogonalVector'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector.0"
+            }
+          },
+          {
+            "StateId": "949B5345-47E4ADAB-4A089BB4-15A81F3F",
+            "Function": {
+              "ObjectName": "MaterialFunction'SplineThicken'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SplineThicken.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "Random",
+          "Width",
+          "Param3",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_M_Constellation_CIN",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "TwoSided": true,
+      "bUsedWithMeshParticles": true,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "3599A975-48E26AC1-C7E955B3-DE68B509",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              7638135783471404904,
+              8394684900550694966
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "DistanceToCenter",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Scale",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "2E4AA806-4DD487F9-AD8951AA-5CE0FE73",
+              "799B667D-46DBCAD7-8BE022B4-49548DCE"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              7148365451585915455,
+              8370121904344411576
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "NoiseTexture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Texture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "537A3B36-4A513E2C-262E9CA0-05D08A7C",
+              "C877A532-4C36B376-554E68A9-225FCBA3"
+            ]
+          },
+          "ScalarValues": [
+            5.0,
+            10.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_Cloud_SoftWisps_D'",
+              "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Cloud_SoftWisps_D.0"
+            },
+            {
+              "ObjectName": "Texture2D'VFX_T_Flare_Anamorphic_D'",
+              "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Flare_Anamorphic_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_Cloud_SoftWisps_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Cloud_SoftWisps_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Flare_Anamorphic_D'",
+            "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Flare_Anamorphic_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "51BAB8B3-4E7EFBFD-B4515E9F-9703A6B1",
+            "Function": {
+              "ObjectName": "MaterialFunction'ComponentPivotLocation'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ComponentPivotLocation.0"
+            }
+          },
+          {
+            "StateId": "D4064605-44BED0EB-E28093AD-CB9E8887",
+            "Function": {
+              "ObjectName": "MaterialFunction'Sprite'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/Sprite.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "Scale",
+          "Param2",
+          "Param3",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Cloud_SoftWisps_D"
+        }
+      ]
+    }
+  }
+]

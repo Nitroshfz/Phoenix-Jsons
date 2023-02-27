@@ -1,0 +1,209 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_HW_SquidGrotto_WallOpening",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "BAEA7E104FD5919030321D8C086647AD",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2E4A"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_HW_SquidGrotto_WallOpening",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2EAE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_HW_SquidGrotto_WallOpening",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_GroundsQ_Grotto_MosaicFX'",
+            "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/MI_HW_GroundsQ_Grotto_MosaicFX.0"
+          },
+          "MaterialSlotName": "M_SquidGrotto_Mosaic1",
+          "ImportedMaterialSlotName": "M_SquidGrotto_Mosaic1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 610.41187,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 610.41187,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.87358856,
+          "Y": -0.0010342598,
+          "Z": -0.61390686
+        },
+        "BoxExtent": {
+          "X": 122.7583,
+          "Y": 0.145028,
+          "Z": 131.92886
+        },
+        "SphereRadius": 153.71378
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_HW_SquidGrotto_WallOpening:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/VFX_SM_HW_SquidGrotto_WallOpening.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_HW_SquidGrotto_WallOpening:NavCollision_0'",
+      "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/VFX_SM_HW_SquidGrotto_WallOpening.1"
+    },
+    "LightingGuid": "CF708EDD-4E947C9A-509243B6-11FFC48F",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 298,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 183,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 184
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 184,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 184
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 74,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 66,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0004970537,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 67
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 67,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 67
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.87358856,
+          "Y": -0.0010342598,
+          "Z": -0.61390686
+        },
+        "BoxExtent": {
+          "X": 122.7583,
+          "Y": 0.145028,
+          "Z": 131.92886
+        },
+        "SphereRadius": 153.71378
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.03946933,
+        "NaN",
+        0.024867333,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,600 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionVectorParticleParameter",
+    "Name": "DistributionVectorParticleParameter_0",
+    "Outer": "ParticleModuleColorOverLife_1",
+    "Class": "UScriptClass'DistributionVectorParticleParameter'",
+    "Properties": {
+      "ParameterName": "ParticleColor",
+      "Constant": {
+        "X": 1.0,
+        "Y": 0.462745,
+        "Z": 0.301961
+      },
+      "bIsDirty": false
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_TwigBallToyImpulse:ParticleModuleRequired_1'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.9"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_TwigBallToyImpulse:ParticleModuleLifetime_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_TwigBallToyImpulse:ParticleModuleSize_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.11"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_TwigBallToyImpulse:ParticleModuleColorOverLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.5"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_TwigBallToyImpulse:ParticleModuleOrbit_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.8"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationOverLifetime'P_TwigBallToyImpulse:ParticleModuleRotationOverLifetime_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.10"
+        },
+        {
+          "ObjectName": "ParticleModuleMeshRotationRate'P_TwigBallToyImpulse:ParticleModuleMeshRotationRate_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.7"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_TwigBallToyImpulse:ParticleModuleAcceleration_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.3"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_TwigBallToyImpulse:ParticleModuleVelocity_6'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.14"
+        },
+        {
+          "ObjectName": "ParticleModuleAccelerationDrag'P_TwigBallToyImpulse:ParticleModuleAccelerationDrag_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.4"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataMesh'P_TwigBallToyImpulse:ParticleModuleTypeDataMesh_0'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.13"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_TwigBallToyImpulse:ParticleModuleSpawn_1'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.12"
+      },
+      "PeakActiveParticles": 51
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_0",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MinValue": -200.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -200.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -200.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            -200.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleAccelerationDrag",
+    "Name": "ParticleModuleAccelerationDrag_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleAccelerationDrag'",
+    "Properties": {
+      "DragCoefficientRaw": {
+        "MinValue": 2.0,
+        "MaxValue": 2.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            2.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.301961,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 0.462745,
+          "Z": 0.301961
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 0.462745,
+          "Z": 0.301961
+        },
+        "Distribution": {
+          "ObjectName": "DistributionVectorParticleParameter'P_TwigBallToyImpulse:ParticleModuleColorOverLife_1.DistributionVectorParticleParameter_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.1"
+        },
+        "Table": {
+          "Values": [
+            1.0,
+            0.462745,
+            0.301961
+          ]
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 4.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            4.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleMeshRotationRate",
+    "Name": "ParticleModuleMeshRotationRate_0",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleMeshRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MaxValue": 20.0,
+        "MaxValueVec": {
+          "X": 20.0,
+          "Y": 20.0,
+          "Z": 20.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationAmount": {
+        "MinValue": -0.1,
+        "MaxValue": 0.1,
+        "MinValueVec": {
+          "X": -0.1,
+          "Y": -0.1,
+          "Z": -0.1
+        },
+        "MaxValueVec": {
+          "X": 0.1,
+          "Y": 0.1,
+          "Z": 0.1
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.1,
+            -0.1,
+            -0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "RotationRateAmount": {
+        "MinValue": -0.2,
+        "MaxValue": 0.2,
+        "MinValueVec": {
+          "X": -0.2,
+          "Y": -0.2,
+          "Z": -0.2
+        },
+        "MaxValueVec": {
+          "X": 0.2,
+          "Y": 0.2,
+          "Z": 0.2
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -0.2,
+            -0.2,
+            -0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bEnabled": false,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MM_Masked_2Sided_Leaf_Basic'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MM_Masked_2Sided_Leaf_Basic.0"
+      },
+      "bKillOnCompleted": true,
+      "bUseLegacyEmitterTime": false,
+      "EmitterDuration": 0.1,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_TwigBallToyImpulse:ParticleModuleRequired_1.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationOverLifetime",
+    "Name": "ParticleModuleRotationOverLifetime_0",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleRotationOverLifetime'",
+    "Properties": {
+      "RotationOverLife": {
+        "MaxValue": 10.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            10.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 0.05,
+        "MaxValue": 0.12,
+        "MinValueVec": {
+          "X": 0.05,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 0.12,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.05,
+            0.05,
+            0.05,
+            0.12,
+            0.12,
+            0.12
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 50,
+          "CountLow": 20,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataMesh",
+    "Name": "ParticleModuleTypeDataMesh_0",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleTypeDataMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'SM_Twisted_Plane'",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_Twisted_Plane.2"
+      },
+      "bOverrideMaterial": true,
+      "RollPitchYawRange": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_6",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -300.0,
+        "MaxValue": 300.0,
+        "MinValueVec": {
+          "X": -300.0,
+          "Y": -300.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 300.0,
+          "Y": 300.0,
+          "Z": 300.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -300.0,
+            -300.0,
+            0.0,
+            300.0,
+            300.0,
+            300.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_TwigBallToyImpulse:ParticleSpriteEmitter_1.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_TwigBallToyImpulse",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_TwigBallToyImpulse:ParticleSpriteEmitter_1'",
+          "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/toys/P_TwigBallToyImpulse.15"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -388.48328,
+          "Y": -242.76282,
+          "Z": -59.87108
+        },
+        "Max": {
+          "X": 360.8402,
+          "Y": 378.0569,
+          "Z": 395.81458
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

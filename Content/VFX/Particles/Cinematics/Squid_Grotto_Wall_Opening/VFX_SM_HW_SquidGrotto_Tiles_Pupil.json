@@ -1,0 +1,179 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_HW_SquidGrotto_Tiles_Pupil",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "A2AA7A8144B558B730A2B39CC1B79F13",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2B8A"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_HW_SquidGrotto_Tiles_Pupil",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2BEE"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_HW_SquidGrotto_Tiles_Pupil",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_GroundsQ_Grotto_Mosaic'",
+            "ObjectPath": "/Game/Environment/Hogwarts/SUB_GroundsQ/Materials/MI_HW_GroundsQ_Grotto_Mosaic.0"
+          },
+          "MaterialSlotName": "M_SquidGrotto_Mosaic",
+          "ImportedMaterialSlotName": "M_SquidGrotto_Mosaic",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 360.67496,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 360.67496,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 27.08145,
+          "Y": 0.3827454,
+          "Z": 102.06895
+        },
+        "BoxExtent": {
+          "X": 3.5094604,
+          "Y": 0.0043768585,
+          "Z": 3.4414215
+        },
+        "SphereRadius": 3.7508957
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_HW_SquidGrotto_Tiles_Pupil:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/VFX_SM_HW_SquidGrotto_Tiles_Pupil.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_HW_SquidGrotto_Tiles_Pupil:NavCollision_0'",
+      "ObjectPath": "/Game/VFX/Particles/Cinematics/Squid_Grotto_Wall_Opening/VFX_SM_HW_SquidGrotto_Tiles_Pupil.1"
+    },
+    "LightingGuid": "1E69635D-416520E7-43D46A94-CDF60452",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 30,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 83,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 84
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 84,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 84
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 27.08145,
+          "Y": 0.3827454,
+          "Z": 102.06895
+        },
+        "BoxExtent": {
+          "X": 3.5094604,
+          "Y": 0.0043768585,
+          "Z": 3.4414215
+        },
+        "SphereRadius": 3.7508957
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.02196,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,525 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_2",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_5",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Water_Impact_Small:ParticleModuleRequired_2'",
+        "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Water_Impact_Small:ParticleModuleLifetime_2'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Water_Impact_Small:ParticleModuleSize_2'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Water_Impact_Small:ParticleModuleColorOverLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Water_Impact_Small:ParticleModuleSubUV_0'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.12"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_Water_Impact_Small:ParticleModuleVelocityCone_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.13"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_Water_Impact_Small:ParticleModuleAcceleration_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.4"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Water_Impact_Small:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.8"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Water_Impact_Small:ParticleModuleSpawn_3'",
+        "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.10"
+      },
+      "PeakActiveParticles": 5
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_1",
+    "Outer": "ParticleSpriteEmitter_3",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "Level": 1,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Water_Impact_Small:ParticleModuleRequired_2'",
+        "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.7"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Water_Impact_Small:ParticleModuleLifetime_2'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.6"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Water_Impact_Small:ParticleModuleSize_2'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.9"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Water_Impact_Small:ParticleModuleColorOverLife_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.5"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Water_Impact_Small:ParticleModuleSubUV_0'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.12"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocityCone'P_Water_Impact_Small:ParticleModuleVelocityCone_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.13"
+        },
+        {
+          "ObjectName": "ParticleModuleAcceleration'P_Water_Impact_Small:ParticleModuleAcceleration_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.4"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Water_Impact_Small:ParticleModuleRotation_0'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.8"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Water_Impact_Small:ParticleModuleSpawn_5'",
+        "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.11"
+      },
+      "PeakActiveParticles": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleAcceleration",
+    "Name": "ParticleModuleAcceleration_1",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleAcceleration'",
+    "Properties": {
+      "Acceleration": {
+        "MinValue": -600.0,
+        "MinValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -600.0
+        },
+        "MaxValueVec": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -500.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.0,
+            -600.0,
+            0.0,
+            0.0,
+            -500.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "bAlwaysInWorldSpace": true,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_1",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_2",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.55,
+        "MaxValue": 0.75,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.55,
+            0.75
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_2",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'PMI_lit_Water_Splash_Outdoor'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/PMI_lit_Water_Splash_Outdoor.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Water_Impact_Small:ParticleModuleRequired_2.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.0"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 5,
+      "SubImages_Vertical": 5,
+      "RandomImageTime": 1.0,
+      "EmitterLoops": 1,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            1.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_2",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 140.0,
+        "MaxValue": 160.0,
+        "MinValueVec": {
+          "X": 140.0,
+          "Y": 120.0,
+          "Z": 120.0
+        },
+        "MaxValueVec": {
+          "X": 160.0,
+          "Y": 140.0,
+          "Z": 140.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            140.0,
+            140.0,
+            140.0,
+            160.0,
+            160.0,
+            160.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "LockFlag": 4
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_3",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstList": [
+        {
+          "Count": 3,
+          "CountLow": -1,
+          "Time": 0.0
+        }
+      ],
+      "BurstScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_5",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 1.9999999,
+        "MaxValue": 1.9999999,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.9999999
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Water_Impact_Small:ParticleModuleSpawn_5.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.1"
+        }
+      },
+      "LODValidity": 2
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_0",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleSubUV'",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 24.0,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            24.0
+          ],
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocityCone",
+    "Name": "ParticleModuleVelocityCone_1",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleModuleVelocityCone'",
+    "Properties": {
+      "Angle": {
+        "MaxValue": 0.15,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0,
+            0.15
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "Velocity": {
+        "MinValue": 130.0,
+        "MaxValue": 170.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            130.0,
+            170.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "Direction": {
+        "X": 0.5,
+        "Y": 0.0,
+        "Z": 1.0
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_3",
+    "Outer": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Water_Impact_Small:ParticleSpriteEmitter_3.ParticleLODLevel_0'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.2"
+        },
+        {
+          "ObjectName": "ParticleLODLevel'P_Water_Impact_Small:ParticleSpriteEmitter_3.ParticleLODLevel_1'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.3"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Water_Impact_Small",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Water_Impact_Small:ParticleSpriteEmitter_3'",
+          "ObjectPath": "/Game/VFX/Particles/Impacts/P_Water_Impact_Small.14"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0,
+        2500.0
+      ],
+      "LODSettings": [
+        {},
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -11.0,
+          "Y": -11.0,
+          "Z": -11.0
+        },
+        "Max": {
+          "X": 11.0,
+          "Y": 11.0,
+          "Z": 11.0
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

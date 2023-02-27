@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "Material",
+    "Name": "MM_PP_Distort",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "904F6243-4D2A42EB-9B9C21AC-CCC0E5BE",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              1076595532567372777,
+              4890082126747245004,
+              7620817424504084071
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Sphere Falloff",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Ripple Speed",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Ripple Tiling",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "E5EDA473-4337382F-39028C9F-E0F156FA",
+              "763D1BE5-448391CE-619E31A6-385AB317",
+              "915CF4C8-4E559A8E-A045F4AC-95102814"
+            ]
+          },
+          "ScalarValues": [
+            5.0,
+            1.0,
+            1.0
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_DistortionNoise_N'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_DistortionNoise_N.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat2Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "917EB268-40C7E267-26D08999-CBF02920",
+            "Function": {
+              "ObjectName": "MaterialFunction'TransformToClipSpace'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/TransformToClipSpace.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "2CE06933-4516E7E7-18939089-29E38D76",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_PP_ScaleToScreenRatio'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/PostProcess/Mat_Functions/MF_PP_ScaleToScreenRatio.0"
+            }
+          },
+          {
+            "StateId": "801CC894-4ABB815C-EC17D6A0-5E0299D0",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_CombineNormal'",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_CombineNormal.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "2AA32EF6-4210A06A-F90481AB-3F8D18C1",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_PP_Distort'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/PostProcess/MP_PP_Distort.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

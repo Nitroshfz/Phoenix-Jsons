@@ -1,0 +1,537 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_1",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_4",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_1",
+    "Outer": "ParticleSpriteEmitter_1",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_DK_DustMote_Area:ParticleModuleRequired_1'",
+        "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.6"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_DK_DustMote_Area:ParticleModuleLifetime_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.4"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_DK_DustMote_Area:ParticleModuleSize_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.7"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_DK_DustMote_Area:ParticleModuleVelocity_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.10"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_DK_DustMote_Area:ParticleModuleColorOverLife_3'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.3"
+        },
+        {
+          "ObjectName": "ParticleModuleLocation'P_DK_DustMote_Area:ParticleModuleLocation_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.5"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_DK_DustMote_Area:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.9"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_DK_DustMote_Area:ParticleModuleSpawn_4'",
+        "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.8"
+      },
+      "PeakActiveParticles": 102
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_3",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 0.264775,
+        "MaxValue": 0.595,
+        "MinValueVec": {
+          "X": 0.595,
+          "Y": 0.496287,
+          "Z": 0.264775
+        },
+        "MaxValueVec": {
+          "X": 0.595,
+          "Y": 0.496287,
+          "Z": 0.264775
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.595,
+            0.496287,
+            0.264775
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 0.49981603,
+        "Distribution": null,
+        "Table": {
+          "TimeScale": 14.999999,
+          "Values": [
+            0.0,
+            0.21533151,
+            0.48750162,
+            0.49957812,
+            0.4992789,
+            0.49897972,
+            0.49868047,
+            0.4983813,
+            0.49808207,
+            0.4977829,
+            0.49748367,
+            0.49718446,
+            0.49688524,
+            0.4055447,
+            0.1492041,
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 16,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_1",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 3.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            3.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleLocation",
+    "Name": "ParticleModuleLocation_1",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleLocation'",
+    "Properties": {
+      "StartLocation": {
+        "MinValue": -1500.0,
+        "MaxValue": 1500.0,
+        "MinValueVec": {
+          "X": -1500.0,
+          "Y": -200.0,
+          "Z": 0.0
+        },
+        "MaxValueVec": {
+          "X": 1500.0,
+          "Y": 200.0,
+          "Z": 400.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -1500.0,
+            -200.0,
+            0.0,
+            1500.0,
+            200.0,
+            400.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_1",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "MaterialInstanceConstant'VFX_MI_BasicGlow_Lit'",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_BasicGlow_Lit.0"
+      },
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_DK_DustMote_Area:ParticleModuleRequired_1.RequiredDistributionSpawnRate'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "MaxDrawCount": 3000,
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_1",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 5.0,
+        "MaxValue": 7.0,
+        "MinValueVec": {
+          "X": 5.0,
+          "Y": 5.0,
+          "Z": 5.0
+        },
+        "MaxValueVec": {
+          "X": 7.0,
+          "Y": 7.0,
+          "Z": 7.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            5.0,
+            5.0,
+            5.0,
+            7.0,
+            7.0,
+            7.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_4",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 20.0,
+        "MaxValue": 20.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            20.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            1.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_DK_DustMote_Area:ParticleModuleSpawn_4.BurstScaleDistribution'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.1"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_DK_DustMote_Area:ParticleModuleRequired_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.6"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_DK_DustMote_Area:ParticleModuleSpawn_4'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.8"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_DK_DustMote_Area:ParticleModuleRequired_1'",
+            "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.6"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_DK_DustMote_Area:ParticleModuleLifetime_1'",
+            "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.4"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_DK_DustMote_Area:ParticleModuleSize_1'",
+            "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.7"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity'P_DK_DustMote_Area:ParticleModuleVelocity_1'",
+            "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.10"
+          },
+          {
+            "ObjectName": "ParticleModuleLocation'P_DK_DustMote_Area:ParticleModuleLocation_1'",
+            "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.5"
+          }
+        ],
+        "InvMaxSize": {
+          "X": 0.14285715,
+          "Y": 0.14285715
+        },
+        "InvRotationRateScale": 0.2,
+        "MaxLifetime": 5.0,
+        "MaxParticleCount": 102,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 255,
+            "Hex": "FF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 253,
+            "Hex": "FD000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 229,
+            "Hex": "E5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 0.34606653
+        },
+        "ColorBias": {
+          "X": 0.390625,
+          "Y": 0.319393,
+          "Z": 0.250318,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 7.0,
+          "Y": 7.0,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 5.0,
+        "ScreenAlignment": "PSA_Square"
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_1",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -5.0,
+        "MaxValue": 5.0,
+        "MinValueVec": {
+          "X": -5.0,
+          "Y": -5.0,
+          "Z": -5.0
+        },
+        "MaxValueVec": {
+          "X": 5.0,
+          "Y": 5.0,
+          "Z": 5.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            -5.0,
+            -5.0,
+            -5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Values": [
+            0.0
+          ],
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_1",
+    "Outer": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "bUseLegacySpawningBehavior": true,
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_DK_DustMote_Area:ParticleSpriteEmitter_1.ParticleLODLevel_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.2"
+        }
+      ],
+      "DetailModeBitmask": 7
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_DK_DustMote_Area",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "WarmupTime": 3.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_DK_DustMote_Area:ParticleSpriteEmitter_1'",
+          "ObjectPath": "/Game/VFX/Kits/Combat_Dungeon/P_DK_DustMote_Area.11"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0
+      ],
+      "LODSettings": [
+        {}
+      ],
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -1456.2021,
+          "Y": -1465.9656,
+          "Z": -713.33795
+        },
+        "Max": {
+          "X": 1514.813,
+          "Y": 1526.2542,
+          "Z": 758.0275
+        },
+        "IsValid": 1
+      },
+      "bUseFixedRelativeBoundingBox": true,
+      "bShouldResetPeakCounts": true
+    }
+  }
+]

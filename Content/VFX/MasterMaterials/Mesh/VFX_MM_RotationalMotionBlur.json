@@ -1,0 +1,184 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_RotationalMotionBlur",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "BlendMode": "BLEND_Translucent",
+      "wMotion": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "bEnableResponsiveAA": true,
+      "bUsedWithMeshParticles": true,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bwWritesMotionVector": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "bAllowMotionVectorRendering": true,
+      "StateId": "2D8C3C9B-49FD2BE2-2D9EA6B4-D071F4A7",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              112243686464204492,
+              233980183789320290,
+              2092422187212391518,
+              3745190098347825171,
+              13747814219392177859,
+              15731224454359607072,
+              16720311306142606243,
+              18433730254062828355
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Motionblur Near Amount",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Texture1_Tiling U",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Texture1_Speed V",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Texture1_Speed U",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Motionblur Multiplier",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Motionblur Far Amount",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Texture1_Tiling V",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "MotionBlur Fadeout Distance",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "86622597-4ECB74EF-62187684-FC7D766F",
+              "5C30E4DE-47BACF74-7F3906A0-EE44715F",
+              "2176BEA5-484A2487-5CD279A9-1BEB9287",
+              "BE73C478-471E21D0-9476B0BF-74F81409",
+              "7D9C045E-42470E89-65C6908B-79C8FF7F",
+              "48D2EC75-41AA5B66-6946ACA2-316B9A9D",
+              "A43CA1F6-4F8022DB-486112B6-194F0C80",
+              "151DDF07-4D2A5D0C-E820049F-CB54883E"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              101414730318396802
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Panning Texture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "51A6A782-484E30D0-614792B2-5E49BBFC"
+            ]
+          },
+          "ScalarValues": [
+            1.0,
+            5.0,
+            0.195069,
+            0.038095,
+            0.5,
+            0.2,
+            0.761905,
+            1000.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_Streaks_01_D'",
+              "ObjectPath": "/Game/VFX/Textures/VFX_T_Streaks_01_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'Good64x64TilingNoiseHighFreq'",
+            "ObjectPath": "/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Streaks_01_D'",
+            "ObjectPath": "/Game/VFX/Textures/VFX_T_Streaks_01_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "71028A8D-47BF4037-3A3A0B8A-D7B60E53",
+            "Function": {
+              "ObjectName": "MaterialFunction'ScreenAlignedPixelToPixelUVs'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.0"
+            }
+          },
+          {
+            "StateId": "22D58D0F-45CC84AB-89A3628B-351D83C8",
+            "Function": {
+              "ObjectName": "MaterialFunction'DitherTemporalAA'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.0"
+            }
+          },
+          {
+            "StateId": "FE22B7E5-4785062D-5883288D-6EA42030",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_TextureCoord_TileAndPan'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_TextureCoord_TileAndPan.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction'VectorLength'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "37FCA1A3-49275127-A5A19082-9A131298",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Fit'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Fit.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,636 @@
+[
+  {
+    "Type": "Function",
+    "Name": "AMAuraRanrak01Params",
+    "Outer": "FL_VFX_AMRanrakAuraFX_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMeshCPUAccess",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VFX_NS_AMAuraRanrak01",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "AuraRadius",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IntensityScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "PointAttractScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "TendrilTightnessScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ActivateAura",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DeactivateAura",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetWorldTransform_SweepHitResult",
+        "Flags": 1,
+        "ElementSize": 144,
+        "PropertyFlags": 549755813888,
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentScale_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 209854464
+  },
+  {
+    "Type": "Function",
+    "Name": "AMAuraRanrakTendrils01Params",
+    "Outer": "FL_VFX_AMRanrakAuraFX_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "VFX_NS_AMAuraRanrak01",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SpawnRadius",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IntensityScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ActivateAura",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DeactivateAura",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201465856
+  },
+  {
+    "Type": "Function",
+    "Name": "AMWater Lifeforce Tendrils 01Params",
+    "Outer": "FL_VFX_AMRanrakAuraFX_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "TendrilSpline",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'SplineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VFX_NS_AMWaterLifeforceTendrils01",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemLifetime",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemIntensity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "EmissionRateScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "PulseOn",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Activate",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Deactivate",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201465856
+  },
+  {
+    "Type": "Function",
+    "Name": "AMWater Lifeforce Connections 01Params",
+    "Outer": "FL_VFX_AMRanrakAuraFX_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "VFX_NS_AMWaterLifeforceConnections01",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "EmissionRateScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemIntensity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "EmitterRadius",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AttractPoint",
+        "Flags": 1,
+        "ElementSize": 12,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Activate",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Deactivate",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201465856
+  },
+  {
+    "Type": "Function",
+    "Name": "AMWaterLifeforceBody01Params",
+    "Outer": "FL_VFX_AMRanrakAuraFX_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "VFX_NS_AMWaterLifeforceBody01",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "EmissionRateScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemIntensity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "EmitterRadius",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AttractPoint",
+        "Flags": 1,
+        "ElementSize": 12,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Activate",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Deactivate",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "__WorldContext",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201465856
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "FL_VFX_AMRanrakAuraFX_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'BlueprintFunctionLibrary'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMWaterLifeforceBody01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.4"
+      },
+      {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMWater Lifeforce Connections 01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.3"
+      },
+      {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMWater Lifeforce Tendrils 01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.2"
+      },
+      {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMAuraRanrakTendrils01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.1"
+      },
+      {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMAuraRanrak01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.0"
+      }
+    ],
+    "FuncMap": {
+      "AMAuraRanrak01Params": {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMAuraRanrak01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.0"
+      },
+      "AMAuraRanrakTendrils01Params": {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMAuraRanrakTendrils01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.1"
+      },
+      "AMWater Lifeforce Tendrils 01Params": {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMWater Lifeforce Tendrils 01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.2"
+      },
+      "AMWater Lifeforce Connections 01Params": {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMWater Lifeforce Connections 01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.3"
+      },
+      "AMWaterLifeforceBody01Params": {
+        "ObjectName": "Function'FL_VFX_AMRanrakAuraFX_C:AMWaterLifeforceBody01Params'",
+        "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.4"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "FL_VFX_AMRanrakAuraFX_C'Default__FL_VFX_AMRanrakAuraFX_C'",
+      "ObjectPath": "/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.6"
+    }
+  },
+  {
+    "Type": "FL_VFX_AMRanrakAuraFX_C",
+    "Name": "Default__FL_VFX_AMRanrakAuraFX_C",
+    "Class": "BlueprintGeneratedClass'/Game/VFX/FunctionLibrary/FL_VFX_AMRanrakAuraFX.FL_VFX_AMRanrakAuraFX_C'"
+  }
+]
