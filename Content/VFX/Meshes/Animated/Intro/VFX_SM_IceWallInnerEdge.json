@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_IceWallInnerEdge",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "07D8A0764E0762C13DD585A3AE65B3D1",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x10A00"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_IceWallInnerEdge",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x10A64"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_IceWallInnerEdge",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_AncientMagicCrystal",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceBreakables/VFX_MI_AncientMagicCrystal.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 857.8228,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 857.8228,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -9.239349,
+          "Y": -45.81829,
+          "Z": 284.96146
+        },
+        "BoxExtent": {
+          "X": 330.84384,
+          "Y": 60.032555,
+          "Z": 358.49588
+        },
+        "SphereRadius": 418.42502
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_IceWallInnerEdge:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Animated/Intro/VFX_SM_IceWallInnerEdge.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_IceWallInnerEdge:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Animated/Intro/VFX_SM_IceWallInnerEdge.1"
+    },
+    "LightingGuid": "E7C94BC2-4C922456-5DE58AA6-1EDE958D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1014,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1492,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1493
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1493,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -9.239349,
+          "Y": -45.81829,
+          "Z": 284.96146
+        },
+        "BoxExtent": {
+          "X": 330.84384,
+          "Y": 60.032555,
+          "Z": 358.49588
+        },
+        "SphereRadius": 418.42502
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

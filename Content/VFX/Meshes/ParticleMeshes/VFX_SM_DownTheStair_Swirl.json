@@ -1,0 +1,238 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_DownTheStair_Swirl",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "134A598D4C9EE7E69EFD3A9A96693D9E",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x68AE"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_DownTheStair_Swirl",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6912"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_DownTheStair_Swirl",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 151.64133,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 151.64133,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.69664,
+          "Y": 9.58802,
+          "Z": 1345.3206
+        },
+        "BoxExtent": {
+          "X": 67.74436,
+          "Y": 45.982674,
+          "Z": 152.71014
+        },
+        "SphereRadius": 159.31616
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_DownTheStair_Swirl:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_DownTheStair_Swirl.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_DownTheStair_Swirl:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_DownTheStair_Swirl.1"
+    },
+    "LightingGuid": "D15284FB-438305D7-790D69A3-68747BAE",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1392,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 766,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 767
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 767,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 767
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 348,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 223,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 12.946324,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 224
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 224,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 224
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 86,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 66,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 83.20663,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 67
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 67,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 67
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1.69664,
+          "Y": 9.58802,
+          "Z": 1345.3206
+        },
+        "BoxExtent": {
+          "X": 67.74436,
+          "Y": 45.982674,
+          "Z": 152.71014
+        },
+        "SphereRadius": 159.31616
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.110944,
+        "NaN",
+        0.042736,
+        "NaN",
+        0.025683999,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

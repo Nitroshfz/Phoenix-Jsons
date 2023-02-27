@@ -1,0 +1,171 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Doorknob",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "0AC3739A49F318009E8AE4A64960458A",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x446C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "VFX_SM_Doorknob",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x44D0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Doorknob",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_HW_Doorknob_Transform",
+            "ObjectPath": "/Game/VFX/Levels/Hogwarts/VFX_MI_HW_Doorknob_Transform.0"
+          },
+          "MaterialSlotName": "M_HM_HoneyDukes_Door01",
+          "ImportedMaterialSlotName": "M_HM_HoneyDukes_Door01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 223.87688,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 223.87688,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 6.6984644,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 5.6967,
+          "Y": 6.598949,
+          "Z": 5.696697
+        },
+        "SphereRadius": 7.6473603
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Doorknob:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_Doorknob.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Doorknob:NavCollision_5",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_Doorknob.1"
+    },
+    "LightingGuid": "DC6FC329-4B328DF3-F63D31A2-011A4F19",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 198,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 178,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 179
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 179,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 179
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 6.6984644,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 5.6967,
+          "Y": 6.598949,
+          "Z": 5.696697
+        },
+        "SphereRadius": 7.6473603
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

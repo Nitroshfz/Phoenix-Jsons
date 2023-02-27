@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Spiral_02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "665B25FE452E8951894E299B93855420",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x3ADC"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VFX_SM_Spiral_02",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3B40"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Spiral_02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_BridgeSpiral_B",
+            "ObjectPath": "/Game/VFX/Materials/Mat_Instance/MI_BridgeSpiral_B.0"
+          },
+          "MaterialSlotName": "MI_BridgeSpiral_A",
+          "ImportedMaterialSlotName": "MI_BridgeSpiral_A",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 1415.6044,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1415.6044,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -149.1029,
+          "Y": 97.295746,
+          "Z": 678.88574
+        },
+        "BoxExtent": {
+          "X": 438.56567,
+          "Y": 490.3725,
+          "Z": 682.73926
+        },
+        "SphereRadius": 913.1605
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Spiral_02:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_Spiral_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Spiral_02:NavCollision_1",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_Spiral_02.1"
+    },
+    "LightingGuid": "9A4E899C-4054D4C3-9C19BE89-8D69A323",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 192,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 116,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 117
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 117,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -149.1029,
+          "Y": 97.295746,
+          "Z": 678.88574
+        },
+        "BoxExtent": {
+          "X": 438.56567,
+          "Y": 490.3725,
+          "Z": 682.73926
+        },
+        "SphereRadius": 913.1605
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_TentaculaLeaf",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9FA166374D48CEAFCBDFB8912C94E733",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2130"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_TentaculaLeaf",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2194"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_TentaculaLeaf",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant M_Venomous_Tentacula_Leaves",
+            "ObjectPath": "/Game/Gameplay/Nurturing/Herbology/Herbs/Materials/M_Venomous_Tentacula_Leaves.0"
+          },
+          "MaterialSlotName": "Default_Material",
+          "ImportedMaterialSlotName": "Default_Material",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 7.3957353,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 7.3957353,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 1.5666779,
+          "Y": 1.8204774,
+          "Z": 0.58425754
+        },
+        "SphereRadius": 2.017237
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_TentaculaLeaf:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_TentaculaLeaf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_TentaculaLeaf:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_TentaculaLeaf.1"
+    },
+    "LightingGuid": "E78DECC9-45D8AEFA-FEAE18A8-493A9805",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 14,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 12,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 13
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 13,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 13
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 1.5666779,
+          "Y": 1.8204774,
+          "Z": 0.58425754
+        },
+        "SphereRadius": 2.017237
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.020914666,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

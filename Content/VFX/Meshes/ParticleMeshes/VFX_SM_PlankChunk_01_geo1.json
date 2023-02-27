@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_PlankChunk_01_geo1",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "CBF7517448C8D2042A7821BA86676B58",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2209"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_PlankChunk_01_geo1",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x226D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_PlankChunk_01_geo1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_CampB_2m_250cm_Log_SATB_Fade",
+            "ObjectPath": "/Game/VFX/MasterMaterials/MaterialInstance/MI_CampB_2m_250cm_Log_SATB_Fade.0"
+          },
+          "MaterialSlotName": "MI_CampB_2m_250cm_Log_SATB",
+          "ImportedMaterialSlotName": "MI_CampB_2m_250cm_Log_SATB",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 246.4332,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 246.4332,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.8146973E-06,
+          "Y": 0.0,
+          "Z": -3.8146973E-06
+        },
+        "BoxExtent": {
+          "X": 50.81081,
+          "Y": 8.641563,
+          "Z": 17.81609
+        },
+        "SphereRadius": 53.598843
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_PlankChunk_01_geo1:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_PlankChunk_01_geo1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_PlankChunk_01_geo1:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_PlankChunk_01_geo1.1"
+    },
+    "LightingGuid": "509DA477-48D6C66D-B4857EB0-315D3BA2",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 14,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 20,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 21
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 21,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 21
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 3.8146973E-06,
+          "Y": 0.0,
+          "Z": -3.8146973E-06
+        },
+        "BoxExtent": {
+          "X": 50.81081,
+          "Y": 8.641563,
+          "Z": 17.81609
+        },
+        "SphereRadius": 53.598843
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

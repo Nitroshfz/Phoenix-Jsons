@@ -1,0 +1,162 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_GH_LightShield",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "C8EA1FB240FF8FE4EC2897BD8D4F93E7"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_GH_LightShield",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x294A"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_GH_LightShield",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Wood_Ceiling_8",
+            "ObjectPath": "/Game/Environment/Hogwarts/Common/Materials/Wood/MI_HW_Wood_Ceiling_8.0"
+          },
+          "MaterialSlotName": "MI_HW_Wood_Ceiling_2",
+          "ImportedMaterialSlotName": "MI_HW_Wood_Ceiling_2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 3131.9844,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 3131.9844,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.8580322,
+          "Y": 99.33057,
+          "Z": 814.73224
+        },
+        "BoxExtent": {
+          "X": 1167.5636,
+          "Y": 2399.8125,
+          "Z": 851.5449
+        },
+        "SphereRadius": 2801.3271
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_GH_LightShield:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_GH_LightShield.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_GH_LightShield:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_GH_LightShield.1"
+    },
+    "LightingGuid": "F2518615-4B2014B2-FB04CD9E-861B98B6",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 64,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 59,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 60
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 60,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 1.8580322,
+          "Y": 99.33057,
+          "Z": 814.73224
+        },
+        "BoxExtent": {
+          "X": 1167.5636,
+          "Y": 2399.8125,
+          "Z": 851.5449
+        },
+        "SphereRadius": 2801.3271
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

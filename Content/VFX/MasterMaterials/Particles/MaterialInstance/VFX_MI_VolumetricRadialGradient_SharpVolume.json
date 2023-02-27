@@ -1,0 +1,85 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_VolumetricRadialGradient_SharpVolume",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant VFX_MI_VolumetricRadialGradient_SimpleGlow",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_VolumetricRadialGradient_SimpleGlow.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Volume",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.25,
+          "ExpressionGUID": "C49BC11E-41951F4E-9E7D4498-82C57AC4"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Sharp",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 20.0,
+          "ExpressionGUID": "B6EA9C02-49C0EB49-03D4ECA2-C8044F33"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Base Color and Alpha",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ExpressionGUID": "4B6E0FC7-4D3016F4-7A87A99D-7FAE5ABE"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_AlphaComposite",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "Simple Gradient",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "DA4834A3-417FF7E8-A00BF592-6A672995"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        null,
+        {
+          "ObjectName": "TextureRenderTarget2DArray RT_WaveRenderTarget",
+          "ObjectPath": "/Flow/RenderTargets/RT_WaveRenderTarget.0"
+        }
+      ]
+    }
+  }
+]

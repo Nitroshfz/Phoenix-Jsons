@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_waterfall_Dungeons_Mesh",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "DD0A0DBF4D96D3FC73CB578BCEF430E8",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x7042"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_waterfall_Dungeons_Mesh",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x70A6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_waterfall_Dungeons_Mesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_WaterSurfaceFlow",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MI_WaterSurfaceFlow.0"
+          },
+          "MaterialSlotName": "texture_material",
+          "ImportedMaterialSlotName": "texture_material",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 251.64864,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 251.64864,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.0173745,
+          "Y": -0.26452637,
+          "Z": -175.8045
+        },
+        "BoxExtent": {
+          "X": 5.0000005,
+          "Y": 72.49477,
+          "Z": 210.0
+        },
+        "SphereRadius": 222.21718
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_waterfall_Dungeons_Mesh:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_waterfall_Dungeons_Mesh.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_waterfall_Dungeons_Mesh:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_waterfall_Dungeons_Mesh.1"
+    },
+    "LightingGuid": "3BF62B86-4AAE5FEF-A7261193-472F9994",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 336,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 197,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 198
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 198,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 198
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 168,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 110,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.009407694,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 111
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 111,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 111
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 7.0173745,
+          "Y": -0.26452637,
+          "Z": -175.8045
+        },
+        "BoxExtent": {
+          "X": 5.0000005,
+          "Y": 72.49477,
+          "Z": 210.0
+        },
+        "SphereRadius": 222.21718
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.5,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

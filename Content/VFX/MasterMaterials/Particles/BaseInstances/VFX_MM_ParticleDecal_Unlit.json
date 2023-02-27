@@ -1,0 +1,291 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_ParticleDecal_Unlit",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_1",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "bTangentSpaceNormal": false,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "4A9EFE5E-41754E3E-68F54DA6-FD01F76C",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              3932108375757199445,
+              7390963598399717365,
+              10210546564216752664,
+              10965302784120296938,
+              14742726290980696720,
+              15091496365335898098,
+              15565380740956473203
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Vertical",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Erosion Alpha (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Coverage Bias (0-1)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "SubUV_Offset",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Sharpen (0-1) (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Horizontal",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Full Coverage Percent (0-1)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "7B1D9AF3-48663B6A-1083A1A9-76C8193A",
+              "A167BB3A-4DD9CAE7-83F5B4B3-CF27C3C8",
+              "5B6B3C28-4009E967-FAD3348A-CA6640A6",
+              "A0AA59E3-46A74699-510DDBAD-B9973343",
+              "6F15E96B-43E5A16B-892893B8-7C4D5CBE",
+              "B4F8B77E-4184B5D3-35F929AB-2A5CC1EA",
+              "3E816323-4F4088C3-F43D13A6-5A9CDA85"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              12975760671080050193,
+              16014420144181682489
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "AlphaChannel",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "BaseColor",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "4E11C0C5-44926864-560F6DA0-9F28CC82",
+              "68BD8CCA-4F88ECCD-7E52C9B9-0B0E7239"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              13690561732087317255
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Diffuse Map",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "84DDA9DA-42FDF66E-909FAC86-2DD83458"
+            ]
+          },
+          "ScalarValues": [
+            2.0,
+            1.0,
+            0.75,
+            0.0,
+            3.0,
+            2.0,
+            0.5
+          ],
+          "VectorValues": [
+            {
+              "R": 0.0,
+              "G": 1.0,
+              "B": 0.0,
+              "A": 0.0,
+              "Hex": "00FF00"
+            },
+            {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 1.0,
+              "Hex": "FFFFFFFF"
+            }
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D T_FX_Decal_Dirt_Med_D",
+              "ObjectPath": "/Game/VFX/Textures/Decals/T_FX_Decal_Dirt_Med_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D T_FX_Decal_Dirt_Med_D",
+            "ObjectPath": "/Game/VFX/Textures/Decals/T_FX_Decal_Dirt_Med_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "D1E8A7F4-4B9D2C20-C994B99E-F7ED11E5",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_RemapRange",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_RemapRange.0"
+            }
+          },
+          {
+            "StateId": "D1E8A7F4-4B9D2C20-C994B99E-F7ED11E5",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_RemapRange",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_RemapRange.0"
+            }
+          },
+          {
+            "StateId": "C89487FD-485744DA-6EF2A19F-E1468E99",
+            "Function": {
+              "ObjectName": "MaterialFunction VFX_MF_FadeInAndOut_Biased",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_FadeInAndOut_Biased.0"
+            }
+          },
+          {
+            "StateId": "488C2388-4E2B06EC-787D80AD-C4617C45",
+            "Function": {
+              "ObjectName": "MaterialFunction WorldPositionWithScale",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/WorldPositionWithScale.0"
+            }
+          },
+          {
+            "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+            "Function": {
+              "ObjectName": "MaterialFunction CameraDirectionVector",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+            }
+          },
+          {
+            "StateId": "A8197317-42FBFFCC-3A7FC4BA-3582658E",
+            "Function": {
+              "ObjectName": "MaterialFunction WorldPositionBehindTranslucency",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/UVs/WorldPositionBehindTranslucency.0"
+            }
+          },
+          {
+            "StateId": "F355115F-44D0AC78-BACBE997-4D8139E8",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_Swizzle",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Swizzle.0"
+            }
+          },
+          {
+            "StateId": "6DE87F41-4BB67569-690FE29F-F5405A90",
+            "Function": {
+              "ObjectName": "MaterialFunction VFX_MF_AlphaErosion_Soft",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_AlphaErosion_Soft.0"
+            }
+          },
+          {
+            "StateId": "CEB825F7-49B3784E-3010779E-623B62DB",
+            "Function": {
+              "ObjectName": "MaterialFunction ObjectLocalBounds",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/ObjectLocalBounds.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "67008E08-400DF1C2-D9D3FCB3-E89F5FF7",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoExposureAdaptationFactor",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "AB14B3E0-4D52C952-998B90B3-08F47431",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoExposureAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "7C0B984A-4A0DEA52-60A2B68D-04804630",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection M_HallowsCollection",
+              "ObjectPath": "/Game/Gameplay/Blueprints/Sanctum_Dungeon/Materials/M_HallowsCollection.0"
+            }
+          },
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection MP_EmissiveAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "ErosionAlpha",
+          "ErosionSharpness",
+          "Param3",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

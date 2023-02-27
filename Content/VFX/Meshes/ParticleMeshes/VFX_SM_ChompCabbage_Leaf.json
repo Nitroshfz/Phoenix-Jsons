@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_ChompCabbage_Leaf",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "4C0FADC04A4F1EED951C6BB1BB54D32D",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x608E"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VFX_SM_ChompCabbage_Leaf",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x60F2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_ChompCabbage_Leaf",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_ChompingCabbage",
+            "ObjectPath": "/Game/Gameplay/Nurturing/Herbology/Herbs/Materials/MI_ChompingCabbage.0"
+          },
+          "MaterialSlotName": "MI_ChompingCabbage1",
+          "ImportedMaterialSlotName": "MI_ChompingCabbage1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 88.99602,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 88.99602,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -2.807685,
+          "Z": 0.040606976
+        },
+        "BoxExtent": {
+          "X": 6.4280567,
+          "Y": 4.0041304,
+          "Z": 7.1638317
+        },
+        "SphereRadius": 8.159853
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_ChompCabbage_Leaf:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_ChompCabbage_Leaf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_ChompCabbage_Leaf:NavCollision_1",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_ChompCabbage_Leaf.1"
+    },
+    "LightingGuid": "AC022918-44E9E05B-8DEA208D-0515DEA2",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 264,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 162,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 163
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 163,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 163
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 132,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 94,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.6498953,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 95
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 95,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 95
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -2.807685,
+          "Z": 0.040606976
+        },
+        "BoxExtent": {
+          "X": 6.4280567,
+          "Y": 4.0041304,
+          "Z": 7.1638317
+        },
+        "SphereRadius": 8.159853
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.16839075,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Intro_Cliffside_Waterfall",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "AFCB4C49493D88E294DC2EB4E3177B6B",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x68B1"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_8",
+    "Outer": "VFX_SM_Intro_Cliffside_Waterfall",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x6915"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Intro_Cliffside_Waterfall",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_waterfall_Intro_Cliffside",
+            "ObjectPath": "/Game/Environment/Overland_Common/Materials/Waterfalls/MI_waterfall_Intro_Cliffside.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2795.9043,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2795.9043,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1317.6508,
+          "Y": 716.8908,
+          "Z": -1031.852
+        },
+        "BoxExtent": {
+          "X": 493.2489,
+          "Y": 1431.067,
+          "Z": 5602.9873
+        },
+        "SphereRadius": 5795.017
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Intro_Cliffside_Waterfall:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/EnvironmentSpecific/VFX_SM_Intro_Cliffside_Waterfall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Intro_Cliffside_Waterfall:NavCollision_8",
+      "ObjectPath": "/Game/VFX/Meshes/Static/EnvironmentSpecific/VFX_SM_Intro_Cliffside_Waterfall.1"
+    },
+    "LightingGuid": "E64F1BB5-45C5F4F1-81E2D9A5-906FB227",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 312,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 201,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 202
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 202,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 155,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 108,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 1229.9657,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 109
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 109,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1317.6508,
+          "Y": 716.8908,
+          "Z": -1031.852
+        },
+        "BoxExtent": {
+          "X": 493.2489,
+          "Y": 1431.067,
+          "Z": 5602.9873
+        },
+        "SphereRadius": 5795.017
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.067163385,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

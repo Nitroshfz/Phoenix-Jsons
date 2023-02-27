@@ -1,0 +1,162 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_17",
+    "Outer": "SM_LMagic_Wave1",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "20280C04470F10BBD000FB8AD2E1FA1A"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_15",
+    "Outer": "SM_LMagic_Wave1",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x51A0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_LMagic_Wave1",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 333.78906,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 333.78906,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 78.401764
+        },
+        "BoxExtent": {
+          "X": 149.32095,
+          "Y": 149.32097,
+          "Z": 78.401764
+        },
+        "SphereRadius": 168.65396
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_LMagic_Wave1:BodySetup_17",
+      "ObjectPath": "/Game/VFX/Meshes/SM_LMagic_Wave1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_LMagic_Wave1:NavCollision_15",
+      "ObjectPath": "/Game/VFX/Meshes/SM_LMagic_Wave1.1"
+    },
+    "LightingGuid": "13AC7703-4EEB6B5A-AD795DA9-7BBEFE12",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 320,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 204,
+              "bEnableCollision": false,
+              "bCastShadow": false,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 205
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 205,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 205
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 78.401764
+        },
+        "BoxExtent": {
+          "X": 149.32095,
+          "Y": 149.32097,
+          "Z": 78.401764
+        },
+        "SphereRadius": 168.65396
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

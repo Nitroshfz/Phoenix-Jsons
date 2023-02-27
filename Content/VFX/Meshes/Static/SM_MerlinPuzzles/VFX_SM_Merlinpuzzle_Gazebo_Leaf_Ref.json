@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "85B3E1614069D7ED5505AFB8821F4F1A",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x5F17"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5F7B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 342.9499,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 342.9499,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -3.0517578E-05,
+          "Y": -3.0517578E-05,
+          "Z": 386.2104
+        },
+        "BoxExtent": {
+          "X": 153.83096,
+          "Y": 153.831,
+          "Z": 47.506943
+        },
+        "SphereRadius": 156.68582
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_MerlinPuzzles/VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref:NavCollision_1",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_MerlinPuzzles/VFX_SM_Merlinpuzzle_Gazebo_Leaf_Ref.1"
+    },
+    "LightingGuid": "B031AC05-4C73B931-325C699A-07EF54CD",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 280,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 167,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 168
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 168,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 140,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 92,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 22.143053,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 93
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 93,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -3.0517578E-05,
+          "Y": -3.0517578E-05,
+          "Z": 386.2104
+        },
+        "BoxExtent": {
+          "X": 153.83096,
+          "Y": 153.831,
+          "Z": 47.506943
+        },
+        "SphereRadius": 156.68582
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.09899333,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

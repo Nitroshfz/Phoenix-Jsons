@@ -1,0 +1,1465 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_VFX_AMAuraRanrakFX",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "StartRanrakAura",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "SuperStruct": {
+      "ObjectName": "Class Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "StartRanrakOrb",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "StartAllRanrakFX",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "FXParamsOrb__UpdateFunc",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "FXParamsOrb__FinishedFunc",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "FXParamsAura__UpdateFunc",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "FXParamsAura__FinishedFunc",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "FXParamsTUNE__UpdateFunc",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "FXParamsTUNE__FinishedFunc",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "SuperStruct": {
+      "ObjectName": "Class Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "Function",
+    "Name": "SetAMOrbParams",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AMOrb",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "SetSpline",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 5
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SetAMAuraParams",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AMAura",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524436,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "SystemOpacity",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "User.AuraHeight",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "User.AuraWidth",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "SetSpline",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 5
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate BP_VFX_AMAuraRanrakFX_C:FXParamsTUNE_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.34"
+        },
+        {
+          "ObjectName": "TimelineTemplate BP_VFX_AMAuraRanrakFX_C:FXParamsOrb_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.33"
+        },
+        {
+          "ObjectName": "TimelineTemplate BP_VFX_AMAuraRanrakFX_C:FXParamsAura_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.32"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.30"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:ExecuteUbergraph_BP_VFX_AMAuraRanrakFX",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:SetAMAuraParams",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.13"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:SetAMOrbParams",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.12"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:UserConstructionScript",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.11"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsTUNE__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.10"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsTUNE__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.9"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsAura__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.8"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsAura__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.7"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsOrb__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.6"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsOrb__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.5"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:StartAllRanrakFX",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.4"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:StartRanrakOrb",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.3"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:ReceiveBeginPlay",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.2"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:StartRanrakAura",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.1"
+      },
+      {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:ExecuteUbergraph_BP_VFX_AMAuraRanrakFX",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AuraEmissionMesh",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class StaticMeshComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AncientMagicLightRanrak",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AncientMagicAuraRanrak",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "VFX_NS_AMAuraRanrak01",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SceneComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "FXParamsAura_SystemOpacity_5F3016124BB0CAAF9C379580AD12E2C4",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "FXParamsAura__Direction_5F3016124BB0CAAF9C379580AD12E2C4",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FXParamsAura",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "FXParamsOrb_SystemOpacity_4E9657FF4A880E60451DCBB105820DDB",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "FXParamsOrb__Direction_4E9657FF4A880E60451DCBB105820DDB",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FXParamsOrb",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "FXParamsTUNE_SystemOpacity_8270352D4177082FDFC4D9A9D2EF80E0",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "FXParamsTUNE__Direction_8270352D4177082FDFC4D9A9D2EF80E0",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FXParamsTUNE",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "AMRockSystemScale",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 5
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TuneFX",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "StartOnPlay",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "RotationRate",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "DoRotation",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ViewRedRiftOnly",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "AMRockLifetimeScale",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 5
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Counter",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_VFX_AMAuraRanrakFX": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:ExecuteUbergraph_BP_VFX_AMAuraRanrakFX",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.0"
+      },
+      "StartRanrakAura": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:StartRanrakAura",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.1"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:ReceiveBeginPlay",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.2"
+      },
+      "StartRanrakOrb": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:StartRanrakOrb",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.3"
+      },
+      "StartAllRanrakFX": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:StartAllRanrakFX",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.4"
+      },
+      "FXParamsOrb__UpdateFunc": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsOrb__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.5"
+      },
+      "FXParamsOrb__FinishedFunc": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsOrb__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.6"
+      },
+      "FXParamsAura__UpdateFunc": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsAura__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.7"
+      },
+      "FXParamsAura__FinishedFunc": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsAura__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.8"
+      },
+      "FXParamsTUNE__UpdateFunc": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsTUNE__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.9"
+      },
+      "FXParamsTUNE__FinishedFunc": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:FXParamsTUNE__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.10"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:UserConstructionScript",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.11"
+      },
+      "SetAMOrbParams": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:SetAMOrbParams",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.12"
+      },
+      "SetAMAuraParams": {
+        "ObjectName": "Function BP_VFX_AMAuraRanrakFX_C:SetAMAuraParams",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.13"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VFX_AMAuraRanrakFX_C Default__BP_VFX_AMAuraRanrakFX_C",
+      "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.15"
+    }
+  },
+  {
+    "Type": "BP_VFX_AMAuraRanrakFX_C",
+    "Name": "Default__BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AMRockSystemScale": 1.0,
+      "AMRockLifetimeScale": 20.0,
+      "bHidden": true
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0_1",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0_1_2",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0_1_2_3",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "AncientMagicAuraRanrak_GEN_VARIABLE",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem VFX_NS_AMAuraRanrak01",
+        "ObjectPath": "/Game/VFX/Niagara/Basic/Trails/VFX_NS_AMAuraRanrak01.69"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": null,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.AuraHeight",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.AuraRadius",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.AuraWidth",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.IntensityScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.PointAttractScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.StaticMesh",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraDataInterfaceStaticMesh",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1
+            }
+          },
+          {
+            "Offset": 20,
+            "Name": "User.SystemOpacity",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 24,
+            "Name": "User.SystemScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 28,
+            "Name": "User.TendrilTightnessScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          64,
+          28,
+          69,
+          0,
+          0,
+          250,
+          67,
+          0,
+          0,
+          250,
+          67,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63
+        ],
+        "DataInterfaces": [
+          {
+            "ObjectName": "NiagaraDataInterfaceStaticMesh BP_VFX_AMAuraRanrakFX_C:AncientMagicAuraRanrak_GEN_VARIABLE.NiagaraDataInterfaceStaticMesh_0",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.22"
+          }
+        ]
+      },
+      "TranslucencySortPriority": 90,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "AncientMagicLightRanrak_GEN_VARIABLE",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem VFX_NS_AncientMagicLightsRanrak",
+        "ObjectPath": "/Game/VFX/RepositoryRift/Niagara/VFX_NS_AncientMagicLightsRanrak.19"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": null,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 8,
+            "Name": "User.CoreEnergyScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.CurlNoiseScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.LightIntensityMultiply",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.RiftInOutOpacity",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 20,
+            "Name": "User.RiftInsideOpacity",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 24,
+            "Name": "User.RiftOutsideOpacity",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.SystemScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 28,
+            "Name": "User.TailDustOpacityScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 32,
+            "Name": "User.TailEmissionRateScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 36,
+            "Name": "User.TailLifetimeScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 40,
+            "Name": "User.TailPointAttractScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 44,
+            "Name": "User.TailsOn",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraBool",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 48,
+            "Name": "User.VortexRotationSpeedScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          63
+        ]
+      },
+      "TranslucencySortPriority": 90,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "VFX_NS_AMAuraRanrak01_GEN_VARIABLE",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem VFX_NS_AMAuraRanrak01",
+        "ObjectPath": "/Game/VFX/Niagara/Basic/Trails/VFX_NS_AMAuraRanrak01.69"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": null,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.AuraHeight",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 4,
+            "Name": "User.AuraRadius",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 8,
+            "Name": "User.AuraWidth",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 12,
+            "Name": "User.IntensityScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 16,
+            "Name": "User.PointAttractScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 0,
+            "Name": "User.StaticMesh",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraDataInterfaceStaticMesh",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1
+            }
+          },
+          {
+            "Offset": 20,
+            "Name": "User.SystemOpacity",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 24,
+            "Name": "User.SystemScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "Offset": 28,
+            "Name": "User.TendrilTightnessScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          64,
+          28,
+          69,
+          0,
+          0,
+          250,
+          67,
+          0,
+          0,
+          250,
+          67,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63,
+          0,
+          0,
+          128,
+          63
+        ],
+        "DataInterfaces": [
+          {
+            "ObjectName": "NiagaraDataInterfaceStaticMesh BP_VFX_AMAuraRanrakFX_C:VFX_NS_AMAuraRanrak01_GEN_VARIABLE.NiagaraDataInterfaceStaticMesh_12",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.23"
+          }
+        ]
+      },
+      "TranslucencySortPriority": 80,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "NiagaraDataInterfaceStaticMesh",
+    "Name": "NiagaraDataInterfaceStaticMesh_0",
+    "Outer": "AncientMagicAuraRanrak_GEN_VARIABLE",
+    "Properties": {
+      "DefaultMesh": {
+        "ObjectName": "StaticMesh SM_RanrakAuraCage_01_CPUAccess",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_RanrakAuraCage_01_CPUAccess.2"
+      }
+    }
+  },
+  {
+    "Type": "NiagaraDataInterfaceStaticMesh",
+    "Name": "NiagaraDataInterfaceStaticMesh_12",
+    "Outer": "VFX_NS_AMAuraRanrak01_GEN_VARIABLE",
+    "Properties": {
+      "DefaultMesh": {
+        "ObjectName": "StaticMesh SM_RanrakAuraCage_01_CPUAccess",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_RanrakAuraCage_01_CPUAccess.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_VFX_AMAuraRanrakFX_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.24"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.26"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.28"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.27"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.29"
+        }
+      ],
+      "VariableGuid": "438F7AC2-4CD4A6DC-C587CDBA-F51B101C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class NiagaraComponent",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent BP_VFX_AMAuraRanrakFX_C:VFX_NS_AMAuraRanrak01_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.21"
+      },
+      "VariableGuid": "967EAD88-457285CD-F4B199AB-77213E96",
+      "InternalVariableName": "VFX_NS_AMAuraRanrak01"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class NiagaraComponent",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent BP_VFX_AMAuraRanrakFX_C:AncientMagicLightRanrak_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.20"
+      },
+      "VariableGuid": "05A2C0AF-437FCA01-0B5BC4BB-11F1C02E",
+      "InternalVariableName": "AncientMagicLightRanrak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class NiagaraComponent",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent BP_VFX_AMAuraRanrakFX_C:AncientMagicAuraRanrak_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.19"
+      },
+      "VariableGuid": "E9B3D68E-4FBF78D6-39429293-12672001",
+      "InternalVariableName": "AncientMagicAuraRanrak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent BP_VFX_AMAuraRanrakFX_C:AuraEmissionMesh_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.31"
+      },
+      "VariableGuid": "A9D9F56F-465350E5-9C19DA8E-20B45834",
+      "InternalVariableName": "AuraEmissionMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.25"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.25"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.26"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.28"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.27"
+        },
+        {
+          "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.29"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_VFX_AMAuraRanrakFX_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.25"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "AuraEmissionMesh_GEN_VARIABLE",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_RanrakAuraCage_01_CPUAccess",
+        "ObjectPath": "/Game/VFX/Meshes/Static/SM_RanrakAuraCage_01_CPUAccess.2"
+      },
+      "bVisible": false,
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "FXParamsAura_Template",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "TimelineLength": 1.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat BP_VFX_AMAuraRanrakFX_C:CurveFloat_0_1_2_3",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.18"
+          },
+          "PropertyName": "FXParamsAura_SystemOpacity_5F3016124BB0CAAF9C379580AD12E2C4",
+          "TrackName": "SystemOpacity",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "5F301612-4BB0CAAF-9C379580-AD12E2C4",
+      "VariableName": "FXParamsAura",
+      "DirectionPropertyName": "FXParamsAura__Direction_5F3016124BB0CAAF9C379580AD12E2C4",
+      "UpdateFunctionName": "FXParamsAura__UpdateFunc",
+      "FinishedFunctionName": "FXParamsAura__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "FXParamsOrb_Template",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "TimelineLength": 1.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat BP_VFX_AMAuraRanrakFX_C:CurveFloat_0_1_2",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.17"
+          },
+          "PropertyName": "FXParamsOrb_SystemOpacity_4E9657FF4A880E60451DCBB105820DDB",
+          "TrackName": "SystemOpacity",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "4E9657FF-4A880E60-451DCBB1-05820DDB",
+      "VariableName": "FXParamsOrb",
+      "DirectionPropertyName": "FXParamsOrb__Direction_4E9657FF4A880E60451DCBB105820DDB",
+      "UpdateFunctionName": "FXParamsOrb__UpdateFunc",
+      "FinishedFunctionName": "FXParamsOrb__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "FXParamsTUNE_Template",
+    "Outer": "BP_VFX_AMAuraRanrakFX_C",
+    "Properties": {
+      "TimelineLength": 1.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat BP_VFX_AMAuraRanrakFX_C:CurveFloat_0_1",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/BP_VFX_AMAuraRanrakFX.16"
+          },
+          "PropertyName": "FXParamsTUNE_SystemOpacity_8270352D4177082FDFC4D9A9D2EF80E0",
+          "TrackName": "SystemOpacity",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "8270352D-4177082F-DFC4D9A9-D2EF80E0",
+      "VariableName": "FXParamsTUNE",
+      "DirectionPropertyName": "FXParamsTUNE__Direction_8270352D4177082FDFC4D9A9D2EF80E0",
+      "UpdateFunctionName": "FXParamsTUNE__UpdateFunc",
+      "FinishedFunctionName": "FXParamsTUNE__FinishedFunc"
+    }
+  }
+]

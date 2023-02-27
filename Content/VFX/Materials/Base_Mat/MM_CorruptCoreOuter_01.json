@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "Material",
+    "Name": "MM_CorruptCoreOuter_01",
+    "Properties": {
+      "BlendMode": "BLEND_Masked",
+      "TwoSided": true,
+      "StateId": "41471732-454B1957-4E0A68B7-B98436F5",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              13689766597372104103,
+              18027582212106423940
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "EmissiveMult_A",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Flow Helper Period",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "4907CE84-4E8CA56B-3E59D3AC-783AAE6B",
+              "9B9D3F23-44284A04-9F6F949B-09232E91"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              6644490981323813392
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "color_A",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "88D3E985-40C59C86-DE669092-4A62D667"
+            ]
+          },
+          "ScalarValues": [
+            10.0,
+            1.0
+          ],
+          "VectorValues": [
+            {
+              "R": 0.0,
+              "G": 1.0,
+              "B": 0.0,
+              "A": 1.0,
+              "Hex": "FF00FF00"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D VFX_T_CloudyPack_D",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_CloudyPack_D.0"
+          },
+          {
+            "ObjectName": "Texture2D T_Sanc_SwirlFlowmap_01_FM",
+            "ObjectPath": "/Game/VFX/Textures/Flowmaps/T_Sanc_SwirlFlowmap_01_FM.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "E6715291-45CBD5A7-9C2DB096-ABFA19DF",
+            "Function": {
+              "ObjectName": "MaterialFunction AppendMany",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/AppendMany.0"
+            }
+          },
+          {
+            "StateId": "8AEA8FB3-4033A6EE-275AFFBB-348D9CAD",
+            "Function": {
+              "ObjectName": "MaterialFunction LinearSine",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/LinearSine.0"
+            }
+          },
+          {
+            "StateId": "CB39BDF8-4C9979CD-BE667A98-312E5C8F",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_FlowHelper",
+              "ObjectPath": "/Flow/Materials/RiverShaders/Materials/Helpers/MF_FlowHelper.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Sanc_SwirlFlowmap_01_FM"
+        }
+      ]
+    }
+  }
+]

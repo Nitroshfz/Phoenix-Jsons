@@ -1,0 +1,341 @@
+[
+  {
+    "Type": "NiagaraScript",
+    "Name": "VFX_NMS_SpriteBasedLine_Custom",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::Module",
+      "RapidIterationParameters": {},
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::Module",
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            1,
+            84,
+            185,
+            235,
+            176,
+            8,
+            197,
+            153,
+            237,
+            26,
+            63,
+            136,
+            187,
+            18,
+            14,
+            74,
+            161,
+            57,
+            18,
+            28
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "ByteCode": [
+          91,
+          96,
+          2,
+          86,
+          1,
+          0,
+          0,
+          100,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          1,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          2,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          3,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          4,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          5,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          6,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          7,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          8,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          9,
+          0,
+          84,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          10,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          11,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          12,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          13,
+          0,
+          92,
+          0
+        ],
+        "NumTempRegisters": 1,
+        "ScriptLiterals": [
+          1,
+          0,
+          0,
+          0,
+          255,
+          255,
+          255,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.InitialSpriteSize",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.MaximumLength",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "Module.Point A",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "Module.Point B",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.Scaling",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.SetSpriteSizeDirectly",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraBool'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.SpriteStretchPercent",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.TargetFPS",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.TransientScaleFactor",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "VFX_NMS_SpriteBasedLine_Custom",
+            "FriendlyName": "VFX_NMS_SpriteBasedLine_Custom"
+          },
+          {
+            "FullName": "VFX_NMS_SpriteBasedLine_Custom_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "VFX_NMS_SpriteBasedLine_Custom_MapMain",
+            "FriendlyName": "MapMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      }
+    }
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Dish_1meter",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "6F134CEC434F695BF390BBB5C2A26ADB",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x3086"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_Dish_1meter",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x30EA"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Dish_1meter",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Blockout_Grey_01",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Materials/Transfiguration_Blockout/MI_Blockout_Grey_01.0"
+          },
+          "MaterialSlotName": "MI_Blockout_Grey_01",
+          "ImportedMaterialSlotName": "MI_Blockout_Grey_01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 112.56937,
+            "LocalUVDensities": 115.25248,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 112.56937,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -15.10248,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 15.154478,
+          "Y": 49.840942,
+          "Z": 49.84095
+        },
+        "SphereRadius": 52.09394
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Dish_1meter:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_Dish_1meter.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Dish_1meter:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_Dish_1meter.1"
+    },
+    "LightingGuid": "F8213DE0-411C6E26-A2153399-E1408BB5",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 360,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 223,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 224
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 224,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 224
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 90,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 70,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 3.2313802,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 71
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 71,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 71
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -15.10248,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 15.154478,
+          "Y": 49.840942,
+          "Z": 49.84095
+        },
+        "SphereRadius": 52.09394
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.04352,
+        "NaN",
+        0.02588,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

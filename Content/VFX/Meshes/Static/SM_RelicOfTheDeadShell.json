@@ -1,0 +1,190 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_RelicOfTheDeadShell",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "45587FE14DDCF1B8DBFB05B9E8C72170",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2F96C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_RelicOfTheDeadShell",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2F9D0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_RelicOfTheDeadShell",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_RelicOfTheDead_PyramidChest",
+            "ObjectPath": "/Game/Environment/Universal/Interactables/Materials/MI_RelicOfTheDead_PyramidChest.0"
+          },
+          "MaterialSlotName": "MI_RelicOfTheDead_PyramidChest",
+          "ImportedMaterialSlotName": "MI_RelicOfTheDead_PyramidChest",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 23.548796,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 23.548796,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket SM_RelicOfTheDeadShell:StaticMeshSocket_0",
+          "ObjectPath": "/Game/VFX/Meshes/Static/SM_RelicOfTheDeadShell.3"
+        }
+      ],
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 6.0085354
+        },
+        "BoxExtent": {
+          "X": 8.146145,
+          "Y": 8.146145,
+          "Z": 6.227571
+        },
+        "SphereRadius": 9.284778
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_RelicOfTheDeadShell:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_RelicOfTheDeadShell.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_RelicOfTheDeadShell:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_RelicOfTheDeadShell.1"
+    },
+    "LightingGuid": "1148C46D-4E82A213-E8ACCF97-08407F2C",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4074,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 3693,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 3694
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 3694,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 6.0085354
+        },
+        "BoxExtent": {
+          "X": 8.146145,
+          "Y": 8.146145,
+          "Z": 6.227571
+        },
+        "SphereRadius": 9.284778
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "SM_RelicOfTheDeadShell",
+    "Properties": {
+      "SocketName": "CenterSocket",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 4.3782825
+      }
+    }
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_MerlinPuzzle_Leaf",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "D462C2EC4A755C2F65A530ACDE87AF15",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x229C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_MerlinPuzzle_Leaf",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2300"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_MerlinPuzzle_Leaf",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_MerlinPuzzle_Structure_Leaves",
+            "ObjectPath": "/Game/Gameplay/SphinxPuzzles/Materials/MI_MerlinPuzzle_Structure_Leaves.0"
+          },
+          "MaterialSlotName": "VFX_SK_MerlinPuzzle_Structure_Foliage_LOD0_001_Leaves",
+          "ImportedMaterialSlotName": "VFX_SK_MerlinPuzzle_Structure_Foliage_LOD0_001_Leaves",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 38.738068,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 38.738068,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.22933006,
+          "Y": -1.2732878,
+          "Z": 18.025291
+        },
+        "BoxExtent": {
+          "X": 8.295069,
+          "Y": 9.510233,
+          "Z": 18.113432
+        },
+        "SphereRadius": 18.560345
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_MerlinPuzzle_Leaf:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_MerlinPuzzle_Leaf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_MerlinPuzzle_Leaf:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_MerlinPuzzle_Leaf.1"
+    },
+    "LightingGuid": "B4421C68-422DA84F-F3E4A782-97F3897D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 20,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 19,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 20
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 20,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 20
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.22933006,
+          "Y": -1.2732878,
+          "Z": 18.025291
+        },
+        "BoxExtent": {
+          "X": 8.295069,
+          "Y": 9.510233,
+          "Z": 18.113432
+        },
+        "SphereRadius": 18.560345
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

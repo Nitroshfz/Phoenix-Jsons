@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Mooncalf_Flowers_B",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "CED6CDFC4540513876AE22BE501EEB2E",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x20E2"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_Mooncalf_Flowers_B",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2146"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Mooncalf_Flowers_B",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_CIN_Mooncalf_Flowers",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Cinematic/MaterialInstances/VFX_MI_CIN_Mooncalf_Flowers.0"
+          },
+          "MaterialSlotName": "MI_Flowers",
+          "ImportedMaterialSlotName": "MI_Flowers",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 40.69773,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 40.69773,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.5378771,
+          "Y": 3.8413596,
+          "Z": 10.535142
+        },
+        "BoxExtent": {
+          "X": 5.112774,
+          "Y": 4.8429394,
+          "Z": 11.284645
+        },
+        "SphereRadius": 12.462055
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Mooncalf_Flowers_B:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Cinematic/MooncalfPattern/VFX_SM_Mooncalf_Flowers_B.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Mooncalf_Flowers_B:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Cinematic/MooncalfPattern/VFX_SM_Mooncalf_Flowers_B.1"
+    },
+    "LightingGuid": "590DF8E5-49B5DCC2-A12E0CA4-C155EAEC",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 8,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 12,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 13
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 13,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.5378771,
+          "Y": 3.8413596,
+          "Z": 10.535142
+        },
+        "BoxExtent": {
+          "X": 5.112774,
+          "Y": 4.8429394,
+          "Z": 11.284645
+        },
+        "SphereRadius": 12.462055
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

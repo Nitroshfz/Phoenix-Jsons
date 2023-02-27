@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_MallowSweet_Leaf",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "201BC6E14CA56AD20446778F67A8C01C",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x1F32"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_MallowSweet_Leaf",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1F96"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_MallowSweet_Leaf",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material M_Mallowsweet",
+            "ObjectPath": "/Game/Gameplay/Nurturing/Herbology/Herbs/Materials/M_Mallowsweet.0"
+          },
+          "MaterialSlotName": "M_Mallowsweet",
+          "ImportedMaterialSlotName": "M_Mallowsweet",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 19.150013,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 19.150013,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.2944791,
+          "Y": 0.09063208,
+          "Z": 0.24479151
+        },
+        "BoxExtent": {
+          "X": 2.3541107,
+          "Y": 1.4383012,
+          "Z": 0.6617303
+        },
+        "SphereRadius": 2.5366635
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_MallowSweet_Leaf:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_MallowSweet_Leaf.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_MallowSweet_Leaf:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_MallowSweet_Leaf.1"
+    },
+    "LightingGuid": "B9E7709E-47751FDC-6C108F81-7FC12A4E",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 7,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 8,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 9
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 9,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 1.2944791,
+          "Y": 0.09063208,
+          "Z": 0.24479151
+        },
+        "BoxExtent": {
+          "X": 2.3541107,
+          "Y": 1.4383012,
+          "Z": 0.6617303
+        },
+        "SphereRadius": 2.5366635
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

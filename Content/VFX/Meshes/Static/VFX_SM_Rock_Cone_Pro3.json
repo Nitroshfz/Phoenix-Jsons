@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Rock_Cone_Pro3",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "62002A994B9C4C5878D8A09A8F2EC236",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x8B1C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_Rock_Cone_Pro3",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8B80"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Rock_Cone_Pro3",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Blockout_Grey_01",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Materials/Transfiguration_Blockout/MI_Blockout_Grey_01.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2.5068295,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 2.5068295,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.012483358,
+          "Y": -2.3841858E-07,
+          "Z": -4.7683716E-07
+        },
+        "BoxExtent": {
+          "X": 0.81117713,
+          "Y": 0.6991235,
+          "Z": 0.6991235
+        },
+        "SphereRadius": 1.0195982
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Rock_Cone_Pro3:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_Rock_Cone_Pro3.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Rock_Cone_Pro3:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_Rock_Cone_Pro3.1"
+    },
+    "LightingGuid": "AE2271E3-4D03EB19-3700A594-2D0B434D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 440,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 291,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 292
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 292,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 292
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 200,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 146,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.050182745,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 147
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 147,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 147
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.012483358,
+          "Y": -2.3841858E-07,
+          "Z": -4.7683716E-07
+        },
+        "BoxExtent": {
+          "X": 0.81117713,
+          "Y": 0.6991235,
+          "Z": 0.6991235
+        },
+        "SphereRadius": 1.0195982
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.25741845,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

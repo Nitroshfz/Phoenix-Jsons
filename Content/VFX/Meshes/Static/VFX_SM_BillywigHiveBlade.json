@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_BillywigHiveBlade",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "BB70A8504490BB3D6012A5A0CB457418",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x39F7"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_BillywigHiveBlade",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3A5B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_BillywigHiveBlade",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_BillywigHiveBlade",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MI_BillywigHiveBlade.0"
+          },
+          "MaterialSlotName": "MI_Bio_BillyWigHive_01A",
+          "ImportedMaterialSlotName": "MI_Bio_BillyWigHive_01A",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 114.1662,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 114.1662,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 50.24495,
+          "Y": -39.38475,
+          "Z": -0.16041422
+        },
+        "BoxExtent": {
+          "X": 51.846313,
+          "Y": 45.085915,
+          "Z": 3.2395265
+        },
+        "SphereRadius": 65.336945
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_BillywigHiveBlade:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_BillywigHiveBlade.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_BillywigHiveBlade:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_BillywigHiveBlade.1"
+    },
+    "LightingGuid": "02B92AC1-49A8C0D6-F5F1F486-4E52D808",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 130,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 165,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 166
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 166,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 50.24495,
+          "Y": -39.38475,
+          "Z": -0.16041422
+        },
+        "BoxExtent": {
+          "X": 51.846313,
+          "Y": 45.085915,
+          "Z": 3.2395265
+        },
+        "SphereRadius": 65.336945
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_AncMag_Core",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_3",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Masked",
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bUsedWithNiagaraMeshParticles": true,
+      "StateId": "22137A5A-46B78296-277BBC8B-73E6FD5A",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              1007219309932694278,
+              5496808048124969138,
+              6508554218835734970,
+              10537253948815458904,
+              17945335288772587736
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Exp",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Noise Size Scale (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Noise Speed Scale (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Power (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "B",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "7879E236-4F2A15E4-0A878DB9-8BA05F8F",
+              "B74C3BD3-41608855-3553C297-29283C5C",
+              "E45EA458-424ECC48-010032AD-D9A2E19E",
+              "CF82BFA9-400C9A0C-4951A28D-6046210F",
+              "6A4469AF-42F68F70-8B4A3883-C9F75744"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              331225324888612606,
+              13491821844712527965
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Base Color",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Emissive Color",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "40D0FF93-4989FA5A-A9BDE6A0-B79FF4FA",
+              "035DB222-45A49CA7-196DB3BC-FFD46C2F"
+            ]
+          },
+          "ScalarValues": [
+            3.455083,
+            0.2,
+            3.905045,
+            1.717413,
+            2.0
+          ],
+          "VectorValues": [
+            {
+              "R": 0.9052083,
+              "G": 0.45329326,
+              "B": 0.23477305,
+              "A": 0.0,
+              "Hex": "F5B485"
+            },
+            {
+              "R": 10.0,
+              "G": 5.596073,
+              "B": 2.496243,
+              "A": 0.0,
+              "Hex": "FFFFFF"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D'VFX_T_RibbonOffset_N'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "A963024D-419DB956-01ADDEB0-FC41CB7C",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Fake3DNoise_Adv'",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Fake3DNoise_Adv.0"
+            }
+          },
+          {
+            "StateId": "72C547B3-457AA083-E55C2994-C3F1418D",
+            "Function": {
+              "ObjectName": "MaterialFunction'Fresnel_Function'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Fresnel_Function.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationDebug_Mask'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptationFactor'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BloomAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection'MP_EmissiveAdaptation'",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

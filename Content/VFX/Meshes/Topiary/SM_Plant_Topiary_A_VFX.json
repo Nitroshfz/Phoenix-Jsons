@@ -1,0 +1,219 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_Plant_Topiary_A_VFX",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.15793759,
+              "Y": -1.0413568,
+              "Z": 56.008198
+            },
+            "Radius": 59.309624,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "864299D449ECC6B6AD7BDA936C0279C6",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x1C42E"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Plant_Topiary_A_VFX",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x1C492"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Plant_Topiary_A_VFX",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Plant_Topiary_A",
+            "ObjectPath": "/Game/Environment/Hogwarts/Materials/MI_HW_Plant_Topiary_A.0"
+          },
+          "MaterialSlotName": "M_Plant_Topiary_A_a",
+          "ImportedMaterialSlotName": "M_Plant_Topiary_A_a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 134.08476,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Plant_Topiary_B",
+            "ObjectPath": "/Game/Environment/Hogwarts/Materials/MI_HW_Plant_Topiary_B.0"
+          },
+          "MaterialSlotName": "M_Plant_Topiary_A_b",
+          "ImportedMaterialSlotName": "M_Plant_Topiary_A_b",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 79.12343,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 80.988785,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.88471603,
+          "Y": 1.2194061,
+          "Z": 54.698097
+        },
+        "BoxExtent": {
+          "X": 45.90062,
+          "Y": 46.609215,
+          "Z": 57.0449
+        },
+        "SphereRadius": 60.710636
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Plant_Topiary_A_VFX:BodySetup_1",
+      "ObjectPath": "/Game/VFX/Meshes/Topiary/SM_Plant_Topiary_A_VFX.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Plant_Topiary_A_VFX:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/Topiary/SM_Plant_Topiary_A_VFX.1"
+    },
+    "LightingGuid": "260153E6-470559F2-D38B3B99-09155A59",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 41,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 32,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 123,
+              "NumTriangles": 1527,
+              "MinVertexIndex": 33,
+              "MaxVertexIndex": 2611,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 38.024902,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2612
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 2612,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.88471603,
+          "Y": 1.2194061,
+          "Z": 54.698097
+        },
+        "BoxExtent": {
+          "X": 45.90062,
+          "Y": 46.609215,
+          "Z": 57.0449
+        },
+        "SphereRadius": 60.710636
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

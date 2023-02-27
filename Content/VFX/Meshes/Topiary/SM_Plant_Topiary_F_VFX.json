@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Plant_Topiary_F_VFX",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "74106A1948390367992DABBA9D781BC7",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x4F797"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Plant_Topiary_F_VFX",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4F7FB"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Plant_Topiary_F_VFX",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Plant_Topiary_B",
+            "ObjectPath": "/Game/Environment/Hogwarts/Materials/MI_HW_Plant_Topiary_B.0"
+          },
+          "MaterialSlotName": "M_Plant_Topiary_B_b",
+          "ImportedMaterialSlotName": "M_Plant_Topiary_B_b",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 43.883957,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Plant_Topiary_A",
+            "ObjectPath": "/Game/Environment/Hogwarts/Materials/MI_HW_Plant_Topiary_A.0"
+          },
+          "MaterialSlotName": "M_Plant_Topiary_B_a",
+          "ImportedMaterialSlotName": "M_Plant_Topiary_B_a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 120.66324,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 52.861015,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 3.4473877,
+          "Y": 1.1405792,
+          "Z": 34.51553
+        },
+        "BoxExtent": {
+          "X": 46.266647,
+          "Y": 30.28869,
+          "Z": 36.527466
+        },
+        "SphereRadius": 52.955696
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Plant_Topiary_F_VFX:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Topiary/SM_Plant_Topiary_F_VFX.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Plant_Topiary_F_VFX:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Topiary/SM_Plant_Topiary_F_VFX.1"
+    },
+    "LightingGuid": "0841C2DC-4A180999-3740FCAE-47E3E7A7",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 3701,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 8904,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 11103,
+              "NumTriangles": 318,
+              "MinVertexIndex": 8905,
+              "MaxVertexIndex": 9186,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 9.701275,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 9187
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 9187,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 3.4473877,
+          "Y": 1.1405792,
+          "Z": 34.51553
+        },
+        "BoxExtent": {
+          "X": 46.266647,
+          "Y": 30.28869,
+          "Z": 36.527466
+        },
+        "SphereRadius": 52.955696
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

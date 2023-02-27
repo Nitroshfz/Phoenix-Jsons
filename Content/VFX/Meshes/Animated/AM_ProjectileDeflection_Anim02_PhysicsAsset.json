@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "AM_ProjectileDeflection_Anim02_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup AM_ProjectileDeflection_Anim02_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "/Game/VFX/Meshes/Animated/AM_ProjectileDeflection_Anim02_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup AM_ProjectileDeflection_Anim02_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "/Game/VFX/Meshes/Animated/AM_ProjectileDeflection_Anim02_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate AM_ProjectileDeflection_Anim02_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "/Game/VFX/Meshes/Animated/AM_ProjectileDeflection_Anim02_PhysicsAsset.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "AM_ProjectileDeflection_Anim02_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "pSphere1",
+        "ConstraintBone1": "pSphere1",
+        "ConstraintBone2": "M_Deflect",
+        "Pos2": {
+          "X": 0.24147962,
+          "Y": 50.25264,
+          "Z": 0.41335514
+        },
+        "PriAxis2": {
+          "X": 0.99999994,
+          "Y": -0.0,
+          "Z": 0.0
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.99999994,
+          "Z": -0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "AM_ProjectileDeflection_Anim02_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 179.72467,
+              "Roll": -89.528725
+            },
+            "Radius": 0.505,
+            "Length": 0.505,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "M_Deflect",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "FF685C234445D9C4CD1EC699E13FEACB"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "AM_ProjectileDeflection_Anim02_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 3.2039825E-05,
+              "Y": 0.08636017,
+              "Z": 1.2923468
+            },
+            "Rotation": {
+              "Pitch": -3.2054691,
+              "Yaw": -89.99999,
+              "Roll": -9.780338E-05
+            },
+            "Radius": 1.01,
+            "Length": 0.87331796,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "pSphere1",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "32338F6148C3C9F3F0028D89BA2AE8F1"
+  }
+]

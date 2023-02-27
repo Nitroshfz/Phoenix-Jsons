@@ -1,0 +1,171 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_SphinxBowl_FireMesh",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "7D122F3141BD5039E8B264BA52F4C12F",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2208"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_SphinxBowl_FireMesh",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x226C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_SphinxBowl_FireMesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "M_C_DUN_BrazierEmbers",
+          "ImportedMaterialSlotName": "M_C_DUN_BrazierEmbers",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 71.39483,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 71.39483,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.23506546,
+          "Y": 1.0428772,
+          "Z": 32.354744
+        },
+        "BoxExtent": {
+          "X": 20.824562,
+          "Y": 19.650234,
+          "Z": 3.2821789
+        },
+        "SphereRadius": 22.28373
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_SphinxBowl_FireMesh:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Fire_SampleMeshes/VFX_SM_SphinxBowl_FireMesh.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_SphinxBowl_FireMesh:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Fire_SampleMeshes/VFX_SM_SphinxBowl_FireMesh.1"
+    },
+    "LightingGuid": "25A222AB-4D55CB39-6BCF1E9F-E1BA8A14",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 22,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 18,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 19
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 19,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.23506546,
+          "Y": 1.0428772,
+          "Z": 32.354744
+        },
+        "BoxExtent": {
+          "X": 20.824562,
+          "Y": 19.650234,
+          "Z": 3.2821789
+        },
+        "SphereRadius": 22.28373
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

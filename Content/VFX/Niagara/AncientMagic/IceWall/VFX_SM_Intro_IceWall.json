@@ -1,0 +1,230 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Intro_IceWall",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -2.3078918,
+              "Y": -54.19288,
+              "Z": 316.703
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 402.77838,
+            "Y": 1.1444092E-05,
+            "Z": 619.06433,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "EEF1DED4414FE7BE6A3C04BAD4941D2C",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x358B"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_Intro_IceWall",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0x35EF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Intro_IceWall",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material VFX_MM_AncMagIce_Transparent",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_MM_AncMagIce_Transparent.0"
+          },
+          "MaterialSlotName": "MI_Intro_RuinsBrickMulti_A",
+          "ImportedMaterialSlotName": "MI_Intro_RuinsBrickMulti_A",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 388.65735,
+            "LocalUVDensities": 507.70068,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 507.70068,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -2.3078918,
+          "Y": -54.19288,
+          "Z": 316.703
+        },
+        "BoxExtent": {
+          "X": 201.38919,
+          "Y": 5.722046E-06,
+          "Z": 309.53217
+        },
+        "SphereRadius": 369.28003
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_Intro_IceWall:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_SM_Intro_IceWall.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_Intro_IceWall:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_SM_Intro_IceWall.1"
+    },
+    "LightingGuid": "575C0D1F-40AF2459-4B190B8E-739B04BB",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 258,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 205,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 206
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 206,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 65,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 76,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0007146833,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 77
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 77,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -2.3078918,
+          "Y": -54.19288,
+          "Z": 316.703
+        },
+        "BoxExtent": {
+          "X": 201.38919,
+          "Y": 5.722046E-06,
+          "Z": 309.53217
+        },
+        "SphereRadius": 369.28003
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.036856003,
+        "NaN",
+        0.024214,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

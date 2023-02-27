@@ -1,0 +1,1441 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_VFX_BP_AncMag_IceWall_Window",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetIce",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "SuperStruct": {
+      "ObjectName": "Class Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "GlowOff",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "GlowOn",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearFog",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "FreezeIce",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "MeltIce",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "MakeOpaque",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "MakeTranslucent",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "LiftFog__UpdateFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "LiftFog__FinishedFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "IceMelt__UpdateFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "IceMelt__FinishedFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "Opaque__UpdateFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "Opaque__FinishedFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "Clear__UpdateFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "Clear__FinishedFunc",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "SuperStruct": {
+      "ObjectName": "Class Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate VFX_BP_AncMag_IceWall_Window_C:Clear_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.42"
+        },
+        {
+          "ObjectName": "TimelineTemplate VFX_BP_AncMag_IceWall_Window_C:Opaque_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.45"
+        },
+        {
+          "ObjectName": "TimelineTemplate VFX_BP_AncMag_IceWall_Window_C:LiftFog_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.44"
+        },
+        {
+          "ObjectName": "TimelineTemplate VFX_BP_AncMag_IceWall_Window_C:IceMelt_Template",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.43"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.39"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ExecuteUbergraph_VFX_BP_AncMag_IceWall_Window",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:UserConstructionScript",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.18"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Clear__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.17"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Clear__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.16"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Opaque__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.15"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Opaque__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.14"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:IceMelt__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.13"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:IceMelt__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.12"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:LiftFog__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.11"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:LiftFog__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.10"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:MakeTranslucent",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.9"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:MakeOpaque",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.8"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:MeltIce",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.7"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:FreezeIce",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.6"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ClearFog",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.5"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:GlowOn",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.4"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:GlowOff",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.3"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ReceiveBeginPlay",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.2"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ResetIce",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.1"
+      },
+      {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ExecuteUbergraph_VFX_BP_AncMag_IceWall_Window",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PointLight",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class PointLightComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_Wall",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class StaticMeshComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SM_Ice",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class StaticMeshComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SceneComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_WipeIn_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_Opacity_Frost_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_IceOpacity_Wall_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_IceCoverage_Wall_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_LightIntensity_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_FogOpacity_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "IceMelt_HoleOpacity_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "IceMelt__Direction_A5A537F44F31ED1066073A93A3CC6C4C",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IceMelt",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "LiftFog_Opacity_52A84DB14D3E7D884583208AD11EAF84",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "LiftFog__Direction_52A84DB14D3E7D884583208AD11EAF84",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "LiftFog",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Opaque_Opacity_82D1C5B440291A955CEC02955B1E6F57",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Opaque__Direction_82D1C5B440291A955CEC02955B1E6F57",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Opaque",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Clear_IceCoverage_Wall_A4014F014E76517182B7D9B438DFFDD3",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Clear_LightIntensity_A4014F014E76517182B7D9B438DFFDD3",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Clear_HoleCoverage_A4014F014E76517182B7D9B438DFFDD3",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "Clear__Direction_A4014F014E76517182B7D9B438DFFDD3",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class ETimelineDirection",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Clear",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class TimelineComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MAT_Ice",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MAT_Wall",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "MAT_Glow",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "LightIntensity",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_VFX_BP_AncMag_IceWall_Window": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ExecuteUbergraph_VFX_BP_AncMag_IceWall_Window",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.0"
+      },
+      "ResetIce": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ResetIce",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.1"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ReceiveBeginPlay",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.2"
+      },
+      "GlowOff": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:GlowOff",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.3"
+      },
+      "GlowOn": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:GlowOn",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.4"
+      },
+      "ClearFog": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:ClearFog",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.5"
+      },
+      "FreezeIce": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:FreezeIce",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.6"
+      },
+      "MeltIce": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:MeltIce",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.7"
+      },
+      "MakeOpaque": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:MakeOpaque",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.8"
+      },
+      "MakeTranslucent": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:MakeTranslucent",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.9"
+      },
+      "LiftFog__UpdateFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:LiftFog__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.10"
+      },
+      "LiftFog__FinishedFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:LiftFog__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.11"
+      },
+      "IceMelt__UpdateFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:IceMelt__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.12"
+      },
+      "IceMelt__FinishedFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:IceMelt__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.13"
+      },
+      "Opaque__UpdateFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Opaque__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.14"
+      },
+      "Opaque__FinishedFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Opaque__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.15"
+      },
+      "Clear__UpdateFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Clear__UpdateFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.16"
+      },
+      "Clear__FinishedFunc": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:Clear__FinishedFunc",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.17"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function VFX_BP_AncMag_IceWall_Window_C:UserConstructionScript",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.18"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "VFX_BP_AncMag_IceWall_Window_C Default__VFX_BP_AncMag_IceWall_Window_C",
+      "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.20"
+    }
+  },
+  {
+    "Type": "VFX_BP_AncMag_IceWall_Window_C",
+    "Name": "Default__VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "LightIntensity": 100000.0
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.4,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.49476796,
+            "Value": 0.50694567,
+            "ArriveTangent": 0.4394241,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.43942246,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.0,
+            "Value": 0.95,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0_1",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.941465,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_1",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_10",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 1.4459465,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 1.4459455,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.5,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_11",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.8294411,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.8294411,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.1,
+            "Value": 0.39443016,
+            "ArriveTangent": 0.34822083,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.34822214,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.2816215,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_2",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.22579432,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.4841152,
+            "Value": 1.0,
+            "ArriveTangent": 0.4486796,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.44868007,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_3",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.15740755,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.15740749,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.605433,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_5",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.2,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.61920005,
+            "Value": 0.3111754,
+            "ArriveTangent": 0.4,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.4,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_6",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.8299849,
+            "Value": 0.23404385,
+            "ArriveTangent": -0.6666667,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.6666667,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.5,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_7",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 2.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_8",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 0.95,
+            "ArriveTangent": -0.052877553,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.052877553,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.8591444,
+            "Value": 0.25393105,
+            "ArriveTangent": -0.5568283,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.5568283,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.5,
+            "Value": 0.0,
+            "ArriveTangent": -0.055866532,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.05586722,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_9",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.0,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 1.5,
+            "Value": 0.0,
+            "ArriveTangent": -0.7313291,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -0.7313298,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "PointLight_GEN_VARIABLE",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "AttenuationRadius": 1702.0123,
+      "MinDistance": 1.0,
+      "Intensity": 0.0,
+      "LightColor": {
+        "B": 255,
+        "G": 199,
+        "R": 163,
+        "A": 255,
+        "Hex": "FFA3C7FF"
+      },
+      "CastShadows": false,
+      "RelativeLocation": {
+        "X": -4.0,
+        "Y": -83.0,
+        "Z": 180.55237
+      },
+      "Mobility": "EComponentMobility::Stationary"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent VFX_BP_AncMag_IceWall_Window_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.34"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.36"
+        },
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.38"
+        },
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.37"
+        }
+      ],
+      "VariableGuid": "7CAC7B0F-46112BAB-A0D8B285-183B6530",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent VFX_BP_AncMag_IceWall_Window_C:SM_Ice_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.40"
+      },
+      "VariableGuid": "7A066C5B-498ECDD2-874C36AB-AEB71FBE",
+      "InternalVariableName": "SM_Ice"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_13",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class PointLightComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PointLightComponent VFX_BP_AncMag_IceWall_Window_C:PointLight_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.33"
+      },
+      "VariableGuid": "15CC309C-410AA4D4-FDE9ACAC-FF3A9FD7",
+      "InternalVariableName": "PointLight"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent VFX_BP_AncMag_IceWall_Window_C:SM_Wall_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.41"
+      },
+      "VariableGuid": "8E287F38-43BF4721-EE6195BB-A7E05ABB",
+      "InternalVariableName": "SM_Wall"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.35"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.35"
+        },
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.36"
+        },
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.38"
+        },
+        {
+          "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_13",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.37"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node VFX_BP_AncMag_IceWall_Window_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.35"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_Ice_GEN_VARIABLE",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh VFX_SM_Intro_IceWall",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_SM_Intro_IceWall.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material VFX_MM_AncMagIce_Transparent",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_MM_AncMagIce_Transparent.0"
+        }
+      ],
+      "bVisibleInRayTracing": false,
+      "bReceivesDecals": false,
+      "bReceivesWeatherDecals": false,
+      "CastShadow": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 5.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_Wall_GEN_VARIABLE",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh VFX_SM_Intro_IceWall",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_SM_Intro_IceWall.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant VFX_MI_IceWall_B_2",
+          "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_MI_IceWall_B_2.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "bReceivesWeatherDecals": false
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "Clear_Template",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "TimelineLength": 2.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_5",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.28"
+          },
+          "PropertyName": "Clear_HoleCoverage_A4014F014E76517182B7D9B438DFFDD3",
+          "TrackName": "HoleCoverage",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_7",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.30"
+          },
+          "PropertyName": "Clear_LightIntensity_A4014F014E76517182B7D9B438DFFDD3",
+          "TrackName": "LightIntensity",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_0",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.21"
+          },
+          "PropertyName": "Clear_IceCoverage_Wall_A4014F014E76517182B7D9B438DFFDD3",
+          "TrackName": "IceCoverage_Wall",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "A4014F01-4E765171-82B7D9B4-38DFFDD3",
+      "VariableName": "Clear",
+      "DirectionPropertyName": "Clear__Direction_A4014F014E76517182B7D9B438DFFDD3",
+      "UpdateFunctionName": "Clear__UpdateFunc",
+      "FinishedFunctionName": "Clear__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "IceMelt_Template",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "TimelineLength": 4.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_2",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.26"
+          },
+          "PropertyName": "IceMelt_HoleOpacity_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "HoleOpacity",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_3",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.27"
+          },
+          "PropertyName": "IceMelt_FogOpacity_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "FogOpacity",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_6",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.29"
+          },
+          "PropertyName": "IceMelt_LightIntensity_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "LightIntensity",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_8",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.31"
+          },
+          "PropertyName": "IceMelt_IceCoverage_Wall_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "IceCoverage_Wall",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_9",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.32"
+          },
+          "PropertyName": "IceMelt_IceOpacity_Wall_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "IceOpacity_Wall",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_10",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.24"
+          },
+          "PropertyName": "IceMelt_Opacity_Frost_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "Opacity Frost",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_11",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.25"
+          },
+          "PropertyName": "IceMelt_WipeIn_A5A537F44F31ED1066073A93A3CC6C4C",
+          "TrackName": "WipeIn",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "A5A537F4-4F31ED10-66073A93-A3CC6C4C",
+      "VariableName": "IceMelt",
+      "DirectionPropertyName": "IceMelt__Direction_A5A537F44F31ED1066073A93A3CC6C4C",
+      "UpdateFunctionName": "IceMelt__UpdateFunc",
+      "FinishedFunctionName": "IceMelt__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "LiftFog_Template",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "TimelineLength": 3.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_0_1",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.22"
+          },
+          "PropertyName": "LiftFog_Opacity_52A84DB14D3E7D884583208AD11EAF84",
+          "TrackName": "Opacity",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "52A84DB1-4D3E7D88-4583208A-D11EAF84",
+      "VariableName": "LiftFog",
+      "DirectionPropertyName": "LiftFog__Direction_52A84DB14D3E7D884583208AD11EAF84",
+      "UpdateFunctionName": "LiftFog__UpdateFunc",
+      "FinishedFunctionName": "LiftFog__FinishedFunc"
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "Opaque_Template",
+    "Outer": "VFX_BP_AncMag_IceWall_Window_C",
+    "Properties": {
+      "TimelineLength": 2.0,
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat VFX_BP_AncMag_IceWall_Window_C:CurveFloat_1",
+            "ObjectPath": "/Game/VFX/Niagara/AncientMagic/IceWall/VFX_BP_AncMag_IceWall_Window.23"
+          },
+          "PropertyName": "Opaque_Opacity_82D1C5B440291A955CEC02955B1E6F57",
+          "TrackName": "Opacity",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "82D1C5B4-40291A95-5CEC0295-5B1E6F57",
+      "VariableName": "Opaque",
+      "DirectionPropertyName": "Opaque__Direction_82D1C5B440291A955CEC02955B1E6F57",
+      "UpdateFunctionName": "Opaque__UpdateFunc",
+      "FinishedFunctionName": "Opaque__FinishedFunc"
+    }
+  }
+]

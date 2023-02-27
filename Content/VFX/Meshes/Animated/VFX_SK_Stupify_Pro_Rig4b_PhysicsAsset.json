@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "/Game/VFX/Meshes/Animated/VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "/Game/VFX/Meshes/Animated/VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "/Game/VFX/Meshes/Animated/VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "VFX_SK_Stupify_Pro_Rig_Socket",
+        "ConstraintBone1": "VFX_SK_Stupify_Pro_Rig_Socket",
+        "ConstraintBone2": "VFX_SK_Stupify_Pro_Rig5",
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99999,
+              "Roll": -89.99999
+            },
+            "Radius": 18.710466,
+            "Length": 50.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "VFX_SK_Stupify_Pro_Rig5",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "351AB729499656AF2E5EF6BB5143CF3D"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "VFX_SK_Stupify_Pro_Rig4b_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99999,
+              "Roll": 7.4603754E-06
+            },
+            "Radius": 50.500114,
+            "Length": 50.50013,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "VFX_SK_Stupify_Pro_Rig_Socket",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "96D9802F4248E4F02BE46290853949F4"
+  }
+]

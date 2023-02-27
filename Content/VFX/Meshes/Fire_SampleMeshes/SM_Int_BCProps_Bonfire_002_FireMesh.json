@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Int_BCProps_Bonfire_002_FireMesh",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "BE16E7054BF2F6A812D0C7BB1B405EBD"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Int_BCProps_Bonfire_002_FireMesh",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x4251"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Int_BCProps_Bonfire_002_FireMesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "principledshader",
+          "ImportedMaterialSlotName": "principledshader",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 326.04398,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 326.04398,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.2761078,
+          "Y": -10.084381,
+          "Z": 66.485756
+        },
+        "BoxExtent": {
+          "X": 69.114,
+          "Y": 68.2112,
+          "Z": 62.694023
+        },
+        "SphereRadius": 94.04752
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Int_BCProps_Bonfire_002_FireMesh:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Fire_SampleMeshes/SM_Int_BCProps_Bonfire_002_FireMesh.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Int_BCProps_Bonfire_002_FireMesh:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/Fire_SampleMeshes/SM_Int_BCProps_Bonfire_002_FireMesh.1"
+    },
+    "LightingGuid": "C8AC3224-484FB148-A83EF991-EEF19A91",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 174,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 298,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 299
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 299,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 1.2761078,
+          "Y": -10.084381,
+          "Z": 66.485756
+        },
+        "BoxExtent": {
+          "X": 69.114,
+          "Y": 68.2112,
+          "Z": 62.694023
+        },
+        "SphereRadius": 94.04752
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

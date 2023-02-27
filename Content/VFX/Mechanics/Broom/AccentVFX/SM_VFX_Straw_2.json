@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_VFX_Straw_2",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "FB575E1F4BCF578B562A0D8CC4ED3AAE",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2428"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_VFX_Straw_2",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x248C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_VFX_Straw_2",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_BroomStraw",
+            "ObjectPath": "/Game/VFX/Mechanics/Broom/AccentVFX/VFX_MI_BroomStraw.0"
+          },
+          "MaterialSlotName": "MI_FlyingClassBroom_01",
+          "ImportedMaterialSlotName": "MI_FlyingClassBroom_01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 213.76877,
+            "LocalUVDensities": 307.58868,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 307.58868,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.7683716E-07,
+          "Y": -0.09128761,
+          "Z": 0.08404112
+        },
+        "BoxExtent": {
+          "X": 5.339085,
+          "Y": 23.566597,
+          "Z": 1.4120288
+        },
+        "SphereRadius": 24.19854
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_VFX_Straw_2:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Mechanics/Broom/AccentVFX/SM_VFX_Straw_2.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_VFX_Straw_2:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Mechanics/Broom/AccentVFX/SM_VFX_Straw_2.1"
+    },
+    "LightingGuid": "E4EF0187-41E2F379-726EF0B8-75F893DD",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 30,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 22,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 23
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 23,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -4.7683716E-07,
+          "Y": -0.09128761,
+          "Z": 0.08404112
+        },
+        "BoxExtent": {
+          "X": 5.339085,
+          "Y": 23.566597,
+          "Z": 1.4120288
+        },
+        "SphereRadius": 24.19854
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.02196,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

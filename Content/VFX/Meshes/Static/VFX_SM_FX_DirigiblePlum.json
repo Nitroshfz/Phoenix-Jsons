@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_FX_DirigiblePlum",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "D8923C7B459B1FDAAE9C70AD74A9D602",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x8E3D"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_FX_DirigiblePlum",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8EA1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_FX_DirigiblePlum",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_GR_DirigiblePlumTreeLeaves",
+            "ObjectPath": "/Game/Environment/Hogwarts/SUB_Greenhouses/Materials/MI_HW_GR_DirigiblePlumTreeLeaves.0"
+          },
+          "MaterialSlotName": "MI_HW_DirigiblePlumTree_Leaves",
+          "ImportedMaterialSlotName": "MI_HW_DirigiblePlumTree_Leaves",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 520.15515,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 520.15515,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 9.536743E-07,
+          "Y": 13.360657,
+          "Z": 40.811203
+        },
+        "BoxExtent": {
+          "X": 9.331927,
+          "Y": 22.082458,
+          "Z": 61.298096
+        },
+        "SphereRadius": 64.89735
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_FX_DirigiblePlum:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_FX_DirigiblePlum.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_FX_DirigiblePlum:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_FX_DirigiblePlum.1"
+    },
+    "LightingGuid": "E7A16786-475EB22F-901DFAAF-CD0BF02D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 446,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 304,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 305
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 305,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 305
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 199,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 154,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 4.2320366,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 155
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 155,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 155
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 9.536743E-07,
+          "Y": 13.360657,
+          "Z": 40.811203
+        },
+        "BoxExtent": {
+          "X": 9.331927,
+          "Y": 22.082458,
+          "Z": 61.298096
+        },
+        "SphereRadius": 64.89735
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.20143993,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

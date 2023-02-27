@@ -1,0 +1,396 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_VolumetricRadialGradient",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 1,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_6",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_AlphaComposite",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bEnableResponsiveAA": true,
+      "TranslucencyLightingMode": "TLM_VolumetricPerVertexDirectional",
+      "bGenerateSphericalParticleNormals": true,
+      "bUsedWithParticleSprites": true,
+      "bUsedWithNiagaraSprites": true,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bFullyRough": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "2E73AC4A-4EB78D26-1CF45497-4CFFCDF1",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              445961092319214985,
+              726025841814037992,
+              5781672022566703350,
+              11242153796313816059,
+              16362027728313390161,
+              17717862968772829760
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Volume",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "FadeThreshold",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Multiply Opacity into Color",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Alpha Bias",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "WaterSurfaceOffset",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Sharp",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "C49BC11E-41951F4E-9E7D4498-82C57AC4",
+              "1523B5CF-4B9B1CD9-FA84B2B1-702CCD46",
+              "F72B95C3-4DC8FD2D-CF724989-928F92ED",
+              "25E075E8-45C487DF-88189DBF-1F770D62",
+              "780305EB-49B2DE15-E2A72388-D74EFE70",
+              "B6EA9C02-49C0EB49-03D4ECA2-C8044F33"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              14594449435752022649
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Base Color and Alpha",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "4B6E0FC7-4D3016F4-7A87A99D-7FAE5ABE"
+            ]
+          },
+          "ScalarValues": [
+            1.0,
+            0.2,
+            1.0,
+            0.5,
+            0.0,
+            2.0
+          ],
+          "VectorValues": [
+            {
+              "R": 1.0,
+              "G": 1.0,
+              "B": 1.0,
+              "A": 0.5,
+              "Hex": "7FFFFFFF"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          null,
+          {
+            "ObjectName": "TextureRenderTarget2DArray RT_WaveRenderTarget",
+            "ObjectPath": "/Flow/RenderTargets/RT_WaveRenderTarget.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "C078973D-49620656-A0F4FB9D-7968526E",
+            "Function": {
+              "ObjectName": "MaterialFunction VFX_MF_RadialGradient",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_RadialGradient.0"
+            }
+          },
+          {
+            "StateId": "C078973D-49620656-A0F4FB9D-7968526E",
+            "Function": {
+              "ObjectName": "MaterialFunction VFX_MF_RadialGradient",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_RadialGradient.0"
+            }
+          },
+          {
+            "StateId": "B83AB88C-4B00A792-730C8091-32500C98",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BiasPower2",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_BiasPower2.0"
+            }
+          },
+          {
+            "StateId": "B83AB88C-4B00A792-730C8091-32500C98",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BiasPower2",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_BiasPower2.0"
+            }
+          },
+          {
+            "StateId": "B83AB88C-4B00A792-730C8091-32500C98",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BiasPower2",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_BiasPower2.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FFA0F39F-46252E68-FA6867B8-58782B2A",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_WorldToCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_WorldToCascade.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FFA0F39F-46252E68-FA6867B8-58782B2A",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_WorldToCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_WorldToCascade.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FFA0F39F-46252E68-FA6867B8-58782B2A",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_WorldToCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_WorldToCascade.0"
+            }
+          },
+          {
+            "StateId": "CA311941-40B99E88-03C09D86-0A1EC4CA",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_SampleWaterCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_SampleWaterCascade.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FFA0F39F-46252E68-FA6867B8-58782B2A",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_WorldToCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_WorldToCascade.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FFA0F39F-46252E68-FA6867B8-58782B2A",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_WorldToCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_WorldToCascade.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "FFA0F39F-46252E68-FA6867B8-58782B2A",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_WorldToCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_WorldToCascade.0"
+            }
+          },
+          {
+            "StateId": "CA311941-40B99E88-03C09D86-0A1EC4CA",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_SampleWaterCascade",
+              "ObjectPath": "/Flow/Materials/MFs/MF_SampleWaterCascade.0"
+            }
+          },
+          {
+            "StateId": "8DC92811-431C4E71-3821F29C-AAE8356D",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_SampleWaterCascades",
+              "ObjectPath": "/Flow/Materials/MFs/MF_SampleWaterCascades.0"
+            }
+          },
+          {
+            "StateId": "2B3A0EB4-4D254606-07456583-23C6E90B",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_SampleWaveCascades",
+              "ObjectPath": "/Flow/Materials/MFs/MF_SampleWaveCascades.0"
+            }
+          },
+          {
+            "StateId": "1A97B45E-44960058-56462A9B-A6834303",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BreakVector3",
+              "ObjectPath": "/Game/MaterialFunctions/MF_BreakVector3.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "67008E08-400DF1C2-D9D3FCB3-E89F5FF7",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoExposureAdaptationFactor",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "AB14B3E0-4D52C952-998B90B3-08F47431",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoExposureAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "FFD7C6F8-49001DB9-F93938BE-41867070",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection PlayerRenderTargetParams",
+              "ObjectPath": "/Flow/Materials/MPC/PlayerRenderTargetParams.0"
+            }
+          },
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection MP_EmissiveAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "WaveContribution",
+          "WaterSurfaceOffset",
+          "Param3",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

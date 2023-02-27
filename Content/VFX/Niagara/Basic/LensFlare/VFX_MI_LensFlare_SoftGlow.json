@@ -1,0 +1,209 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_LensFlare_SoftGlow",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material VFX_MM_LensFlare_Master",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/VFX_MM_LensFlare_Master.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Chromatic Aberration Strength (0-1) (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.266667,
+          "ExpressionGUID": "5586BCCD-452288D2-8AFFFCAC-83D0309F"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "EmissAdap Daytime Boost Percent (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.295238,
+          "ExpressionGUID": "6CCB9626-46F44DC3-699EC2B2-7569AD63"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Light Source Radius",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 19.619047,
+          "ExpressionGUID": "3CAABF10-499F2A18-20DE28A7-6AA2B143"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Depth Bias (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": -51.904774,
+          "ExpressionGUID": "4B02F299-4BA75559-8F646180-94989011"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Axis Offset Multiplier (Also uses Particle Dynamic Parameter 1)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "6816E74D-44E0125B-0A25F0B2-DBC67986"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Size by Distance (0 = normal scale, 1 = constant scale)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.385714,
+          "ExpressionGUID": "F36DC280-45197BDC-F5DCE081-02E0F527"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Distance Fade Start Distance (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1000.0,
+          "ExpressionGUID": "CB2E3B08-4B05033D-D6F3E99C-4A744F09"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Distance Fade Length",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 50000.0,
+          "ExpressionGUID": "C64C10D0-46BF8B1A-41B2C19F-5BBFECC1"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Distance Fade Hardness (Higher # = brighter up close)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "7DEB2ABF-4FB0D563-A2B4059B-4F83345F"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Emissive Boost",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "5DCDABAB-4D286290-137B7BB9-E3B1C386"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Soften Strength (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "53D72FCE-4D97C413-D7EC6894-4EE73213"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Soften Exponent (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.799999,
+          "ExpressionGUID": "480FD288-47B2A8A6-F9433786-15CC3319"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Core Boost (S)",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "E9825661-4C4BAEEA-8675B9AC-91FAB01D"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Color and Alpha Map",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D VFX_T_Flare_Anamorphic_D",
+            "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Flare_Anamorphic_D.0"
+          },
+          "ExpressionGUID": "59EF1490-4C9846DB-9E2C199E-C6D6B9D9"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Additive",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Offset",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "B928672B-43012678-930C09B1-E331D4B0"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Soften and Fade",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "C6903380-42B49E56-154511A3-2AEBC286"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Sphere Mask",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "C526F0EE-4606F671-D3175181-17AC0339"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        null,
+        {
+          "ObjectName": "Texture2D VFX_T_Flare01_D",
+          "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Flare01_D.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_LensFlare_DirtMask_E",
+          "ObjectPath": "/Game/VFX/Textures/VFX_T_LensFlare_DirtMask_E.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_ChromaWheel_E",
+          "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_ChromaWheel_E.0"
+        }
+      ]
+    }
+  }
+]

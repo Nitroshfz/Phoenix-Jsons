@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_HeatShieldSphere01",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "8413A84E4CA699AC18378AA0B99190F8",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0xACE7"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_HeatShieldSphere01",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xAD4B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_HeatShieldSphere01",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_ConjuredDragonFireball02HeatShield",
+            "ObjectPath": "/Game/VFX/MasterMaterials/MaterialInstance/VFX_MI_ConjuredDragonFireball02HeatShield.0"
+          },
+          "MaterialSlotName": "HeatShieldSphere01",
+          "ImportedMaterialSlotName": "HeatShieldSphere01",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 219.28056,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 219.28056,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -49.368187,
+          "Y": -7.6293945E-06,
+          "Z": -7.6293945E-06
+        },
+        "BoxExtent": {
+          "X": 78.376595,
+          "Y": 49.96001,
+          "Z": 49.96
+        },
+        "SphereRadius": 87.62266
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_HeatShieldSphere01:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ConjuredDragon/VFX_SM_HeatShieldSphere01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_HeatShieldSphere01:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/ConjuredDragon/VFX_SM_HeatShieldSphere01.1"
+    },
+    "LightingGuid": "29D4870D-4324DC1F-1DBD3EB8-6061DF85",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 704,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 395,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 396
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 396,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 396
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 199,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 119,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 5.084377,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 120
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 120,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 120
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -49.368187,
+          "Y": -7.6293945E-06,
+          "Z": -7.6293945E-06
+        },
+        "BoxExtent": {
+          "X": 78.376595,
+          "Y": 49.96001,
+          "Z": 49.96
+        },
+        "SphereRadius": 87.62266
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.223252,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

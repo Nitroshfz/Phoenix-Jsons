@@ -1,0 +1,177 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_CIN_Incarcerate_RopeShoulders",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "98FAC79541EAEF3A7A53D4B13C50D5FE",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x34F6E"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "VFX_SM_CIN_Incarcerate_RopeShoulders",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x34FD2"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_CIN_Incarcerate_RopeShoulders",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "ShadowMinLOD": 0,
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_DungeonRope_SRO",
+            "ObjectPath": "/Game/Environment/Castle_Dungeon/Materials/Props/MI_DungeonRope_SRO.0"
+          },
+          "MaterialSlotName": "MI_DungeonRope_SRO1",
+          "ImportedMaterialSlotName": "MI_DungeonRope_SRO1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 15.174294,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 15.174294,
+      "LightMapResolution": 64,
+      "bAllowCPUAccess": true,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -4.798706,
+          "Y": -0.59947205,
+          "Z": 9.142687
+        },
+        "BoxExtent": {
+          "X": 66.43968,
+          "Y": 63.54306,
+          "Z": 10.448981
+        },
+        "SphereRadius": 67.90467
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_CIN_Incarcerate_RopeShoulders:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Cinematic/VFX_SM_CIN_Incarcerate_RopeShoulders.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_CIN_Incarcerate_RopeShoulders:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Cinematic/VFX_SM_CIN_Incarcerate_RopeShoulders.1"
+    },
+    "LightingGuid": "50EBAB3F-4DFADFDA-D5E76391-9B9C2CF3",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4850,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 3853,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 3854
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 3854,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -4.798706,
+          "Y": -0.59947205,
+          "Z": 9.142687
+        },
+        "BoxExtent": {
+          "X": 66.43968,
+          "Y": 63.54306,
+          "Z": 10.448981
+        },
+        "SphereRadius": 67.90467
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1439 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_BroomFlightVFXActor",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Temp_struct_Variable",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217730,
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "Temp_struct_Variable",
+          "Flags": 1,
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "Class AkExternalSourceInfo",
+            "ObjectPath": "/Script/AkAudio"
+          }
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "Temp_delegate_Variable",
+        "Flags": 1,
+        "ElementSize": 20,
+        "PropertyFlags": 2,
+        "SignatureFunction": {
+          "ObjectName": "Class OnAkPostEventCallback__DelegateSignature",
+          "ObjectPath": "/Script/AkAudio"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsFlying_Broom_Physics_Free_Roam",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class FlyingBroomPhysics_FreeRoam",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_SelfActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_OtherActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_NormalImpulse",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_Hit",
+        "Flags": 1,
+        "ElementSize": 144,
+        "PropertyFlags": 549755813890,
+        "Struct": {
+          "ObjectName": "Class HitResult",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorUpVector_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bBlockingHit",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Time",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakHitResult_Distance",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Location",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactPoint",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_Normal",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_ImpactNormal",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_PhysMat",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class PhysicalMaterial",
+          "ObjectPath": "/Script/PhysicsCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BreakHitResult_HitComponent",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class PrimitiveComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_BreakHitResult_HitBoneName",
+        "Flags": 1,
+        "ElementSize": 12
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_HitItem",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_ElementIndex",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_BreakHitResult_FaceIndex",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceStart",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BreakHitResult_TraceEnd",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Dot_VectorVector_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NearlyEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAtLocation_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_VSize_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetLastHitObject_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class EFlyingBroomHitObjectType",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostEvent_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAttachParentActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBP_Flying_Broom_Capsule",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass BP_FlyingBroomCapsule_C",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomCapsule.15"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class ActorHitSignature__DelegateSignature",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_CreateDynamicMaterialInstance_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class MaterialInstanceDynamic",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPlayerPawn_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Pawn",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorBounds_Origin",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorBounds_BoxExtent",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParentActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetParentActor_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_SpawnFXAsset_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class MultiFX2Handle",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "EnumProperty",
+        "Name": "CallFunc_IsPlayerCharacter_Branches",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class EIsPlayer",
+          "ObjectPath": "/Script/UtilitiesRuntime"
+        },
+        "UnderlyingProp": {
+          "Type": "ByteProperty",
+          "Name": "UnderlyingType",
+          "Flags": 1,
+          "ElementSize": 1,
+          "Enum": null
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_EffectAmount",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_TargetPos",
+        "Flags": 1,
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_ToggleAmount",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class EEndPlayReason",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class Actor:ReceiveEndPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class EEndPlayReason",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRadialBlurToggleParameterValue",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:SetRadialBlurToggleParameterValue",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "ToggleAmount",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "SetRadialBlurParameterValues",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:SetRadialBlurParameterValues",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "EffectAmount",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetPos",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class LinearColor",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupGroundVFX",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:SetupGroundVFX",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "CreateBroomMaterialDynamic",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:CreateBroomMaterialDynamic",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "DestroyNiagaraAndPostProcessComponent",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:DestroyNiagaraAndPostProcessComponent",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupBroomTrailVFX",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:SetupBroomTrailVFX",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupVFXRefs",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:SetupVFXRefs",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "OnHit",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SelfActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "OtherActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class Actor",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "NormalImpulse",
+        "Flags": 1,
+        "ElementSize": 12,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class Vector",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Hit",
+        "Flags": 1,
+        "ElementSize": 144,
+        "PropertyFlags": 549890032022,
+        "Struct": {
+          "ObjectName": "Class HitResult",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "Function",
+    "Name": "SetupCollisionVFX",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "StartBoostGainVFX",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_NiagaraSystemSpawnAttachedPointInfo",
+        "Flags": 1,
+        "ElementSize": 128,
+        "Struct": {
+          "ObjectName": "Class NiagaraSystemSpawnAttachedPointInfo",
+          "ObjectPath": "/Script/NiagaraHelpers"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnAttached_NiagaraComponent",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "Function",
+    "Name": "EndBoostGainVFX",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnNiagaraSystem",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:SpawnNiagaraSystem",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 525696,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnSystemAttached_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": 206047232
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBroomCapsule",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:GetBroomCapsule",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 1408,
+        "PropertyClass": {
+          "ObjectName": "Class FlyingBroom",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      }
+    ],
+    "FunctionFlags": 206047232
+  },
+  {
+    "Type": "Function",
+    "Name": "GetNiagara",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:GetNiagara",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 525696,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FunctionFlags": 206047232
+  },
+  {
+    "Type": "Function",
+    "Name": "GetPostProcess",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor:GetPostProcess",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 525696,
+        "PropertyClass": {
+          "ObjectName": "Class PostProcessComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 206047232
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_BroomFlightVFXActor_C:SimpleConstructionScript_0",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.26"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:ExecuteUbergraph_BP_BroomFlightVFXActor",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class BroomFlightVFXActor",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:GetPostProcess",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.16"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:GetNiagara",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.15"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:GetBroomCapsule",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.14"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SpawnNiagaraSystem",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.13"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:EndBoostGainVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.12"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:StartBoostGainVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.11"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupCollisionVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.10"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:OnHit",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.9"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupVFXRefs",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.8"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupBroomTrailVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.7"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:DestroyNiagaraAndPostProcessComponent",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.6"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:CreateBroomMaterialDynamic",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.5"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupGroundVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.4"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetRadialBlurParameterValues",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.3"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetRadialBlurToggleParameterValue",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.2"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:ReceiveEndPlay",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.1"
+      },
+      {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:ExecuteUbergraph_BP_BroomFlightVFXActor",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class PointerToUberGraphFrame",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "WindSource",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class WindPointSourceWithEnvelopeComponent",
+          "ObjectPath": "/Script/Wind"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "PostProcess",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class PostProcessComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class SceneComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "STR_AccentVFX",
+        "Flags": 2097153,
+        "ElementSize": 216,
+        "PropertyFlags": 549755879429,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct STR_AccentVFX",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/STR_AccentVFX.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BroomMesh",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class SkeletalMeshComponent",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "VFX_MaterialSlot",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BroomCapsule",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass BP_FlyingBroomCapsule_C",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomCapsule.15"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "FX2Handle",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "Class MultiFX2Handle",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TrailEmitter",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "FreeRoamPhysics",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "PropertyClass": {
+          "ObjectName": "Class FlyingBroomPhysics_FreeRoam",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "BoostGainNiagaraComponent",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class NiagaraComponent",
+          "ObjectPath": "/Script/Niagara"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_BroomFlightVFXActor": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:ExecuteUbergraph_BP_BroomFlightVFXActor",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.0"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:ReceiveEndPlay",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.1"
+      },
+      "SetRadialBlurToggleParameterValue": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetRadialBlurToggleParameterValue",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.2"
+      },
+      "SetRadialBlurParameterValues": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetRadialBlurParameterValues",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.3"
+      },
+      "SetupGroundVFX": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupGroundVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.4"
+      },
+      "CreateBroomMaterialDynamic": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:CreateBroomMaterialDynamic",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.5"
+      },
+      "DestroyNiagaraAndPostProcessComponent": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:DestroyNiagaraAndPostProcessComponent",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.6"
+      },
+      "SetupBroomTrailVFX": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupBroomTrailVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.7"
+      },
+      "SetupVFXRefs": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupVFXRefs",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.8"
+      },
+      "OnHit": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:OnHit",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.9"
+      },
+      "SetupCollisionVFX": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SetupCollisionVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.10"
+      },
+      "StartBoostGainVFX": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:StartBoostGainVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.11"
+      },
+      "EndBoostGainVFX": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:EndBoostGainVFX",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.12"
+      },
+      "SpawnNiagaraSystem": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:SpawnNiagaraSystem",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.13"
+      },
+      "GetBroomCapsule": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:GetBroomCapsule",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.14"
+      },
+      "GetNiagara": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:GetNiagara",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.15"
+      },
+      "GetPostProcess": {
+        "ObjectName": "Function BP_BroomFlightVFXActor_C:GetPostProcess",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.16"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BroomFlightVFXActor_C Default__BP_BroomFlightVFXActor_C",
+      "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.18"
+    }
+  },
+  {
+    "Type": "BP_BroomFlightVFXActor_C",
+    "Name": "Default__BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "STR_AccentVFX": {
+        "AccentVFX_8_E77FF54348CFC9D830FAEEBE3B3A1407": null,
+        "Accent_Parent_13_F0A78F6A4E0ABF4F5932169F73150FE4": "None",
+        "Accent_Offset_14_5A7F7B484D6FCC68D3A27B8FE3D9F597": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Accent_Offset_Rot_31_8F778D364CA84FFAF2634298B75A15CF": {
+          "Pitch": 0.0,
+          "Yaw": 0.0,
+          "Roll": 0.0
+        },
+        "Broom_Params_39_03967392492EB7A85F6B458CD76B0E26": {},
+        "Material_Params_44_A64816404EFD13C4FA4B3F9AD5244000": {},
+        "VFX_MaterialSlot_47_1FC027FF4DA4A3D6B10C02B828367700": 0
+      },
+      "FX2Handle": {
+        "Handle": 0
+      },
+      "MapTraceType": "TraceTypeQuery5",
+      "YawStrength": 0.2,
+      "PrimaryActorTick": {
+        "TickGroup": "TG_DuringPhysics",
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "NiagaraComponent",
+    "Name": "Niagara_GEN_VARIABLE",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "Asset": {
+        "ObjectName": "NiagaraSystem VFX_NS_Flying_Ambience",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/Flying/VFX_NS_Flying_Ambience.12"
+      },
+      "OverrideParameters": {
+        "UserParameterRedirects": null,
+        "SortedParameterOffsets": [
+          {
+            "Offset": 0,
+            "Name": "User.Speed",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class NiagaraFloat",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "ParameterData": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "Type": "PostProcessComponent",
+    "Name": "PostProcess_GEN_VARIABLE",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "Settings": {
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant VFX_MM_PP_Radial_Blur_BroomFlight",
+                "ObjectPath": "/Game/VFX/MasterMaterials/PostProcess/MaterialInstance/VFX_MM_PP_Radial_Blur_BroomFlight.0"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "bUseAttachParentBound": true
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_BroomFlightVFXActor_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.21"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.23"
+        },
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.24"
+        },
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.25"
+        }
+      ],
+      "VariableGuid": "8DBF4956-430AD72B-454192BE-3757EF8D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class NiagaraComponent",
+        "ObjectPath": "/Script/Niagara"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "NiagaraComponent BP_BroomFlightVFXActor_C:Niagara_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.19"
+      },
+      "VariableGuid": "BC6076EE-46E3B246-799602AE-F9E71958",
+      "InternalVariableName": "Niagara"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class PostProcessComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "PostProcessComponent BP_BroomFlightVFXActor_C:PostProcess_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.20"
+      },
+      "VariableGuid": "1E8DD3BA-4A17A6CD-2AA1CDB3-2F06B3D4",
+      "InternalVariableName": "PostProcess"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class WindPointSourceWithEnvelopeComponent",
+        "ObjectPath": "/Script/Wind"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "WindPointSourceWithEnvelopeComponent BP_BroomFlightVFXActor_C:WindSource_GEN_VARIABLE",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.28"
+      },
+      "VariableGuid": "FF51E4AB-45858DCE-909631B9-BA550071",
+      "InternalVariableName": "WindSource"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.22"
+        },
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.23"
+        },
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.24"
+        },
+        {
+          "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.25"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_BroomFlightVFXActor_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.22"
+      }
+    }
+  },
+  {
+    "Type": "WindEnvelopeControllerCurve",
+    "Name": "WindEnvelopeControllerCurve_0",
+    "Outer": "WindSource_GEN_VARIABLE",
+    "Properties": {
+      "Envelope": {
+        "ObjectName": "CurveFloat FC_BroomWindEnvelope",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/FC_BroomWindEnvelope.0"
+      }
+    }
+  },
+  {
+    "Type": "WindPointSourceWithEnvelopeComponent",
+    "Name": "WindSource_GEN_VARIABLE",
+    "Outer": "BP_BroomFlightVFXActor_C",
+    "Properties": {
+      "Envelope": {
+        "ObjectName": "WindEnvelopeControllerCurve BP_BroomFlightVFXActor_C:WindSource_GEN_VARIABLE.WindEnvelopeControllerCurve_0",
+        "ObjectPath": "/Game/VFX/Mechanics/Broom/BP_BroomFlightVFXActor.27"
+      },
+      "EnvelopeAffects": 4,
+      "Radius": 175.0,
+      "Speed": 1.15,
+      "RelativeLocation": {
+        "X": -55.0,
+        "Y": 0.0,
+        "Z": -10.0
+      }
+    }
+  }
+]

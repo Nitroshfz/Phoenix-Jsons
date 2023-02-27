@@ -1,0 +1,206 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_IntroMaelstrom_Wind_Stream",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "11B7DB31402B2A743E53BF8237A23ED9",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x284F"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "VFX_SM_IntroMaelstrom_Wind_Stream",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x28B3"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_IntroMaelstrom_Wind_Stream",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "WorldGridMaterial",
+          "ImportedMaterialSlotName": "WorldGridMaterial",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 250.8009,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 250.8009,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 833.6111,
+          "Y": -9.527771,
+          "Z": -214.35712
+        },
+        "BoxExtent": {
+          "X": 120.85477,
+          "Y": 729.3816,
+          "Z": 70.2029
+        },
+        "SphereRadius": 737.38226
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_IntroMaelstrom_Wind_Stream:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Niagara/AncientMagic/Whirlwind/Maelstrom/VFX_SM_IntroMaelstrom_Wind_Stream.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_IntroMaelstrom_Wind_Stream:NavCollision_4",
+      "ObjectPath": "/Game/VFX/Niagara/AncientMagic/Whirlwind/Maelstrom/VFX_SM_IntroMaelstrom_Wind_Stream.1"
+    },
+    "LightingGuid": "F3DDE2CC-47522C9F-5B290D92-FE821E08",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 174,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 119,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 120
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 120,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 120
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 44,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 45,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 21.070786,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 46
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 46,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 46
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 833.6111,
+          "Y": -9.527771,
+          "Z": -214.35712
+        },
+        "BoxExtent": {
+          "X": 120.85477,
+          "Y": 729.3816,
+          "Z": 70.2029
+        },
+        "SphereRadius": 737.38226
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.031368,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

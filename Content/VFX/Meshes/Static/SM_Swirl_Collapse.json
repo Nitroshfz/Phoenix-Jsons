@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Swirl_Collapse",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "C6DEE20C4B98DBEFF0C7A49168F5E801",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x16FA5"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Swirl_Collapse",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x17009"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Swirl_Collapse",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material MM_ConjurationSwirl_Collapse",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MM_ConjurationSwirl_Collapse.0"
+          },
+          "MaterialSlotName": "houdini_default_material",
+          "ImportedMaterialSlotName": "houdini_default_material",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 103.214355,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 103.214355,
+      "LightMapResolution": 32,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.99697495,
+          "Y": -4.5334263,
+          "Z": 50.166664
+        },
+        "BoxExtent": {
+          "X": 26.857365,
+          "Y": 18.346884,
+          "Z": 49.833332
+        },
+        "SphereRadius": 51.389606
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Swirl_Collapse:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_Swirl_Collapse.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Swirl_Collapse:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_Swirl_Collapse.1"
+    },
+    "LightingGuid": "3E44ECEC-4D8F875A-2ABAF29C-A092B7B9",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 2189,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1210,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1211
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1211,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 1211
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.99697495,
+          "Y": -4.5334263,
+          "Z": 50.166664
+        },
+        "BoxExtent": {
+          "X": 26.857365,
+          "Y": 18.346884,
+          "Z": 49.833332
+        },
+        "SphereRadius": 51.389606
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

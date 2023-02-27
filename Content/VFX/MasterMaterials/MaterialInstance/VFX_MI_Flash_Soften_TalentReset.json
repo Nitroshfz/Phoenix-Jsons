@@ -1,0 +1,97 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_Flash_Soften_TalentReset",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material VFX_MM_Flash_Soften",
+        "ObjectPath": "/Game/VFX/MasterMaterials/VFX_MM_Flash_Soften.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Aberration Strength",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.015,
+          "ExpressionGUID": "C6B011AB-4853710C-76862ABA-F368DE04"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "FadeDistance",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 50.0,
+          "ExpressionGUID": "DA2961F5-48E39D90-8D435593-F4AEBA29"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Alpha Mask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D VFX_T_Mask_BrazierFlare_D",
+            "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Mask_BrazierFlare_D.0"
+          },
+          "ExpressionGUID": "1726F565-40A1B70D-E2974D84-279E1443"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Additive",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Chromatic Aberration",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "729A0D13-4134FEE4-E4FE999F-152E9883"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "EmissiveAdaptationUseAutoExposure",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "432632E3-4BEEC4F6-96FCDDA7-41F391F1"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        {
+          "ObjectName": "Texture2D VFX_T_Flare02_D",
+          "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Flare02_D.0"
+        }
+      ],
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Mask_BrazierFlare_D"
+        }
+      ]
+    }
+  }
+]

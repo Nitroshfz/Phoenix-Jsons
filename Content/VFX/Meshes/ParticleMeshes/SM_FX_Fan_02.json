@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_FX_Fan_02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "D459C4D34F68FED70D9E2BA634C6377E",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x30AF"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_FX_Fan_02",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3113"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_FX_Fan_02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_PanningMesh_Goblin_Impact_Wisp_Lit",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Particles/MaterialInstance/VFX_MI_PanningMesh_Goblin_Impact_Wisp_Lit.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 150.94682,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 150.94682,
+      "LightMapResolution": 32,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 42.16451,
+          "Y": 1.1444092E-05,
+          "Z": 0.0075559616
+        },
+        "BoxExtent": {
+          "X": 41.593998,
+          "Y": 46.322823,
+          "Z": 0.0
+        },
+        "SphereRadius": 56.8455
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_FX_Fan_02:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/SM_FX_Fan_02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_FX_Fan_02:NavCollision_4",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/SM_FX_Fan_02.1"
+    },
+    "LightingGuid": "1C9B0F35-4356F42A-C8430995-C5042D5B",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 112,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 71,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 72
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 72,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 72
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 42.16451,
+          "Y": 1.1444092E-05,
+          "Z": 0.0075559616
+        },
+        "BoxExtent": {
+          "X": 41.593998,
+          "Y": 46.322823,
+          "Z": 0.0
+        },
+        "SphereRadius": 56.8455
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

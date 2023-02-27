@@ -1,0 +1,283 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_ParticleDecal",
+    "Properties": {
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTransform_9",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "OutputIndex": 2,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "None",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_DeferredDecal",
+      "BlendMode": "BLEND_Translucent",
+      "bTangentSpaceNormal": false,
+      "bUsedWithNiagaraMeshParticles": true,
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "3169C959-4E779A82-6703C69B-7BADCDE5",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              440574345582452634,
+              3932108375757199445,
+              9059989756216900459,
+              10210546564216752664,
+              13889332908657660068,
+              15091496365335898098,
+              15565380740956473203
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Roughness",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Vertical",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "BumpOffset Depth",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Coverage Bias (0-1)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Normal Intensity",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Horizontal",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Full Coverage Percent (0-1)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "5172EE64-46BB40B2-9C90958B-58770DCD",
+              "7B1D9AF3-48663B6A-1083A1A9-76C8193A",
+              "0E3B63B0-4D430882-8D5DB7AF-AAB87073",
+              "5B6B3C28-4009E967-FAD3348A-CA6640A6",
+              "6F82A8F3-4A0FFFC1-17E100A5-EBF1CC35",
+              "B4F8B77E-4184B5D3-35F929AB-2A5CC1EA",
+              "3E816323-4F4088C3-F43D13A6-5A9CDA85"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              12076515603125919684,
+              13690561732087317255
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "Normal Map",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Diffuse Map",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "AC9F111F-4F221393-793C9FAB-8B8DB477",
+              "84DDA9DA-42FDF66E-909FAC86-2DD83458"
+            ]
+          },
+          "ScalarValues": [
+            0.228571,
+            2.0,
+            0.092857,
+            0.75,
+            1.0,
+            2.0,
+            0.5
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D T_FX_Decal_Dirt_Med_N",
+              "ObjectPath": "/Game/VFX/Textures/Decals/T_FX_Decal_Dirt_Med_N.0"
+            },
+            {
+              "ObjectName": "Texture2D T_FX_Decal_Dirt_Med_D",
+              "ObjectPath": "/Game/VFX/Textures/Decals/T_FX_Decal_Dirt_Med_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D T_FX_Decal_Dirt_Med_N",
+            "ObjectPath": "/Game/VFX/Textures/Decals/T_FX_Decal_Dirt_Med_N.0"
+          },
+          {
+            "ObjectName": "Texture2D VFX_T_Decal_Graphorn_Footstep_H",
+            "ObjectPath": "/Game/VFX/Textures/Decals/VFX_T_Decal_Graphorn_Footstep_H.0"
+          },
+          {
+            "ObjectName": "Texture2D T_FX_Decal_Dirt_Med_D",
+            "ObjectPath": "/Game/VFX/Textures/Decals/T_FX_Decal_Dirt_Med_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "801CC894-4ABB815C-EC17D6A0-5E0299D0",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_CombineNormal",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_CombineNormal.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "D1E8A7F4-4B9D2C20-C994B99E-F7ED11E5",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_RemapRange",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_RemapRange.0"
+            }
+          },
+          {
+            "StateId": "D1E8A7F4-4B9D2C20-C994B99E-F7ED11E5",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_RemapRange",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_RemapRange.0"
+            }
+          },
+          {
+            "StateId": "C89487FD-485744DA-6EF2A19F-E1468E99",
+            "Function": {
+              "ObjectName": "MaterialFunction VFX_MF_FadeInAndOut_Biased",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/VFX_MF_FadeInAndOut_Biased.0"
+            }
+          },
+          {
+            "StateId": "488C2388-4E2B06EC-787D80AD-C4617C45",
+            "Function": {
+              "ObjectName": "MaterialFunction WorldPositionWithScale",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/WorldPositionWithScale.0"
+            }
+          },
+          {
+            "StateId": "50EBF8C6-4FF5F3EF-E9520A92-C416A78F",
+            "Function": {
+              "ObjectName": "MaterialFunction CameraDirectionVector",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.0"
+            }
+          },
+          {
+            "StateId": "A8197317-42FBFFCC-3A7FC4BA-3582658E",
+            "Function": {
+              "ObjectName": "MaterialFunction WorldPositionBehindTranslucency",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/UVs/WorldPositionBehindTranslucency.0"
+            }
+          },
+          {
+            "StateId": "8889FBD6-41B2CC46-BEF5AA84-C3E308A4",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_NormalIntensity",
+              "ObjectPath": "/Game/Environment/MaterialFunctions/MF_NormalIntensity.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "59466517-4B878A66-5F14D8AB-A51307BD",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_NormalFromDepth",
+              "ObjectPath": "/Game/MaterialFunctions/MF_NormalFromDepth.0"
+            }
+          },
+          {
+            "StateId": "F355115F-44D0AC78-BACBE997-4D8139E8",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_Swizzle",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_Swizzle.0"
+            }
+          },
+          {
+            "StateId": "1AA3415F-43D97AF4-FE47AABC-A9EE321C",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_SwizzleV3",
+              "ObjectPath": "/Game/VFX/MasterMaterials/Mat_Functions/MF_SwizzleV3.0"
+            }
+          },
+          {
+            "StateId": "E6A85460-4E707DD6-EBF457B4-A3E80A43",
+            "Function": {
+              "ObjectName": "MaterialFunction MakeFloat3",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat3Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          }
+        ],
+        "DynamicParameterNames": [
+          "Particle Scale X",
+          "Particle Scale Y",
+          "Particle Scale Z",
+          "Param4"
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    }
+  }
+]

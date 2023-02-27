@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "VFX_MI_DistortionRing",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material VFX_MM_Refraction",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/VFX_MM_Refraction.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Normal Map",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D VFX_T_Ring01_N",
+            "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_Ring01_N.0"
+          },
+          "ExpressionGUID": "0F3EE00C-41F114E9-136861B3-445AFF30"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Mask",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D T_White_4x4_D",
+            "ObjectPath": "/Game/VFX/Textures/T_White_4x4_D.0"
+          },
+          "ExpressionGUID": "A989F41E-4006E4BB-9B324DBB-E7EEEB36"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.0
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "UVOffset",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "7B16AB69-4AFA6946-53682194-53D56F56"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        {
+          "ObjectName": "Texture2D VFX_T_RibbonOffset_N",
+          "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_RibbonOffset_N.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_Circle_Sphere_D",
+          "ObjectPath": "/Game/VFX/Textures/Gradients/VFX_T_Circle_Sphere_D.0"
+        }
+      ],
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_White_4x4_D"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_Ring01_N"
+        }
+      ]
+    }
+  }
+]

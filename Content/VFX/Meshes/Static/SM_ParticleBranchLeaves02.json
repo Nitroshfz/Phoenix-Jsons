@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_ParticleBranchLeaves02",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "310040414F80C4992ABE5C85A28FDFD6",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2A01"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_5",
+    "Outer": "SM_ParticleBranchLeaves02",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2A65"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_ParticleBranchLeaves02",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_P_DHeroTreeLeavesBreakable",
+            "ObjectPath": "/Game/VFX/MasterMaterials/MaterialInstance/VFX_MI_P_DHeroTreeLeavesBreakable.0"
+          },
+          "MaterialSlotName": "MI_DHeroTreeLeaves",
+          "ImportedMaterialSlotName": "MI_DHeroTreeLeaves",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 531.75977,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 531.75977,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 55.328453,
+          "Y": 42.44758,
+          "Z": 35.961914
+        },
+        "SphereRadius": 70.02161
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_ParticleBranchLeaves02:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_ParticleBranchLeaves02.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_ParticleBranchLeaves02:NavCollision_5",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_ParticleBranchLeaves02.1"
+    },
+    "LightingGuid": "B400F580-4406F95F-AEC49BBD-007CF322",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 64,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 54,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 55
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 55,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 55
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 55.328453,
+          "Y": 42.44758,
+          "Z": 35.961914
+        },
+        "SphereRadius": 70.02161
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

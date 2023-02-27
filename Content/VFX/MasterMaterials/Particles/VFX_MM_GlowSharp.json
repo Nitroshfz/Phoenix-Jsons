@@ -1,0 +1,292 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_GlowSharp",
+    "Properties": {
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_9",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "BlendMode": "BLEND_Additive",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bUsedWithParticleSprites": true,
+      "bUsedWithNiagaraSprites": true,
+      "bUseLightmapDirectionality": false,
+      "bCanMaskedBeAssumedOpaque": true,
+      "bCastRayTracedShadows": false,
+      "bUseTranslucencyVertexFog": false,
+      "StateId": "FD35D21A-4FE7C3FC-8165A290-9BBFD6FA",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              440944627916917481,
+              1505051715857678937,
+              6168582632089553483,
+              8328859136985561364,
+              8383031179853681849,
+              8598128780273462464,
+              9556195278382047438,
+              10365776952601423206
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "EmissAdap Daytime Boost Percent (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "MaskSoftenExp",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "MaxScreenSize",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "RaySpeed",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "RayTiling",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Chromatic Aberration Strength (0-1) (S)",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "RaySharpenExp",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "FadeDistance",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "6CCB9626-46F44DC3-699EC2B2-7569AD63",
+              "A0DBA9ED-4F028C53-51AAC0B9-77458FA3",
+              "BCB553D8-490866F1-BD8783B8-45ECD627",
+              "12C7131D-42548A4F-AA3C7AA5-F6233202",
+              "A9CD25C2-4D21E834-42C330BF-5F43B187",
+              "5586BCCD-452288D2-8AFFFCAC-83D0309F",
+              "295EEDF9-429A043B-641F92A5-E5B16DD3",
+              "9792D092-4B97D1AA-0A6163AB-25006028"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              3485927073426389202
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "RayTexture",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "D260F512-4B332A0F-8A30B6A4-A201C116"
+            ]
+          },
+          "ScalarValues": [
+            0.5,
+            1.6,
+            0.1,
+            1.0,
+            1.0,
+            0.438096,
+            1.0,
+            10.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D VFX_T_NoiseCaustics_Chromatic_D",
+              "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_NoiseCaustics_Chromatic_D.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          {
+            "ObjectName": "Texture2D VFX_T_NoiseCaustics_Chromatic_D",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_NoiseCaustics_Chromatic_D.0"
+          },
+          {
+            "ObjectName": "Texture2D VFX_T_ChromaWheel_E",
+            "ObjectPath": "/Game/VFX/Textures/Flares/VFX_T_ChromaWheel_E.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "917EB268-40C7E267-26D08999-CBF02920",
+            "Function": {
+              "ObjectName": "MaterialFunction TransformToClipSpace",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/TransformToClipSpace.0"
+            }
+          },
+          {
+            "StateId": "2C1DDB6E-406BC9FC-1D4141A1-7C82122A",
+            "Function": {
+              "ObjectName": "MaterialFunction BreakOutFloat2Components",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components.0"
+            }
+          },
+          {
+            "StateId": "917EB268-40C7E267-26D08999-CBF02920",
+            "Function": {
+              "ObjectName": "MaterialFunction TransformToClipSpace",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/TransformToClipSpace.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction VectorLength",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "6BB97146-49B75878-03A98399-9B3C01AF",
+            "Function": {
+              "ObjectName": "MaterialFunction VectorLength",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.0"
+            }
+          },
+          {
+            "StateId": "5E28F255-4817E6E7-2D027C9A-2F7126C6",
+            "Function": {
+              "ObjectName": "MaterialFunction VectorToRadialValue",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorToRadialValue.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "C285010B-41AD273C-00914086-513ECC06",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "67008E08-400DF1C2-D9D3FCB3-E89F5FF7",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoExposureAdaptationFactor",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "AB14B3E0-4D52C952-998B90B3-08F47431",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_AutoExposureAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_AutoExposureAdaptation.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BloomAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "DE43BDAB-4EFBE889-4EC1AA93-ED317C1F",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BloomAdaptationDebug_Mask",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationDebug_Mask.0"
+            }
+          },
+          {
+            "StateId": "A9791948-42167434-3F52B882-7D71D815",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BloomAdaptationFactor",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptationFactor.0"
+            }
+          },
+          {
+            "StateId": "819314C2-48835048-0EC2CC90-28587C1B",
+            "Function": {
+              "ObjectName": "MaterialFunction MF_BloomAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MF_BloomAdaptation.0"
+            }
+          }
+        ],
+        "ParameterCollectionInfos": [
+          {
+            "StateId": "F8E3C113-4AF6064A-92FF49BD-7DE141FE",
+            "ParameterCollection": {
+              "ObjectName": "MaterialParameterCollection MP_EmissiveAdaptation",
+              "ObjectPath": "/RenderSettings/EmissiveAdaptation/MP_EmissiveAdaptation.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "VFX_T_ChromaWheel_E"
+        }
+      ]
+    }
+  }
+]

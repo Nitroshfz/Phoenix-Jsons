@@ -1,0 +1,218 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Plant_Topiary_E_VFX",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.7665682,
+              "Y": 4.0649767,
+              "Z": 28.843637
+            },
+            "Radius": 26.340143,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "43305ECB4E49B1893E75D7B74431A5A4",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x29CE4"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Plant_Topiary_E_VFX",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x29D48"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Plant_Topiary_E_VFX",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Plant_Topiary_A",
+            "ObjectPath": "/Game/Environment/Hogwarts/Materials/MI_HW_Plant_Topiary_A.0"
+          },
+          "MaterialSlotName": "M_Plant_Topiary_B_a",
+          "ImportedMaterialSlotName": "M_Plant_Topiary_B_a",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 140.58224,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_HW_Plant_Topiary_B",
+            "ObjectPath": "/Game/Environment/Hogwarts/Materials/MI_HW_Plant_Topiary_B.0"
+          },
+          "MaterialSlotName": "M_Plant_Topiary_B_b",
+          "ImportedMaterialSlotName": "M_Plant_Topiary_B_b",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 38.237366,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 45.94629,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.8303299,
+          "Y": 4.0649757,
+          "Z": 28.84364
+        },
+        "BoxExtent": {
+          "X": 18.131912,
+          "Y": 19.619804,
+          "Z": 29.244093
+        },
+        "SphereRadius": 35.602776
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Plant_Topiary_E_VFX:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Topiary/SM_Plant_Topiary_E_VFX.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Plant_Topiary_E_VFX:NavCollision_0",
+      "ObjectPath": "/Game/VFX/Meshes/Topiary/SM_Plant_Topiary_E_VFX.1"
+    },
+    "LightingGuid": "07A0C188-49E56ABA-5E863AAB-43D3AB6D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 122,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 106,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 366,
+              "NumTriangles": 1868,
+              "MinVertexIndex": 107,
+              "MaxVertexIndex": 4504,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 12.565022,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 4505
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 4505,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.8303299,
+          "Y": 4.0649757,
+          "Z": 28.84364
+        },
+        "BoxExtent": {
+          "X": 18.131912,
+          "Y": 19.619804,
+          "Z": 29.244093
+        },
+        "SphereRadius": 35.602776
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

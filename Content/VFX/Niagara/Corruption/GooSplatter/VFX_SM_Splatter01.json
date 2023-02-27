@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_Splatter01",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Spell",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Station",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WebbedObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Station_Static",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "B629BFFF44A4B5D0FD11C9BB5C60FD56"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VFX_SM_Splatter01",
+    "Class": "UScriptClass'NavCollision'",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x94F8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_Splatter01",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_Splatter01Goo01'",
+            "ObjectPath": "/Game/VFX/Niagara/Corruption/GooSplatter/VFX_MI_Splatter01Goo01.0"
+          },
+          "MaterialSlotName": "Splatter01Main",
+          "ImportedMaterialSlotName": "Splatter01Main",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 153.7199,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 58.403152,
+          "Y": 2.2931366,
+          "Z": 21.130062
+        },
+        "BoxExtent": {
+          "X": 67.709175,
+          "Y": 53.348198,
+          "Z": 60.959435
+        },
+        "SphereRadius": 102.77831
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'VFX_SM_Splatter01:BodySetup_0'",
+      "ObjectPath": "/Game/VFX/Niagara/Corruption/GooSplatter/VFX_SM_Splatter01.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'VFX_SM_Splatter01:NavCollision_1'",
+      "ObjectPath": "/Game/VFX/Niagara/Corruption/GooSplatter/VFX_SM_Splatter01.1"
+    },
+    "LightingGuid": "7E406C2C-48C30931-F0989E87-C8E08D09",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 604,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 387,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 388
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 388,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": true
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 58.403152,
+          "Y": 2.2931366,
+          "Z": 21.130062
+        },
+        "BoxExtent": {
+          "X": 67.709175,
+          "Y": 53.348198,
+          "Z": 60.959435
+        },
+        "SphereRadius": 102.77831
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

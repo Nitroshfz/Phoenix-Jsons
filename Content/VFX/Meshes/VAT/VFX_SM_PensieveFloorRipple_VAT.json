@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_PensieveFloorRipple_VAT",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "05DE7E1849D9D4D8985BEE913AC8DD00",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2C201"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "VFX_SM_PensieveFloorRipple_VAT",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2C265"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_PensieveFloorRipple_VAT",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_M_VAT_PensieveFloor",
+            "ObjectPath": "/Game/VFX/MasterMaterials/VAT/VFX_M_VAT_PensieveFloor.0"
+          },
+          "MaterialSlotName": "MI_Intro_Pensieve_Marble_Blend_simple",
+          "ImportedMaterialSlotName": "MI_Intro_Pensieve_Marble_Blend_simple",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 294.71014,
+            "LocalUVDensities": 473.32156,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 473.32156,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "PositiveBoundsExtension": {
+        "X": 10.0,
+        "Y": 10.0,
+        "Z": 10.0
+      },
+      "NegativeBoundsExtension": {
+        "X": -10.0,
+        "Y": -10.0,
+        "Z": -10.0
+      },
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 8.154541,
+          "Y": 10.111938,
+          "Z": 82.67283
+        },
+        "BoxExtent": {
+          "X": 614.5498,
+          "Y": 614.53516,
+          "Z": 16.84993
+        },
+        "SphereRadius": 869.2576
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_PensieveFloorRipple_VAT:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/VAT/VFX_SM_PensieveFloorRipple_VAT.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_PensieveFloorRipple_VAT:NavCollision_1",
+      "ObjectPath": "/Game/VFX/Meshes/VAT/VFX_SM_PensieveFloorRipple_VAT.1"
+    },
+    "LightingGuid": "7FFB8EAE-4A26B597-2A81F4AB-FE104A86",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4200,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 2244,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2245
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 2245,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 2245
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1.845459,
+          "Y": 0.11193848,
+          "Z": 72.67283
+        },
+        "BoxExtent": {
+          "X": 614.5498,
+          "Y": 614.53516,
+          "Z": 16.84993
+        },
+        "SphereRadius": 614.6026
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

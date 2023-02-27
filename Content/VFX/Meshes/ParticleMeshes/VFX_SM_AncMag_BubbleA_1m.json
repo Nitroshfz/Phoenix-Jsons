@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_AncMag_BubbleA_1m",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "07B28CC04FB6107D6A8632B58570E6F7"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "VFX_SM_AncMag_BubbleA_1m",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3D7B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_AncMag_BubbleA_1m",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "Material WorldGridMaterial",
+            "ObjectPath": "/Engine/EngineMaterials/WorldGridMaterial.0"
+          },
+          "MaterialSlotName": "lambert1",
+          "ImportedMaterialSlotName": "lambert1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 197.92046,
+            "LocalUVDensities": 139.66544,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 139.66544,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.1635971,
+          "Y": 0.3328476,
+          "Z": 9.517782
+        },
+        "BoxExtent": {
+          "X": 48.60119,
+          "Y": 48.528492,
+          "Z": 30.136745
+        },
+        "SphereRadius": 52.256744
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_AncMag_BubbleA_1m:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_AncMag_BubbleA_1m.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_AncMag_BubbleA_1m:NavCollision_3",
+      "ObjectPath": "/Game/VFX/Meshes/ParticleMeshes/VFX_SM_AncMag_BubbleA_1m.1"
+    },
+    "LightingGuid": "5A4BAB9E-47083B53-5CF1F1A9-A2BAE1C4",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 188,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 110,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 111
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 111,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 111
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.1635971,
+          "Y": 0.3328476,
+          "Z": 9.517782
+        },
+        "BoxExtent": {
+          "X": 48.60119,
+          "Y": 48.528492,
+          "Z": 30.136745
+        },
+        "SphereRadius": 52.256744
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

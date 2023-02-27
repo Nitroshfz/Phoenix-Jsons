@@ -1,0 +1,90 @@
+[
+  {
+    "Type": "NiagaraEffectType",
+    "Name": "VFX_NET_OneTimeBurst_Distant",
+    "Class": "UScriptClass'NiagaraEffectType'",
+    "Properties": {
+      "UpdateFrequency": "ENiagaraScalabilityUpdateFrequency::Low",
+      "CullReaction": "ENiagaraCullReaction::Deactivate",
+      "SignificanceHandler": {
+        "ObjectName": "NiagaraSignificanceHandlerDistance'VFX_NET_OneTimeBurst_Distant:NiagaraSignificanceHandlerDistance_0'",
+        "ObjectPath": "/Game/VFX/Niagara/NiagaraEffectTypes/VFX_NET_OneTimeBurst_Distant.1"
+      },
+      "SystemScalabilitySettings": {
+        "Settings": [
+          {
+            "Platforms": {
+              "QualityLevelMask": -31,
+              "DeviceProfileStates": [],
+              "CVarConditions": []
+            },
+            "bCullByDistance": true,
+            "bCullMaxInstanceCount": true,
+            "bCullPerSystemMaxInstanceCount": false,
+            "bCullByMaxTimeWithoutRender": true,
+            "bCullByGlobalBudget": false,
+            "MaxDistance": 100000.0,
+            "MaxInstances": 20,
+            "MaxSystemInstances": 0,
+            "MaxTimeWithoutRender": 0.0,
+            "MaxGlobalBudgetUsage": 1.0
+          },
+          {
+            "Platforms": {
+              "QualityLevelMask": -1,
+              "DeviceProfileStates": [],
+              "CVarConditions": []
+            },
+            "bCullByDistance": true,
+            "bCullMaxInstanceCount": true,
+            "bCullPerSystemMaxInstanceCount": false,
+            "bCullByMaxTimeWithoutRender": true,
+            "bCullByGlobalBudget": false,
+            "MaxDistance": 200000.0,
+            "MaxInstances": 30,
+            "MaxSystemInstances": 0,
+            "MaxTimeWithoutRender": 0.5,
+            "MaxGlobalBudgetUsage": 1.0
+          }
+        ]
+      },
+      "EmitterScalabilitySettings": {
+        "Settings": [
+          {
+            "Platforms": {
+              "QualityLevelMask": 1,
+              "DeviceProfileStates": [],
+              "CVarConditions": []
+            },
+            "bScaleSpawnCount": true,
+            "SpawnCountScale": 0.25
+          },
+          {
+            "Platforms": {
+              "QualityLevelMask": 2,
+              "DeviceProfileStates": [],
+              "CVarConditions": []
+            },
+            "bScaleSpawnCount": true,
+            "SpawnCountScale": 0.5
+          },
+          {
+            "Platforms": {
+              "QualityLevelMask": 31,
+              "DeviceProfileStates": [],
+              "CVarConditions": []
+            },
+            "bScaleSpawnCount": true,
+            "SpawnCountScale": 1.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "NiagaraSignificanceHandlerDistance",
+    "Name": "NiagaraSignificanceHandlerDistance_0",
+    "Outer": "VFX_NET_OneTimeBurst_Distant",
+    "Class": "UScriptClass'NiagaraSignificanceHandlerDistance'"
+  }
+]

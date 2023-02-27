@@ -1,0 +1,277 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "VFX_SM_GlowBug",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "59E90BDE4F283DAF0F154D8FD3CFCD26",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x44AB"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "VFX_SM_GlowBug",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x450F"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "VFX_SM_GlowBug",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_GlowBugWings",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MI_GlowBugWings.0"
+          },
+          "MaterialSlotName": "VFX_MI_GlowBugWings",
+          "ImportedMaterialSlotName": "VFX_MI_GlowBugWings",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 3.5982158,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_GlowBugBody",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MI_GlowBugBody.0"
+          },
+          "MaterialSlotName": "VFX_MI_GlowBugBody",
+          "ImportedMaterialSlotName": "VFX_MI_GlowBugBody",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 2.4381309,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant VFX_MI_GlowBugWingsB",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Mesh/MaterialInstance/VFX_MI_GlowBugWingsB.0"
+          },
+          "MaterialSlotName": "VFX_MI_GlowBugWingsB",
+          "ImportedMaterialSlotName": "VFX_MI_GlowBugWingsB",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 3.5884423,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 3.0300305,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.37997842,
+          "Y": 0.025204659,
+          "Z": 0.029690593
+        },
+        "BoxExtent": {
+          "X": 1.8726714,
+          "Y": 3.0063243,
+          "Z": 0.24716255
+        },
+        "SphereRadius": 3.2155216
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup VFX_SM_GlowBug:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_GlowBug.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision VFX_SM_GlowBug:NavCollision_2",
+      "ObjectPath": "/Game/VFX/Meshes/Static/VFX_SM_GlowBug.1"
+    },
+    "LightingGuid": "E6284BFD-4D15C8B1-2BF164B6-5EB98B8F",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 59,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 40,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 177,
+              "NumTriangles": 450,
+              "MinVertexIndex": 41,
+              "MaxVertexIndex": 314,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 2,
+              "FirstIndex": 1527,
+              "NumTriangles": 59,
+              "MinVertexIndex": 315,
+              "MaxVertexIndex": 355,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 356
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 356,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 14,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 14,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 42,
+              "NumTriangles": 170,
+              "MinVertexIndex": 15,
+              "MaxVertexIndex": 128,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 2,
+              "FirstIndex": 552,
+              "NumTriangles": 16,
+              "MinVertexIndex": 129,
+              "MaxVertexIndex": 144,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.1098518,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 145
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 145,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.37997842,
+          "Y": 0.025204659,
+          "Z": 0.029690593
+        },
+        "BoxExtent": {
+          "X": 1.8726714,
+          "Y": 3.0063243,
+          "Z": 0.24716255
+        },
+        "SphereRadius": 3.2155216
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.3486141,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]

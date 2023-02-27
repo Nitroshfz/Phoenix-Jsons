@@ -1,0 +1,392 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "PMI_Unlit_TorchFireDistortion",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material VFX_MM_lit",
+        "ObjectPath": "/Game/VFX/MasterMaterials/Particles/VFX_MM_lit.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "FadeDistance",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 20.0,
+          "ExpressionGUID": "F81DAA63-48298EFA-B8FD6E8E-79142390"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Near Camera Fade Distance",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 128.0,
+          "ExpressionGUID": "90C4F642-4E443E19-8FBA5FB5-001EB4BC"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Normal Strength",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.4,
+          "ExpressionGUID": "D9BD566A-4C52F621-33742C93-D6DA7E17"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Refraction Amount",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 1.6,
+          "ExpressionGUID": "63827549-4A790B02-A8BAA8BF-21F4225F"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "Refraction Fade Distance",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 4000.0,
+          "ExpressionGUID": "B78C7FBA-4158F61F-C9C1BDB1-8BAB0543"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "SphereMask Power",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.8,
+          "ExpressionGUID": "D35D8DC9-41232A7D-48F2C59E-01FB4B7D"
+        },
+        {
+          "ParameterInfo": {
+            "Name": "RefractionDepthBias",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterInfo": {
+            "Name": "Normal Texture",
+            "Association": "GlobalParameter",
+            "Index": -1
+          },
+          "ParameterValue": {
+            "ObjectName": "Texture2D T_FX_heat_distortion_N",
+            "ObjectPath": "/Game/VFX/Textures/T_FX_heat_distortion_N.0"
+          },
+          "ExpressionGUID": "2617EA3E-4715CE63-2D03F0AE-70746793"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Translucent",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "StaticParameters": {
+        "StaticSwitchParameters": [
+          {
+            "Value": false,
+            "ParameterInfo": {
+              "Name": "Use Alpha",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "45C9084A-4042ED58-A41C0AAF-BDE9003A"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Color as Alpha",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "2FF7D2D4-4F4A0627-CB65428C-4149DA1F"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Alpha Erosion",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "F21A6019-459298D7-E9EC039D-B5D41D5C"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Normal Map",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "09C2DD7C-45AE74FB-D4D95393-B5F7C266"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Refraction",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "15D7EFF1-47383E99-E9C3A3BA-EC4E7C76"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use Alpha as Refraction Mask",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "E3FED452-4F431C19-16E96B8E-866CE56E"
+          },
+          {
+            "Value": true,
+            "ParameterInfo": {
+              "Name": "Use SphereMask",
+              "Association": "GlobalParameter",
+              "Index": -1
+            },
+            "bOverride": true,
+            "ExpressionGUID": "DFB93598-4FF6696D-B2A9BBBB-50D76518"
+          }
+        ]
+      },
+      "CachedReferencedTextures": [
+        {
+          "ObjectName": "Texture2D VFX_T_Wisps_D",
+          "ObjectPath": "/Game/VFX/Textures/VFX_T_Wisps_D.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_Smoke_8x8_D",
+          "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x8_D.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_Inky_Smoke_D",
+          "ObjectPath": "/Game/VFX/Textures/VFX_T_Inky_Smoke_D.0"
+        },
+        {
+          "ObjectName": "Texture2D T_FX_Grad_Test_G",
+          "ObjectPath": "/Game/VFX/Textures/TEST/T_FX_Grad_Test_G.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_Wisps_N",
+          "ObjectPath": "/Game/VFX/Textures/VFX_T_Wisps_N.0"
+        },
+        {
+          "ObjectName": "Texture2D VFX_T_Smoke_8x8_01_N",
+          "ObjectPath": "/Game/VFX/Textures/Flipbooks/VFX_T_Smoke_8x8_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_VT_Single_Combined_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_VT_Single_Combined_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_VT_Single_Particles_12_MIPsNormal_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_VT_Single_Particles_12_MIPsNormal_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_VT_Single_Particles_12_MIPs_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_VT_Single_Particles_12_MIPs_N.0"
+        },
+        null,
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_01_01_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_01_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_01_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_01_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_01_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_01_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_02_01_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_02_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_02_04_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_02_04_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_02_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_02_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_02_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_02_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_03_01_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_03_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_03_03_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_03_03_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_03_04_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_03_04_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_03_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_03_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_03_08_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_03_08_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_04_01_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_04_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_04_03_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_04_03_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_04_04_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_04_04_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_04_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_04_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_04_07_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_04_07_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_04_08_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_04_08_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_01_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_02_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_02_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_03_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_03_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_04_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_04_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_05_07_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_05_07_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_01_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_01_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_02_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_02_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_03_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_03_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_04_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_04_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_06_07_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_06_07_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_02_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_02_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_03_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_03_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_04_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_04_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_07_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_07_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_07_08_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_07_08_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_08_05_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_08_05_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_08_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_08_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_08_07_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_08_07_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_SoftFoliage_03_06_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_SoftFoliage_03_06_N.0"
+        },
+        {
+          "ObjectName": "Texture2D T_GlobalHeightEverything_FogHeight_N",
+          "ObjectPath": "/Game/Environment/Overland_Common/Textures/Landscape/WorldHeight/T_GlobalHeightEverything_FogHeight_N.0"
+        }
+      ],
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "T_FX_heat_distortion_N"
+        }
+      ]
+    }
+  }
+]

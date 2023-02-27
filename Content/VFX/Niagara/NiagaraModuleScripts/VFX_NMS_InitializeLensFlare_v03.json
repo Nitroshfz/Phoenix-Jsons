@@ -1,0 +1,1591 @@
+[
+  {
+    "Type": "NiagaraScript",
+    "Name": "VFX_NMS_InitializeLensFlare_v03",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::Module",
+      "RapidIterationParameters": {},
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::Module",
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            246,
+            204,
+            86,
+            58,
+            166,
+            56,
+            122,
+            37,
+            114,
+            91,
+            81,
+            137,
+            196,
+            234,
+            73,
+            125,
+            194,
+            102,
+            183,
+            31
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "ByteCode": [
+          91,
+          96,
+          2,
+          86,
+          1,
+          0,
+          0,
+          100,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          1,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          2,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          3,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          4,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          5,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          6,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          7,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          8,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          9,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          10,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          11,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          12,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          13,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          14,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          15,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          16,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          17,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          18,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          19,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          20,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          21,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          22,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          23,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          24,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          25,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          26,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          27,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          28,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          29,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          30,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          31,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          32,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          33,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          34,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          35,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          36,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          37,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          38,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          39,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          40,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          41,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          42,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          43,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          44,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          45,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          46,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          47,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          48,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          49,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          50,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          51,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          52,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          53,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          54,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          55,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          56,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          57,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          58,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          59,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          60,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          61,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          62,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          63,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          64,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          65,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          66,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          67,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          68,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          69,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          70,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          71,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          72,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          73,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          74,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          75,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          76,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          77,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          78,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          79,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          80,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          81,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          82,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          83,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          84,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          85,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          86,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          87,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          88,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          89,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          90,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          104,
+          2,
+          91,
+          0,
+          92,
+          0
+        ],
+        "NumTempRegisters": 1,
+        "ScriptLiterals": [
+          1,
+          0,
+          0,
+          0,
+          255,
+          255,
+          255,
+          255,
+          0,
+          0,
+          0,
+          0
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_ScaleAll",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisFadeRadius_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_ScaleAll",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AxisOffset_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Core",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.Color_TintAll",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_ScaleAll",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceScaling_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_ScaleAll",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.FadeDistance_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.Lifetime",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.OcclusionDiameter",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.OcclusionTest_Color",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Core",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_ScaleAll",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "VFX_NMS_InitializeLensFlare_v03",
+            "FriendlyName": "VFX_NMS_InitializeLensFlare_v03"
+          },
+          {
+            "FullName": "VFX_NMS_InitializeLensFlare_v03_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "VFX_NMS_InitializeLensFlare_v03_MapMain",
+            "FriendlyName": "MapMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      }
+    }
+  }
+]

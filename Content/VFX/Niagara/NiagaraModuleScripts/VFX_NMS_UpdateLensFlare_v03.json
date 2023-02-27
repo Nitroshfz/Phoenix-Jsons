@@ -1,0 +1,711 @@
+[
+  {
+    "Type": "NiagaraDataInterfaceCamera",
+    "Name": "NiagaraDataInterfaceCamera_0",
+    "Outer": "VFX_NMS_UpdateLensFlare_v03",
+    "Class": "UScriptClass'NiagaraDataInterfaceCamera'"
+  },
+  {
+    "Type": "NiagaraDataInterfaceOcclusion",
+    "Name": "NiagaraDataInterfaceOcclusion_0",
+    "Outer": "VFX_NMS_UpdateLensFlare_v03",
+    "Class": "UScriptClass'NiagaraDataInterfaceOcclusion'"
+  },
+  {
+    "Type": "NiagaraScript",
+    "Name": "VFX_NMS_UpdateLensFlare_v03",
+    "Class": "UScriptClass'NiagaraScript'",
+    "Properties": {
+      "Usage": "ENiagaraScriptUsage::Module",
+      "RapidIterationParameters": {},
+      "CachedScriptVMId": {
+        "CompilerVersionID": "375F6E63-7F2144F2-AD4EC387-0AB6472D",
+        "ScriptUsageType": "ENiagaraScriptUsage::Module",
+        "BaseScriptCompileHash": {
+          "DataHash": [
+            104,
+            210,
+            235,
+            34,
+            47,
+            163,
+            229,
+            58,
+            175,
+            141,
+            183,
+            60,
+            161,
+            148,
+            212,
+            123,
+            104,
+            239,
+            76,
+            148
+          ]
+        }
+      },
+      "CachedScriptVM": {
+        "ByteCode": [
+          91,
+          96,
+          2,
+          91,
+          100,
+          2,
+          91,
+          104,
+          2,
+          92,
+          92,
+          86,
+          1,
+          0,
+          0,
+          112,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          0,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          1,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          2,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          3,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          4,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          5,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          6,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          7,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          8,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          9,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          10,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          11,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          12,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          13,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          14,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          15,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          16,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          17,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          18,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          19,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          20,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          21,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          22,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          23,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          24,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          25,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          26,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          27,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          28,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          29,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          30,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          31,
+          0,
+          83,
+          1,
+          0,
+          0,
+          0,
+          0,
+          108,
+          2,
+          32,
+          0,
+          92,
+          0
+        ],
+        "NumTempRegisters": 1,
+        "NumUserPtrs": 1,
+        "ScriptLiterals": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          255,
+          255,
+          255,
+          255
+        ],
+        "Attributes": [
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.AlphaScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AACAPwAAgD8AAIA/AACAPw==",
+            "Name": "Module.ColorScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'LinearColor'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.Diameter",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.DistanceOffset",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.MinimumVisibility",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAAAAAAA",
+            "Name": "Module.Position",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.SampleRings",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAA==",
+            "Name": "Module.SamplesPerRing",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraFloat'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteScale",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteScale_Core",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Circle",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Core",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_DirtMask",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Glow",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Hex_00",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Hex_01",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Hex_02",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          },
+          {
+            "VarData": "AAAAAAAAAAA=",
+            "Name": "Module.SpriteSize_Streak",
+            "TypeDef": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'Vector2D'",
+                "ObjectPath": "/Script/CoreUObject"
+              },
+              "UnderlyingType": 2
+            }
+          }
+        ],
+        "DataInterfaceInfo": [
+          {
+            "Name": "Module.Occlusion Query",
+            "UserPtrIdx": -1,
+            "Type": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraDataInterfaceOcclusion'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1
+            },
+            "RegisteredParameterMapRead": "Module.Occlusion Query",
+            "RegisteredParameterMapWrite": "None",
+            "bIsPlaceholder": true
+          },
+          {
+            "Name": "Module.Camera Query",
+            "UserPtrIdx": 0,
+            "Type": {
+              "ClassStructOrEnum": {
+                "ObjectName": "Class'NiagaraDataInterfaceCamera'",
+                "ObjectPath": "/Script/Niagara"
+              },
+              "UnderlyingType": 1
+            },
+            "RegisteredParameterMapRead": "Module.Camera Query",
+            "RegisteredParameterMapWrite": "None",
+            "bIsPlaceholder": true
+          }
+        ],
+        "StatScopes": [
+          {
+            "FullName": "VFX_NMS_UpdateLensFlare_v03",
+            "FriendlyName": "VFX_NMS_UpdateLensFlare_v03"
+          },
+          {
+            "FullName": "VFX_NMS_UpdateLensFlare_v03_Main",
+            "FriendlyName": "Main"
+          },
+          {
+            "FullName": "VFX_NMS_UpdateLensFlare_v03_MapMain",
+            "FriendlyName": "MapMain"
+          }
+        ],
+        "LastCompileStatus": "ENiagaraScriptCompileStatus::NCS_UpToDate"
+      },
+      "CachedDefaultDataInterfaces": [
+        {
+          "DataInterface": {
+            "ObjectName": "NiagaraDataInterfaceOcclusion'VFX_NMS_UpdateLensFlare_v03:NiagaraDataInterfaceOcclusion_0'",
+            "ObjectPath": "/Game/VFX/Niagara/NiagaraModuleScripts/VFX_NMS_UpdateLensFlare_v03.1"
+          },
+          "Name": "Module.Occlusion Query",
+          "UserPtrIdx": -1,
+          "Type": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraDataInterfaceOcclusion'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 1
+          },
+          "RegisteredParameterMapRead": "Module.Occlusion Query",
+          "RegisteredParameterMapWrite": "None"
+        },
+        {
+          "DataInterface": {
+            "ObjectName": "NiagaraDataInterfaceCamera'VFX_NMS_UpdateLensFlare_v03:NiagaraDataInterfaceCamera_0'",
+            "ObjectPath": "/Game/VFX/Niagara/NiagaraModuleScripts/VFX_NMS_UpdateLensFlare_v03.0"
+          },
+          "Name": "Module.Camera Query",
+          "UserPtrIdx": 0,
+          "Type": {
+            "ClassStructOrEnum": {
+              "ObjectName": "Class'NiagaraDataInterfaceCamera'",
+              "ObjectPath": "/Script/Niagara"
+            },
+            "UnderlyingType": 1
+          },
+          "RegisteredParameterMapRead": "Module.Camera Query",
+          "RegisteredParameterMapWrite": "None"
+        }
+      ]
+    }
+  }
+]

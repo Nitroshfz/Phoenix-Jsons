@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Butterfly_01_Flying",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "09359F3D4F980F6DE9CB44A21CCEB78C",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2389"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_Butterfly_01_Flying",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x23ED"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Butterfly_01_Flying",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant MI_Butterfly_Master_Flying",
+            "ObjectPath": "/Game/Environment/Sanctuary/Biome_Forest/Materials/MI_Butterfly_Master_Flying.0"
+          },
+          "MaterialSlotName": "phong1",
+          "ImportedMaterialSlotName": "phong1",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 5.565284,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 5.565284,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.48280454,
+          "Y": 4.7683716E-07,
+          "Z": 0.9562425
+        },
+        "BoxExtent": {
+          "X": 2.3064518,
+          "Y": 3.2506776,
+          "Z": 0.9813125
+        },
+        "SphereRadius": 3.9876497
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SM_Butterfly_01_Flying:BodySetup_0",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_Butterfly_01_Flying.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision SM_Butterfly_01_Flying:NavCollision_4",
+      "ObjectPath": "/Game/VFX/Meshes/Static/SM_Butterfly_01_Flying.1"
+    },
+    "LightingGuid": "2A93A08D-4C6C5FCD-13B03C8F-C661490C",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 20,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 31,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 32
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 32,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 32
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.48280454,
+          "Y": 4.7683716E-07,
+          "Z": 0.9562425
+        },
+        "BoxExtent": {
+          "X": 2.3064518,
+          "Y": 3.2506776,
+          "Z": 0.9813125
+        },
+        "SphereRadius": 3.9876497
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN",
+        0.0,
+        "NaN"
+      ]
+    }
+  }
+]
