@@ -1,0 +1,256 @@
+[
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_1",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'SceneRig_Direct'"
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_0",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIN_Wrapper_EverettAfterClass_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_Wrapper_EverettAfterClass_SR.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_1",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIN_FLY_01_05_MadamKogawaScolds_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_FLY_01_05_MadamKogawaScolds/CIN_FLY_01_05_MadamKogawaScolds_SR.1392"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_StoryGraph",
+    "Name": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'SceneRig_StoryGraph'",
+    "Properties": {
+      "AmbientSceneRig": {
+        "ObjectName": "SceneRig_Direct'CIN_KogawaScolds_SG:SceneRig_Direct_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.0"
+      },
+      "RootNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CIN_KogawaScolds_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CIN_KogawaScolds_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.7"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CIN_KogawaScolds_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.8"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.9"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.10"
+        }
+      ],
+      "AllEdges": [
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.11"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.12"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_0",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_1",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_2",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_0",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "Start",
+      "bEventCanTriggerMultipleTimes": true,
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.10"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.CIN_KogawaScolds_SG:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_0",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "Finish",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_0",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CIN_KogawaScolds_SG:StoryNode_SceneRig_0.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.1"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.10"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'CIN_KogawaScolds_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.8"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.CIN_KogawaScolds_SG:StoryNode_OutputEvent_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_1",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CIN_KogawaScolds_SG:StoryNode_SceneRig_1.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.2"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CIN_KogawaScolds_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.7"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.9"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.CIN_KogawaScolds_SG:StoryNode_SceneRig_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_0",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_0.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.4"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'CIN_KogawaScolds_SG:StoryNode_InputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.7"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.10"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_1",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_1.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.5"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.10"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.9"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_2",
+    "Outer": "CIN_KogawaScolds_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CIN_KogawaScolds_SG:TimeRig_StoryGraphEdge_2.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.6"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CIN_KogawaScolds_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.9"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CIN_KogawaScolds_SG:StoryNode_OutputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CIN_KogawaScolds_SG.8"
+      }
+    }
+  }
+]

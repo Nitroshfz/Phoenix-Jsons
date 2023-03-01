@@ -1,0 +1,780 @@
+[
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_0",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CQT_BEA_01_01_Intro_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_01_Intro_SR.2995"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_1",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CQT_BEA_01_NurturePuffskein_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.250"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_2",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIN_BEA_01_02_BullyMoment_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CIN_BEA_01_02_BullyMoment_SR.1565"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_3",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'SR_FadeAndWait_NoControl'",
+        "ObjectPath": "/Game/Cinematics/Missions/Shared/SR_FadeAndWait_NoControl.13"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_0",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "InitializationType": "EStoryGraphTriggerActive_InitializeType::InitializeWhenTriggered"
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_1",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationType": "EStoryGraphTrigger_ActivateType::ActivatedByEvent",
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/Shared/SR_FadeAndWait_NoControl.SR_FadeAndWait_NoControl",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'SR_FadeAndWait_NoControl'",
+          "ObjectPath": "/Game/Cinematics/Missions/Shared/SR_FadeAndWait_NoControl.13"
+        },
+        "Name": "ReadyToContinue"
+      },
+      "FeedbackType": "ETimeRig_StoryGraphEdgeFeedbackType::FeedbackEventOnTargetStart",
+      "FeedbackEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/Shared/SR_FadeAndWait_NoControl.SR_FadeAndWait_NoControl",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'SR_FadeAndWait_NoControl'",
+          "ObjectPath": "/Game/Cinematics/Missions/Shared/SR_FadeAndWait_NoControl.13"
+        },
+        "Name": "EndSceneRig"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_6",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.CQT_BEA_01_NurturePuffskein_SR",
+          "SubPathString": "SceneRigProxyActor_1.SceneAction_Animation_0"
+        },
+        "Name": "Finish"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_7",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationType": "EStoryGraphTrigger_ActivateType::ActivatedByEvent",
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/BEA_01/CIN_BEA_01_02_BullyMoment_SR.CIN_BEA_01_02_BullyMoment_SR",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CIN_BEA_01_02_BullyMoment_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CIN_BEA_01_02_BullyMoment_SR.1565"
+        },
+        "Name": "CinematicFinished"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_8",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationType": "EStoryGraphTrigger_ActivateType::ActivatedByEvent",
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.CQT_BEA_01_NurturePuffskein_SR",
+          "SubPathString": "SceneRigProxyActor_1.SceneAction_Animation_0"
+        },
+        "Name": "Finish"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_9",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Event",
+    "Name": "StoryGraphTrigger_Event_0",
+    "Outer": "TimeRig_StoryGraphEdge_2",
+    "Class": "UScriptClass'StoryGraphTrigger_Event'",
+    "Properties": {
+      "TargetEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.CQT_BEA_01_NurturePuffskein_SR",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CQT_BEA_01_NurturePuffskein_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.250"
+        },
+        "Name": "PettingComplete"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Event",
+    "Name": "StoryGraphTrigger_Event_0",
+    "Outer": "TimeRig_StoryGraphEdge_3",
+    "Class": "UScriptClass'StoryGraphTrigger_Event'",
+    "Properties": {
+      "TargetEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.CQT_BEA_01_NurturePuffskein_SR",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CQT_BEA_01_NurturePuffskein_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.250"
+        },
+        "Name": "FeedingComplete"
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_0",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "Start",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.22"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_1",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "PettingComplete",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.26"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_2",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "FeedingComplete",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.27"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_0",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "NurturePuffskeinComplete",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_2",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "GrantPettingBrush",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_3",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "GrantFood",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_4",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "BullyMomentFinished",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.21"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_0",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.0"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.22"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_9'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.33"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_1",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.1"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.14"
+        },
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.13"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.19"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.15"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.16"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.21"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.17"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_2'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_4'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.28"
+        },
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_3'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_5'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.29"
+        },
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_6'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.30"
+        },
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_8'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.32"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_2",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.2"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_4'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.18"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_4'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_7'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.31"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_3",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.3"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.12"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.19"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraph",
+    "Name": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraph'",
+    "Properties": {
+      "Name": "BEA_01_BeastClass_Sequence",
+      "RootNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.12"
+        },
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.14"
+        },
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.12"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.19"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.16"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.17"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.21"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_4'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.18"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.22"
+        },
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.13"
+        },
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.14"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.15"
+        }
+      ],
+      "AllEdges": [
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_4'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.28"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_5'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.29"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_6'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.30"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_7'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.31"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_9'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.33"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.24"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.25"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.26"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.27"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_8'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.32"
+        }
+      ],
+      "bPersistent": false
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_0",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_0.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.4"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.12"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.22"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_1",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_1.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.5"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_3'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.22"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.19"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_2",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Event'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_2.StoryGraphTrigger_Event_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.10"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.13"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_3",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Event'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_3.StoryGraphTrigger_Event_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.11"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_InputEvent_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.14"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_4",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "TriggerType": "ETimeRig_StoryGraphEdgeTriggerType::TriggeredByEvent",
+      "ActivationEvent": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CQT_BEA_01_NurturePuffskein_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.250"
+        },
+        "Name": "GrantPettingBrush"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.16"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_5",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "TriggerType": "ETimeRig_StoryGraphEdgeTriggerType::TriggeredByEvent",
+      "ActivationEvent": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CQT_BEA_01_NurturePuffskein_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_NurturePuffskein_SR.250"
+        },
+        "Name": "GrantFood"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_3'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.17"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_6",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_6.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.6"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.21"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_7",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_7.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.7"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.21"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_4'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.18"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_8",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_8.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.8"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CQT_BEA_01_BeastClass_SG:StoryNode_OutputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.15"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_9",
+    "Outer": "CQT_BEA_01_BeastClass_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_BEA_01_BeastClass_SG:TimeRig_StoryGraphEdge_9.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.9"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.19"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_BEA_01_BeastClass_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CQT_BEA_01_BeastClass_SG.20"
+      }
+    }
+  }
+]

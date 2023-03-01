@@ -1,0 +1,5006 @@
+[
+  {
+    "Type": "AblAbilityComponent",
+    "Name": "AblAbilityComponent",
+    "Outer": "AlastairScott_0",
+    "Template": "AblAbilityComponent",
+    "Class": "UScriptClass'AblAbilityComponent'"
+  },
+  {
+    "Type": "AnimationArchitectComponent",
+    "Name": "AnimationArchitectComponent",
+    "Outer": "AlastairScott_0",
+    "Template": "AnimationArchitectComponent",
+    "Class": "UScriptClass'AnimationArchitectComponent'",
+    "Properties": {
+      "AnimationTagProviders": [
+        {
+          "ObjectName": "AnimTag_Emotion'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AnimationArchitectComponent.AnimTag_Emotion_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AnimationComponent",
+    "Name": "AnimationComponent",
+    "Outer": "AlastairScott_0",
+    "Template": "AnimationComponent",
+    "Class": "UScriptClass'AnimationComponent'",
+    "Properties": {
+      "IKDrivers": [
+        {
+          "ObjectName": "IKDriver_FloorContact'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AnimationComponent.IKDriver_FloorContact_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.16"
+        },
+        {
+          "ObjectName": "IKDriver_AimAtConstrained'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AnimationComponent.IKDriver_AimAtConstrained_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.15"
+        }
+      ],
+      "TaggedTransformProviders": {
+        "TransformProvider.High5": {
+          "ObjectName": "Transform_FromActor'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AnimationComponent.Transform_FromActor_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.115"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AnimTag_Emotion",
+    "Name": "AnimTag_Emotion_0",
+    "Outer": "AnimationArchitectComponent",
+    "Template": "AnimTag_Emotion_0",
+    "Class": "UScriptClass'AnimTag_Emotion'"
+  },
+  {
+    "Type": "AnimTag_StationGeneric",
+    "Name": "AnimTag_StationGeneric_0",
+    "Outer": "SceneRig_TagLookup_0",
+    "Class": "UScriptClass'AnimTag_StationGeneric'"
+  },
+  {
+    "Type": "Biped_MovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "AlastairScott_0",
+    "Template": "CharMoveComp",
+    "Class": "UScriptClass'Biped_MovementComponent'",
+    "Properties": {
+      "WalkableFloorZ": 0.71000004,
+      "NavAgentProps": {
+        "AgentRadius": 34.0,
+        "AgentHeight": 184.0
+      }
+    }
+  },
+  {
+    "Type": "BipedStateComponent",
+    "Name": "BipedStateComponent",
+    "Outer": "AlastairScott_0",
+    "Template": "BipedStateComponent",
+    "Class": "UScriptClass'BipedStateComponent'",
+    "Properties": {
+      "TeamAsset": {
+        "SelectedData": "Student"
+      },
+      "RepairData": {
+        "ChunkFadeOutParams": {
+          "OpacityCurve": {
+            "EditorCurveData": {}
+          }
+        },
+        "ChunkFadeInParams": {
+          "OpacityCurve": {
+            "EditorCurveData": {}
+          }
+        }
+      },
+      "m_DbIdInfo": {
+        "ObjectType": "CharacterDefinition"
+      }
+    }
+  },
+  {
+    "Type": "BP_DB_Character_C",
+    "Name": "AlastairScott_0",
+    "Outer": "MovieScene_0",
+    "Template": "Default__BP_DB_Character_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/BP_DB_Character.BP_DB_Character_C'",
+    "Properties": {
+      "ObjectStateComponent": {
+        "ObjectName": "BipedStateComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.BipedStateComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.6"
+      },
+      "Customization": {
+        "ObjectName": "CustomizableCharacterComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.Customization'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.10"
+      },
+      "FacialComponent": {
+        "ObjectName": "FacialComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.FacialComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.14"
+      },
+      "AnimationComponent": {
+        "ObjectName": "AnimationComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AnimationComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.2"
+      },
+      "ManagedCharacter": {
+        "ObjectName": "PhoenixManagedCharacter'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.ManagedCharacter'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.95"
+      },
+      "LookAtTargetTracker": {
+        "ObjectName": "TargetTracker'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.LookAtTargetTracker'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.110"
+      },
+      "FaceTargetTracker": {
+        "ObjectName": "TargetTracker'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.FaceTargetTracker'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.109"
+      },
+      "AimAtTargetTracker": {
+        "ObjectName": "TargetTracker'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AimAtTargetTracker'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.108"
+      },
+      "AblAbilityComponent": {
+        "ObjectName": "AblAbilityComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AblAbilityComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.0"
+      },
+      "RagdollControlComponent": {
+        "ObjectName": "RagdollControlComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.RagdollControlComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.96"
+      },
+      "AnimationArchitectComponent": {
+        "ObjectName": "AnimationArchitectComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.AnimationArchitectComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.1"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponentBudgeted'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.CharacterMesh0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.103"
+      },
+      "CharacterMovement": {
+        "ObjectName": "Biped_MovementComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.CharMoveComp'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.5"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.CollisionCylinder'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.8"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.CollisionCylinder'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.8"
+      },
+      "Tags": [
+        "SequencerActor"
+      ],
+      "BlueprintCreatedComponents": [
+        null,
+        null
+      ]
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "AlastairScott_0",
+    "Template": "CollisionCylinder",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "BodyInstance": {
+        "MaxAngularVelocity": 3599.9998
+      },
+      "RelativeLocation": {
+        "X": -139.55943,
+        "Y": -295.562,
+        "Z": 112.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.99999,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "CineCameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Default_Camera_0",
+    "Template": "CameraComponent",
+    "Class": "UScriptClass'CineCameraComponent'",
+    "Properties": {
+      "CurrentFocusDistance": 5.0,
+      "PostProcessSettings": {
+        "BloomDirtMaskTint": {
+          "R": 0.998039,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFFFBCBC"
+        },
+        "AutoExposureBiasBackup": 1.0,
+        "IndirectLightingColor": {
+          "R": 2.0,
+          "G": 1.0,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent'CCL_Activity_Generic:MovieScene_0.Default_Camera_0.SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.102"
+      }
+    }
+  },
+  {
+    "Type": "CustomizableCharacterComponent",
+    "Name": "Customization",
+    "Outer": "AlastairScott_0",
+    "Template": "Customization",
+    "Class": "UScriptClass'CustomizableCharacterComponent'"
+  },
+  {
+    "Type": "Default_Camera_C",
+    "Name": "Default_Camera_0",
+    "Outer": "MovieScene_0",
+    "Template": "Default__Default_Camera_C",
+    "Class": "BlueprintGeneratedClass'/Game/Cinematics/Props/Default_Camera.Default_Camera_C'",
+    "Properties": {
+      "SkeletalMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'CCL_Activity_Generic:MovieScene_0.Default_Camera_0.SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.102"
+      },
+      "FocusSettings": {
+        "FocusMethod": {
+          "DefaultValue": 1
+        },
+        "ManualFocusDistance": {
+          "DefaultValue": 100000.0
+        }
+      },
+      "RenderFeatures": {
+        "VignetteIntensity": {
+          "DefaultValue": 0.4
+        },
+        "BloomIntensity": {
+          "DefaultValue": 0.675
+        },
+        "BloomThreshold": {
+          "DefaultValue": -1.0
+        },
+        "BloomDirtMaskTint": {
+          "DefaultValue": {
+            "X": 0.5,
+            "Y": 0.5,
+            "Z": 0.5
+          }
+        },
+        "AutoExposureLowPercent": {
+          "DefaultValue": 80.0
+        },
+        "AutoExposureHighPercent": {
+          "DefaultValue": 98.3
+        },
+        "AutoExposureMinBrightness": {
+          "DefaultValue": 0.03
+        },
+        "AutoExposureMaxBrightness": {
+          "DefaultValue": 2.0
+        },
+        "AutoExposureSpeedUp": {
+          "DefaultValue": 3.0
+        },
+        "AutoExposureSpeedDown": {
+          "DefaultValue": 1.0
+        },
+        "HistogramLogMax": {
+          "DefaultValue": 4.0
+        },
+        "HistogramLogMin": {
+          "DefaultValue": -8.0
+        },
+        "DepthOfFieldMethod": {
+          "DefaultValue": 2
+        },
+        "DepthOfFieldFstop": {
+          "DefaultValue": 4.0
+        },
+        "DepthOfFieldSensorWidth": {
+          "DefaultValue": 24.576
+        },
+        "DepthOfFieldFocalDistance": {
+          "DefaultValue": 1000.0
+        },
+        "DepthOfFieldDepthBlurAmount": {
+          "DefaultValue": 1.0
+        },
+        "DepthOfFieldNearTransitionRegion": {
+          "DefaultValue": 300.0
+        },
+        "DepthOfFieldFarTransitionRegion": {
+          "DefaultValue": 500.0
+        },
+        "DepthOfFieldMaxBokehSize": {
+          "DefaultValue": 15.0
+        },
+        "DepthOfFieldNearBlurSize": {
+          "DefaultValue": 15.0
+        },
+        "DepthOfFieldFarBlurSize": {
+          "DefaultValue": 15.0
+        },
+        "DepthOfFieldOcclusion": {
+          "DefaultValue": 0.4
+        },
+        "DepthOfFieldColorThreshold": {
+          "DefaultValue": 1.0
+        },
+        "DepthOfFieldSizeThreshold": {
+          "DefaultValue": 0.08
+        },
+        "DepthOfFieldVignetteSize": {
+          "DefaultValue": 200.0
+        },
+        "AmbientOcclusionIntensity": {
+          "DefaultValue": 0.5
+        },
+        "AmbientOcclusionRadius": {
+          "DefaultValue": 200.0
+        },
+        "AmbientOcclusionStaticFraction": {
+          "DefaultValue": 1.0
+        },
+        "AmbientOcclusionFadeDistance": {
+          "DefaultValue": 8000.0
+        },
+        "AmbientOcclusionFadeRadius": {
+          "DefaultValue": 5000.0
+        },
+        "AmbientOcclusionPower": {
+          "DefaultValue": 2.0
+        },
+        "AmbientOcclusionBias": {
+          "DefaultValue": 3.0
+        },
+        "AmbientOcclusionQuality": {
+          "DefaultValue": 50.0
+        },
+        "IndirectLightingColor": {
+          "DefaultValue": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          }
+        },
+        "IndirectLightingIntensity": {
+          "DefaultValue": 1.0
+        },
+        "MotionBlurAmount": {
+          "DefaultValue": 0.5
+        },
+        "MotionBlurMax": {
+          "DefaultValue": 5.0
+        },
+        "MotionBlurPerObjectSize": {
+          "DefaultValue": 0.5
+        }
+      },
+      "CurrentFocalLength": {
+        "DefaultValue": 35.0
+      },
+      "CurrentAperture": {
+        "DefaultValue": 2.8
+      },
+      "CurrentFocusDistance": {
+        "DefaultValue": 5.0
+      },
+      "CameraComponent": {
+        "ObjectName": "CineCameraComponent'CCL_Activity_Generic:MovieScene_0.Default_Camera_0.CameraComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.9"
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'CCL_Activity_Generic:MovieScene_0.Default_Camera_0.SceneComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.97"
+      },
+      "RootComponent": {
+        "ObjectName": "SkeletalMeshComponent'CCL_Activity_Generic:MovieScene_0.Default_Camera_0.SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.102"
+      },
+      "Tags": [
+        "SequencerActor"
+      ]
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "LightSource_3",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'CCL_Activity_Generic:MovieScene_0.LightSource_3.LightComponent0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.13"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'CCL_Activity_Generic:MovieScene_0.LightSource_3.LightComponent0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.13"
+      },
+      "Tags": [
+        "SequencerActor"
+      ]
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "LightSource_3",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "bUsedAsAtmosphereSunLight": true,
+      "LightGuid": "4CE18EA6-4BAC35CD-D062B983-98986FDF",
+      "Intensity": 1.0,
+      "RelativeLocation": {
+        "X": 100.0,
+        "Y": -200.0,
+        "Z": 570.0
+      },
+      "RelativeRotation": {
+        "Pitch": -31.341516,
+        "Yaw": 36.412537,
+        "Roll": -51.273056
+      },
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 1.0,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "FacialComponent",
+    "Name": "FacialComponent",
+    "Outer": "AlastairScott_0",
+    "Template": "FacialComponent",
+    "Class": "UScriptClass'FacialComponent'"
+  },
+  {
+    "Type": "IKDriver_AimAtConstrained",
+    "Name": "IKDriver_AimAtConstrained_0",
+    "Outer": "AnimationComponent",
+    "Template": "IKDriver_AimAtConstrained_0",
+    "Class": "UScriptClass'IKDriver_AimAtConstrained'",
+    "Properties": {
+      "AimControls": [
+        {
+          "DirectionDriver": "EAnimationDirections::LookingDirection",
+          "AimBoneReference": {
+            "BoneName": "None"
+          },
+          "NeckBoneReference": {
+            "BoneName": "Spine"
+          },
+          "RotationOffset": {
+            "Pitch": 0.0,
+            "Yaw": 90.0,
+            "Roll": 90.0
+          },
+          "AimAlphaVariableName": "AimAlpha",
+          "AimTargetVariableName": "AimTarget",
+          "AimLoosenessVariableName": "AimLooseness",
+          "SpineMobilityVariableName": "SpineMobility",
+          "ApplyConstraintsVariableName": "ApplyConstraints",
+          "bLimitDirectionToCone": false,
+          "YawLimit": 90.0,
+          "PitchLimit": 50.0,
+          "LimitFactorOverSpeed": {
+            "EditorCurveData": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 250.0,
+                  "Value": 1.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                },
+                {
+                  "InterpMode": "RCIM_Cubic",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 750.0,
+                  "Value": 0.15,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "ExternalCurve": null
+          },
+          "YawFrequency": 8.0,
+          "YawDampingRatio": 1.0,
+          "PitchFrequency": 8.0,
+          "PitchDampingRatio": 1.0,
+          "BlendInDuration": 0.5,
+          "BlendOutDuration": 0.5,
+          "BackDeadZoneAngle": 20.0,
+          "DisableCurveName": {
+            "CurveName": "DisableHeadTracking"
+          },
+          "YawFrequencyCurveName": {
+            "CurveName": "None"
+          },
+          "PitchFrequencyCurveName": {
+            "CurveName": "None"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IKDriver_FloorContact",
+    "Name": "IKDriver_FloorContact_0",
+    "Outer": "AnimationComponent",
+    "Class": "UScriptClass'IKDriver_FloorContact'"
+  },
+  {
+    "Type": "LevelSequence",
+    "Name": "CCL_Activity_Generic",
+    "Class": "UScriptClass'LevelSequence'",
+    "Properties": {
+      "MovieScene": {
+        "ObjectName": "MovieScene'CCL_Activity_Generic:MovieScene_0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.18"
+      },
+      "BindingReferences": {
+        "BindingIdToReferences": null
+      },
+      "CompiledData": {
+        "ObjectName": "MovieSceneCompiledData'CCL_Activity_Generic:CompiledData'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.75"
+      },
+      "Signature": "23D6E082-49B0D3D1-C18BC88B-0BF3CC5B"
+    }
+  },
+  {
+    "Type": "MovieScene",
+    "Name": "MovieScene_0",
+    "Outer": "CCL_Activity_Generic",
+    "Class": "UScriptClass'MovieScene'",
+    "Properties": {
+      "Spawnables": [
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": false,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "B8423D05-479FBA68-67788197-C576A8CA",
+          "Name": "AlastairScott",
+          "ObjectTemplate": {
+            "ObjectName": "BP_DB_Character_C'CCL_Activity_Generic:MovieScene_0.AlastairScott_0'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.7"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        },
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": false,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "8F966B08-42CB4A70-834FE086-9A2372D1",
+          "Name": "SkyLight",
+          "ObjectTemplate": {
+            "ObjectName": "SkyLight'CCL_Activity_Generic:MovieScene_0.SkyLight_2'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.104"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        },
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": false,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "DFFE97EE-4A48F9D2-603CB89F-00218784",
+          "Name": "Light Source",
+          "ObjectTemplate": {
+            "ObjectName": "DirectionalLight'CCL_Activity_Generic:MovieScene_0.LightSource_3'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.12"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        },
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": false,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "54204166-458AA7F7-196EFEAF-94CE5FBB",
+          "Name": "Default_Camera",
+          "ObjectTemplate": {
+            "ObjectName": "Default_Camera_C'CCL_Activity_Generic:MovieScene_0.Default_Camera_0'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.11"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        },
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": false,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "62CDE101-4A354926-29E6EC8B-07F767CC",
+          "Name": "TextRenderActor",
+          "ObjectTemplate": {
+            "ObjectName": "TextRenderActor'CCL_Activity_Generic:MovieScene_0.TextRenderActor_1'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.111"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        },
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": true,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "BD3B0209-41B9D255-8AFC6B87-C6194948",
+          "Name": "Plane",
+          "ObjectTemplate": {
+            "ObjectName": "StaticMeshActor'CCL_Activity_Generic:MovieScene_0.Plane_2'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.106"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        },
+        {
+          "SpawnTransform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "Tags": [],
+          "bContinuouslyRespawn": false,
+          "bNetAddressableName": false,
+          "bEvaluateTracksWhenNotSpawned": false,
+          "Guid": "A43885B8-463DD207-294AE68A-D463A780",
+          "Name": "TextRenderActor",
+          "ObjectTemplate": {
+            "ObjectName": "TextRenderActor'CCL_Activity_Generic:MovieScene_0.TextRenderActor_3'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.112"
+          },
+          "ChildPossessables": [],
+          "Ownership": "ESpawnOwnership::InnerSequence",
+          "LevelName": "None"
+        }
+      ],
+      "Possessables": [
+        {
+          "Tags": [],
+          "Guid": "D7FBD3ED-4EC0855F-BE00AFB1-B94473D6",
+          "Name": "SkyLightComponent0",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'SkyLightComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ParentGuid": "8F966B08-42CB4A70-834FE086-9A2372D1"
+        },
+        {
+          "Tags": [],
+          "Guid": "89A33724-4BAB0F4E-0C7AC887-736E6120",
+          "Name": "LightComponent0",
+          "PossessedObjectClass": {
+            "ObjectName": "Class'DirectionalLightComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ParentGuid": "DFFE97EE-4A48F9D2-603CB89F-00218784"
+        }
+      ],
+      "ObjectBindings": [
+        {
+          "ObjectGuid": "B8423D05-479FBA68-67788197-C576A8CA",
+          "BindingName": "AlastairScott",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_2'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.88"
+            },
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.26"
+            },
+            {
+              "ObjectName": "SceneRigAnimationTrack'CCL_Activity_Generic:MovieScene_0.SceneRigAnimationTrack_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.101"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "8F966B08-42CB4A70-834FE086-9A2372D1",
+          "BindingName": "SkyLight",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_6'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.91"
+            },
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_6'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.30"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "D7FBD3ED-4EC0855F-BE00AFB1-B94473D6",
+          "BindingName": "SkyLightComponent0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_2'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.79"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "DFFE97EE-4A48F9D2-603CB89F-00218784",
+          "BindingName": "Light Source",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_7'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.92"
+            },
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_7'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.31"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "89A33724-4BAB0F4E-0C7AC887-736E6120",
+          "BindingName": "LightComponent0",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneFloatTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_1'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.78"
+            },
+            {
+              "ObjectName": "MovieSceneColorTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneColorTrack_1'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.74"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "54204166-458AA7F7-196EFEAF-94CE5FBB",
+          "BindingName": "Default_Camera",
+          "Tracks": [
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_4'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.89"
+            },
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_4'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.28"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "62CDE101-4A354926-29E6EC8B-07F767CC",
+          "BindingName": "TextRenderActor",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_5'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.29"
+            },
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_5'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.90"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "BD3B0209-41B9D255-8AFC6B87-C6194948",
+          "BindingName": "Plane",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_1'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.27"
+            },
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.87"
+            }
+          ]
+        },
+        {
+          "ObjectGuid": "A43885B8-463DD207-294AE68A-D463A780",
+          "BindingName": "TextRenderActor",
+          "Tracks": [
+            {
+              "ObjectName": "MovieScene3DTransformTrack'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_8'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.32"
+            },
+            {
+              "ObjectName": "MovieSceneSpawnTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_8'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.93"
+            }
+          ]
+        }
+      ],
+      "CameraCutTrack": {
+        "ObjectName": "MovieSceneCameraCutTrack'CCL_Activity_Generic:MovieScene_0.MovieSceneCameraCutTrack_1'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.72"
+      },
+      "PlaybackRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 120000
+            }
+          }
+        }
+      },
+      "TickResolution": {
+        "Numerator": 24000
+      },
+      "DisplayRate": {
+        "Numerator": 30
+      },
+      "Signature": "A8DA7FFA-4CF79A9D-934AE6B1-60795E35"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_0",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 61.20768,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -295.56226,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 112.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -90.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.33"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.34"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "A43AF81E-4AD31291-399E06A6-51AE0B2E"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_1",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -32.14598,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 208.99123,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 174.06476,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -89.99999,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 11.694625,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 10.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_1.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.35"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_1.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.36"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "5AE39CF2-4E6B2610-7887E5B4-4537768B"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_4",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 164.15253,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 124.20627,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 81.13287,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": -561.88104,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": -561.88104,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": -962.0118,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 141.79042,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 141.79042,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 330.79208,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 9.07838,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 9.078976,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 9.092517,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": -0.54184,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 188.13582,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 181.07007,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 183.38188,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 1.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_4.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.37"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_4.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.38"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "DE0BAC2F-425C19FA-9DBEC58D-B92E6D9E"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_5",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 264.38712,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 291.822,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 181.25107,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": -141.1203,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": -141.11884,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": -351.02142,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 127.55098,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 322.6116,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": -90.00001,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": -90.00001,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": -90.00001,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 23200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.8,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 23200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.8,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 23200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.8,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_5.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.39"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_5.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.40"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "A5590801-458A240B-A5D9C2A7-30920976"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_6",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 20.774353,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -30.99527,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 504.74823,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_6.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.41"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_6.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.42"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "B6F4D6AF-45E24B78-EBB90DA0-B9F885CC"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_7",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 100.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -200.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 570.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -122.18061,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": -72.21922,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 102.24933,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 2.5,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 2.5,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 2.5,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_7.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.43"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_7.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.44"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "C2683742-4801FC4B-1325ABAD-415B640C"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformSection",
+    "Name": "MovieScene3DTransformSection_0",
+    "Outer": "MovieScene3DTransformTrack_8",
+    "Class": "UScriptClass'MovieScene3DTransformSection'",
+    "Properties": {
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 264.38712,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 291.822,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 181.25107,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": -141.1201,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": -141.11884,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": -351.02142,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Translation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 113.39011,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 322.6116,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": 0.0,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 0.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Rotation": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          },
+          {
+            "Value": 119200
+          }
+        ],
+        "Values": [
+          {
+            "Value": -90.00001,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          },
+          {
+            "Value": -90.00001,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": -90.00001,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.6,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.6,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Scale": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [
+          {
+            "Value": 0
+          }
+        ],
+        "Values": [
+          {
+            "Value": 0.6,
+            "Tangent": {
+              "ArriveTangent": 0.0,
+              "LeaveTangent": 0.0,
+              "ArriveTangentWeight": 0.0,
+              "LeaveTangentWeight": 0.0,
+              "TangentWeightMode": 0
+            },
+            "InterpMode": 2,
+            "TangentMode": 0,
+            "PaddingByte": 0
+          }
+        ],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 24000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_8.MovieScene3DTransformSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.45"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_8.MovieScene3DTransformSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.46"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "EC629990-4BD5B738-6B66B2AB-1F3CEEF4"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_0",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.19"
+        }
+      ],
+      "EvaluationFieldGuid": "AE4D8BB8-43AD8E03-29B436AF-3157AD12",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.19"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "AE4D8BB8-43AD8E03-29B436AF-3157AD12"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_1",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_1.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.20"
+        }
+      ],
+      "EvaluationFieldGuid": "9F9ACED7-4E638B15-2AD79D81-FFCF7E06",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_1.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.20"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "9F9ACED7-4E638B15-2AD79D81-FFCF7E06"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_4",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_4.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.21"
+        }
+      ],
+      "EvaluationFieldGuid": "B2D91FEC-420785DD-42427C97-B6425296",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_4.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.21"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "B2D91FEC-420785DD-42427C97-B6425296"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_5",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_5.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.22"
+        }
+      ],
+      "EvaluationFieldGuid": "F55755E3-49E2F513-F5E5AB95-117AD6AE",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_5.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.22"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "F55755E3-49E2F513-F5E5AB95-117AD6AE"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_6",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_6.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.23"
+        }
+      ],
+      "EvaluationFieldGuid": "19259A11-4B56AA5F-A9433896-DE79EDFE",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_6.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.23"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "19259A11-4B56AA5F-A9433896-DE79EDFE"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_7",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_7.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.24"
+        }
+      ],
+      "EvaluationFieldGuid": "F36D6E14-490C1F48-50855C97-1BA0B385",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_7.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.24"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "F36D6E14-490C1F48-50855C97-1BA0B385"
+    }
+  },
+  {
+    "Type": "MovieScene3DTransformTrack",
+    "Name": "MovieScene3DTransformTrack_8",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieScene3DTransformTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_8.MovieScene3DTransformSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.25"
+        }
+      ],
+      "EvaluationFieldGuid": "F9E09868-413276CA-2BFA849B-14B2C86C",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_8.MovieScene3DTransformSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.25"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "F9E09868-413276CA-2BFA849B-14B2C86C"
+    }
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieScene3DTransformSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneCameraCutSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneCameraCutSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneColorSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneColorSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneFloatSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "MovieSceneSpawnSection_0",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseInFunction",
+    "Outer": "SceneRigAnimationSection_1",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneBuiltInEasingFunction",
+    "Name": "EaseOutFunction",
+    "Outer": "SceneRigAnimationSection_1",
+    "Class": "UScriptClass'MovieSceneBuiltInEasingFunction'"
+  },
+  {
+    "Type": "MovieSceneCameraCutSection",
+    "Name": "MovieSceneCameraCutSection_0",
+    "Outer": "MovieSceneCameraCutTrack_1",
+    "Class": "UScriptClass'MovieSceneCameraCutSection'",
+    "Properties": {
+      "CameraBindingID": {
+        "Guid": "54204166-458AA7F7-196EFEAF-94CE5FBB",
+        "ResolveParentIndex": 0
+      },
+      "InitialCameraCutTransform": {
+        "Rotation": {
+          "X": 0.005614152,
+          "Y": -0.078941576,
+          "Z": 0.99435204,
+          "W": -0.07071614,
+          "IsNormalized": true,
+          "Size": 1.0,
+          "SizeSquared": 1.0000001
+        },
+        "Translation": {
+          "X": 164.15253,
+          "Y": -561.88104,
+          "Z": 141.79042
+        }
+      },
+      "bHasInitialCameraCutTransform": true,
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneCameraCutTrack_1.MovieSceneCameraCutSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.47"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneCameraCutTrack_1.MovieSceneCameraCutSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.48"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 120000
+            }
+          }
+        }
+      },
+      "BlendType": {
+        "bIsValid": true
+      },
+      "Signature": "57307E2F-4FA13A12-73306C99-B93120FD"
+    }
+  },
+  {
+    "Type": "MovieSceneCameraCutTrack",
+    "Name": "MovieSceneCameraCutTrack_1",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneCameraCutTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneCameraCutSection'CCL_Activity_Generic:MovieScene_0.MovieSceneCameraCutTrack_1.MovieSceneCameraCutSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.71"
+        }
+      ],
+      "EvaluationFieldGuid": "515F5BF1-4AFB21BD-01972CAE-D1E11B69",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneCameraCutSection'CCL_Activity_Generic:MovieScene_0.MovieSceneCameraCutTrack_1.MovieSceneCameraCutSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.71"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 120000
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "515F5BF1-4AFB21BD-01972CAE-D1E11B69"
+    }
+  },
+  {
+    "Type": "MovieSceneColorSection",
+    "Name": "MovieSceneColorSection_0",
+    "Outer": "MovieSceneColorTrack_1",
+    "Class": "UScriptClass'MovieSceneColorSection'",
+    "Properties": {
+      "RedCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "GreenCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "BlueCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "AlphaCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 1.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneColorTrack_1.MovieSceneColorSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.49"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneColorTrack_1.MovieSceneColorSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.50"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "C96B67BC-434953EC-882C2BB6-112729E6"
+    }
+  },
+  {
+    "Type": "MovieSceneColorTrack",
+    "Name": "MovieSceneColorTrack_1",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneColorTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "LightColor",
+        "PropertyPath": "LightColor",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneColorSection'CCL_Activity_Generic:MovieScene_0.MovieSceneColorTrack_1.MovieSceneColorSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.73"
+        }
+      ],
+      "EvaluationFieldGuid": "2A239326-486BB936-E1D9E888-6C2CEEE4",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneColorSection'CCL_Activity_Generic:MovieScene_0.MovieSceneColorTrack_1.MovieSceneColorSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.73"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "2A239326-486BB936-E1D9E888-6C2CEEE4"
+    }
+  },
+  {
+    "Type": "MovieSceneCompiledData",
+    "Name": "CompiledData",
+    "Outer": "CCL_Activity_Generic",
+    "Class": "UScriptClass'MovieSceneCompiledData'",
+    "Properties": {
+      "EntityComponentField": {
+        "PersistentEntityTree": {
+          "SerializedData": {
+            "Data": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                },
+                {
+                  "StartIndex": 1,
+                  "Size": 17,
+                  "Capacity": 17
+                }
+              ],
+              "Items": [
+                {
+                  "EntityIndex": 0,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 1,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 2,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 3,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 4,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 5,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 6,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 7,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 8,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 9,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 10,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 11,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 12,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 13,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 14,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 15,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 16,
+                  "MetaDataIndex": -1
+                },
+                {
+                  "EntityIndex": 17,
+                  "MetaDataIndex": -1
+                }
+              ]
+            },
+            "RootNode": {
+              "Range": {
+                "LowerBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                },
+                "UpperBound": {
+                  "Type": 2,
+                  "Value": {
+                    "Value": 0
+                  }
+                }
+              },
+              "Parent": {
+                "ChildrenHandle": {
+                  "EntryIndex": -1
+                },
+                "Index": -1
+              },
+              "ChildrenID": {
+                "EntryIndex": 0
+              },
+              "DataID": {
+                "EntryIndex": 1
+              }
+            },
+            "ChildNodes": {
+              "Entries": [
+                {
+                  "StartIndex": 0,
+                  "Size": 1,
+                  "Capacity": 1
+                }
+              ],
+              "Items": [
+                {
+                  "Range": {
+                    "LowerBound": {
+                      "Type": 1,
+                      "Value": {
+                        "Value": 0
+                      }
+                    },
+                    "UpperBound": {
+                      "Type": 0,
+                      "Value": {
+                        "Value": 120000
+                      }
+                    }
+                  },
+                  "Parent": {
+                    "ChildrenHandle": {
+                      "EntryIndex": -1
+                    },
+                    "Index": 0
+                  },
+                  "ChildrenID": {
+                    "EntryIndex": -1
+                  },
+                  "DataID": {
+                    "EntryIndex": 0
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Entities": [
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneCameraCutSection'CCL_Activity_Generic:MovieScene_0.MovieSceneCameraCutTrack_1.MovieSceneCameraCutSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.71"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 0
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_2.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.81"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 1
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_0.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.19"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 2
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_6.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.84"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 3
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_6.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.23"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 4
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.77"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 5
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_7.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.85"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 6
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_7.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.24"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 7
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneFloatSection'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.76"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 8
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneColorSection'CCL_Activity_Generic:MovieScene_0.MovieSceneColorTrack_1.MovieSceneColorSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.73"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 9
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_4.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.82"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 10
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_4.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.21"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 11
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_5.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.22"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 12
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_5.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.83"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 13
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_1.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.20"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 14
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_0.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.80"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 15
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieScene3DTransformSection'CCL_Activity_Generic:MovieScene_0.MovieScene3DTransformTrack_8.MovieScene3DTransformSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.25"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 16
+          },
+          {
+            "Key": {
+              "EntityOwner": {
+                "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_8.MovieSceneSpawnSection_0'",
+                "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.86"
+              },
+              "EntityID": 0
+            },
+            "SharedMetaDataIndex": 17
+          }
+        ],
+        "SharedMetaData": [
+          {
+            "ObjectBindingID": "00000000-00000000-00000000-00000000"
+          },
+          {
+            "ObjectBindingID": "B8423D05-479FBA68-67788197-C576A8CA"
+          },
+          {
+            "ObjectBindingID": "B8423D05-479FBA68-67788197-C576A8CA"
+          },
+          {
+            "ObjectBindingID": "8F966B08-42CB4A70-834FE086-9A2372D1"
+          },
+          {
+            "ObjectBindingID": "8F966B08-42CB4A70-834FE086-9A2372D1"
+          },
+          {
+            "ObjectBindingID": "D7FBD3ED-4EC0855F-BE00AFB1-B94473D6"
+          },
+          {
+            "ObjectBindingID": "DFFE97EE-4A48F9D2-603CB89F-00218784"
+          },
+          {
+            "ObjectBindingID": "DFFE97EE-4A48F9D2-603CB89F-00218784"
+          },
+          {
+            "ObjectBindingID": "89A33724-4BAB0F4E-0C7AC887-736E6120"
+          },
+          {
+            "ObjectBindingID": "89A33724-4BAB0F4E-0C7AC887-736E6120"
+          },
+          {
+            "ObjectBindingID": "54204166-458AA7F7-196EFEAF-94CE5FBB"
+          },
+          {
+            "ObjectBindingID": "54204166-458AA7F7-196EFEAF-94CE5FBB"
+          },
+          {
+            "ObjectBindingID": "62CDE101-4A354926-29E6EC8B-07F767CC"
+          },
+          {
+            "ObjectBindingID": "62CDE101-4A354926-29E6EC8B-07F767CC"
+          },
+          {
+            "ObjectBindingID": "BD3B0209-41B9D255-8AFC6B87-C6194948"
+          },
+          {
+            "ObjectBindingID": "BD3B0209-41B9D255-8AFC6B87-C6194948"
+          },
+          {
+            "ObjectBindingID": "A43885B8-463DD207-294AE68A-D463A780"
+          },
+          {
+            "ObjectBindingID": "A43885B8-463DD207-294AE68A-D463A780"
+          }
+        ]
+      },
+      "CompiledSignature": "23D6E082-49B0D3D1-C18BC88B-0BF3CC5B",
+      "CompilerVersion": "7D4B9809-2FAC4A6B-964ECF72-D8279EF8",
+      "AccumulatedMask": {
+        "bEntityComponentField": true
+      },
+      "AllocatedMask": {
+        "bEntityComponentField": true
+      }
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_1",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 30.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.51"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_1.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.52"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "AF98B125-4E180D5E-DC10B796-4F64D502"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatSection",
+    "Name": "MovieSceneFloatSection_0",
+    "Outer": "MovieSceneFloatTrack_2",
+    "Class": "UScriptClass'MovieSceneFloatSection'",
+    "Properties": {
+      "FloatCurve": {
+        "PreInfinityExtrap": "RCCE_Constant",
+        "PostInfinityExtrap": "RCCE_Constant",
+        "Times": [],
+        "Values": [],
+        "DefaultValue": 10.0,
+        "bHasDefaultValue": true,
+        "TickResolution": {
+          "Numerator": 60000,
+          "Denominator": 1
+        },
+        "bShowCurve": false
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.53"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_2.MovieSceneFloatSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.54"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 2,
+            "Value": {
+              "Value": 0
+            }
+          }
+        }
+      },
+      "Signature": "53F4B13A-488D2C3D-AC9F8A8A-7A42491E"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_1",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Intensity",
+        "PropertyPath": "Intensity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.76"
+        }
+      ],
+      "EvaluationFieldGuid": "9DB96E79-495777CB-D9BF78AC-85831A77",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_1.MovieSceneFloatSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.76"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "9DB96E79-495777CB-D9BF78AC-85831A77"
+    }
+  },
+  {
+    "Type": "MovieSceneFloatTrack",
+    "Name": "MovieSceneFloatTrack_2",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneFloatTrack'",
+    "Properties": {
+      "PropertyBinding": {
+        "PropertyName": "Intensity",
+        "PropertyPath": "Intensity",
+        "bCanUseClassLookup": true
+      },
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneFloatSection'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.77"
+        }
+      ],
+      "EvaluationFieldGuid": "BFB9E2AE-49DB94CC-3537FF94-01168A9A",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneFloatSection'CCL_Activity_Generic:MovieScene_0.MovieSceneFloatTrack_2.MovieSceneFloatSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.77"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "BFB9E2AE-49DB94CC-3537FF94-01168A9A"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_0",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_0.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.55"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_0.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.56"
+        }
+      },
+      "Signature": "52F0B419-451F7ACE-4FC31EA4-681640D9"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_2",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_2.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.57"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_2.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.58"
+        }
+      },
+      "Signature": "4B872F4F-45F69D43-B6ECFF87-9014BFF7"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_4",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_4.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.59"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_4.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.60"
+        }
+      },
+      "Signature": "7979305D-47BADB2B-ED5CC3A4-2BA0D901"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_5",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_5.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.61"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_5.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.62"
+        }
+      },
+      "Signature": "B714C5C9-497598C8-4DC34DAA-09BBCF32"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_6",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_6.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.63"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_6.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.64"
+        }
+      },
+      "Signature": "3B1F8A20-496D5FE8-2B697285-C4C90DF8"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_7",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_7.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.65"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_7.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.66"
+        }
+      },
+      "Signature": "CBBE93C7-497EFCDE-A9741284-05B5B976"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnSection",
+    "Name": "MovieSceneSpawnSection_0",
+    "Outer": "MovieSceneSpawnTrack_8",
+    "Class": "UScriptClass'MovieSceneSpawnSection'",
+    "Properties": {
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_8.MovieSceneSpawnSection_0.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.67"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_8.MovieSceneSpawnSection_0.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.68"
+        }
+      },
+      "Signature": "563C3B42-42F3D8F0-63C4519D-D050A022"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_0",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_0.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.80"
+        }
+      ],
+      "ObjectGuid": "4C4C9EEC-4CF363A1-05589C9D-4C94BCCE",
+      "EvaluationFieldGuid": "AB916B65-4794734D-B70716BF-CEF3BAA7",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_0.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.80"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "AB916B65-4794734D-B70716BF-CEF3BAA7"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_2",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_2.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.81"
+        }
+      ],
+      "ObjectGuid": "B8423D05-479FBA68-67788197-C576A8CA",
+      "EvaluationFieldGuid": "9A058707-4BD23294-02DA81B1-BD6BA3C3",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_2.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.81"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "9A058707-4BD23294-02DA81B1-BD6BA3C3"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_4",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_4.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.82"
+        }
+      ],
+      "ObjectGuid": "BE87CDFF-4E6D8AD2-4A4DC2A2-7F57552A",
+      "EvaluationFieldGuid": "9E0BEDBB-45022C49-FBC4FE83-83AFCA02",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_4.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.82"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "9E0BEDBB-45022C49-FBC4FE83-83AFCA02"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_5",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_5.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.83"
+        }
+      ],
+      "ObjectGuid": "1DDF086F-42B10216-9811939C-E62D8B49",
+      "EvaluationFieldGuid": "5FE4512D-45DA8419-8E267C90-8E6ABC00",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_5.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.83"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "5FE4512D-45DA8419-8E267C90-8E6ABC00"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_6",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_6.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.84"
+        }
+      ],
+      "ObjectGuid": "7AAD2502-48E53D68-39CC2F82-5D76EB0E",
+      "EvaluationFieldGuid": "033E0A75-4077090A-DA218F8E-6F27E428",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_6.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.84"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "033E0A75-4077090A-DA218F8E-6F27E428"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_7",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_7.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.85"
+        }
+      ],
+      "ObjectGuid": "052FB94E-48F56B0F-94786080-A8394426",
+      "EvaluationFieldGuid": "1C966D55-45EFAB28-6CD1DB9C-1CCB2F1C",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_7.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.85"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "1C966D55-45EFAB28-6CD1DB9C-1CCB2F1C"
+    }
+  },
+  {
+    "Type": "MovieSceneSpawnTrack",
+    "Name": "MovieSceneSpawnTrack_8",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'MovieSceneSpawnTrack'",
+    "Properties": {
+      "Sections": [
+        {
+          "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_8.MovieSceneSpawnSection_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.86"
+        }
+      ],
+      "ObjectGuid": "1DDF086F-42B10216-9811939C-E62D8B49",
+      "EvaluationFieldGuid": "0ED791F4-4C72775D-6EB45B97-A0FFE289",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "MovieSceneSpawnSection'CCL_Activity_Generic:MovieScene_0.MovieSceneSpawnTrack_8.MovieSceneSpawnSection_0'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.86"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Open",
+                "Value": {
+                  "Value": 0
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "0ED791F4-4C72775D-6EB45B97-A0FFE289"
+    }
+  },
+  {
+    "Type": "Object_OwningStation",
+    "Name": "Object_OwningStation_0",
+    "Outer": "SceneRig_TagLookup_0",
+    "Class": "UScriptClass'Object_OwningStation'"
+  },
+  {
+    "Type": "PhoenixManagedCharacter",
+    "Name": "ManagedCharacter",
+    "Outer": "AlastairScott_0",
+    "Template": "ManagedCharacter",
+    "Class": "UScriptClass'PhoenixManagedCharacter'"
+  },
+  {
+    "Type": "RagdollControlComponent",
+    "Name": "RagdollControlComponent",
+    "Outer": "AlastairScott_0",
+    "Template": "RagdollControlComponent",
+    "Class": "UScriptClass'RagdollControlComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Outer": "Default_Camera_0",
+    "Template": "SceneComponent",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent'CCL_Activity_Generic:MovieScene_0.Default_Camera_0.SkeletalMeshComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.102"
+      },
+      "RelativeLocation": {
+        "X": 1009.08386,
+        "Y": 226.96017,
+        "Z": -399.12878
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Fallback",
+    "Name": "SceneRig_Fallback_0",
+    "Outer": "AlastairScott_0",
+    "Class": "UScriptClass'SceneRig_Fallback'",
+    "Properties": {
+      "Providers": [
+        {
+          "ObjectName": "SceneRig_TagLookup'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.SceneRig_Fallback_0.SceneRig_TagLookup_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.99"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneRig_TagLookup",
+    "Name": "SceneRig_TagLookup_0",
+    "Outer": "SceneRig_Fallback_0",
+    "Class": "UScriptClass'SceneRig_TagLookup'",
+    "Properties": {
+      "LookupOnActor": {
+        "ObjectName": "Object_OwningStation'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.SceneRig_Fallback_0.SceneRig_TagLookup_0.Object_OwningStation_0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.94"
+      },
+      "TagProviders": [
+        {
+          "ObjectName": "AnimTag_StationGeneric'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.SceneRig_Fallback_0.SceneRig_TagLookup_0.AnimTag_StationGeneric_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneRigAnimationSection",
+    "Name": "SceneRigAnimationSection_1",
+    "Outer": "SceneRigAnimationTrack_0",
+    "Class": "UScriptClass'SceneRigAnimationSection'",
+    "Properties": {
+      "Params": {
+        "PlacementOptions": {
+          "Placement": {
+            "ObjectName": "Transform_FromActor'CCL_Activity_Generic:MovieScene_0.SceneRigAnimationTrack_0.SceneRigAnimationSection_1.DefaultAnchor'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.116"
+          }
+        },
+        "Animation": {
+          "ObjectName": "AnimSequence'HU_STN_StandingInQue_Loop_V1_ANM'",
+          "ObjectPath": "/Game/Animation/Human/Stations/Standing/HU_STN_StandingInQue_Loop_V1_ANM.0"
+        }
+      },
+      "Easing": {
+        "EaseIn": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.SceneRigAnimationTrack_0.SceneRigAnimationSection_1.EaseInFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.69"
+        },
+        "EaseOut": {
+          "ObjectName": "MovieSceneBuiltInEasingFunction'CCL_Activity_Generic:MovieScene_0.SceneRigAnimationTrack_0.SceneRigAnimationSection_1.EaseOutFunction'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.70"
+        }
+      },
+      "SectionRange": {
+        "Value": {
+          "LowerBound": {
+            "Type": 1,
+            "Value": {
+              "Value": 0
+            }
+          },
+          "UpperBound": {
+            "Type": 0,
+            "Value": {
+              "Value": 1319200
+            }
+          }
+        }
+      },
+      "Signature": "9DBA47AF-44AC5C20-D3D325A4-BF27F280"
+    }
+  },
+  {
+    "Type": "SceneRigAnimationTrack",
+    "Name": "SceneRigAnimationTrack_0",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'SceneRigAnimationTrack'",
+    "Properties": {
+      "AnimationSections": [
+        {
+          "ObjectName": "SceneRigAnimationSection'CCL_Activity_Generic:MovieScene_0.SceneRigAnimationTrack_0.SceneRigAnimationSection_1'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.100"
+        }
+      ],
+      "EvaluationFieldGuid": "7C4A9294-48103B2A-0977CCBA-3C4784AE",
+      "EvaluationField": {
+        "Entries": [
+          {
+            "Section": {
+              "ObjectName": "SceneRigAnimationSection'CCL_Activity_Generic:MovieScene_0.SceneRigAnimationTrack_0.SceneRigAnimationSection_1'",
+              "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.100"
+            },
+            "Range": {
+              "LowerBound": {
+                "Type": "ERangeBoundTypes::Inclusive",
+                "Value": {
+                  "Value": 0
+                }
+              },
+              "UpperBound": {
+                "Type": "ERangeBoundTypes::Exclusive",
+                "Value": {
+                  "Value": 1319200
+                }
+              }
+            },
+            "ForcedTime": {
+              "Value": -2147483648
+            },
+            "Flags": "ESectionEvaluationFlags::None",
+            "LegacySortOrder": 0
+          }
+        ]
+      },
+      "Signature": "7C4A9294-48103B2A-0977CCBA-3C4784AE"
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMeshComponent",
+    "Outer": "Default_Camera_0",
+    "Template": "SkeletalMeshComponent",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 81.132996,
+        "Y": -962.01324,
+        "Z": 330.79208
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -179.99997,
+        "Roll": 0.0
+      },
+      "ComponentVelocity": {
+        "X": -3.697018,
+        "Y": 0.0,
+        "Z": -0.03933
+      },
+      "PrimaryComponentTick": {
+        "EndTickGroup": "TG_PostPhysics"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponentBudgeted",
+    "Name": "CharacterMesh0",
+    "Outer": "AlastairScott_0",
+    "Template": "CharacterMesh0",
+    "Class": "UScriptClass'SkeletalMeshComponentBudgeted'",
+    "Properties": {
+      "AnimationMode": "EAnimationMode::AnimationCustomMode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Young_M_Head_Master'",
+        "ObjectPath": "/Game/RiggedObjects/Characters/Human/Heads/Young_M/SK_Young_M_Head_Master.144"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones",
+      "OverrideMaterials": [
+        null,
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_HUM_N_Heads_EyeOcclusion'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Human/Heads/Materials/MI_HUM_N_Heads_EyeOcclusion.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_HUM_N_Heads_Eyelash'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Human/Heads/Materials/MI_HUM_N_Heads_Eyelash.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_HUM_N_Heads_Teeth'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Human/Heads/Materials/MI_HUM_N_Heads_Teeth.0"
+        },
+        null
+      ],
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'CCL_Activity_Generic:MovieScene_0.AlastairScott_0.CollisionCylinder'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.8"
+      },
+      "RelativeScale3D": {
+        "X": 1.055329,
+        "Y": 1.055329,
+        "Z": 1.055329
+      },
+      "PrimaryComponentTick": {
+        "EndTickGroup": "TG_PostPhysics"
+      }
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight_2",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'CCL_Activity_Generic:MovieScene_0.SkyLight_2.SkyLightComponent0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.105"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'CCL_Activity_Generic:MovieScene_0.SkyLight_2.SkyLightComponent0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.105"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight_2",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "LightGuid": "0E6D48CA-470BA950-6A4982A8-805BA284",
+      "RelativeLocation": {
+        "X": 20.774353,
+        "Y": -30.99527,
+        "Z": 504.74823
+      },
+      "Mobility": "EComponentMobility::Static"
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "Plane_2",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'CCL_Activity_Generic:MovieScene_0.Plane_2.StaticMeshComponent0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.107"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'CCL_Activity_Generic:MovieScene_0.Plane_2.StaticMeshComponent0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.107"
+      },
+      "Tags": [
+        "SequencerActor"
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "Plane_2",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Plane'",
+        "ObjectPath": "/Engine/BasicShapes/Plane.2"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_HOG_EH_EXT_StonePlain_Tile_INST'",
+          "ObjectPath": "/Game/Environment/Hogwarts/SUB_EntranceHall/Materials/EXTERIOR/M_HOG_EH_EXT_StonePlain_Tile_INST.0"
+        }
+      ],
+      "BodyInstance": {
+        "MaxAngularVelocity": 3599.9998
+      },
+      "RelativeLocation": {
+        "X": -32.14598,
+        "Y": 208.99123,
+        "Z": 174.06476
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -89.99999
+      }
+    }
+  },
+  {
+    "Type": "TargetTracker",
+    "Name": "AimAtTargetTracker",
+    "Outer": "AlastairScott_0",
+    "Template": "AimAtTargetTracker",
+    "Class": "UScriptClass'TargetTracker'"
+  },
+  {
+    "Type": "TargetTracker",
+    "Name": "FaceTargetTracker",
+    "Outer": "AlastairScott_0",
+    "Template": "FaceTargetTracker",
+    "Class": "UScriptClass'TargetTracker'"
+  },
+  {
+    "Type": "TargetTracker",
+    "Name": "LookAtTargetTracker",
+    "Outer": "AlastairScott_0",
+    "Template": "LookAtTargetTracker",
+    "Class": "UScriptClass'TargetTracker'"
+  },
+  {
+    "Type": "TextRenderActor",
+    "Name": "TextRenderActor_1",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'TextRenderActor'",
+    "Properties": {
+      "TextRender": {
+        "ObjectName": "TextRenderComponent'CCL_Activity_Generic:MovieScene_0.TextRenderActor_1.NewTextRenderComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.113"
+      },
+      "RootComponent": {
+        "ObjectName": "TextRenderComponent'CCL_Activity_Generic:MovieScene_0.TextRenderActor_1.NewTextRenderComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.113"
+      },
+      "Tags": [
+        "SequencerActor"
+      ]
+    }
+  },
+  {
+    "Type": "TextRenderActor",
+    "Name": "TextRenderActor_3",
+    "Outer": "MovieScene_0",
+    "Class": "UScriptClass'TextRenderActor'",
+    "Properties": {
+      "TextRender": {
+        "ObjectName": "TextRenderComponent'CCL_Activity_Generic:MovieScene_0.TextRenderActor_3.NewTextRenderComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.114"
+      },
+      "RootComponent": {
+        "ObjectName": "TextRenderComponent'CCL_Activity_Generic:MovieScene_0.TextRenderActor_3.NewTextRenderComponent'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_Generic/CCL_Activity_Generic.114"
+      },
+      "Tags": [
+        "SequencerActor"
+      ]
+    }
+  },
+  {
+    "Type": "TextRenderComponent",
+    "Name": "NewTextRenderComponent",
+    "Outer": "TextRenderActor_1",
+    "Class": "UScriptClass'TextRenderComponent'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "5FB782594E963FDA1D12ADAED1B43ACA",
+        "SourceString": "Placeholder Cinematic ",
+        "LocalizedString": "Placeholder Cinematic "
+      },
+      "TextRenderColor": {
+        "B": 255,
+        "G": 244,
+        "R": 246,
+        "A": 255,
+        "Hex": "FFF6F4FF"
+      },
+      "RelativeLocation": {
+        "X": 181.25107,
+        "Y": -351.02142,
+        "Z": 322.6116
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.99999,
+        "Roll": 0.0
+      },
+      "ComponentVelocity": {
+        "X": 1.3071069,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "TextRenderComponent",
+    "Name": "NewTextRenderComponent",
+    "Outer": "TextRenderActor_3",
+    "Class": "UScriptClass'TextRenderComponent'",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "D85E7CA347D99658547185A1F5C2F194",
+        "SourceString": "Temporary Asset",
+        "LocalizedString": "Temporary Asset"
+      },
+      "TextRenderColor": {
+        "B": 255,
+        "G": 244,
+        "R": 246,
+        "A": 255,
+        "Hex": "FFF6F4FF"
+      },
+      "RelativeLocation": {
+        "X": 181.25107,
+        "Y": -351.02142,
+        "Z": 322.6116
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -89.99999,
+        "Roll": 0.0
+      },
+      "ComponentVelocity": {
+        "X": 8.093698,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "Transform_FromActor",
+    "Name": "Transform_FromActor_0",
+    "Outer": "AnimationComponent",
+    "Template": "Transform_FromActor_0",
+    "Class": "UScriptClass'Transform_FromActor'"
+  },
+  {
+    "Type": "Transform_FromActor",
+    "Name": "DefaultAnchor",
+    "Outer": "SceneRigAnimationSection_1",
+    "Class": "UScriptClass'Transform_FromActor'"
+  }
+]

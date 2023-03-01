@@ -1,0 +1,162 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "RB_BodySetup_7",
+    "Outer": "SM_DayNight__SkySphere",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "PhysicsType": "PhysType_Kinematic"
+    },
+    "BodySetupGuid": "9DA9EA78461534BE285D8D89EF5FE5F4"
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_DayNight__SkySphere",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x28337"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_DayNight__SkySphere",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": null,
+          "MaterialSlotName": "M_Sky_Panning_Clouds2",
+          "ImportedMaterialSlotName": "M_DayNight_Sky_Panning_Clouds2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 10800.838,
+            "LocalUVDensities": 17127.469,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 17127.469,
+      "LightMapResolution": 32,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 4096.0,
+          "Y": 4096.0,
+          "Z": 4096.0
+        },
+        "SphereRadius": 4096.0005
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_DayNight__SkySphere:RB_BodySetup_7'",
+      "ObjectPath": "/Game/Sky/SM_DayNight__SkySphere.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_DayNight__SkySphere:NavCollision_0'",
+      "ObjectPath": "/Game/Sky/SM_DayNight__SkySphere.1"
+    },
+    "LightingGuid": "D679C573-49C00610-3924DCB6-B7CC3FC7",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 3968,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 2207,
+              "bEnableCollision": false,
+              "bCastShadow": false,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2208
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 2208,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 4096.0,
+          "Y": 4096.0,
+          "Z": 4096.0
+        },
+        "SphereRadius": 4096.0005
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

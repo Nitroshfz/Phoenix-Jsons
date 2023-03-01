@@ -1,0 +1,226 @@
+[
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_0",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIV_BEA_01_NurtureKneazles_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CIV_BEA_01_NurtureKneazles_SR.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_1",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIV_BEA_01_EndOfClass_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CIV_BEA_01_EndOfClass_SR.24"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_1",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_0",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "Start",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.5"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_0",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "EndOfClassFinished",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_0",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.0"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'SG_BEA_01_NurtureNeazles:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.3"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.6"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_1",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.1"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.5"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_NurtureNeazles:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.4"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.SG_BEA_01_NurtureNeazles:StoryNode_OutputEvent_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.10"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraph",
+    "Name": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'TimeRig_StoryGraph'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'SG_BEA_01_NurtureNeazles:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.3"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'SG_BEA_01_NurtureNeazles:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.3"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.5"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.6"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_NurtureNeazles:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.4"
+        }
+      ],
+      "AllEdges": [
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.8"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.9"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_0",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'SG_BEA_01_NurtureNeazles:StoryNode_InputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.3"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.5"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_1",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'SG_BEA_01_NurtureNeazles:TimeRig_StoryGraphEdge_1.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.2"
+      },
+      "TriggerType": "ETimeRig_StoryGraphEdgeTriggerType::TriggeredByParentNode",
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.5"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.6"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_3",
+    "Outer": "SG_BEA_01_NurtureNeazles",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_NurtureNeazles:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.6"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_NurtureNeazles:StoryNode_OutputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_NurtureNeazles.4"
+      }
+    }
+  }
+]

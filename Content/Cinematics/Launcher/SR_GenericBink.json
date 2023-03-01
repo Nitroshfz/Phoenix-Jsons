@@ -1,0 +1,132 @@
+[
+  {
+    "Type": "SceneAction_PlayBinkMedia",
+    "Name": "SceneAction_PlayBinkMedia_0",
+    "Outer": "SR_GenericBink",
+    "Class": "UScriptClass'SceneAction_PlayBinkMedia'",
+    "Properties": {
+      "WidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass'BP_UI_PlayBinkMedia_C'",
+        "ObjectPath": "/Game/Cinematics/SceneActions/PlayBinkMedia/BP_UI_PlayBinkMedia.5"
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_PlayBinkMedia'SR_GenericBink:SceneAction_PlayBinkMedia_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.0"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'SR_GenericBink:SceneAction_PlayBinkMedia_0.TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.4"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_PlayBinkMedia'SR_GenericBink:SceneAction_PlayBinkMedia_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.0"
+        },
+        "Event": {
+          "ObjectName": "TimeRigAutoEvent'SR_GenericBink:SceneAction_PlayBinkMedia_0.TimeRigAutoEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.3"
+        }
+      },
+      "UserName": "Play Bink Media: FMV_CIN_FIG_01_07_PagesMissing"
+    }
+  },
+  {
+    "Type": "SceneRig_Bink",
+    "Name": "SR_GenericBink",
+    "Class": "UScriptClass'SceneRig_Bink'",
+    "Properties": {
+      "SceneRoot": {
+        "DefaultProvider": {
+          "ObjectName": "Transform_SceneRigActor'SR_GenericBink:Transform_SceneRigActor_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.6"
+        }
+      },
+      "EventHull": [
+        {
+          "ObjectName": "TimeRigAutoEvent'SR_GenericBink:SceneAction_PlayBinkMedia_0.TimeRigAutoEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.3"
+        }
+      ],
+      "ChildElements": [
+        {
+          "ObjectName": "SceneAction_PlayBinkMedia'SR_GenericBink:SceneAction_PlayBinkMedia_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.0"
+        }
+      ],
+      "StoryGraph": {
+        "ObjectName": "TimeRig_StoryGraph'SR_GenericBink:TimeRig_StoryGraph_0'",
+        "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.2"
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneRig_Bink'SR_GenericBink'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.1"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneRig_Bink'SR_GenericBink'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.1"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'SR_GenericBink:TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraph",
+    "Name": "TimeRig_StoryGraph_0",
+    "Outer": "SR_GenericBink",
+    "Class": "UScriptClass'TimeRig_StoryGraph'"
+  },
+  {
+    "Type": "TimeRigAutoEvent",
+    "Name": "TimeRigAutoEvent_0",
+    "Outer": "SceneAction_PlayBinkMedia_0",
+    "Class": "UScriptClass'TimeRigAutoEvent'"
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "SceneAction_PlayBinkMedia_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Launcher/SR_GenericBink.SR_GenericBink",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig_Bink'SR_GenericBink'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.1"
+        },
+        "Name": "Start"
+      }
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "SR_GenericBink",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneAction_PlayBinkMedia'SR_GenericBink:SceneAction_PlayBinkMedia_0'",
+          "ObjectPath": "/Game/Cinematics/Launcher/SR_GenericBink.0"
+        },
+        "Name": "Finish"
+      }
+    }
+  },
+  {
+    "Type": "Transform_SceneRigActor",
+    "Name": "Transform_SceneRigActor_0",
+    "Outer": "SR_GenericBink",
+    "Class": "UScriptClass'Transform_SceneRigActor'"
+  }
+]

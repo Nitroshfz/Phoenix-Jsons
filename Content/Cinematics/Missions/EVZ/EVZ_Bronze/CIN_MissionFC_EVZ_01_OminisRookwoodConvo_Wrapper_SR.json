@@ -1,0 +1,526 @@
+[
+  {
+    "Type": "Actor_ByCharacterID",
+    "Name": "Actor_ByCharacterID_0",
+    "Outer": "SceneRigProxyActor_0",
+    "Class": "UScriptClass'Actor_ByCharacterID'",
+    "Properties": {
+      "DBInfo": {
+        "ObjectType": "CharacterDefinition",
+        "ObjectToSpawn": "OminisGaunt",
+        "MyIndex": 0
+      }
+    }
+  },
+  {
+    "Type": "Actor_FromSpawner",
+    "Name": "Actor_FromSpawner_0",
+    "Outer": "SceneRigProxyActor_3",
+    "Class": "UScriptClass'Actor_FromSpawner'",
+    "Properties": {
+      "Spawner": {
+        "ObjectName": "Spawn_ByClass'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.13"
+      }
+    }
+  },
+  {
+    "Type": "Actor_SceneRigProxyActor",
+    "Name": "Actor_SceneRigProxyActor_0",
+    "Outer": "SceneAction_ActivateHideTrigger_0",
+    "Class": "UScriptClass'Actor_SceneRigProxyActor'"
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent_0",
+    "Outer": "Spawn_ByClass_0_ActorTemplate",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      "AreaClass": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "AttachParent": {
+        "ObjectName": "BoxComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.CollisionComp'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.4"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "CreationMethod": "EComponentCreationMethod::Instance"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CollisionComp",
+    "Outer": "Spawn_ByClass_0_ActorTemplate",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 10000.0,
+        "Y": 10000.0,
+        "Z": 5000.0
+      }
+    }
+  },
+  {
+    "Type": "HideTrigger",
+    "Name": "Spawn_ByClass_0_ActorTemplate",
+    "Outer": "Spawn_ByClass_0",
+    "Class": "UScriptClass'HideTrigger'",
+    "Properties": {
+      "HideFlags": 10,
+      "PauseScheduleFlags": 84,
+      "bStartActive": false,
+      "bExcludeCompanions": false,
+      "bShutdownExternalNpcs": true,
+      "DynamicObstacleShape": "EDynamicObstacleShape::SHAPE_BOX",
+      "DynamicObstacle": {
+        "ObjectName": "BoxComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.BoxComponent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.3"
+      },
+      "NavObstacle": {
+        "ObjectName": "OdcObstacleComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.NavObstacle'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.6"
+      },
+      "CollisionComponent": {
+        "ObjectName": "BoxComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.CollisionComp'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.4"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.CollisionComp'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.4"
+      },
+      "InstanceComponents": [
+        {
+          "ObjectName": "BoxComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.BoxComponent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OdcObstacleComponent",
+    "Name": "NavObstacle",
+    "Outer": "Spawn_ByClass_0_ActorTemplate",
+    "Class": "UScriptClass'OdcObstacleComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate.CollisionComp'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.4"
+      }
+    }
+  },
+  {
+    "Type": "SceneAction_ActivateHideTrigger",
+    "Name": "SceneAction_ActivateHideTrigger_0",
+    "Outer": "SceneRigProxyActor_3",
+    "Class": "UScriptClass'SceneAction_ActivateHideTrigger'",
+    "Properties": {
+      "bHasProxyParent": true,
+      "ActorProvider": {
+        "ObjectName": "Actor_SceneRigProxyActor'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0.Actor_SceneRigProxyActor_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.2"
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_ActivateHideTrigger'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.7"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0.TimeRigRelativeEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.23"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_ActivateHideTrigger'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.7"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0.TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.22"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneAction_PlayForcedConversation",
+    "Name": "SceneAction_PlayForcedConversation_0",
+    "Outer": "SceneRigProxyActor_0",
+    "Class": "UScriptClass'SceneAction_PlayForcedConversation'",
+    "Properties": {
+      "ConversationGraph": {
+        "ObjectName": "StoryGraph_Conversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_SG'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_SG.43"
+      },
+      "ConversationStart": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        },
+        "Event": {
+          "ObjectName": "TimeRigCustomEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0.TimeRigCustomEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.16"
+        }
+      },
+      "ConversationEnd": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        },
+        "Event": {
+          "ObjectName": "TimeRigCustomEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0.TimeRigCustomEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.17"
+        }
+      },
+      "bHasProxyParent": true,
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0.TimeRigRelativeEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.21"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        },
+        "Event": {
+          "ObjectName": "TimeRigExternalEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0.TimeRigExternalEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneAction_Transform",
+    "Name": "SceneAction_Transform_0",
+    "Outer": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'SceneAction_Transform'",
+    "Properties": {
+      "Layer": {
+        "LayerName": "Base"
+      },
+      "bConstant": true,
+      "DefaultValue": {
+        "Rotation": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -0.9959928,
+          "W": -0.08944318,
+          "IsNormalized": true,
+          "Size": 1.0000008,
+          "SizeSquared": 1.0000017
+        },
+        "Translation": {
+          "X": 367534.28,
+          "Y": -451309.66,
+          "Z": -82000.0
+        }
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_Transform'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneAction_Transform_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.9"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneAction_Transform_0.TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.19"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_Transform'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneAction_Transform_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.9"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneAction_Transform_0.TimeRigRelativeEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneRig",
+    "Name": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'SceneRig'",
+    "Properties": {
+      "SceneRoot": {
+        "DefaultProvider": {
+          "ObjectName": "Transform_SceneRigActor'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:Transform_SceneRigActor_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.25"
+        }
+      },
+      "PreviewLevels": [
+        {
+          "AssetPathName": "/Game/Environment/Hogwarts/SUB_GreatHall/SUB_GreatHall_Int.SUB_GreatHall_INT",
+          "SubPathString": ""
+        }
+      ],
+      "EventHull": [
+        {
+          "ObjectName": "TimeRigExternalEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0.TimeRigExternalEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.18"
+        },
+        {
+          "ObjectName": "TimeRigRelativeEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0.TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.22"
+        }
+      ],
+      "ChildElements": [
+        {
+          "ObjectName": "SceneRigProxyActor'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.11"
+        },
+        {
+          "ObjectName": "SceneRigProxyActor'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.12"
+        }
+      ],
+      "StoryGraph": {
+        "ObjectName": "TimeRig_StoryGraph'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:TimeRig_StoryGraph_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.14"
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneRig'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.10"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneRig'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.10"
+        },
+        "Event": {
+          "ObjectName": "TimeRigAutoEvent'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:TimeRigAutoEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneRigProxyActor",
+    "Name": "SceneRigProxyActor_0",
+    "Outer": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'SceneRigProxyActor'",
+    "Properties": {
+      "Actor": {
+        "ObjectName": "Actor_ByCharacterID'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.Actor_ByCharacterID_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.0"
+      },
+      "ChildElements": [
+        {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneRigProxyActor",
+    "Name": "SceneRigProxyActor_3",
+    "Outer": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'SceneRigProxyActor'",
+    "Properties": {
+      "Actor": {
+        "ObjectName": "Actor_FromSpawner'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.1"
+      },
+      "ChildElements": [
+        {
+          "ObjectName": "SceneAction_Transform'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneAction_Transform_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.9"
+        },
+        {
+          "ObjectName": "SceneAction_ActivateHideTrigger'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.SceneAction_ActivateHideTrigger_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Spawn_ByClass",
+    "Name": "Spawn_ByClass_0",
+    "Outer": "Actor_FromSpawner_0",
+    "Class": "UScriptClass'Spawn_ByClass'",
+    "Properties": {
+      "ActorClass": {
+        "ObjectName": "Class'HideTrigger'",
+        "ObjectPath": "/Script/Phoenix"
+      },
+      "ActorTemplate": {
+        "ObjectName": "HideTrigger'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Spawn_ByClass_0_ActorTemplate'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.5"
+      },
+      "SpawnLocation": {
+        "ObjectName": "Transform_Direct'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_3.Actor_FromSpawner_0.Spawn_ByClass_0.Transform_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.24"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraph",
+    "Name": "TimeRig_StoryGraph_0",
+    "Outer": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'TimeRig_StoryGraph'"
+  },
+  {
+    "Type": "TimeRigAutoEvent",
+    "Name": "TimeRigAutoEvent_1",
+    "Outer": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'TimeRigAutoEvent'"
+  },
+  {
+    "Type": "TimeRigCustomEvent",
+    "Name": "TimeRigCustomEvent_0",
+    "Outer": "SceneAction_PlayForcedConversation_0",
+    "Class": "UScriptClass'TimeRigCustomEvent'",
+    "Properties": {
+      "CustomEventName": "ConversationStart",
+      "DefaultOffset": {
+        "Time": 0.2
+      }
+    }
+  },
+  {
+    "Type": "TimeRigCustomEvent",
+    "Name": "TimeRigCustomEvent_1",
+    "Outer": "SceneAction_PlayForcedConversation_0",
+    "Class": "UScriptClass'TimeRigCustomEvent'",
+    "Properties": {
+      "CustomEventName": "ConversationEnd",
+      "DefaultOffset": {
+        "Time": 2.8
+      }
+    }
+  },
+  {
+    "Type": "TimeRigExternalEvent",
+    "Name": "TimeRigExternalEvent_0",
+    "Outer": "SceneAction_PlayForcedConversation_0",
+    "Class": "UScriptClass'TimeRigExternalEvent'",
+    "Properties": {
+      "DefaultTime": 3.0
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "SceneAction_Transform_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.10"
+        },
+        "Name": "Start"
+      }
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_1",
+    "Outer": "SceneAction_Transform_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.10"
+        },
+        "Name": "Finish"
+      }
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_1",
+    "Outer": "SceneAction_PlayForcedConversation_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+          "SubPathString": ""
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.10"
+        },
+        "Name": "Start"
+      }
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "SceneAction_ActivateHideTrigger_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+          "SubPathString": "SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0"
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        },
+        "Name": "ConversationEnd"
+      }
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_1",
+    "Outer": "SceneAction_ActivateHideTrigger_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+          "SubPathString": "SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0"
+        },
+        "ReferenceElement": {
+          "ObjectName": "SceneAction_PlayForcedConversation'CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR:SceneRigProxyActor_0.SceneAction_PlayForcedConversation_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR.8"
+        },
+        "Name": "ConversationStart"
+      }
+    }
+  },
+  {
+    "Type": "Transform_Direct",
+    "Name": "Transform_Direct_0",
+    "Outer": "Spawn_ByClass_0",
+    "Class": "UScriptClass'Transform_Direct'"
+  },
+  {
+    "Type": "Transform_SceneRigActor",
+    "Name": "Transform_SceneRigActor_0",
+    "Outer": "CIN_MissionFC_EVZ_01_OminisRookwoodConvo_Wrapper_SR",
+    "Class": "UScriptClass'Transform_SceneRigActor'"
+  }
+]

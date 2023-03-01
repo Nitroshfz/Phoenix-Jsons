@@ -1,0 +1,306 @@
+[
+  {
+    "Type": "SceneAction_HUDVisibility",
+    "Name": "SceneAction_HUDVisibility_0",
+    "Outer": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'SceneAction_HUDVisibility'",
+    "Properties": {
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_HUDVisibility'CCL_Activity_WandSelection_A_SR:SceneAction_HUDVisibility_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.0"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CCL_Activity_WandSelection_A_SR:SceneAction_HUDVisibility_0.TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.7"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneAction_HUDVisibility'CCL_Activity_WandSelection_A_SR:SceneAction_HUDVisibility_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.0"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CCL_Activity_WandSelection_A_SR:SceneAction_HUDVisibility_0.TimeRigRelativeEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "SceneRig",
+    "Name": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'SceneRig'",
+    "Properties": {
+      "DefaultStage": {
+        "ObjectName": "SceneRigStage_SimpleConversation'SRS_OllivandersWandShopConv'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/SRS_OllivandersWandShopConv.15"
+      },
+      "EventHull": [
+        {
+          "ObjectName": "TimeRigAutoEvent'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0.TimeRigAutoEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.4"
+        }
+      ],
+      "ChildElements": [
+        {
+          "ObjectName": "SceneAction_HUDVisibility'CCL_Activity_WandSelection_A_SR:SceneAction_HUDVisibility_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.0"
+        },
+        {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        }
+      ],
+      "StoryGraph": {
+        "ObjectName": "TimeRig_StoryGraph'CCL_Activity_WandSelection_A_SR:TimeRig_StoryGraph_0'",
+        "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.3"
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CCL_Activity_WandSelection_A_SR:TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.11"
+        }
+      },
+      "NamedSymbols": [
+        {
+          "Name": "DialogueFinish",
+          "OwningElement": {
+            "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+          },
+          "Event": {
+            "ObjectName": "TimeRigRelativeEvent'CCL_Activity_WandSelection_A_SR:TimeRigRelativeEvent_1'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.12"
+          }
+        },
+        {
+          "Name": "ForceFinish",
+          "OwningElement": {
+            "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+          },
+          "Event": {
+            "ObjectName": "TimeRigExternalEvent'CCL_Activity_WandSelection_A_SR:TimeRigExternalEvent_0'",
+            "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.6"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneRigRule_DialogueSequence",
+    "Name": "SceneRigRule_DialogueSequence_0",
+    "Outer": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'SceneRigRule_DialogueSequence'",
+    "Properties": {
+      "DialogueEventName": {
+        "ReferenceName": "DialogueEventName"
+      },
+      "DialogueSequenceName": {
+        "ReferenceName": "DialogueSequenceID"
+      },
+      "DialogueFlags": {
+        "ReferenceName": "DialogueFlags"
+      },
+      "RuleAssets": [
+        {
+          "ForSpecificActor": false,
+          "SpecificActor": {
+            "ParameterType": {
+              "ObjectName": "Class'SceneRigStage_Actor'",
+              "ObjectPath": "/Script/SceneRig"
+            },
+            "ReferenceName": "None"
+          },
+          "Tags": [],
+          "Rule": {
+            "ObjectName": "DialogueSequenceRule'DA_DSR_Stand2P_Generic_Bronze'",
+            "ObjectPath": "/Game/Cinematics/Conversations/DSR/DSR_Generic/_old/DA_DSR_Stand2P_Generic_Bronze.27"
+          }
+        }
+      ],
+      "DialogueFinish": {
+        "OwningElement": {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        },
+        "Event": {
+          "ObjectName": "TimeRigCustomEvent'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0.TimeRigCustomEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.5"
+        }
+      },
+      "ForceFinish": {
+        "OwningElement": {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0.TimeRigRelativeEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.10"
+        }
+      },
+      "Start": {
+        "OwningElement": {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        },
+        "Event": {
+          "ObjectName": "TimeRigRelativeEvent'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0.TimeRigRelativeEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.9"
+        }
+      },
+      "Finish": {
+        "OwningElement": {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        },
+        "Event": {
+          "ObjectName": "TimeRigAutoEvent'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0.TimeRigAutoEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.4"
+        }
+      },
+      "UserName": "Dialogue Sequence"
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraph",
+    "Name": "TimeRig_StoryGraph_0",
+    "Outer": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'TimeRig_StoryGraph'"
+  },
+  {
+    "Type": "TimeRigAutoEvent",
+    "Name": "TimeRigAutoEvent_0",
+    "Outer": "SceneRigRule_DialogueSequence_0",
+    "Class": "UScriptClass'TimeRigAutoEvent'",
+    "Properties": {
+      "CoordinateIndex": 1
+    }
+  },
+  {
+    "Type": "TimeRigCustomEvent",
+    "Name": "TimeRigCustomEvent_0",
+    "Outer": "SceneRigRule_DialogueSequence_0",
+    "Class": "UScriptClass'TimeRigCustomEvent'",
+    "Properties": {
+      "CustomEventName": "DialogueFinish",
+      "CoordinateIndex": 3
+    }
+  },
+  {
+    "Type": "TimeRigExternalEvent",
+    "Name": "TimeRigExternalEvent_0",
+    "Outer": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'TimeRigExternalEvent'",
+    "Properties": {
+      "DefaultTime": 24.233335,
+      "CoordinateIndex": 5
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "SceneAction_HUDVisibility_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+        },
+        "Name": "Start"
+      },
+      "CoordinateIndex": 6
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_1",
+    "Outer": "SceneAction_HUDVisibility_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+        },
+        "Name": "Finish"
+      },
+      "CoordinateIndex": 7
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "SceneRigRule_DialogueSequence_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+        },
+        "Name": "Start"
+      }
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_1",
+    "Outer": "SceneRigRule_DialogueSequence_0",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRig'CCL_Activity_WandSelection_A_SR'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.1"
+        },
+        "Name": "ForceFinish"
+      },
+      "CoordinateIndex": 8
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_0",
+    "Outer": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        },
+        "Name": "Finish"
+      },
+      "CoordinateIndex": 2
+    }
+  },
+  {
+    "Type": "TimeRigRelativeEvent",
+    "Name": "TimeRigRelativeEvent_1",
+    "Outer": "CCL_Activity_WandSelection_A_SR",
+    "Class": "UScriptClass'TimeRigRelativeEvent'",
+    "Properties": {
+      "ParentReference": {
+        "ReferenceElement": {
+          "ObjectName": "SceneRigRule_DialogueSequence'CCL_Activity_WandSelection_A_SR:SceneRigRule_DialogueSequence_0'",
+          "ObjectPath": "/Game/Cinematics/Activities/CCL_Activity_WandSelection/CCL_Activity_WandSelection_A_SR.2"
+        },
+        "Name": "DialogueFinish"
+      },
+      "CoordinateIndex": 4
+    }
+  }
+]

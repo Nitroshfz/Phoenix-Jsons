@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_0",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIN_MissionFC_EVZ_01_SebRookwoodConvo_Wrapper_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_MissionFC_EVZ_01_SebRookwoodConvo_Wrapper_SR.10"
+      }
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_0",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_3",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_0",
+    "Outer": "CIN_EVZ_01_SebastianConvo_SG",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "Start",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.5"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_EVZ_01_SebastianConvo_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.7"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_0",
+    "Outer": "CIN_EVZ_01_SebastianConvo_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "Finish",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_0",
+    "Outer": "CIN_EVZ_01_SebastianConvo_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.0"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.3"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.4"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.CIN_EVZ_01_SebastianConvo_SG:StoryNode_OutputEvent_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_EVZ_01_SebastianConvo_SG:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraph",
+    "Name": "CIN_EVZ_01_SebastianConvo_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraph'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.3"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.3"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.4"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.5"
+        }
+      ],
+      "AllEdges": [
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_EVZ_01_SebastianConvo_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.7"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CIN_EVZ_01_SebastianConvo_SG:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_0",
+    "Outer": "CIN_EVZ_01_SebastianConvo_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CIN_EVZ_01_SebastianConvo_SG:TimeRig_StoryGraphEdge_0.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.1"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_InputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.3"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.5"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_3",
+    "Outer": "CIN_EVZ_01_SebastianConvo_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CIN_EVZ_01_SebastianConvo_SG:TimeRig_StoryGraphEdge_3.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.2"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CIN_EVZ_01_SebastianConvo_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.5"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CIN_EVZ_01_SebastianConvo_SG:StoryNode_OutputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/EVZ/EVZ_Bronze/CIN_EVZ_01_SebastianConvo_SG.4"
+      }
+    }
+  }
+]

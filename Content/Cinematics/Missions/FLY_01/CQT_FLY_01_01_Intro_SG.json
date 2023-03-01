@@ -1,0 +1,368 @@
+[
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_1",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CQT_FLY_01_Ambient_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_Ambient_SR.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_0",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CQT_FLY_01_01_Up_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_01_01_Up/CQT_FLY_01_01_Up_SR.6610"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_1",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CQT_FLY_01_01_IntroPIM_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_IntroPIM_SR.522"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_2",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CQT_FLY_01_01_IntroPT2_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_IntroPT2_SR.1830"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_StoryGraph",
+    "Name": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'SceneRig_StoryGraph'",
+    "Properties": {
+      "AmbientSceneRig": {
+        "ObjectName": "SceneRig_Direct'CQT_FLY_01_01_Intro_SG:SceneRig_Direct_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.0"
+      },
+      "RootNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.9"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.11"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.12"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.13"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.10"
+        }
+      ],
+      "AllEdges": [
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.14"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.15"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.16"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.17"
+        }
+      ],
+      "bPersistent": false
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_0",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "InitializationType": "EStoryGraphTriggerActive_InitializeType::InitializeWhenTriggered"
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_1",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationType": "EStoryGraphTrigger_ActivateType::ActivatedByEvent",
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/FLY_01/CQT_01_01_Up/CQT_FLY_01_01_Up_SR.CQT_FLY_01_01_Up_SR",
+          "SubPathString": "SceneAction_Camera_0"
+        },
+        "Name": "Finish"
+      },
+      "FeedbackType": "ETimeRig_StoryGraphEdgeFeedbackType::FeedbackStopOnTargetStart"
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_2",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationType": "EStoryGraphTrigger_ActivateType::ActivatedByEvent",
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_IntroPIM_SR.CQT_FLY_01_01_IntroPIM_SR",
+          "SubPathString": "SceneAction_Camera_0"
+        },
+        "Name": "Finish"
+      },
+      "FeedbackType": "ETimeRig_StoryGraphEdgeFeedbackType::FeedbackStopOnTargetStart"
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_3",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "InitializationType": "EStoryGraphTriggerActive_InitializeType::InitializeWhenTriggered"
+    }
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_0",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "Start",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.11"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_0",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "Finish",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_0",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.1"
+      },
+      "InitializingBehavior": "ETimeRigInitializingBehavior::FadeToBlackHoldFade",
+      "bSkippable": true,
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.9"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.12"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_1",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.2"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.11"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.13"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_2",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.3"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.12"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_OutputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.10"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.CQT_FLY_01_01_Intro_SG:StoryNode_OutputEvent_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_0",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_0.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.5"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_InputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.9"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.11"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_1",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_1.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.6"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.11"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.12"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_2",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_2.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.7"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.12"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.13"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_3",
+    "Outer": "CQT_FLY_01_01_Intro_SG",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'CQT_FLY_01_01_Intro_SG:TimeRig_StoryGraphEdge_3.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.8"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'CQT_FLY_01_01_Intro_SG:StoryNode_SceneRig_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.13"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'CQT_FLY_01_01_Intro_SG:StoryNode_OutputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/FLY_01/CQT_FLY_01_01_Intro_SG.10"
+      }
+    }
+  }
+]

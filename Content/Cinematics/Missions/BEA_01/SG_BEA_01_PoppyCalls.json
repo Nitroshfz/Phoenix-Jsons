@@ -1,0 +1,322 @@
+[
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_1",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'SceneRig_Direct'"
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_0",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIN_Mission_BEA_01_03_PoppysOffer_SR'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CIN_Mission_BEA_01_03_PoppysOffer_SR.20"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_Direct",
+    "Name": "SceneRig_Direct_0",
+    "Outer": "StoryNode_SceneRig_1",
+    "Class": "UScriptClass'SceneRig_Direct'",
+    "Properties": {
+      "SceneRig": {
+        "ObjectName": "SceneRig'CIV_BEA_01_PoppyCalls'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/CIV_BEA_01_PoppyCalls.19"
+      }
+    }
+  },
+  {
+    "Type": "SceneRig_StoryGraph",
+    "Name": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'SceneRig_StoryGraph'",
+    "Properties": {
+      "AmbientSceneRig": {
+        "ObjectName": "SceneRig_Direct'SG_BEA_01_PoppyCalls:SceneRig_Direct_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.0"
+      },
+      "RootNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'SG_BEA_01_PoppyCalls:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.8"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'SG_BEA_01_PoppyCalls:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.8"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.9"
+        },
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.11"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.10"
+        }
+      ],
+      "AllEdges": [
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.13"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.14"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.15"
+        },
+        {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_4'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_0",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_2",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_3",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'"
+  },
+  {
+    "Type": "StoryGraphTrigger_Activate",
+    "Name": "StoryGraphTrigger_Activate_0",
+    "Outer": "TimeRig_StoryGraphEdge_4",
+    "Class": "UScriptClass'StoryGraphTrigger_Activate'",
+    "Properties": {
+      "ActivationType": "EStoryGraphTrigger_ActivateType::ActivatedByEvent",
+      "ActivationEvent": {
+        "ReferenceElementSoftPtr": {
+          "AssetPathName": "/Game/Cinematics/Missions/BEA_01/CIN_Mission_BEA_01_03_PoppysOffer_SR.CIN_Mission_BEA_01_03_PoppysOffer_SR",
+          "SubPathString": "SceneRigProxyActor_0.SceneAction_PlayTalkToConversation_0"
+        },
+        "Name": "ConversationEnd"
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_InputEvent",
+    "Name": "StoryNode_InputEvent_0",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'StoryNode_InputEvent'",
+    "Properties": {
+      "EventName": "Start",
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+        }
+      ],
+      "Edges": {
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_1",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "CalloutFinished",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_OutputEvent",
+    "Name": "StoryNode_OutputEvent_2",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'StoryNode_OutputEvent'",
+    "Properties": {
+      "EventName": "Finished",
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_0",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.1"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.10"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_2'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_4'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "StoryNode_SceneRig",
+    "Name": "StoryNode_SceneRig_1",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'StoryNode_SceneRig'",
+    "Properties": {
+      "StorySR": {
+        "ObjectName": "SceneRig_Direct'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1.SceneRig_Direct_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.2"
+      },
+      "ParentNodes": [
+        {
+          "ObjectName": "StoryNode_InputEvent'SG_BEA_01_PoppyCalls:StoryNode_InputEvent_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.8"
+        }
+      ],
+      "ChildrenNodes": [
+        {
+          "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.11"
+        },
+        {
+          "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_1'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.9"
+        }
+      ],
+      "Edges": {
+        "StoryNode_OutputEvent'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_1'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_2'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.14"
+        },
+        "StoryNode_SceneRig'/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0'": {
+          "ObjectName": "TimeRig_StoryGraphEdge'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_3'",
+          "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_0",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_0.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.4"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_InputEvent'SG_BEA_01_PoppyCalls:StoryNode_InputEvent_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.8"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_2",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_2.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.5"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.9"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_3",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_3.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.6"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_1'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.12"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.11"
+      }
+    }
+  },
+  {
+    "Type": "TimeRig_StoryGraphEdge",
+    "Name": "TimeRig_StoryGraphEdge_4",
+    "Outer": "SG_BEA_01_PoppyCalls",
+    "Class": "UScriptClass'TimeRig_StoryGraphEdge'",
+    "Properties": {
+      "Trigger": {
+        "ObjectName": "StoryGraphTrigger_Activate'SG_BEA_01_PoppyCalls:TimeRig_StoryGraphEdge_4.StoryGraphTrigger_Activate_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.7"
+      },
+      "StartNode": {
+        "ObjectName": "StoryNode_SceneRig'SG_BEA_01_PoppyCalls:StoryNode_SceneRig_0'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.11"
+      },
+      "EndNode": {
+        "ObjectName": "StoryNode_OutputEvent'SG_BEA_01_PoppyCalls:StoryNode_OutputEvent_2'",
+        "ObjectPath": "/Game/Cinematics/Missions/BEA_01/SG_BEA_01_PoppyCalls.10"
+      }
+    }
+  }
+]
