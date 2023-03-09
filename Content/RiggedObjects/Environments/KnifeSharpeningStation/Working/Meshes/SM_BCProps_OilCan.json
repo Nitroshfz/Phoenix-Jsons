@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_BCProps_OilCan",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "5FEC3FCC404DC6D6157ADD884817A00E",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x316D"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_BCProps_OilCan",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x31D1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_BCProps_OilCan",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_BCProps_OilCan_Rag'",
+            "ObjectPath": "/Game/RiggedObjects/Environments/KnifeSharpeningStation/Working/Materials/MI_BCProps_OilCan_Rag.0"
+          },
+          "MaterialSlotName": "MI_BCProps_OilCan_Rag",
+          "ImportedMaterialSlotName": "MI_BCProps_OilCan_Rag",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 65.22221,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 65.22221,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 13.911901
+        },
+        "BoxExtent": {
+          "X": 6.069361,
+          "Y": 6.069361,
+          "Z": 13.552857
+        },
+        "SphereRadius": 14.771491
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_BCProps_OilCan:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/KnifeSharpeningStation/Working/Meshes/SM_BCProps_OilCan.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_BCProps_OilCan:NavCollision_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/KnifeSharpeningStation/Working/Meshes/SM_BCProps_OilCan.1"
+    },
+    "LightingGuid": "C6D3F4F7-4F148600-B4DFCF95-17FEA405",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 386,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 273,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 274
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 274,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 96,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 93,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 2.2234936,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 94
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 94,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 13.911901
+        },
+        "BoxExtent": {
+          "X": 6.069361,
+          "Y": 6.069361,
+          "Z": 13.552857
+        },
+        "SphereRadius": 14.771491
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.04521867,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_Behavior_Resurrect",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "AllowGetup": true,
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToGetupPose",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.Resurrect"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Weak",
+      "PoseDriveBlendTime": 0.5,
+      "CommitToGetupPose": true,
+      "RequireStatesToEnter": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsOnGround'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsOnGround.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsResurrecting'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsResurrecting.0"
+          }
+        ]
+      },
+      "RequireStatesToMantain": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsResurrecting'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsResurrecting.0"
+          }
+        ]
+      }
+    }
+  }
+]

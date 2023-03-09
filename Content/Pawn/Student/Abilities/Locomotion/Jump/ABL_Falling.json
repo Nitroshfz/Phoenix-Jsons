@@ -1,0 +1,267 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_Falling",
+    "Outer": "ABL_Falling_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_Falling_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Falling_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_Falling_C:ExecuteUbergraph_ABL_Falling'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_Falling_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.1"
+      },
+      {
+        "ObjectName": "Function'ABL_Falling_C:ExecuteUbergraph_ABL_Falling'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_Falling": {
+        "ObjectName": "Function'ABL_Falling_C:ExecuteUbergraph_ABL_Falling'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.0"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_Falling_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.1"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Falling_C'Default__ABL_Falling_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.3"
+    }
+  },
+  {
+    "Type": "ABL_Falling_C",
+    "Name": "Default__ABL_Falling_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.ABL_Falling_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Falling_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblSetAllowRMMomentum'Default__ABL_Falling_C:AblSetAllowRMMomentum_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.7"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Falling_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.5"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_Falling_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.6"
+        },
+        {
+          "ObjectName": "AblJumpTask'Default__ABL_Falling_C:AblJumpTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.4"
+        }
+      ],
+      "m_AbilityNameHash": 71832663,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblJumpTask",
+    "Name": "AblJumpTask_0",
+    "Outer": "Default__ABL_Falling_C",
+    "Class": "UScriptClass'AblJumpTask'",
+    "ClassPath": "/Script/Phoenix.AblJumpTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Falling_C'Default__ABL_Falling_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Falling_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Falling_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.FallLoop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion",
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_FullRootMotion"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Falling_C'Default__ABL_Falling_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": "Infinity"
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_Falling_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_TurnAssist'Default__ABL_Falling_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_TurnAssist_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.8"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Falling_C'Default__ABL_Falling_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Falling_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetAllowRMMomentum",
+    "Name": "AblSetAllowRMMomentum_1",
+    "Outer": "Default__ABL_Falling_C",
+    "Class": "UScriptClass'AblSetAllowRMMomentum'",
+    "ClassPath": "/Script/Phoenix.AblSetAllowRMMomentum",
+    "Properties": {
+      "AddRMMomentum": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Falling_C'Default__ABL_Falling_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.3"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Falling_C'Default__ABL_Falling_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_TurnAssist",
+    "Name": "RootMotionModifierProperties_TurnAssist_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_TurnAssist'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_TurnAssist",
+    "Properties": {
+      "UseMethod": "ERootMotionModTurnAssistMethod::UseDampedSpring",
+      "SpringHalflife": 0.6,
+      "TurnAssistCurve": {
+        "ObjectName": "CurveFloat'C_FallingTurnAssistCurve'",
+        "ObjectPath": "/Game/Pawn/Player/C_FallingTurnAssistCurve.0"
+      }
+    }
+  }
+]

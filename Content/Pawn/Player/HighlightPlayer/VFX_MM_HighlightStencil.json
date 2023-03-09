@@ -1,0 +1,715 @@
+[
+  {
+    "Type": "Material",
+    "Name": "VFX_MM_HighlightStencil",
+    "Class": "UScriptClass'Material'",
+    "ClassPath": "/Script/Engine.Material",
+    "Properties": {
+      "EmissiveColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "None",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_1",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "ShadingModel": "MSM_Unlit",
+      "ShadingModels": {
+        "ShadingModelField": 1
+      },
+      "bCanMaskedBeAssumedOpaque": true,
+      "bCastRayTracedShadows": false,
+      "StateId": "172FC1F9-40221924-C98192B4-891DF849",
+      "CachedExpressionData": {
+        "Parameters": {
+          "RuntimeEntries": {
+            "NameHashes": [
+              790085697164878586,
+              883233397627739386,
+              6007732302652696348,
+              7123063324176563453,
+              10309349529128591015,
+              10413860854998070888,
+              12949389031769920881,
+              17713334517134544746
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "FadeFactorMax",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "FadeFactorMin",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Epsilon",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "TimeScale",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "Blend",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "StencilValue",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "FalloffRadius",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "HighlightFactor",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "A88D1D24-414DF9E6-FFF35792-9BA949F6",
+              "FFDB15F7-45B893C8-1F2D42AE-D9CF1882",
+              "3EC569CE-4CC87B5E-8D1DDEAE-DAC13E33",
+              "003A1561-4098F864-4A538680-4565ABEC",
+              "7BDA99CF-4F13E8AF-9630928E-AC2A1A65",
+              "EA7D4577-46B8AFD1-1B223CBD-B415719F",
+              "EAC10A72-489A01FD-DF96BCBF-DEDF14FD",
+              "B8B52D37-447E65AB-36FF27A3-4D62F001"
+            ]
+          },
+          "RuntimeEntries": {
+            "NameHashes": [
+              5445586841689586688,
+              14508004589469679325
+            ],
+            "ParameterInfos": [
+              {
+                "Name": "HazeMap",
+                "Association": "GlobalParameter",
+                "Index": -1
+              },
+              {
+                "Name": "FlowMap",
+                "Association": "GlobalParameter",
+                "Index": -1
+              }
+            ],
+            "ExpressionGuids": [
+              "DAFC9FA3-4B2A7C3C-4DA2E0AD-AC062F13",
+              "69A88DE8-4722E663-E0FE28A6-0C279946"
+            ]
+          },
+          "ScalarValues": [
+            0.1,
+            0.07,
+            0.025,
+            0.2,
+            0.0,
+            1.0,
+            4.0,
+            1.0
+          ],
+          "TextureValues": [
+            {
+              "ObjectName": "Texture2D'VFX_T_Noise06_D'",
+              "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Noise06_D.0"
+            },
+            {
+              "ObjectName": "Texture2D'VFX_T_FlowWarpDetailed_FM'",
+              "ObjectPath": "/Game/VFX/Textures/Flowmaps/VFX_T_FlowWarpDetailed_FM.0"
+            }
+          ]
+        },
+        "ReferencedTextures": [
+          null,
+          {
+            "ObjectName": "Texture2D'DefaultNormal'",
+            "ObjectPath": "/Engine/EngineMaterials/DefaultNormal.0"
+          },
+          {
+            "ObjectName": "Texture2D'DefaultDiffuse'",
+            "ObjectPath": "/Engine/EngineMaterials/DefaultDiffuse.0"
+          },
+          {
+            "ObjectName": "Texture2D'LowResBlurredNoise'",
+            "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/LowResBlurredNoise.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_FlowWarpDetailed_FM'",
+            "ObjectPath": "/Game/VFX/Textures/Flowmaps/VFX_T_FlowWarpDetailed_FM.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_Noise06_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_Noise06_D.0"
+          },
+          {
+            "ObjectName": "Texture2D'VFX_T_SwirlNoise_05_D'",
+            "ObjectPath": "/Game/VFX/Textures/Noises/VFX_T_SwirlNoise_05_D.0"
+          }
+        ],
+        "FunctionInfos": [
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "01B48922-40699549-8711E3A2-18DF7E30",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Step'",
+              "ObjectPath": "/Game/MaterialFunctions/MF_Step.0"
+            }
+          },
+          {
+            "StateId": "A303AF1B-43B24071-B1B81CA0-CAC82DB5",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_StencilEquals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_StencilEquals.0"
+            }
+          },
+          {
+            "StateId": "B11F5D6C-49D8B07E-7A0862A4-1A9FB540",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexelSize'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexelSize.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "FCA846EF-48B13AC4-63789786-7CC90DE6",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BoxPlusUVs'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_BoxPlusUVs.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "37B68A29-4C807A48-2EA6A4B6-F1CC93FA",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_ScreenTexureUV'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_ScreenTexureUV.0"
+            }
+          },
+          {
+            "StateId": "B440E39A-426E6837-8ED6659A-4B60660C",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_BoxXUVs'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_BoxXUVs.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "B1A4ED20-4C9A69A6-95404DAD-21BBCC81",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolUVOffset'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolUVOffset.0"
+            }
+          },
+          {
+            "StateId": "0702F27A-4669B47E-FE4CC3BB-51D656F8",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolBoxUVs'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolBoxUVs.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "8644534B-4877951D-3E17CB97-19FD7F75",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_Equals'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_Equals.0"
+            }
+          },
+          {
+            "StateId": "FA0C87E8-419F3E96-66B275BF-4302F5F4",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_IsHair'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_IsHair.0"
+            }
+          },
+          {
+            "StateId": "5E2A6C04-421F1334-CB945C99-1D7AAFB6",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_SobolBoxSampleStencil'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_SobolBoxSampleStencil.0"
+            }
+          },
+          {
+            "StateId": "391DDAD7-4E9DCC58-FD37D7B7-2AF07FC2",
+            "Function": {
+              "ObjectName": "MaterialFunction'ScreenResolution'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/ScreenResolution.0"
+            }
+          },
+          {
+            "StateId": "D698AE07-4E389EC4-D96F4BBF-A2501D1F",
+            "Function": {
+              "ObjectName": "MaterialFunction'MF_NormalizePixelRadius'",
+              "ObjectPath": "/StencilManager/MaterialFunctions/MF_NormalizePixelRadius.0"
+            }
+          },
+          {
+            "StateId": "8AEA8FB3-4033A6EE-275AFFBB-348D9CAD",
+            "Function": {
+              "ObjectName": "MaterialFunction'LinearSine'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/LinearSine.0"
+            }
+          },
+          {
+            "StateId": "8189A4A8-40E739E1-E4FFE09C-1092124E",
+            "Function": {
+              "ObjectName": "MaterialFunction'AddComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents.0"
+            }
+          },
+          {
+            "StateId": "8189A4A8-40E739E1-E4FFE09C-1092124E",
+            "Function": {
+              "ObjectName": "MaterialFunction'AddComponents'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/AddComponents.0"
+            }
+          },
+          {
+            "StateId": "F5C2D477-4BA63455-E32B4B96-0D7674B6",
+            "Function": {
+              "ObjectName": "MaterialFunction'BlendAngleCorrectedNormals'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.0"
+            }
+          },
+          {
+            "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+            "Function": {
+              "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+            }
+          },
+          {
+            "StateId": "C330DE33-4A86FAB2-7255B1AC-3A6AC1B4",
+            "Function": {
+              "ObjectName": "MaterialFunction'Transform3x3Matrix'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/Transform3x3Matrix.0"
+            }
+          },
+          {
+            "StateId": "C90913CC-475A15CC-96C0E383-A61AAE63",
+            "Function": {
+              "ObjectName": "MaterialFunction'MakeVectorsOrthogonal'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/MakeVectorsOrthogonal.0"
+            }
+          },
+          {
+            "StateId": "E47E7D6B-466F913C-C1497584-EDB1DBD6",
+            "Function": {
+              "ObjectName": "MaterialFunction'ComputeMipLevel'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions01/Texturing/ComputeMipLevel.0"
+            }
+          },
+          {
+            "StateId": "3161742E-4800C603-B145E1AF-56D3BE63",
+            "Function": {
+              "ObjectName": "MaterialFunction'TimeWithSpeedVariable'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Math/TimeWithSpeedVariable.0"
+            }
+          },
+          {
+            "StateId": "0E7842A6-494FD95E-3F6CAD83-A96EE5DD",
+            "Function": {
+              "ObjectName": "MaterialFunction'FlowMaps'",
+              "ObjectPath": "/Engine/Functions/Engine_MaterialFunctions02/Texturing/Flowmaps.0"
+            }
+          }
+        ],
+        "QualityLevelsUsed": [
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    "HWMatHash": "D2-2F-F9-7F-7A-D8-9C-E7-8F-A4-4F-CE-27-D2-1B-4B-B0-C9-AA-9F"
+  }
+]

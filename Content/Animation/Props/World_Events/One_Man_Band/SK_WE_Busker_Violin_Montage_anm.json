@@ -1,0 +1,190 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "SK_WE_Busker_Violin_Montage_anm",
+    "Class": "UScriptClass'AnimMontage'",
+    "ClassPath": "/Script/Engine.AnimMontage",
+    "Properties": {
+      "BlendIn": {
+        "BlendTime": 0.05,
+        "BlendOption": "EAlphaBlendOption::ExpInOut"
+      },
+      "BlendOut": {
+        "BlendTime": 0.05,
+        "BlendOption": "EAlphaBlendOption::ExpInOut"
+      },
+      "CompositeSections": [
+        {
+          "SectionName": "broken",
+          "NextSectionName": "broken",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Violin_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Proportional",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 2.9,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Broken_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Broken_anm.0"
+          }
+        },
+        {
+          "SectionName": "fixed_event",
+          "NextSectionName": "fixed",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Violin_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Proportional",
+          "CachedLinkMethod": "EAnimLinkMethod::Proportional",
+          "SegmentBeginTime": 2.9,
+          "SegmentLength": 1.7666667,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Transition_BrokenToFixed_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Transition_BrokenToFixed_anm.0"
+          }
+        },
+        {
+          "SectionName": "fixed",
+          "NextSectionName": "fixed",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Violin_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 2,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 4.666667,
+          "SegmentLength": 2.7666667,
+          "LinkValue": 4.669004,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Fixed_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Fixed_anm.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "DefaultSlot",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Broken_anm'",
+                  "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Broken_anm.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 2.9,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Transition_BrokenToFixed_anm'",
+                  "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Transition_BrokenToFixed_anm.0"
+                },
+                "StartPos": 2.9,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.7666667,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Fixed_anm'",
+                  "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Fixed_anm.0"
+                },
+                "StartPos": 4.666667,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 2.7666667,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayNiagaraEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayNiagaraEffect'SK_WE_Busker_Violin_Montage_anm:AnimNotify_PlayNiagaraEffect_0'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Montage_anm.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 2.9785624,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Violin_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 2.9,
+          "SegmentLength": 1.7666667,
+          "LinkValue": 2.9785624,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Violin_Transition_BrokenToFixed_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Violin_Transition_BrokenToFixed_anm.0"
+          }
+        }
+      ],
+      "SequenceLength": 7.4333334,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_WE_Violin_Bow_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/World_Events/Busker/Violin/SK_WE_Violin_Bow_Skeleton.0"
+      }
+    },
+    "SkeletonGuid": "B46374E9-42D9E926-1E1D91B5-E8884A34"
+  },
+  {
+    "Type": "AnimNotify_PlayNiagaraEffect",
+    "Name": "AnimNotify_PlayNiagaraEffect_0",
+    "Outer": "SK_WE_Busker_Violin_Montage_anm",
+    "Class": "UScriptClass'AnimNotify_PlayNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NE_WE_ViolinFix'",
+        "ObjectPath": "/Game/VFX/World_Events/One_Man_Band/VFX_NE_WE_ViolinFix.19"
+      },
+      "SocketName": "Strings_Middle_Jnt_E"
+    }
+  }
+]

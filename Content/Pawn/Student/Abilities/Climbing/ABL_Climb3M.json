@@ -1,0 +1,572 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_Climb3M",
+    "Outer": "ABL_Climb3M_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostDialogueEvent_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_Climb3M_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Climb3M_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_Climb3M_C:ExecuteUbergraph_ABL_Climb3M'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_Climb3M_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.1"
+      },
+      {
+        "ObjectName": "Function'ABL_Climb3M_C:ExecuteUbergraph_ABL_Climb3M'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_Climb3M": {
+        "ObjectName": "Function'ABL_Climb3M_C:ExecuteUbergraph_ABL_Climb3M'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.0"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_Climb3M_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.1"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+    }
+  },
+  {
+    "Type": "ABL_Climb3M_C",
+    "Name": "Default__ABL_Climb3M_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.ABL_Climb3M_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Climb3M_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 1.7921568,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Climb3M_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.6"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Climb3M_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.11"
+        },
+        {
+          "ObjectName": "AblChangeCollisionCapsuleDimensions'Default__ABL_Climb3M_C:AblChangeCollisionCapsuleDimensions_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.8"
+        },
+        {
+          "ObjectName": "ablTurnAdjustTask'Default__ABL_Climb3M_C:ablTurnAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.18"
+        },
+        {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_Climb3M_C:ablMotionAdjustTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.15"
+        },
+        {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_Climb3M_C:ablMotionAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.14"
+        },
+        {
+          "ObjectName": "ablIKLedgeContactTask'Default__ABL_Climb3M_C:ablIKLedgeContactTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.9"
+        },
+        {
+          "ObjectName": "ablIKLedgeContactTask'Default__ABL_Climb3M_C:ablIKLedgeContactTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.10"
+        },
+        {
+          "ObjectName": "AblCameraStackContextTask'Default__ABL_Climb3M_C:AblCameraStackContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.7"
+        },
+        {
+          "ObjectName": "ablAkSetMurmurationRTPCTask'Default__ABL_Climb3M_C:ablAkSetMurmurationRTPCTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.4"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_Climb3M_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.17"
+        }
+      ],
+      "m_AbilityNameHash": 1292696851
+    }
+  },
+  {
+    "Type": "ablAkSetMurmurationRTPCTask",
+    "Name": "ablAkSetMurmurationRTPCTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablAkSetMurmurationRTPCTask'",
+    "ClassPath": "/Script/Phoenix.ablAkSetMurmurationRTPCTask",
+    "Properties": {
+      "RTPC_Step": 25,
+      "RTPC_Name": "MurmurationIntensity",
+      "bDecay": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Idle",
+    "Name": "AblAnimationTagChooser_Idle_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_Idle'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Idle",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.Climb_3M_LU"
+        ],
+        [
+          "AA.AnimPlayerName.Climb_3M_RU"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "ClimbAnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblCameraStackContextTask",
+    "Name": "AblCameraStackContextTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'AblCameraStackContextTask'",
+    "ClassPath": "/Script/Phoenix.AblCameraStackContextTask",
+    "Properties": {
+      "ContextName": "ClimbingUp",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.0666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblChangeCollisionCapsuleDimensions",
+    "Name": "AblChangeCollisionCapsuleDimensions_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'AblChangeCollisionCapsuleDimensions'",
+    "ClassPath": "/Script/Phoenix.AblChangeCollisionCapsuleDimensions",
+    "Properties": {
+      "CollisionCapsuleHalfHeight": 60.0,
+      "CollisionCapsuleRadius": 30.0,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablIKLedgeContactTask",
+    "Name": "ablIKLedgeContactTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablIKLedgeContactTask'",
+    "ClassPath": "/Script/Phoenix.ablIKLedgeContactTask",
+    "Properties": {
+      "BlendInDuration": 0.2,
+      "BlendOutDuration": 8.012602,
+      "bLockHandsToLedge": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.6333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablIKLedgeContactTask",
+    "Name": "ablIKLedgeContactTask_1",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablIKLedgeContactTask'",
+    "ClassPath": "/Script/Phoenix.ablIKLedgeContactTask",
+    "Properties": {
+      "BlendInDuration": 0.1,
+      "m_StartTime": {
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ablIKLedgeContactTask'Default__ABL_Climb3M_C:ablIKLedgeContactTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.9"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "FullBodyBusy",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.73333335,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablMotionAdjustLedgeLocationGetter",
+    "Name": "ablMotionAdjustLedgeLocationGetter_0",
+    "Outer": "ablMotionAdjustTask_0",
+    "Class": "UScriptClass'ablMotionAdjustLedgeLocationGetter'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustLedgeLocationGetter"
+  },
+  {
+    "Type": "ablMotionAdjustLedgeLocationGetter",
+    "Name": "ablMotionAdjustLedgeLocationGetter_0",
+    "Outer": "ablMotionAdjustTask_1",
+    "Class": "UScriptClass'ablMotionAdjustLedgeLocationGetter'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustLedgeLocationGetter"
+  },
+  {
+    "Type": "ablMotionAdjustTask",
+    "Name": "ablMotionAdjustTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablMotionAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustTask",
+    "Properties": {
+      "TargetLocationGetter": {
+        "ObjectName": "ablMotionAdjustLedgeLocationGetter'Default__ABL_Climb3M_C:ablMotionAdjustTask_0.ablMotionAdjustLedgeLocationGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.12"
+      },
+      "InterceptTime": 0.2,
+      "InterceptOffset": {
+        "X": 60.0,
+        "Y": 0.0,
+        "Z": 46.0
+      },
+      "AdjustCurve": "EAlphaBlendOption::HermiteCubic",
+      "BlendIn": {
+        "BlendTime": 0.0
+      },
+      "bCanAdjustZAxis": true,
+      "m_StartTime": {
+        "Offset": 0.333333,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablMotionAdjustTask",
+    "Name": "ablMotionAdjustTask_1",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablMotionAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustTask",
+    "Properties": {
+      "TargetLocationGetter": {
+        "ObjectName": "ablMotionAdjustLedgeLocationGetter'Default__ABL_Climb3M_C:ablMotionAdjustTask_1.ablMotionAdjustLedgeLocationGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.13"
+      },
+      "InterceptOffset": {
+        "X": 60.0,
+        "Y": 0.0,
+        "Z": 46.0
+      },
+      "AdjustCurve": "EAlphaBlendOption::HermiteCubic",
+      "BlendIn": {
+        "BlendTime": 0.1,
+        "BlendOption": "EAlphaBlendOption::HermiteCubic"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.33333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Climb_3M_LU"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Idle'Default__ABL_Climb3M_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_Idle_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.5"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 1.7,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEventReference": {
+        "EventID": "emote_effort_jump_medium"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablTurnAdjustTask",
+    "Name": "ablTurnAdjustTask_0",
+    "Outer": "Default__ABL_Climb3M_C",
+    "Class": "UScriptClass'ablTurnAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablTurnAdjustTask",
+    "Properties": {
+      "m_Blend": {
+        "BlendOption": "EAlphaBlendOption::HermiteCubic"
+      },
+      "m_TargetDirectionGetter": {
+        "ObjectName": "TurnAdjust_LedgeNormalGetter'Default__ABL_Climb3M_C:ablTurnAdjustTask_0.TurnAdjust_LedgeNormalGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.19"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb3M_C'Default__ABL_Climb3M_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb3M.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TurnAdjust_LedgeNormalGetter",
+    "Name": "TurnAdjust_LedgeNormalGetter_0",
+    "Outer": "ablTurnAdjustTask_0",
+    "Class": "UScriptClass'TurnAdjust_LedgeNormalGetter'",
+    "ClassPath": "/Script/Phoenix.TurnAdjust_LedgeNormalGetter"
+  }
+]

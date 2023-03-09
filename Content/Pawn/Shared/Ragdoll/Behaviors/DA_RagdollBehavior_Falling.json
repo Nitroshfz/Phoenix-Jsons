@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_Falling",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.RagdollPowering",
+        "AA.RagdollPowerAnims.FallFlutter"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Strong",
+      "PoseDriveBlendTime": 0.5,
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasStrongDownwardVelocity'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasStrongDownwardVelocity.0"
+          }
+        ],
+        "RequiredAny": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_AllowDramaticDeath'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_AllowDramaticDeath.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          }
+        ]
+      },
+      "RequireStatesToEnter": {
+        "RequiredAny": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsAboveFallHeight'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsAboveFallHeight.0"
+          }
+        ]
+      }
+    }
+  }
+]

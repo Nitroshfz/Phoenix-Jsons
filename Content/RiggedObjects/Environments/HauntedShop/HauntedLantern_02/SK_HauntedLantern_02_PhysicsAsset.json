@@ -1,0 +1,299 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_HauntedLantern_02_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HauntedLantern_02_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/HauntedLantern_02/SK_HauntedLantern_02_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HauntedLantern_02_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/HauntedLantern_02/SK_HauntedLantern_02_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HauntedLantern_02_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/HauntedLantern_02/SK_HauntedLantern_02_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HauntedLantern_02_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/HauntedLantern_02/SK_HauntedLantern_02_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HauntedLantern_02_PhysicsAsset:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/HauntedLantern_02/SK_HauntedLantern_02_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_HauntedLantern_02_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint",
+        "ConstraintBone1": "chain",
+        "ConstraintBone2": "root",
+        "Pos1": {
+          "X": 0.86498857,
+          "Y": -0.86499214,
+          "Z": 2.9802322E-07
+        },
+        "PriAxis1": {
+          "X": -3.4570694E-06,
+          "Y": -0.9999999,
+          "Z": 4.214677E-08
+        },
+        "SecAxis1": {
+          "X": 0.9999999,
+          "Y": -3.4570694E-06,
+          "Z": 4.2146922E-08
+        },
+        "Pos2": {
+          "X": 0.0,
+          "Y": 16.3,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": -3.4570694E-06,
+          "Y": -1.0000004,
+          "Z": 8.420774E-09
+        },
+        "SecAxis2": {
+          "X": 1.0000004,
+          "Y": -3.4570694E-06,
+          "Z": 2.34595E-08
+        },
+        "ProfileInstance": {
+          "ProjectionLinearTolerance": 1.0,
+          "ConeLimit": {
+            "Swing1LimitDegrees": 60.0,
+            "Swing2LimitDegrees": 50.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited",
+            "Damping": 50.0
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 10.0,
+            "TwistMotion": "ACM_Limited",
+            "Damping": 10.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_HauntedLantern_02_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint_0",
+        "ConstraintBone1": "Lantern",
+        "ConstraintBone2": "chain",
+        "Pos1": {
+          "X": 0.021940231,
+          "Y": -0.021942139,
+          "Z": 1.911074E-06
+        },
+        "PriAxis1": {
+          "X": -3.4570694E-06,
+          "Y": 0.9999998,
+          "Z": -7.755019E-06
+        },
+        "SecAxis1": {
+          "X": 0.9999998,
+          "Y": 3.9339066E-06,
+          "Z": -8.430834E-08
+        },
+        "Pos2": {
+          "X": 0.0,
+          "Y": 7.7,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": -3.8146973E-06,
+          "Y": 1.0000001,
+          "Z": -7.817995E-06
+        },
+        "SecAxis2": {
+          "X": 1.0000001,
+          "Y": 3.5762787E-06,
+          "Z": -2.5262125E-08
+        },
+        "ProfileInstance": {
+          "ProjectionLinearTolerance": 1.0,
+          "ConeLimit": {
+            "Swing1LimitDegrees": 1.0,
+            "Swing2LimitDegrees": 40.0,
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Limited",
+            "Damping": 50.0
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 20.0,
+            "TwistMotion": "ACM_Locked",
+            "Damping": 100.0
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_HauntedLantern_02_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.0061674947,
+              "Y": 5.5676794,
+              "Z": -0.010261561
+            },
+            "Rotation": {
+              "Pitch": -0.08852608,
+              "Yaw": -89.99995,
+              "Roll": -0.00014353085
+            },
+            "X": 18.474472,
+            "Y": 7.8727064,
+            "Z": 25.618427,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 0.5,
+        "AngularDamping": 1.0,
+        "MassScale": 0.5
+      },
+      "BoneName": "root",
+      "PhysicsType": "PhysType_Simulated",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "460B0E724EAA2BBA326A9983C4E65513"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_HauntedLantern_02_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.00044250488,
+              "Y": 34.166225,
+              "Z": -0.0013993804
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 21.734192,
+            "Y": 43.826054,
+            "Z": 21.734192,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ],
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.00635784,
+              "Y": 12.696248,
+              "Z": -0.008290603
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 179.9219,
+              "Roll": -89.896034
+            },
+            "Radius": 11.005574,
+            "Length": 0.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 0.5
+      },
+      "BoneName": "Lantern",
+      "PhysicsType": "PhysType_Simulated",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "2F679AC04CCA56418F1386BFE05F5250"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_HauntedLantern_02_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.019155711,
+              "Y": 3.2725992,
+              "Z": -0.006174271
+            },
+            "Rotation": {
+              "Pitch": -0.05760581,
+              "Yaw": -89.1878,
+              "Roll": -90.000694
+            },
+            "Radius": 4.0894966,
+            "Length": 5.7485805,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 0.5,
+        "AngularDamping": 1.0
+      },
+      "BoneName": "chain",
+      "PhysicsType": "PhysType_Simulated",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "CollisionReponse": "EBodyCollisionResponse::BodyCollision_Disabled"
+    },
+    "BodySetupGuid": "4E8111B3422B5B4557AD328C1628AEA2"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BroomHouseItem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BroomHouseItem_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_BroomHouseItem_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.2"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'BroomItemTool'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BroomHouseItem_C'Default__BP_BroomHouseItem_C'",
+      "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.1"
+    }
+  },
+  {
+    "Type": "BP_BroomHouseItem_C",
+    "Name": "Default__BP_BroomHouseItem_C",
+    "Class": "BlueprintGeneratedClass'/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.BP_BroomHouseItem_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BP_BroomHouseItem_C'",
+      "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "FlyingBroomClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_FlyingBroomCapsule_House_C'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/House/BP_FlyingBroomCapsule_House.2"
+      },
+      "FlyingBroomProp": {
+        "ObjectName": "BlueprintGeneratedClass'BP_FlyingBroomProp_House_C'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/House/BP_FlyingBroomProp_House.5"
+      },
+      "RiderAnimationSetArchitectAsset": {
+        "AssetPathName": "/Game/Data/AnimationArchitect/BroomRiding/UnrealAssets/ADA_Human.ADA_Human"
+      },
+      "bTriggerAbilityOnConsume": true,
+      "CustomAbilityName": {
+        "Name": "WellFed"
+      },
+      "UseItemAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_EatFood_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Food/ABL_EatFood.3"
+      },
+      "LeftArmState": "ELeftArmState::AllowMotionTakeover",
+      "RightArmState": "ERightArmState::PlayHandOnlyMotion",
+      "bAllowUseWhenCountIsZero": true,
+      "ActivateEffects": [
+        {
+          "ObjectName": "ToolEffectData'ToolEffect_ScaleIn'",
+          "ObjectPath": "/Game/Gameplay/ToolSet/Effects/ToolEffect_ScaleIn.0"
+        }
+      ],
+      "DeactivateEffects": [
+        {
+          "ObjectName": "ToolEffectData'ToolEffect_ScaleOut'",
+          "ObjectPath": "/Game/Gameplay/ToolSet/Effects/ToolEffect_ScaleOut.0"
+        }
+      ],
+      "AttachSocket": "SKT_LeftHand",
+      "ToolEquipAction": {
+        "ActionName": "LeftArmItemEquipped"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_BroomHouseItem_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "ClassPath": "/Script/Engine.InheritableComponentHandler"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_BroomHouseItem_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "ClassPath": "/Script/Engine.SceneComponent"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BroomHouseItem_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.3"
+      },
+      "VariableGuid": "BA92A260-4E05C1A8-800F5792-D05F6379",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BroomHouseItem_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "ClassPath": "/Script/Engine.SimpleConstructionScript",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BroomHouseItem_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_BroomHouseItem_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.4"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BroomHouseItem_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Gameplay/ToolSet/Items/InventoryItems/Broom/BP_BroomHouseItem.4"
+      }
+    }
+  }
+]

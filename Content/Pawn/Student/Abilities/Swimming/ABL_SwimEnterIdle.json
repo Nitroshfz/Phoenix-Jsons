@@ -1,0 +1,376 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_SwimEnterIdle_C'Default__ABL_SwimEnterIdle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.1"
+    }
+  },
+  {
+    "Type": "ABL_SwimEnterIdle_C",
+    "Name": "Default__ABL_SwimEnterIdle_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.ABL_SwimEnterIdle_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_SwimEnterIdle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 2.3000002,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.9"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.12"
+        },
+        {
+          "ObjectName": "AblChangeCollisionCapsuleDimensions'Default__ABL_SwimEnterIdle_C:AblChangeCollisionCapsuleDimensions_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.13"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_SwimEnterIdle_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.15"
+        }
+      ],
+      "m_AbilityNameHash": 2377076604,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "bAbsoulteValue": true,
+      "AngleRange": {
+        "X": 60.0,
+        "Y": 150.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "bAbsoulteValue": true,
+      "AngleRange": {
+        "X": 0.0,
+        "Y": 60.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "bAbsoulteValue": true,
+      "AngleRange": {
+        "X": 0.0,
+        "Y": 150.0
+      },
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_SwimChangeDirection_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimChangeDirection.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimEnterIdle_C:AblBranchTask_0.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.6"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_SwimEnterIdle_C:AblBranchTask_0.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "bPreBranchTick": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_SwimIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_SwimEnterIdle_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.2"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "Offset": -0.3,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_SwimStart_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimStart.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimEnterIdle_C:AblBranchTask_2.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.7"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_SwimEnterIdle_C:AblBranchTask_2.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "bPreBranchTick": true,
+      "m_StartTime": {
+        "Offset": 0.3,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_SwimChangeDirection180_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimChangeDirection180.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimEnterIdle_C:AblBranchTask_3.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.8"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_SwimEnterIdle_C:AblBranchTask_3.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "bPreBranchTick": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimEnterIdle_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblChangeCollisionCapsuleDimensions",
+    "Name": "AblChangeCollisionCapsuleDimensions_0",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblChangeCollisionCapsuleDimensions'",
+    "ClassPath": "/Script/Phoenix.AblChangeCollisionCapsuleDimensions",
+    "Properties": {
+      "CollisionCapsuleHalfHeight": 88.0,
+      "CollisionCapsuleRadius": 62.0,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimEnterIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.SwimIdle"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimEnterIdle_C'Default__ABL_SwimEnterIdle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_SwimEnterIdle_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_breath_swim_enter'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_breath_swim_enter.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimEnterIdle_C'Default__ABL_SwimEnterIdle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.40000004,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimEnterIdle_C'Default__ABL_SwimEnterIdle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimEnterIdle.1"
+        }
+      }
+    }
+  }
+]

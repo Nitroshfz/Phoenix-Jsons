@@ -1,0 +1,41 @@
+[
+  {
+    "Type": "MultiFX2_CustomDepthLock",
+    "Name": "MultiFX2_CustomDepthLock_1",
+    "Outer": "DA_MultiFX2_HighlightCharacter",
+    "Class": "UScriptClass'MultiFX2_CustomDepthLock'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_CustomDepthLock"
+  },
+  {
+    "Type": "MultiFX2_PostProcessing",
+    "Name": "MultiFX2_PostProcessing_0",
+    "Outer": "DA_MultiFX2_HighlightCharacter",
+    "Class": "UScriptClass'MultiFX2_PostProcessing'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_PostProcessing",
+    "Properties": {
+      "Definition": {
+        "ObjectName": "MultiFX2_PostProcessingDefinition'DA_MultiFX_HighlightCharacterPP'",
+        "ObjectPath": "/Game/Pawn/Player/HighlightPlayer/DA_MultiFX_HighlightCharacterPP.0"
+      },
+      "bUseAutoBlendIn": true
+    }
+  },
+  {
+    "Type": "MultiFX2Asset",
+    "Name": "DA_MultiFX2_HighlightCharacter",
+    "Class": "UScriptClass'MultiFX2Asset'",
+    "ClassPath": "/Script/MultiFX2.MultiFX2Asset",
+    "Properties": {
+      "FX2": [
+        {
+          "ObjectName": "MultiFX2_CustomDepthLock'DA_MultiFX2_HighlightCharacter:MultiFX2_CustomDepthLock_1'",
+          "ObjectPath": "/Game/Pawn/Player/HighlightPlayer/DA_MultiFX2_HighlightCharacter.0"
+        },
+        {
+          "ObjectName": "MultiFX2_PostProcessing'DA_MultiFX2_HighlightCharacter:MultiFX2_PostProcessing_0'",
+          "ObjectPath": "/Game/Pawn/Player/HighlightPlayer/DA_MultiFX2_HighlightCharacter.1"
+        }
+      ]
+    }
+  }
+]

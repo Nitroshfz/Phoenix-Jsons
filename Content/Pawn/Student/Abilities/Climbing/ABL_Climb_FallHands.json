@@ -1,0 +1,183 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Climb_FallHands_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Climb_FallHands_C'Default__ABL_Climb_FallHands_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.1"
+    }
+  },
+  {
+    "Type": "ABL_Climb_FallHands_C",
+    "Name": "Default__ABL_Climb_FallHands_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.ABL_Climb_FallHands_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Climb_FallHands_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.6470587,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb_FallHands_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.6"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Climb_FallHands_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.2"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Climb_FallHands_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.4"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_Climb_FallHands_C:AblHermesSendMessageToTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.3"
+        },
+        {
+          "ObjectName": "ablLedgeAssistTask'Default__ABL_Climb_FallHands_C:ablLedgeAssistTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.5"
+        }
+      ],
+      "m_AbilityNameHash": 1691541510
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Climb_FallHands_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "ClimbAnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.1,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb_FallHands_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.6"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.1,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Climb_FallHands_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.6"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_0",
+    "Outer": "Default__ABL_Climb_FallHands_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Self",
+      "m_MessageName": "StartFollowCamera",
+      "m_EndTime": {
+        "Offset": 0.0
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_Climb_FallHands_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "FullBodyBusy",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb_FallHands_C'Default__ABL_Climb_FallHands_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.6000001,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb_FallHands_C'Default__ABL_Climb_FallHands_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablLedgeAssistTask",
+    "Name": "ablLedgeAssistTask_0",
+    "Outer": "Default__ABL_Climb_FallHands_C",
+    "Class": "UScriptClass'ablLedgeAssistTask'",
+    "ClassPath": "/Script/Phoenix.ablLedgeAssistTask",
+    "Properties": {
+      "DesiredRootUpOffsetM": 92.0,
+      "DesiredRootNormalOffsetM": -1.0,
+      "DesiredRootUpOffsetF": 104.0,
+      "DesiredRootNormalOffsetF": -12.0,
+      "AlignRotation": true,
+      "RotationOffset": 180.0,
+      "m_StartTime": {
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb_FallHands_C'Default__ABL_Climb_FallHands_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb_FallHands_C'Default__ABL_Climb_FallHands_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Climb_FallHands_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Climb_FallHands"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 1.7,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Climb_FallHands_C'Default__ABL_Climb_FallHands_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Climbing/ABL_Climb_FallHands.1"
+        }
+      }
+    }
+  }
+]

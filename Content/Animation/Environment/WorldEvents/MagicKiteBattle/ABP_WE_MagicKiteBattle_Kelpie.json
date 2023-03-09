@@ -1,0 +1,1733 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie",
+    "Outer": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRelevantAnimTimeRemaining_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRelevantAnimTimeRemainingFraction_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimNotify_FinishedReturnAnim",
+    "Outer": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimNotify_ResetReturn",
+    "Outer": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_A3FC3AE0464652CE37BE918D4BD9796D",
+    "Outer": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_0C1282094B7C78B8736FAE8FE3B4F9FC",
+    "Outer": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 384,
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.AnimBlueprintGeneratedClass",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "Main",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "DEPLOYIDLE",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 11,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 3,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 7,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                8
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "DEPLOY",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 12,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 2,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                },
+                {
+                  "CanTakeDelegateIndex": 13,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 1,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                2
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "IDLE",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 14,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 3,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                4
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "RETURN",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 15,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 4,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 5,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                6
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "RETURNIDLE",
+              "Transitions": [],
+              "StateRootNodeIndex": 9,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                10
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 1,
+              "NextState": 2,
+              "CrossfadeDuration": 1.0,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 2,
+              "NextState": 3,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": 0,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 3,
+              "CrossfadeDuration": 1.0,
+              "StartNotify": -1,
+              "EndNotify": 0,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.0,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 3,
+              "NextState": 4,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": 1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_World_Events_MagicKiteBattle_Kelpie_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/World_Events/MagicKiteBattle/SK_World_Events_MagicKiteBattle_Kelpie_Skeleton.0"
+      },
+      "AnimNotifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "ResetReturn",
+          "Notify": null,
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": -1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 0.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": null
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "FinishedReturnAnim",
+          "Notify": null,
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": -1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 0.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": null
+        }
+      ],
+      "OrderedSavedPoseIndicesMap": [
+        {
+          "AnimGraph": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        }
+      ],
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 0,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_SequencePlayer"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 1,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_SequencePlayer_1"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 2,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_SequencePlayer_2"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 3,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_SequencePlayer_3"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 4,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_SequencePlayer_4"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 5,
+              "PostCopyOperation": "EPostCopyOperation::LogicalNegateBool"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 6,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_1"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_0C1282094B7C78B8736FAE8FE3B4F9FC",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_0C1282094B7C78B8736FAE8FE3B4F9FC'",
+            "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.4"
+          },
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_2"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 7,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_3"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        },
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_A3FC3AE0464652CE37BE918D4BD9796D",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_A3FC3AE0464652CE37BE918D4BD9796D'",
+            "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.3"
+          },
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_4"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+            }
+          }
+        }
+      ],
+      "PropertyAccessLibrary": {
+        "PathSegments": [
+          {
+            "Name": "DeployAnim",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "DeployAnim"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_SequencePlayer",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_SequencePlayer'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_SequencePlayer"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "Sequence",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "Sequence"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_SequencePlayer'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "IdleAnim",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "IdleAnim"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_SequencePlayer_1",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_SequencePlayer'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_SequencePlayer_1"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "Sequence",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "Sequence"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_SequencePlayer'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "ReturnAnim",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "ReturnAnim"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_SequencePlayer_2",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_SequencePlayer'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_SequencePlayer_2"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "Sequence",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "Sequence"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_SequencePlayer'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "IdleAnim",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "IdleAnim"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_SequencePlayer_3",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_SequencePlayer'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_SequencePlayer_3"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "Sequence",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "Sequence"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_SequencePlayer'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "DeployPoseAnim",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "DeployPoseAnim"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_SequencePlayer_4",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_SequencePlayer'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_SequencePlayer_4"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "Sequence",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "Sequence"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_SequencePlayer'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "ShouldDelay",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "ShouldDelay"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "ShouldReturn",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "ShouldReturn"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult_1",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult_1"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "ShouldReturn",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "ShouldReturn"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult_3",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult_3"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          }
+        ],
+        "SrcPaths": [
+          {
+            "PathSegmentStartIndex": 0,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 3,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 6,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 9,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 12,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 15,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 18,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 21,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          }
+        ],
+        "DestPaths": [
+          {
+            "PathSegmentStartIndex": 1,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 4,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 7,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 10,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 13,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 16,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 19,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 22,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          }
+        ],
+        "CopyBatches": {
+          "Copies": [
+            {
+              "AccessIndex": 0,
+              "DestAccessStartIndex": 0,
+              "DestAccessEndIndex": 1,
+              "Type": "EPropertyAccessCopyType::Object"
+            },
+            {
+              "AccessIndex": 1,
+              "DestAccessStartIndex": 1,
+              "DestAccessEndIndex": 2,
+              "Type": "EPropertyAccessCopyType::Object"
+            },
+            {
+              "AccessIndex": 2,
+              "DestAccessStartIndex": 2,
+              "DestAccessEndIndex": 3,
+              "Type": "EPropertyAccessCopyType::Object"
+            },
+            {
+              "AccessIndex": 3,
+              "DestAccessStartIndex": 3,
+              "DestAccessEndIndex": 4,
+              "Type": "EPropertyAccessCopyType::Object"
+            },
+            {
+              "AccessIndex": 4,
+              "DestAccessStartIndex": 4,
+              "DestAccessEndIndex": 5,
+              "Type": "EPropertyAccessCopyType::Object"
+            },
+            {
+              "AccessIndex": 5,
+              "DestAccessStartIndex": 5,
+              "DestAccessEndIndex": 6,
+              "Type": "EPropertyAccessCopyType::Bool"
+            },
+            {
+              "AccessIndex": 6,
+              "DestAccessStartIndex": 6,
+              "DestAccessEndIndex": 7,
+              "Type": "EPropertyAccessCopyType::Bool"
+            },
+            {
+              "AccessIndex": 7,
+              "DestAccessStartIndex": 7,
+              "DestAccessEndIndex": 8,
+              "Type": "EPropertyAccessCopyType::Bool"
+            }
+          ]
+        }
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:AnimGraph'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.5"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_0C1282094B7C78B8736FAE8FE3B4F9FC'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.4"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_A3FC3AE0464652CE37BE918D4BD9796D'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.3"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:AnimNotify_ResetReturn'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.2"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:AnimNotify_FinishedReturnAnim'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.1"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_4",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_3",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_2",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_1",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_4",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_4",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_3",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_3",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_2",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_2",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_1",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_1",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateMachine",
+        "Flags": 2097153,
+        "ElementSize": 176,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateMachine'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DeployPoseAnim",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimSequence'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DeployAnim",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimSequence'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "IdleAnim",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimSequence'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnAnim",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 5,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimSequence'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Owner",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BP_WE_MagicKiteBattle_Kite_C'",
+          "ObjectPath": "/Game/Levels/WorldEvents/Blueprints/MagicKiteBattle/BP_WE_MagicKiteBattle_Kite.20"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ShouldReturn",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ShouldDelay",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.0"
+      },
+      "AnimNotify_FinishedReturnAnim": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:AnimNotify_FinishedReturnAnim'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.1"
+      },
+      "AnimNotify_ResetReturn": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:AnimNotify_ResetReturn'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.2"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_A3FC3AE0464652CE37BE918D4BD9796D": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_A3FC3AE0464652CE37BE918D4BD9796D'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.3"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_0C1282094B7C78B8736FAE8FE3B4F9FC": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_MagicKiteBattle_Kelpie_AnimGraphNode_TransitionResult_0C1282094B7C78B8736FAE8FE3B4F9FC'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.4"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_WE_MagicKiteBattle_Kelpie_C:AnimGraph'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.5"
+      }
+    },
+    "ClassFlags": 8652824,
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_WE_MagicKiteBattle_Kelpie_C'Default__ABP_WE_MagicKiteBattle_Kelpie_C'",
+      "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.7"
+    }
+  },
+  {
+    "Type": "ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Name": "Default__ABP_WE_MagicKiteBattle_Kelpie_C",
+    "Class": "AnimBlueprintGeneratedClass'/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.ABP_WE_MagicKiteBattle_Kelpie_C'",
+    "ClassRef": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_MagicKiteBattle_Kelpie_C'",
+      "ObjectPath": "/Game/Animation/Environment/WorldEvents/MagicKiteBattle/ABP_WE_MagicKiteBattle_Kelpie.6"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 16
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_TransitionResult_4": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_3": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_2": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_1": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_SequencePlayer_4": {
+        "Sequence": null,
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_4": {
+        "Result": {
+          "LinkID": 6
+        },
+        "Name": "RETURNIDLE",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_3": {
+        "Sequence": null,
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_3": {
+        "Result": {
+          "LinkID": 8
+        },
+        "Name": "DEPLOYIDLE",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_2": {
+        "Sequence": null,
+        "PlayRateBasis": 1.0,
+        "PlayRate": 2.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": false,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_2": {
+        "Result": {
+          "LinkID": 10
+        },
+        "Name": "RETURN",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_1": {
+        "Sequence": null,
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_1": {
+        "Result": {
+          "LinkID": 12
+        },
+        "Name": "IDLE",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer": {
+        "Sequence": null,
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": false,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult": {
+        "Result": {
+          "LinkID": 14
+        },
+        "Name": "DEPLOY",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      },
+      "DeployPoseAnim": {
+        "ObjectName": "AnimSequence'SK_WEA_MKB_Kelpie_DeployPose_anm'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Magic_Kite_Battle/SK_WEA_MKB_Kelpie_DeployPose_anm.0"
+      },
+      "DeployAnim": {
+        "ObjectName": "AnimSequence'SK_WEA_MKB_Kelpie_Deploy_anm'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Magic_Kite_Battle/SK_WEA_MKB_Kelpie_Deploy_anm.1"
+      },
+      "IdleAnim": {
+        "ObjectName": "AnimSequence'SK_WEA_MKB_KelpieIdle_anm'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Magic_Kite_Battle/SK_WEA_MKB_KelpieIdle_anm.0"
+      },
+      "ReturnAnim": {
+        "ObjectName": "AnimSequence'SK_WEA_MKB_Kelpie_Retract_anm'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Magic_Kite_Battle/SK_WEA_MKB_Kelpie_Retract_anm.1"
+      },
+      "ShouldDelay": true
+    }
+  }
+]

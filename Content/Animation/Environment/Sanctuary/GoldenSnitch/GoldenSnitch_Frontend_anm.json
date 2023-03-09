@@ -1,0 +1,278 @@
+[
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_0",
+    "Outer": "GoldenSnitch_Frontend_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'FrontEnd_SnitchSFX_V2'",
+        "ObjectPath": "/Game/WWise/Events/UI/FrontEnd/FrontEnd_SnitchSFX_V2.0"
+      },
+      "SocketName": "body",
+      "OcclusionOption": "OcclusionOff"
+    }
+  },
+  {
+    "Type": "AnimNotifyState_TimedNiagaraEffect",
+    "Name": "AnimNotifyState_TimedNiagaraEffect_0",
+    "Outer": "GoldenSnitch_Frontend_anm",
+    "Class": "UScriptClass'AnimNotifyState_TimedNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NS_GoldenSnitchGlow'",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/Sanctuary/GoldenSnitch/VFX_NS_GoldenSnitchGlow.16"
+      },
+      "SocketName": "body"
+    }
+  },
+  {
+    "Type": "AnimNotifyState_TimedNiagaraEffect",
+    "Name": "AnimNotifyState_TimedNiagaraEffect_1",
+    "Outer": "GoldenSnitch_Frontend_anm",
+    "Class": "UScriptClass'AnimNotifyState_TimedNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotifyState_TimedNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NS_GoldenSnitchGlow'",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/Sanctuary/GoldenSnitch/VFX_NS_GoldenSnitchGlow.16"
+      },
+      "SocketName": "body"
+    }
+  },
+  {
+    "Type": "AnimSequence",
+    "Name": "GoldenSnitch_Frontend_anm",
+    "Class": "UScriptClass'AnimSequence'",
+    "ClassPath": "/Script/Engine.AnimSequence",
+    "Properties": {
+      "NumFrames": 543,
+      "TrackToSkeletonMapTable": [
+        {
+          "BoneTreeIndex": 0
+        },
+        {
+          "BoneTreeIndex": 1
+        },
+        {
+          "BoneTreeIndex": 2
+        },
+        {
+          "BoneTreeIndex": 3
+        },
+        {
+          "BoneTreeIndex": 4
+        },
+        {
+          "BoneTreeIndex": 5
+        }
+      ],
+      "BoneCompressionSettings": {
+        "ObjectName": "AnimBoneCompressionSettings'AC_PhxAnimBoneCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings.4"
+      },
+      "CurveCompressionSettings": {
+        "ObjectName": "AnimCurveCompressionSettings'AC_PhxAnimCurveCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings.1"
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "TimedNiagaraEffect",
+          "Notify": null,
+          "NotifyStateClass": {
+            "ObjectName": "AnimNotifyState_TimedNiagaraEffect'GoldenSnitch_Frontend_anm:AnimNotifyState_TimedNiagaraEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.1"
+          },
+          "Duration": 18.066652,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": 0,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 18.066668,
+            "LinkValue": 18.066652,
+            "LinkedSequence": {
+              "ObjectName": "AnimSequence'GoldenSnitch_Frontend_anm'",
+              "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.3"
+            }
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 18.066668,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'GoldenSnitch_Frontend_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.3"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AkEvent_Ava",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'GoldenSnitch_Frontend_anm:AnimNotify_AkEvent_Ava_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.0"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 18.066668,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'GoldenSnitch_Frontend_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.3"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "TimedNiagaraEffect",
+          "Notify": null,
+          "NotifyStateClass": {
+            "ObjectName": "AnimNotifyState_TimedNiagaraEffect'GoldenSnitch_Frontend_anm:AnimNotifyState_TimedNiagaraEffect_1'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.2"
+          },
+          "Duration": 18.066668,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": 0,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 18.066668,
+            "LinkValue": 18.066668,
+            "LinkedSequence": {
+              "ObjectName": "AnimSequence'GoldenSnitch_Frontend_anm'",
+              "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.3"
+            }
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 18.066668,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'GoldenSnitch_Frontend_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/GoldenSnitch/GoldenSnitch_Frontend_anm.3"
+          }
+        }
+      ],
+      "SequenceLength": 18.066668,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_GoldenSnitch_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/GoldenSnitch/SK_GoldenSnitch_Skeleton.4"
+      }
+    },
+    "SkeletonGuid": "940A4B69-4BEFFB07-4A60FF88-7B3B8C44",
+    "CompressedTrackToSkeletonMapTable": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "CompressedCurveNames": [
+      {
+        "DisplayName": "AverageSpeed"
+      }
+    ],
+    "CompressedCurveData": {
+      "FloatCurves": [
+        {
+          "FloatCurve": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant"
+          },
+          "Name": {
+            "DisplayName": "AverageSpeed"
+          },
+          "CurveTypeFlags": 4
+        }
+      ]
+    },
+    "CompressedDataStructure": {
+      "CompressedNumberOfFrames": 543
+    },
+    "BoneCompressionCodec": {
+      "ObjectName": "AnimBoneCompressionCodec_ACL'AC_PhxAnimBoneCompressionSettings:AnimBoneCompressionCodec_ACL_2'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings"
+    },
+    "CurveCompressionCodec": {
+      "ObjectName": "AnimCurveCompressionCodec_CompressedRichCurve'AC_PhxAnimCurveCompressionSettings:CurveCompressionCodec'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings"
+    },
+    "CompressedRawDataSize": 50524
+  }
+]

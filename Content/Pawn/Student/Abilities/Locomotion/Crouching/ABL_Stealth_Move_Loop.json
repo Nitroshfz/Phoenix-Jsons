@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Stealth_Move_Loop_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Stealth_Move_Loop_C'Default__ABL_Stealth_Move_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.1"
+    }
+  },
+  {
+    "Type": "ABL_Stealth_Move_Loop_C",
+    "Name": "Default__ABL_Stealth_Move_Loop_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.ABL_Stealth_Move_Loop_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_Move_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Stealth_Move_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.6"
+        },
+        {
+          "ObjectName": "ablNPC_MobilityTurnAssistTask'Default__ABL_Stealth_Move_Loop_C:ablNPC_MobilityTurnAssistTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.5"
+        },
+        {
+          "ObjectName": "AblEnemyDynamicBranchTask'Default__ABL_Stealth_Move_Loop_C:AblEnemyDynamicBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.4"
+        }
+      ],
+      "m_AbilityNameHash": 2347914288,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimRateGetter_SpeedAdjust",
+    "Name": "AblAnimRateGetter_SpeedAdjust_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimRateGetter_SpeedAdjust'",
+    "ClassPath": "/Script/Phoenix.AblAnimRateGetter_SpeedAdjust",
+    "Properties": {
+      "AnimRateRange": {
+        "X": -0.2,
+        "Y": 0.15
+      }
+    }
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_MoveStrafe",
+    "Name": "AblBlendSpaceParameterGetter_MoveStrafe_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_MoveStrafe'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_MoveStrafe"
+  },
+  {
+    "Type": "AblEnemyDynamicBranchTask",
+    "Name": "AblEnemyDynamicBranchTask_0",
+    "Outer": "Default__ABL_Stealth_Move_Loop_C",
+    "Class": "UScriptClass'AblEnemyDynamicBranchTask'",
+    "ClassPath": "/Script/Phoenix.AblEnemyDynamicBranchTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Stealth_Move_Loop_C'Default__ABL_Stealth_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Stealth_Move_Loop_C'Default__ABL_Stealth_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablNPC_MobilityTurnAssistTask",
+    "Name": "ablNPC_MobilityTurnAssistTask_0",
+    "Outer": "Default__ABL_Stealth_Move_Loop_C",
+    "Class": "UScriptClass'ablNPC_MobilityTurnAssistTask'",
+    "ClassPath": "/Script/Phoenix.ablNPC_MobilityTurnAssistTask",
+    "Properties": {
+      "TurnAssistMode": "ENPC_TurnAssist::Mobility",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Stealth_Move_Loop_C'Default__ABL_Stealth_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Stealth_Move_Loop_C'Default__ABL_Stealth_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Stealth_Move_Loop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Stealth_Walk_Loop"
+      ],
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_MoveStrafe'Default__ABL_Stealth_Move_Loop_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_MoveStrafe_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.3"
+      },
+      "m_AnimRateGetter": {
+        "ObjectName": "AblAnimRateGetter_SpeedAdjust'Default__ABL_Stealth_Move_Loop_C:AblPlayAnimationArchitectTask_0.AblAnimRateGetter_SpeedAdjust_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.2"
+      },
+      "m_StartPositionGetter": {
+        "ObjectName": "AblStartPositionGetter_PhaseMatch'Default__ABL_Stealth_Move_Loop_C:AblPlayAnimationArchitectTask_0.AblStartPositionGetter_PhaseMatch_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.7"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 1.0
+      },
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Stealth_Move_Loop_C'Default__ABL_Stealth_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Move_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.99999994
+      }
+    }
+  },
+  {
+    "Type": "AblStartPositionGetter_PhaseMatch",
+    "Name": "AblStartPositionGetter_PhaseMatch_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblStartPositionGetter_PhaseMatch'",
+    "ClassPath": "/Script/Phoenix.AblStartPositionGetter_PhaseMatch"
+  }
+]

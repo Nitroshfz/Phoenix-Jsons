@@ -1,0 +1,345 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Bed_Exit_Fwd_C'Default__ABL_Bed_Exit_Fwd_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.1"
+    }
+  },
+  {
+    "Type": "ABL_Bed_Exit_Fwd_C",
+    "Name": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.ABL_Bed_Exit_Fwd_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Bed_Exit_Fwd_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 8.53,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Bed_Exit_Fwd_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.12"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Bed_Exit_Fwd_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.9"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Bed_Exit_Fwd_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.6"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Bed_Exit_Fwd_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Bed_Exit_Fwd_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Bed_Exit_Fwd_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.8"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Bed_Exit_Fwd_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.2"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Bed_Exit_Fwd_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.11"
+        }
+      ],
+      "m_AbilityNameHash": 2366580904,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 4.0458593,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Bed_Exit_Fwd_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.12"
+        }
+      },
+      "m_EventName": "MakeInterruptible"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Bed_Exit_Fwd_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.233
+      },
+      "m_StartTime": {
+        "Offset": -0.23333311,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Bed_Exit_Fwd_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.23333311,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Bed_Exit_Fwd_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Bed_Exit_Fwd_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Bed_Exit_Fwd_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Bed_Exit_Fwd_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Bed_Exit_Fwd_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Bed_Exit_Fwd_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Bed_Exit_Fwd_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.23333311,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Bed_Exit_Fwd_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.23333311,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Bed_Exit_Fwd_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLockOnMode",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Bed_Exit_Fwd_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.2"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Bed_Exit_Fwd_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.2"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 5.533334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Bed_Exit_Fwd_C'Default__ABL_Bed_Exit_Fwd_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.1"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Bed_Exit_Fwd_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Transition_Bed_Exit_Fwd"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.0
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Bed_Exit_Fwd_C'Default__ABL_Bed_Exit_Fwd_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_Bed_Exit_Fwd.1"
+        }
+      }
+    }
+  }
+]

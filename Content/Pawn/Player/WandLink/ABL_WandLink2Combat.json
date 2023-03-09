@@ -1,0 +1,581 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_WandLink2Combat_C'Default__ABL_WandLink2Combat_C'",
+      "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.1"
+    }
+  },
+  {
+    "Type": "ABL_WandLink2Combat_C",
+    "Name": "Default__ABL_WandLink2Combat_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.ABL_WandLink2Combat_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_WandLink2Combat_C'",
+      "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 2.6666667,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_WandLink2Combat_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.21"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_WandLink2Combat_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.20"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.14"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.15"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.16"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.17"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_5'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_WandLink2Combat_C:AblBranchTask_6'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.19"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.22"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.23"
+        }
+      ],
+      "m_AbilityNameHash": 202273231,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_IdleBreak",
+    "Name": "AblAnimationTagChooser_IdleBreak_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_IdleBreak'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_IdleBreak",
+    "Properties": {
+      "BaseTags": [
+        "AA.AnimPlayerName.Cmbt2CmbtCasualIdle"
+      ],
+      "LeftFootTag": {
+        "TagName": "AA.Foot.LF"
+      },
+      "RightFootTag": {
+        "TagName": "AA.Foot.RF"
+      },
+      "AnimationTags": [
+        [
+          "AA.Group.Basic"
+        ],
+        [
+          "AA.Group.Look_v1"
+        ],
+        [
+          "AA.Group.Look_v2"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "UseTracker": "EDesiredDeltaTargetTracker::Facing",
+      "AngleRange": {
+        "X": -22.5,
+        "Y": 22.5
+      },
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_5",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_6",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_CombatIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_WandLink2Combat_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.3"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.19999999,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_WandLink2Combat_C:AblBranchTask_1.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.6"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_WandLink2Combat_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.8"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_WandLink2Combat_C:AblBranchTask_2.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.7"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_WandLink2Combat_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_TurnMove_Stop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Stop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_WandLink2Combat_C:AblBranchTask_3.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.5"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_WandLink2Combat_C:AblBranchTask_3.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.10"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Idle_Flinch_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle_Flinch.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_WandLink2Combat_C:AblBranchTask_4.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.4"
+        }
+      ],
+      "m_TransitionBlend": {
+        "BlendTime": 0.1
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.22"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.22"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_5",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_TurnMove_Stop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Stop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_WandLink2Combat_C:AblBranchTask_5.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.11"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.23"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.23"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_6",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Stop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Stop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_WandLink2Combat_C:AblBranchTask_6.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.12"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.23"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandLink2Combat_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.23"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "isIdling",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 1.2,
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandLink2Combat_C'Default__ABL_WandLink2Combat_C'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.1"
+        }
+      },
+      "m_EventName": "Flinch"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 2.02109,
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandLink2Combat_C'Default__ABL_WandLink2Combat_C'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.1"
+        }
+      },
+      "m_EventName": "StickNudge"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_WandLink2Combat_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.WandLink2CmbatIdle"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_IdleBreak'Default__ABL_WandLink2Combat_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_IdleBreak_0'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.0,
+        "BlendOption": "EAlphaBlendOption::Linear"
+      },
+      "m_OverrideBlendOut": true,
+      "m_BlendOut": {
+        "BlendTime": 0.0,
+        "BlendOption": "EAlphaBlendOption::Linear"
+      },
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandLink2Combat_C'Default__ABL_WandLink2Combat_C'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/ABL_WandLink2Combat.1"
+        }
+      }
+    }
+  }
+]

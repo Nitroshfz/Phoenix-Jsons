@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_SlidingOnGround",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.RagdollPowering",
+        "AA.RagdollPowerAnims.InjuredWrithe"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Weak",
+      "PoseDriveBlendTime": 0.5,
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsSlidingOnGround'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsSlidingOnGround.0"
+          }
+        ],
+        "RequiredAny": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_AllowDramaticDeath'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_AllowDramaticDeath.0"
+          }
+        ]
+      },
+      "RequireStatesToEnter": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasMinTimeIfTumbleBehavior'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasMinTimeIfTumbleBehavior.0"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_DuelCombatIdle_C'Default__ABL_DuelCombatIdle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.1"
+    }
+  },
+  {
+    "Type": "ABL_DuelCombatIdle_C",
+    "Name": "Default__ABL_DuelCombatIdle_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.ABL_DuelCombatIdle_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_DuelCombatIdle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_DuelCombatIdle_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DuelCombatIdle_C:AblBranchTask_5'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.8"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DuelCombatIdle_C:AblBranchTask_8'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.9"
+        },
+        {
+          "ObjectName": "AblSetRightArmStateTask'Default__ABL_DuelCombatIdle_C:AblSetRightArmStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DuelCombatIdle_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.7"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DuelCombatIdle_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.11"
+        }
+      ],
+      "m_AbilityNameHash": 141108124,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_5",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "AngleRange": {
+        "X": -90.0,
+        "Y": 90.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_8",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "AngleRange": {
+        "X": -90.0,
+        "Y": 90.0
+      },
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_5",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_8",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Idle_Flinch_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle_Flinch.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_DuelCombatIdle_C:AblBranchTask_4.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.2"
+        }
+      ],
+      "m_TransitionBlend": {
+        "BlendTime": 0.1
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DuelCombatIdle_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DuelCombatIdle_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_5",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_DuelMoveFwd_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_DuelMoveFwd.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_DuelCombatIdle_C:AblBranchTask_5.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.3"
+        },
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_DuelCombatIdle_C:AblBranchTask_5.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_8",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_DuelMoveBackward_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_DuelMoveBackward.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_DuelCombatIdle_C:AblBranchTask_8.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.4"
+        },
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_DuelCombatIdle_C:AblBranchTask_8.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.6"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "isIdling",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 2.1666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_DuelCombatIdle_C'Default__ABL_DuelCombatIdle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.1"
+        }
+      },
+      "m_EventName": "Flinch"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.CombatIdleRF"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_DuelCombatIdle_C'Default__ABL_DuelCombatIdle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetRightArmStateTask",
+    "Name": "AblSetRightArmStateTask_0",
+    "Outer": "Default__ABL_DuelCombatIdle_C",
+    "Class": "UScriptClass'AblSetRightArmStateTask'",
+    "ClassPath": "/Script/Phoenix.AblSetRightArmStateTask",
+    "Properties": {
+      "RightArmState": "ERightArmState::HoldItem",
+      "RightArmPriority": "ERightArmPriority::LowestPriority",
+      "bBroadcastChange": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DuelCombatIdle_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_DuelCombatIdle.12"
+        }
+      }
+    }
+  }
+]

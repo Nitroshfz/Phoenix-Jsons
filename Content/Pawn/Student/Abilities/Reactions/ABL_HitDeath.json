@@ -1,0 +1,377 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_HitDeath",
+    "Outer": "ABL_HitDeath_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_HitDeath_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_HitDeath_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_HitDeath_C:ExecuteUbergraph_ABL_HitDeath'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_HitDeath_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.1"
+      },
+      {
+        "ObjectName": "Function'ABL_HitDeath_C:ExecuteUbergraph_ABL_HitDeath'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_HitDeath": {
+        "ObjectName": "Function'ABL_HitDeath_C:ExecuteUbergraph_ABL_HitDeath'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.0"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_HitDeath_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.1"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_HitDeath_C'Default__ABL_HitDeath_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.3"
+    }
+  },
+  {
+    "Type": "ABL_HitDeath_C",
+    "Name": "Default__ABL_HitDeath_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.ABL_HitDeath_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitDeath_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 10.0,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitDeath_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitDeath_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.9"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitDeath_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitDeath_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.8"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_HitDeath_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.12"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitDeath_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.5"
+        }
+      ],
+      "m_AbilityNameHash": 66385435
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Random",
+    "Name": "AblAnimationTagChooser_Random_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_Random'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Random",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.HitDeath1"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath10"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath11"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath2"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath3"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath4"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath5"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath6"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath7"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath8"
+        ],
+        [
+          "AA.AnimPlayerName.HitDeath9"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_HitDeath_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 1.667,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitDeath_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.11"
+        }
+      },
+      "m_EventName": "RagdollStart"
+    }
+  },
+  {
+    "Type": "AblBranchActorTagCondition",
+    "Name": "AblBranchActorTagCondition_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchActorTagCondition'",
+    "ClassPath": "/Script/Phoenix.AblBranchActorTagCondition",
+    "Properties": {
+      "TagName": "DuelingState"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_HitDeath_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RagdollPlayerBehavior_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitDeath_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.7"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitDeath_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitDeath_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_HitDeath_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Dueling_HitDeath_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Dueling_HitDeath.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchActorTagCondition'Default__ABL_HitDeath_C:AblBranchTask_1.AblBranchActorTagCondition_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.6"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitDeath_C'Default__ABL_HitDeath_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitDeath_C'Default__ABL_HitDeath_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_HitDeath_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FocusOnHipsOn"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitDeath_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitDeath_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_HitDeath_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitDeath"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Random'Default__ABL_HitDeath_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_Random_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.4"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitDeath_C'Default__ABL_HitDeath_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_HitDeath_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_dying_average'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_dying_average.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitDeath_C'Default__ABL_HitDeath_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 9.966667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitDeath_C'Default__ABL_HitDeath_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.3"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Rct_TimeDilation_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Rct_TimeDilation_C'Default__ABL_Rct_TimeDilation_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.1"
+    }
+  },
+  {
+    "Type": "ABL_Rct_TimeDilation_C",
+    "Name": "Default__ABL_Rct_TimeDilation_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.ABL_Rct_TimeDilation_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Rct_TimeDilation_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 11.733333,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Rct_TimeDilation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.5"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Rct_TimeDilation_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.4"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Rct_TimeDilation_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.3"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_Rct_TimeDilation_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.6"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_Rct_TimeDilation_C:AblPlayPostAkEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.7"
+        }
+      ],
+      "m_AbilityNameHash": 2100826195,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Rct_TimeDilation_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_CombatIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Rct_TimeDilation_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.2"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Rct_TimeDilation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Rct_TimeDilation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Rct_TimeDilation_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Rct_TimeDilation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Rct_TimeDilation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Rct_TimeDilation_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.RctTimeDilation"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 1.0000001,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Rct_TimeDilation_C'Default__ABL_Rct_TimeDilation_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 10.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_Rct_TimeDilation_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'levioso_player_float_motion_Play'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Leviosa/levioso_player_float_motion_Play.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": 0.06666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Rct_TimeDilation_C'Default__ABL_Rct_TimeDilation_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.0666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Rct_TimeDilation_C'Default__ABL_Rct_TimeDilation_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_1",
+    "Outer": "Default__ABL_Rct_TimeDilation_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'levioso_player_float_motion_Stop'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Leviosa/levioso_player_float_motion_Stop.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": 7.0000005,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Rct_TimeDilation_C'Default__ABL_Rct_TimeDilation_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 8.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Rct_TimeDilation_C'Default__ABL_Rct_TimeDilation_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Rct_TimeDilation.1"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,259 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_WandCast_Transform_Partial_C'Default__ABL_WandCast_Transform_Partial_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.1"
+    }
+  },
+  {
+    "Type": "ABL_WandCast_Transform_Partial_C",
+    "Name": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.ABL_WandCast_Transform_Partial_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_WandCast_Transform_Partial_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.5017612,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.8"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_WandCast_Transform_Partial_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.4"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_WandCast_Transform_Partial_C:AblBTCustomActionTask_7'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.6"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_WandCast_Transform_Partial_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.5"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.9"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_WandCast_Transform_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.3"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_WandCast_Transform_Partial_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.7"
+        }
+      ],
+      "m_AbilityNameHash": 3187345932,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationModifier_WandCastAim",
+    "Name": "AblAnimationModifier_WandCastAim_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationModifier_WandCastAim'",
+    "ClassPath": "/Script/Phoenix.AblAnimationModifier_WandCastAim",
+    "Properties": {
+      "EventName": "None",
+      "bLoop": true,
+      "bAlwaysUseCurrentAimInfo": true
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.50176114,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.8"
+        }
+      },
+      "m_EventName": "FireWand"
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FireWandPartial"
+      },
+      "m_StartTime": {
+        "Offset": -0.26666665,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.8"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.36490583,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimCompletePartial"
+      },
+      "m_StartTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.8"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_7",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "PostFullBodyWandCast"
+      },
+      "m_StartTime": {
+        "Offset": 0.29823893,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_WandCast_Transform_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.29823893,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_WandCast_Transform_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandCast_Transform_Partial_C'Default__ABL_WandCast_Transform_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.1"
+        }
+      },
+      "m_EventName": "WandCastInterrupt"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Conjure_Object_Enter"
+      ],
+      "m_AnimationModifiers": [
+        {
+          "ObjectName": "AblAnimationModifier_WandCastAim'Default__ABL_WandCast_Transform_Partial_C:AblPlayAnimationArchitectTask_0.AblAnimationModifier_WandCastAim_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.2"
+        }
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_Transform_Enter_BlendWeights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_Enter_BlendWeights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandCast_Transform_Partial_C'Default__ABL_WandCast_Transform_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.9666667
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_WandCast_Transform_Partial_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_effort_throw_short'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_effort_throw_short.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandCast_Transform_Partial_C'Default__ABL_WandCast_Transform_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_WandCast_Transform_Partial_C'Default__ABL_WandCast_Transform_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_WandCast_Transform_Partial.1"
+        }
+      }
+    }
+  }
+]

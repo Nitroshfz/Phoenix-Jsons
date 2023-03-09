@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_TransitionToGetup",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToGetupPose",
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Strong",
+      "PoseDriveBlendTime": 0.25,
+      "StrengthOverTime": {
+        "ObjectName": "CurveFloat'C_RagdollBehavior_Strength_TransitionToGetup'",
+        "ObjectPath": "/Game/Pawn/Shared/Ragdoll/Curves/C_RagdollBehavior_Strength_TransitionToGetup.0"
+      },
+      "StrengthBlendInTime": 0.25,
+      "CommitToGetupPose": true,
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNearlyStationary'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNearlyStationary.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsOnGround'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsOnGround.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsReadyForGetup'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsReadyForGetup.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotPetrified'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotPetrified.0"
+          }
+        ]
+      },
+      "RequireStatesToEnter": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasMinTimeIfTumbleBehavior'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasMinTimeIfTumbleBehavior.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasMinTimeIfSlidingBehavior'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasMinTimeIfSlidingBehavior.0"
+          }
+        ]
+      }
+    }
+  }
+]

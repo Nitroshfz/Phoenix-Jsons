@@ -1,0 +1,188 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_DragonMural",
+    "Outer": "ABP_DragonMural_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_DragonMural_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 384,
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_DragonMural_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.AnimBlueprintGeneratedClass",
+    "Properties": {
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_HW_CT_DragonMural_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/SK_HW_CT_DragonMural_Skeleton.3"
+      },
+      "OrderedSavedPoseIndicesMap": [
+        {
+          "AnimGraph": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_DragonMural_C:ExecuteUbergraph_ABP_DragonMural'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Able_AnimInstance'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_DragonMural_C:AnimGraph'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.1"
+      },
+      {
+        "ObjectName": "Function'ABP_DragonMural_C:ExecuteUbergraph_ABP_DragonMural'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_RandomPlayer",
+        "Flags": 2097153,
+        "ElementSize": 120,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_RandomPlayer'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_DragonMural": {
+        "ObjectName": "Function'ABP_DragonMural_C:ExecuteUbergraph_ABP_DragonMural'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.0"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_DragonMural_C:AnimGraph'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.1"
+      }
+    },
+    "ClassFlags": 8652824,
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_DragonMural_C'Default__ABP_DragonMural_C'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.3"
+    }
+  },
+  {
+    "Type": "ABP_DragonMural_C",
+    "Name": "Default__ABP_DragonMural_C",
+    "Class": "AnimBlueprintGeneratedClass'/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.ABP_DragonMural_C'",
+    "ClassRef": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_DragonMural_C'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/DragonMural/ABP_DragonMural.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 1
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_RandomPlayer": {
+        "Entries": [
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'DragonMural_Idle_Loop_anm'",
+              "ObjectPath": "/Game/Animation/Environment/DragonMural/DragonMural_Idle_Loop_anm.6"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'DragonMural_Tickle_anm'",
+              "ObjectPath": "/Game/Animation/Environment/DragonMural/DragonMural_Tickle_anm.15"
+            },
+            "ChanceToPlay": 0.2,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.4,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          }
+        ],
+        "bShuffleMode": false
+      }
+    }
+  }
+]

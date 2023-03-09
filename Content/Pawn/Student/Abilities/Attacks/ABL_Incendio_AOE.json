@@ -1,0 +1,469 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Incendio_AOE_C'Default__ABL_Incendio_AOE_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.1"
+    }
+  },
+  {
+    "Type": "ABL_Incendio_AOE_C",
+    "Name": "Default__ABL_Incendio_AOE_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.ABL_Incendio_AOE_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Incendio_AOE_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 16.066668,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Incendio_AOE_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.9"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.14"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Incendio_AOE_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.11"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Incendio_AOE_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Incendio_AOE_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.8"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Incendio_AOE_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.6"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Incendio_AOE_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.7"
+        },
+        {
+          "ObjectName": "AblAdjustCamTask'Default__ABL_Incendio_AOE_C:AblAdjustCamTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.2"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_Incendio_AOE_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.16"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incendio_AOE_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.12"
+        }
+      ],
+      "m_AbilityNameHash": 3737756905,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAdjustCamTask",
+    "Name": "AblAdjustCamTask_0",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblAdjustCamTask'",
+    "ClassPath": "/Script/Phoenix.AblAdjustCamTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.6333337,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Incendio_AOE_C:AblBranchTask_0.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incendio_AOE_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Incendio_AOE_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incendio_AOE_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_CombatIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Incendio_AOE_C:AblBranchTask_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.3"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FireWand"
+      },
+      "m_StartTime": {
+        "Offset": 1.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.13"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_2",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noPartialBodySpellCasting",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFullBodySpellCasting",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeDodge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": -0.5,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.5,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.15"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 3.888169
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.CmbtWandAtk_AOE_Incendio_Start"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_EndTime": {
+        "Offset": 1.6734668
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_2",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.CmbtWandAtk_AOE_Incendio_Loop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.0
+      },
+      "m_StartTime": {
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 7.3762484
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_4",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.CmbtWandAtk_AOE_Incendio_End"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "Offset": 4.7683716E-07,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incendio_AOE_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 9.8
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_Incendio_AOE_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'VO_Spell'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Events/VO_Spell.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incendio_AOE_C'Default__ABL_Incendio_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incendio_AOE_C'Default__ABL_Incendio_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Incendio_AOE.1"
+        }
+      }
+    }
+  }
+]

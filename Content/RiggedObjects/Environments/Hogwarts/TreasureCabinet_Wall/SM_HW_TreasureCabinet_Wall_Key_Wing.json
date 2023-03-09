@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_HW_TreasureCabinet_Wall_Key_Wing",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9B7E8D6B45160842D1D588B7D4A9640C",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x21E0"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_HW_TreasureCabinet_Wall_Key_Wing",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2244"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_HW_TreasureCabinet_Wall_Key_Wing",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_TreasureCabinet_Wall_Key'",
+            "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/TreasureCabinet_Wall/Materials/MI_HW_TreasureCabinet_Wall_Key.0"
+          },
+          "MaterialSlotName": "MI_HW_TreasureCabinet_Wall_Key",
+          "ImportedMaterialSlotName": "MI_HW_TreasureCabinet_Wall_Key",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 16.278854,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 16.278854,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 2.410753,
+          "Y": 0.006361872,
+          "Z": 8.65799
+        },
+        "BoxExtent": {
+          "X": 2.918112,
+          "Y": 0.0505153,
+          "Z": 7.863181
+        },
+        "SphereRadius": 8.353623
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_HW_TreasureCabinet_Wall_Key_Wing:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/TreasureCabinet_Wall/SM_HW_TreasureCabinet_Wall_Key_Wing.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_HW_TreasureCabinet_Wall_Key_Wing:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/TreasureCabinet_Wall/SM_HW_TreasureCabinet_Wall_Key_Wing.1"
+    },
+    "LightingGuid": "28EA1C01-4680E568-9951489C-F80FB847",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 12,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 15,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 16
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 16,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 2.410753,
+          "Y": 0.006361872,
+          "Z": 8.65799
+        },
+        "BoxExtent": {
+          "X": 2.918112,
+          "Y": 0.0505153,
+          "Z": 7.863181
+        },
+        "SphereRadius": 8.353623
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.020784,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

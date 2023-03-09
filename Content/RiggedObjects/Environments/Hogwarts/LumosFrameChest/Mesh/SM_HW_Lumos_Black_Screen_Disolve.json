@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_HW_Lumos_Black_Screen_Disolve",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "832705EB4B90A2F506CF4F8D76469557",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2350"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_HW_Lumos_Black_Screen_Disolve",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x23B4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_HW_Lumos_Black_Screen_Disolve",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'VFX_MI_LumosPictureDissolve'",
+            "ObjectPath": "/Game/VFX/MasterMaterials/Cinematic/MaterialInstances/VFX_MI_LumosPictureDissolve.0"
+          },
+          "MaterialSlotName": "mothLocationScreenShot",
+          "ImportedMaterialSlotName": "mothLocationScreenShot",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 143.88495,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 143.88495,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 1.9073486E-06,
+          "Z": 95.09633
+        },
+        "BoxExtent": {
+          "X": 80.933105,
+          "Y": 1.9073486E-06,
+          "Z": 55.662537
+        },
+        "SphereRadius": 81.08152
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_HW_Lumos_Black_Screen_Disolve:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/LumosFrameChest/Mesh/SM_HW_Lumos_Black_Screen_Disolve.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_HW_Lumos_Black_Screen_Disolve:NavCollision_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/LumosFrameChest/Mesh/SM_HW_Lumos_Black_Screen_Disolve.1"
+    },
+    "LightingGuid": "AA176775-404BBF6E-9A68B68D-C52D9303",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 22,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 20,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 21
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 21,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 1.9073486E-06,
+          "Z": 95.09633
+        },
+        "BoxExtent": {
+          "X": 80.933105,
+          "Y": 1.9073486E-06,
+          "Z": 55.662537
+        },
+        "SphereRadius": 81.08152
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.021437332,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

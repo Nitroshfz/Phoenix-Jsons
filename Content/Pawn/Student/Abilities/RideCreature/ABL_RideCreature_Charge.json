@@ -1,0 +1,243 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_RideCreature_Charge_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_RideCreature_Charge_C'Default__ABL_RideCreature_Charge_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.1"
+    }
+  },
+  {
+    "Type": "ABL_RideCreature_Charge_C",
+    "Name": "Default__ABL_RideCreature_Charge_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.ABL_RideCreature_Charge_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_Charge_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_RideCreature_Charge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RideCreature_Charge_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RideCreature_Charge_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.8"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_Charge_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.9"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_Charge_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.10"
+        }
+      ],
+      "m_AbilityNameHash": 912372370
+    }
+  },
+  {
+    "Type": "AblAnimationModifier_MountRider",
+    "Name": "AblAnimationModifier_MountRider_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationModifier_MountRider'",
+    "ClassPath": "/Script/Phoenix.AblAnimationModifier_MountRider"
+  },
+  {
+    "Type": "AblAnimationTagChooser_MountType",
+    "Name": "AblAnimationTagChooser_MountType_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_MountType'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_MountType"
+  },
+  {
+    "Type": "AblAnimRateGetter_SyncAnimationPosition",
+    "Name": "AblAnimRateGetter_SyncAnimationPosition_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimRateGetter_SyncAnimationPosition'",
+    "ClassPath": "/Script/Phoenix.AblAnimRateGetter_SyncAnimationPosition",
+    "Properties": {
+      "DeltaToPlayRate": {
+        "ExternalCurve": {
+          "ObjectName": "CurveFloat'C_MountRider_DeltaToPlayRate'",
+          "ObjectPath": "/Game/Pawn/NPC/Creature/Data/C_MountRider_DeltaToPlayRate.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_RideCreature_Charge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_Run_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Run.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_RideCreature_Charge_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.5"
+        }
+      ],
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_Charge_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.9"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_Charge_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_RideCreature_Charge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_Trot_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Trot.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_RideCreature_Charge_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.6"
+        }
+      ],
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_Charge_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.10"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_Charge_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.10"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_RideCreature_Charge_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.11743237,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_Charge_C'Default__ABL_RideCreature_Charge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.1"
+        }
+      },
+      "m_EventName": "RiderRun"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_RideCreature_Charge_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.2228253,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_Charge_C'Default__ABL_RideCreature_Charge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.1"
+        }
+      },
+      "m_EventName": "RiderTrot"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_RideCreature_Charge_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationSet": [
+        "OA.AssetTypes.MountRiding"
+      ],
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Move",
+        "AA.Gait.Charge"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_MountType'Default__ABL_RideCreature_Charge_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_MountType_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.3"
+      },
+      "m_AnimRateGetter": {
+        "ObjectName": "AblAnimRateGetter_SyncAnimationPosition'Default__ABL_RideCreature_Charge_C:AblPlayAnimationArchitectTask_0.AblAnimRateGetter_SyncAnimationPosition_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.4"
+      },
+      "m_AnimationModifiers": [
+        {
+          "ObjectName": "AblAnimationModifier_MountRider'Default__ABL_RideCreature_Charge_C:AblPlayAnimationArchitectTask_0.AblAnimationModifier_MountRider_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.2"
+        }
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_Charge_C'Default__ABL_RideCreature_Charge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/ABL_RideCreature_Charge.1"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Magic_Flying_Book_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Magic_Flying_Book_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Books/SK_Magic_Flying_Book_Physics.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Magic_Flying_Book_Physics:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Books/SK_Magic_Flying_Book_Physics.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Magic_Flying_Book_Physics:SkeletalBodySetup_4'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Books/SK_Magic_Flying_Book_Physics.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Magic_Flying_Book_Physics:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Books/SK_Magic_Flying_Book_Physics.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Magic_Flying_Book_Physics:PhysicsConstraintTemplate_3'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Books/SK_Magic_Flying_Book_Physics.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_Magic_Flying_Book_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "cover_right",
+        "ConstraintBone1": "cover_right",
+        "ConstraintBone2": "Binding_Center",
+        "PriAxis1": {
+          "X": -0.002469778,
+          "Y": 0.9999969,
+          "Z": 1.0409451E-10
+        },
+        "SecAxis1": {
+          "X": -0.9999969,
+          "Y": -0.002469778,
+          "Z": 8.429363E-08
+        },
+        "Pos2": {
+          "X": 3.0,
+          "Y": -1.0112798,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": -0.99959326,
+          "Y": -0.028446762,
+          "Z": -7.92224E-09
+        },
+        "SecAxis2": {
+          "X": 0.028446762,
+          "Y": -0.99959326,
+          "Z": -2.0877458E-09
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 25.0,
+            "Swing2LimitDegrees": 25.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "SK_Magic_Flying_Book_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "cover_left",
+        "ConstraintBone1": "cover_left",
+        "ConstraintBone2": "Binding_Center",
+        "PriAxis1": {
+          "X": -0.0035306215,
+          "Y": -0.9999938,
+          "Z": 0.0
+        },
+        "SecAxis1": {
+          "X": 0.9999938,
+          "Y": -0.0035306215,
+          "Z": 0.0
+        },
+        "Pos2": {
+          "X": -3.0,
+          "Y": -1.0112798,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": 0.84569436,
+          "Y": 0.53366697,
+          "Z": -3.396621E-08
+        },
+        "SecAxis2": {
+          "X": 0.53366697,
+          "Y": -0.84569025,
+          "Z": 1.7782247E-09
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 25.0,
+            "Swing2LimitDegrees": 25.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Magic_Flying_Book_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.014069308,
+              "Y": -0.08104658,
+              "Z": -0.06892204
+            },
+            "Rotation": {
+              "Pitch": -0.010702906,
+              "Yaw": -90.00001,
+              "Roll": -0.071059965
+            },
+            "X": 2.8152819,
+            "Y": 3.5447893,
+            "Z": 32.803207,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Binding_Center",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "816A5C4A4EDB1FD77BBBE89034281A46"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Magic_Flying_Book_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -1.3964233,
+              "Y": -11.538739,
+              "Z": -0.023323603
+            },
+            "Rotation": {
+              "Pitch": -0.9787729,
+              "Yaw": -89.99999,
+              "Roll": -0.13228768
+            },
+            "X": 21.876348,
+            "Y": 2.3129616,
+            "Z": 33.207138,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "cover_right",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "0A37A538465B4DAD5AF56690671717F9"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_4",
+    "Outer": "SK_Magic_Flying_Book_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 1.3504372,
+              "Y": 11.664688,
+              "Z": 0.029652119
+            },
+            "Rotation": {
+              "Pitch": 0.67603844,
+              "Yaw": -90.0,
+              "Roll": 0.00062930165
+            },
+            "X": 21.959417,
+            "Y": 2.3321762,
+            "Z": 32.943604,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "cover_left",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "44C4AE0A446A66D6C75453A6EFBDC9A9"
+  }
+]

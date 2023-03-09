@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "RagdollAudioBehavior",
+    "Name": "DA_RagdollAudioBehavior_Tumble",
+    "Class": "UScriptClass'RagdollAudioBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollAudioBehavior",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_pain_grunt_short'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_pain_grunt_short.0"
+      },
+      "CanInterruptAudioBehaviors": [
+        {
+          "ObjectName": "RagdollAudioBehavior'DA_RagdollAudioBehavior_RealizeExtremeFalling'",
+          "ObjectPath": "/Game/Pawn/Shared/Ragdoll/Audio/AudioBehaviors/DA_RagdollAudioBehavior_RealizeExtremeFalling.0"
+        },
+        {
+          "ObjectName": "RagdollAudioBehavior'DA_RagdollAudioBehavior_Panic'",
+          "ObjectPath": "/Game/Pawn/Shared/Ragdoll/Audio/AudioBehaviors/DA_RagdollAudioBehavior_Panic.0"
+        }
+      ],
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsTumbleBehavior'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsTumbleBehavior.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          }
+        ]
+      }
+    }
+  }
+]

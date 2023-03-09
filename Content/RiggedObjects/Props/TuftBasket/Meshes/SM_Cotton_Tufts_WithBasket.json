@@ -1,0 +1,291 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Cotton_Tufts_WithBasket",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "2F642B194C5353CC9A2C699DAB9B1BDD",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x8DCA"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_Cotton_Tufts_WithBasket",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x8E2E"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Cotton_Tufts_WithBasket",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_BCProps_Basket_Small_003_004'",
+            "ObjectPath": "/Game/Environment/BanditCamps/Bandit_Camp_Shared_Props/Materials/Open_Crates/MI_BCProps_Basket_Small_003_004.0"
+          },
+          "MaterialSlotName": "MI_BCProps_Basket_Small_003_004",
+          "ImportedMaterialSlotName": "MI_BCProps_Basket_Small_003_004",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 201.28992,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Cotton_Tufts'",
+            "ObjectPath": "/Game/RiggedObjects/Props/TuftBasket/Materials/MI_Cotton_Tufts.0"
+          },
+          "MaterialSlotName": "MI_Cotton_Tufts",
+          "ImportedMaterialSlotName": "MI_Cotton_Tufts",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 31.01435,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 158.59708,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.021076202,
+          "Y": -0.09381676,
+          "Z": 32.743107
+        },
+        "BoxExtent": {
+          "X": 31.889606,
+          "Y": 30.506308,
+          "Z": 32.811214
+        },
+        "SphereRadius": 37.787792
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Cotton_Tufts_WithBasket:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Props/TuftBasket/Meshes/SM_Cotton_Tufts_WithBasket.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Cotton_Tufts_WithBasket:NavCollision_0'",
+      "ObjectPath": "/Game/RiggedObjects/Props/TuftBasket/Meshes/SM_Cotton_Tufts_WithBasket.1"
+    },
+    "LightingGuid": "9A952A79-437598E2-E0A290A1-00A75396",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1170,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 711,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 3510,
+              "NumTriangles": 1014,
+              "MinVertexIndex": 712,
+              "MaxVertexIndex": 1249,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1250
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1250,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 1250
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 438,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 311,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 1314,
+              "NumTriangles": 107,
+              "MinVertexIndex": 312,
+              "MaxVertexIndex": 376,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 5.7432094,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 377
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 377,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 377
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 64,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 64,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 192,
+              "NumTriangles": 4,
+              "MinVertexIndex": 65,
+              "MaxVertexIndex": 70,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 53.642097,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 71
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 71,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 71
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.021076202,
+          "Y": -0.09381676,
+          "Z": 32.743107
+        },
+        "BoxExtent": {
+          "X": 31.889606,
+          "Y": 30.506308,
+          "Z": 32.811214
+        },
+        "SphereRadius": 37.787792
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.162688,
+        0.055672,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

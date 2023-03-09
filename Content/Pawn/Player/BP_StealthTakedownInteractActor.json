@@ -1,0 +1,553 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_StealthTakedownInteractActor",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Caller_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Caller",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTheBipedPlayer_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_EndPlayReason",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'HermesBPLibrary:HermesEventDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_HermesBindEvent_Handle",
+        "Flags": 1,
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'HermesBPDelegateHandle'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetTheBipedPlayer_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetBestAutoTargetActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsEnemy_Character",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Enemy_Character'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetIsStealthAttackCurrentlyDisabled_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_BoolBool_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'HermesBPLibrary:HermesEventDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_HermesBindEvent_Handle_1",
+        "Flags": 1,
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'HermesBPDelegateHandle'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "EndPlayReason",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'EEndPlayReason'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "NoLongerPerceived_Interact",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Caller",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "Perceived_Interact",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Caller",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_StealthTakedownInteractActor_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ExecuteUbergraph_BP_StealthTakedownInteractActor'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ReceiveTick'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.5"
+      },
+      {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.4"
+      },
+      {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:Perceived_Interact'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.3"
+      },
+      {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:NoLongerPerceived_Interact'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.2"
+      },
+      {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.1"
+      },
+      {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ExecuteUbergraph_BP_StealthTakedownInteractActor'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CognitionStimuliSource",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'CognitionStimuliSourceComponent'",
+          "ObjectPath": "/Script/Cognition"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AutoTargetEnemy",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "Class'Enemy_Character'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "StealthAttackDisabled",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_StealthTakedownInteractActor": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ExecuteUbergraph_BP_StealthTakedownInteractActor'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.0"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ReceiveEndPlay'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.1"
+      },
+      "NoLongerPerceived_Interact": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:NoLongerPerceived_Interact'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.2"
+      },
+      "Perceived_Interact": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:Perceived_Interact'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.3"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.4"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_StealthTakedownInteractActor_C:ReceiveTick'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.5"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_StealthTakedownInteractActor_C'Default__BP_StealthTakedownInteractActor_C'",
+      "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.7"
+    }
+  },
+  {
+    "Type": "BP_StealthTakedownInteractActor_C",
+    "Name": "Default__BP_StealthTakedownInteractActor_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Player/BP_StealthTakedownInteractActor.BP_StealthTakedownInteractActor_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BP_StealthTakedownInteractActor_C'",
+      "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.6"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "StealthAttackDisabled": true,
+      "PrimaryActorTick": {
+        "bCanEverTick": true
+      }
+    }
+  },
+  {
+    "Type": "CogGroupTargetPoint_World",
+    "Name": "CogGroupTargetPoint_World_0",
+    "Outer": "CognitionStimuliSource_GEN_VARIABLE",
+    "Class": "UScriptClass'CogGroupTargetPoint_World'",
+    "ClassPath": "/Script/Cognition.CogGroupTargetPoint_World"
+  },
+  {
+    "Type": "CognitionStimuliSourceComponent",
+    "Name": "CognitionStimuliSource_GEN_VARIABLE",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'CognitionStimuliSourceComponent'",
+    "ClassPath": "/Script/Cognition.CognitionStimuliSourceComponent",
+    "Properties": {
+      "PriorityWeight": 10000.0,
+      "bIgnoreLineOfSight": true,
+      "bIgnoreScreenSpace": true,
+      "TargetPointClass": {
+        "ObjectName": "CogGroupTargetPoint_World'BP_StealthTakedownInteractActor_C:CognitionStimuliSource_GEN_VARIABLE.CogGroupTargetPoint_World_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.8"
+      },
+      "CalloutType": "ECalloutType::Interact_NoBlip_Action",
+      "CalloutAction": "ECalloutActions::Action_StealthTakedown",
+      "RegisterAsSourceForSenses": [
+        {
+          "ObjectName": "Class'AISense_CogGroup_Interact'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "ClassPath": "/Script/Engine.SceneComponent"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_StealthTakedownInteractActor_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.10"
+      },
+      "VariableGuid": "62BD0A06-4CF46DC4-811C36AA-8B6F04D7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'CognitionStimuliSourceComponent'",
+        "ObjectPath": "/Script/Cognition"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CognitionStimuliSourceComponent'BP_StealthTakedownInteractActor_C:CognitionStimuliSource_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.9"
+      },
+      "VariableGuid": "2E29EDB7-43B90316-2CDFE588-97B4F4AB",
+      "InternalVariableName": "CognitionStimuliSource"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_StealthTakedownInteractActor_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "ClassPath": "/Script/Engine.SimpleConstructionScript",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_StealthTakedownInteractActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_StealthTakedownInteractActor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_StealthTakedownInteractActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.11"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_StealthTakedownInteractActor_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_StealthTakedownInteractActor_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_StealthTakedownInteractActor.11"
+      }
+    }
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Revelio_Chest_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Revelio_Chest_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/RevelioChest/SK_Revelio_Chest_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Revelio_Chest_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/RevelioChest/SK_Revelio_Chest_Master_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Revelio_Chest_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/RevelioChest/SK_Revelio_Chest_Master_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Revelio_Chest_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "lid",
+        "ConstraintBone1": "lid",
+        "ConstraintBone2": "base",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -51.847935,
+          "Z": 65.40647
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Revelio_Chest_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.0070533752,
+              "Y": -1.477169,
+              "Z": 34.905262
+            },
+            "Rotation": {
+              "Pitch": 6.830189E-06,
+              "Yaw": 90.17484,
+              "Roll": -89.97655
+            },
+            "Radius": 52.072216,
+            "Length": 92.79208,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "base",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "1DC7DA7A4285373DF7BE9C9384E69806"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Revelio_Chest_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.001449585,
+              "Y": 57.628372,
+              "Z": 25.32354
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.00857,
+              "Roll": -89.9978
+            },
+            "Radius": 58.772022,
+            "Length": 93.03963,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "lid",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "B9B22D204241509DE2297ABEC3DA1C07"
+  }
+]

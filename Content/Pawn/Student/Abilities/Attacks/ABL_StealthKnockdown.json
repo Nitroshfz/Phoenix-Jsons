@@ -1,0 +1,470 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_StealthKnockdown_C'Default__ABL_StealthKnockdown_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.1"
+    }
+  },
+  {
+    "Type": "ABL_StealthKnockdown_C",
+    "Name": "Default__ABL_StealthKnockdown_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.ABL_StealthKnockdown_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StealthKnockdown_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 5.4540796,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_StealthKnockdown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.18"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_StealthKnockdown_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.16"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_StealthKnockdown_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.15"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_StealthKnockdown_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_StealthKnockdown_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_StealthKnockdown_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.12"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_StealthKnockdown_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.14"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_StealthKnockdown_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.2"
+        }
+      ],
+      "m_AbilityNameHash": 862004117,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 0.21504667,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_StealthKnockdown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.18"
+        }
+      },
+      "m_EventName": "FireWand"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth"
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth"
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth",
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_StealthKnockdown_C:AblBranchTask_0.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.9"
+        },
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_StealthKnockdown_C:AblBranchTask_0.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.7"
+        },
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_StealthKnockdown_C:AblBranchTask_0.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealthKnockdown_C'Default__ABL_StealthKnockdown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_Strafe_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Strafe_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_StealthKnockdown_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.10"
+        },
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_StealthKnockdown_C:AblBranchTask_1.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.8"
+        },
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_StealthKnockdown_C:AblBranchTask_1.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealthKnockdown_C'Default__ABL_StealthKnockdown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_Crouch2Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Crouch2Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_StealthKnockdown_C:AblBranchTask_2.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.6"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "Offset": 0.100000024,
+        "RelativeToObject": {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.100000024,
+        "RelativeToObject": {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_StealthKnockdown_C:AblBranchTask_3.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.3,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_StealthKnockdown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.3,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_StealthKnockdown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ablInputContextTask'Default__ABL_StealthKnockdown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FireWand"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_StealthKnockdown_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.2"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_StealthKnockdown_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.2"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noHeavyWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeDodge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 1.1,
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealthKnockdown_C'Default__ABL_StealthKnockdown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.1,
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealthKnockdown_C'Default__ABL_StealthKnockdown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_StealthKnockdown_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.StealthKnockdown"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 1.25,
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealthKnockdown_C'Default__ABL_StealthKnockdown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_StealthKnockdown.1"
+        }
+      }
+    }
+  }
+]

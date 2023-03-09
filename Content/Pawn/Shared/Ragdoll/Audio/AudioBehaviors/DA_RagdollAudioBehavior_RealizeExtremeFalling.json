@@ -1,0 +1,32 @@
+[
+  {
+    "Type": "RagdollAudioBehavior",
+    "Name": "DA_RagdollAudioBehavior_RealizeExtremeFalling",
+    "Class": "UScriptClass'RagdollAudioBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollAudioBehavior",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_shriek_short'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_shriek_short.0"
+      },
+      "CanInterruptAudioBehaviors": [
+        {
+          "ObjectName": "RagdollAudioBehavior'DA_RagdollAudioBehavior_Panic'",
+          "ObjectPath": "/Game/Pawn/Shared/Ragdoll/Audio/AudioBehaviors/DA_RagdollAudioBehavior_Panic.0"
+        }
+      ],
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsExtremeFallState'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsExtremeFallState.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          }
+        ]
+      }
+    }
+  }
+]

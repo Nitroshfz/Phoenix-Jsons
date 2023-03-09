@@ -1,0 +1,313 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Howler_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Howler_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Howler/SK_Howler_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Howler_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Howler/SK_Howler_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Howler_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Howler/SK_Howler_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Howler_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Howler/SK_Howler_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Howler_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Howler/SK_Howler_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Howler_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint",
+        "ConstraintBone1": "jaw_01",
+        "ConstraintBone2": "head",
+        "Pos1": {
+          "X": -2.258591,
+          "Y": -0.5271052,
+          "Z": -1.66893E-06
+        },
+        "PriAxis1": {
+          "X": 0.941534,
+          "Y": -0.3369179,
+          "Z": -3.7783929E-07
+        },
+        "SecAxis1": {
+          "X": 0.3369179,
+          "Y": 0.941534,
+          "Z": 8.56714E-08
+        },
+        "Pos2": {
+          "X": -2.2585945,
+          "Y": -0.5271047,
+          "Z": -7.816497E-06
+        },
+        "PriAxis2": {
+          "X": 0.9415334,
+          "Y": -0.3369198,
+          "Z": -2.4405796E-07
+        },
+        "SecAxis2": {
+          "X": 0.3369198,
+          "Y": 0.9415334,
+          "Z": 1.561358E-07
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 30.0,
+            "Swing2LimitDegrees": 10.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 5.0,
+            "TwistMotion": "ACM_Limited"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Damping": 30.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SwingDrive": {
+              "Damping": 30.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Damping": 30.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_Howler_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint_0",
+        "ConstraintBone1": "jaw_01",
+        "ConstraintBone2": "jaw_02",
+        "Pos1": {
+          "X": 1.946269,
+          "Y": 4.236416,
+          "Z": 9.679794E-05
+        },
+        "PriAxis1": {
+          "X": 0.98078436,
+          "Y": -0.19509494,
+          "Z": 0.0
+        },
+        "SecAxis1": {
+          "X": 0.19509494,
+          "Y": 0.98078436,
+          "Z": 0.0
+        },
+        "Pos2": {
+          "X": -1.9807113,
+          "Y": 0.013427556,
+          "Z": 0.000101173915
+        },
+        "PriAxis2": {
+          "X": 0.66550964,
+          "Y": 0.74638927,
+          "Z": 9.500005E-09
+        },
+        "SecAxis2": {
+          "X": -0.74638927,
+          "Y": 0.66550964,
+          "Z": -3.019228E-09
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 30.0,
+            "Swing2LimitDegrees": 10.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 5.0,
+            "TwistMotion": "ACM_Limited"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Damping": 30.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SwingDrive": {
+              "Damping": 30.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Damping": 30.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Howler_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.46511877,
+              "Y": -1.4564607,
+              "Z": -3.79371E-06
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 70.31362,
+              "Roll": 9.813084E-06
+            },
+            "X": 1.0,
+            "Y": 7.5,
+            "Z": 11.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "LinearDamping": 10.0,
+        "AngularDamping": 20.0
+      },
+      "BoneName": "head",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "789A8A6F4516C33676ADF08888C4E2FD"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Howler_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.727275,
+              "Y": 1.603987,
+              "Z": -1.1395012E-05
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 50.625675,
+              "Roll": 7.3062206E-06
+            },
+            "X": 7.0,
+            "Y": 2.5,
+            "Z": 11.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "LinearDamping": 10.0,
+        "AngularDamping": 20.0
+      },
+      "BoneName": "jaw_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "F6FB584A44AC5A54D85C9FBAEE9C0F49"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Howler_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.48222914,
+              "Y": 2.225022,
+              "Z": -1.5139403E-05
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 42.189243,
+              "Roll": -4.0171726E-06
+            },
+            "X": 7.5,
+            "Y": 1.0,
+            "Z": 10.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "LinearDamping": 10.0,
+        "AngularDamping": 20.0
+      },
+      "BoneName": "jaw_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "D4C6D4524635D78CA30972AFDF317B48"
+  }
+]

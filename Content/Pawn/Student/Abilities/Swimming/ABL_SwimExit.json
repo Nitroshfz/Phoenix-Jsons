@@ -1,0 +1,740 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_SwimExit_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+    }
+  },
+  {
+    "Type": "ABL_SwimExit_C",
+    "Name": "Default__ABL_SwimExit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.ABL_SwimExit_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_SwimExit_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 2.7666667,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_SwimExit_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.25"
+        },
+        {
+          "ObjectName": "AblSetAnimSpeedTypeTask'Default__ABL_SwimExit_C:AblSetAnimSpeedTypeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.26"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_SwimExit_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.21"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_SwimExit_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.19"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_SwimExit_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.20"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimExit_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimExit_C:AblBranchTask_5'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimExit_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.14"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimExit_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.15"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimExit_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.16"
+        },
+        {
+          "ObjectName": "ablNiagaraPlayEffectTask'Default__ABL_SwimExit_C:ablNiagaraPlayEffectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.22"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_SwimExit_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.17"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_SwimExit_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.23"
+        }
+      ],
+      "m_AbilityNameHash": 3147200357
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth",
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth",
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_5",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth"
+    }
+  },
+  {
+    "Type": "AblBranchConditionGaitSpeed",
+    "Name": "AblBranchConditionGaitSpeed_1",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionGaitSpeed'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionGaitSpeed",
+    "Properties": {
+      "GaitSpeeds": [
+        "EAblGaitSpeed::Sprint"
+      ]
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_1",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_SwimExit_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.2"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_MoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_MoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimExit_C:AblBranchTask_1.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.7"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_SwimExit_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.11"
+        },
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_SwimExit_C:AblBranchTask_1.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.333
+      },
+      "m_StartTime": {
+        "Offset": 0.6,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimExit_C:AblBranchTask_2.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.8"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_SwimExit_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.12"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "Offset": 0.73333335,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_TurnMove_Stop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Stop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimExit_C:AblBranchTask_3.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 0.73333335,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Sprint_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Sprint.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_SwimExit_C:AblBranchTask_4.AblBranchConditionIsMovement_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.10"
+        },
+        {
+          "ObjectName": "AblBranchConditionGaitSpeed'Default__ABL_SwimExit_C:AblBranchTask_4.AblBranchConditionGaitSpeed_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.6"
+        },
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_SwimExit_C:AblBranchTask_4.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.4666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_5",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StealthMoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StealthMoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_SwimExit_C:AblBranchTask_5.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.35
+      },
+      "m_StartTime": {
+        "Offset": 0.6,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.6,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.20000005,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.20000005,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FocusOnHipsOff"
+      },
+      "m_StartTime": {
+        "Offset": -0.20000005,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.20000005,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noClimbing",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noHeavyWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noHealthUseAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeDodge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noRevelio",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noInteract",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noItemQuickAction",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablNiagaraPlayEffectTask",
+    "Name": "ablNiagaraPlayEffectTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'ablNiagaraPlayEffectTask'",
+    "ClassPath": "/Script/Phoenix.ablNiagaraPlayEffectTask",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_SwimExit_Splash'",
+        "ObjectPath": "/Game/VFX/Mechanics/Swimming/Splashes/VFX_NS_SwimExit_Splash.54"
+      },
+      "bAttachToSocket": true,
+      "m_Socket": "SKT_Chest",
+      "m_StartTime": {
+        "Offset": 0.26666668,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.SwimExit"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "CustomCurve": {
+          "ObjectName": "CurveFloat'FC_Blend_EaseIn'",
+          "ObjectPath": "/Game/Pawn/Shared/Ambulatory/FC_Blend_EaseIn.0"
+        },
+        "BlendTime": 0.36666,
+        "BlendOption": "EAlphaBlendOption::Custom"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_SwimExit_C'Default__ABL_SwimExit_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_TurnAssist'Default__ABL_SwimExit_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_TurnAssist_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.27"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": 0.3,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetAnimSpeedTypeTask",
+    "Name": "AblSetAnimSpeedTypeTask_0",
+    "Outer": "Default__ABL_SwimExit_C",
+    "Class": "UScriptClass'AblSetAnimSpeedTypeTask'",
+    "ClassPath": "/Script/Phoenix.AblSetAnimSpeedTypeTask",
+    "Properties": {
+      "AnimSpeedType": "EAnimSpeedType::Jog",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_SwimExit_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Swimming/ABL_SwimExit.24"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_TurnAssist",
+    "Name": "RootMotionModifierProperties_TurnAssist_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_TurnAssist'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_TurnAssist",
+    "Properties": {
+      "UseMethod": "ERootMotionModTurnAssistMethod::UseDampedSpring",
+      "bScaleRotationBasedOnSpeed": true,
+      "SpringHalflife": 0.45,
+      "TurnAssistCurve": {
+        "ObjectName": "CurveFloat'C_FreeRoamTurnAssistCurve'",
+        "ObjectPath": "/Game/Pawn/Shared/Ambulatory/C_FreeRoamTurnAssistCurve.0"
+      },
+      "MinRotationScaleBasedOnSpeed": 0.55
+    }
+  }
+]

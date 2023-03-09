@@ -1,0 +1,944 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_TeeterOnEdge",
+    "Outer": "ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAble_Anim_Instance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Able_AnimInstance'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAble_Anim_Instance_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Able_AnimInstance'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityBranch",
+    "Outer": "ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityBranch'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:ExecuteUbergraph_ABL_TeeterOnEdge'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.2"
+      },
+      {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.1"
+      },
+      {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:ExecuteUbergraph_ABL_TeeterOnEdge'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_TeeterOnEdge": {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:ExecuteUbergraph_ABL_TeeterOnEdge'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.0"
+      },
+      "OnAbilityBranch": {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.1"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_TeeterOnEdge_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.2"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+    }
+  },
+  {
+    "Type": "ABL_TeeterOnEdge_C",
+    "Name": "Default__ABL_TeeterOnEdge_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.ABL_TeeterOnEdge_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_TeeterOnEdge_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.3"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 10.9,
+      "m_LoopEnd": 0.0,
+      "m_IsChanneled": true,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_TeeterOnEdge_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.24"
+        },
+        {
+          "ObjectName": "ablAllowWalkOffLedgesTask'Default__ABL_TeeterOnEdge_C:ablAllowWalkOffLedgesTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.5"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_TeeterOnEdge_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.18"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_TeeterOnEdge_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.23"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_TeeterOnEdge_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.20"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_TeeterOnEdge_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.21"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_TeeterOnEdge_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.19"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_TeeterOnEdge_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.22"
+        },
+        {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_TeeterOnEdge_C:ablMotionAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.26"
+        },
+        {
+          "ObjectName": "ablTurnAdjustTask'Default__ABL_TeeterOnEdge_C:ablTurnAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.30"
+        },
+        {
+          "ObjectName": "AblSetAnimSpeedTypeTask'Default__ABL_TeeterOnEdge_C:AblSetAnimSpeedTypeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.29"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_TeeterOnEdge_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.28"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_TeeterOnEdge_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.7"
+        }
+      ],
+      "m_AbilityNameHash": 1123862570,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "ablAllowWalkOffLedgesTask",
+    "Name": "ablAllowWalkOffLedgesTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'ablAllowWalkOffLedgesTask'",
+    "ClassPath": "/Script/Phoenix.ablAllowWalkOffLedgesTask",
+    "Properties": {
+      "bAllowWalkOffLedges": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_FootMatch",
+    "Name": "AblAnimationTagChooser_FootMatch_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_FootMatch'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_FootMatch",
+    "Properties": {
+      "FootVelocityWeight": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.JogStopEdge_LU"
+        ],
+        [
+          "AA.AnimPlayerName.JogStopEdge_RU"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.09457935,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      },
+      "m_EventName": "Test"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth",
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth"
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth"
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "bAbsoulteValue": true,
+      "AngleRange": {
+        "X": 0.0,
+        "Y": 60.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "bAbsoulteValue": true,
+      "AngleRange": {
+        "X": 90.0,
+        "Y": 180.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "bAbsoulteValue": true,
+      "AngleRange": {
+        "X": 90.0,
+        "Y": 180.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Teeter2Fall_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Teeter2Fall.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_TeeterOnEdge_C:AblBranchTask_0.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.15"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_TeeterOnEdge_C:AblBranchTask_0.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.12"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.4
+      },
+      "m_StartTime": {
+        "Offset": 0.6333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.6333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_TeeterOnEdge_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.8"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "Offset": -0.29999983,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.29999983,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_TeeterOnEdge_C:AblBranchTask_2.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.16"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_TeeterOnEdge_C:AblBranchTask_2.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.13"
+        },
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_TeeterOnEdge_C:AblBranchTask_2.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.35
+      },
+      "m_StartTime": {
+        "Offset": 0.86666673,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.0333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_TeeterOnEdge_C:AblBranchTask_3.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.17"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_TeeterOnEdge_C:AblBranchTask_3.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.14"
+        },
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_TeeterOnEdge_C:AblBranchTask_3.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.10"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.35
+      },
+      "m_StartTime": {
+        "Offset": 0.86666673,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Stealth_Idle2Crouch_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Stealth_Idle2Crouch.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_TeeterOnEdge_C:AblBranchTask_4.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.11"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 1.2333333,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.2333333,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.27"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": 0.86666673,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -10.033333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "isTeeteringOnEdge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablMotionAdjustJumpDownLocationGetter",
+    "Name": "ablMotionAdjustJumpDownLocationGetter_0",
+    "Outer": "ablMotionAdjustTask_0",
+    "Class": "UScriptClass'ablMotionAdjustJumpDownLocationGetter'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustJumpDownLocationGetter"
+  },
+  {
+    "Type": "ablMotionAdjustTask",
+    "Name": "ablMotionAdjustTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'ablMotionAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustTask",
+    "Properties": {
+      "TargetLocationGetter": {
+        "ObjectName": "ablMotionAdjustJumpDownLocationGetter'Default__ABL_TeeterOnEdge_C:ablMotionAdjustTask_0.ablMotionAdjustJumpDownLocationGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.25"
+      },
+      "BlendIn": {
+        "BlendTime": 0.0
+      },
+      "bGuaranteeOnTargetAtTaskEnd": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.20000002,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.JogStopEdge_LU"
+      ],
+      "m_PreviewAnimationTags": [
+        "AA.AnimPlayerName.JogStopEdge_LU"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_FootMatch'Default__ABL_TeeterOnEdge_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_FootMatch_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.6"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.25
+      },
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion",
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_worried'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_worried.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetAnimSpeedTypeTask",
+    "Name": "AblSetAnimSpeedTypeTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'AblSetAnimSpeedTypeTask'",
+    "ClassPath": "/Script/Phoenix.AblSetAnimSpeedTypeTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablTurnAdjustTask",
+    "Name": "ablTurnAdjustTask_0",
+    "Outer": "Default__ABL_TeeterOnEdge_C",
+    "Class": "UScriptClass'ablTurnAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablTurnAdjustTask",
+    "Properties": {
+      "m_TargetDirectionGetter": {
+        "ObjectName": "TurnAdjust_JumpDownDirectionGetter'Default__ABL_TeeterOnEdge_C:ablTurnAdjustTask_0.TurnAdjust_JumpDownDirectionGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.31"
+      },
+      "bGuaranteeOnTargetAtTaskEnd": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.20000002,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TeeterOnEdge_C'Default__ABL_TeeterOnEdge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TeeterOnEdge.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TurnAdjust_JumpDownDirectionGetter",
+    "Name": "TurnAdjust_JumpDownDirectionGetter_0",
+    "Outer": "ablTurnAdjustTask_0",
+    "Class": "UScriptClass'TurnAdjust_JumpDownDirectionGetter'",
+    "ClassPath": "/Script/Phoenix.TurnAdjust_JumpDownDirectionGetter"
+  }
+]

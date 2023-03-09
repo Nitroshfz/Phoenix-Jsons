@@ -1,0 +1,311 @@
+[
+  {
+    "Type": "FXAutoTriggerActorHasTag",
+    "Name": "FXAutoTriggerActorHasTag_0",
+    "Outer": "OverlapEffectsHandlerActorClassOverlap_0",
+    "Class": "UScriptClass'FXAutoTriggerActorHasTag'",
+    "ClassPath": "/Script/Phoenix.FXAutoTriggerActorHasTag",
+    "Properties": {
+      "ActorTag": "OverlapEffectsAudio_TreeFoliageBrush"
+    }
+  },
+  {
+    "Type": "OverlapEffectsDataAsset",
+    "Name": "DA_OverlapEffectsAudio_Legacy",
+    "Class": "UScriptClass'OverlapEffectsDataAsset'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsDataAsset",
+    "Properties": {
+      "OverlapHandlers": [
+        {
+          "ObjectName": "OverlapEffectsHandlerInstancedFoliageOverlap'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageOverlap_1'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.13"
+        },
+        {
+          "ObjectName": "OverlapEffectsHandlerInstancedFoliageHit'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageHit_1'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.12"
+        },
+        {
+          "ObjectName": "OverlapEffectsHandlerInstancedFoliageBVHTest'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageBVHTest_0'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.11"
+        },
+        {
+          "ObjectName": "OverlapEffectsHandlerWindSpeed'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerWindSpeed_1'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.14"
+        },
+        {
+          "ObjectName": "OverlapEffectsHandlerActorClassOverlap'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerActorClassOverlap_0'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerActorClassOverlap",
+    "Name": "OverlapEffectsHandlerActorClassOverlap_0",
+    "Outer": "DA_OverlapEffectsAudio_Legacy",
+    "Class": "UScriptClass'OverlapEffectsHandlerActorClassOverlap'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerActorClassOverlap",
+    "Properties": {
+      "ActorClass": {
+        "AssetPathName": "/Script/Engine.Actor"
+      },
+      "BeginEffects": [
+        {
+          "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerActorClassOverlap_0.OverlapEffectsHandlerEffectSoundAttached_0'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.3"
+        }
+      ],
+      "EndEffects": [
+        {
+          "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerActorClassOverlap_0.OverlapEffectsHandlerEffectSoundAttached_1'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.4"
+        }
+      ],
+      "Conditions": {
+        "VictimCondition": {
+          "ObjectName": "FXAutoTriggerActorHasTag'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerActorClassOverlap_0.FXAutoTriggerActorHasTag_0'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.0"
+        }
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_0",
+    "Outer": "OverlapEffectsHandlerActorClassOverlap_0",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'tree_foliage_brush_loop'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Flora/tree_foliage_brush_loop.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_1",
+    "Outer": "OverlapEffectsHandlerActorClassOverlap_0",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'tree_foliage_brush_loop_Stop'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Flora/tree_foliage_brush_loop_Stop.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_0",
+    "Outer": "OverlapEffectsHandlerInstancedFoliageBVHTest_0",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'tree_foliage_brush'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Flora/tree_foliage_brush.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_1",
+    "Outer": "OverlapEffectsHandlerInstancedFoliageBVHTest_0",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'Flowers_Foliage_Brush'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Flora/Flowers_Foliage_Brush.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_0",
+    "Outer": "OverlapEffectsHandlerInstancedFoliageHit_1",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'tree_foliage_brush'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Flora/tree_foliage_brush.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_0",
+    "Outer": "OverlapEffectsHandlerInstancedFoliageOverlap_1",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'tree_foliage_brush'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Flora/tree_foliage_brush.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_0",
+    "Outer": "OverlapEffectsHandlerWindSpeed_1",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'Foley_Billowing_Coat_Cape'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Wind_Billowing_Clothing/Foley_Billowing_Coat_Cape/Foley_Billowing_Coat_Cape.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerEffectSoundAttached",
+    "Name": "OverlapEffectsHandlerEffectSoundAttached_1",
+    "Outer": "OverlapEffectsHandlerWindSpeed_1",
+    "Class": "UScriptClass'OverlapEffectsHandlerEffectSoundAttached'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerEffectSoundAttached",
+    "Properties": {
+      "Event": {
+        "ObjectName": "AkAudioEvent'Foley_Billowing_Coat_Cape_stop'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Wind_Billowing_Clothing/Foley_Billowing_Coat_Cape/Foley_Billowing_Coat_Cape_stop.0"
+      }
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerInstancedFoliageBVHTest",
+    "Name": "OverlapEffectsHandlerInstancedFoliageBVHTest_0",
+    "Outer": "DA_OverlapEffectsAudio_Legacy",
+    "Class": "UScriptClass'OverlapEffectsHandlerInstancedFoliageBVHTest'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerInstancedFoliageBVHTest",
+    "Properties": {
+      "TypeEvents": [
+        {
+          "FoliageTypes": [
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/grass/Static_Meshes/FoliageType/SM_Reeds_A_Master_FoliageType.SM_Reeds_A_Master_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/grass/Static_Meshes/FoliageType/SM_Reeds_B_Master_FoliageType.SM_Reeds_B_Master_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Trees/FoliageType/SM_BirchTree_SaplingsC_Master_FoliageType.SM_BirchTree_SaplingsC_Master_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Trees/FoliageType/SM_AshTree_ClusterA_Master_FoliageType.SM_AshTree_ClusterA_Master_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Trees/FoliageType/SM_AshTree_MedB_Master_FoliageType.SM_AshTree_MedB_Master_FoliageType"
+            }
+          ],
+          "Effects": [
+            {
+              "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageBVHTest_0.OverlapEffectsHandlerEffectSoundAttached_0'",
+              "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.5"
+            }
+          ],
+          "ActorXYBoundsPercent": 60.0
+        },
+        {
+          "FoliageTypes": [
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Plants/FoliageType/SM_WhiteGroundElder_A_FoliageType.SM_WhiteGroundElder_A_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Plants/FoliageType/SM_WhiteGroundElder_B_FoliageType.SM_WhiteGroundElder_B_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Flowers/FoliageType/SM_ForestFlower2_FoliageType.SM_ForestFlower2_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Plants/FoliageType/SM_Thistle_A_Master_FoliageType.SM_Thistle_A_Master_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Plants/FoliageType/SM_Thistle_B_Master_FoliageType.SM_Thistle_B_Master_FoliageType"
+            },
+            {
+              "AssetPathName": "/Game/Environment/Overland_Common/Objects/Plants/FoliageType/SM_Thistle_C_Master_FoliageType.SM_Thistle_C_Master_FoliageType"
+            }
+          ],
+          "Effects": [
+            {
+              "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageBVHTest_0.OverlapEffectsHandlerEffectSoundAttached_1'",
+              "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.6"
+            }
+          ],
+          "ActorXYBoundsPercent": 60.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerInstancedFoliageHit",
+    "Name": "OverlapEffectsHandlerInstancedFoliageHit_1",
+    "Outer": "DA_OverlapEffectsAudio_Legacy",
+    "Class": "UScriptClass'OverlapEffectsHandlerInstancedFoliageHit'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerInstancedFoliageHit",
+    "Properties": {
+      "SurfaceType": "SurfaceType8",
+      "Effects": [
+        {
+          "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageHit_1.OverlapEffectsHandlerEffectSoundAttached_0'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerInstancedFoliageOverlap",
+    "Name": "OverlapEffectsHandlerInstancedFoliageOverlap_1",
+    "Outer": "DA_OverlapEffectsAudio_Legacy",
+    "Class": "UScriptClass'OverlapEffectsHandlerInstancedFoliageOverlap'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerInstancedFoliageOverlap",
+    "Properties": {
+      "BeginEffects": [
+        {
+          "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerInstancedFoliageOverlap_1.OverlapEffectsHandlerEffectSoundAttached_0'",
+          "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OverlapEffectsHandlerWindSpeed",
+    "Name": "OverlapEffectsHandlerWindSpeed_1",
+    "Outer": "DA_OverlapEffectsAudio_Legacy",
+    "Class": "UScriptClass'OverlapEffectsHandlerWindSpeed'",
+    "ClassPath": "/Script/FXUtil.OverlapEffectsHandlerWindSpeed",
+    "Properties": {
+      "Events": [
+        {
+          "ClothingTypes": 6,
+          "StartEndSpeed": {
+            "X": 0.5,
+            "Y": 50.0
+          },
+          "Mode": "EWindSpeedOverlapEffectsMode::OutdoorsOnly",
+          "StartEffects": [
+            {
+              "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerWindSpeed_1.OverlapEffectsHandlerEffectSoundAttached_0'",
+              "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.9"
+            }
+          ],
+          "EndEffects": [
+            {
+              "ObjectName": "OverlapEffectsHandlerEffectSoundAttached'DA_OverlapEffectsAudio_Legacy:OverlapEffectsHandlerWindSpeed_1.OverlapEffectsHandlerEffectSoundAttached_1'",
+              "ObjectPath": "/Game/Pawn/Player/DA_OverlapEffectsAudio_Legacy.10"
+            },
+            null
+          ],
+          "bStopProcessingWithClothingMatch": false,
+          "bUseStartEndSpeedMS": true,
+          "bUseMode": true
+        }
+      ],
+      "bUseRelativeWindVelocity": true,
+      "bUseActorIndoorsRTPC": false,
+      "bUseActorClothingTypeRTPC": false
+    }
+  }
+]

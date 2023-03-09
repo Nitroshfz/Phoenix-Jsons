@@ -1,0 +1,668 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_HitKnockDown",
+    "Outer": "ABL_HitKnockDown_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostDialogueEvent_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_HitKnockDown_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_HitKnockDown_C:ExecuteUbergraph_ABL_HitKnockDown'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_HitKnockDown_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.1"
+      },
+      {
+        "ObjectName": "Function'ABL_HitKnockDown_C:ExecuteUbergraph_ABL_HitKnockDown'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_HitKnockDown": {
+        "ObjectName": "Function'ABL_HitKnockDown_C:ExecuteUbergraph_ABL_HitKnockDown'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.0"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_HitKnockDown_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.1"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+    }
+  },
+  {
+    "Type": "ABL_HitKnockDown_C",
+    "Name": "Default__ABL_HitKnockDown_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.ABL_HitKnockDown_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitKnockDown_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 3.1694503,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblSetPhoenixCharacterMovementModeTask'Default__ABL_HitKnockDown_C:AblSetPhoenixCharacterMovementModeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.23"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitKnockDown_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitKnockDown_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitKnockDown_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.14"
+        },
+        {
+          "ObjectName": "AblCamShakeTask'Default__ABL_HitKnockDown_C:AblCamShakeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.16"
+        },
+        {
+          "ObjectName": "AblPhysicalReactionBlendBackTask'Default__ABL_HitKnockDown_C:AblPhysicalReactionBlendBackTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.18"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_HitKnockDown_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.22"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitKnockDown_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.12"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_HitKnockDown_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.21"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitKnockDown_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.15"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitKnockDown_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.17"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitKnockDown_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.5"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitKnockDown_C:AblAnimNotifyEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.6"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitKnockDown_C:AblAnimNotifyEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.7"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitKnockDown_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.19"
+        }
+      ],
+      "m_AbilityNameHash": 1067457256,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_DirectionBased",
+    "Name": "AblAnimationTagChooser_DirectionBased_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_DirectionBased'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_DirectionBased",
+    "Properties": {
+      "NumAngles": 2,
+      "bLeftFootAtEndOfList": false,
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.HeavyKnockdownBck"
+        ],
+        [
+          "AA.AnimPlayerName.HeavyKnockdownFWD"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 0.3679698,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EventName": "StartRagdoll"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_1",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.5299238,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EventName": "StartGroundCheck"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_2",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.3537248,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EventName": "Apex"
+    }
+  },
+  {
+    "Type": "AblBranchActorTagCondition",
+    "Name": "AblBranchActorTagCondition_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchActorTagCondition'",
+    "ClassPath": "/Script/Phoenix.AblBranchActorTagCondition",
+    "Properties": {
+      "TagName": "DuelingState"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_1",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionIfDead",
+    "Name": "AblBranchConditionIfDead_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIfDead'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIfDead"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitDeath_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIfDead'Default__ABL_HitKnockDown_C:AblBranchTask_0.AblBranchConditionIfDead_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.10"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RagdollPlayerBehavior_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitKnockDown_C:AblBranchTask_1.AblBranchConditionAlways_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_bOverrideTransitionBlend": false,
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitKnockDown_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitKnockDown_NoRagdoll_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown_NoRagdoll.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchActorTagCondition'Default__ABL_HitKnockDown_C:AblBranchTask_2.AblBranchActorTagCondition_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.8"
+        }
+      ],
+      "m_bOverrideTransitionBlend": false,
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FocusOnHipsOn"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "KnockedDown"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblCamShakeTask",
+    "Name": "AblCamShakeTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblCamShakeTask'",
+    "ClassPath": "/Script/AbleCore.AblCamShakeTask",
+    "Properties": {
+      "Shake": {
+        "ObjectName": "BlueprintGeneratedClass'BP_Impact_CamShake_Med_C'",
+        "ObjectPath": "/Game/Data/CameraShakes/BP_Impact_CamShake_Med.0"
+      },
+      "innerRadius": 1.0,
+      "outerRadius": 10.0,
+      "bUseActorPositionAsEpicenter": true,
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": 0.05,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noHealthUseAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPhysicalReactionBlendBackTask",
+    "Name": "AblPhysicalReactionBlendBackTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblPhysicalReactionBlendBackTask'",
+    "ClassPath": "/Script/Phoenix.AblPhysicalReactionBlendBackTask",
+    "Properties": {
+      "bForcePopOutOfRagdollImmediately": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 1.134625,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      },
+      "m_EventName": "Landed"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HeavyKnockdownBck"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_DirectionBased'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_DirectionBased_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.4"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.0
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 10.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'Spell_Large_Impact_Player_Motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Motion/Spell_Large_Impact_Player_Motion.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_FacingAssist'Default__ABL_HitKnockDown_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_FacingAssist_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.24"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.33333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitKnockDown_C'Default__ABL_HitKnockDown_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetPhoenixCharacterMovementModeTask",
+    "Name": "AblSetPhoenixCharacterMovementModeTask_0",
+    "Outer": "Default__ABL_HitKnockDown_C",
+    "Class": "UScriptClass'AblSetPhoenixCharacterMovementModeTask'",
+    "ClassPath": "/Script/Phoenix.AblSetPhoenixCharacterMovementModeTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitKnockDown_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_FacingAssist",
+    "Name": "RootMotionModifierProperties_FacingAssist_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_FacingAssist'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_FacingAssist",
+    "Properties": {
+      "bFaceNegativeDirectionIfCloser": true,
+      "InterpType": "ECustomInterpType::Interp",
+      "InterpSpeed": 5.0
+    }
+  }
+]

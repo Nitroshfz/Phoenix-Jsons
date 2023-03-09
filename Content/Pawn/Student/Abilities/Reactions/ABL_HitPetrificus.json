@@ -1,0 +1,697 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_HitPetrificus",
+    "Outer": "ABL_HitPetrificus_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityBranch",
+    "Outer": "ABL_HitPetrificus_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityBranch'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomCanBranchTo",
+    "Outer": "ABL_HitPetrificus_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:CustomCanBranchTo'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 1408,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetObjectStateInfo_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'ObjectStateInfo'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHealth_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 1279395840
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_HitPetrificus_C:ExecuteUbergraph_ABL_HitPetrificus'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_HitPetrificus_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.2"
+      },
+      {
+        "ObjectName": "Function'ABL_HitPetrificus_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.1"
+      },
+      {
+        "ObjectName": "Function'ABL_HitPetrificus_C:ExecuteUbergraph_ABL_HitPetrificus'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_HitPetrificus": {
+        "ObjectName": "Function'ABL_HitPetrificus_C:ExecuteUbergraph_ABL_HitPetrificus'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.0"
+      },
+      "OnAbilityBranch": {
+        "ObjectName": "Function'ABL_HitPetrificus_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.1"
+      },
+      "CustomCanBranchTo": {
+        "ObjectName": "Function'ABL_HitPetrificus_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.2"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+    }
+  },
+  {
+    "Type": "ABL_HitPetrificus_C",
+    "Name": "Default__ABL_HitPetrificus_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.ABL_HitPetrificus_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitPetrificus_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.3"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 9.0,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitPetrificus_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.12"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitPetrificus_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitPetrificus_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.14"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitPetrificus_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitPetrificus_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.9"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitPetrificus_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.10"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_HitPetrificus_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.20"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_HitPetrificus_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.21"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_HitPetrificus_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.19"
+        },
+        {
+          "ObjectName": "ablFacialAnimationStateTask'Default__ABL_HitPetrificus_C:ablFacialAnimationStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.15"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitPetrificus_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.16"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitPetrificus_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.5"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitPetrificus_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.17"
+        }
+      ],
+      "m_AbilityNameHash": 313232071,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 0.32323337,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_EventName": "PhysicsStart"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Petrificus_Breakout_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Petrificus_Breakout.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitPetrificus_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.6"
+        }
+      ],
+      "m_TransitionBlend": {
+        "BlendTime": 0.0
+      },
+      "m_TransitionBlendOut": {
+        "BlendTime": 0.0
+      },
+      "m_bOverrideTransitionBlendOut": true,
+      "m_OverrideBlendTickStyle": true,
+      "m_BlendTickStyle": "EAnimBlendTickStyle::BlendTickDest",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitPetrificus_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitPetrificus_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Petrificus_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Petrificus_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitPetrificus_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.7"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": 1.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitPetrificusFallDown_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificusFallDown.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitPetrificus_C:AblBranchTask_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.8"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitPetrificus_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitPetrificus_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "ClearInvulnerable"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AllowBreakout"
+      },
+      "m_StartTime": {
+        "Offset": 0.3,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.3,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_2",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "TurnOffBreakout"
+      },
+      "m_StartTime": {
+        "Offset": 3.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablFacialAnimationStateTask",
+    "Name": "ablFacialAnimationStateTask_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'ablFacialAnimationStateTask'",
+    "ClassPath": "/Script/Phoenix.ablFacialAnimationStateTask",
+    "Properties": {
+      "FacialAnimation": {
+        "AnimTags": [
+          "AA.FacialStates.Combat"
+        ]
+      },
+      "m_StartTime": {
+        "Offset": 0.5666667,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      },
+      "m_EventName": "Breakout_Failure"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.5666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      },
+      "m_EventName": "Breakout_Success"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitPetrificus_Start"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEventReference": {
+        "EventID": "emote_react_petrified"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'petrificus_totalus_paralyse_motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Petrificus_Totalus/petrificus_totalus_paralyse_motion.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": 0.06666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.0666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitPetrificus_C'Default__ABL_HitPetrificus_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_HitPetrificus_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_TurnAssist'Default__ABL_HitPetrificus_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_TurnAssist_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.22"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 9.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitPetrificus_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitPetrificus.18"
+        }
+      },
+      "m_TaskTargets": [
+        100
+      ]
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_TurnAssist",
+    "Name": "RootMotionModifierProperties_TurnAssist_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_TurnAssist'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_TurnAssist",
+    "Properties": {
+      "UseMethod": "ERootMotionModTurnAssistMethod::UseDampedSpring",
+      "SpringHalflife": 0.1
+    }
+  }
+]

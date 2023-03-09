@@ -1,0 +1,128 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_GAC_TreasureChest_Master_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GAC_TreasureChest_Master_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Chest/GAC_TreasureChest/SK_GAC_TreasureChest_Master_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GAC_TreasureChest_Master_Physics:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Chest/GAC_TreasureChest/SK_GAC_TreasureChest_Master_Physics.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_GAC_TreasureChest_Master_Physics:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Chest/GAC_TreasureChest/SK_GAC_TreasureChest_Master_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_GAC_TreasureChest_Master_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "chest_lid",
+        "ConstraintBone1": "chest_lid",
+        "ConstraintBone2": "chest",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -68.3144,
+          "Z": -53.35323
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_GAC_TreasureChest_Master_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.0001948573,
+              "Y": -34.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99938,
+              "Roll": -89.99728
+            },
+            "X": 68.9579,
+            "Y": 95.0,
+            "Z": 162.80722,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "chest",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "B0D5CF60453C39DDB0FECE8E9E7338F6"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_GAC_TreasureChest_Master_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.0004939588,
+              "Y": -2.0956278,
+              "Z": 52.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -90.0055,
+              "Roll": -89.96734
+            },
+            "Radius": 50.0,
+            "Length": 67.42825,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "chest_lid",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "4DD584C748B24B7E29F0178110685E14"
+  }
+]

@@ -1,0 +1,533 @@
+[
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_0",
+    "Outer": "PotionCauldron_ReadyforPickUp_PickUpOutof_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'Nurturing_Brewing_Cauldron_Spin_Play'",
+        "ObjectPath": "/Game/WWise/Events/Nurturing/Nurturing_Brewing/Cauldron/Nurturing_Brewing_Cauldron_Spin_Play.0"
+      },
+      "SocketName": "JNT_liquid_master",
+      "bFollow": false,
+      "MaxDistanceToListener": 1500.0,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_1",
+    "Outer": "PotionCauldron_ReadyforPickUp_PickUpOutof_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'Nurturing_Brewing_Cauldron_Disappear_Short_Play'",
+        "ObjectPath": "/Game/WWise/Events/Nurturing/Nurturing_Brewing/Cauldron/Nurturing_Brewing_Cauldron_Disappear_Short_Play.0"
+      },
+      "SocketName": "JNT_liquid_master",
+      "bFollow": false,
+      "MaxDistanceToListener": 1500.0,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayParticleEffect",
+    "Name": "AnimNotify_PlayParticleEffect_0",
+    "Outer": "PotionCauldron_ReadyforPickUp_PickUpOutof_anm",
+    "Class": "UScriptClass'AnimNotify_PlayParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotify_PlayParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_Cauldron_Disppearance'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/PotionStations/P_Cauldron_Disppearance.56"
+      },
+      "LocationOffset": {
+        "X": 0.0,
+        "Y": -10.0,
+        "Z": 0.0
+      },
+      "Scale": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      },
+      "Attached": false,
+      "SocketName": "VFX_Dissappear"
+    }
+  },
+  {
+    "Type": "AnimSequence",
+    "Name": "PotionCauldron_ReadyforPickUp_PickUpOutof_anm",
+    "Class": "UScriptClass'AnimSequence'",
+    "ClassPath": "/Script/Engine.AnimSequence",
+    "Properties": {
+      "NumFrames": 52,
+      "TrackToSkeletonMapTable": [
+        {
+          "BoneTreeIndex": 0
+        },
+        {
+          "BoneTreeIndex": 1
+        },
+        {
+          "BoneTreeIndex": 2
+        },
+        {
+          "BoneTreeIndex": 3
+        },
+        {
+          "BoneTreeIndex": 4
+        },
+        {
+          "BoneTreeIndex": 5
+        },
+        {
+          "BoneTreeIndex": 6
+        },
+        {
+          "BoneTreeIndex": 7
+        },
+        {
+          "BoneTreeIndex": 8
+        },
+        {
+          "BoneTreeIndex": 9
+        },
+        {
+          "BoneTreeIndex": 20
+        },
+        {
+          "BoneTreeIndex": 21
+        },
+        {
+          "BoneTreeIndex": 10
+        },
+        {
+          "BoneTreeIndex": 11
+        },
+        {
+          "BoneTreeIndex": 12
+        },
+        {
+          "BoneTreeIndex": 13
+        },
+        {
+          "BoneTreeIndex": 14
+        },
+        {
+          "BoneTreeIndex": 15
+        },
+        {
+          "BoneTreeIndex": 16
+        },
+        {
+          "BoneTreeIndex": 17
+        },
+        {
+          "BoneTreeIndex": 18
+        },
+        {
+          "BoneTreeIndex": 19
+        }
+      ],
+      "BoneCompressionSettings": {
+        "ObjectName": "AnimBoneCompressionSettings'AC_PhxAnimBoneCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings.4"
+      },
+      "CurveCompressionSettings": {
+        "ObjectName": "AnimCurveCompressionSettings'AC_PhxAnimCurveCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings.1"
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PickupNotify",
+          "Notify": null,
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.019572772,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.7,
+          "LinkValue": 0.019572772,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'PotionCauldron_ReadyforPickUp_PickUpOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.3"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'PotionCauldron_ReadyforPickUp_PickUpOutof_anm:AnimNotify_AkEvent_Ava_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.0"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.16824633,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.7,
+          "LinkValue": 0.16824633,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'PotionCauldron_ReadyforPickUp_PickUpOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.3"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'PotionCauldron_ReadyforPickUp_PickUpOutof_anm:AnimNotify_AkEvent_Ava_1'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 1.0663054,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.7,
+          "LinkValue": 1.0663054,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'PotionCauldron_ReadyforPickUp_PickUpOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.3"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayParticleEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayParticleEffect'PotionCauldron_ReadyforPickUp_PickUpOutof_anm:AnimNotify_PlayParticleEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.2"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 1.5909362,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.7,
+          "LinkValue": 1.5909362,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'PotionCauldron_ReadyforPickUp_PickUpOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/PotionCauldron/PotionCauldron_ReadyforPickUp_PickUpOutof_anm.3"
+          }
+        }
+      ],
+      "SequenceLength": 1.7,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_Sanc_Cauldron_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/SK_Sanc_Cauldron_Skeleton.7"
+      }
+    },
+    "SkeletonGuid": "2EB7FFA7-41004B9A-0478FBB9-C1C5090C",
+    "CompressedTrackToSkeletonMapTable": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      20,
+      21,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "CompressedCurveNames": [
+      {
+        "DisplayName": "liquidScale"
+      },
+      {
+        "DisplayName": "AverageSpeed"
+      }
+    ],
+    "CompressedCurveData": {
+      "FloatCurves": [
+        {
+          "FloatCurve": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.4,
+                "Value": 1.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.4333333,
+                "Value": 1.0003918,
+                "ArriveTangent": 0.035268553,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.035268553,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.4666667,
+                "Value": 1.0108116,
+                "ArriveTangent": 0.47672376,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.47672376,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.5,
+                "Value": 1.0321735,
+                "ArriveTangent": 0.6984421,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.6984421,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.5333333,
+                "Value": 1.0573744,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.5666667,
+                "Value": 0.628095,
+                "ArriveTangent": -14.108218,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -14.108218,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.6,
+                "Value": 0.11682646,
+                "ArriveTangent": -8.45778,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -8.45778,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.6333333,
+                "Value": 0.02285113,
+                "ArriveTangent": -1.7318715,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -1.7318715,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Cubic",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.6666666,
+                "Value": 0.001368361,
+                "ArriveTangent": -0.033152483,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": -0.033152483,
+                "LeaveTangentWeight": 0.0
+              },
+              {
+                "InterpMode": "RCIM_Constant",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 1.7,
+                "Value": 0.001,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant"
+          },
+          "Name": {
+            "DisplayName": "liquidScale"
+          },
+          "CurveTypeFlags": 4
+        },
+        {
+          "FloatCurve": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant"
+          },
+          "Name": {
+            "DisplayName": "AverageSpeed"
+          },
+          "CurveTypeFlags": 4
+        }
+      ]
+    },
+    "CompressedDataStructure": {
+      "CompressedNumberOfFrames": 52
+    },
+    "BoneCompressionCodec": {
+      "ObjectName": "AnimBoneCompressionCodec_ACL'AC_PhxAnimBoneCompressionSettings:AnimBoneCompressionCodec_ACL_2'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings"
+    },
+    "CurveCompressionCodec": {
+      "ObjectName": "AnimCurveCompressionCodec_CompressedRichCurve'AC_PhxAnimCurveCompressionSettings:CurveCompressionCodec'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings"
+    },
+    "CompressedRawDataSize": 29144
+  }
+]

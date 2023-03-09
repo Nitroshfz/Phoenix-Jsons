@@ -1,0 +1,618 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_Petting_Loop",
+    "Outer": "ABL_Petting_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 524288,
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAble_Anim_Instance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Able_AnimInstance'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AnimInstance'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAble_Anim_Instance_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Able_AnimInstance'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityBranch",
+    "Outer": "ABL_Petting_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityBranch'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_Petting_Loop_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_Petting_Loop_C:ExecuteUbergraph_ABL_Petting_Loop'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_Petting_Loop_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.2"
+      },
+      {
+        "ObjectName": "Function'ABL_Petting_Loop_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.1"
+      },
+      {
+        "ObjectName": "Function'ABL_Petting_Loop_C:ExecuteUbergraph_ABL_Petting_Loop'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_Petting_Loop": {
+        "ObjectName": "Function'ABL_Petting_Loop_C:ExecuteUbergraph_ABL_Petting_Loop'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.0"
+      },
+      "OnAbilityBranch": {
+        "ObjectName": "Function'ABL_Petting_Loop_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.1"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_Petting_Loop_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.2"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+    }
+  },
+  {
+    "Type": "ABL_Petting_Loop_C",
+    "Name": "Default__ABL_Petting_Loop_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.ABL_Petting_Loop_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Petting_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.3"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 22.033333,
+      "m_LoopEnd": 0.0,
+      "m_IsChanneled": true,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Petting_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Petting_Loop_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Petting_Loop_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.14"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_Petting_Loop_C:AblHermesSendMessageToTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.15"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Petting_Loop_C:AblAnimNotifyEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.8"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Petting_Loop_C:AblAnimNotifyEvent_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.9"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Petting_Loop_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.6"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Petting_Loop_C:AblAnimNotifyEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.7"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Petting_Loop_C:AblAnimNotifyEvent_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.10"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Petting_Loop_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.16"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Petting_Loop_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.17"
+        }
+      ],
+      "m_AbilityNameHash": 346505860,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationModifier_WandCastAim",
+    "Name": "AblAnimationModifier_WandCastAim_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationModifier_WandCastAim'",
+    "ClassPath": "/Script/Phoenix.AblAnimationModifier_WandCastAim",
+    "Properties": {
+      "EventName": "None",
+      "bLoop": true,
+      "bAlwaysUseCurrentAimInfo": true
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.3527131,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      },
+      "m_EventName": "EndUseItem"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_1",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.97902405
+      },
+      "m_EventName": "FireWand"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_2",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      },
+      "m_EventName": "StartUseItem"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_3",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.6666667
+      },
+      "m_EventName": "ComsumeItem"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_4",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.736434
+      },
+      "m_EventName": "ConjureMenuDone"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Petting_End_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_End.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Petting_Loop_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.11"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Petting_Loop_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.16"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Petting_Loop_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Petting_Vanish_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Vanish.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Petting_Loop_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.12"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Petting_Loop_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Petting_Loop_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_1",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Self",
+      "m_MessageName": "NotifyAllowInteractionEnd",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 3.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      },
+      "m_EventName": "CreatureInteractionEnded"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 2.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      },
+      "m_EventName": "VanishBrush"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Petting_Loop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.NurturePettingLoop"
+      ],
+      "m_AnimationModifiers": [
+        {
+          "ObjectName": "AblAnimationModifier_WandCastAim'Default__ABL_Petting_Loop_C:AblPlayAnimationArchitectTask_0.AblAnimationModifier_WandCastAim_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.5"
+        }
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_RootMode": {
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_Petting_BlendWeights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_BlendWeights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Petting_Loop_C'Default__ABL_Petting_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Petting/ABL_Petting_Loop.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": "Infinity"
+      }
+    }
+  }
+]

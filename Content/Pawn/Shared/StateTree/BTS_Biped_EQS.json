@@ -1,0 +1,442 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BTS_Biped_EQS",
+    "Outer": "BTS_Biped_EQS_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_QueryInstance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_CustomEvent_QueryStatus",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryStatus'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_SocialReasoning_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'SocialReasoning'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_RunMode_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryRunMode'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_QueryFinishedDelegate_1",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 2,
+        "Struct": {
+          "ObjectName": "Class'QueryFinishedData'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_RunEQSQuery_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_QueryInstance_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_CustomEvent_QueryStatus_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryStatus'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_SocialReasoning",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'SocialReasoning'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_Event_RunMode",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryRunMode'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_QueryFinishedDelegate",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 2,
+        "Struct": {
+          "ObjectName": "Class'QueryFinishedData'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper:EQSQueryDoneSignature__DelegateSignature'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_RunEQSQuery_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper:EQSQueryDoneSignature__DelegateSignature'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "FindSocialReasonings_QueryFinished",
+    "Outer": "BTS_Biped_EQS_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "QueryInstance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "QueryStatus",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryStatus'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "RunEQS_FindSocialReasonings",
+    "Outer": "BTS_Biped_EQS_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTService_SocialReasoning:RunEQS_FindSocialReasonings'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SocialReasoning",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'SocialReasoning'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "RunMode",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryRunMode'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "QueryFinishedDelegate",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134218134,
+        "Struct": {
+          "ObjectName": "Class'QueryFinishedData'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "Function",
+    "Name": "FindStations_QueryFinished",
+    "Outer": "BTS_Biped_EQS_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "QueryInstance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "QueryStatus",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryStatus'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "RunEQS_FindStations",
+    "Outer": "BTS_Biped_EQS_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTService_SocialReasoning:RunEQS_FindStations'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SocialReasoning",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'SocialReasoning'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "RunMode",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryRunMode'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "QueryFinishedDelegate",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134218134,
+        "Struct": {
+          "ObjectName": "Class'QueryFinishedData'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BTS_Biped_EQS_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BTS_Biped_EQS_C:ExecuteUbergraph_BTS_Biped_EQS'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'BTService_SocialReasoning'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BTS_Biped_EQS_C:RunEQS_FindStations'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.4"
+      },
+      {
+        "ObjectName": "Function'BTS_Biped_EQS_C:FindStations_QueryFinished'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.3"
+      },
+      {
+        "ObjectName": "Function'BTS_Biped_EQS_C:RunEQS_FindSocialReasonings'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.2"
+      },
+      {
+        "ObjectName": "Function'BTS_Biped_EQS_C:FindSocialReasonings_QueryFinished'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.1"
+      },
+      {
+        "ObjectName": "Function'BTS_Biped_EQS_C:ExecuteUbergraph_BTS_Biped_EQS'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BTS_Biped_EQS": {
+        "ObjectName": "Function'BTS_Biped_EQS_C:ExecuteUbergraph_BTS_Biped_EQS'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.0"
+      },
+      "FindSocialReasonings_QueryFinished": {
+        "ObjectName": "Function'BTS_Biped_EQS_C:FindSocialReasonings_QueryFinished'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.1"
+      },
+      "RunEQS_FindSocialReasonings": {
+        "ObjectName": "Function'BTS_Biped_EQS_C:RunEQS_FindSocialReasonings'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.2"
+      },
+      "FindStations_QueryFinished": {
+        "ObjectName": "Function'BTS_Biped_EQS_C:FindStations_QueryFinished'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.3"
+      },
+      "RunEQS_FindStations": {
+        "ObjectName": "Function'BTS_Biped_EQS_C:RunEQS_FindStations'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.4"
+      }
+    },
+    "ClassFlags": 264208,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BTS_Biped_EQS_C'Default__BTS_Biped_EQS_C'",
+      "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.6"
+    }
+  },
+  {
+    "Type": "BTS_Biped_EQS_C",
+    "Name": "Default__BTS_Biped_EQS_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.BTS_Biped_EQS_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BTS_Biped_EQS_C'",
+      "ObjectPath": "/Game/Pawn/Shared/StateTree/BTS_Biped_EQS.5"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

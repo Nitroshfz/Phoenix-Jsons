@@ -1,0 +1,393 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_ButtSlideSlipAndFall_C'Default__ABL_ButtSlideSlipAndFall_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.1"
+    }
+  },
+  {
+    "Type": "ABL_ButtSlideSlipAndFall_C",
+    "Name": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.ABL_ButtSlideSlipAndFall_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_ButtSlideSlipAndFall_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 2.8,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        },
+        {
+          "ObjectName": "ablFacialEmotionStateTask'Default__ABL_ButtSlideSlipAndFall_C:ablFacialEmotionStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.9"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_ButtSlideSlipAndFall_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_ButtSlideSlipAndFall_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.6"
+        },
+        {
+          "ObjectName": "AblCamShakeTask'Default__ABL_ButtSlideSlipAndFall_C:AblCamShakeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.8"
+        },
+        {
+          "ObjectName": "AblForceFeedbackTask'Default__ABL_ButtSlideSlipAndFall_C:AblForceFeedbackTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.10"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_ButtSlideSlipAndFall_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.7"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_ButtSlideSlipAndFall_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.5"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlideSlipAndFall_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.4"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.12"
+        }
+      ],
+      "m_AbilityNameHash": 1501197571,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_Slide",
+    "Name": "AblBlendSpaceParameterGetter_Slide_1",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_Slide'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_Slide",
+    "Properties": {
+      "NonStickMax": 90.0,
+      "DeadZone": 90.0,
+      "bSlipAndFall": true,
+      "bReverseDirection": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_ButtSliding_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSliding.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_ButtSlideSlipAndFall_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.19999999,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "LookAtPlayersHips"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_2",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "Landed"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblForceFeedbackTask'Default__ABL_ButtSlideSlipAndFall_C:AblForceFeedbackTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.10"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblCamShakeTask'Default__ABL_ButtSlideSlipAndFall_C:AblCamShakeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblCamShakeTask",
+    "Name": "AblCamShakeTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblCamShakeTask'",
+    "ClassPath": "/Script/AbleCore.AblCamShakeTask",
+    "Properties": {
+      "Shake": {
+        "ObjectName": "BlueprintGeneratedClass'BP_ButtSlide_CamShake_C'",
+        "ObjectPath": "/Game/Data/CameraShakes/BP_ButtSlide_CamShake.0"
+      },
+      "innerRadius": 1.0,
+      "outerRadius": 5.0,
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": -0.6333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.6333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablFacialEmotionStateTask",
+    "Name": "ablFacialEmotionStateTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'ablFacialEmotionStateTask'",
+    "ClassPath": "/Script/Phoenix.ablFacialEmotionStateTask",
+    "Properties": {
+      "FacialEmotion": "EFacialEmotion::ALARM",
+      "TransitionTime": 0.2,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblForceFeedbackTask",
+    "Name": "AblForceFeedbackTask_1",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblForceFeedbackTask'",
+    "ClassPath": "/Script/AbleCore.AblForceFeedbackTask",
+    "Properties": {
+      "ForceFeedbackEffect": {
+        "ObjectName": "ForceFeedbackEffect'FF_JumpLandMed'",
+        "ObjectPath": "/Game/Data/ControlMapper/Feedback/FF_JumpLandMed.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": -0.6333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.6333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.ButtSlideSlipAndFall"
+      ],
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_Slide'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_Slide_1'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlideSlipAndFall_C'Default__ABL_ButtSlideSlipAndFall_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_stumble_surprised'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_stumble_surprised.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlideSlipAndFall_C'Default__ABL_ButtSlideSlipAndFall_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.1333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlideSlipAndFall_C'Default__ABL_ButtSlideSlipAndFall_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_ButtSlideSlipAndFall_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_ButtSlide'Default__ABL_ButtSlideSlipAndFall_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_ButtSlide_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.14"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlideSlipAndFall_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlideSlipAndFall.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_ButtSlide",
+    "Name": "RootMotionModifierProperties_ButtSlide_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_ButtSlide'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_ButtSlide",
+    "Properties": {
+      "DownwardForce": 3000.0,
+      "RotationInterpType": "ECustomInterpType::Interp",
+      "RotationInterpSpeed": 8.0,
+      "RootMotionModifierOrder": "ERootMotionModifierOrder::Penultimate"
+    }
+  }
+]

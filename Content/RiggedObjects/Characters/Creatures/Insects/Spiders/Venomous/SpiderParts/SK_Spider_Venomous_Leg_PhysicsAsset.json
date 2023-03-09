@@ -1,0 +1,275 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Spider_Venomous_Leg_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Spider_Venomous_Leg_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Spiders/Venomous/SpiderParts/SK_Spider_Venomous_Leg_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Spider_Venomous_Leg_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Spiders/Venomous/SpiderParts/SK_Spider_Venomous_Leg_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Spider_Venomous_Leg_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Spiders/Venomous/SpiderParts/SK_Spider_Venomous_Leg_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Spider_Venomous_Leg_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Spiders/Venomous/SpiderParts/SK_Spider_Venomous_Leg_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Spider_Venomous_Leg_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Spiders/Venomous/SpiderParts/SK_Spider_Venomous_Leg_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Spider_Venomous_Leg_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Leg_02",
+        "ConstraintBone1": "Leg_02",
+        "ConstraintBone2": "Leg_01",
+        "PriAxis1": {
+          "X": 0.9491678,
+          "Y": -0.3147706,
+          "Z": 4.3565228E-07
+        },
+        "SecAxis1": {
+          "X": 0.3147706,
+          "Y": 0.9491678,
+          "Z": -8.058879E-08
+        },
+        "Pos2": {
+          "X": 59.101192,
+          "Y": 1.772074E-14,
+          "Z": -5.746033E-14
+        },
+        "PriAxis2": {
+          "X": 0.39848047,
+          "Y": 0.9140983,
+          "Z": 0.07507686
+        },
+        "SecAxis2": {
+          "X": -0.9171701,
+          "Y": 0.3974396,
+          "Z": 0.028977226
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 55.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_Spider_Venomous_Leg_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint",
+        "ConstraintBone1": "Leg_02",
+        "ConstraintBone2": "Leg_03",
+        "Pos1": {
+          "X": 75.317505,
+          "Y": -3.8146973E-05,
+          "Z": 0.0011978149
+        },
+        "PriAxis1": {
+          "X": 0.8960518,
+          "Y": 0.44394943,
+          "Z": 2.883347E-07
+        },
+        "SecAxis1": {
+          "X": -0.44394943,
+          "Y": 0.8960518,
+          "Z": 5.4921493E-08
+        },
+        "Pos2": {
+          "X": -0.033744812,
+          "Y": 0.019844055,
+          "Z": 0.00071263313
+        },
+        "PriAxis2": {
+          "X": 0.9973874,
+          "Y": -0.07175035,
+          "Z": 0.008378275
+        },
+        "SecAxis2": {
+          "X": 0.071847714,
+          "Y": 0.99734384,
+          "Z": -0.011964673
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 20.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Spider_Venomous_Leg_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 21.894354,
+              "Y": -3.3167937,
+              "Z": 0.94846135
+            },
+            "Rotation": {
+              "Pitch": 0.1484883,
+              "Yaw": -90.20422,
+              "Roll": -88.12622
+            },
+            "Radius": 10.215734,
+            "Length": 47.036552,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "SleepFamily": "ESleepFamily::Custom",
+        "LinearDamping": 1.0,
+        "AngularDamping": 5.0,
+        "StabilizationThresholdMultiplier": 10000.0
+      },
+      "BoneName": "Leg_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "2427F8874490F608D336A594ACC25750"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Spider_Venomous_Leg_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 38.973,
+              "Y": -5.6616564,
+              "Z": -0.38132787
+            },
+            "Rotation": {
+              "Pitch": 0.002458868,
+              "Yaw": 91.957825,
+              "Roll": -89.976944
+            },
+            "Radius": 8.914469,
+            "Length": 54.5081,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "SleepFamily": "ESleepFamily::Custom",
+        "LinearDamping": 1.0,
+        "AngularDamping": 5.0,
+        "StabilizationThresholdMultiplier": 10000.0
+      },
+      "BoneName": "Leg_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "A530240D4768CE90E1CFE9BF1AD6AC39"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_Spider_Venomous_Leg_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 18.241064,
+              "Y": -0.6375542,
+              "Z": 0.31062055
+            },
+            "Rotation": {
+              "Pitch": -89.74512,
+              "Yaw": -0.00034301833,
+              "Roll": 6.273275E-05
+            },
+            "Radius": 4.9926634,
+            "Length": 20.698498,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "SleepFamily": "ESleepFamily::Custom",
+        "LinearDamping": 1.0,
+        "AngularDamping": 5.0,
+        "StabilizationThresholdMultiplier": 10000.0
+      },
+      "BoneName": "Leg_03",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "1812CF5344C91FC6D8D6A2A00E428B4B"
+  }
+]

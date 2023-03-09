@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "EnvQuery",
+    "Name": "EQS_FindStationsManagedBy",
+    "Class": "UScriptClass'EnvQuery'",
+    "ClassPath": "/Script/AIModule.EnvQuery",
+    "Properties": {
+      "QueryName": "EQS_FindStationsManagedBy1",
+      "Options": [
+        {
+          "ObjectName": "EnvQueryOption'EQS_FindStationsManagedBy:EnvQueryOption_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsManagedBy.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryGenerator_StationsManagedBy",
+    "Name": "EnvQueryGenerator_StationsManagedBy_0",
+    "Outer": "EQS_FindStationsManagedBy",
+    "Class": "UScriptClass'EnvQueryGenerator_StationsManagedBy'",
+    "ClassPath": "/Script/Phoenix.EnvQueryGenerator_StationsManagedBy",
+    "Properties": {
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryOption",
+    "Name": "EnvQueryOption_1",
+    "Outer": "EQS_FindStationsManagedBy",
+    "Class": "UScriptClass'EnvQueryOption'",
+    "ClassPath": "/Script/AIModule.EnvQueryOption",
+    "Properties": {
+      "Generator": {
+        "ObjectName": "EnvQueryGenerator_StationsManagedBy'EQS_FindStationsManagedBy:EnvQueryGenerator_StationsManagedBy_0'",
+        "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsManagedBy.1"
+      },
+      "Tests": [
+        {
+          "ObjectName": "EnvQueryTest_Stations'EQS_FindStationsManagedBy:EnvQueryTest_Stations_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsManagedBy.4"
+        },
+        {
+          "ObjectName": "EnvQueryTest_StationSubtypes'EQS_FindStationsManagedBy:EnvQueryTest_StationSubtypes_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsManagedBy.5"
+        },
+        {
+          "ObjectName": "EnvQueryTest_StationHouseGender'EQS_FindStationsManagedBy:EnvQueryTest_StationHouseGender_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsManagedBy.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryTest_StationHouseGender",
+    "Name": "EnvQueryTest_StationHouseGender_0",
+    "Outer": "EQS_FindStationsManagedBy",
+    "Class": "UScriptClass'EnvQueryTest_StationHouseGender'",
+    "ClassPath": "/Script/Phoenix.EnvQueryTest_StationHouseGender",
+    "Properties": {
+      "TestOrder": 2,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Stations",
+    "Name": "EnvQueryTest_Stations_1",
+    "Outer": "EQS_FindStationsManagedBy",
+    "Class": "UScriptClass'EnvQueryTest_Stations'",
+    "ClassPath": "/Script/Phoenix.EnvQueryTest_Stations",
+    "Properties": {
+      "FloatValueMin": {
+        "DefaultValue": 1.0
+      },
+      "FloatValueMax": {
+        "DefaultValue": 30000.0
+      },
+      "ScoringEquation": "EEnvTestScoreEquation::Square",
+      "ClampMinType": "EEnvQueryTestClamping::FilterThreshold",
+      "ClampMaxType": "EEnvQueryTestClamping::FilterThreshold",
+      "NormalizationType": "EEQSNormalizationType::RelativeToScores",
+      "ScoreClampMin": {
+        "DefaultValue": 1.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_StationSubtypes",
+    "Name": "EnvQueryTest_StationSubtypes_0",
+    "Outer": "EQS_FindStationsManagedBy",
+    "Class": "UScriptClass'EnvQueryTest_StationSubtypes'",
+    "ClassPath": "/Script/Phoenix.EnvQueryTest_StationSubtypes",
+    "Properties": {
+      "TestOrder": 1,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "VerNum": 1
+    }
+  }
+]

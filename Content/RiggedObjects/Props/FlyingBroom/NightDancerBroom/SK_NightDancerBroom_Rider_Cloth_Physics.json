@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_NightDancerBroom_Rider_Cloth_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_NightDancerBroom_Rider_Cloth_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/NightDancerBroom/SK_NightDancerBroom_Rider_Cloth_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_NightDancerBroom_Rider_Cloth_Physics:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/NightDancerBroom/SK_NightDancerBroom_Rider_Cloth_Physics.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_NightDancerBroom_Rider_Cloth_Physics:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/NightDancerBroom/SK_NightDancerBroom_Rider_Cloth_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_NightDancerBroom_Rider_Cloth_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "bristles_01",
+        "ConstraintBone1": "bristles_01",
+        "ConstraintBone2": "broom",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 8.7533655,
+          "Z": -54.95747
+        },
+        "PriAxis2": {
+          "X": 1.1920929E-07,
+          "Y": -0.057900667,
+          "Z": -0.99832225
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.99832237,
+          "Z": -0.057900667
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_NightDancerBroom_Rider_Cloth_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -3.0517578E-05,
+              "Y": 6.0480437,
+              "Z": -55.588833
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 20.671295
+            },
+            "Radius": 12.0,
+            "Length": 18.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "broom",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "788607214B6F1207BF6824BEC724505E"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_NightDancerBroom_Rider_Cloth_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 32.389496,
+              "Y": -0.22832108,
+              "Z": -0.14948654
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 93.402565,
+              "Roll": -89.44529
+            },
+            "Radius": 15.043188,
+            "Length": 33.19472,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "bristles_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "92354C1349D7665DC2E944BE5FD7292C"
+  }
+]

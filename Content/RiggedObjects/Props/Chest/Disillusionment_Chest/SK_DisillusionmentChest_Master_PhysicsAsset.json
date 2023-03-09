@@ -1,0 +1,160 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_DisillusionmentChest_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_DisillusionmentChest_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Chest/Disillusionment_Chest/SK_DisillusionmentChest_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_DisillusionmentChest_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Chest/Disillusionment_Chest/SK_DisillusionmentChest_Master_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_DisillusionmentChest_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Chest/Disillusionment_Chest/SK_DisillusionmentChest_Master_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_DisillusionmentChest_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "lid",
+        "ConstraintBone1": "lid",
+        "ConstraintBone2": "base",
+        "Pos1": {
+          "X": 0.009281439,
+          "Y": 7.630093E-06,
+          "Z": 0.0038928986
+        },
+        "PriAxis1": {
+          "X": 0.8874358,
+          "Y": 1.01330265E-07,
+          "Z": 0.4609312
+        },
+        "SecAxis1": {
+          "X": -1.01330265E-07,
+          "Y": 1.0,
+          "Z": -2.4745901E-08
+        },
+        "Pos2": {
+          "X": 0.0,
+          "Y": -59.603737,
+          "Z": -29.324375
+        },
+        "PriAxis2": {
+          "X": 0.8874357,
+          "Y": 1.6442659E-08,
+          "Z": 0.46093154
+        },
+        "SecAxis2": {
+          "X": -1.2200377E-08,
+          "Y": 1.0,
+          "Z": -1.21831745E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_DisillusionmentChest_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.105356716,
+              "Y": -29.270554,
+              "Z": -0.05979546
+            },
+            "Rotation": {
+              "Pitch": -4.0981133E-05,
+              "Yaw": 90.34462,
+              "Roll": -89.93872
+            },
+            "X": 59.140545,
+            "Y": 59.42556,
+            "Z": 115.292175,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 3.0,
+        "AngularDamping": 3.0
+      },
+      "BoneName": "base",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "C717F3754BF9BC3D2D7EE6B6ADC54AAD"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_DisillusionmentChest_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 9.804964E-06,
+              "Y": 6.548178,
+              "Z": 29.482256
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": 89.999954,
+              "Roll": -89.999954
+            },
+            "Radius": 30.351059,
+            "Length": 60.049564,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 3.0
+      },
+      "BoneName": "lid",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "7723EE894C1E61AC867C0FA151E36A85"
+  }
+]

@@ -1,0 +1,385 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+    }
+  },
+  {
+    "Type": "ABL_ClimbLadder_Slide_C",
+    "Name": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.ABL_ClimbLadder_Slide_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_ClimbLadder_Slide_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.6"
+        },
+        {
+          "ObjectName": "AblJumpTask'Default__ABL_ClimbLadder_Slide_C:AblJumpTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.5"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.7"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_ClimbLadder_Slide_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.8"
+        },
+        {
+          "ObjectName": "AblScaleCharacter'Default__ABL_ClimbLadder_Slide_C:AblScaleCharacter_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.10"
+        },
+        {
+          "ObjectName": "ablToggleIKDriversTask'Default__ABL_ClimbLadder_Slide_C:ablToggleIKDriversTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.11"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_ClimbLadder_Slide_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.9"
+        },
+        {
+          "ObjectName": "ablIKPoseFixupTask'Default__ABL_ClimbLadder_Slide_C:ablIKPoseFixupTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.3"
+        },
+        {
+          "ObjectName": "ablIKPoseFixupTask'Default__ABL_ClimbLadder_Slide_C:ablIKPoseFixupTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.4"
+        }
+      ],
+      "m_AbilityNameHash": 1577868046,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Idle",
+    "Name": "AblAnimationTagChooser_Idle_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_Idle'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Idle",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.LadderSlideStartLF"
+        ],
+        [
+          "AA.AnimPlayerName.LadderSlideStartRF"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "ablIKPoseFixupTask",
+    "Name": "ablIKPoseFixupTask_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'ablIKPoseFixupTask'",
+    "ClassPath": "/Script/Phoenix.ablIKPoseFixupTask",
+    "Properties": {
+      "Definition": {
+        "ControlledBoneName": "RightHand",
+        "IkInputTransformName": "RightHandTransform",
+        "IkInputAlphaName": "RightHandAlpha",
+        "BlendInTime": 0.0,
+        "BlendOutTime": 0.0,
+        "TargetTransform": {
+          "ObjectName": "Transform_AnimationBone'Default__ABL_ClimbLadder_Slide_C:ablIKPoseFixupTask_0.Transform_AnimationBone_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.15"
+        }
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablIKPoseFixupTask",
+    "Name": "ablIKPoseFixupTask_1",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'ablIKPoseFixupTask'",
+    "ClassPath": "/Script/Phoenix.ablIKPoseFixupTask",
+    "Properties": {
+      "Definition": {
+        "ControlledBoneName": "LeftHand",
+        "IkInputTransformName": "LeftHandTransform",
+        "IkInputAlphaName": "LeftHandAlpha",
+        "BlendInTime": 0.0,
+        "BlendOutTime": 0.0,
+        "TargetTransform": {
+          "ObjectName": "Transform_AnimationBone'Default__ABL_ClimbLadder_Slide_C:ablIKPoseFixupTask_1.Transform_AnimationBone_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.16"
+        }
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblJumpTask",
+    "Name": "AblJumpTask_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'AblJumpTask'",
+    "ClassPath": "/Script/Phoenix.AblJumpTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.6"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.7"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.LadderSlideStartLF"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Idle'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_Idle_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.LadderSlideLoop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.6"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'LadderSlide_Loop_Start'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Human/LadderSlide_Loop_Start.0"
+      },
+      "bStopWhenAttachedToDestroyed": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 2.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_CharacterScale'Default__ABL_ClimbLadder_Slide_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_CharacterScale_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.14"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ClimbLadder_Slide_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.6"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblScaleCharacter",
+    "Name": "AblScaleCharacter_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'AblScaleCharacter'",
+    "ClassPath": "/Script/Phoenix.AblScaleCharacter",
+    "Properties": {
+      "bUseDefaultMaleScale": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablToggleIKDriversTask",
+    "Name": "ablToggleIKDriversTask_0",
+    "Outer": "Default__ABL_ClimbLadder_Slide_C",
+    "Class": "UScriptClass'ablToggleIKDriversTask'",
+    "ClassPath": "/Script/Phoenix.ablToggleIKDriversTask",
+    "Properties": {
+      "bEnableIK": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_ClimbLadder_Slide_C'Default__ABL_ClimbLadder_Slide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AnimationClip_AblAbility",
+    "Name": "AnimationClip_AblAbility_0",
+    "Outer": "Transform_AnimationBone_0",
+    "Class": "UScriptClass'AnimationClip_AblAbility'",
+    "ClassPath": "/Script/AbleCore.AnimationClip_AblAbility"
+  },
+  {
+    "Type": "AnimationClip_AblAbility",
+    "Name": "AnimationClip_AblAbility_0",
+    "Outer": "Transform_AnimationBone_0",
+    "Class": "UScriptClass'AnimationClip_AblAbility'",
+    "ClassPath": "/Script/AbleCore.AnimationClip_AblAbility"
+  },
+  {
+    "Type": "RootMotionModifierProperties_CharacterScale",
+    "Name": "RootMotionModifierProperties_CharacterScale_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_CharacterScale'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_CharacterScale"
+  },
+  {
+    "Type": "Transform_AnimationBone",
+    "Name": "Transform_AnimationBone_0",
+    "Outer": "ablIKPoseFixupTask_0",
+    "Class": "UScriptClass'Transform_AnimationBone'",
+    "ClassPath": "/Script/AvaAnimation.Transform_AnimationBone",
+    "Properties": {
+      "BoneName": "RightHand",
+      "AnimationProvider": {
+        "ObjectName": "AnimationClip_AblAbility'Default__ABL_ClimbLadder_Slide_C:ablIKPoseFixupTask_0.Transform_AnimationBone_0.AnimationClip_AblAbility_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.12"
+      }
+    }
+  },
+  {
+    "Type": "Transform_AnimationBone",
+    "Name": "Transform_AnimationBone_0",
+    "Outer": "ablIKPoseFixupTask_1",
+    "Class": "UScriptClass'Transform_AnimationBone'",
+    "ClassPath": "/Script/AvaAnimation.Transform_AnimationBone",
+    "Properties": {
+      "BoneName": "LeftHand",
+      "AnimationProvider": {
+        "ObjectName": "AnimationClip_AblAbility'Default__ABL_ClimbLadder_Slide_C:ablIKPoseFixupTask_1.Transform_AnimationBone_0.AnimationClip_AblAbility_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_ClimbLadder_Slide.13"
+      }
+    }
+  }
+]

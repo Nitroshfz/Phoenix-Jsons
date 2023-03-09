@@ -1,0 +1,25 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_InAir",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.RagdollPowering",
+        "AA.RagdollPowerAnims.AerialPanic"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Strong",
+      "PoseDriveBlendTime": 0.2,
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsAboveFallHeight'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsAboveFallHeight.0"
+          }
+        ]
+      }
+    }
+  }
+]

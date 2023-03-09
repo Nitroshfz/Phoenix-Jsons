@@ -1,0 +1,665 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_HonkingDaffodils",
+    "Outer": "ABP_HonkingDaffodils_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_HonkingDaffodils_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 384,
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_HonkingDaffodils_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.AnimBlueprintGeneratedClass",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "Daffodil",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "IDLE",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 6,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 1,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "HONK",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 7,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 3,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "PAUSE",
+              "Transitions": [],
+              "StateRootNodeIndex": 5,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 1,
+              "NextState": 0,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_HonkingDaffodils_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Plants/HonkingDaffodils/SK_HonkingDaffodils_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": [
+        {
+          "AnimGraph": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        }
+      ],
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 0,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 1,
+              "PostCopyOperation": "EPostCopyOperation::LogicalNegateBool"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_1"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+            }
+          }
+        }
+      ],
+      "PropertyAccessLibrary": {
+        "PathSegments": [
+          {
+            "Name": "IsHonking",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "IsHonking"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "IsHonking",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "IsHonking"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult_1",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult_1"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+                "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          }
+        ],
+        "SrcPaths": [
+          {
+            "PathSegmentStartIndex": 0,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 3,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          }
+        ],
+        "DestPaths": [
+          {
+            "PathSegmentStartIndex": 1,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 4,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          }
+        ],
+        "CopyBatches": {
+          "Copies": [
+            {
+              "AccessIndex": 0,
+              "DestAccessStartIndex": 0,
+              "DestAccessEndIndex": 1,
+              "Type": "EPropertyAccessCopyType::Bool"
+            },
+            {
+              "AccessIndex": 1,
+              "DestAccessStartIndex": 1,
+              "DestAccessEndIndex": 2,
+              "Type": "EPropertyAccessCopyType::Bool"
+            }
+          ]
+        }
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_HonkingDaffodils_C:ExecuteUbergraph_ABP_HonkingDaffodils'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_HonkingDaffodils_C:AnimGraph'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.1"
+      },
+      {
+        "ObjectName": "Function'ABP_HonkingDaffodils_C:ExecuteUbergraph_ABP_HonkingDaffodils'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_1",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_2",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_RandomPlayer_1",
+        "Flags": 2097153,
+        "ElementSize": 120,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_RandomPlayer'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_1",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_RandomPlayer",
+        "Flags": 2097153,
+        "ElementSize": 120,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_RandomPlayer'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateMachine",
+        "Flags": 2097153,
+        "ElementSize": 176,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateMachine'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsHonking",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsFinalStage",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_HonkingDaffodils": {
+        "ObjectName": "Function'ABP_HonkingDaffodils_C:ExecuteUbergraph_ABP_HonkingDaffodils'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.0"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_HonkingDaffodils_C:AnimGraph'",
+        "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.1"
+      }
+    },
+    "ClassFlags": 8652824,
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_HonkingDaffodils_C'Default__ABP_HonkingDaffodils_C'",
+      "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.3"
+    }
+  },
+  {
+    "Type": "ABP_HonkingDaffodils_C",
+    "Name": "Default__ABP_HonkingDaffodils_C",
+    "Class": "AnimBlueprintGeneratedClass'/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.ABP_HonkingDaffodils_C'",
+    "ClassRef": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_HonkingDaffodils_C'",
+      "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/ABP_HonkingDaffodils.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 8
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_TransitionResult_1": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_StateResult_2": {
+        "Result": {
+          "LinkID": -1
+        },
+        "Name": "PAUSE",
+        "Group": "None"
+      },
+      "AnimGraphNode_RandomPlayer_1": {
+        "Entries": [
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'HonkingDaffodils_HonkA_anm'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/HonkingDaffodils_HonkA_anm.2"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'HonkingDaffodils_HonkB_anm'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/HonkingDaffodils_HonkB_anm.2"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'HonkingDaffodils_HonkC_anm'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/HonkingDaffodils_HonkC_anm.4"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          }
+        ],
+        "bShuffleMode": false
+      },
+      "AnimGraphNode_StateResult_1": {
+        "Result": {
+          "LinkID": 4
+        },
+        "Name": "HONK",
+        "Group": "None"
+      },
+      "AnimGraphNode_RandomPlayer": {
+        "Entries": [
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'HonkingDaffodils_idle_V1_anm'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/HonkingDaffodils_idle_V1_anm.0"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'HonkingDaffodils_idle_V2_anm'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/HonkingDaffodils_idle_V2_anm.0"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'HonkingDaffodils_idle_V3_anm'",
+              "ObjectPath": "/Game/Animation/Environment/WorldEvents/HonkingDaffodils/HonkingDaffodils_idle_V3_anm.0"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 0.2,
+              "BlendOption": "EAlphaBlendOption::Linear"
+            }
+          }
+        ],
+        "bShuffleMode": false
+      },
+      "AnimGraphNode_StateResult": {
+        "Result": {
+          "LinkID": 6
+        },
+        "Name": "IDLE",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      }
+    }
+  }
+]

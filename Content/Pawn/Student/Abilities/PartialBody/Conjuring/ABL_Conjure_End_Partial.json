@@ -1,0 +1,173 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Conjure_End_Partial_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Conjure_End_Partial_C'Default__ABL_Conjure_End_Partial_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.1"
+    }
+  },
+  {
+    "Type": "ABL_Conjure_End_Partial_C",
+    "Name": "Default__ABL_Conjure_End_Partial_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.ABL_Conjure_End_Partial_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Conjure_End_Partial_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Conjure_End_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.5"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Conjure_End_Partial_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.3"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Conjure_End_Partial_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.4"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Conjure_End_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.2"
+        }
+      ],
+      "m_AbilityNameHash": 13632042,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_Conjure_End_Partial_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.20121063,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Conjure_End_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.5"
+        }
+      },
+      "m_EventName": "ConjureMenuDone"
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Conjure_End_Partial_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "ConjureMotionCommand"
+      },
+      "VarMapKeyedNames": [
+        {
+          "ConjureCommand": "FullStop"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Conjure_End_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.2"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Conjure_End_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.2"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_Conjure_End_Partial_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimCompletePartial"
+      },
+      "m_StartTime": {
+        "Offset": -0.16666633,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Conjure_End_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.16666633,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Conjure_End_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Conjure_End_Partial_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Conjure_Exit"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.166667
+      },
+      "m_FadeOut": {
+        "BlendTime": 0.3
+      },
+      "m_PlayRate": 1.0000002,
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_RootMode": {
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_Conjuring_BlendWeights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjuring_BlendWeights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Conjure_End_Partial_C'Default__ABL_Conjure_End_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Conjure_End_Partial.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.3333333
+      }
+    }
+  }
+]

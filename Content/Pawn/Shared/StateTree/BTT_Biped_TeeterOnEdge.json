@@ -1,0 +1,843 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BTT_Biped_TeeterOnEdge",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_MakeLiteralByte_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'HermesBPLibrary:HermesEventDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOwner_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetWorldDeltaSeconds_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Player",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Character_Interface",
+        "Flags": 1,
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'Biped_Character_Interface'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate_1",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'HermesBPLibrary:HermesEventDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetSpeedCurve_bIgnoreGovernor",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSpeedCurve_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'CurveFloat'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Character_Interface_1",
+        "Flags": 1,
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'Biped_Character_Interface'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Character_Interface_2",
+        "Flags": 1,
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'Biped_Character_Interface'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetMoveStickValues_X",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetMoveStickValues_Y",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_ProcessStick_WorldSpeed",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_ProcessStick_WorldDirection",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ProcessStick_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOwner_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerActor_2",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Player_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_4",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetMoveStickValues_X_1",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetMoveStickValues_Y_1",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_FloatFloat_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_BTCustomActionEvent_VariantMapHandle",
+        "Flags": 1,
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "Class'VariantMapHandle'",
+          "ObjectPath": "/Script/UtilitiesRuntime"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Caller_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOwner_ReturnValue_2",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Player_2",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_5",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerActor_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Player_3",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_6",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsAble_Character_Interface",
+        "Flags": 1,
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "Class'Able_Character_Interface'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_7",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ExecuteAbilityByClass_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_HermesBindEvent_Handle",
+        "Flags": 1,
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'HermesBPDelegateHandle'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_HermesBindEvent_Handle_1",
+        "Flags": 1,
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'HermesBPDelegateHandle'",
+          "ObjectPath": "/Script/Hermes"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_Caller",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOwner_ReturnValue_3",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Player_4",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_8",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "Teeter2FallStart",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Caller",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "Teeter2Fall",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Caller",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ExitTask",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_AvaAITree:ExitTask'",
+      "ObjectPath": "/Script/BTCustomRuntime"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "CustActionEvt_AnimComplete_K2Node_BTCustomActionEvent_0",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "VariantMapHandle",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'VariantMapHandle'",
+          "ObjectPath": "/Script/UtilitiesRuntime"
+        }
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "RevertMovementMode",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActorOwner_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBiped_Player",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "BTCustomActionDelegateBinding'BTT_Biped_TeeterOnEdge_C:BTCustomActionDelegateBinding_0'",
+          "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.10"
+        }
+      ],
+      "UberGraphFunction": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ExecuteUbergraph_BTT_Biped_TeeterOnEdge'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_AvaAITree_Input'",
+      "ObjectPath": "/Script/BTCustomRuntime"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:RevertMovementMode'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.7"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:CustActionEvt_AnimComplete_K2Node_BTCustomActionEvent_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.6"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ExitTask'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.5"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:Teeter2Fall'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.4"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ReceiveTick'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.3"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ReceiveExecute'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.2"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:Teeter2FallStart'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.1"
+      },
+      {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ExecuteUbergraph_BTT_Biped_TeeterOnEdge'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BTT_Biped_TeeterOnEdge": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ExecuteUbergraph_BTT_Biped_TeeterOnEdge'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.0"
+      },
+      "Teeter2FallStart": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:Teeter2FallStart'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.1"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ReceiveExecute'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.2"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ReceiveTick'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.3"
+      },
+      "Teeter2Fall": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:Teeter2Fall'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.4"
+      },
+      "ExitTask": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:ExitTask'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.5"
+      },
+      "CustActionEvt_AnimComplete_K2Node_BTCustomActionEvent_0": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:CustActionEvt_AnimComplete_K2Node_BTCustomActionEvent_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.6"
+      },
+      "RevertMovementMode": {
+        "ObjectName": "Function'BTT_Biped_TeeterOnEdge_C:RevertMovementMode'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.7"
+      }
+    },
+    "ClassFlags": 264208,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BTT_Biped_TeeterOnEdge_C'Default__BTT_Biped_TeeterOnEdge_C'",
+      "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.9"
+    }
+  },
+  {
+    "Type": "BTT_Biped_TeeterOnEdge_C",
+    "Name": "Default__BTT_Biped_TeeterOnEdge_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.BTT_Biped_TeeterOnEdge_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BTT_Biped_TeeterOnEdge_C'",
+      "ObjectPath": "/Game/Pawn/Shared/StateTree/BTT_Biped_TeeterOnEdge.8"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "BTCustomActionDelegateBinding",
+    "Name": "BTCustomActionDelegateBinding_0",
+    "Outer": "BTT_Biped_TeeterOnEdge_C",
+    "Class": "UScriptClass'BTCustomActionDelegateBinding'",
+    "ClassPath": "/Script/BTCustomRuntime.BTCustomActionDelegateBinding",
+    "Properties": {
+      "ActionDelegateBindings": [
+        {
+          "ActionName": "AnimComplete",
+          "ActionType": "EBTCustomActionType::Started",
+          "FunctionNameToBind": "CustActionEvt_AnimComplete_K2Node_BTCustomActionEvent_0"
+        }
+      ]
+    }
+  }
+]

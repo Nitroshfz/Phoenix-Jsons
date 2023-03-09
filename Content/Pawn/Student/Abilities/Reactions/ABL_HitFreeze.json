@@ -1,0 +1,1214 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_HitFreeze",
+    "Outer": "ABL_HitFreeze_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityBranch",
+    "Outer": "ABL_HitFreeze_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityBranch'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomCanBranchTo",
+    "Outer": "ABL_HitFreeze_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:CustomCanBranchTo'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 1408,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetObjectStateInfo_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'ObjectStateInfo'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHealth_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 1279395840
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_HitFreeze_C:ExecuteUbergraph_ABL_HitFreeze'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_HitFreeze_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.2"
+      },
+      {
+        "ObjectName": "Function'ABL_HitFreeze_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.1"
+      },
+      {
+        "ObjectName": "Function'ABL_HitFreeze_C:ExecuteUbergraph_ABL_HitFreeze'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_HitFreeze": {
+        "ObjectName": "Function'ABL_HitFreeze_C:ExecuteUbergraph_ABL_HitFreeze'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.0"
+      },
+      "OnAbilityBranch": {
+        "ObjectName": "Function'ABL_HitFreeze_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.1"
+      },
+      "CustomCanBranchTo": {
+        "ObjectName": "Function'ABL_HitFreeze_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.2"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+    }
+  },
+  {
+    "Type": "ABL_HitFreeze_C",
+    "Name": "Default__ABL_HitFreeze_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.ABL_HitFreeze_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitFreeze_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.3"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 95.13333,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.32"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_HitFreeze_C:AblHermesSendMessageToTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.21"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_HitFreeze_C:AblHermesSendMessageToTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.24"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitFreeze_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.16"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitFreeze_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.19"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitFreeze_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.18"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_HitFreeze_C:AblHermesSendMessageToTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.22"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitFreeze_C:ablInputContextTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.27"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.34"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitFreeze_C:AblBTCustomActionTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.20"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitFreeze_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.14"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitFreeze_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.26"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitFreeze_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.13"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitFreeze_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.25"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitFreeze_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.15"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_HitFreeze_C:AblHermesSendMessageToTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.23"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitFreeze_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.17"
+        },
+        {
+          "ObjectName": "AblAddLinearImpulseTask'Default__ABL_HitFreeze_C:AblAddLinearImpulseTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.5"
+        },
+        {
+          "ObjectName": "ablNiagaraPlayEffectTask'Default__ABL_HitFreeze_C:ablNiagaraPlayEffectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.28"
+        },
+        {
+          "ObjectName": "AblPlayMultiFxTask'Default__ABL_HitFreeze_C:AblPlayMultiFxTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.35"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_HitFreeze_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.36"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.29"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitFreeze_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.7"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitFreeze_C:AblAnimNotifyEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.8"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.31"
+        }
+      ],
+      "m_AbilityNameHash": 148128358,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAddLinearImpulseTask",
+    "Name": "AblAddLinearImpulseTask_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblAddLinearImpulseTask'",
+    "ClassPath": "/Script/Phoenix.AblAddLinearImpulseTask",
+    "Properties": {
+      "ImpulseDirection": {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ImpulseDamping": 6.0,
+      "ImpulseStrengthMin": 1000.0,
+      "ImpulseStrengthMax": 1000.0,
+      "DirectionType": "EAblAddLinearImpulseDirectionType::ImpactDirection",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.32"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.23343335
+      }
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_DirectionBased",
+    "Name": "AblAnimationTagChooser_DirectionBased_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_DirectionBased'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_DirectionBased",
+    "Properties": {
+      "NumAngles": 4,
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.HitFrozenBwd"
+        ],
+        [
+          "AA.AnimPlayerName.HitFrozenLeft"
+        ],
+        [
+          "AA.AnimPlayerName.HitFrozenFwd"
+        ],
+        [
+          "AA.AnimPlayerName.HitFrozenRight"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 1.2,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        }
+      },
+      "m_EventName": "SplitCounterAttack"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 0.3176031,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.34"
+        }
+      },
+      "m_EventName": "BranchGeneral"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_HitFreeze_C:AblBranchTask_0.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.11"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_CombatIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitFreeze_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitFreeze_C:AblBTCustomActionTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.20"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitFreeze_C:AblBTCustomActionTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.20"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_HitFreeze_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.12"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitFreeze_Breakout_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze_Breakout.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitFreeze_C:AblBranchTask_3.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.10"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.31"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.31"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "ClearInvulnerable"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.29"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "TurnOffBreakout"
+      },
+      "m_StartTime": {
+        "Offset": 3.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_2",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AllowBreakout"
+      },
+      "m_StartTime": {
+        "Offset": 7.0000005,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 7.0000005,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_3",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.1,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.34"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.1,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.34"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Owner",
+      "m_MessageName": "PauseClothSim",
+      "m_CleanupMessageName": "ResumeClothSim",
+      "m_StartTime": {
+        "Offset": 0.2,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Owner",
+      "m_MessageName": "ResumeClothSim",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_2",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Owner",
+      "m_MessageName": "ResumeClothSim",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.30"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_3",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Owner",
+      "m_MessageName": "ResumeClothSim",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.31"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.31"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noClimbing",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noHeavyWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 7.933334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 7.933334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeDodge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 7.733334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 44.466667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_2",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noFakeDodge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 0.4666667,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.4666667,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablNiagaraPlayEffectTask",
+    "Name": "ablNiagaraPlayEffectTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'ablNiagaraPlayEffectTask'",
+    "ClassPath": "/Script/Phoenix.ablNiagaraPlayEffectTask",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_TMB_Plasma'",
+        "ObjectPath": "/Game/VFX/Niagara/AncientMagic/Pickup/VFX_NS_TMB_Plasma.9"
+      },
+      "bAttachToWand": true,
+      "bAttachToSocket": true,
+      "m_Socket": "MuzzleSocket",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.29"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitFreeze_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.29"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 5.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EventName": "Breakout_Failure"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 4.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_2",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 11.666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EventName": "Breakout"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Freeze"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_DirectionBased'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_DirectionBased_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.6"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_PlayRate": 0.9999998,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 10.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitGlacius_Fail"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_OverrideBlendOut": true,
+      "m_BlendOut": {
+        "BlendTime": 0.5
+      },
+      "m_StartTime": {
+        "Offset": 4.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 7.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_2",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitGlacius_Getup"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.33"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 11.466667
+      }
+    }
+  },
+  {
+    "Type": "AblPlayMultiFxTask",
+    "Name": "AblPlayMultiFxTask_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlayMultiFxTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayMultiFxTask",
+    "Properties": {
+      "Fx": [
+        {
+          "ObjectName": "MultiFX2_NiagraVfx'Default__ABL_HitFreeze_C:AblPlayMultiFxTask_0.MultiFX2_NiagraVfx_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.38"
+        },
+        {
+          "ObjectName": "MultiFX2_SkinFx'Default__ABL_HitFreeze_C:AblPlayMultiFxTask_0.MultiFX2_SkinFx_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.39"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.5666668,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitFreeze_C'Default__ABL_HitFreeze_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_HitFreeze_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'spell_impact_motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Motion/spell_impact_motion.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.32"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitFreeze_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.32"
+        }
+      },
+      "m_TaskTargets": [
+        207
+      ]
+    }
+  },
+  {
+    "Type": "MultiFX2_NiagraBoneListSpawnInfo",
+    "Name": "MultiFX2_NiagraBoneListSpawnInfo_0",
+    "Outer": "MultiFX2_NiagraVfx_0",
+    "Class": "UScriptClass'MultiFX2_NiagraBoneListSpawnInfo'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraBoneListSpawnInfo",
+    "Properties": {
+      "BoneList": [
+        "spine2"
+      ]
+    }
+  },
+  {
+    "Type": "MultiFX2_NiagraVfx",
+    "Name": "MultiFX2_NiagraVfx_0",
+    "Outer": "AblPlayMultiFxTask_0",
+    "Class": "UScriptClass'MultiFX2_NiagraVfx'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraVfx",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_Troll_Finisher_FreezeFlash'",
+        "ObjectPath": "/Game/VFX/Enemies/Troll/Finisher/VFX_NS_Troll_Finisher_FreezeFlash.110"
+      },
+      "SpawnInfo": {
+        "ObjectName": "MultiFX2_NiagraBoneListSpawnInfo'Default__ABL_HitFreeze_C:AblPlayMultiFxTask_0.MultiFX2_NiagraVfx_0.MultiFX2_NiagraBoneListSpawnInfo_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitFreeze.37"
+      }
+    }
+  },
+  {
+    "Type": "MultiFX2_SkinFx",
+    "Name": "MultiFX2_SkinFx_0",
+    "Outer": "AblPlayMultiFxTask_0",
+    "Class": "UScriptClass'MultiFX2_SkinFx'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_SkinFx",
+    "Properties": {
+      "SkinFx": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SkinFX_FinisherFreeze_C'",
+        "ObjectPath": "/Game/VFX/SkinFX/BP_SkinFX_FinisherFreeze.0"
+      },
+      "EnvelopeOverride": {},
+      "EndStyle": "ESkinFXEffectEndStyle::EndSustainHold"
+    }
+  }
+]

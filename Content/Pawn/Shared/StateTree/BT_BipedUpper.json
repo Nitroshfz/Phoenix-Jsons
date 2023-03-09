@@ -1,0 +1,809 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "BT_BipedUpper",
+    "Class": "UScriptClass'BehaviorTree'",
+    "ClassPath": "/Script/AIModule.BehaviorTree",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_7'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.9"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'BB_Biped'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BB_Biped.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_0",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_Wand_Idle_C'BT_BipedUpper:BipedUpper_Wand_Idle_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.26"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_Biped_Pickup_C'BT_BipedUpper:BTT_Biped_Pickup_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.14"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_AlohomoraFail_C'BT_BipedUpper:BTT_BipedUpper_AlohomoraFail_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.15"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_TargetSighted_C'BT_BipedUpper:BTT_BipedUpper_TargetSighted_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.24"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_Looting_C'BT_BipedUpper:BTT_BipedUpper_Looting_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.20"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_6'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.8"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTS_BipedUpper_Wand_C'BT_BipedUpper:Wand_Service_C_0'",
+          "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.13"
+        }
+      ],
+      "NodeName": "Wand",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_1",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_None_C'BT_BipedUpper:BipedUpper_None_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.21"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_3'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.6"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_4'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.7"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_8'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.10"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_10'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.3"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_11'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.4"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_2'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.5"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTS_BipedUpper_TopLevel_C'BT_BipedUpper:BipedUpper_TopLevel_Service_C_0'",
+          "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.12"
+        }
+      ],
+      "NodeName": "Gameplay",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_7'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.9"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_10",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_OpenDoor_C'BT_BipedUpper:BTT_BipedUpper_OpenDoor_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.22"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "OpenDoor",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_11",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_CallOut_C'BT_BipedUpper:BTT_BipedUpper_CallOut_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.18"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "CallOut",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_2",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_RideCreature_C'BT_BipedUpper:BTT_BipedUpper_RideCreature_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.23"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "RideCreature",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_3",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_UseInventoryItem_C'BT_BipedUpper:BTT_BipedUpper_UseInventoryItem_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.25"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Inventory",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_4",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_BlockedByWall_C'BT_BipedUpper:BTT_BipedUpper_BlockedByWall_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.16"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Gestures",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_6",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_WandCast_C'BT_BipedUpper:BTT_BipedUpper_WandCast_C_1'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.27"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "WandCast",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_7",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_9'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.11"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "ModeUpper",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_8",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_BlockedByWall_C'BT_BipedUpper:BTT_BipedUpper_BlockedByWall_C_1'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.17"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "BlockedByWall",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_9",
+    "Outer": "BT_BipedUpper",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_BipedUpper_Cinematic_C'BT_BipedUpper:BTT_BipedUpper_Cinematic_C_0'",
+            "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.19"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Cinematic",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_7'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.9"
+      }
+    }
+  },
+  {
+    "Type": "BTS_BipedUpper_TopLevel_C",
+    "Name": "BipedUpper_TopLevel_Service_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTS_BipedUpper_TopLevel_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTS_BipedUpper_TopLevel.BTS_BipedUpper_TopLevel_C'",
+    "ClassPath": "",
+    "Properties": {
+      "Interval": 0.001,
+      "RandomDeviation": 0.0,
+      "NodeName": "Gameplay Service",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTS_BipedUpper_Wand_C",
+    "Name": "Wand_Service_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTS_BipedUpper_Wand_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTS_BipedUpper_Wand.BTS_BipedUpper_Wand_C'",
+    "ClassPath": "",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_Biped_Pickup_C",
+    "Name": "BTT_Biped_Pickup_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_Biped_Pickup_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_Biped_Pickup.BTT_Biped_Pickup_C'",
+    "ClassPath": "",
+    "Properties": {
+      "GameLogicBoolVars": [
+        {
+          "ElementName": "noProtego"
+        },
+        {
+          "ElementName": "noLightWandCastAllowed"
+        },
+        {
+          "ElementName": "PartialBodyBusy"
+        }
+      ],
+      "bShowPropertyDetails": false,
+      "NodeName": "Pickup",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_AlohomoraFail_C",
+    "Name": "BTT_BipedUpper_AlohomoraFail_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_AlohomoraFail_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_AlohomoraFail.BTT_BipedUpper_AlohomoraFail_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "AlohomoraFail",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_BlockedByWall_C",
+    "Name": "BTT_BipedUpper_BlockedByWall_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_BlockedByWall_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_BlockedByWall.BTT_BipedUpper_BlockedByWall_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bShowPropertyDetails": false,
+      "NodeName": "BlockedByWall",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_4'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.7"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_BlockedByWall_C",
+    "Name": "BTT_BipedUpper_BlockedByWall_C_1",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_BlockedByWall_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_BlockedByWall.BTT_BipedUpper_BlockedByWall_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "BlockedByWall",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_8'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.10"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_CallOut_C",
+    "Name": "BTT_BipedUpper_CallOut_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_CallOut_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_CallOut.BTT_BipedUpper_CallOut_C'",
+    "ClassPath": "",
+    "Properties": {
+      "GameLogicBoolVars": [
+        {
+          "ElementName": "PartialBodyBusy"
+        }
+      ],
+      "NodeName": "CallOut",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_11'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.4"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_Cinematic_C",
+    "Name": "BTT_BipedUpper_Cinematic_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_Cinematic_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_Cinematic.BTT_BipedUpper_Cinematic_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bShowPropertyDetails": false,
+      "NodeName": "Cinematic",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_9'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.11"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_Looting_C",
+    "Name": "BTT_BipedUpper_Looting_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_Looting_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_Looting.BTT_BipedUpper_Looting_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Loot",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_None_C",
+    "Name": "BipedUpper_None_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_None_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_None.BTT_BipedUpper_None_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bShowPropertyDetails": false,
+      "NodeName": "None",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.2"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_OpenDoor_C",
+    "Name": "BTT_BipedUpper_OpenDoor_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_OpenDoor_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_OpenDoor.BTT_BipedUpper_OpenDoor_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "OpenDoor",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_10'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.3"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_RideCreature_C",
+    "Name": "BTT_BipedUpper_RideCreature_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_RideCreature_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_RideCreature.BTT_BipedUpper_RideCreature_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "RideCreature",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_2'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.5"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_TargetSighted_C",
+    "Name": "BTT_BipedUpper_TargetSighted_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_TargetSighted_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_TargetSighted.BTT_BipedUpper_TargetSighted_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "TargetSighted",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_UseInventoryItem_C",
+    "Name": "BTT_BipedUpper_UseInventoryItem_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_UseInventoryItem_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_UseInventoryItem.BTT_BipedUpper_UseInventoryItem_C'",
+    "ClassPath": "",
+    "Properties": {
+      "GameLogicBoolVars": [
+        {
+          "ElementName": "PartialBodyBusy"
+        }
+      ],
+      "CustomActions": [
+        {
+          "ActionName": "CancelCurrentSpell"
+        }
+      ],
+      "bShowPropertyDetails": false,
+      "NodeName": "UseInventoryItem",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_3'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.6"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_Wand_Idle_C",
+    "Name": "BipedUpper_Wand_Idle_C_0",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_Wand_Idle_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_Wand_Idle.BTT_BipedUpper_Wand_Idle_C'",
+    "ClassPath": "",
+    "Properties": {
+      "GameLogicBoolVars": [
+        {
+          "ElementName": "isWandIdle"
+        }
+      ],
+      "bShowPropertyDetails": false,
+      "NodeName": "Wand_Idle",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_BipedUpper_WandCast_C",
+    "Name": "BTT_BipedUpper_WandCast_C_1",
+    "Outer": "BT_BipedUpper",
+    "Template": "Default__BTT_BipedUpper_WandCast_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Shared/StateTree/BTT_BipedUpper_WandCast.BTT_BipedUpper_WandCast_C'",
+    "ClassPath": "",
+    "Properties": {
+      "GameLogicBoolVars": [
+        {
+          "ElementName": "PartialBodyBusy"
+        }
+      ],
+      "NodeName": "PartialBodySpell",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_BipedUpper'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_BipedUpper:BTComposite_AvaAITree_6'",
+        "ObjectPath": "/Game/Pawn/Shared/StateTree/BT_BipedUpper.8"
+      }
+    }
+  }
+]

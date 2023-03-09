@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_Transfiguration_StartLoop_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Transfiguration_StartLoop_C'Default__ABL_Transfiguration_StartLoop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.1"
+    }
+  },
+  {
+    "Type": "ABL_Transfiguration_StartLoop_C",
+    "Name": "Default__ABL_Transfiguration_StartLoop_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.ABL_Transfiguration_StartLoop_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_Transfiguration_StartLoop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 4.4333334,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Transfiguration_StartLoop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.4"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Transfiguration_StartLoop_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.5"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblBranchEvent'Default__ABL_Transfiguration_StartLoop_C:AblBranchEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.3"
+        }
+      ],
+      "m_AbilityNameHash": 1562937029
+    }
+  },
+  {
+    "Type": "AblBranchConditionCustom",
+    "Name": "AblBranchConditionCustom_0",
+    "Outer": "AblBranchEvent_0",
+    "Class": "UScriptClass'AblBranchConditionCustom'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionCustom"
+  },
+  {
+    "Type": "AblBranchEvent",
+    "Name": "AblBranchEvent_0",
+    "Outer": "Default__ABL_Transfiguration_StartLoop_C",
+    "Class": "UScriptClass'AblBranchEvent'",
+    "ClassPath": "/Script/AbleCore.AblBranchEvent",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TransfigurationEnd_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_TransfigurationEnd.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionCustom'Default__ABL_Transfiguration_StartLoop_C:AblBranchEvent_0.AblBranchConditionCustom_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.2"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 133.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Transfiguration_StartLoop_C'Default__ABL_Transfiguration_StartLoop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.1"
+        }
+      },
+      "m_EventName": "TransformAllDone"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Transfiguration_StartLoop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Alohomora_Start"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Transfiguration_StartLoop_C'Default__ABL_Transfiguration_StartLoop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Transfiguration_StartLoop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Alohomora_Loop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Transfiguration_StartLoop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transfiguration/ABL_Transfiguration_StartLoop.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 4.4333334
+      }
+    }
+  }
+]

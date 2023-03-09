@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_AlohomoraPuzzleEnter_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_AlohomoraPuzzleEnter_C'Default__ABL_AlohomoraPuzzleEnter_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.1"
+    }
+  },
+  {
+    "Type": "ABL_AlohomoraPuzzleEnter_C",
+    "Name": "Default__ABL_AlohomoraPuzzleEnter_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.ABL_AlohomoraPuzzleEnter_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_AlohomoraPuzzleEnter_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.4000001,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_AlohomoraPuzzleEnter_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.5"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_AlohomoraPuzzleEnter_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.6"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_AlohomoraPuzzleEnter_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.3"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_AlohomoraPuzzleEnter_C:AblAnimNotifyEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.4"
+        }
+      ],
+      "m_AbilityNameHash": 3406070446
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Idle",
+    "Name": "AblAnimationTagChooser_Idle_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_Idle'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Idle",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.Alohomora_Start"
+        ],
+        [
+          "AA.AnimPlayerName.Alohomora_Start_LF"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_AlohomoraPuzzleEnter_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.459489,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_AlohomoraPuzzleEnter_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.5"
+        }
+      },
+      "m_EventName": "FireWand"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_1",
+    "Outer": "Default__ABL_AlohomoraPuzzleEnter_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 1.0376658,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_AlohomoraPuzzleEnter_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.5"
+        }
+      },
+      "m_EventName": "MakeInterruptible"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_AlohomoraPuzzleEnter_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Alohomora_Start"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Idle'Default__ABL_AlohomoraPuzzleEnter_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_Idle_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_AlohomoraPuzzleEnter_C'Default__ABL_AlohomoraPuzzleEnter_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_AlohomoraPuzzleEnter_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'alohomora_complete_motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Alohomora/Motion/alohomora_complete_motion.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "Offset": 0.36666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_AlohomoraPuzzleEnter_C'Default__ABL_AlohomoraPuzzleEnter_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.3666666,
+        "RelativeToObject": {
+          "ObjectName": "ABL_AlohomoraPuzzleEnter_C'Default__ABL_AlohomoraPuzzleEnter_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_AlohomoraPuzzleEnter.1"
+        }
+      }
+    }
+  }
+]

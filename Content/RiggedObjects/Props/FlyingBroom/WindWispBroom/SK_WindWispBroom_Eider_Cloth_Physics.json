@@ -1,0 +1,173 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_WindWispBroom_Eider_Cloth_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WindWispBroom_Eider_Cloth_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/WindWispBroom/SK_WindWispBroom_Eider_Cloth_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WindWispBroom_Eider_Cloth_Physics:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/WindWispBroom/SK_WindWispBroom_Eider_Cloth_Physics.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_WindWispBroom_Eider_Cloth_Physics:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/WindWispBroom/SK_WindWispBroom_Eider_Cloth_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_WindWispBroom_Eider_Cloth_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "bristles_01",
+        "ConstraintBone1": "bristles_01",
+        "ConstraintBone2": "broom",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 5.796908,
+          "Z": -72.68446
+        },
+        "PriAxis2": {
+          "X": 0.0,
+          "Y": -0.018276345,
+          "Z": -0.999833
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.999833,
+          "Z": -0.018276345
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_WindWispBroom_Eider_Cloth_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.5634091,
+              "Y": 1.6110977,
+              "Z": 28.904184
+            },
+            "Rotation": {
+              "Pitch": -0.20412703,
+              "Yaw": -90.00001,
+              "Roll": -0.019401466
+            },
+            "Radius": 4.4039516,
+            "Length": 93.34494,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": -0.00030517578,
+              "Y": 8.230575,
+              "Z": -29.686647
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -27.049303
+            },
+            "Radius": 5.0,
+            "Length": 25.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 3.0517578E-05,
+              "Y": 6.256515,
+              "Z": -52.13145
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 16.778072
+            },
+            "Radius": 8.0,
+            "Length": 22.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "broom",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "CA28E51640CBDBB68F723ABB09ECC71C"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_WindWispBroom_Eider_Cloth_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 13.357677,
+              "Y": -0.9904404,
+              "Z": 0.51555896
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": 85.19726,
+              "Roll": -90.50271
+            },
+            "Radius": 12.4966755,
+            "Length": 27.005295,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "bristles_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "40BE5BBA491E44B0B55AFCAA18949BA2"
+  }
+]

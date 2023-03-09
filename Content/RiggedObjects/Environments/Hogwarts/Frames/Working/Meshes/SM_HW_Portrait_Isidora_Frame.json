@@ -1,0 +1,266 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_HW_Portrait_Isidora_Frame",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 2.0683107,
+              "Z": 139.53606
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 124.73877,
+            "Y": 15.49671,
+            "Z": 279.06265,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "2CD6B2D24CB61199C6931680AAAFA8BA",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0xAB71"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_4",
+    "Outer": "SM_HW_Portrait_Isidora_Frame",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xABD5"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_HW_Portrait_Isidora_Frame",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_Isidora_Portrait_Frame'",
+            "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/Working/Materials/MI_HW_Isidora_Portrait_Frame.0"
+          },
+          "MaterialSlotName": "MI_IsidoraPortrait_Frame",
+          "ImportedMaterialSlotName": "MI_HW_Isidora_Portrait_Frame",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 237.09798,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 237.09798,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 2.0683107,
+          "Z": 139.53606
+        },
+        "BoxExtent": {
+          "X": 62.369385,
+          "Y": 7.748355,
+          "Z": 139.53133
+        },
+        "SphereRadius": 152.08868
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_HW_Portrait_Isidora_Frame:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/Working/Meshes/SM_HW_Portrait_Isidora_Frame.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_HW_Portrait_Isidora_Frame:NavCollision_4'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/Working/Meshes/SM_HW_Portrait_Isidora_Frame.1"
+    },
+    "LightingGuid": "7B622300-4A1E17C9-5C9EF890-F7A22BF3",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1648,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1677,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1678
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1678,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 412,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 653,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 18.645853,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 654
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 654,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 102,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 230,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 132.50337,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 231
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 231,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 2.0683107,
+          "Z": 139.53606
+        },
+        "BoxExtent": {
+          "X": 62.369385,
+          "Y": 7.748355,
+          "Z": 139.53133
+        },
+        "SphereRadius": 152.08868
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.105848,
+        0.041462,
+        0.0253655,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_Lifting",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.RagdollPowering",
+        "AA.RagdollPowerAnims.AerialPanic"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Strong",
+      "PoseDriveBlendTime": 0.1,
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasModerateUpwardVelocity'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasModerateUpwardVelocity.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsOffGround'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsOffGround.0"
+          }
+        ],
+        "RequiredAny": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_AllowDramaticDeath'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_AllowDramaticDeath.0"
+          }
+        ]
+      }
+    }
+  }
+]

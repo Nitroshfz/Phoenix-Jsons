@@ -1,0 +1,130 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Leaping_Mushroom_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Leaping_Mushroom_Physics:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Plants/LeapingMushroom/SK_Leaping_Mushroom_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Leaping_Mushroom_Physics:SkeletalBodySetup_6'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Plants/LeapingMushroom/SK_Leaping_Mushroom_Physics.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Leaping_Mushroom_Physics:PhysicsConstraintTemplate_4'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Plants/LeapingMushroom/SK_Leaping_Mushroom_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_4",
+    "Outer": "SK_Leaping_Mushroom_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "spine_04",
+        "ConstraintBone1": "spine_04",
+        "ConstraintBone2": "spine_01",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -19.620174,
+          "Z": 0.0
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 30.0,
+            "Swing2LimitDegrees": 30.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 30.0,
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Leaping_Mushroom_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.196167E-05,
+              "Y": -1.7688732,
+              "Z": 3.2397955E-07
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -0.00022539616
+            },
+            "Radius": 10.829794,
+            "Length": 1.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "spine_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "A6CA643442E50C4754EB4CB3297741BD"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_6",
+    "Outer": "SK_Leaping_Mushroom_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 7.200241E-05,
+              "Y": -2.766925,
+              "Z": -0.002199404
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": -12.094775,
+              "Roll": 76.11377
+            },
+            "Radius": 16.0,
+            "Length": 0.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "spine_04",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "8F7A388247EAF29A84AFC281A6C9D811"
+  }
+]

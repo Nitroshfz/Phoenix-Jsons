@@ -1,0 +1,1103 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Puffskein_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Puffskein_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Puffskein_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.6"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Puffskein_PhysicsAsset:SkeletalBodySetup_5'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.7"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Puffskein_PhysicsAsset:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Puffskein_PhysicsAsset:PhysicsConstraintTemplate_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Puffskein_PhysicsAsset:PhysicsConstraintTemplate_4'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Puffskein/SK_Puffskein_PhysicsAsset.3"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint_0",
+        "ConstraintBone1": "body",
+        "ConstraintBone2": "tail_01",
+        "Pos1": {
+          "X": -2.3841894E-06,
+          "Y": -9.536742E-07,
+          "Z": 4.7683733E-07
+        },
+        "PriAxis1": {
+          "X": -4.887581E-06,
+          "Y": 8.4293696E-08,
+          "Z": -0.99999994
+        },
+        "SecAxis1": {
+          "X": 2.060574E-13,
+          "Y": 1.0,
+          "Z": 8.4293696E-08
+        },
+        "Pos2": {
+          "X": -10.1336975,
+          "Y": 0.5194493,
+          "Z": -3.051758E-05
+        },
+        "PriAxis2": {
+          "X": 0.8770692,
+          "Y": -0.48036397,
+          "Z": -4.8541137E-06
+        },
+        "SecAxis2": {
+          "X": 0.48036397,
+          "Y": 0.8770692,
+          "Z": -1.1715656E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 20.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 20.0,
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      },
+      "ProfileHandles": [
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 20.0,
+              "Swing2LimitDegrees": 45.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Locked",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 20.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SlerpDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::SLERP"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Weak"
+        },
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 25.0,
+              "Swing2LimitDegrees": 45.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Locked",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 20.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SlerpDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::SLERP"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Dead"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint",
+        "ConstraintBone1": "tail_01",
+        "ConstraintBone2": "tail_02",
+        "Pos2": {
+          "X": -7.1257524,
+          "Y": 2.2888187E-05,
+          "Z": 4.768372E-07
+        },
+        "PriAxis2": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 5.9604645E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing2LimitDegrees": 20.0,
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 20.0,
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      },
+      "ProfileHandles": [
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 45.0,
+              "Swing2LimitDegrees": 20.0,
+              "Swing1Motion": "ACM_Locked",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 20.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SlerpDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::SLERP"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Weak"
+        },
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 45.0,
+              "Swing2LimitDegrees": 20.0,
+              "Swing1Motion": "ACM_Locked",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 20.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SlerpDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::SLERP"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Dead"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_4",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "head",
+        "ConstraintBone1": "head",
+        "ConstraintBone2": "body",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -9.536744E-07,
+          "Z": 5.2466187
+        },
+        "PriAxis2": {
+          "X": 1.7881393E-07,
+          "Y": 0.039031245,
+          "Z": 0.99923784
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.999238,
+          "Z": -0.039031245
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 15.0,
+            "Swing2LimitDegrees": 20.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited",
+            "bSoftConstraint": false
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Stiffness": 500.0,
+              "Damping": 200.0
+            },
+            "SwingDrive": {
+              "Stiffness": 500.0,
+              "Damping": 200.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Stiffness": 500.0,
+              "Damping": 200.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      },
+      "ProfileHandles": [
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 15.0,
+              "Swing2LimitDegrees": 20.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": false
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 45.0,
+              "TwistMotion": "ACM_Locked",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 500.0,
+                "Damping": 100.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 500.0,
+                "Damping": 100.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": true,
+                "bEnableVelocityDrive": true
+              },
+              "SlerpDrive": {
+                "Stiffness": 500.0,
+                "Damping": 100.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Weak"
+        },
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 20.0,
+              "Swing2LimitDegrees": 20.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": false
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 45.0,
+              "TwistMotion": "ACM_Locked",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 500.0,
+                "Damping": 70.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 500.0,
+                "Damping": 70.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": true,
+                "bEnableVelocityDrive": true
+              },
+              "SlerpDrive": {
+                "Stiffness": 500.0,
+                "Damping": 70.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Dead"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0005350449,
+              "Y": 0.82576627,
+              "Z": -0.38236785
+            },
+            "Rotation": {
+              "Pitch": -90.0,
+              "Yaw": -0.019670943,
+              "Roll": 0.019571437
+            },
+            "Radius": 12.25,
+            "Length": 4.75,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "BoneName": "body",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "EB30B8CD41EE787C586F2691A6D86915"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.7473264,
+              "Y": 1.2021333,
+              "Z": -0.00013363197
+            },
+            "Rotation": {
+              "Pitch": -90.0,
+              "Yaw": 0.019889507,
+              "Roll": -0.019989014
+            },
+            "Radius": 6.75,
+            "Length": 1.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "BoneName": "tail_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E1D24CC9402AC8EA4FCE37BFAC1B99B1"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.6127515,
+              "Y": 8.677695E-08,
+              "Z": 5.335454E-05
+            },
+            "Rotation": {
+              "Pitch": -90.0,
+              "Yaw": 179.98021,
+              "Roll": -179.9802
+            },
+            "Radius": 3.0,
+            "Length": 2.75,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "BoneName": "tail_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "DF2F953347AD195A889A3884E407BB88"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_5",
+    "Outer": "SK_Puffskein_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.6292863,
+              "Y": 2.5583198,
+              "Z": -3.0759793E-07
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 6.4405327,
+            "Length": 7.857544,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "MassInKgOverride": 4.0,
+        "bOverrideMass": true
+      },
+      "BoneName": "head",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "99E391234F34E6AAE884658A08BD80D4"
+  }
+]

@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_Alohomora_Cancel_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Alohomora_Cancel_C'Default__ABL_Alohomora_Cancel_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.1"
+    }
+  },
+  {
+    "Type": "ABL_Alohomora_Cancel_C",
+    "Name": "Default__ABL_Alohomora_Cancel_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.ABL_Alohomora_Cancel_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_Alohomora_Cancel_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Alohomora_Cancel_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.4"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Alohomora_Cancel_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.3"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_Alohomora_Cancel_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.5"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_Alohomora_Cancel_C:AblPlayPostAkEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.6"
+        }
+      ],
+      "m_AbilityNameHash": 2112244559
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Alohomora_Cancel_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Alohomora_Cancel_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.2"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Alohomora_Cancel_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Alohomora_Cancel_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Alohomora_Cancel_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Alohomora_Cancel"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Alohomora_Cancel_C'Default__ABL_Alohomora_Cancel_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_Alohomora_Cancel_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'alohomora_cast_loop_motion_stop'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Alohomora/Motion/alohomora_cast_loop_motion_stop.0"
+      },
+      "bPlayerInstigationOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Alohomora_Cancel_C'Default__ABL_Alohomora_Cancel_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Alohomora_Cancel_C'Default__ABL_Alohomora_Cancel_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_1",
+    "Outer": "Default__ABL_Alohomora_Cancel_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'alohomora_complete_motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Alohomora/Motion/alohomora_complete_motion.0"
+      },
+      "bPlayerInstigationOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Alohomora_Cancel_C'Default__ABL_Alohomora_Cancel_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Alohomora_Cancel_C'Default__ABL_Alohomora_Cancel_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_Alohomora_Cancel.1"
+        }
+      }
+    }
+  }
+]

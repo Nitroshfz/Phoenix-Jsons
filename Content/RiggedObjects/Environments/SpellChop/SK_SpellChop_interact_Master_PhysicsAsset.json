@@ -1,0 +1,198 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_SpellChop_interact_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_SpellChop_interact_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/SpellChop/SK_SpellChop_interact_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_SpellChop_interact_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/SpellChop/SK_SpellChop_interact_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_SpellChop_interact_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/SpellChop/SK_SpellChop_interact_Master_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_SpellChop_interact_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/SpellChop/SK_SpellChop_interact_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_SpellChop_interact_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/SpellChop/SK_SpellChop_interact_Master_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_SpellChop_interact_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "axe",
+        "ConstraintBone1": "axe",
+        "ConstraintBone2": "stump",
+        "Pos2": {
+          "X": -4.9657545,
+          "Y": -114.140335,
+          "Z": 74.81005
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_SpellChop_interact_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "wood",
+        "ConstraintBone1": "wood",
+        "ConstraintBone2": "stump",
+        "Pos2": {
+          "X": -3.879567,
+          "Y": -37.218044,
+          "Z": -0.0902307
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_SpellChop_interact_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -6.977215,
+              "Y": -18.134024,
+              "Z": 0.9313717
+            },
+            "Rotation": {
+              "Pitch": -1.9186205,
+              "Yaw": -90.0,
+              "Roll": -37.66115
+            },
+            "Radius": 52.08563,
+            "Length": 56.89992,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "stump",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "0B725A7049284FF446AE03AEE8CD838A"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_SpellChop_interact_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.009937525,
+              "Y": 8.791098,
+              "Z": -40.194965
+            },
+            "Rotation": {
+              "Pitch": -14.051734,
+              "Yaw": -90.00001,
+              "Roll": 0.038873985
+            },
+            "Radius": 13.067242,
+            "Length": 43.859653,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "axe",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "74F4F2884504C8D6A3DB2DB819FDD7DE"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_SpellChop_interact_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.46080875,
+              "Y": -24.609016,
+              "Z": -2.1458683
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 177.39075,
+              "Roll": -85.46269
+            },
+            "Radius": 20.155594,
+            "Length": 27.278482,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "wood",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E34A6DB54D3D30110B4F628B698393E9"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "EnvQuery",
+    "Name": "EQS_FindSocialReasoning",
+    "Class": "UScriptClass'EnvQuery'",
+    "ClassPath": "/Script/AIModule.EnvQuery",
+    "Properties": {
+      "QueryName": "FindAuthorityFigures",
+      "Options": [
+        {
+          "ObjectName": "EnvQueryOption'EQS_FindSocialReasoning:EnvQueryOption_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialReasoning.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryGenerator_ActorsOfClass",
+    "Name": "EnvQueryGenerator_ActorsOfClass_0",
+    "Outer": "EQS_FindSocialReasoning",
+    "Class": "UScriptClass'EnvQueryGenerator_ActorsOfClass'",
+    "ClassPath": "/Script/AIModule.EnvQueryGenerator_ActorsOfClass",
+    "Properties": {
+      "SearchedActorClass": {
+        "ObjectName": "Class'SocialReasoning'",
+        "ObjectPath": "/Script/Phoenix"
+      },
+      "SearchRadius": {
+        "DefaultValue": 7500.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryOption",
+    "Name": "EnvQueryOption_0",
+    "Outer": "EQS_FindSocialReasoning",
+    "Class": "UScriptClass'EnvQueryOption'",
+    "ClassPath": "/Script/AIModule.EnvQueryOption",
+    "Properties": {
+      "Generator": {
+        "ObjectName": "EnvQueryGenerator_ActorsOfClass'EQS_FindSocialReasoning:EnvQueryGenerator_ActorsOfClass_0'",
+        "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialReasoning.1"
+      }
+    }
+  }
+]

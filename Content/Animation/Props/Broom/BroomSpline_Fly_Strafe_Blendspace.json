@@ -1,0 +1,74 @@
+[
+  {
+    "Type": "BlendSpace1D",
+    "Name": "BroomSpline_Fly_Strafe_Blendspace",
+    "Class": "UScriptClass'BlendSpace1D'",
+    "ClassPath": "/Script/Engine.BlendSpace1D",
+    "Properties": {
+      "InterpolationParam": {
+        "InterpolationTime": 0.4
+      },
+      "BlendParameters": {
+        "Min": -1.0,
+        "Max": 1.0,
+        "GridNum": 2
+      },
+      "SampleData": [
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'BroomSpline_Fly_Lft_anm'",
+            "ObjectPath": "/Game/Animation/Props/Broom/BroomSpline_Fly_Lft_anm.1"
+          },
+          "SampleValue": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        },
+        {
+          "Animation": {
+            "ObjectName": "AnimSequence'BroomSpline_Fly_Rht_anm'",
+            "ObjectPath": "/Game/Animation/Props/Broom/BroomSpline_Fly_Rht_anm.1"
+          },
+          "SampleValue": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "RateScale": 1.0
+        }
+      ],
+      "GridSamples": [
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.0,
+          "Weights": 1.0,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 0.5,
+          "Weights": 0.5,
+          "Weights": 0.0
+        },
+        {
+          "Indices": 1,
+          "Indices": 0,
+          "Indices": -1,
+          "Weights": 1.0,
+          "Weights": 0.0,
+          "Weights": 0.0
+        }
+      ],
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_FlyingBroom_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/SK_FlyingBroom_Skeleton.5"
+      }
+    }
+  }
+]

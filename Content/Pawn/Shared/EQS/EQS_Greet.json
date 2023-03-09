@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "EnvQuery",
+    "Name": "EQS_Greet",
+    "Class": "UScriptClass'EnvQuery'",
+    "ClassPath": "/Script/AIModule.EnvQuery",
+    "Properties": {
+      "QueryName": "EQS_FindFriends1",
+      "Options": [
+        {
+          "ObjectName": "EnvQueryOption'EQS_Greet:EnvQueryOption_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_Greet.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryGenerator_ActorsOfClass",
+    "Name": "EnvQueryGenerator_ActorsOfClass_0",
+    "Outer": "EQS_Greet",
+    "Class": "UScriptClass'EnvQueryGenerator_ActorsOfClass'",
+    "ClassPath": "/Script/AIModule.EnvQueryGenerator_ActorsOfClass",
+    "Properties": {
+      "SearchedActorClass": {
+        "ObjectName": "Class'SocialReasoning'",
+        "ObjectPath": "/Script/Phoenix"
+      },
+      "SearchRadius": {
+        "DefaultValue": 1000.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryOption",
+    "Name": "EnvQueryOption_0",
+    "Outer": "EQS_Greet",
+    "Class": "UScriptClass'EnvQueryOption'",
+    "ClassPath": "/Script/AIModule.EnvQueryOption",
+    "Properties": {
+      "Generator": {
+        "ObjectName": "EnvQueryGenerator_ActorsOfClass'EQS_Greet:EnvQueryGenerator_ActorsOfClass_0'",
+        "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_Greet.1"
+      },
+      "Tests": [
+        {
+          "ObjectName": "EnvQueryTest_Dot'EQS_Greet:EnvQueryTest_Dot_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_Greet.3"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Dot'EQS_Greet:EnvQueryTest_Dot_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_Greet.4"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Dot'EQS_Greet:EnvQueryTest_Dot_2'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_Greet.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Dot",
+    "Name": "EnvQueryTest_Dot_0",
+    "Outer": "EQS_Greet",
+    "Class": "UScriptClass'EnvQueryTest_Dot'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Dot",
+    "Properties": {
+      "TestMode": "EEnvTestDot::Dot2D",
+      "TestOrder": 1,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "FloatValueMax": {
+        "DefaultValue": 1.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Dot",
+    "Name": "EnvQueryTest_Dot_1",
+    "Outer": "EQS_Greet",
+    "Class": "UScriptClass'EnvQueryTest_Dot'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Dot",
+    "Properties": {
+      "LineA": {
+        "Rotation": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      "LineB": {
+        "LineFrom": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        },
+        "LineTo": {
+          "ObjectName": "Class'EnvQueryContext_Querier'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      "TestMode": "EEnvTestDot::Dot2D",
+      "TestOrder": 2,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "MultipleContextScoreOp": "EEnvTestScoreOperator::MaxScore",
+      "FloatValueMax": {
+        "DefaultValue": 1.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Dot",
+    "Name": "EnvQueryTest_Dot_2",
+    "Outer": "EQS_Greet",
+    "Class": "UScriptClass'EnvQueryTest_Dot'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Dot",
+    "Properties": {
+      "LineB": {
+        "Rotation": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        },
+        "DirMode": "EEnvDirection::Rotation"
+      },
+      "TestMode": "EEnvTestDot::Dot2D",
+      "TestOrder": 3,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "FloatValueMin": {
+        "DefaultValue": -1.0
+      },
+      "VerNum": 1
+    }
+  }
+]

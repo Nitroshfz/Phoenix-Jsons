@@ -1,0 +1,206 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_HW_Portrait_Isidora_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Portrait_Isidora_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/SK_HW_Portrait_Isidora_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Portrait_Isidora_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/SK_HW_Portrait_Isidora_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Portrait_Isidora_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/SK_HW_Portrait_Isidora_Master_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Portrait_Isidora_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/SK_HW_Portrait_Isidora_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Portrait_Isidora_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/SK_HW_Portrait_Isidora_Master_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_HW_Portrait_Isidora_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "door_left",
+        "ConstraintBone1": "door_left",
+        "ConstraintBone2": "frame",
+        "Pos2": {
+          "X": 53.843567,
+          "Y": -87.61164,
+          "Z": 6.2196984
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_HW_Portrait_Isidora_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "door_right",
+        "ConstraintBone1": "door_right",
+        "ConstraintBone2": "frame",
+        "Pos2": {
+          "X": -53.8436,
+          "Y": -87.6116,
+          "Z": 6.2197
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 1.2246469E-16
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_HW_Portrait_Isidora_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.007525839,
+              "Y": -139.52776,
+              "Z": 3.113739
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 179.98924,
+              "Roll": -89.67232
+            },
+            "X": 125.98613,
+            "Y": 13.75329,
+            "Z": 281.93167,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "frame",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "BB80DA314B9931CC706992A6E6217E55"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_HW_Portrait_Isidora_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -28.936985,
+              "Y": -29.064526,
+              "Z": 0.27901268
+            },
+            "Rotation": {
+              "Pitch": -0.002711585,
+              "Yaw": 179.71387,
+              "Roll": -89.95261
+            },
+            "X": 48.663406,
+            "Y": 2.844578,
+            "Z": 190.70587,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "door_left",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "3CF82BCB4FB8BF44528742AEE7830234"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_HW_Portrait_Isidora_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 28.937025,
+              "Y": 29.064594,
+              "Z": -0.2790146
+            },
+            "Rotation": {
+              "Pitch": -0.003005283,
+              "Yaw": -179.94305,
+              "Roll": -89.9522
+            },
+            "X": 51.585743,
+            "Y": 2.8445704,
+            "Z": 190.41953,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "door_right",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "D34B830D4BBF885C272807AC6C07FC8B"
+  }
+]

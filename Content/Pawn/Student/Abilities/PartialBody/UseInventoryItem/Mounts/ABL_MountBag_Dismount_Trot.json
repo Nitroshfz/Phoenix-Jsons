@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_MountBag_Dismount_Trot_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_MountBag_Dismount_Trot_C'Default__ABL_MountBag_Dismount_Trot_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.1"
+    }
+  },
+  {
+    "Type": "ABL_MountBag_Dismount_Trot_C",
+    "Name": "Default__ABL_MountBag_Dismount_Trot_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.ABL_MountBag_Dismount_Trot_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_MountBag_Dismount_Trot_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_MountBag_Dismount_Trot_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.6"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_MountBag_Dismount_Trot_C:AblHermesSendMessageToTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.5"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_MountBag_Dismount_Trot_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.4"
+        }
+      ],
+      "m_AbilityNameHash": 3458538051
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_MountType",
+    "Name": "AblAnimationTagChooser_MountType_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_MountType'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_MountType"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_MountBag_Dismount_Trot_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_MoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_MoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_MountBag_Dismount_Trot_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.3"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_MountBag_Dismount_Trot_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.6"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_MountBag_Dismount_Trot_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.6"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_0",
+    "Outer": "Default__ABL_MountBag_Dismount_Trot_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Self",
+      "m_MessageName": "MountCreature_Dismount",
+      "m_StartTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_MountBag_Dismount_Trot_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.6"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.19999993,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_MountBag_Dismount_Trot_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.6"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_MountBag_Dismount_Trot_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationSet": [
+        "OA.AssetTypes.MountRiding"
+      ],
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Dismount",
+        "AA.Gait.Trot"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_MountType'Default__ABL_MountBag_Dismount_Trot_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_MountType_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": -0.03333
+      },
+      "m_OverrideBlendOut": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_MountBag_Dismount_Trot_C'Default__ABL_MountBag_Dismount_Trot_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/Mounts/ABL_MountBag_Dismount_Trot.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.0666666
+      }
+    }
+  }
+]

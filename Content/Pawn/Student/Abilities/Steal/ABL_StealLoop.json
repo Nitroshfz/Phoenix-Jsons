@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_StealLoop_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_StealLoop_C'Default__ABL_StealLoop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.1"
+    }
+  },
+  {
+    "Type": "ABL_StealLoop_C",
+    "Name": "Default__ABL_StealLoop_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.ABL_StealLoop_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_StealLoop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "ablTurnAssistTask'Default__ABL_StealLoop_C:ablTurnAssistTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.4"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_StealLoop_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.3"
+        }
+      ],
+      "m_AbilityNameHash": 3584630954
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Idle",
+    "Name": "AblAnimationTagChooser_Idle_0",
+    "Outer": "AblPlayAnimationArchitectTask_1",
+    "Class": "UScriptClass'AblAnimationTagChooser_Idle'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Idle",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.StealLoop"
+        ],
+        [
+          "AA.AnimPlayerName.StealLoopLF"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_StealLoop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_PreviewAnimationTags": [
+        "AA.AnimPlayerName.StealLoop"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Idle'Default__ABL_StealLoop_C:AblPlayAnimationArchitectTask_1.AblAnimationTagChooser_Idle_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealLoop_C'Default__ABL_StealLoop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablTurnAssistTask",
+    "Name": "ablTurnAssistTask_0",
+    "Outer": "Default__ABL_StealLoop_C",
+    "Class": "UScriptClass'ablTurnAssistTask'",
+    "ClassPath": "/Script/Phoenix.ablTurnAssistTask",
+    "Properties": {
+      "TurnAssistCurve": {
+        "ObjectName": "CurveFloat'C_FreeRoamTurnAssistCurve'",
+        "ObjectPath": "/Game/Pawn/Shared/Ambulatory/C_FreeRoamTurnAssistCurve.0"
+      },
+      "TurnAssistTimeMultiplier": {
+        "ObjectName": "CurveFloat'C_WandCastTurnAssistTimeMultiplier'",
+        "ObjectPath": "/Game/Pawn/Shared/Ambulatory/C_WandCastTurnAssistTimeMultiplier.0"
+      },
+      "MinRotationScaleBasedOnSpeed": 1.0,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealLoop_C'Default__ABL_StealLoop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 6.1333337,
+        "RelativeToObject": {
+          "ObjectName": "ABL_StealLoop_C'Default__ABL_StealLoop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Steal/ABL_StealLoop.1"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Bio_ToyBox_01A_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Bio_ToyBox_01A_PhysicsAsset:SkeletalBodySetup_7'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/ToyBox/SK_Bio_ToyBox_01A_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Bio_ToyBox_01A_PhysicsAsset:SkeletalBodySetup_8'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/ToyBox/SK_Bio_ToyBox_01A_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Bio_ToyBox_01A_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/ToyBox/SK_Bio_ToyBox_01A_PhysicsAsset.2"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Bio_ToyBox_01A_PhysicsAsset:PhysicsConstraintTemplate_6'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/ToyBox/SK_Bio_ToyBox_01A_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_6",
+    "Outer": "SK_Bio_ToyBox_01A_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint",
+        "ConstraintBone1": "boxtlid",
+        "ConstraintBone2": "boxbottom",
+        "Pos2": {
+          "X": 80.74335,
+          "Y": 0.0,
+          "Z": -35.83353
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing2LimitDegrees": 180.0,
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Bio_ToyBox_01A_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 57.380905,
+              "Z": -2.188873
+            },
+            "Radius": 114.25,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "5BBCB3654E08DC1A2AD66C81CB687114"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_7",
+    "Outer": "SK_Bio_ToyBox_01A_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 40.150948,
+              "Y": 6.4622254E-05,
+              "Z": 0.0035052046
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 84.5,
+            "Y": 90.0,
+            "Z": 72.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "boxbottom",
+      "PhysicsType": "PhysType_Kinematic",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E4E35F994FF2F11D86B6D7940485EACC"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_8",
+    "Outer": "SK_Bio_ToyBox_01A_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 3.5830576,
+              "Y": -0.00065988774,
+              "Z": 37.27822
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 3.5,
+            "Y": 98.5,
+            "Z": 76.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "boxtlid",
+      "PhysicsType": "PhysType_Simulated",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "F6A6EB8E4AA116317EACCDB5C08DE199"
+  }
+]

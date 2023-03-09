@@ -1,0 +1,509 @@
+[
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_0",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_BeastFeederAndProcessor_GrainSack_Appear_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/BioShared_TransfigObs/BioShared/BeastItems/TransfigObs_BeastFeederAndProcessor_GrainSack_Appear_Play.0"
+      },
+      "SocketName": "sackMain",
+      "bFollow": false,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_1",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_BeastFeederAndProcessor_GrainSack_Gravel_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/BioShared_TransfigObs/BioShared/BeastItems/TransfigObs_BeastFeederAndProcessor_GrainSack_Gravel_Play.0"
+      },
+      "SocketName": "sackMain",
+      "bFollow": false,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_2",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_BeastFeederAndProcessor_GrainSack_Pickup_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/BioShared_TransfigObs/BioShared/BeastItems/TransfigObs_BeastFeederAndProcessor_GrainSack_Pickup_Play.0"
+      },
+      "SocketName": "sackMain",
+      "bFollow": false,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayParticleEffect",
+    "Name": "AnimNotify_PlayParticleEffect_0",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotify_PlayParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotify_PlayParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_BeastFeedSack_Appear'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/BeastFeedProcesor/P_BeastFeedSack_Appear.70"
+      },
+      "Scale": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      },
+      "SocketName": "sackMainSocket"
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayParticleEffect",
+    "Name": "AnimNotify_PlayParticleEffect_1",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotify_PlayParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotify_PlayParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_BeastFeedSack_Disappear'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/BeastFeedProcesor/P_BeastFeedSack_Disappear.70"
+      },
+      "SocketName": "sackMainSocket"
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayParticleEffect",
+    "Name": "AnimNotify_PlayParticleEffect_2",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotify_PlayParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotify_PlayParticleEffect",
+    "Properties": {
+      "SocketName": "EmptysackParticleSocket"
+    }
+  },
+  {
+    "Type": "AnimNotifyState_TimedParticleEffect",
+    "Name": "AnimNotifyState_TimedParticleEffect_0",
+    "Outer": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimNotifyState_TimedParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotifyState_TimedParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_BeastFeedPellets'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/BeastFeedProcesor/P_BeastFeedPellets.34"
+      },
+      "SocketName": "EmptysackParticleSocket"
+    }
+  },
+  {
+    "Type": "AnimSequence",
+    "Name": "SackOfGrainOpen_anm",
+    "Class": "UScriptClass'AnimSequence'",
+    "ClassPath": "/Script/Engine.AnimSequence",
+    "Properties": {
+      "NumFrames": 156,
+      "TrackToSkeletonMapTable": [
+        {
+          "BoneTreeIndex": 0
+        },
+        {
+          "BoneTreeIndex": 1
+        },
+        {
+          "BoneTreeIndex": 2
+        },
+        {
+          "BoneTreeIndex": 3
+        },
+        {
+          "BoneTreeIndex": 4
+        },
+        {
+          "BoneTreeIndex": 5
+        },
+        {
+          "BoneTreeIndex": 6
+        },
+        {
+          "BoneTreeIndex": 7
+        },
+        {
+          "BoneTreeIndex": 8
+        },
+        {
+          "BoneTreeIndex": 9
+        },
+        {
+          "BoneTreeIndex": 10
+        },
+        {
+          "BoneTreeIndex": 11
+        }
+      ],
+      "BoneCompressionSettings": {
+        "ObjectName": "AnimBoneCompressionSettings'AC_PhxAnimBoneCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings.4"
+      },
+      "CurveCompressionSettings": {
+        "ObjectName": "AnimCurveCompressionSettings'AC_PhxAnimCurveCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings.1"
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayParticleEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayParticleEffect'SackOfGrainOpen_anm:AnimNotify_PlayParticleEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.3"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'SackOfGrainOpen_anm:AnimNotify_AkEvent_Ava_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.0"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0018506666,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 3,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 0.0018506666,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayParticleEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayParticleEffect'SackOfGrainOpen_anm:AnimNotify_PlayParticleEffect_2'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.5"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 2.0011735,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 2.0011735,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "TimedParticleEffect",
+          "Notify": null,
+          "NotifyStateClass": {
+            "ObjectName": "AnimNotifyState_TimedParticleEffect'SackOfGrainOpen_anm:AnimNotifyState_TimedParticleEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.6"
+          },
+          "Duration": 1.9547246,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": 0,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 5.1666665,
+            "LinkValue": 3.955898,
+            "LinkedSequence": {
+              "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+              "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+            }
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 2.0011735,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'SackOfGrainOpen_anm:AnimNotify_AkEvent_Ava_1'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 2.0031295,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 5,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 2.0031295,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'SackOfGrainOpen_anm:AnimNotify_AkEvent_Ava_2'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.2"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 4.9722986,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 4,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 4.9722986,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayParticleEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayParticleEffect'SackOfGrainOpen_anm:AnimNotify_PlayParticleEffect_1'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.4"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 4.972615,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.1666665,
+          "LinkValue": 4.972615,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SackOfGrainOpen_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/BeastFeeder/SackOfGrainOpen_anm.7"
+          }
+        }
+      ],
+      "SequenceLength": 5.1666665,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_SackOfGrain_01_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/BeastFeeder/SK_SackOfGrain_01_Skeleton.8"
+      }
+    },
+    "SkeletonGuid": "822522C4-4BC3AD7B-09FC41A7-B868C0D4",
+    "CompressedTrackToSkeletonMapTable": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "CompressedCurveData": {
+      "FloatCurves": []
+    },
+    "CompressedDataStructure": {
+      "CompressedNumberOfFrames": 156
+    },
+    "BoneCompressionCodec": {
+      "ObjectName": "AnimBoneCompressionCodec_ACL'AC_PhxAnimBoneCompressionSettings:AnimBoneCompressionCodec_ACL_2'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings"
+    },
+    "CurveCompressionCodec": {
+      "ObjectName": "AnimCurveCompressionCodec_CompressedRichCurve'AC_PhxAnimCurveCompressionSettings:CurveCompressionCodec'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings"
+    },
+    "CompressedRawDataSize": 64296
+  }
+]

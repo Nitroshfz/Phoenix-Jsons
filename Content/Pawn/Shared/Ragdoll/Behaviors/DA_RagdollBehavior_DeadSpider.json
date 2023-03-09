@@ -1,0 +1,26 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_DeadSpider",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.DeathPose"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Dead",
+      "EndBehavior": true,
+      "AllowRemoval": true,
+      "AllowHibrnate": true,
+      "RequireStatesToEnter": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsDead.0"
+          }
+        ]
+      }
+    }
+  }
+]

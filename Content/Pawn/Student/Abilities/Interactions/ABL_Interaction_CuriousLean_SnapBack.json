@@ -1,0 +1,348 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Interaction_CuriousLean_SnapBack_C'Default__ABL_Interaction_CuriousLean_SnapBack_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.1"
+    }
+  },
+  {
+    "Type": "ABL_Interaction_CuriousLean_SnapBack_C",
+    "Name": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.ABL_Interaction_CuriousLean_SnapBack_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Interaction_CuriousLean_SnapBack_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 10.400001,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        },
+        {
+          "ObjectName": "AblSetHeadTrackingStateTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblSetHeadTrackingStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.12"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.5"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.8"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.6"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.9"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.10"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblAnimNotifyEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.2"
+        }
+      ],
+      "m_AbilityNameHash": 3546419369,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_2",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 0.72602093,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      },
+      "m_EventName": "MakeInterruptible"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "Offset": -0.2999997,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2999997,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.9"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2999997,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2999997,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLockOnMode",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblAnimNotifyEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.2"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 2.9469695,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblAnimNotifyEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.2"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 5.533334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Interaction_CuriousLean_SnapBack_C'Default__ABL_Interaction_CuriousLean_SnapBack_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.1"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 3.4730554,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Interaction_CuriousLean_SnapBack_C'Default__ABL_Interaction_CuriousLean_SnapBack_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.1"
+        }
+      },
+      "m_EventName": "ExitInteraction"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_3",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Interact_CuriousLean_Accident"
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Interaction_CuriousLean_SnapBack_C'Default__ABL_Interaction_CuriousLean_SnapBack_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 4.0563984
+      }
+    }
+  },
+  {
+    "Type": "AblSetHeadTrackingStateTask",
+    "Name": "AblSetHeadTrackingStateTask_0",
+    "Outer": "Default__ABL_Interaction_CuriousLean_SnapBack_C",
+    "Class": "UScriptClass'AblSetHeadTrackingStateTask'",
+    "ClassPath": "/Script/Phoenix.AblSetHeadTrackingStateTask",
+    "Properties": {
+      "HeadTrackingState": "EHeadTrackingState::Disallow",
+      "bUseEndState": true,
+      "HeadTrackingPriority": "EHeadTrackingPriority::FullBodySpecialUsage",
+      "bBroadcastChange": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_CuriousLean_SnapBack_C:AblPlayAnimationArchitectTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_CuriousLean_SnapBack.11"
+        }
+      }
+    }
+  }
+]

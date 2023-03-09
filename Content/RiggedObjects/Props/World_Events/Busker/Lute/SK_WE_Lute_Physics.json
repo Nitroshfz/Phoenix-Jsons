@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_WE_Lute_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WE_Lute_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/World_Events/Busker/Lute/SK_WE_Lute_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_WE_Lute_Physics:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/World_Events/Busker/Lute/SK_WE_Lute_Physics.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_WE_Lute_Physics:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/World_Events/Busker/Lute/SK_WE_Lute_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_WE_Lute_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Body_Jnt",
+        "ConstraintBone1": "Body_Jnt",
+        "ConstraintBone2": "root",
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_WE_Lute_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.43929392,
+              "Y": -34.82304,
+              "Z": 0.6576958
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -2.8278513,
+              "Roll": -89.98859
+            },
+            "X": 1.01,
+            "Y": 1.01,
+            "Z": 1.01,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "32AD80444E36AAA82A5D7FB97F0688DD"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_WE_Lute_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.69472766,
+              "Y": -38.347584,
+              "Z": -5.2576523
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -178.49208,
+              "Roll": -87.39389
+            },
+            "X": 37.270397,
+            "Y": 14.679685,
+            "Z": 77.875,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Body_Jnt",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "152132FD4CC678BCD5D5239EB3969CB1"
+  }
+]

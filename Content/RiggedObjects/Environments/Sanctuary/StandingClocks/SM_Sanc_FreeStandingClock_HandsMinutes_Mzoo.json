@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "27DE4871428DE630B6DE5BB2A88DF42D",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2629"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x268D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Sanc_FreeStandingClock_Mzoo'",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Materials/Props/MI_Sanc_FreeStandingClock_Mzoo.0"
+          },
+          "MaterialSlotName": "M_Sanc_FreeStandingClock_Mzoo",
+          "ImportedMaterialSlotName": "M_Sanc_FreeStandingClock_Mzoo",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 91.32583,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 91.32583,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.006278515,
+          "Y": -0.24933052,
+          "Z": 3.5735092
+        },
+        "BoxExtent": {
+          "X": 0.56273174,
+          "Y": 0.030763626,
+          "Z": 3.7609024
+        },
+        "SphereRadius": 3.7641456
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/StandingClocks/SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/StandingClocks/SM_Sanc_FreeStandingClock_HandsMinutes_Mzoo.1"
+    },
+    "LightingGuid": "BB55D809-405B9EEA-CC3CDDB6-7C91751E",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 30,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 41,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 42
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 42,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.006278515,
+          "Y": -0.24933052,
+          "Z": 3.5735092
+        },
+        "BoxExtent": {
+          "X": 0.56273174,
+          "Y": 0.030763626,
+          "Z": 3.7609024
+        },
+        "SphereRadius": 3.7641456
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.02196,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

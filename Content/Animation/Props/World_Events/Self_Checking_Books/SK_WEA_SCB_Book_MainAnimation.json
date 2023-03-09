@@ -1,0 +1,492 @@
+[
+  {
+    "Type": "AnimNotify_AkEvent_C",
+    "Name": "AnimNotify_AkEvent_C_0",
+    "Outer": "SK_WEA_SCB_Book_MainAnimation",
+    "Template": "Default__AnimNotify_AkEvent_C",
+    "Class": "BlueprintGeneratedClass'/Wwise/AnimNotify_AkEvent.AnimNotify_AkEvent_C'",
+    "ClassPath": "",
+    "Properties": {
+      "Attach Name": "audio_location_socket",
+      "Event": {
+        "ObjectName": "AkAudioEvent'self_checking_books_apparate'",
+        "ObjectPath": "/Game/WWise/Events/World_Events/self_checking_books/self_checking_books_apparate.0"
+      }
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_C",
+    "Name": "AnimNotify_AkEvent_C_1",
+    "Outer": "SK_WEA_SCB_Book_MainAnimation",
+    "Template": "Default__AnimNotify_AkEvent_C",
+    "Class": "BlueprintGeneratedClass'/Wwise/AnimNotify_AkEvent.AnimNotify_AkEvent_C'",
+    "ClassPath": "",
+    "Properties": {
+      "Attach Name": "audio_location_socket",
+      "Event": {
+        "ObjectName": "AkAudioEvent'self_checking_books'",
+        "ObjectPath": "/Game/WWise/Events/World_Events/self_checking_books/self_checking_books.0"
+      }
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_C",
+    "Name": "AnimNotify_AkEvent_C_2",
+    "Outer": "SK_WEA_SCB_Book_MainAnimation",
+    "Template": "Default__AnimNotify_AkEvent_C",
+    "Class": "BlueprintGeneratedClass'/Wwise/AnimNotify_AkEvent.AnimNotify_AkEvent_C'",
+    "ClassPath": "",
+    "Properties": {
+      "Attach Name": "audio_location_socket",
+      "Event": {
+        "ObjectName": "AkAudioEvent'self_checking_books_apparate'",
+        "ObjectPath": "/Game/WWise/Events/World_Events/self_checking_books/self_checking_books_apparate.0"
+      }
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayNiagaraEffect",
+    "Name": "AnimNotify_PlayNiagaraEffect_0",
+    "Outer": "SK_WEA_SCB_Book_MainAnimation",
+    "Class": "UScriptClass'AnimNotify_PlayNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NE_WE_BookDisappear'",
+        "ObjectPath": "/Game/VFX/World_Events/One_Man_Band/VFX_NE_WE_BookDisappear.19"
+      },
+      "LocationOffset": {
+        "X": 0.0,
+        "Y": -10.0,
+        "Z": 0.0
+      },
+      "SocketName": "base_jnt"
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayNiagaraEffect",
+    "Name": "AnimNotify_PlayNiagaraEffect_1",
+    "Outer": "SK_WEA_SCB_Book_MainAnimation",
+    "Class": "UScriptClass'AnimNotify_PlayNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NE_WE_BookDisappear'",
+        "ObjectPath": "/Game/VFX/World_Events/One_Man_Band/VFX_NE_WE_BookDisappear.19"
+      },
+      "LocationOffset": {
+        "X": 0.0,
+        "Y": -10.0,
+        "Z": 0.0
+      },
+      "SocketName": "base_jnt"
+    }
+  },
+  {
+    "Type": "AnimNotify_SendHermesMessage",
+    "Name": "AnimNotify_SendHermesMessage_1",
+    "Outer": "SK_WEA_SCB_Book_MainAnimation",
+    "Class": "UScriptClass'AnimNotify_SendHermesMessage'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_SendHermesMessage",
+    "Properties": {
+      "Message": "WE_SCB_EndNotify",
+      "bExecuteAll": true
+    }
+  },
+  {
+    "Type": "AnimSequence",
+    "Name": "SK_WEA_SCB_Book_MainAnimation",
+    "Class": "UScriptClass'AnimSequence'",
+    "ClassPath": "/Script/Engine.AnimSequence",
+    "Properties": {
+      "NumFrames": 296,
+      "TrackToSkeletonMapTable": [
+        {
+          "BoneTreeIndex": 0
+        },
+        {
+          "BoneTreeIndex": 1
+        },
+        {
+          "BoneTreeIndex": 2
+        },
+        {
+          "BoneTreeIndex": 3
+        },
+        {
+          "BoneTreeIndex": 4
+        },
+        {
+          "BoneTreeIndex": 5
+        }
+      ],
+      "BoneCompressionSettings": {
+        "ObjectName": "AnimBoneCompressionSettings'AC_PhxAnimBoneCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings.4"
+      },
+      "CurveCompressionSettings": {
+        "ObjectName": "AnimCurveCompressionSettings'AC_PhxAnimCurveCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings.1"
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayNiagaraEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayNiagaraEffect'SK_WEA_SCB_Book_MainAnimation:AnimNotify_PlayNiagaraEffect_1'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.4"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AkEvent_C",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_C'SK_WEA_SCB_Book_MainAnimation:AnimNotify_AkEvent_C_0'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.0"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AkEvent_C",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_C'SK_WEA_SCB_Book_MainAnimation:AnimNotify_AkEvent_C_1'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.6741195,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 3,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 0.6741195,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AkEvent_C",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_C'SK_WEA_SCB_Book_MainAnimation:AnimNotify_AkEvent_C_2'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.2"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 9.6730795,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 9.6730795,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayNiagaraEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayNiagaraEffect'SK_WEA_SCB_Book_MainAnimation:AnimNotify_PlayNiagaraEffect_0'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.3"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 9.695359,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 9.695359,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AK_Book_Fade",
+          "Notify": null,
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 9.698167,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 9.698167,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        },
+        {
+          "TriggerTimeOffset": -0.0001,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "SendHermesMessage",
+          "Notify": {
+            "ObjectName": "AnimNotify_SendHermesMessage'SK_WEA_SCB_Book_MainAnimation:AnimNotify_SendHermesMessage_1'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.5"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 9.833333,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 4,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 9.833333,
+          "LinkValue": 9.833333,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WEA_SCB_Book_MainAnimation'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Self_Checking_Books/SK_WEA_SCB_Book_MainAnimation.6"
+          }
+        }
+      ],
+      "SequenceLength": 9.833333,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_WE_SelfCheckingBooks_Book_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/World_Events/SelfCheckingBooks/Book/SK_WE_SelfCheckingBooks_Book_Skeleton.1"
+      }
+    },
+    "SkeletonGuid": "EC114C46-4B7779A2-067412B4-C9883362",
+    "CompressedTrackToSkeletonMapTable": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "CompressedCurveNames": [
+      {
+        "DisplayName": "AverageSpeed"
+      }
+    ],
+    "CompressedCurveData": {
+      "FloatCurves": [
+        {
+          "FloatCurve": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant"
+          },
+          "Name": {
+            "DisplayName": "AverageSpeed"
+          },
+          "CurveTypeFlags": 4
+        }
+      ]
+    },
+    "CompressedDataStructure": {
+      "CompressedNumberOfFrames": 296
+    },
+    "BoneCompressionCodec": {
+      "ObjectName": "AnimBoneCompressionCodec_ACL'AC_PhxAnimBoneCompressionSettings:AnimBoneCompressionCodec_ACL_2'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings"
+    },
+    "CurveCompressionCodec": {
+      "ObjectName": "AnimCurveCompressionCodec_CompressedRichCurve'AC_PhxAnimCurveCompressionSettings:CurveCompressionCodec'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings"
+    },
+    "CompressedRawDataSize": 26620
+  }
+]

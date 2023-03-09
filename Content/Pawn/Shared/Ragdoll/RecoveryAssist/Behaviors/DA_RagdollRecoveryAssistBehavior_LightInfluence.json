@@ -1,0 +1,40 @@
+[
+  {
+    "Type": "RagdollRecoveryAssistBehavior",
+    "Name": "DA_RagdollRecoveryAssistBehavior_LightInfluence",
+    "Class": "UScriptClass'RagdollRecoveryAssistBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollRecoveryAssistBehavior",
+    "Properties": {
+      "RunAssistPlugin": {
+        "ObjectName": "RagdollRecoveryAssistPlugin_GuideToSafeRecovery'DA_RagdollRecoveryAssistBehavior_LightInfluence:RagdollRecoveryAssistPlugin_GuideToSafeRecovery_0'",
+        "ObjectPath": "/Game/Pawn/Shared/Ragdoll/RecoveryAssist/Behaviors/DA_RagdollRecoveryAssistBehavior_LightInfluence.1"
+      },
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsOffGround'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsOffGround.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasLostNavmeshBelow'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasLostNavmeshBelow.0"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "RagdollRecoveryAssistPlugin_GuideToSafeRecovery",
+    "Name": "RagdollRecoveryAssistPlugin_GuideToSafeRecovery_0",
+    "Outer": "DA_RagdollRecoveryAssistBehavior_LightInfluence",
+    "Class": "UScriptClass'RagdollRecoveryAssistPlugin_GuideToSafeRecovery'",
+    "ClassPath": "/Script/Ragdoll.RagdollRecoveryAssistPlugin_GuideToSafeRecovery",
+    "Properties": {
+      "PushStrengthToTime": {
+        "ObjectName": "CurveFloat'C_RagdollRecoveryAssist_LightInfluene'",
+        "ObjectPath": "/Game/Pawn/Shared/Ragdoll/RecoveryAssist/Behaviors/C_RagdollRecoveryAssist_LightInfluene.0"
+      },
+      "PushCutoffDistance": 50.0
+    }
+  }
+]

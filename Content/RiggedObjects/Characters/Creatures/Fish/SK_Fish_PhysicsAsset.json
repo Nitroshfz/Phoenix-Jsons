@@ -1,0 +1,770 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Fish_PhysicsAsset:SkeletalBodySetup_6'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.7"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Fish_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Fish_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Fish_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.6"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Fish_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Fish_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Fish_PhysicsAsset:PhysicsConstraintTemplate_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Fish/SK_Fish_PhysicsAsset.3"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Fish_bck_04_SK_jnt",
+        "ConstraintBone1": "Fish_bck_04_SK_jnt",
+        "ConstraintBone2": "Fish_bck_03_SK_jnt",
+        "Pos1": {
+          "X": -0.021098135,
+          "Y": 1.9129366E-06,
+          "Z": -2.6691705E-05
+        },
+        "PriAxis1": {
+          "X": 1.0,
+          "Y": -2.9802319E-08,
+          "Z": -5.9604638E-08
+        },
+        "SecAxis1": {
+          "X": 2.9802319E-08,
+          "Y": 1.0,
+          "Z": -8.881784E-16
+        },
+        "Pos2": {
+          "X": 5.3764696,
+          "Y": 1.4829707E-06,
+          "Z": -2.899716E-05
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 30.0,
+            "Swing2LimitDegrees": 20.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 5.0,
+            "TwistMotion": "ACM_Limited"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SwingDrive": {
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      },
+      "ProfileHandles": [
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 30.0,
+              "Swing2LimitDegrees": 20.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 5.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 0.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": true,
+                "bEnableVelocityDrive": true
+              },
+              "SwingDrive": {
+                "Stiffness": 0.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": true,
+                "bEnableVelocityDrive": true
+              },
+              "SlerpDrive": {
+                "Stiffness": 0.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Dead"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Fish_bck_03_SK_jnt",
+        "ConstraintBone1": "Fish_bck_03_SK_jnt",
+        "ConstraintBone2": "Fish_BODY",
+        "Pos2": {
+          "X": 1.4305115E-06,
+          "Y": -2.8610234E-06,
+          "Z": -10.795136
+        },
+        "PriAxis2": {
+          "X": 5.364418E-07,
+          "Y": 1.1368684E-13,
+          "Z": -0.99999994
+        },
+        "SecAxis2": {
+          "X": -4.2146849E-07,
+          "Y": 1.0,
+          "Z": -1.1368684E-13
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 30.0,
+            "Swing2LimitDegrees": 10.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 5.0,
+            "TwistMotion": "ACM_Limited"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Stiffness": 100.0,
+              "Damping": 2.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SwingDrive": {
+              "Stiffness": 100.0,
+              "Damping": 2.0,
+              "bEnablePositionDrive": true,
+              "bEnableVelocityDrive": true
+            },
+            "SlerpDrive": {
+              "Stiffness": 100.0,
+              "Damping": 2.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      },
+      "ProfileHandles": [
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 30.0,
+              "Swing2LimitDegrees": 10.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 5.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 0.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": true,
+                "bEnableVelocityDrive": true
+              },
+              "SwingDrive": {
+                "Stiffness": 0.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": true,
+                "bEnableVelocityDrive": true
+              },
+              "SlerpDrive": {
+                "Stiffness": 0.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Dead"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Fish_fnt_01_SK_jnt",
+        "ConstraintBone1": "Fish_fnt_01_SK_jnt",
+        "ConstraintBone2": "Fish_BODY",
+        "Pos2": {
+          "X": -2.5410988E-21,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": 8.940697E-07,
+          "Y": 4.214683E-08,
+          "Z": 0.9999998
+        },
+        "SecAxis2": {
+          "X": 4.214683E-08,
+          "Y": 1.0,
+          "Z": -4.214686E-08
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 30.0,
+            "Swing2LimitDegrees": 10.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 5.0,
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      },
+      "ProfileHandles": [
+        {
+          "ProfileProperties": {
+            "ProjectionLinearTolerance": 5.0,
+            "ProjectionAngularTolerance": 180.0,
+            "ProjectionLinearAlpha": 1.0,
+            "ProjectionAngularAlpha": 0.0,
+            "ShockPropagationAlpha": 0.3,
+            "LinearBreakThreshold": 300.0,
+            "LinearPlasticityThreshold": 10.0,
+            "AngularBreakThreshold": 500.0,
+            "AngularPlasticityThreshold": 10.0,
+            "LinearLimit": {
+              "Limit": 0.0,
+              "XMotion": "LCM_Locked",
+              "YMotion": "LCM_Locked",
+              "ZMotion": "LCM_Locked",
+              "Stiffness": 0.0,
+              "Damping": 0.0,
+              "Restitution": 0.0,
+              "ContactDistance": 5.0,
+              "bSoftConstraint": false
+            },
+            "ConeLimit": {
+              "Swing1LimitDegrees": 40.0,
+              "Swing2LimitDegrees": 10.0,
+              "Swing1Motion": "ACM_Limited",
+              "Swing2Motion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "TwistLimit": {
+              "TwistLimitDegrees": 5.0,
+              "TwistMotion": "ACM_Limited",
+              "Stiffness": 50.0,
+              "Damping": 5.0,
+              "Restitution": 0.0,
+              "ContactDistance": 1.0,
+              "bSoftConstraint": true
+            },
+            "LinearDrive": {
+              "PositionTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "VelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "XDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "YDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "ZDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "bEnablePositionDrive": false
+            },
+            "AngularDrive": {
+              "TwistDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SwingDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "SlerpDrive": {
+                "Stiffness": 50.0,
+                "Damping": 1.0,
+                "MaxForce": 0.0,
+                "bEnablePositionDrive": false,
+                "bEnableVelocityDrive": false
+              },
+              "OrientationTarget": {
+                "Pitch": 0.0,
+                "Yaw": 0.0,
+                "Roll": 0.0
+              },
+              "AngularVelocityTarget": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "AngularDriveMode": "EAngularDriveMode::SLERP"
+            },
+            "bDisableCollision": false,
+            "bParentDominates": false,
+            "bEnableLinearProjection": false,
+            "bEnableAngularProjection": false,
+            "bEnableShockPropagation": false,
+            "bEnableProjection": true,
+            "bEnableSoftProjection": false,
+            "bAngularBreakable": false,
+            "bAngularPlasticity": false,
+            "bLinearBreakable": false,
+            "bLinearPlasticity": false
+          },
+          "ProfileName": "Dead"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 9.219436,
+              "Y": -2.3507546E-06,
+              "Z": 0.0001539604
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 9.0,
+            "Y": 8.5,
+            "Z": 1.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ],
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.5572348,
+              "Y": 8.115605E-07,
+              "Z": -0.47649378
+            },
+            "Rotation": {
+              "Pitch": -90.0,
+              "Yaw": -0.006593409,
+              "Roll": 0.0066070748
+            },
+            "Radius": 1.75,
+            "Length": 4.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "MassScale": 2.0
+      },
+      "BoneName": "Fish_bck_04_SK_jnt",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "27BB627643D9C59BAA8C238AD5BF0478"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 6.309477,
+              "Y": -0.1548713,
+              "Z": -0.40997148
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 3.6817067,
+            "Length": 3.9674864,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "MassScale": 2.0
+      },
+      "BoneName": "Fish_fnt_01_SK_jnt",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "BD15FA6B46032A4E57C1E68F449C0D43"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.0102113E-06,
+              "Y": -1.9014647E-07,
+              "Z": -2.9807644
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.999954,
+              "Roll": 0.0
+            },
+            "Radius": 4.0,
+            "Length": 6.599347,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "MassScale": 2.0
+      },
+      "BoneName": "Fish_BODY",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "C2ABAF124612438ED088D0845CCB917D"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_6",
+    "Outer": "SK_Fish_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 1.2962506,
+              "Y": -0.04348851,
+              "Z": 3.753035E-05
+            },
+            "Rotation": {
+              "Pitch": 5.464151E-05,
+              "Yaw": 89.45155,
+              "Roll": -89.99987
+            },
+            "Radius": 2.893174,
+            "Length": 5.217841,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "PhysMaterial": {
+        "ObjectName": "PhoenixPhysicalMaterial'DA_BaseRagdoll_PPM'",
+        "ObjectPath": "/Game/Data/PhysicalMaterials/DA_BaseRagdoll_PPM.0"
+      },
+      "DefaultInstance": {
+        "MassScale": 2.0
+      },
+      "BoneName": "Fish_bck_03_SK_jnt",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "A088076547CD65074889428A371344C6"
+  }
+]

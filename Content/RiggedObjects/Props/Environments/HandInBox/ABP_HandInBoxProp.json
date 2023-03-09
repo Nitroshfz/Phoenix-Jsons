@@ -1,0 +1,1159 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_HandInBoxProp",
+    "Outer": "ABP_HandInBoxProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'TimerDynamicDelegate__DelegateSignature'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_RandomBool_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimNotify_IdleOpen ended",
+    "Outer": "ABP_HandInBoxProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "RandomiseTap",
+    "Outer": "ABP_HandInBoxProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimNotify_IdleOpen entered",
+    "Outer": "ABP_HandInBoxProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_HandInBoxProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 384,
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_HandInBoxProp_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.AnimBlueprintGeneratedClass",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "New State Machine",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "IdleOpen",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 11,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 1,
+              "StartNotify": 0,
+              "EndNotify": 1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                3,
+                4
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "Closing",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 12,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": true,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 5,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                6
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "IdleClosed",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 13,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 2,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 7,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                8
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "Opening",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 14,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 3,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": true,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 9,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                10
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 2,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 2,
+              "NextState": 3,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 3,
+              "NextState": 0,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_HandInBox_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/SK_HandInBox_Skeleton.0"
+      },
+      "AnimNotifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "IdleOpen entered",
+          "Notify": null,
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": -1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 0.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": null
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "IdleOpen ended",
+          "Notify": null,
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": -1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 0.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": null
+        }
+      ],
+      "OrderedSavedPoseIndicesMap": [
+        {
+          "AnimGraph": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        }
+      ],
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 0,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_BlendListByBool"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+              "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 1,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+              "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+            }
+          }
+        },
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 2,
+              "PostCopyOperation": "EPostCopyOperation::LogicalNegateBool"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_2"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+              "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+            }
+          }
+        }
+      ],
+      "PropertyAccessLibrary": {
+        "PathSegments": [
+          {
+            "Name": "TapBool",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "TapBool"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+                "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_BlendListByBool",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_BlendListByBool'",
+              "ObjectPath": "/Script/AnimGraphRuntime"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_BlendListByBool"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+                "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bActiveValue",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bActiveValue"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_BlendListByBool'",
+                "ObjectPath": "/Script/AnimGraphRuntime"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "BoxShut?",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "BoxShut?"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+                "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+                "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "BoxShut?",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "BoxShut?"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+                "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult_2",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult_2"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+                "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          }
+        ],
+        "SrcPaths": [
+          {
+            "PathSegmentStartIndex": 0,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 3,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 6,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          }
+        ],
+        "DestPaths": [
+          {
+            "PathSegmentStartIndex": 1,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 4,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          },
+          {
+            "PathSegmentStartIndex": 7,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          }
+        ],
+        "CopyBatches": {
+          "Copies": [
+            {
+              "AccessIndex": 0,
+              "DestAccessStartIndex": 0,
+              "DestAccessEndIndex": 1,
+              "Type": "EPropertyAccessCopyType::Bool"
+            },
+            {
+              "AccessIndex": 1,
+              "DestAccessStartIndex": 1,
+              "DestAccessEndIndex": 2,
+              "Type": "EPropertyAccessCopyType::Bool"
+            },
+            {
+              "AccessIndex": 2,
+              "DestAccessStartIndex": 2,
+              "DestAccessEndIndex": 3,
+              "Type": "EPropertyAccessCopyType::Bool"
+            }
+          ]
+        }
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:ExecuteUbergraph_ABP_HandInBoxProp'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:AnimGraph'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.4"
+      },
+      {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:AnimNotify_IdleOpen entered'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.3"
+      },
+      {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:RandomiseTap'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.2"
+      },
+      {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:AnimNotify_IdleOpen ended'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.1"
+      },
+      {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:ExecuteUbergraph_ABP_HandInBoxProp'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_3",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_2",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_1",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_4",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_3",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_3",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_2",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_2",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_1",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer_1",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_BlendListByBool",
+        "Flags": 2097153,
+        "ElementSize": 160,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_BlendListByBool'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateMachine",
+        "Flags": 2097153,
+        "ElementSize": 176,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateMachine'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TapBool",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "BoxShut?",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Tapbool timer",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "Class'TimerHandle'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_HandInBoxProp": {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:ExecuteUbergraph_ABP_HandInBoxProp'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.0"
+      },
+      "AnimNotify_IdleOpen ended": {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:AnimNotify_IdleOpen ended'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.1"
+      },
+      "RandomiseTap": {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:RandomiseTap'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.2"
+      },
+      "AnimNotify_IdleOpen entered": {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:AnimNotify_IdleOpen entered'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.3"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_HandInBoxProp_C:AnimGraph'",
+        "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.4"
+      }
+    },
+    "ClassFlags": 8652824,
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_HandInBoxProp_C'Default__ABP_HandInBoxProp_C'",
+      "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.6"
+    }
+  },
+  {
+    "Type": "ABP_HandInBoxProp_C",
+    "Name": "Default__ABP_HandInBoxProp_C",
+    "Class": "AnimBlueprintGeneratedClass'/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.ABP_HandInBoxProp_C'",
+    "ClassRef": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_HandInBoxProp_C'",
+      "ObjectPath": "/Game/RiggedObjects/Props/Environments/HandInBox/ABP_HandInBoxProp.5"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 15
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_TransitionResult_3": {
+        "bCanEnterTransition": true
+      },
+      "AnimGraphNode_TransitionResult_2": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult_1": {
+        "bCanEnterTransition": true
+      },
+      "AnimGraphNode_TransitionResult": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_SequencePlayer_4": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'SK_Hand_In_Box_Reveal_anm'",
+          "ObjectPath": "/Game/Gameplay/MissionObjects/Animations/FIG_01_Hand_In_Box/SK_Hand_In_Box_Reveal_anm.2"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_3": {
+        "Result": {
+          "LinkID": 5
+        },
+        "Name": "Opening",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_3": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'SK_Hand_In_Box_Closed_Idle_anm'",
+          "ObjectPath": "/Game/Gameplay/MissionObjects/Animations/FIG_01_Hand_In_Box/SK_Hand_In_Box_Closed_Idle_anm.0"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_2": {
+        "Result": {
+          "LinkID": 7
+        },
+        "Name": "IdleClosed",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_2": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'SK_Hand_In_Box_Retreat_anm'",
+          "ObjectPath": "/Game/Gameplay/MissionObjects/Animations/FIG_01_Hand_In_Box/SK_Hand_In_Box_Retreat_anm.2"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_1": {
+        "Result": {
+          "LinkID": 9
+        },
+        "Name": "Closing",
+        "Group": "None"
+      },
+      "AnimGraphNode_SequencePlayer_1": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'SK_Hand_In_Box_Single_Tap_anm'",
+          "ObjectPath": "/Game/Gameplay/MissionObjects/Animations/FIG_01_Hand_In_Box/SK_Hand_In_Box_Single_Tap_anm.4"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_SequencePlayer": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'SK_Hand_In_Box_All_Tap_anm'",
+          "ObjectPath": "/Game/Gameplay/MissionObjects/Animations/FIG_01_Hand_In_Box/SK_Hand_In_Box_All_Tap_anm.2"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_BlendListByBool": {
+        "bActiveValue": false,
+        "BlendPose": [
+          {
+            "LinkID": 12
+          },
+          {
+            "LinkID": 11
+          }
+        ],
+        "BlendTime": [
+          0.5,
+          0.5
+        ],
+        "TransitionType": "EBlendListTransitionType::StandardBlend",
+        "BlendType": "EAlphaBlendOption::Linear",
+        "bResetChildOnActivation": false,
+        "CustomBlendCurve": null,
+        "BlendProfile": null
+      },
+      "AnimGraphNode_StateResult": {
+        "Result": {
+          "LinkID": 13
+        },
+        "Name": "IdleOpen",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      },
+      "Tapbool timer": {
+        "Handle": 0
+      }
+    }
+  }
+]

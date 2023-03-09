@@ -1,0 +1,178 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_BeastInATrap_Trap_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_BeastInATrap_Trap_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/World_Events/BeastsInATrap/Trap/SK_BeastInATrap_Trap_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_BeastInATrap_Trap_PhysicsAsset:SkeletalBodySetup_5'",
+          "ObjectPath": "/Game/RiggedObjects/Props/World_Events/BeastsInATrap/Trap/SK_BeastInATrap_Trap_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_BeastInATrap_Trap_PhysicsAsset:PhysicsConstraintTemplate_4'",
+          "ObjectPath": "/Game/RiggedObjects/Props/World_Events/BeastsInATrap/Trap/SK_BeastInATrap_Trap_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_4",
+    "Outer": "SK_BeastInATrap_Trap_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "padlock",
+        "ConstraintBone1": "padlock",
+        "ConstraintBone2": "base",
+        "Pos2": {
+          "X": 7.0147023,
+          "Y": -128.7802,
+          "Z": -16.883425
+        },
+        "PriAxis2": {
+          "X": 0.9241301,
+          "Y": -0.018763803,
+          "Z": 0.3816169
+        },
+        "SecAxis2": {
+          "X": -0.19042963,
+          "Y": 0.8432785,
+          "Z": 0.50261104
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_BeastInATrap_Trap_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 78.41873,
+            "Y": 10.720211,
+            "Z": 78.40869,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 0.038915634,
+              "Y": 1.7602017E-06,
+              "Z": -8.038814E-08
+            },
+            "Rotation": {
+              "Pitch": -45.193035,
+              "Yaw": -1.1898859E-06,
+              "Roll": 1.0869475E-06
+            },
+            "X": 78.41873,
+            "Y": 10.720211,
+            "Z": 78.40869,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ],
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -4.8262933E-05,
+              "Y": -62.610382,
+              "Z": 0.324466
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.014080909,
+              "Roll": -89.7066
+            },
+            "Radius": 53.49639,
+            "Length": 22.255741,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "base",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "0ED0211D4951881EFCC0FB9220E6F9AF"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_5",
+    "Outer": "SK_BeastInATrap_Trap_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 22.42138,
+            "Y": 5.7372723,
+            "Z": 28.667046,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "padlock",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "131C931E4918396A31D582A1B0473C3D"
+  }
+]

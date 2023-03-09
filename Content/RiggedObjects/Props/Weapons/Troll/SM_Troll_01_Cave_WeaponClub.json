@@ -1,0 +1,286 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_Troll_01_Cave_WeaponClub",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -4.6639786,
+              "Y": 9.827507,
+              "Z": -21.973593
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 38.56078,
+            "Y": 34.364986,
+            "Z": 167.50288,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ],
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.24103926,
+              "Y": 3.0517578E-05,
+              "Z": 57.77437
+            },
+            "Rotation": {
+              "Pitch": -2.8124533,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 38.703354,
+            "Length": 76.04329,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9544A4224106F465E40CB3B80A4EEED5",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0xBF27"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Troll_01_Cave_WeaponClub",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 5765,
+        "SizeOnDisk": 5765,
+        "OffsetInFile": "0xBF8B"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Troll_01_Cave_WeaponClub",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'M_WPN_Troll_Club01'",
+            "ObjectPath": "/Game/RiggedObjects/Props/Weapons/Troll/Materials/M_WPN_Troll_Club01.0"
+          },
+          "MaterialSlotName": "M_Troll_01_Cave_WeaponClub",
+          "ImportedMaterialSlotName": "M_Troll_Club",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 259.78476,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 259.78476,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 7.6293945E-06
+        },
+        "BoxExtent": {
+          "X": 42.200123,
+          "Y": 40.102226,
+          "Z": 126.87366
+        },
+        "SphereRadius": 129.57127
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Troll_01_Cave_WeaponClub:BodySetup_1'",
+      "ObjectPath": "/Game/RiggedObjects/Props/Weapons/Troll/SM_Troll_01_Cave_WeaponClub.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Troll_01_Cave_WeaponClub:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Props/Weapons/Troll/SM_Troll_01_Cave_WeaponClub.1"
+    },
+    "LightingGuid": "FA6B77FC-4E424C8D-44066890-688F6D71",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 2498,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1623,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1624
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1624,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 624,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 539,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 13.996041,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 540
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 540,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 78,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 101,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 130.08052,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 102
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 102,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 7.6293945E-06
+        },
+        "BoxExtent": {
+          "X": 42.200123,
+          "Y": 40.102226,
+          "Z": 126.87366
+        },
+        "SphereRadius": 129.57127
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.18320267,
+        0.060800668,
+        0.025100082,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

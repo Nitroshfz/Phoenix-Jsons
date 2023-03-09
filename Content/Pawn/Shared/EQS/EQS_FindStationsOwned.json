@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "EnvQuery",
+    "Name": "EQS_FindStationsOwned",
+    "Class": "UScriptClass'EnvQuery'",
+    "ClassPath": "/Script/AIModule.EnvQuery",
+    "Properties": {
+      "QueryName": "EQS_FindStationsOwned",
+      "Options": [
+        {
+          "ObjectName": "EnvQueryOption'EQS_FindStationsOwned:EnvQueryOption_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsOwned.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryGenerator_StationsOwned",
+    "Name": "EnvQueryGenerator_StationsOwned_0",
+    "Outer": "EQS_FindStationsOwned",
+    "Class": "UScriptClass'EnvQueryGenerator_StationsOwned'",
+    "ClassPath": "/Script/Phoenix.EnvQueryGenerator_StationsOwned",
+    "Properties": {
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryOption",
+    "Name": "EnvQueryOption_0",
+    "Outer": "EQS_FindStationsOwned",
+    "Class": "UScriptClass'EnvQueryOption'",
+    "ClassPath": "/Script/AIModule.EnvQueryOption",
+    "Properties": {
+      "Generator": {
+        "ObjectName": "EnvQueryGenerator_StationsOwned'EQS_FindStationsOwned:EnvQueryGenerator_StationsOwned_0'",
+        "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsOwned.1"
+      },
+      "Tests": [
+        {
+          "ObjectName": "EnvQueryTest_Stations'EQS_FindStationsOwned:EnvQueryTest_Stations_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindStationsOwned.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Stations",
+    "Name": "EnvQueryTest_Stations_0",
+    "Outer": "EQS_FindStationsOwned",
+    "Class": "UScriptClass'EnvQueryTest_Stations'",
+    "ClassPath": "/Script/Phoenix.EnvQueryTest_Stations",
+    "Properties": {
+      "FloatValueMin": {
+        "DefaultValue": 1.0
+      },
+      "FloatValueMax": {
+        "DefaultValue": 1000.0
+      },
+      "ScoringEquation": "EEnvTestScoreEquation::Square",
+      "ClampMinType": "EEnvQueryTestClamping::FilterThreshold",
+      "ClampMaxType": "EEnvQueryTestClamping::FilterThreshold",
+      "NormalizationType": "EEQSNormalizationType::RelativeToScores",
+      "VerNum": 1
+    }
+  }
+]

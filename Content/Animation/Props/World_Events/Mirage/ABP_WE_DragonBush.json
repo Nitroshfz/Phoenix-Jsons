@@ -1,0 +1,587 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABP_WE_DragonBush",
+    "Outer": "ABP_WE_DragonBush_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetRelevantAnimTimeFraction_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_DragonBush_AnimGraphNode_TransitionResult_CE2E08654A36F62309A753B0A8238B5E",
+    "Outer": "ABP_WE_DragonBush_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "AnimGraph",
+    "Outer": "ABP_WE_DragonBush_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraph",
+        "Flags": 1,
+        "ElementSize": 24,
+        "PropertyFlags": 384,
+        "Struct": {
+          "ObjectName": "Class'PoseLink'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 205520896
+  },
+  {
+    "Type": "AnimBlueprintGeneratedClass",
+    "Name": "ABP_WE_DragonBush_C",
+    "Class": "UScriptClass'AnimBlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.AnimBlueprintGeneratedClass",
+    "Properties": {
+      "BakedStateMachines": [
+        {
+          "MachineName": "Dragon States",
+          "InitialState": 0,
+          "States": [
+            {
+              "StateName": "Idle",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 5,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 0,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 1,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            },
+            {
+              "StateName": "Flap",
+              "Transitions": [
+                {
+                  "CanTakeDelegateIndex": 6,
+                  "CustomResultNodeIndex": -1,
+                  "TransitionIndex": 1,
+                  "bDesiredTransitionReturnValue": true,
+                  "bAutomaticRemainingTimeRule": false,
+                  "PoseEvaluatorLinks": []
+                }
+              ],
+              "StateRootNodeIndex": 3,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "FullyBlendedNotify": -1,
+              "bIsAConduit": false,
+              "EntryRuleNodeIndex": -1,
+              "PlayerNodeIndices": [
+                4
+              ],
+              "LayerNodeIndices": [],
+              "bAlwaysResetOnEntry": false
+            }
+          ],
+          "Transitions": [
+            {
+              "PreviousState": 0,
+              "NextState": 1,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            },
+            {
+              "PreviousState": 1,
+              "NextState": 0,
+              "CrossfadeDuration": 0.2,
+              "StartNotify": -1,
+              "EndNotify": -1,
+              "InterruptNotify": -1,
+              "BlendMode": "EAlphaBlendOption::HermiteCubic",
+              "CustomCurve": null,
+              "BlendProfile": null,
+              "LogicType": "ETransitionLogicType::TLT_StandardBlend",
+              "StateName": "None"
+            }
+          ]
+        }
+      ],
+      "TargetSkeleton": {
+        "ObjectName": "Skeleton'SK_WE_DragonBush_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/World_Events/Mirage/DragonBush/SK_WE_DragonBush_Skeleton.0"
+      },
+      "OrderedSavedPoseIndicesMap": [
+        {
+          "AnimGraph": {
+            "OrderedSavedPoseNodeIndices": []
+          }
+        }
+      ],
+      "EvaluateGraphExposedInputs": [
+        {
+          "BoundFunction": "None",
+          "CopyRecords": [
+            {
+              "CopyIndex": 0,
+              "PostCopyOperation": "EPostCopyOperation::None"
+            }
+          ],
+          "Function": null,
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_DragonBush_C'",
+              "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.3"
+            }
+          }
+        },
+        {
+          "BoundFunction": "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_DragonBush_AnimGraphNode_TransitionResult_CE2E08654A36F62309A753B0A8238B5E",
+          "CopyRecords": [],
+          "Function": {
+            "ObjectName": "Function'ABP_WE_DragonBush_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_DragonBush_AnimGraphNode_TransitionResult_CE2E08654A36F62309A753B0A8238B5E'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.1"
+          },
+          "ValueHandlerNodeProperty": {
+            "Path": [
+              "AnimGraphNode_TransitionResult_1"
+            ],
+            "ResolvedOwner": {
+              "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_DragonBush_C'",
+              "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.3"
+            }
+          }
+        }
+      ],
+      "PropertyAccessLibrary": {
+        "PathSegments": [
+          {
+            "Name": "HitBySpell",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "HitBySpell"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_DragonBush_C'",
+                "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.3"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          },
+          {
+            "Name": "AnimGraphNode_TransitionResult",
+            "Struct": {
+              "ObjectName": "Class'AnimNode_TransitionResult'",
+              "ObjectPath": "/Script/Engine"
+            },
+            "Property": {
+              "Path": [
+                "AnimGraphNode_TransitionResult"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_DragonBush_C'",
+                "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.3"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 1
+          },
+          {
+            "Name": "bCanEnterTransition",
+            "Struct": null,
+            "Property": {
+              "Path": [
+                "bCanEnterTransition"
+              ],
+              "ResolvedOwner": {
+                "ObjectName": "Class'AnimNode_TransitionResult'",
+                "ObjectPath": "/Script/Engine"
+              }
+            },
+            "Function": null,
+            "ArrayIndex": -1,
+            "Flags": 2
+          }
+        ],
+        "SrcPaths": [
+          {
+            "PathSegmentStartIndex": 0,
+            "PathSegmentCount": 1,
+            "bHasEvents": false
+          }
+        ],
+        "DestPaths": [
+          {
+            "PathSegmentStartIndex": 1,
+            "PathSegmentCount": 2,
+            "bHasEvents": false
+          }
+        ],
+        "CopyBatches": {
+          "Copies": [
+            {
+              "AccessIndex": 0,
+              "DestAccessStartIndex": 0,
+              "DestAccessEndIndex": 1,
+              "Type": "EPropertyAccessCopyType::Bool"
+            }
+          ]
+        }
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:ExecuteUbergraph_ABP_WE_DragonBush'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AnimInstance'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:AnimGraph'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.2"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_DragonBush_AnimGraphNode_TransitionResult_CE2E08654A36F62309A753B0A8238B5E'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.1"
+      },
+      {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:ExecuteUbergraph_ABP_WE_DragonBush'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_Root",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_Root'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult_1",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_TransitionResult",
+        "Flags": 2097153,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_TransitionResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_SequencePlayer",
+        "Flags": 2097153,
+        "ElementSize": 136,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_SequencePlayer'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult_1",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_RandomPlayer",
+        "Flags": 2097153,
+        "ElementSize": 120,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_RandomPlayer'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateResult",
+        "Flags": 2097153,
+        "ElementSize": 64,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateResult'",
+          "ObjectPath": "/Script/AnimGraphRuntime"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AnimGraphNode_StateMachine",
+        "Flags": 2097153,
+        "ElementSize": 176,
+        "Struct": {
+          "ObjectName": "Class'AnimNode_StateMachine'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "HitBySpell",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "PropertyFlags": 65541,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABP_WE_DragonBush": {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:ExecuteUbergraph_ABP_WE_DragonBush'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.0"
+      },
+      "EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_DragonBush_AnimGraphNode_TransitionResult_CE2E08654A36F62309A753B0A8238B5E": {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WE_DragonBush_AnimGraphNode_TransitionResult_CE2E08654A36F62309A753B0A8238B5E'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.1"
+      },
+      "AnimGraph": {
+        "ObjectName": "Function'ABP_WE_DragonBush_C:AnimGraph'",
+        "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.2"
+      }
+    },
+    "ClassFlags": 8652824,
+    "ClassWithin": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABP_WE_DragonBush_C'Default__ABP_WE_DragonBush_C'",
+      "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.4"
+    }
+  },
+  {
+    "Type": "ABP_WE_DragonBush_C",
+    "Name": "Default__ABP_WE_DragonBush_C",
+    "Class": "AnimBlueprintGeneratedClass'/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.ABP_WE_DragonBush_C'",
+    "ClassRef": {
+      "ObjectName": "AnimBlueprintGeneratedClass'ABP_WE_DragonBush_C'",
+      "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/ABP_WE_DragonBush.3"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AnimGraphNode_Root": {
+        "Result": {
+          "LinkID": 7
+        },
+        "Name": "AnimGraph",
+        "Group": "None"
+      },
+      "AnimGraphNode_TransitionResult_1": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_TransitionResult": {
+        "bCanEnterTransition": false
+      },
+      "AnimGraphNode_SequencePlayer": {
+        "Sequence": {
+          "ObjectName": "AnimSequence'SK_WEA_DragonBush_BreathFire_anm'",
+          "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/SK_WEA_DragonBush_BreathFire_anm.2"
+        },
+        "PlayRateBasis": 1.0,
+        "PlayRate": 1.0,
+        "PlayRateScaleBiasClamp": {
+          "bMapRange": false,
+          "bClampResult": false,
+          "bInterpResult": false,
+          "InRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "OutRange": {
+            "Min": 0.0,
+            "Max": 1.0
+          },
+          "Scale": 1.0,
+          "Bias": 0.0,
+          "ClampMin": 0.0,
+          "ClampMax": 1.0,
+          "InterpSpeedIncreasing": 10.0,
+          "InterpSpeedDecreasing": 10.0
+        },
+        "StartPosition": 0.0,
+        "bLoopAnimation": true,
+        "GroupName": "None",
+        "GroupRole": "EAnimGroupRole::CanBeLeader",
+        "GroupScope": "EAnimSyncGroupScope::Local",
+        "bIgnoreForRelevancyTest": false,
+        "BlendWeight": 0.0,
+        "InternalTimeAccumulator": 0.0
+      },
+      "AnimGraphNode_StateResult_1": {
+        "Result": {
+          "LinkID": 3
+        },
+        "Name": "Flap",
+        "Group": "None"
+      },
+      "AnimGraphNode_RandomPlayer": {
+        "Entries": [
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'SK_WEA_DragonBush_Idle_anm'",
+              "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/SK_WEA_DragonBush_Idle_anm.4"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 1,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 1.0,
+              "BlendOption": "EAlphaBlendOption::ExpInOut"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'SK_WEA_DragonBush_Idle2_anm'",
+              "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/SK_WEA_DragonBush_Idle2_anm.4"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 1,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 1.0,
+              "BlendOption": "EAlphaBlendOption::ExpInOut"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'SK_WEA_DragonBush_Idle3_anm'",
+              "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/SK_WEA_DragonBush_Idle3_anm.1"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 1.0,
+              "BlendOption": "EAlphaBlendOption::ExpInOut"
+            }
+          },
+          {
+            "Sequence": {
+              "ObjectName": "AnimSequence'SK_WEA_DragonBush_Flap_anm'",
+              "ObjectPath": "/Game/Animation/Props/World_Events/Mirage/SK_WEA_DragonBush_Flap_anm.1"
+            },
+            "ChanceToPlay": 1.0,
+            "MinLoopCount": 0,
+            "MaxLoopCount": 0,
+            "MinPlayRate": 1.0,
+            "MaxPlayRate": 1.0,
+            "BlendIn": {
+              "CustomCurve": null,
+              "BlendTime": 1.0,
+              "BlendOption": "EAlphaBlendOption::ExpInOut"
+            }
+          }
+        ],
+        "bShuffleMode": false
+      },
+      "AnimGraphNode_StateResult": {
+        "Result": {
+          "LinkID": 5
+        },
+        "Name": "Idle",
+        "Group": "None"
+      },
+      "AnimGraphNode_StateMachine": {
+        "StateMachineIndexInClass": 0,
+        "MaxTransitionsPerFrame": 3,
+        "bSkipFirstUpdateTransition": true,
+        "bReinitializeOnBecomingRelevant": true
+      }
+    }
+  }
+]

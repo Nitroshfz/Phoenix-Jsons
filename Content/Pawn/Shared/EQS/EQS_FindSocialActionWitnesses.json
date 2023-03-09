@@ -1,0 +1,140 @@
+[
+  {
+    "Type": "EnvQuery",
+    "Name": "EQS_FindSocialActionWitnesses",
+    "Class": "UScriptClass'EnvQuery'",
+    "ClassPath": "/Script/AIModule.EnvQuery",
+    "Properties": {
+      "QueryName": "TestEnvQuery",
+      "Options": [
+        {
+          "ObjectName": "EnvQueryOption'EQS_FindSocialActionWitnesses:EnvQueryOption_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialActionWitnesses.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryGenerator_ActorsOfClass",
+    "Name": "EnvQueryGenerator_ActorsOfClass_0",
+    "Outer": "EQS_FindSocialActionWitnesses",
+    "Class": "UScriptClass'EnvQueryGenerator_ActorsOfClass'",
+    "ClassPath": "/Script/AIModule.EnvQueryGenerator_ActorsOfClass",
+    "Properties": {
+      "SearchedActorClass": {
+        "ObjectName": "Class'SocialReasoning'",
+        "ObjectPath": "/Script/Phoenix"
+      },
+      "SearchRadius": {
+        "DefaultValue": 750.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryOption",
+    "Name": "EnvQueryOption_1",
+    "Outer": "EQS_FindSocialActionWitnesses",
+    "Class": "UScriptClass'EnvQueryOption'",
+    "ClassPath": "/Script/AIModule.EnvQueryOption",
+    "Properties": {
+      "Generator": {
+        "ObjectName": "EnvQueryGenerator_ActorsOfClass'EQS_FindSocialActionWitnesses:EnvQueryGenerator_ActorsOfClass_0'",
+        "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialActionWitnesses.1"
+      },
+      "Tests": [
+        {
+          "ObjectName": "EnvQueryTest_Distance'EQS_FindSocialActionWitnesses:EnvQueryTest_Distance_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialActionWitnesses.3"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Dot'EQS_FindSocialActionWitnesses:EnvQueryTest_Dot_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialActionWitnesses.4"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Trace'EQS_FindSocialActionWitnesses:EnvQueryTest_Trace_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindSocialActionWitnesses.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Distance",
+    "Name": "EnvQueryTest_Distance_0",
+    "Outer": "EQS_FindSocialActionWitnesses",
+    "Class": "UScriptClass'EnvQueryTest_Distance'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Distance",
+    "Properties": {
+      "TestMode": "EEnvTestDistance::Distance2D",
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "FloatValueMin": {
+        "DefaultValue": 50.0
+      },
+      "FloatValueMax": {
+        "DefaultValue": 750.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Dot",
+    "Name": "EnvQueryTest_Dot_1",
+    "Outer": "EQS_FindSocialActionWitnesses",
+    "Class": "UScriptClass'EnvQueryTest_Dot'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Dot",
+    "Properties": {
+      "LineA": {
+        "Rotation": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      "LineB": {
+        "LineFrom": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        },
+        "LineTo": {
+          "ObjectName": "Class'EnvQueryContext_Querier'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      "TestMode": "EEnvTestDot::Dot2D",
+      "TestOrder": 1,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "FloatValueMax": {
+        "DefaultValue": 1.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Trace",
+    "Name": "EnvQueryTest_Trace_0",
+    "Outer": "EQS_FindSocialActionWitnesses",
+    "Class": "UScriptClass'EnvQueryTest_Trace'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Trace",
+    "Properties": {
+      "TraceData": {
+        "VersionNum": 1,
+        "SerializedChannel": "ECC_Visibility"
+      },
+      "TraceFromContext": {
+        "DefaultValue": true
+      },
+      "ItemHeightOffset": {
+        "DefaultValue": 180.0
+      },
+      "ContextHeightOffset": {
+        "DefaultValue": 180.0
+      },
+      "Context": {
+        "ObjectName": "Class'EnvQueryContext_Item'",
+        "ObjectPath": "/Script/AIModule"
+      },
+      "TestOrder": 2,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "VerNum": 1
+    }
+  }
+]

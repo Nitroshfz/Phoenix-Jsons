@@ -1,0 +1,269 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.6"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.7"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/props/HW_Lamp_Chandelier_Gryffindor/SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset.3"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "pivit",
+        "ConstraintBone1": "pivit",
+        "ConstraintBone2": "chandelier",
+        "Pos2": {
+          "X": 6.210252E-28,
+          "Y": 35.40239,
+          "Z": -1.1444092E-05
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "ring_01",
+        "ConstraintBone1": "ring_01",
+        "ConstraintBone2": "pivit",
+        "Pos2": {
+          "X": 3.6467343E-15,
+          "Y": 106.1469,
+          "Z": 1.1444092E-05
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "ring_02",
+        "ConstraintBone1": "ring_02",
+        "ConstraintBone2": "ring_01",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 153.71951,
+          "Z": 0.0
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0064401627,
+              "Y": 14.324477,
+              "Z": -3.8906493
+            },
+            "Rotation": {
+              "Pitch": 14.332673,
+              "Yaw": -90.00001,
+              "Roll": -86.56267
+            },
+            "Radius": 21.65468,
+            "Length": 21.907553,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "chandelier",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "207CD28843F0AE86CD368691DAFF5216"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.7481642,
+              "Y": -11.609018,
+              "Z": 3.524711
+            },
+            "Rotation": {
+              "Pitch": -0.9297936,
+              "Yaw": -89.99999,
+              "Roll": -33.157074
+            },
+            "Radius": 17.56957,
+            "Length": 17.690052,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "pivit",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "2360585943CCE8EABB881F81D0E9FA46"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.2793584,
+              "Y": -16.166931,
+              "Z": 0.20343876
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -4.1526847,
+              "Roll": -83.76906
+            },
+            "Radius": 60.084057,
+            "Length": 94.86547,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "ring_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "135FAE0D4160804CB19C38BE409648E3"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_HW_Lamp_Chandelier_Gryffindor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.5895462,
+              "Y": -25.016874,
+              "Z": 3.4538555
+            },
+            "Rotation": {
+              "Pitch": -0.07597902,
+              "Yaw": -89.99999,
+              "Roll": 15.890219
+            },
+            "Radius": 137.67853,
+            "Length": 138.71729,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "ring_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "98C0DDBA44CC8F01E277829B48C95395"
+  }
+]

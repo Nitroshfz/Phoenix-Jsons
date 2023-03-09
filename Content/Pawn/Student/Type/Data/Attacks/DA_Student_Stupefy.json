@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "GoblinAISwordAttackData",
+    "Name": "DA_Student_Stupefy",
+    "Class": "UScriptClass'GoblinAISwordAttackData'",
+    "ClassPath": "/Script/Phoenix.GoblinAISwordAttackData",
+    "Properties": {
+      "InstanceOverrideKey": {
+        "SelectedData": "Stupefy"
+      },
+      "AttackTypeTag": {
+        "TagName": "NPC.Enemy.Attack.DarkWizard.Ranged.Spell"
+      },
+      "AttackTicket": {
+        "SelectedData": "DW_Thief_Ranged"
+      },
+      "AttackAbilityPtr": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_DarkWizard_SmallAttack_C'",
+        "ObjectPath": "/Game/Pawn/NPC/Enemy/Character/DarkWizard/Data/Abilities/ABL_DarkWizard_SmallAttack.0"
+      },
+      "SpellToolRecord": {
+        "ObjectName": "SpellToolRecord'DA_Stupefy_Student'",
+        "ObjectPath": "/Game/Gameplay/ToolSet/Spells/Student/DA_Stupefy_Student.0"
+      },
+      "AttackBehaviorTree": {
+        "ObjectName": "BehaviorTree'BT_AttackDefault'",
+        "ObjectPath": "/Game/Pawn/NPC/Enemy/BehaviorTree/Trees/AttackTrees/BT_AttackDefault.0"
+      },
+      "RandomWeight": 0.1,
+      "SelectCooldownType": "EEnemy_SelectCooldownType::Increment",
+      "SelectCooldown": 1.0,
+      "WeaponData": {
+        "RequiredList": [
+          {
+            "ObjectName": "BlueprintGeneratedClass'BP_DarkWizardWand_C'",
+            "ObjectPath": "/Game/Pawn/NPC/Enemy/Character/DarkWizard/BP_DarkWizardWand.50"
+          }
+        ]
+      },
+      "SelectionRangeData": [
+        {
+          "RangeMin": -1.0,
+          "RangeMax": -1.0,
+          "RangeProbability": 1.0
+        }
+      ],
+      "MinAttackAngle": 60.0,
+      "bCanMoveIfInRange": false,
+      "RangedCorridorHalfWidth": 100.0,
+      "Timeout": 3.0,
+      "TimeoutDelta": 1.0,
+      "bCanAttackWhileTargetIsReacting": false,
+      "bRetreat": false,
+      "ApproachDataList": [
+        {
+          "State": "EEnemyAIAttackState::Attack",
+          "Data": {
+            "m_stateType": "EEnemyAIAttackStateType::Attack_0",
+            "m_state": "EEnemyAIAttackState::Attack",
+            "AttackMinRange": 100.0,
+            "ApproachMinRange": 250.0,
+            "ApproachMaxRange": 2000.0,
+            "AttackMaxRange": 3000.0,
+            "ApproachTolerance": 0.0,
+            "AttackRangeTolerance": 0.0
+          }
+        },
+        {
+          "State": "EEnemyAIAttackState::Pressure",
+          "Data": {
+            "m_stateType": "EEnemyAIAttackStateType::Pressure_0",
+            "m_state": "EEnemyAIAttackState::Pressure",
+            "AttackMinRange": -1.0,
+            "ApproachMinRange": 1500.0,
+            "ApproachMaxRange": 2500.0,
+            "AttackMaxRange": -1.0,
+            "ApproachTolerance": 0.0,
+            "AttackRangeTolerance": 0.0
+          }
+        },
+        {
+          "State": "EEnemyAIAttackState::Withdraw",
+          "Data": {
+            "m_stateType": "EEnemyAIAttackStateType::Withdraw_0",
+            "m_state": "EEnemyAIAttackState::Withdraw",
+            "AttackMinRange": -1.0,
+            "ApproachMinRange": 2000.0,
+            "ApproachMaxRange": 3000.0,
+            "AttackMaxRange": -1.0,
+            "ApproachTolerance": 0.0,
+            "AttackRangeTolerance": 0.0
+          }
+        }
+      ],
+      "AttackData": {
+        "bAttackDesperationEnable": true,
+        "AttackDesperationMaxRange": 3500.0
+      }
+    }
+  }
+]

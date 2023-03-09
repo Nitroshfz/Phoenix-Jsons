@@ -1,0 +1,301 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_RideCreature_FlyGlide_C'Default__ABL_RideCreature_FlyGlide_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.1"
+    }
+  },
+  {
+    "Type": "ABL_RideCreature_FlyGlide_C",
+    "Name": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.ABL_RideCreature_FlyGlide_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_FlyGlide_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_RideCreature_FlyGlide_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RideCreature_FlyGlide_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RideCreature_FlyGlide_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.8"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RideCreature_FlyGlide_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.9"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.10"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.11"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.12"
+        }
+      ],
+      "m_AbilityNameHash": 3249776028
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_MountType",
+    "Name": "AblAnimationTagChooser_MountType_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_MountType'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_MountType"
+  },
+  {
+    "Type": "AblAnimRateGetter_SyncAnimationPosition",
+    "Name": "AblAnimRateGetter_SyncAnimationPosition_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimRateGetter_SyncAnimationPosition'",
+    "ClassPath": "/Script/Phoenix.AblAnimRateGetter_SyncAnimationPosition",
+    "Properties": {
+      "DeltaToPlayRate": {
+        "ExternalCurve": {
+          "ObjectName": "CurveFloat'C_DeltaToPlayRate_RideCreature_Fly'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/C_DeltaToPlayRate_RideCreature_Fly.0"
+        }
+      },
+      "MinimumPlayRate": 0.67,
+      "MaximumPlayRate": 1.5,
+      "RequiredAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Creature_FlyGlide_C'",
+        "ObjectPath": "/Game/Pawn/NPC/Creature/Abilities/Flying/ABL_Creature_FlyGlide.0"
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_Fly_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_Fly.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_RideCreature_FlyGlide_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.4"
+        }
+      ],
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.10"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.10"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_FlyHover_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyHover.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_RideCreature_FlyGlide_C:AblBranchTask_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.5"
+        }
+      ],
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.11"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.11"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RideCreature_FlyFast_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyFast.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_RideCreature_FlyGlide_C:AblBranchTask_3.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.6"
+        }
+      ],
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_RideCreature_FlyGlide_C:AblPlaceableEvent_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.067061655,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_FlyGlide_C'Default__ABL_RideCreature_FlyGlide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.1"
+        }
+      },
+      "m_EventName": "RiderFly"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_2",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.16666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_FlyGlide_C'Default__ABL_RideCreature_FlyGlide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.1"
+        }
+      },
+      "m_EventName": "RiderFlyHover"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_3",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.26666668,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_FlyGlide_C'Default__ABL_RideCreature_FlyGlide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.1"
+        }
+      },
+      "m_EventName": "RiderFlyFast"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_RideCreature_FlyGlide_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationSet": [
+        "OA.AssetTypes.MountRiding"
+      ],
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Fly",
+        "AA.Gait.Glide"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_MountType'Default__ABL_RideCreature_FlyGlide_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_MountType_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.2"
+      },
+      "m_AnimRateGetter": {
+        "ObjectName": "AblAnimRateGetter_SyncAnimationPosition'Default__ABL_RideCreature_FlyGlide_C:AblPlayAnimationArchitectTask_0.AblAnimRateGetter_SyncAnimationPosition_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.3"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RideCreature_FlyGlide_C'Default__ABL_RideCreature_FlyGlide_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/RideCreature/Flying/ABL_RideCreature_FlyGlide.1"
+        }
+      }
+    }
+  }
+]

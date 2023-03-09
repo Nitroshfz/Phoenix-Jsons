@@ -1,0 +1,958 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_HitStumble",
+    "Outer": "ABL_HitStumble_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostDialogueEvent_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityBranch",
+    "Outer": "ABL_HitStumble_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityBranch'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_HitStumble_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomCanBranchTo",
+    "Outer": "ABL_HitStumble_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:CustomCanBranchTo'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 1408,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetObjectStateInfo_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'ObjectStateInfo'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHealth_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 1279395840
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_HitStumble_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_HitStumble_C:ExecuteUbergraph_ABL_HitStumble'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_HitStumble_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.3"
+      },
+      {
+        "ObjectName": "Function'ABL_HitStumble_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.2"
+      },
+      {
+        "ObjectName": "Function'ABL_HitStumble_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.1"
+      },
+      {
+        "ObjectName": "Function'ABL_HitStumble_C:ExecuteUbergraph_ABL_HitStumble'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_HitStumble": {
+        "ObjectName": "Function'ABL_HitStumble_C:ExecuteUbergraph_ABL_HitStumble'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.0"
+      },
+      "OnAbilityBranch": {
+        "ObjectName": "Function'ABL_HitStumble_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.1"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_HitStumble_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.2"
+      },
+      "CustomCanBranchTo": {
+        "ObjectName": "Function'ABL_HitStumble_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.3"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+    }
+  },
+  {
+    "Type": "ABL_HitStumble_C",
+    "Name": "Default__ABL_HitStumble_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.ABL_HitStumble_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_HitStumble_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.4"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 3.0333338,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitStumble_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.13"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitStumble_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.21"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitStumble_C:ablInputContextTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.22"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitStumble_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.20"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitStumble_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitStumble_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.14"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitStumble_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.15"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitStumble_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.16"
+        },
+        {
+          "ObjectName": "AblCamShakeTask'Default__ABL_HitStumble_C:AblCamShakeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.19"
+        },
+        {
+          "ObjectName": "AblPhysicalReactionBlendBackTask'Default__ABL_HitStumble_C:AblPhysicalReactionBlendBackTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.23"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_HitStumble_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.26"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_HitStumble_C:AblPlayPostAkEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.27"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitStumble_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.17"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitStumble_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.24"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_HitStumble_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.7"
+        }
+      ],
+      "m_AbilityNameHash": 2536099024,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_DirectionBased",
+    "Name": "AblAnimationTagChooser_DirectionBased_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_DirectionBased'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_DirectionBased",
+    "Properties": {
+      "NumAngles": 4,
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.HitStumble_Bwd"
+        ],
+        [
+          "AA.AnimPlayerName.HitStumble_Lft"
+        ],
+        [
+          "AA.AnimPlayerName.HitStumble_Fwd"
+        ],
+        [
+          "AA.AnimPlayerName.HitStumble_Rht"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.32284427,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EventName": "ToKnee"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionIfDead",
+    "Name": "AblBranchConditionIfDead_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIfDead'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIfDead"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchMovementMode",
+    "Name": "AblBranchMovementMode_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchMovementMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchMovementMode",
+    "Properties": {
+      "MovementModes": [
+        155
+      ],
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitDeath_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeath.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIfDead'Default__ABL_HitStumble_C:AblBranchTask_0.AblBranchConditionIfDead_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 0.23333335,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_Verbose": true
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_CombatIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitStumble_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.8"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_HitStumble_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.10"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitStumble_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_HitStumble_C:AblBranchTask_3.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.11"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitStumble_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.24"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitKnockDown_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitKnockDown.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchMovementMode'Default__ABL_HitStumble_C:AblBranchTask_4.AblBranchMovementMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.12"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 0.20000002,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblCamShakeTask",
+    "Name": "AblCamShakeTask_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblCamShakeTask'",
+    "ClassPath": "/Script/AbleCore.AblCamShakeTask",
+    "Properties": {
+      "Shake": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SpellImpact_Hitch_CamShake_C'",
+        "ObjectPath": "/Game/Data/CameraShakes/BP_SpellImpact_Hitch_CamShake.0"
+      },
+      "innerRadius": 1.0,
+      "outerRadius": 10.0,
+      "bUseActorPositionAsEpicenter": true,
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeDodge",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFakeProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noRevelio",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLockOnMode",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noHealthUseAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noItemQuickAction",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noHeavyWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 23.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 23.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noHealthUseAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_2",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 8.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 8.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPhysicalReactionBlendBackTask",
+    "Name": "AblPhysicalReactionBlendBackTask_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblPhysicalReactionBlendBackTask'",
+    "ClassPath": "/Script/Phoenix.AblPhysicalReactionBlendBackTask",
+    "Properties": {
+      "bForcePopOutOfRagdollImmediately": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 1.1817218
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitStumbleBwd"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_DirectionBased'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_DirectionBased_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.6"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 0.9999998,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 10.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'Spell_Medium_Impact_Player_Motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Motion/Spell_Medium_Impact_Player_Motion.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitStumble_C'Default__ABL_HitStumble_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_1",
+    "Outer": "Default__ABL_HitStumble_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'Generic_Motion_Large'",
+        "ObjectPath": "/Game/WWise/Events/Motion/Generic_Motion/Generic_Motion_Large.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitStumble_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitStumble.25"
+        }
+      }
+    }
+  }
+]

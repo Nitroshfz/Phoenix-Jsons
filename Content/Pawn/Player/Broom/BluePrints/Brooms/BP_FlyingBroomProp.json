@@ -1,0 +1,885 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_FlyingBroomProp",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VLerp_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_ObjectFadeParamsSpeedDuration",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class'ObjectFadeParamsSpeedDuration'",
+          "ObjectPath": "/Script/FXUtil"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Player",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_Instant",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetTransform_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 48,
+        "PropertyFlags": 2,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+        "Flags": 1,
+        "ElementSize": 144,
+        "PropertyFlags": 549755813888,
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSocketTransform_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_TLerp_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 48,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_SetActorTransform_SweepHitResult",
+        "Flags": 1,
+        "ElementSize": 144,
+        "PropertyFlags": 549755813888,
+        "Struct": {
+          "ObjectName": "Class'HitResult'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_K2_SetActorTransform_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_ActorStartFade_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "DismountBroom",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'FlyingBroom:DismountBroom'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Player",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Instant",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "Function",
+    "Name": "DismountTimeline__StartFadeOut__EventFunc",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "DismountTimeline__UpdateFunc",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "DismountTimeline__FinishedFunc",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "Function",
+    "Name": "SetScale",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "InScale",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_FClamp_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 12,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "Timelines": [
+        {
+          "ObjectName": "TimelineTemplate'BP_FlyingBroomProp_C:DismountTimeline_Template'",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.19"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_FlyingBroomProp_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.17"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ExecuteUbergraph_BP_FlyingBroomProp'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'FlyingBroom'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:SetScale'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.8"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.7"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountTimeline__FinishedFunc'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.6"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountTimeline__UpdateFunc'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.5"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountTimeline__StartFadeOut__EventFunc'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.4"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountBroom'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.3"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ReceiveTick'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.2"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.1"
+      },
+      {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ExecuteUbergraph_BP_FlyingBroomProp'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SkeletalMesh",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'SkeletalMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "DismountTimeline_Scale_54A5A1134813F2F93F1823926DBFE5F9",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "DismountTimeline_ToHandAlpha_54A5A1134813F2F93F1823926DBFE5F9",
+        "Flags": 2097153,
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "DismountTimeline__Direction_54A5A1134813F2F93F1823926DBFE5F9",
+        "Flags": 2097153,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ETimelineDirection'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DismountTimeline",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 524292,
+        "PropertyClass": {
+          "ObjectName": "Class'TimelineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Player",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "Class'Biped_Player'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Apperate_Color",
+        "Flags": 2097153,
+        "ElementSize": 48,
+        "PropertyFlags": 65541,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'STR_Apperate_Colors'",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/STR_Apperate_Colors.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_FlyingBroomProp": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ExecuteUbergraph_BP_FlyingBroomProp'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.0"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.1"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:ReceiveTick'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.2"
+      },
+      "DismountBroom": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountBroom'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.3"
+      },
+      "DismountTimeline__StartFadeOut__EventFunc": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountTimeline__StartFadeOut__EventFunc'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.4"
+      },
+      "DismountTimeline__UpdateFunc": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountTimeline__UpdateFunc'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.5"
+      },
+      "DismountTimeline__FinishedFunc": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:DismountTimeline__FinishedFunc'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.6"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.7"
+      },
+      "SetScale": {
+        "ObjectName": "Function'BP_FlyingBroomProp_C:SetScale'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.8"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_FlyingBroomProp_C'Default__BP_FlyingBroomProp_C'",
+      "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.10"
+    }
+  },
+  {
+    "Type": "BP_FlyingBroomProp_C",
+    "Name": "Default__BP_FlyingBroomProp_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.BP_FlyingBroomProp_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BP_FlyingBroomProp_C'",
+      "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.9"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Apperate_Color": {
+        "Color_1_4_8D1486D84DA99B2483F576B740916EFA": {
+          "R": 0.158961,
+          "G": 0.093059,
+          "B": 0.05448,
+          "A": 1.0,
+          "Hex": "FF6F5642"
+        },
+        "Color_2_5_06B45C784C5E631337ECB296A8ED54A4": {
+          "R": 0.052861,
+          "G": 0.026241,
+          "B": 0.015209,
+          "A": 1.0,
+          "Hex": "FF412D21"
+        },
+        "Color_3_6_A7477A2F4AB33F65F546D489096BFA90": {
+          "R": 0.012286,
+          "G": 0.004391,
+          "B": 0.002428,
+          "A": 1.0,
+          "Hex": "FF1D0E08"
+        }
+      },
+      "BroomPhysicAssetForRiderCloth": {
+        "ObjectName": "PhysicsAsset'SK_HouseBroom_Rider_Cloth_Physics'",
+        "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/HouseBroom/SK_HouseBroom_Rider_Cloth_Physics.0"
+      },
+      "FastFlightInputMagnitudeAdjustmentCurve": {
+        "EditorCurveData": {
+          "KeyHandlesToIndices": {}
+        }
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn"
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_0",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'CurveFloat'",
+    "ClassPath": "/Script/Engine.CurveFloat",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.1,
+            "Value": 0.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.4,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_1",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'CurveFloat'",
+    "ClassPath": "/Script/Engine.CurveFloat",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.36,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          },
+          {
+            "InterpMode": "RCIM_Cubic",
+            "TangentMode": "RCTM_User",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.6,
+            "Value": 0.0,
+            "ArriveTangent": -9.653824,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": -9.653875,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "CurveFloat",
+    "Name": "CurveFloat_2",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'CurveFloat'",
+    "ClassPath": "/Script/Engine.CurveFloat",
+    "Properties": {
+      "FloatCurve": {
+        "Keys": [
+          {
+            "InterpMode": "RCIM_Linear",
+            "TangentMode": "RCTM_Auto",
+            "TangentWeightMode": "RCTWM_WeightedNone",
+            "Time": 0.48499998,
+            "Value": 1.0,
+            "ArriveTangent": 0.0,
+            "ArriveTangentWeight": 0.0,
+            "LeaveTangent": 0.0,
+            "LeaveTangentWeight": 0.0
+          }
+        ]
+      },
+      "bIsEventCurve": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "ClassPath": "/Script/Engine.SceneComponent"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_FlyingBroomProp_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.14"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_FlyingBroomProp_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.16"
+        }
+      ],
+      "VariableGuid": "4E5D861A-42F680CF-35B664B5-9B598693",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_18",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'BP_FlyingBroomProp_C:SkeletalMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.18"
+      },
+      "VariableGuid": "44F730FD-471C0E56-D0D72A96-BED59421",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "ClassPath": "/Script/Engine.SimpleConstructionScript",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_FlyingBroomProp_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.15"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_FlyingBroomProp_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.15"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_FlyingBroomProp_C:SimpleConstructionScript_0.SCS_Node_18'",
+          "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.16"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_FlyingBroomProp_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.15"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "ClassPath": "/Script/Engine.SkeletalMeshComponent",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence'Broom_Fly_Idle_anm'",
+          "ObjectPath": "/Game/Animation/Props/Broom/Broom_Fly_Idle_anm.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "bDisablePostProcessBlueprint": true,
+      "bAllowClothActors": false,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_HouseBroom'",
+        "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/HouseBroom/SK_HouseBroom.3"
+      },
+      "VisibilityBasedAnimTickOption": "EVisibilityBasedAnimTickOption::AlwaysTickPoseAndRefreshBones",
+      "OverrideMaterials": [
+        null,
+        null,
+        null
+      ],
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Spell",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Station",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WebbedObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Station_Static",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 18.7,
+        "Z": -3.5
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -90.0
+      }
+    }
+  },
+  {
+    "Type": "TimelineTemplate",
+    "Name": "DismountTimeline_Template",
+    "Outer": "BP_FlyingBroomProp_C",
+    "Class": "UScriptClass'TimelineTemplate'",
+    "ClassPath": "/Script/Engine.TimelineTemplate",
+    "Properties": {
+      "TimelineLength": 0.6,
+      "EventTracks": [
+        {
+          "FunctionName": "DismountTimeline__StartFadeOut__EventFunc",
+          "CurveKeys": {
+            "ObjectName": "CurveFloat'BP_FlyingBroomProp_C:CurveFloat_2'",
+            "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.13"
+          },
+          "TrackName": "StartFadeOut",
+          "bIsExternalCurve": false
+        }
+      ],
+      "FloatTracks": [
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'BP_FlyingBroomProp_C:CurveFloat_0'",
+            "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.11"
+          },
+          "PropertyName": "DismountTimeline_ToHandAlpha_54A5A1134813F2F93F1823926DBFE5F9",
+          "TrackName": "ToHandAlpha",
+          "bIsExternalCurve": false
+        },
+        {
+          "CurveFloat": {
+            "ObjectName": "CurveFloat'BP_FlyingBroomProp_C:CurveFloat_1'",
+            "ObjectPath": "/Game/Pawn/Player/Broom/Blueprints/Brooms/BP_FlyingBroomProp.12"
+          },
+          "PropertyName": "DismountTimeline_Scale_54A5A1134813F2F93F1823926DBFE5F9",
+          "TrackName": "Scale",
+          "bIsExternalCurve": false
+        }
+      ],
+      "TimelineGuid": "54A5A113-4813F2F9-3F182392-6DBFE5F9",
+      "VariableName": "DismountTimeline",
+      "DirectionPropertyName": "DismountTimeline__Direction_54A5A1134813F2F93F1823926DBFE5F9",
+      "UpdateFunctionName": "DismountTimeline__UpdateFunc",
+      "FinishedFunctionName": "DismountTimeline__FinishedFunc"
+    }
+  }
+]

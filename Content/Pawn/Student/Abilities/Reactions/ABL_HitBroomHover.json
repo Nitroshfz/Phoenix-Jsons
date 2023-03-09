@@ -1,0 +1,713 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_HitBroomHover",
+    "Outer": "ABL_HitBroomHover_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_PostDialogueEvent_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityBranch",
+    "Outer": "ABL_HitBroomHover_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityBranch'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "NextAbility",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbility'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_HitBroomHover_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomCanBranchTo",
+    "Outer": "ABL_HitBroomHover_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:CustomCanBranchTo'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 1408,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetSelfActor_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetObjectStateInfo_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'ObjectStateInfo'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetHealth_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 1279395840
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_HitBroomHover_C:ExecuteUbergraph_ABL_HitBroomHover'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_HitBroomHover_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.3"
+      },
+      {
+        "ObjectName": "Function'ABL_HitBroomHover_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.2"
+      },
+      {
+        "ObjectName": "Function'ABL_HitBroomHover_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.1"
+      },
+      {
+        "ObjectName": "Function'ABL_HitBroomHover_C:ExecuteUbergraph_ABL_HitBroomHover'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_HitBroomHover": {
+        "ObjectName": "Function'ABL_HitBroomHover_C:ExecuteUbergraph_ABL_HitBroomHover'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.0"
+      },
+      "OnAbilityBranch": {
+        "ObjectName": "Function'ABL_HitBroomHover_C:OnAbilityBranch'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.1"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_HitBroomHover_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.2"
+      },
+      "CustomCanBranchTo": {
+        "ObjectName": "Function'ABL_HitBroomHover_C:CustomCanBranchTo'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.3"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_HitBroomHover_C'Default__ABL_HitBroomHover_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.5"
+    }
+  },
+  {
+    "Type": "ABL_HitBroomHover_C",
+    "Name": "Default__ABL_HitBroomHover_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.ABL_HitBroomHover_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitBroomHover_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.4"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 2.533334,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitBroomHover_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.9"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitBroomHover_C:ablInputContextTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.15"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitBroomHover_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.13"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_HitBroomHover_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.14"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_HitBroomHover_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_HitBroomHover_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.10"
+        },
+        {
+          "ObjectName": "AblCamShakeTask'Default__ABL_HitBroomHover_C:AblCamShakeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.12"
+        },
+        {
+          "ObjectName": "AblPhysicalReactionBlendBackTask'Default__ABL_HitBroomHover_C:AblPhysicalReactionBlendBackTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.16"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_HitBroomHover_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.19"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_HitBroomHover_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.17"
+        }
+      ],
+      "m_AbilityNameHash": 3435191998,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_DirectionBased",
+    "Name": "AblAnimationTagChooser_DirectionBased_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_DirectionBased'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_DirectionBased",
+    "Properties": {
+      "NumAngles": 4,
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.HitBroomHover_Fwd"
+        ],
+        [
+          "AA.AnimPlayerName.HitBroomHover_Left"
+        ],
+        [
+          "AA.AnimPlayerName.HitBroomHover_Bwd"
+        ],
+        [
+          "AA.AnimPlayerName.HitBroomHover_Right"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionIfDead",
+    "Name": "AblBranchConditionIfDead_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIfDead'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIfDead"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HitDeathBroom_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitDeathBroom.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIfDead'Default__ABL_HitBroomHover_C:AblBranchTask_0.AblBranchConditionIfDead_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.8"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 0.23333335,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_Verbose": true
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_HoverBroom_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/HoverBroom/ABL_HoverBroom_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_HitBroomHover_C:AblBranchTask_1.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.7"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblCamShakeTask",
+    "Name": "AblCamShakeTask_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblCamShakeTask'",
+    "ClassPath": "/Script/AbleCore.AblCamShakeTask",
+    "Properties": {
+      "Shake": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SpellImpact_Hitch_CamShake_C'",
+        "ObjectPath": "/Game/Data/CameraShakes/BP_SpellImpact_Hitch_CamShake.0"
+      },
+      "innerRadius": 1.0,
+      "outerRadius": 10.0,
+      "bUseActorPositionAsEpicenter": true,
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitBroomHover_C'Default__ABL_HitBroomHover_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noHeavyWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 29.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 29.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 30.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 30.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_2",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 24.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 24.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPhysicalReactionBlendBackTask",
+    "Name": "AblPhysicalReactionBlendBackTask_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblPhysicalReactionBlendBackTask'",
+    "ClassPath": "/Script/Phoenix.AblPhysicalReactionBlendBackTask",
+    "Properties": {
+      "bForcePopOutOfRagdollImmediately": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitBroomHover_C'Default__ABL_HitBroomHover_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 1.1817218
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitBroomRct_Bwd"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_DirectionBased'Default__ABL_HitBroomHover_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_DirectionBased_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.6"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.1
+      },
+      "m_PlayRate": 0.9999998,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitBroomHover_C'Default__ABL_HitBroomHover_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 10.0
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_HitBroomHover_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'incendio_impact_player_motion'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Incendio/incendio_impact_player_motion.0"
+      },
+      "bPlayerOnly": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitBroomHover_C'Default__ABL_HitBroomHover_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.5"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_HitBroomHover_C'Default__ABL_HitBroomHover_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_HitBroomHover.5"
+        }
+      }
+    }
+  }
+]

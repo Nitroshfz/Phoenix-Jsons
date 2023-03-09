@@ -1,0 +1,355 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_LeechJuice_Ingredient",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "FD63AB8343F133F67384569D2D8A7BA1",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x1267B"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_LeechJuice_Ingredient",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x126DF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_LeechJuice_Ingredient",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Potion_LeechJuice'",
+            "ObjectPath": "/Game/Gameplay/InventoryObjects/PotionIngredients/Materials/MI_Potion_LeechJuice.0"
+          },
+          "MaterialSlotName": "MI_Potion_LeechJuice",
+          "ImportedMaterialSlotName": "MI_Potion_LeechJuice",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 35.809612,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Potion_LeechJuice_Glass'",
+            "ObjectPath": "/Game/Gameplay/InventoryObjects/PotionIngredients/Materials/MI_Potion_LeechJuice_Glass.0"
+          },
+          "MaterialSlotName": "MI_Potion_LeechJuice_Glass",
+          "ImportedMaterialSlotName": "MI_Potion_LeechJuice_Glass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 31.580564,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 34.666634,
+      "LightMapResolution": 64,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket'SM_LeechJuice_Ingredient:StaticMeshSocket_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_LeechJuice_Ingredient.3"
+        }
+      ],
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.126193,
+          "Y": -5.675317,
+          "Z": 0.2109952
+        },
+        "BoxExtent": {
+          "X": 4.162592,
+          "Y": 6.2713737,
+          "Z": 2.7953382
+        },
+        "SphereRadius": 7.2408123
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_LeechJuice_Ingredient:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_LeechJuice_Ingredient.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_LeechJuice_Ingredient:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_LeechJuice_Ingredient.1"
+    },
+    "LightingGuid": "28644CBE-40B4964E-A958CA8B-7C485744",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 3669,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 2840,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 11007,
+              "NumTriangles": 310,
+              "MinVertexIndex": 2841,
+              "MaxVertexIndex": 3060,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 3061
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 3061,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 852,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 860,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 2556,
+              "NumTriangles": 142,
+              "MinVertexIndex": 861,
+              "MaxVertexIndex": 979,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.9768667,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 980
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 980,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 192,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 289,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 576,
+              "NumTriangles": 56,
+              "MinVertexIndex": 290,
+              "MaxVertexIndex": 345,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 2.8593163,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 346
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 346,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 36,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 51,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 108,
+              "NumTriangles": 26,
+              "MinVertexIndex": 52,
+              "MaxVertexIndex": 86,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 6.1300945,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 87
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 87,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 1.126193,
+          "Y": -5.675317,
+          "Z": 0.2109952
+        },
+        "BoxExtent": {
+          "X": 4.162592,
+          "Y": 6.2713737,
+          "Z": 2.7953382
+        },
+        "SphereRadius": 7.2408123
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.27996135,
+        0.08499034,
+        0.03624758,
+        0.024061896,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "SM_LeechJuice_Ingredient",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "ClassPath": "/Script/Engine.StaticMeshSocket",
+    "Properties": {
+      "SocketName": "Pour",
+      "RelativeLocation": {
+        "X": -2.7456326,
+        "Y": -7.874431,
+        "Z": 9.536743E-06
+      }
+    }
+  }
+]

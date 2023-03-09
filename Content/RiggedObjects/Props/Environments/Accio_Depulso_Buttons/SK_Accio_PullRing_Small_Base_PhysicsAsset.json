@@ -1,0 +1,252 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Accio_PullRing_Small_Base_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Accio_PullRing_Small_Base_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Environments/Accio_Depulso_Buttons/SK_Accio_PullRing_Small_Base_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Accio_PullRing_Small_Base_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Environments/Accio_Depulso_Buttons/SK_Accio_PullRing_Small_Base_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Accio_PullRing_Small_Base_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Environments/Accio_Depulso_Buttons/SK_Accio_PullRing_Small_Base_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Accio_PullRing_Small_Base_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Environments/Accio_Depulso_Buttons/SK_Accio_PullRing_Small_Base_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Accio_PullRing_Small_Base_PhysicsAsset:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Props/Environments/Accio_Depulso_Buttons/SK_Accio_PullRing_Small_Base_PhysicsAsset.2"
+        }
+      ],
+      "SolverIterations": {
+        "SolverIterations": 50,
+        "JointIterations": 50,
+        "CollisionIterations": 50,
+        "SolverPushOutIterations": 50,
+        "JointPushOutIterations": 50,
+        "CollisionPushOutIterations": 50
+      },
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Accio_PullRing_Small_Base_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint_0",
+        "ConstraintBone1": "pullRing",
+        "ConstraintBone2": "root",
+        "Pos1": {
+          "X": 0.0,
+          "Y": 4.768153E-07,
+          "Z": 4.7683702E-07
+        },
+        "SecAxis1": {
+          "X": 0.0,
+          "Y": -0.009584546,
+          "Z": 0.99995404
+        },
+        "Pos2": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 6.0
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": -0.9999542,
+          "Z": -0.009593258
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 100.0,
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_Accio_PullRing_Small_Base_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "UserConstraint",
+        "ConstraintBone1": "handle",
+        "ConstraintBone2": "pullRing",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 26.91309,
+          "Z": -0.016853334
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Accio_PullRing_Small_Base_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 22.246529,
+            "Y": 21.54985,
+            "Z": 2.6201768,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "888E147948DC748EB166F3907093B3BC"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Accio_PullRing_Small_Base_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -0.00011750497,
+              "Y": 19.042137,
+              "Z": -0.016835794
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.999954,
+              "Roll": 0.0
+            },
+            "X": 29.282625,
+            "Y": 32.47361,
+            "Z": 4.9311705,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ],
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.14233626,
+              "Y": -0.009840716,
+              "Z": -0.017066669
+            },
+            "Rotation": {
+              "Pitch": -0.00031418868,
+              "Yaw": -89.421265,
+              "Roll": -89.99982
+            },
+            "Radius": 4.499199,
+            "Length": 4.4310927,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "AngularDamping": 1.0
+      },
+      "BoneName": "pullRing",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "33B9615044AF7954E64891BA1FD470D0"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Accio_PullRing_Small_Base_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 7.5,
+            "Y": 7.5,
+            "Z": 7.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": false,
+            "CollisionEnabled": "ECollisionEnabled::NoCollision"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "MassInKgOverride": 0.001,
+        "bOverrideMass": true
+      },
+      "BoneName": "handle",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "79A2A63D45AD5BE4E6FBCBAB06F63092"
+  }
+]

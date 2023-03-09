@@ -1,0 +1,259 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SubSonic_WandLink_KillBystander_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.7"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'MunitionType_Subsonic'",
+      "ObjectPath": "/Script/Munitions"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "P_Stupify_3dProj",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SubSonic_WandLink_KillBystander_C'Default__BP_SubSonic_WandLink_KillBystander_C'",
+      "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.1"
+    }
+  },
+  {
+    "Type": "BP_SubSonic_WandLink_KillBystander_C",
+    "Name": "Default__BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.BP_SubSonic_WandLink_KillBystander_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BP_SubSonic_WandLink_KillBystander_C'",
+      "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_speed": 1000.0,
+      "m_gravity": -100.0,
+      "m_delayedDeathTime": 3.0,
+      "m_sphereComp": {
+        "ObjectName": "SphereComponent'Default__BP_SubSonic_WandLink_KillBystander_C:Collision'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.9"
+      },
+      "m_meshComp": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_SubSonic_WandLink_KillBystander_C:Mesh'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.8"
+      },
+      "ProjectileMovementComponent": {
+        "ObjectName": "MunitionMovementComponent'Default__BP_SubSonic_WandLink_KillBystander_C:ProjectileMovementComponent'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.2"
+      },
+      "m_damage": 30000.0,
+      "m_minLifeTime": 1.0,
+      "m_maxLifeTime": 1.0,
+      "MunitionImpactTags": [
+        "IA.ImpactType.Crucio"
+      ],
+      "MunitionDataAssets": [
+        {
+          "ObjectName": "InteractionArchitectAsset'IDA_Crucio'",
+          "ObjectPath": "/Game/Data/InteractionArchitect/Reactions/UnrealAssets/IDA_Crucio.0"
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__BP_SubSonic_WandLink_KillBystander_C:Collision'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.9"
+      }
+    }
+  },
+  {
+    "Type": "MunitionMovementComponent",
+    "Name": "ProjectileMovementComponent",
+    "Outer": "Default__BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'MunitionMovementComponent'",
+    "ClassPath": "/Script/Munitions.MunitionMovementComponent",
+    "Properties": {
+      "bIsHomingProjectile": true,
+      "HomingAccelerationMagnitude": 40000.0
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_Stupify_3dProj_GEN_VARIABLE",
+    "Outer": "BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "ClassPath": "/Script/Engine.ParticleSystemComponent",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'VFX_P_GoblinWarlock_Proj_SM'",
+        "ObjectPath": "/Game/VFX/Enemies/Goblin_Warlock/VFX_P_GoblinWarlock_Proj_SM.171"
+      },
+      "WarmupTime": 60.0,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "ClassPath": "/Script/Engine.SceneComponent"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SubSonic_WandLink_KillBystander_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.4"
+      },
+      "VariableGuid": "6D392DC8-470FA009-1BB3BA93-2F3F35E8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'BP_SubSonic_WandLink_KillBystander_C:P_Stupify_3dProj_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.3"
+      },
+      "ParentComponentOrVariableName": "Collision",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "373AAB4E-459141DC-EC61E0BD-C4442C07",
+      "InternalVariableName": "P_Stupify_3dProj"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "ClassPath": "/Script/Engine.SimpleConstructionScript",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SubSonic_WandLink_KillBystander_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SubSonic_WandLink_KillBystander_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SubSonic_WandLink_KillBystander_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "Mesh",
+    "Outer": "Default__BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "ClassPath": "/Script/Engine.SkeletalMeshComponent",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__BP_SubSonic_WandLink_KillBystander_C:Collision'",
+        "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.9"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Collision",
+    "Outer": "Default__BP_SubSonic_WandLink_KillBystander_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "ClassPath": "/Script/Engine.SphereComponent",
+    "Properties": {
+      "SphereRadius": 5.0,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel3",
+        "CollisionProfileName": "Spell",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "ShallowWater",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Spell",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "DeepWater",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "OnComponentBeginOverlap": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_SubSonic_WandLink_KillBystander_C'Default__BP_SubSonic_WandLink_KillBystander_C'",
+              "ObjectPath": "/Game/Pawn/Player/WandLink/BP_SubSonic_WandLink_KillBystander.1"
+            },
+            "FunctionName": "BeginOverlap"
+          }
+        ]
+      }
+    }
+  }
+]

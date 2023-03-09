@@ -1,0 +1,369 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_DeathlyHallows_Remove_C'Default__ABL_DeathlyHallows_Remove_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.1"
+    }
+  },
+  {
+    "Type": "ABL_DeathlyHallows_Remove_C",
+    "Name": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.ABL_DeathlyHallows_Remove_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_DeathlyHallows_Remove_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 13.374962,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.13"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_DeathlyHallows_Remove_C:ablInputContextTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DeathlyHallows_Remove_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.9"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DeathlyHallows_Remove_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.8"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_DeathlyHallows_Remove_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DeathlyHallows_Remove_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.7"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DeathlyHallows_Remove_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.12"
+        }
+      ],
+      "m_AbilityNameHash": 4042200471,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationModifier_WandCastAim",
+    "Name": "AblAnimationModifier_WandCastAim_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationModifier_WandCastAim'",
+    "ClassPath": "/Script/Phoenix.AblAnimationModifier_WandCastAim"
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_4",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 1.5852958,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.13"
+        }
+      },
+      "m_EventName": "MakeInterruptible"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_DeathlyHallows_Remove_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.267
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_DeathlyHallows_Remove_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DeathlyHallows_Remove_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DeathlyHallows_Remove_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_DeathlyHallows_Remove_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.6"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DeathlyHallows_Remove_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_DeathlyHallows_Remove_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_2",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noHeavyWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_DeathlyHallows_Remove_C:AblAnimNotifyEvent_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_DeathlyHallows_Remove_C:AblAnimNotifyEvent_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 2.7,
+        "RelativeToObject": {
+          "ObjectName": "ABL_DeathlyHallows_Remove_C'Default__ABL_DeathlyHallows_Remove_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.1"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_DeathlyHallows_Remove_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.DeathlyHallows_Remove",
+        "AA.Group.Cloak",
+        "AA.Foot.LF"
+      ],
+      "m_AnimationModifiers": [
+        {
+          "ObjectName": "AblAnimationModifier_WandCastAim'Default__ABL_DeathlyHallows_Remove_C:AblPlayAnimationArchitectTask_0.AblAnimationModifier_WandCastAim_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.2"
+        }
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.15
+      },
+      "m_PlayRate": 1.0000002,
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_DeathlyHallows_Remove_C'Default__ABL_DeathlyHallows_Remove_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Remove.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.3333333
+      }
+    }
+  }
+]

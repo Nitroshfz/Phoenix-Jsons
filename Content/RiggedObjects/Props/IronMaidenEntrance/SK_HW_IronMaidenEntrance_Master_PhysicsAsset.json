@@ -1,0 +1,218 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_HW_IronMaidenEntrance_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_IronMaidenEntrance_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/IronMaidenEntrance/SK_HW_IronMaidenEntrance_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_IronMaidenEntrance_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/IronMaidenEntrance/SK_HW_IronMaidenEntrance_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_IronMaidenEntrance_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Props/IronMaidenEntrance/SK_HW_IronMaidenEntrance_Master_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_IronMaidenEntrance_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/IronMaidenEntrance/SK_HW_IronMaidenEntrance_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_IronMaidenEntrance_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/IronMaidenEntrance/SK_HW_IronMaidenEntrance_Master_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_HW_IronMaidenEntrance_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "door_right",
+        "ConstraintBone1": "door_right",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": -51.78784,
+          "Y": -105.25155,
+          "Z": 0.26397997
+        },
+        "PriAxis2": {
+          "X": 0.031001031,
+          "Y": -0.063336715,
+          "Z": 0.9975106
+        },
+        "SecAxis2": {
+          "X": -0.05940003,
+          "Y": 0.99610966,
+          "Z": 0.065093815
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_HW_IronMaidenEntrance_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "door_left",
+        "ConstraintBone1": "door_left",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": 51.786922,
+          "Y": -105.252,
+          "Z": 0.26398
+        },
+        "PriAxis2": {
+          "X": -0.99813485,
+          "Y": 0.061048537,
+          "Z": 0.0
+        },
+        "SecAxis2": {
+          "X": -0.061048537,
+          "Y": -0.99813485,
+          "Z": 0.0
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_HW_IronMaidenEntrance_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.031247579,
+              "Y": -141.71432,
+              "Z": 3.9414139
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.013329123,
+              "Roll": -82.10803
+            },
+            "Radius": 66.74087,
+            "Length": 149.91066,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "1B621D834415C881C35673A99B7BAB2C"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_HW_IronMaidenEntrance_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 25.994064,
+              "Y": 9.5715275,
+              "Z": -26.599226
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 1.8531828,
+              "Roll": -89.136505
+            },
+            "Radius": 30.527802,
+            "Length": 97.54706,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "door_right",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "85FD03F64E7F63A6B5A03ABBC831EAFE"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_HW_IronMaidenEntrance_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 27.191437,
+              "Y": -7.871483,
+              "Z": 25.791943
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.91506803,
+              "Roll": -88.12943
+            },
+            "Radius": 29.741795,
+            "Length": 97.54043,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "door_left",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "6FEACDD341D721C50C0F3FB701B12D65"
+  }
+]

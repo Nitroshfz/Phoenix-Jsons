@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Transform_QuickCancel_Partial_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Transform_QuickCancel_Partial_C'Default__ABL_Transform_QuickCancel_Partial_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.1"
+    }
+  },
+  {
+    "Type": "ABL_Transform_QuickCancel_Partial_C",
+    "Name": "Default__ABL_Transform_QuickCancel_Partial_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.ABL_Transform_QuickCancel_Partial_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Transform_QuickCancel_Partial_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Transform_QuickCancel_Partial_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.3"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Transform_QuickCancel_Partial_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.2"
+        }
+      ],
+      "m_AbilityNameHash": 3916119311,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_Transform_QuickCancel_Partial_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bRemovable": true,
+      "m_StartTime": {
+        "Offset": 0.093631215,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Transform_QuickCancel_Partial_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.4"
+        }
+      },
+      "m_EventName": "CancelObject"
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_Transform_QuickCancel_Partial_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimCompletePartial"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Transform_QuickCancel_Partial_C'Default__ABL_Transform_QuickCancel_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Transform_QuickCancel_Partial_C'Default__ABL_Transform_QuickCancel_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Transform_QuickCancel_Partial_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Conjure_Object_Cancel"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 1.0000002,
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_ConjuringObjectLoop_BlendWeights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_ConjuringObjectLoop_BlendWeights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Transform_QuickCancel_Partial_C'Default__ABL_Transform_QuickCancel_Partial_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Conjuring/ABL_Transform_QuickCancel_Partial.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.3333333
+      }
+    }
+  }
+]

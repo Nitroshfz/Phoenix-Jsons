@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Gargoyle_A_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Gargoyle_A_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Gargoyle/SK_Gargoyle_A_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Gargoyle_A_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Gargoyle/SK_Gargoyle_A_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Gargoyle_A_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Gargoyle/SK_Gargoyle_A_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Gargoyle_A_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "wrist",
+        "ConstraintBone1": "wrist",
+        "ConstraintBone2": "root",
+        "Pos2": {
+          "X": 6.692094,
+          "Y": -46.39054,
+          "Z": 51.37218
+        },
+        "PriAxis2": {
+          "X": -0.3023411,
+          "Y": 0.18220052,
+          "Z": 0.9356243
+        },
+        "SecAxis2": {
+          "X": 0.21963069,
+          "Y": 0.9684663,
+          "Z": -0.11762377
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Gargoyle_A_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.06864117,
+              "Y": -53.735832,
+              "Z": 21.468098
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.3316608,
+              "Roll": -49.269867
+            },
+            "Radius": 40.286736,
+            "Length": 55.33501,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "99105CAD447A1AD8AE1C42A44EA55CD9"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Gargoyle_A_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 7.8275967,
+              "Y": -3.4053073,
+              "Z": -1.4033399
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.43406,
+              "Roll": -61.40692
+            },
+            "Radius": 6.7861214,
+            "Length": 11.1693535,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "wrist",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "458AE09A4B12A4DA7B35D3B6FE6DC259"
+  }
+]

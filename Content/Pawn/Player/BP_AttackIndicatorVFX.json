@@ -1,0 +1,719 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_AttackIndicatorVFX",
+    "Outer": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bIsParryIndicator",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bIsUnblockableIndicator",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_InFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PokeNiagaraFXBool",
+        "Flags": 1,
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "Class'PokeNiagaraFXBool'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_InParraybleFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_InPerfectParryFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bIsParryIndicator_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_bIsUnblockableIndicator_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_InFX2Handle_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_InEstimatedTime",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 2
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FXPokeNiagaraBool_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_PokeNiagaraFXFloat",
+        "Flags": 1,
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "Class'PokeNiagaraFXFloat'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_FXPokeNiagaraFloat_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveIndicatorStop",
+    "Outer": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Player_AttackIndicator:ReceiveIndicatorStop'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsParryIndicator",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsUnblockableIndicator",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveIndicatorStart",
+    "Outer": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Player_AttackIndicator:ReceiveIndicatorStart'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsParryIndicator",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "bIsUnblockableIndicator",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "InEstimatedTime",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 150
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivePerfectParry",
+    "Outer": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'Player_AttackIndicator:ReceivePerfectParry'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "InParraybleFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "InPerfectParryFX2Handle",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "Struct": {
+          "ObjectName": "Class'MultiFX2Handle'",
+          "ObjectPath": "/Script/MultiFX2"
+        }
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_AttackIndicatorVFX_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.24"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ExecuteUbergraph_BP_AttackIndicatorVFX'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Player_AttackIndicator'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ReceivePerfectParry'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.3"
+      },
+      {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ReceiveIndicatorStart'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.2"
+      },
+      {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ReceiveIndicatorStop'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.1"
+      },
+      {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ExecuteUbergraph_BP_AttackIndicatorVFX'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Niagara Component",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 589829,
+        "PropertyClass": {
+          "ObjectName": "Class'NiagaraComponent'",
+          "ObjectPath": "/Script/Niagara"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AttackingEnemy",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_AttackIndicatorVFX": {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ExecuteUbergraph_BP_AttackIndicatorVFX'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.0"
+      },
+      "ReceiveIndicatorStop": {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ReceiveIndicatorStop'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.1"
+      },
+      "ReceiveIndicatorStart": {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ReceiveIndicatorStart'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.2"
+      },
+      "ReceivePerfectParry": {
+        "ObjectName": "Function'BP_AttackIndicatorVFX_C:ReceivePerfectParry'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.3"
+      }
+    },
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_AttackIndicatorVFX_C'Default__BP_AttackIndicatorVFX_C'",
+      "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.5"
+    }
+  },
+  {
+    "Type": "BP_AttackIndicatorVFX_C",
+    "Name": "Default__BP_AttackIndicatorVFX_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Player/BP_AttackIndicatorVFX.BP_AttackIndicatorVFX_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AttackIndicatorVFX_C'",
+      "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.4"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParryableBeamFX2": [
+        {
+          "ObjectName": "MultiFX2_NiagraVfx'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_4'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.20"
+        },
+        {
+          "ObjectName": "MultiFX2_NiagraVfx'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_1'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.19"
+        }
+      ],
+      "UnblockableBeamFX2": [
+        {
+          "ObjectName": "MultiFX2_NiagraVfx'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_5'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.21"
+        },
+        {
+          "ObjectName": "MultiFX2_NiagraVfx'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.18"
+        }
+      ],
+      "bBeamGoesAttackerToTarget": true
+    }
+  },
+  {
+    "Type": "FXAdjustments_MakeInstigatorTheTarget",
+    "Name": "FXAdjustments_MakeInstigatorTheTarget_0",
+    "Outer": "MultiFX2_NiagraVfx_0",
+    "Class": "UScriptClass'FXAdjustments_MakeInstigatorTheTarget'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_MakeInstigatorTheTarget"
+  },
+  {
+    "Type": "FXAdjustments_MakeInstigatorTheTarget",
+    "Name": "FXAdjustments_MakeInstigatorTheTarget_0",
+    "Outer": "MultiFX2_NiagraVfx_1",
+    "Class": "UScriptClass'FXAdjustments_MakeInstigatorTheTarget'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_MakeInstigatorTheTarget"
+  },
+  {
+    "Type": "FXAdjustments_TargetCharacter",
+    "Name": "FXAdjustments_TargetCharacter_0",
+    "Outer": "MultiFX2_NiagraVfx_4",
+    "Class": "UScriptClass'FXAdjustments_TargetCharacter'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_TargetCharacter"
+  },
+  {
+    "Type": "FXAdjustments_TargetCharacter",
+    "Name": "FXAdjustments_TargetCharacter_0",
+    "Outer": "MultiFX2_NiagraVfx_5",
+    "Class": "UScriptClass'FXAdjustments_TargetCharacter'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_TargetCharacter"
+  },
+  {
+    "Type": "FXAdjustments_UseBone",
+    "Name": "FXAdjustments_UseBone_0",
+    "Outer": "MultiFX2_NiagraVfx_0",
+    "Class": "UScriptClass'FXAdjustments_UseBone'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_UseBone",
+    "Properties": {
+      "BoneNames": [
+        "Head"
+      ],
+      "bRotation": false
+    }
+  },
+  {
+    "Type": "FXAdjustments_UseBone",
+    "Name": "FXAdjustments_UseBone_0",
+    "Outer": "MultiFX2_NiagraVfx_1",
+    "Class": "UScriptClass'FXAdjustments_UseBone'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_UseBone",
+    "Properties": {
+      "BoneNames": [
+        "Head"
+      ],
+      "bRotation": false
+    }
+  },
+  {
+    "Type": "FXAdjustments_UseBone",
+    "Name": "FXAdjustments_UseBone_0",
+    "Outer": "MultiFX2_NiagraVfx_4",
+    "Class": "UScriptClass'FXAdjustments_UseBone'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_UseBone",
+    "Properties": {
+      "BoneNames": [
+        "Head"
+      ]
+    }
+  },
+  {
+    "Type": "FXAdjustments_UseBone",
+    "Name": "FXAdjustments_UseBone_0",
+    "Outer": "MultiFX2_NiagraVfx_5",
+    "Class": "UScriptClass'FXAdjustments_UseBone'",
+    "ClassPath": "/Script/Phoenix.FXAdjustments_UseBone",
+    "Properties": {
+      "BoneNames": [
+        "Head"
+      ]
+    }
+  },
+  {
+    "Type": "MultiFX2_NiagraStandardSpawnInfo",
+    "Name": "UMultiFX2_NiagraStandardSpawnInfo",
+    "Outer": "MultiFX2_NiagraVfx_0",
+    "Class": "UScriptClass'MultiFX2_NiagraStandardSpawnInfo'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraStandardSpawnInfo"
+  },
+  {
+    "Type": "MultiFX2_NiagraStandardSpawnInfo",
+    "Name": "UMultiFX2_NiagraStandardSpawnInfo",
+    "Outer": "MultiFX2_NiagraVfx_1",
+    "Class": "UScriptClass'MultiFX2_NiagraStandardSpawnInfo'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraStandardSpawnInfo"
+  },
+  {
+    "Type": "MultiFX2_NiagraStandardSpawnInfo",
+    "Name": "UMultiFX2_NiagraStandardSpawnInfo",
+    "Outer": "MultiFX2_NiagraVfx_4",
+    "Class": "UScriptClass'MultiFX2_NiagraStandardSpawnInfo'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraStandardSpawnInfo"
+  },
+  {
+    "Type": "MultiFX2_NiagraStandardSpawnInfo",
+    "Name": "UMultiFX2_NiagraStandardSpawnInfo",
+    "Outer": "MultiFX2_NiagraVfx_5",
+    "Class": "UScriptClass'MultiFX2_NiagraStandardSpawnInfo'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraStandardSpawnInfo"
+  },
+  {
+    "Type": "MultiFX2_NiagraVfx",
+    "Name": "MultiFX2_NiagraVfx_0",
+    "Outer": "Default__BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'MultiFX2_NiagraVfx'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraVfx",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_AttackInd_Enemy_Unblock'",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/AttackIndicatorFX/VFX_NS_AttackInd_Enemy_Unblock.17"
+      },
+      "bAttached": true,
+      "SpawnInfo": {
+        "ObjectName": "MultiFX2_NiagraStandardSpawnInfo'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_0.UMultiFX2_NiagraStandardSpawnInfo'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.14"
+      },
+      "Adjustments": [
+        {
+          "ObjectName": "FXAdjustments_MakeInstigatorTheTarget'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_0.FXAdjustments_MakeInstigatorTheTarget_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.6"
+        },
+        {
+          "ObjectName": "FXAdjustments_UseBone'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_0.FXAdjustments_UseBone_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MultiFX2_NiagraVfx",
+    "Name": "MultiFX2_NiagraVfx_1",
+    "Outer": "Default__BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'MultiFX2_NiagraVfx'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraVfx",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_AttackInd_Enemy'",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/AttackIndicatorFX/VFX_NS_AttackInd_Enemy.17"
+      },
+      "bAttached": true,
+      "SpawnInfo": {
+        "ObjectName": "MultiFX2_NiagraStandardSpawnInfo'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_1.UMultiFX2_NiagraStandardSpawnInfo'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.15"
+      },
+      "Adjustments": [
+        {
+          "ObjectName": "FXAdjustments_MakeInstigatorTheTarget'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_1.FXAdjustments_MakeInstigatorTheTarget_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.7"
+        },
+        {
+          "ObjectName": "FXAdjustments_UseBone'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_1.FXAdjustments_UseBone_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MultiFX2_NiagraVfx",
+    "Name": "MultiFX2_NiagraVfx_4",
+    "Outer": "Default__BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'MultiFX2_NiagraVfx'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraVfx",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_AttackInd_v03'",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/AttackIndicatorFX/VFX_NS_AttackInd_v03.13"
+      },
+      "bAttached": true,
+      "SpawnInfo": {
+        "ObjectName": "MultiFX2_NiagraStandardSpawnInfo'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_4.UMultiFX2_NiagraStandardSpawnInfo'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.16"
+      },
+      "Adjustments": [
+        {
+          "ObjectName": "FXAdjustments_TargetCharacter'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_4.FXAdjustments_TargetCharacter_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.8"
+        },
+        {
+          "ObjectName": "FXAdjustments_UseBone'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_4.FXAdjustments_UseBone_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MultiFX2_NiagraVfx",
+    "Name": "MultiFX2_NiagraVfx_5",
+    "Outer": "Default__BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'MultiFX2_NiagraVfx'",
+    "ClassPath": "/Script/Phoenix.MultiFX2_NiagraVfx",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_AttackInd_Unblock_v03'",
+        "ObjectPath": "/Game/VFX/Niagara/MechanicsFX/AttackIndicatorFX/VFX_NS_AttackInd_Unblock_v03.28"
+      },
+      "bAttached": true,
+      "SpawnInfo": {
+        "ObjectName": "MultiFX2_NiagraStandardSpawnInfo'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_5.UMultiFX2_NiagraStandardSpawnInfo'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.17"
+      },
+      "Adjustments": [
+        {
+          "ObjectName": "FXAdjustments_TargetCharacter'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_5.FXAdjustments_TargetCharacter_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.9"
+        },
+        {
+          "ObjectName": "FXAdjustments_UseBone'Default__BP_AttackIndicatorVFX_C:MultiFX2_NiagraVfx_5.FXAdjustments_UseBone_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "ClassPath": "/Script/Engine.SceneComponent"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_AttackIndicatorVFX_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.22"
+      },
+      "VariableGuid": "9CEBF86D-402A4D02-0EDAD1B1-E375E893",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_AttackIndicatorVFX_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "ClassPath": "/Script/Engine.SimpleConstructionScript",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AttackIndicatorVFX_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.23"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_AttackIndicatorVFX_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_AttackIndicatorVFX_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_AttackIndicatorVFX.23"
+      }
+    }
+  }
+]

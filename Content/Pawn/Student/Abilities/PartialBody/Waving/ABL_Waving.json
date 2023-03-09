@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_Waving_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Waving_C'Default__ABL_Waving_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Waving/ABL_Waving.1"
+    }
+  },
+  {
+    "Type": "ABL_Waving_C",
+    "Name": "Default__ABL_Waving_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/Waving/ABL_Waving.ABL_Waving_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_Waving_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Waving/ABL_Waving.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.366667,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Waving_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Waving/ABL_Waving.3"
+        }
+      ],
+      "m_AbilityNameHash": 529237858
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Wave",
+    "Name": "AblAnimationTagChooser_Wave_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_Wave'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Wave",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.WaveRightHandFwd"
+        ],
+        [
+          "AA.AnimPlayerName.WaveRightHandLeft"
+        ],
+        [
+          "AA.AnimPlayerName.WaveRightHandRight"
+        ],
+        [
+          "AA.AnimPlayerName.WaveLeftHandFwd"
+        ],
+        [
+          "AA.AnimPlayerName.WaveLeftHandLeft"
+        ],
+        [
+          "AA.AnimPlayerName.WaveRightHandRight"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Waving_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.WaveLeftArmFwd"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Wave'Default__ABL_Waving_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_Wave_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Waving/ABL_Waving.2"
+      },
+      "m_AnimationModifiers": [
+        null
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_FadeOut": {
+        "BlendTime": 0.4
+      },
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_Standard",
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'DA_ABL_Waving_Filter'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Waving/DA_ABL_Waving_Filter.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Waving_C'Default__ABL_Waving_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Waving/ABL_Waving.1"
+        }
+      }
+    }
+  }
+]

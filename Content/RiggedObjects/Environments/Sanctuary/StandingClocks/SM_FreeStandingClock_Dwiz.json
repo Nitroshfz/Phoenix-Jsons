@@ -1,0 +1,315 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_2",
+    "Outer": "SM_FreeStandingClock_Dwiz",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.1748848,
+              "Y": 0.0,
+              "Z": 126.2542
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 73.58133,
+            "Y": 49.41916,
+            "Z": 252.5084,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "69779D0049AD138F5097AA87798EB50C",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0xD421"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_3",
+    "Outer": "SM_FreeStandingClock_Dwiz",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 265,
+        "SizeOnDisk": 265,
+        "OffsetInFile": "0xD485"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_FreeStandingClock_Dwiz",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Sanc_Glass_Cheap'",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Materials/Props/MI_Sanc_Glass_Cheap.0"
+          },
+          "MaterialSlotName": "M_Sanc_FreeStandingClock_Dwiz_Glass",
+          "ImportedMaterialSlotName": "M_Sanc_FreeStandingClock_Dwiz_Glass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 109.36916,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Sanc_FreeStandingClock_Dwiz'",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Materials/Props/MI_Sanc_FreeStandingClock_Dwiz.0"
+          },
+          "MaterialSlotName": "M_Sanc_FreeStandingClock_Dwiz",
+          "ImportedMaterialSlotName": "M_Sanc_FreeStandingClock_Dwiz",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 306.89792,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 295.87097,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.1748848,
+          "Y": 0.0,
+          "Z": 126.2542
+        },
+        "BoxExtent": {
+          "X": 36.790665,
+          "Y": 24.70958,
+          "Z": 126.2542
+        },
+        "SphereRadius": 133.38928
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_FreeStandingClock_Dwiz:BodySetup_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/StandingClocks/SM_FreeStandingClock_Dwiz.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_FreeStandingClock_Dwiz:NavCollision_3'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/StandingClocks/SM_FreeStandingClock_Dwiz.1"
+    },
+    "LightingGuid": "E8D9B47F-4ECAF254-4D8EF9AC-35E76DA1",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 41,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 43,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 123,
+              "NumTriangles": 2405,
+              "MinVertexIndex": 44,
+              "MaxVertexIndex": 2515,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2516
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 2516,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 14,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 17,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 42,
+              "NumTriangles": 597,
+              "MinVertexIndex": 18,
+              "MaxVertexIndex": 925,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 19.861197,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 926
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 926,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 7,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 12,
+              "NumTriangles": 73,
+              "MinVertexIndex": 8,
+              "MaxVertexIndex": 184,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 268.6814,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 185
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 185,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.1748848,
+          "Y": 0.0,
+          "Z": 126.2542
+        },
+        "BoxExtent": {
+          "X": 36.790665,
+          "Y": 24.70958,
+          "Z": 126.2542
+        },
+        "SphereRadius": 133.38928
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.17980534,
+        0.059951335,
+        0.024993917,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

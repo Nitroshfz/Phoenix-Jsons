@@ -1,0 +1,218 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_GOB_M_Sniper_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GOB_M_Sniper_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Clothing/Combined_M/Sniper/SK_GOB_M_Sniper_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GOB_M_Sniper_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Clothing/Combined_M/Sniper/SK_GOB_M_Sniper_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GOB_M_Sniper_Master_PhysicsAsset:SkeletalBodySetup_18'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Clothing/Combined_M/Sniper/SK_GOB_M_Sniper_Master_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_GOB_M_Sniper_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Clothing/Combined_M/Sniper/SK_GOB_M_Sniper_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_GOB_M_Sniper_Master_PhysicsAsset:PhysicsConstraintTemplate_17'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Clothing/Combined_M/Sniper/SK_GOB_M_Sniper_Master_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_GOB_M_Sniper_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "RightUpLeg",
+        "ConstraintBone1": "RightUpLeg",
+        "ConstraintBone2": "Hips",
+        "Pos2": {
+          "X": -10.8612,
+          "Y": 0.7194459,
+          "Z": -0.0656413
+        },
+        "PriAxis2": {
+          "X": 0.006268084,
+          "Y": -0.99814755,
+          "Z": 0.060515076
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.060516357,
+          "Z": 0.99816716
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_17",
+    "Outer": "SK_GOB_M_Sniper_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "RightSash_Dyn01",
+        "ConstraintBone1": "RightSash_Dyn01",
+        "ConstraintBone2": "Hips",
+        "Pos2": {
+          "X": -9.750995,
+          "Y": -3.85294,
+          "Z": 12.188001
+        },
+        "PriAxis2": {
+          "X": 0.006268084,
+          "Y": -0.99814755,
+          "Z": 0.060515076
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.060516357,
+          "Z": 0.99816716
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_GOB_M_Sniper_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.24849963,
+              "Y": 3.894653,
+              "Z": -0.7889213
+            },
+            "Rotation": {
+              "Pitch": -2.632867,
+              "Yaw": -90.0,
+              "Roll": 25.259575
+            },
+            "Radius": 12.135447,
+            "Length": 18.997171,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Hips",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "1AE259D243BAC962AF1C49A4A7962BA7"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_GOB_M_Sniper_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -13.249732,
+              "Y": -1.8496196,
+              "Z": -1.0057784
+            },
+            "Rotation": {
+              "Pitch": -6.983274,
+              "Yaw": 89.30002,
+              "Roll": -90.33031
+            },
+            "Radius": 11.655905,
+            "Length": 13.9390545,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "RightUpLeg",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "CFC77A5A45736EE5BD281AB589B74A78"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_18",
+    "Outer": "SK_GOB_M_Sniper_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -15.565733,
+              "Y": 0.65043736,
+              "Z": 0.65485
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": -96.286835,
+              "Roll": -88.84975
+            },
+            "Radius": 2.8153725,
+            "Length": 17.808172,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "RightSash_Dyn01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "5DDF607F4A8A084F15AA0FA27071E926"
+  }
+]

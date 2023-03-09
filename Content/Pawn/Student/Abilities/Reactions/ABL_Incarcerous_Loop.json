@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblReactionAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+    }
+  },
+  {
+    "Type": "ABL_Incarcerous_Loop_C",
+    "Name": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.ABL_Incarcerous_Loop_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Incarcerous_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incarcerous_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.10"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_Incarcerous_Loop_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.11"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Incarcerous_Loop_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Incarcerous_Loop_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.5"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Incarcerous_Loop_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.6"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incarcerous_Loop_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.8"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incarcerous_Loop_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.9"
+        },
+        {
+          "ObjectName": "AblBranchEvent'Default__ABL_Incarcerous_Loop_C:AblBranchEvent_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.4"
+        }
+      ],
+      "m_AbilityNameHash": 1032026248
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchEvent_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchEvent",
+    "Name": "AblBranchEvent_2",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblBranchEvent'",
+    "ClassPath": "/Script/AbleCore.AblBranchEvent",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Incarcerous_End_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_End.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Incarcerous_Loop_C:AblBranchEvent_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.2"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": 0.5666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+        }
+      },
+      "m_EventName": "Breakout"
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Incarcerous_Fail_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Fail.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Incarcerous_Loop_C:AblBranchTask_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.3"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": 1.0,
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Incarcerous_Loop_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.7"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Incarcerous_Loop_C:AblBTCustomActionTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.7"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "BreakoutUpperSuccess"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incarcerous_Loop_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.9"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Incarcerous_Loop_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_2",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "TurnOffBreakout"
+      },
+      "m_StartTime": {
+        "Offset": 2.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incarcerous_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.10"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 2.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Incarcerous_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.10"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+        }
+      },
+      "m_EventName": "Breakout_Failure"
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+        }
+      },
+      "m_EventName": "Breakout_Success"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.HitIncarcerousLoop"
+      ],
+      "m_PreviewAnimationTags": [
+        "AA.AnimPlayerName.HitLevitatedLoop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_Incarcerous_Loop_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_frustration'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_frustration.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Incarcerous_Loop_C'Default__ABL_Incarcerous_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_Incarcerous_Loop.1"
+        }
+      }
+    }
+  }
+]

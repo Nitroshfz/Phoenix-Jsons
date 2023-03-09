@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_PotionStationIdle_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_PotionStationIdle_C'Default__ABL_PotionStationIdle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.1"
+    }
+  },
+  {
+    "Type": "ABL_PotionStationIdle_C",
+    "Name": "Default__ABL_PotionStationIdle_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.ABL_PotionStationIdle_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_PotionStationIdle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 10.133333,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_PotionStationIdle_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.3"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_PotionStationIdle_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.2"
+        }
+      ],
+      "m_AbilityNameHash": 30594820
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_PotionStationIdle_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_PotionStationIdle_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_PotionStationIdle_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_PotionStationIdle_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.PotionStationIdle"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_PotionStationIdle_C'Default__ABL_PotionStationIdle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PotionStation/ABL_PotionStationIdle.1"
+        }
+      }
+    }
+  }
+]

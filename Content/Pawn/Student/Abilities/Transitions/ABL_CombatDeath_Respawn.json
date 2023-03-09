@@ -1,0 +1,388 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_CombatDeath_Respawn_C'Default__ABL_CombatDeath_Respawn_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.1"
+    }
+  },
+  {
+    "Type": "ABL_CombatDeath_Respawn_C",
+    "Name": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.ABL_CombatDeath_Respawn_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatDeath_Respawn_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 8.53,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CombatDeath_Respawn_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_CombatDeath_Respawn_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.9"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_CombatDeath_Respawn_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.6"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_CombatDeath_Respawn_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_CombatDeath_Respawn_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_CombatDeath_Respawn_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.8"
+        },
+        {
+          "ObjectName": "AblCameraStackAnimationTask'Default__ABL_CombatDeath_Respawn_C:AblCameraStackAnimationTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.10"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_CombatDeath_Respawn_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.2"
+        },
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_CombatDeath_Respawn_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.12"
+        }
+      ],
+      "m_AbilityNameHash": 739460139,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 1.6754384,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CombatDeath_Respawn_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.13"
+        }
+      },
+      "m_EventName": "MakeInterruptible"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_CombatIdle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_CombatIdle.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_CombatDeath_Respawn_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CombatDeath_Respawn_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CombatDeath_Respawn_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_CombatDeath_Respawn_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_CombatDeath_Respawn_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_CombatDeath_Respawn_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_CombatDeath_Respawn_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_CombatDeath_Respawn_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_CombatDeath_Respawn_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CombatDeath_Respawn_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CombatDeath_Respawn_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblCameraStackAnimationTask",
+    "Name": "AblCameraStackAnimationTask_0",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblCameraStackAnimationTask'",
+    "ClassPath": "/Script/Phoenix.AblCameraStackAnimationTask",
+    "Properties": {
+      "AnimSequences": [
+        {
+          "ObjectName": "AnimSequence'Cam_Spawn_Dungeon_Enter_anm'",
+          "ObjectPath": "/Game/Animation/Cinematics/Vignette/Avatar/Cam_Spawn_Dungeon_Enter_anm.0"
+        }
+      ],
+      "BlendInDuration": 0.0,
+      "BlendOutDuration": 4.0,
+      "CrossBlendTimeOverlap": 3.2,
+      "AnimData": {
+        "EyeBoneName": "cam_socket",
+        "FocusDistanceCurveName": "CurrentFocusDistance",
+        "ApertureCurveName": "CurrentAperture",
+        "FocalLengthCurveName": "CurrentFocalLength"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_CombatDeath_Respawn_C'Default__ABL_CombatDeath_Respawn_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_CombatDeath_Respawn_C'Default__ABL_CombatDeath_Respawn_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLockOnMode",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_CombatDeath_Respawn_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.2"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_CombatDeath_Respawn_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.2"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 5.533334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_CombatDeath_Respawn_C'Default__ABL_CombatDeath_Respawn_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.1"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_CombatDeath_Respawn_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Transition_RespawnFromDeath"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.0
+      },
+      "m_BlendOut": {
+        "BlendTime": 0.0
+      },
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_Standard"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_CombatDeath_Respawn_C'Default__ABL_CombatDeath_Respawn_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Transitions/ABL_CombatDeath_Respawn.1"
+        }
+      }
+    }
+  }
+]

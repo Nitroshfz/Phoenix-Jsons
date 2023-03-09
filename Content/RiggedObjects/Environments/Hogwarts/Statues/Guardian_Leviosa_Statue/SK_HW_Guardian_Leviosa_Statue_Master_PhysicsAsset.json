@@ -1,0 +1,198 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Statues/Guardian_Leviosa_Statue/SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Statues/Guardian_Leviosa_Statue/SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Statues/Guardian_Leviosa_Statue/SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Statues/Guardian_Leviosa_Statue/SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Statues/Guardian_Leviosa_Statue/SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "statue",
+        "ConstraintBone1": "statue",
+        "ConstraintBone2": "base",
+        "Pos2": {
+          "X": 3.1927233,
+          "Y": -40.238853,
+          "Z": 4.2573366
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "ball_top",
+        "ConstraintBone1": "ball_top",
+        "ConstraintBone2": "statue",
+        "Pos2": {
+          "X": -23.303192,
+          "Y": -165.13312,
+          "Z": 70.18994
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.044721603,
+              "Y": -21.073542,
+              "Z": -0.049788643
+            },
+            "Rotation": {
+              "Pitch": 0.00399566,
+              "Yaw": -89.99999,
+              "Roll": -90.001015
+            },
+            "Radius": 55.06354,
+            "Length": 55.081326,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "base",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "8516684C4A450083B61CD3AF5DD41155"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -1.1229669,
+              "Y": -83.98521,
+              "Z": 18.894455
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.26637602,
+              "Roll": -81.67308
+            },
+            "Radius": 52.424904,
+            "Length": 90.17983,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "statue",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "94ECDAD247FEFF86F993D0A5D0997DB7"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_HW_Guardian_Leviosa_Statue_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -3.8146973E-06,
+              "Y": -13.431067,
+              "Z": 0.016671272
+            },
+            "Rotation": {
+              "Pitch": 0.1675377,
+              "Yaw": -89.999985,
+              "Roll": -90.06028
+            },
+            "Radius": 16.213547,
+            "Length": 16.213612,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "ball_top",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "C303CE8D42746382576DCE8442C21EB1"
+  }
+]

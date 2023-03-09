@@ -1,0 +1,299 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_PoltergeistHand_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_PoltergeistHand_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_PoltergeistHand_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.6"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_PoltergeistHand_Master_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.7"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_PoltergeistHand_Master_PhysicsAsset:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_PoltergeistHand_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_PoltergeistHand_Master_PhysicsAsset:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/HauntedShop/PoltergeistHand/SK_PoltergeistHand_Master_PhysicsAsset.3"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Hand",
+        "ConstraintBone1": "Hand",
+        "ConstraintBone2": "Ring_02",
+        "Pos2": {
+          "X": 1.1015193,
+          "Y": 8.19521,
+          "Z": 14.453873
+        },
+        "PriAxis2": {
+          "X": 0.031992912,
+          "Y": 0.6754418,
+          "Z": 0.7367191
+        },
+        "SecAxis2": {
+          "X": 0.02188319,
+          "Y": -0.73739314,
+          "Z": 0.67510945
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "InHandRing",
+        "ConstraintBone1": "InHandRing",
+        "ConstraintBone2": "Hand",
+        "Pos2": {
+          "X": 3.5688124,
+          "Y": -0.41974455,
+          "Z": 1.8426002
+        },
+        "PriAxis2": {
+          "X": 0.99030215,
+          "Y": -0.10741051,
+          "Z": 0.08811699
+        },
+        "SecAxis2": {
+          "X": 0.0977521,
+          "Y": 0.9893944,
+          "Z": 0.10743951
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "InHandMiddle",
+        "ConstraintBone1": "InHandMiddle",
+        "ConstraintBone2": "Hand",
+        "Pos2": {
+          "X": 3.442187,
+          "Y": -0.47884122,
+          "Z": -0.69022053
+        },
+        "PriAxis2": {
+          "X": 0.9992029,
+          "Y": -0.036096144,
+          "Z": -0.017045833
+        },
+        "SecAxis2": {
+          "X": 0.035944898,
+          "Y": 0.99931234,
+          "Z": -0.009097678
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.49941832,
+              "Y": 3.8326378,
+              "Z": 5.258768
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 161.51515,
+              "Roll": -66.26462
+            },
+            "Radius": 8.02066,
+            "Length": 8.460962,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Ring_02",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "25C3DC034465BF0F7C54CE8563E3E650"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 14.121487,
+              "Y": -4.3195763,
+              "Z": -2.4739828
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 77.617935,
+              "Roll": -80.588455
+            },
+            "Radius": 11.784216,
+            "Length": 19.654907,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Hand",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "D9E8910E4FF930DB9AC2D99034F3980A"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 15.882568,
+              "Y": -5.151929,
+              "Z": 0.0013217926
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -117.11578,
+              "Roll": -87.73623
+            },
+            "Radius": 6.895492,
+            "Length": 13.793222,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "InHandRing",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "6CBF0CF54C4560AD6E867186778DE604"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_PoltergeistHand_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 15.872665,
+              "Y": -6.0828323,
+              "Z": 0.3727255
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 56.771385,
+              "Roll": -89.11802
+            },
+            "Radius": 7.6564384,
+            "Length": 15.689866,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "InHandMiddle",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "4CBF3DC740C455E663AAE7893CD25B71"
+  }
+]

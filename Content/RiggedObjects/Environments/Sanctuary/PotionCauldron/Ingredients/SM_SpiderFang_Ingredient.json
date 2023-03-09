@@ -1,0 +1,243 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_SpiderFang_Ingredient",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "9C20417A42DFD25A6A5B93BE146AC023",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0xE2DE"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_SpiderFang_Ingredient",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0xE342"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_SpiderFang_Ingredient",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Potion_SpiderFang'",
+            "ObjectPath": "/Game/Gameplay/InventoryObjects/PotionIngredients/Materials/MI_Potion_SpiderFang.0"
+          },
+          "MaterialSlotName": "MI_Potion_SpiderFang",
+          "ImportedMaterialSlotName": "MI_Potion_SpiderFang",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 9.669795,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 9.669795,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.0793762,
+          "Z": 0.22672129
+        },
+        "BoxExtent": {
+          "X": 1.8038974,
+          "Y": 4.0984726,
+          "Z": 2.2687974
+        },
+        "SphereRadius": 4.264463
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_SpiderFang_Ingredient:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_SpiderFang_Ingredient.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_SpiderFang_Ingredient:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_SpiderFang_Ingredient.1"
+    },
+    "LightingGuid": "D79775E3-4CF4E3A3-DDE1F08C-D74F65CE",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 2996,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 2801,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2802
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 2802,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 748,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1087,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.33476904,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1088
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1088,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 94,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 142,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 1.5763943,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 143
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 143,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.0793762,
+          "Z": 0.22672129
+        },
+        "BoxExtent": {
+          "X": 1.8038974,
+          "Y": 4.0984726,
+          "Z": 2.2687974
+        },
+        "SphereRadius": 4.264463
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.21573867,
+        0.068934664,
+        0.026116833,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

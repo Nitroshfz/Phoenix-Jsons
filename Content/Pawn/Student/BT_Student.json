@@ -1,0 +1,2008 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "BT_Student",
+    "Class": "UScriptClass'BehaviorTree'",
+    "ClassPath": "/Script/AIModule.BehaviorTree",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'BB_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BB_Student.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_0",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTS_Student_TopLevel_C'BT_Student:BTS_Student_TopLevel_C_0'",
+          "ObjectPath": "/Game/Pawn/Student/BT_Student.23"
+        }
+      ],
+      "NodeName": "Consciousness",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_1",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleWait_C'BT_Student:BTT_ScheduleWait_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.68"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Companionship",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_10",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleMissionCriticalSearch_C'BT_Student:BTT_ScheduleMissionCriticalSearch_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.38"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_4'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.63"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleMissionCriticalLoiter_C'BT_Student:BTT_ScheduleMissionCriticalLoiter_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.37"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_4'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.42"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "MissionCritical",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_11",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleMealTime_C'BT_Student:BTT_ScheduleMealTime_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.36"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_5'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.64"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleEat_C'BT_Student:BTT_ScheduleEat_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.31"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_5'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.43"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "MealTime",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_12",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleChat_C'BT_Student:BTT_ScheduleChat_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.29"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Chat",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_13",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleClass_C'BT_Student:BTT_ScheduleClass_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.30"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_7'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.66"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleAtDesk_C'BT_Student:BTT_ScheduleAtDesk_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.27"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_11'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.41"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTS_Student_Class_C'BT_Student:BTS_Student_Class_C_1'",
+          "ObjectPath": "/Game/Pawn/Student/BT_Student.20"
+        }
+      ],
+      "NodeName": "Class",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_14",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleFreeTime_C'BT_Student:BTT_ScheduleFreeTime_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.32"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_8'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.67"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleLoiter_C'BT_Student:BTT_ScheduleLoiter_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.35"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_7'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.45"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTS_Student_FreeTime_C'BT_Student:BTS_Student_FreeTime_C_0'",
+          "ObjectPath": "/Game/Pawn/Student/BT_Student.22"
+        }
+      ],
+      "NodeName": "FreeTime",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_15",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleOccupationSearch_C'BT_Student:BTT_ScheduleOccupationSearch_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.48"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_6'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.65"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleOccupationStationUse_C'BT_Student:BTT_ScheduleOccupationStationUse_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.49"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_6'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.44"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_EventOccupation_StationNeedsService_C'BT_Student:BTT_EventOccupation_StationNeedsService_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.24"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Occupation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_16",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_SchedulePerformTaskSearch_C'BT_Student:BTT_SchedulePerformTaskSearch_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.53"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_14'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.61"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_SchedulePerformTaskStationUse_C'BT_Student:BTT_SchedulePerformTaskStationUse_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.54"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_10'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.40"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_EventPerformTask_StationNeedsService_C'BT_Student:BTT_EventPerformTask_StationNeedsService_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.25"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "MoveToStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_29'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.15"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_17",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleWaitInPerformTask_C'BT_Student:BTT_ScheduleWaitInPerformTask_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.71"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Wait",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_29'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.15"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_22",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleRestSearch_C'BT_Student:BTT_ScheduleRestSearch_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.55"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_12'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.59"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleRestStationUse_C'BT_Student:BTT_ScheduleRestStationUse_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.56"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_8'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.46"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Rest",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_23",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleGuardSearch_C'BT_Student:BTT_ScheduleGuardSearch_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.33"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_11'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.58"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleGuardStationUse_C'BT_Student:BTT_ScheduleGuardStationUse_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.34"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_9'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.47"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Guard",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_24",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_SchedulePatrolSearch_C'BT_Student:BTT_SchedulePatrolSearch_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.50"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_13'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.60"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_SchedulePatrolStationUse_C'BT_Student:BTT_SchedulePatrolStationUse_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.51"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_Schedule_PatrolNoStation_C'BT_Student:BTT_Schedule_PatrolNoStation_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.26"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Patrol",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_25",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_6'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.18"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_5'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.17"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_8'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.19"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_11'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.4"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_13'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.6"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_14'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.7"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_12'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.5"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_10'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.3"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_15'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.8"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_29'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.15"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_24'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.13"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_23'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.12"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_22'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.11"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTS_Student_Curriculum_C'BT_Student:BTS_Student_Curriculum_C_2'",
+          "ObjectPath": "/Game/Pawn/Student/BT_Student.21"
+        }
+      ],
+      "NodeName": "Curriculum",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_29",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_17'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.10"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_3'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.16"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_16'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.9"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "PerformTask",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_3",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_SchedulePerformTaskMoveToLocation_C'BT_Student:BTT_SchedulePerformTaskMoveToLocation_C_0'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.52"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "MoveToLocation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_29'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.15"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_5",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleWait_C'BT_Student:BTT_ScheduleWait_C_2'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.69"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Combat",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_6",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleWait_C'BT_Student:BTT_ScheduleWait_C_3'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.70"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Singularity",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_AvaAITree",
+    "Name": "BTComposite_AvaAITree_8",
+    "Outer": "BT_Student",
+    "Class": "UScriptClass'BTComposite_AvaAITree'",
+    "ClassPath": "/Script/BTCustomRuntime.BTComposite_AvaAITree",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleBedTimeSearch_C'BT_Student:BTT_ScheduleBedTimeSearch_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.28"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleStationTransit_C'BT_Student:BTT_ScheduleStationTransit_C_2'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.62"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleSleep_C'BT_Student:BTT_ScheduleSleep_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.57"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_ScheduleNoStation_C'BT_Student:BTT_ScheduleNoStation_C_1'",
+            "ObjectPath": "/Game/Pawn/Student/BT_Student.39"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "BedTime",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTS_Student_Class_C",
+    "Name": "BTS_Student_Class_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTS_Student_Class_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/BTS_Student_Class.BTS_Student_Class_C'",
+    "ClassPath": "",
+    "Properties": {
+      "Interval": 5.0,
+      "RandomDeviation": 2.5,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_13'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.6"
+      }
+    }
+  },
+  {
+    "Type": "BTS_Student_Curriculum_C",
+    "Name": "BTS_Student_Curriculum_C_2",
+    "Outer": "BT_Student",
+    "Template": "Default__BTS_Student_Curriculum_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/BTS_Student_Curriculum.BTS_Student_Curriculum_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Curriculum",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_25'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.14"
+      }
+    }
+  },
+  {
+    "Type": "BTS_Student_FreeTime_C",
+    "Name": "BTS_Student_FreeTime_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTS_Student_FreeTime_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/BTS_Student_FreeTime.BTS_Student_FreeTime_C'",
+    "ClassPath": "",
+    "Properties": {
+      "Interval": 5.0,
+      "RandomDeviation": 2.5,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_14'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.7"
+      }
+    }
+  },
+  {
+    "Type": "BTS_Student_TopLevel_C",
+    "Name": "BTS_Student_TopLevel_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTS_Student_TopLevel_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/BTS_Student_TopLevel.BTS_Student_TopLevel_C'",
+    "ClassPath": "",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_0'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.1"
+      }
+    }
+  },
+  {
+    "Type": "BTT_EventOccupation_StationNeedsService_C",
+    "Name": "BTT_EventOccupation_StationNeedsService_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_EventOccupation_StationNeedsService_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_EventOccupation_StationNeedsService.BTT_EventOccupation_StationNeedsService_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationNeedsService",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_15'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.8"
+      }
+    }
+  },
+  {
+    "Type": "BTT_EventPerformTask_StationNeedsService_C",
+    "Name": "BTT_EventPerformTask_StationNeedsService_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_EventPerformTask_StationNeedsService_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_EventPerformTask_StationNeedsService.BTT_EventPerformTask_StationNeedsService_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationNeedsService",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_16'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.9"
+      }
+    }
+  },
+  {
+    "Type": "BTT_Schedule_PatrolNoStation_C",
+    "Name": "BTT_Schedule_PatrolNoStation_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_Schedule_PatrolNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_Schedule_PatrolNoStation.BTT_Schedule_PatrolNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_24'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.13"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleAtDesk_C",
+    "Name": "BTT_ScheduleAtDesk_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleAtDesk_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleAtDesk.BTT_ScheduleAtDesk_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "AtDesk",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_13'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.6"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleBedTimeSearch_C",
+    "Name": "BTT_ScheduleBedTimeSearch_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleBedTimeSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleBedTimeSearch.BTT_ScheduleBedTimeSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "BedTimeSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_8'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.19"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleChat_C",
+    "Name": "BTT_ScheduleChat_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleChat_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleChat.BTT_ScheduleChat_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Chat",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_12'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.5"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleClass_C",
+    "Name": "BTT_ScheduleClass_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleClass_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleClass.BTT_ScheduleClass_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "Class",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_13'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.6"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleEat_C",
+    "Name": "BTT_ScheduleEat_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleEat_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleEat.BTT_ScheduleEat_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Eat",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_11'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.4"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleFreeTime_C",
+    "Name": "BTT_ScheduleFreeTime_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleFreeTime_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleFreeTime.BTT_ScheduleFreeTime_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "FreeTime",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_14'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.7"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleGuardSearch_C",
+    "Name": "BTT_ScheduleGuardSearch_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleGuardSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleGuardSearch.BTT_ScheduleGuardSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_23'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.12"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleGuardStationUse_C",
+    "Name": "BTT_ScheduleGuardStationUse_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleGuardStationUse_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleGuardStationUse.BTT_ScheduleGuardStationUse_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationUse",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_23'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.12"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleLoiter_C",
+    "Name": "BTT_ScheduleLoiter_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleLoiter_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleLoiter.BTT_ScheduleLoiter_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Loiter",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_14'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.7"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleMealTime_C",
+    "Name": "BTT_ScheduleMealTime_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleMealTime_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleMealTime.BTT_ScheduleMealTime_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MealTime",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_11'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.4"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleMissionCriticalLoiter_C",
+    "Name": "BTT_ScheduleMissionCriticalLoiter_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleMissionCriticalLoiter_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleMissionCriticalLoiter.BTT_ScheduleMissionCriticalLoiter_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MissionCriticalLoiter",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_10'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.3"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleMissionCriticalSearch_C",
+    "Name": "BTT_ScheduleMissionCriticalSearch_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleMissionCriticalSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleMissionCriticalSearch.BTT_ScheduleMissionCriticalSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MissionCriticalSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_10'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.3"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_8'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.19"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_10",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_16'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.9"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_11",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_13'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.6"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_4",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MissionCriticalNoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_10'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.3"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_5",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_11'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.4"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_6",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_15'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.8"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_7",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_14'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.7"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_8",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_22'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.11"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleNoStation_C",
+    "Name": "BTT_ScheduleNoStation_C_9",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleNoStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleNoStation.BTT_ScheduleNoStation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "NoStation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_23'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.12"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleOccupationSearch_C",
+    "Name": "BTT_ScheduleOccupationSearch_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleOccupationSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleOccupationSearch.BTT_ScheduleOccupationSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_15'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.8"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleOccupationStationUse_C",
+    "Name": "BTT_ScheduleOccupationStationUse_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleOccupationStationUse_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleOccupationStationUse.BTT_ScheduleOccupationStationUse_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationUse",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_15'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.8"
+      }
+    }
+  },
+  {
+    "Type": "BTT_SchedulePatrolSearch_C",
+    "Name": "BTT_SchedulePatrolSearch_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_SchedulePatrolSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_SchedulePatrolSearch.BTT_SchedulePatrolSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_24'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.13"
+      }
+    }
+  },
+  {
+    "Type": "BTT_SchedulePatrolStationUse_C",
+    "Name": "BTT_SchedulePatrolStationUse_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_SchedulePatrolStationUse_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_SchedulePatrolStationUse.BTT_SchedulePatrolStationUse_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationUse",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_24'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.13"
+      }
+    }
+  },
+  {
+    "Type": "BTT_SchedulePerformTaskMoveToLocation_C",
+    "Name": "BTT_SchedulePerformTaskMoveToLocation_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_SchedulePerformTaskMoveToLocation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_SchedulePerformTaskMoveToLocation.BTT_SchedulePerformTaskMoveToLocation_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MoveToLocation",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_3'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.16"
+      }
+    }
+  },
+  {
+    "Type": "BTT_SchedulePerformTaskSearch_C",
+    "Name": "BTT_SchedulePerformTaskSearch_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_SchedulePerformTaskSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_SchedulePerformTaskSearch.BTT_SchedulePerformTaskSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_16'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.9"
+      }
+    }
+  },
+  {
+    "Type": "BTT_SchedulePerformTaskStationUse_C",
+    "Name": "BTT_SchedulePerformTaskStationUse_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_SchedulePerformTaskStationUse_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_SchedulePerformTaskStationUse.BTT_SchedulePerformTaskStationUse_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationUse",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_16'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.9"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleRestSearch_C",
+    "Name": "BTT_ScheduleRestSearch_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleRestSearch_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleRestSearch.BTT_ScheduleRestSearch_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationSearch",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_22'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.11"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleRestStationUse_C",
+    "Name": "BTT_ScheduleRestStationUse_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleRestStationUse_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleRestStationUse.BTT_ScheduleRestStationUse_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationUse",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_22'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.11"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleSleep_C",
+    "Name": "BTT_ScheduleSleep_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleSleep_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleSleep.BTT_ScheduleSleep_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Sleep",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_8'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.19"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_11",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_23'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.12"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_12",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_22'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.11"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_13",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_24'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.13"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_14",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_16'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.9"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_2",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "BedTimeTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_8'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.19"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_4",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MissionCriticalTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_10'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.3"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_5",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "MealTimeTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_11'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.4"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_6",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "StationTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_15'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.8"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_7",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "ClassTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_13'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.6"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "BTT_ScheduleStationTransit_C_8",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "FreeTimeTransit",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_14'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.7"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleWait_C",
+    "Name": "BTT_ScheduleWait_C_1",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleWait_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleWait.BTT_ScheduleWait_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "Wait",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_1'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.2"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleWait_C",
+    "Name": "BTT_ScheduleWait_C_2",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleWait_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleWait.BTT_ScheduleWait_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "Wait",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_5'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.17"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleWait_C",
+    "Name": "BTT_ScheduleWait_C_3",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleWait_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleWait.BTT_ScheduleWait_C'",
+    "ClassPath": "",
+    "Properties": {
+      "bIgnoreRestartSelf": true,
+      "NodeName": "Singularity",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_6'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.18"
+      }
+    }
+  },
+  {
+    "Type": "BTT_ScheduleWaitInPerformTask_C",
+    "Name": "BTT_ScheduleWaitInPerformTask_C_0",
+    "Outer": "BT_Student",
+    "Template": "Default__BTT_ScheduleWaitInPerformTask_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleWaitInPerformTask.BTT_ScheduleWaitInPerformTask_C'",
+    "ClassPath": "",
+    "Properties": {
+      "NodeName": "Wait",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BT_Student'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_AvaAITree'BT_Student:BTComposite_AvaAITree_17'",
+        "ObjectPath": "/Game/Pawn/Student/BT_Student.10"
+      }
+    }
+  }
+]

@@ -1,0 +1,662 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Strafe_Loop_C'Default__ABL_Strafe_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.1"
+    }
+  },
+  {
+    "Type": "ABL_Strafe_Loop_C",
+    "Name": "Default__ABL_Strafe_Loop_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.ABL_Strafe_Loop_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Strafe_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_Strafe_Loop_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.26"
+        },
+        {
+          "ObjectName": "AblUsingStairsAnimsTask'Default__ABL_Strafe_Loop_C:AblUsingStairsAnimsTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.28"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Strafe_Loop_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.19"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Strafe_Loop_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.20"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Strafe_Loop_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.23"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Strafe_Loop_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.24"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Strafe_Loop_C:AblBranchTask_12'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.21"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Strafe_Loop_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.22"
+        }
+      ],
+      "m_AbilityNameHash": 3739825042,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_Strafe",
+    "Name": "AblAnimationTagChooser_Strafe_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_Strafe'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_Strafe",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.Strafe_Move_Bwdish"
+        ],
+        [
+          "AA.AnimPlayerName.Strafe_Move_Lft112"
+        ],
+        [
+          "AA.AnimPlayerName.Strafe_Move_Lft"
+        ],
+        [
+          "AA.AnimPlayerName.Strafe_Move_Fwdish"
+        ],
+        [
+          "AA.AnimPlayerName.Strafe_Move_Rht"
+        ],
+        [
+          "AA.AnimPlayerName.Strafe_Move_Rht112"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimRateGetter_Strafe",
+    "Name": "AblAnimRateGetter_Strafe_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimRateGetter_Strafe'",
+    "ClassPath": "/Script/Phoenix.AblAnimRateGetter_Strafe"
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_Strafe",
+    "Name": "AblBlendSpaceParameterGetter_Strafe_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_Strafe'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_Strafe"
+  },
+  {
+    "Type": "AblBranchConditionAnimSpeed",
+    "Name": "AblBranchConditionAnimSpeed_0",
+    "Outer": "AblBranchConditionLogicalOR_0",
+    "Class": "UScriptClass'AblBranchConditionAnimSpeed'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionAnimSpeed",
+    "Properties": {
+      "AnimSpeedType": "EAnimSpeedType::WalkSlow"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAnimSpeed",
+    "Name": "AblBranchConditionAnimSpeed_1",
+    "Outer": "AblBranchConditionLogicalOR_0",
+    "Class": "UScriptClass'AblBranchConditionAnimSpeed'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionAnimSpeed",
+    "Properties": {
+      "AnimSpeedType": "EAnimSpeedType::Walk"
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "UseTracker": "EDesiredDeltaTargetTracker::VelocityDirection",
+      "AngleRange": {
+        "X": -60.0,
+        "Y": 60.0
+      },
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_12",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "UseSourceDirection": "EDesiredDeltaSourceDirection::Facing",
+      "UseOperator": "EDesiredDeltaOperator::StrafeRules",
+      "AngleRange": {
+        "X": -22.5,
+        "Y": 22.5
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "UseSourceDirection": "EDesiredDeltaSourceDirection::VelocityDirection",
+      "AngleRange": {
+        "X": -135.0,
+        "Y": 135.0
+      },
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "UseTracker": "EDesiredDeltaTargetTracker::VelocityDirection",
+      "AngleRange": {
+        "X": -60.0,
+        "Y": 60.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionDesiredDirectionDelta",
+    "Name": "AblBranchConditionDesiredDirectionDelta_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionDesiredDirectionDelta'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionDesiredDirectionDelta",
+    "Properties": {
+      "AngleRange": {
+        "X": -60.0,
+        "Y": 60.0
+      }
+    }
+  },
+  {
+    "Type": "AblBranchConditionGaitSpeed",
+    "Name": "AblBranchConditionGaitSpeed_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionGaitSpeed'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionGaitSpeed",
+    "Properties": {
+      "GaitSpeeds": [
+        "EAblGaitSpeed::Jog"
+      ]
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionLogicalOR",
+    "Name": "AblBranchConditionLogicalOR_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionLogicalOR'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionLogicalOR",
+    "Properties": {
+      "Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAnimSpeed'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionLogicalOR_0.AblBranchConditionAnimSpeed_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.5"
+        },
+        {
+          "ObjectName": "AblBranchConditionAnimSpeed'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionLogicalOR_0.AblBranchConditionAnimSpeed_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionWading",
+    "Name": "AblBranchConditionWading_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionWading'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionWading",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Stop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Stop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_Strafe_Loop_C:AblBranchTask_0.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.13"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Strafe_Loop_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.15"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_Strafe_Loop_C:AblBranchTask_1.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.7"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_12",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Strafe_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_Strafe_Loop_C:AblBranchTask_12.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.8"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.25
+      },
+      "m_StartTime": {
+        "Offset": 0.033333335,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Pivot_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Pivot.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_Strafe_Loop_C:AblBranchTask_2.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_MoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_MoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Strafe_Loop_C:AblBranchTask_3.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.16"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_Strafe_Loop_C:AblBranchTask_3.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.10"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Walk2Jog_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Walk2Jog.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.17"
+        },
+        {
+          "ObjectName": "AblBranchConditionDesiredDirectionDelta'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionDesiredDirectionDelta_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.11"
+        },
+        {
+          "ObjectName": "AblBranchConditionLogicalOR'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionLogicalOR_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.14"
+        },
+        {
+          "ObjectName": "AblBranchConditionGaitSpeed'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionGaitSpeed_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.12"
+        },
+        {
+          "ObjectName": "AblBranchConditionWading'Default__ABL_Strafe_Loop_C:AblBranchTask_4.AblBranchConditionWading_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.18"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.StrafeMoveLoop"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_Strafe'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_Strafe_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.2"
+      },
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_Strafe'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_Strafe_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.4"
+      },
+      "m_AnimRateGetter": {
+        "ObjectName": "AblAnimRateGetter_Strafe'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0.AblAnimRateGetter_Strafe_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.3"
+      },
+      "m_StartPositionGetter": {
+        "ObjectName": "AblStartPositionGetter_FootMatch'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0.AblStartPositionGetter_FootMatch_2'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.27"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Strafe_Loop_C'Default__ABL_Strafe_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.99999994
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_TurnAssist'Default__ABL_Strafe_Loop_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_TurnAssist_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.30"
+        },
+        {
+          "ObjectName": "RootMotionModifierProperties_Move'Default__ABL_Strafe_Loop_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_Move_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.29"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblStartPositionGetter_FootMatch",
+    "Name": "AblStartPositionGetter_FootMatch_2",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblStartPositionGetter_FootMatch'",
+    "ClassPath": "/Script/Phoenix.AblStartPositionGetter_FootMatch"
+  },
+  {
+    "Type": "AblUsingStairsAnimsTask",
+    "Name": "AblUsingStairsAnimsTask_0",
+    "Outer": "Default__ABL_Strafe_Loop_C",
+    "Class": "UScriptClass'AblUsingStairsAnimsTask'",
+    "ClassPath": "/Script/Phoenix.AblUsingStairsAnimsTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Strafe_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Strafe_Loop.25"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_Move",
+    "Name": "RootMotionModifierProperties_Move_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_Move'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_Move",
+    "Properties": {
+      "MoveDirectionRule": "EMoveDirectionRule::DesiredDirection",
+      "MoveMaxSpeedRule": "EMoveMaxSpeedRule::FixedSpeed",
+      "MoveInterpRule": "EMoveInterpRule::Interp",
+      "FixedMaxSpeed": 450.0,
+      "InterpSpeed": 3.0
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_TurnAssist",
+    "Name": "RootMotionModifierProperties_TurnAssist_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_TurnAssist'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_TurnAssist",
+    "Properties": {
+      "UseMethod": "ERootMotionModTurnAssistMethod::UseDampedSpring",
+      "RotationInterpType": "ECustomInterpType::EaseIn",
+      "RegularSpeedRotationInterpSpeed": 0.3,
+      "LowSpeedRotationInterpSpeed": 0.5,
+      "TurnAssistCurve": {
+        "ObjectName": "CurveFloat'C_StrafeTurnAssistCurve'",
+        "ObjectPath": "/Game/Pawn/Shared/Ambulatory/C_StrafeTurnAssistCurve.0"
+      },
+      "MinRotationScaleBasedOnSpeed": 0.55
+    }
+  }
+]

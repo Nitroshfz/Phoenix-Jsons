@@ -1,0 +1,554 @@
+[
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_0",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_IngredientPreparer_SmallBagIn_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/Study_TransfigObs/TransfigObs/Potions/IngredientPreparer/TransfigObs_IngredientPreparer_SmallBagIn_Play.0"
+      },
+      "SocketName": "pouchBag",
+      "bFollow": false,
+      "MaxDistanceToListener": 1500.0,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_1",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_IngredientPreparer_SmallBagOut_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/Study_TransfigObs/TransfigObs/Potions/IngredientPreparer/TransfigObs_IngredientPreparer_SmallBagOut_Play.0"
+      },
+      "SocketName": "board_drawer",
+      "bFollow": false,
+      "MaxDistanceToListener": 1500.0,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_2",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_IngredientPreparer_SmallBagPickup_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/Study_TransfigObs/TransfigObs/Potions/IngredientPreparer/TransfigObs_IngredientPreparer_SmallBagPickup_Play.0"
+      },
+      "SocketName": "pouchBag",
+      "bFollow": false,
+      "MaxDistanceToListener": 1500.0,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_3",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'TransfigObs_IngredientPreparer_DrawerClose_Play'",
+        "ObjectPath": "/Game/WWise/Events/Sanctuary/Study_TransfigObs/TransfigObs/Potions/IngredientPreparer/TransfigObs_IngredientPreparer_DrawerClose_Play.0"
+      },
+      "SocketName": "board_drawer",
+      "bFollow": false,
+      "MaxDistanceToListener": 1500.0,
+      "OcclusionOption": "OcclusionOff",
+      "OcclusionMethod": "EOcclusionTestMethod::PrimaryOcclusionOnly",
+      "bAutoDestroy": false
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayParticleEffect",
+    "Name": "AnimNotify_PlayParticleEffect_0",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotify_PlayParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotify_PlayParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_ChopStationMortarPickup'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/ChoppingStation/P_ChopStationMortarPickup.94"
+      },
+      "Scale": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      },
+      "SocketName": "PickupBagSocket"
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayParticleEffect",
+    "Name": "AnimNotify_PlayParticleEffect_1",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotify_PlayParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotify_PlayParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_ChopStationMortarStomp'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/ChoppingStation/P_ChopStationMortarStomp.18"
+      },
+      "Scale": {
+        "X": 0.55,
+        "Y": 0.55,
+        "Z": 0.55
+      },
+      "SocketName": "pouchBottomSocket"
+    }
+  },
+  {
+    "Type": "AnimNotifyState_TimedParticleEffect",
+    "Name": "AnimNotifyState_TimedParticleEffect_0",
+    "Outer": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimNotifyState_TimedParticleEffect'",
+    "ClassPath": "/Script/Engine.AnimNotifyState_TimedParticleEffect",
+    "Properties": {
+      "PSTemplate": {
+        "ObjectName": "ParticleSystem'P_ChopStationMortarPickupDust'",
+        "ObjectPath": "/Game/VFX/Particles/Mechanics/Sanctuary/ChoppingStation/P_ChopStationMortarPickupDust.40"
+      },
+      "SocketName": "pouchMainSocket"
+    }
+  },
+  {
+    "Type": "AnimSequence",
+    "Name": "ChoppingStation_MortarReadytoPickupOutof_anm",
+    "Class": "UScriptClass'AnimSequence'",
+    "ClassPath": "/Script/Engine.AnimSequence",
+    "Properties": {
+      "NumFrames": 214,
+      "TrackToSkeletonMapTable": [
+        {
+          "BoneTreeIndex": 0
+        },
+        {
+          "BoneTreeIndex": 1
+        },
+        {
+          "BoneTreeIndex": 2
+        },
+        {
+          "BoneTreeIndex": 3
+        },
+        {
+          "BoneTreeIndex": 9
+        },
+        {
+          "BoneTreeIndex": 10
+        },
+        {
+          "BoneTreeIndex": 4
+        },
+        {
+          "BoneTreeIndex": 5
+        },
+        {
+          "BoneTreeIndex": 6
+        },
+        {
+          "BoneTreeIndex": 7
+        },
+        {
+          "BoneTreeIndex": 8
+        },
+        {
+          "BoneTreeIndex": 11
+        },
+        {
+          "BoneTreeIndex": 12
+        },
+        {
+          "BoneTreeIndex": 13
+        },
+        {
+          "BoneTreeIndex": 14
+        },
+        {
+          "BoneTreeIndex": 15
+        },
+        {
+          "BoneTreeIndex": 16
+        },
+        {
+          "BoneTreeIndex": 17
+        },
+        {
+          "BoneTreeIndex": 18
+        }
+      ],
+      "BoneCompressionSettings": {
+        "ObjectName": "AnimBoneCompressionSettings'AC_PhxAnimBoneCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings.4"
+      },
+      "CurveCompressionSettings": {
+        "ObjectName": "AnimCurveCompressionSettings'AC_PhxAnimCurveCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings.1"
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotify_AkEvent_Ava_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.0"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 1.6413258,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 1.6413258,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayParticleEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayParticleEffect'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotify_PlayParticleEffect_1'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.5"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 1.6973766,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 1.6973766,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotify_AkEvent_Ava_1'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 2.85289,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 2,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 2.85289,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "TimedParticleEffect",
+          "Notify": null,
+          "NotifyStateClass": {
+            "ObjectName": "AnimNotifyState_TimedParticleEffect'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotifyState_TimedParticleEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.6"
+          },
+          "Duration": 1.5838199,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": 0,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 7.1,
+            "LinkValue": 5.0742,
+            "LinkedSequence": {
+              "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+              "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+            }
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 3.4903803,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotify_AkEvent_Ava_2'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.2"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 6.314431,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 3,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 6.314431,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayParticleEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayParticleEffect'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotify_PlayParticleEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.4"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 6.4548125,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 6.4548125,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AnimNotify (Ava)",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'ChoppingStation_MortarReadytoPickupOutof_anm:AnimNotify_AkEvent_Ava_3'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.3"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 6.5049148,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 4,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 7.1,
+          "LinkValue": 6.5049148,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ChoppingStation_MortarReadytoPickupOutof_anm'",
+            "ObjectPath": "/Game/Animation/Environment/Sanctuary/ChoppingStation/Tables/ChoppingStation_MortarReadytoPickupOutof_anm.7"
+          }
+        }
+      ],
+      "SequenceLength": 7.1,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_ChoppingStation_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/ChoppingStation/SK_ChoppingStation_Skeleton.12"
+      }
+    },
+    "SkeletonGuid": "5A793E82-4A694C5F-9F5C008F-1088BCB0",
+    "CompressedTrackToSkeletonMapTable": [
+      0,
+      1,
+      2,
+      3,
+      9,
+      10,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "CompressedCurveData": {
+      "FloatCurves": []
+    },
+    "CompressedDataStructure": {
+      "CompressedNumberOfFrames": 214
+    },
+    "BoneCompressionCodec": {
+      "ObjectName": "AnimBoneCompressionCodec_ACL'AC_PhxAnimBoneCompressionSettings:AnimBoneCompressionCodec_ACL_2'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings"
+    },
+    "CurveCompressionCodec": {
+      "ObjectName": "AnimCurveCompressionCodec_CompressedRichCurve'AC_PhxAnimCurveCompressionSettings:CurveCompressionCodec'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings"
+    },
+    "CompressedRawDataSize": 80908
+  }
+]

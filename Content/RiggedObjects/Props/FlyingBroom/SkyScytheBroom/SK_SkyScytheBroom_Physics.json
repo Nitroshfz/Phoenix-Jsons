@@ -1,0 +1,158 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_SkyScytheBroom_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_SkyScytheBroom_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/SkyScytheBroom/SK_SkyScytheBroom_Physics.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_SkyScytheBroom_Physics:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/SkyScytheBroom/SK_SkyScytheBroom_Physics.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_SkyScytheBroom_Physics:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Props/FlyingBroom/SkyScytheBroom/SK_SkyScytheBroom_Physics.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_SkyScytheBroom_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "bristles_01",
+        "ConstraintBone1": "bristles_01",
+        "ConstraintBone2": "broom",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 7.9496336,
+          "Z": -82.71807
+        },
+        "PriAxis2": {
+          "X": 0.0,
+          "Y": -0.087278806,
+          "Z": -0.9961839
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": 0.99618393,
+          "Z": -0.087278806
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_SkyScytheBroom_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.11924155,
+              "Y": 5.8221154,
+              "Z": 41.804718
+            },
+            "Rotation": {
+              "Pitch": 5.136466,
+              "Yaw": -90.0043,
+              "Roll": 0.065970495
+            },
+            "Radius": 6.5437546,
+            "Length": 132.3111,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ],
+        "TaperedCapsuleElems": [
+          {
+            "Center": {
+              "X": 9.1552734E-05,
+              "Y": 13.436866,
+              "Z": -46.827972
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": -8.935456
+            },
+            "Radius0": 8.0,
+            "Radius1": 21.0,
+            "Length": 44.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "broom",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "62AFC9434E2F6A67E8DE04BB60F48174"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_SkyScytheBroom_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 17.66199,
+              "Y": -0.6717735,
+              "Z": 0.34857172
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": -87.659706,
+              "Roll": -89.80768
+            },
+            "Radius": 20.096684,
+            "Length": 35.659294,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "bristles_01",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "F82BB7E3489F816DB73B72A379B4F2B2"
+  }
+]

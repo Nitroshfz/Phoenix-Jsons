@@ -1,0 +1,554 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_ButtSlide_Recovery_C'Default__ABL_ButtSlide_Recovery_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.1"
+    }
+  },
+  {
+    "Type": "ABL_ButtSlide_Recovery_C",
+    "Name": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.ABL_ButtSlide_Recovery_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_ButtSlide_Recovery_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 6.5333333,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        },
+        {
+          "ObjectName": "ablFacialEmotionStateTask'Default__ABL_ButtSlide_Recovery_C:ablFacialEmotionStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.20"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_ButtSlide_Recovery_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.23"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_ButtSlide_Recovery_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.14"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.15"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_ButtSlide_Recovery_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.19"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_ButtSlide_Recovery_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.22"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.16"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.17"
+        }
+      ],
+      "m_AbilityNameHash": 1532261293,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_SlideRecovery",
+    "Name": "AblAnimationTagChooser_SlideRecovery_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_SlideRecovery'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_SlideRecovery",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.ButtSlideRecovery_Lft"
+        ],
+        [
+          "AA.AnimPlayerName.ButtSlideRecovery_Rht"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_Slide",
+    "Name": "AblBlendSpaceParameterGetter_Slide_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_Slide'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_Slide",
+    "Properties": {
+      "bReverseDirection": true,
+      "bGetBlendParamsFromLast": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_MoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_MoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_1.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.5"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.35
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_ButtSlide_Recovery_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.1333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlide_Recovery_C'Default__ABL_ButtSlide_Recovery_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_2.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.6"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.10"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.35
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.14"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_3.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.7"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_3.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.11"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.14"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_4.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.8"
+        },
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_4.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.12"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.16"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblBranchTask'Default__ABL_ButtSlide_Recovery_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.16"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": 0.53333336,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.53333336,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FocusOnHipsOff"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablFacialEmotionStateTask",
+    "Name": "ablFacialEmotionStateTask_0",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'ablFacialEmotionStateTask'",
+    "ClassPath": "/Script/Phoenix.ablFacialEmotionStateTask",
+    "Properties": {
+      "FacialEmotion": "EFacialEmotion::ANXIETY",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.ButtSlideRecovery_Lft"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_SlideRecovery'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_SlideRecovery_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.2"
+      },
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_Slide'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_Slide_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.3"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.3
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlide_Recovery_C'Default__ABL_ButtSlide_Recovery_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.4000001
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_react_fall_land_small'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_react_fall_land_small.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlide_Recovery_C'Default__ABL_ButtSlide_Recovery_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.9333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_ButtSlide_Recovery_C'Default__ABL_ButtSlide_Recovery_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_ButtSlide_Recovery_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_ButtSlide'Default__ABL_ButtSlide_Recovery_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_ButtSlide_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.24"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.6,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_ButtSlide_Recovery_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/ButtSliding/ABL_ButtSlide_Recovery.21"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_ButtSlide",
+    "Name": "RootMotionModifierProperties_ButtSlide_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_ButtSlide'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_ButtSlide",
+    "Properties": {
+      "Friction": 0.15,
+      "RotationInterpType": "ECustomInterpType::Interp",
+      "RotationInterpSpeed": 5.0
+    }
+  }
+]

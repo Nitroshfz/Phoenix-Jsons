@@ -1,0 +1,513 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BTT_ScheduleStationTransit",
+    "Outer": "BTT_ScheduleStationTransit_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetReasoner_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerActor_1",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsScheduled_Entity",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'ScheduledEntity'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSocial_Reasoning",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SocialReasoning'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_CurrentlyInFlesh_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_RunEQSQuery_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_CustomEvent_QueryInstance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "K2Node_CustomEvent_QueryStatus",
+        "Flags": 1,
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryStatus'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetQueryResultsAsActors_ResultActors",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217728,
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetQueryResultsAsActors_ResultActors",
+          "Flags": 1,
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetQueryResultsAsActors_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_SelectGhostStoryPartners_AvailablePartners",
+        "Flags": 1,
+        "ElementSize": 16,
+        "PropertyFlags": 134217728,
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_SelectGhostStoryPartners_AvailablePartners",
+          "Flags": 1,
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'Actor'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SelectGhostStoryPartners_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_WhomShallIGreet_Score",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_WhomShallIGreet_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 40,
+        "Struct": {
+          "ObjectName": "Class'GreetingQueryData'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Get_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Scheduler'",
+          "ObjectPath": "/Script/GameScheduler"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetSimulatedSecondMultiplier_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RandomFloatInRange_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+        "Flags": 1,
+        "ElementSize": 4
+      },
+      {
+        "Type": "DelegateProperty",
+        "Name": "K2Node_CreateDelegate_OutputDelegate",
+        "Flags": 1,
+        "ElementSize": 20,
+        "SignatureFunction": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper:EQSQueryDoneSignature__DelegateSignature'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_Multiply_FloatFloat_ReturnValue_1",
+        "Flags": 1,
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": 8421377
+  },
+  {
+    "Type": "Function",
+    "Name": "StationTransit_AcknowledgeFriends_OnQueryFinished",
+    "Outer": "BTT_ScheduleStationTransit_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "QueryInstance",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "QueryStatus",
+        "Flags": 1,
+        "ElementSize": 1,
+        "PropertyFlags": 148,
+        "Enum": {
+          "ObjectName": "Class'EEnvQueryStatus'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ExitTask",
+    "Outer": "BTT_ScheduleStationTransit_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_AvaAITree:ExitTask'",
+      "ObjectPath": "/Script/BTCustomRuntime"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "BTT_ScheduleStationTransit_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerActor",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 148,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BTT_ScheduleStationTransit_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ExecuteUbergraph_BTT_ScheduleStationTransit'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_AvaAITree'",
+      "ObjectPath": "/Script/BTCustomRuntime"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ReceiveExecute'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.3"
+      },
+      {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ExitTask'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.2"
+      },
+      {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:StationTransit_AcknowledgeFriends_OnQueryFinished'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.1"
+      },
+      {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ExecuteUbergraph_BTT_ScheduleStationTransit'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Social Reasoning",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 67589,
+        "PropertyClass": {
+          "ObjectName": "Class'SocialReasoning'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Min Time Available",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Max Time Available",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Time Available",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StationTransit EQS Acknowledge Friends",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 65541,
+        "PropertyClass": {
+          "ObjectName": "Class'EnvQueryInstanceBlueprintWrapper'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "Simulated Second Multiplier",
+        "Flags": 2097153,
+        "ElementSize": 4,
+        "PropertyFlags": 65541
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BTT_ScheduleStationTransit": {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ExecuteUbergraph_BTT_ScheduleStationTransit'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.0"
+      },
+      "StationTransit_AcknowledgeFriends_OnQueryFinished": {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:StationTransit_AcknowledgeFriends_OnQueryFinished'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.1"
+      },
+      "ExitTask": {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ExitTask'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.2"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'BTT_ScheduleStationTransit_C:ReceiveExecute'",
+        "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.3"
+      }
+    },
+    "ClassFlags": 264208,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BTT_ScheduleStationTransit_C'Default__BTT_ScheduleStationTransit_C'",
+      "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.5"
+    }
+  },
+  {
+    "Type": "BTT_ScheduleStationTransit_C",
+    "Name": "Default__BTT_ScheduleStationTransit_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.BTT_ScheduleStationTransit_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BTT_ScheduleStationTransit_C'",
+      "ObjectPath": "/Game/Pawn/Student/Ideas/BTT_ScheduleStationTransit.4"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Min Time Available": 5,
+      "Max Time Available": 25
+    }
+  }
+]

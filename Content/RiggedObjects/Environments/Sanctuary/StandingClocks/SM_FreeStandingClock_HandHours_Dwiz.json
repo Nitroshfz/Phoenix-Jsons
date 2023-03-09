@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_FreeStandingClock_HandHours_Dwiz",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "206FC2154FF6FEB42635139FF3B5B3FA",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x32D3"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_FreeStandingClock_HandHours_Dwiz",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x3337"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_FreeStandingClock_HandHours_Dwiz",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Sanc_FreeStandingClock_Dwiz'",
+            "ObjectPath": "/Game/Gameplay/Sanctuary/Materials/Props/MI_Sanc_FreeStandingClock_Dwiz.0"
+          },
+          "MaterialSlotName": "M_Sanc_FreeStandingClock_Dwiz",
+          "ImportedMaterialSlotName": "M_Sanc_FreeStandingClock_Dwiz",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 110.87861,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 110.87861,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.007938623,
+          "Y": -0.028094769,
+          "Z": 4.477478
+        },
+        "BoxExtent": {
+          "X": 3.1475136,
+          "Y": 0.2635932,
+          "Z": 5.5112305
+        },
+        "SphereRadius": 5.526981
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_FreeStandingClock_HandHours_Dwiz:BodySetup_1'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/StandingClocks/SM_FreeStandingClock_HandHours_Dwiz.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_FreeStandingClock_HandHours_Dwiz:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/StandingClocks/SM_FreeStandingClock_HandHours_Dwiz.1"
+    },
+    "LightingGuid": "036785C5-4ACCED67-4B33BAA1-9A4A1860",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 420,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 309,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 310
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 310,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 104,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 96,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 1.8312172,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 97
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 97,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.007938623,
+          "Y": -0.028094769,
+          "Z": 4.477478
+        },
+        "BoxExtent": {
+          "X": 3.1475136,
+          "Y": 0.2635932,
+          "Z": 5.5112305
+        },
+        "SphereRadius": 5.526981
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.04744,
+        0.02686,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

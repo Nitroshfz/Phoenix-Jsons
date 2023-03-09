@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_Tumbling",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.AnimPlayerName.RagdollPowering",
+        "AA.RagdollPowerAnims.ImpactAnticipation"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Strong",
+      "PoseDriveBlendTime": 2.0,
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsOnOrSlightlyAboveGround'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsOnOrSlightlyAboveGround.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasMediumToHighHorizontalVelocity'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasMediumToHighHorizontalVelocity.0"
+          }
+        ],
+        "RequiredAny": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsNotDead'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsNotDead.0"
+          },
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_AllowDramaticDeath'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_AllowDramaticDeath.0"
+          }
+        ]
+      },
+      "RequireStatesToEnter": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_HasMinTimeIfSlidingBehavior'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_HasMinTimeIfSlidingBehavior.0"
+          }
+        ],
+        "RequiredAny": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_BodyCollision'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_BodyCollision.0"
+          }
+        ]
+      }
+    }
+  }
+]

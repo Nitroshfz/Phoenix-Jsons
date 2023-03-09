@@ -1,0 +1,275 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+    }
+  },
+  {
+    "Type": "ABL_NPC_SwimClimbLedge_C",
+    "Name": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.ABL_NPC_SwimClimbLedge_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_NPC_SwimClimbLedge_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_IsChanneled": true,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_NPC_SwimClimbLedge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.7"
+        },
+        {
+          "ObjectName": "AblSetAnimSpeedTypeTask'Default__ABL_NPC_SwimClimbLedge_C:AblSetAnimSpeedTypeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.8"
+        },
+        {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_NPC_SwimClimbLedge_C:ablMotionAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.5"
+        },
+        {
+          "ObjectName": "ablTurnAdjustTask'Default__ABL_NPC_SwimClimbLedge_C:ablTurnAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.9"
+        },
+        {
+          "ObjectName": "ablNiagaraPlayEffectTask'Default__ABL_NPC_SwimClimbLedge_C:ablNiagaraPlayEffectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.6"
+        },
+        {
+          "ObjectName": "ablAbilityDoneTask'Default__ABL_NPC_SwimClimbLedge_C:ablAbilityDoneTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.2"
+        },
+        {
+          "ObjectName": "AblEnemyDynamicBranchTask'Default__ABL_NPC_SwimClimbLedge_C:AblEnemyDynamicBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.3"
+        }
+      ],
+      "m_AbilityNameHash": 1204788579
+    }
+  },
+  {
+    "Type": "ablAbilityDoneTask",
+    "Name": "ablAbilityDoneTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'ablAbilityDoneTask'",
+    "ClassPath": "/Script/Phoenix.ablAbilityDoneTask",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_NPC_SwimClimbLedge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.7"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_NPC_SwimClimbLedge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.7"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblEnemyDynamicBranchTask",
+    "Name": "AblEnemyDynamicBranchTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'AblEnemyDynamicBranchTask'",
+    "ClassPath": "/Script/Phoenix.AblEnemyDynamicBranchTask",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": -0.19999981,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_NPC_SwimClimbLedge_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.7"
+        }
+      },
+      "m_EndTime": {
+        "Offset": "Infinity",
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablMotionAdjustLedgeLocationGetter",
+    "Name": "ablMotionAdjustLedgeLocationGetter_0",
+    "Outer": "ablMotionAdjustTask_0",
+    "Class": "UScriptClass'ablMotionAdjustLedgeLocationGetter'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustLedgeLocationGetter"
+  },
+  {
+    "Type": "ablMotionAdjustTask",
+    "Name": "ablMotionAdjustTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'ablMotionAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustTask",
+    "Properties": {
+      "TargetLocationGetter": {
+        "ObjectName": "ablMotionAdjustLedgeLocationGetter'Default__ABL_NPC_SwimClimbLedge_C:ablMotionAdjustTask_0.ablMotionAdjustLedgeLocationGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.4"
+      },
+      "InterceptTime": 1.35,
+      "InterceptOffset": {
+        "X": -60.0,
+        "Y": 0.0,
+        "Z": -88.0
+      },
+      "BlendIn": {
+        "BlendOption": "EAlphaBlendOption::HermiteCubic"
+      },
+      "bCanAdjustZAxis": true,
+      "m_StartTime": {
+        "Offset": 0.20000002,
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.6666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablNiagaraPlayEffectTask",
+    "Name": "ablNiagaraPlayEffectTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'ablNiagaraPlayEffectTask'",
+    "ClassPath": "/Script/Phoenix.ablNiagaraPlayEffectTask",
+    "Properties": {
+      "NiagaraVfx": {
+        "ObjectName": "NiagaraSystem'VFX_NS_SwimExit_Splash'",
+        "ObjectPath": "/Game/VFX/Mechanics/Swimming/Splashes/VFX_NS_SwimExit_Splash.54"
+      },
+      "bAttachToSocket": true,
+      "m_Socket": "SKT_Chest",
+      "m_StartTime": {
+        "Offset": 0.70000005,
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 2.6000001,
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.SwimClimbLedge"
+      ],
+      "m_StateMachineName": "Locomotion",
+      "m_AbilityStateName": "DefaultState",
+      "m_BlendIn": {
+        "BlendTime": 0.25
+      },
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion",
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_FullRootMotion"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetAnimSpeedTypeTask",
+    "Name": "AblSetAnimSpeedTypeTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'AblSetAnimSpeedTypeTask'",
+    "ClassPath": "/Script/Phoenix.AblSetAnimSpeedTypeTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablTurnAdjustTask",
+    "Name": "ablTurnAdjustTask_0",
+    "Outer": "Default__ABL_NPC_SwimClimbLedge_C",
+    "Class": "UScriptClass'ablTurnAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablTurnAdjustTask",
+    "Properties": {
+      "m_Blend": {
+        "BlendOption": "EAlphaBlendOption::HermiteCubic"
+      },
+      "m_TargetDirectionGetter": {
+        "ObjectName": "TurnAdjust_LedgeNormalGetter'Default__ABL_NPC_SwimClimbLedge_C:ablTurnAdjustTask_0.TurnAdjust_LedgeNormalGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.10"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5,
+        "RelativeToObject": {
+          "ObjectName": "ABL_NPC_SwimClimbLedge_C'Default__ABL_NPC_SwimClimbLedge_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_NPC_SwimClimbLedge.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TurnAdjust_LedgeNormalGetter",
+    "Name": "TurnAdjust_LedgeNormalGetter_0",
+    "Outer": "ablTurnAdjustTask_0",
+    "Class": "UScriptClass'TurnAdjust_LedgeNormalGetter'",
+    "ClassPath": "/Script/Phoenix.TurnAdjust_LedgeNormalGetter"
+  }
+]

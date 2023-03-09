@@ -1,0 +1,234 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "SM_ScarabBeetle",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.5776367E-05,
+              "Y": -1.2482216,
+              "Z": 2.5745242
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 89.999954
+            },
+            "Radius": 4.0,
+            "Length": 5.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "237BC19349C13BBAD35DDF8226F8BAB6",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x55F3"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_ScarabBeetle",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 5521,
+        "SizeOnDisk": 5521,
+        "OffsetInFile": "0x5657"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_ScarabBeetle",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_ScarabBeetle'",
+            "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Scarab/Materials/MI_ScarabBeetle.0"
+          },
+          "MaterialSlotName": "SM_ScarabBeetle_Husk_WingsSeperated1:lambert2",
+          "ImportedMaterialSlotName": "SM_ScarabBeetle_Husk_WingsSeperated1:lambert2",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 22.70482,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 22.70482,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.010566711,
+          "Y": -0.80604553,
+          "Z": 2.8574338
+        },
+        "BoxExtent": {
+          "X": 7.924943,
+          "Y": 8.246515,
+          "Z": 2.891546
+        },
+        "SphereRadius": 10.017092
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_ScarabBeetle:BodySetup_1'",
+      "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Scarab/Working/SM_ScarabBeetle.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_ScarabBeetle:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Insects/Scarab/Working/SM_ScarabBeetle.1"
+    },
+    "LightingGuid": "FC40A9C5-4137E042-CE815B96-7FD4C569",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 324,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 521,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 522
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 522,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 522
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 81,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 172,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 4.751719,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 173
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 173,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 173
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.010566711,
+          "Y": -0.80604553,
+          "Z": 2.8574338
+        },
+        "BoxExtent": {
+          "X": 7.924943,
+          "Y": 8.246515,
+          "Z": 2.891546
+        },
+        "SphereRadius": 10.017092
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.041168,
+        0.025292,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

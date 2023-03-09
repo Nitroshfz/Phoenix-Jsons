@@ -1,0 +1,673 @@
+[
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ABL_JumpVault",
+    "Outer": "ABL_JumpVault_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": 1,
+        "ElementSize": 4,
+        "PropertyFlags": 148
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 2,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 32769
+  },
+  {
+    "Type": "Function",
+    "Name": "OnAbilityStart",
+    "Outer": "ABL_JumpVault_C",
+    "Class": "UScriptClass'Function'",
+    "ClassPath": "/Script/CoreUObject.Function",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility:OnAbilityStart'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Context",
+        "Flags": 1,
+        "ElementSize": 8,
+        "PropertyFlags": 150,
+        "PropertyClass": {
+          "ObjectName": "Class'AblAbilityContext'",
+          "ObjectPath": "/Script/AbleCore"
+        }
+      }
+    ],
+    "FunctionFlags": 1208092672
+  },
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_JumpVault_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'ABL_JumpVault_C:ExecuteUbergraph_ABL_JumpVault'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.0"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'ABL_JumpVault_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.1"
+      },
+      {
+        "ObjectName": "Function'ABL_JumpVault_C:ExecuteUbergraph_ABL_JumpVault'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.0"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": 2097153,
+        "ElementSize": 16,
+        "PropertyFlags": 2105344,
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ABL_JumpVault": {
+        "ObjectName": "Function'ABL_JumpVault_C:ExecuteUbergraph_ABL_JumpVault'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.0"
+      },
+      "OnAbilityStart": {
+        "ObjectName": "Function'ABL_JumpVault_C:OnAbilityStart'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.1"
+      }
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+    }
+  },
+  {
+    "Type": "ABL_JumpVault_C",
+    "Name": "Default__ABL_JumpVault_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.ABL_JumpVault_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_JumpVault_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.2"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_Length": 6.1000004,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        },
+        {
+          "ObjectName": "AblJumpTask'Default__ABL_JumpVault_C:AblJumpTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_JumpVault_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.8"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_JumpVault_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.9"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_JumpVault_C:AblBTCustomActionTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_JumpVault_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.7"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_JumpVault_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.19"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_JumpVault_C:AblPlayPostAkEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.20"
+        },
+        {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_JumpVault_C:ablMotionAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.16"
+        },
+        {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_JumpVault_C:ablMotionAdjustTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.17"
+        },
+        {
+          "ObjectName": "ablTurnAdjustTask'Default__ABL_JumpVault_C:ablTurnAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.22"
+        },
+        {
+          "ObjectName": "AblChangeCollisionCapsuleDimensions'Default__ABL_JumpVault_C:AblChangeCollisionCapsuleDimensions_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.11"
+        },
+        {
+          "ObjectName": "ablIKLedgeContactTask'Default__ABL_JumpVault_C:ablIKLedgeContactTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.12"
+        },
+        {
+          "ObjectName": "ablAkSetMurmurationRTPCTask'Default__ABL_JumpVault_C:ablAkSetMurmurationRTPCTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.4"
+        },
+        {
+          "ObjectName": "AblSetRightArmStateTask'Default__ABL_JumpVault_C:AblSetRightArmStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.21"
+        }
+      ],
+      "m_AbilityNameHash": 4077372632,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "ablAkSetMurmurationRTPCTask",
+    "Name": "ablAkSetMurmurationRTPCTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'ablAkSetMurmurationRTPCTask'",
+    "ClassPath": "/Script/Phoenix.ablAkSetMurmurationRTPCTask",
+    "Properties": {
+      "RTPC_Step": 50,
+      "RTPC_Name": "MurmurationIntensity",
+      "bDecay": false,
+      "m_StartTime": {
+        "Offset": 0.26666668,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.9333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_FootMatch",
+    "Name": "AblAnimationTagChooser_FootMatch_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_FootMatch'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_FootMatch",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.JumpVault"
+        ],
+        [
+          "AA.AnimPlayerName.JumpVaultRF"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_1",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Falling_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_Falling.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_JumpVault_C:AblBranchTask_1.AblBranchConditionAlways_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.6"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.5
+      },
+      "bClampBlendOutTime": false,
+      "m_StartTime": {
+        "Offset": -0.099999905,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.100000024,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "ClimbMoveComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.566667,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.566667,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AllowJumpLand"
+      },
+      "m_StartTime": {
+        "Offset": -0.29999995,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.3,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_3",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.099999905,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.100000024,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblChangeCollisionCapsuleDimensions",
+    "Name": "AblChangeCollisionCapsuleDimensions_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblChangeCollisionCapsuleDimensions'",
+    "ClassPath": "/Script/Phoenix.AblChangeCollisionCapsuleDimensions",
+    "Properties": {
+      "CollisionCapsuleHalfHeight": 60.0,
+      "CollisionCapsuleRadius": 30.0,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.03333336,
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_JumpVault_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablIKLedgeContactTask",
+    "Name": "ablIKLedgeContactTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'ablIKLedgeContactTask'",
+    "ClassPath": "/Script/Phoenix.ablIKLedgeContactTask",
+    "Properties": {
+      "BlendInDuration": 0.15,
+      "BlendOutDuration": 0.25,
+      "bLockHandsToLedge": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.4666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblJumpTask",
+    "Name": "AblJumpTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblJumpTask'",
+    "ClassPath": "/Script/Phoenix.AblJumpTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablMotionAdjustLedgeLocationGetter",
+    "Name": "ablMotionAdjustLedgeLocationGetter_0",
+    "Outer": "ablMotionAdjustTask_0",
+    "Class": "UScriptClass'ablMotionAdjustLedgeLocationGetter'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustLedgeLocationGetter"
+  },
+  {
+    "Type": "ablMotionAdjustLedgeLocationGetter",
+    "Name": "ablMotionAdjustLedgeLocationGetter_0",
+    "Outer": "ablMotionAdjustTask_1",
+    "Class": "UScriptClass'ablMotionAdjustLedgeLocationGetter'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustLedgeLocationGetter"
+  },
+  {
+    "Type": "ablMotionAdjustTask",
+    "Name": "ablMotionAdjustTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'ablMotionAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustTask",
+    "Properties": {
+      "TargetLocationGetter": {
+        "ObjectName": "ablMotionAdjustLedgeLocationGetter'Default__ABL_JumpVault_C:ablMotionAdjustTask_0.ablMotionAdjustLedgeLocationGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.14"
+      },
+      "InterceptOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -100.0
+      },
+      "AdjustCurve": "EAlphaBlendOption::HermiteCubic",
+      "BlendIn": {
+        "BlendOption": "EAlphaBlendOption::HermiteCubic"
+      },
+      "bCanAdjustZAxis": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.43333337,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablMotionAdjustTask",
+    "Name": "ablMotionAdjustTask_1",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'ablMotionAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablMotionAdjustTask",
+    "Properties": {
+      "TargetLocationGetter": {
+        "ObjectName": "ablMotionAdjustLedgeLocationGetter'Default__ABL_JumpVault_C:ablMotionAdjustTask_1.ablMotionAdjustLedgeLocationGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.15"
+      },
+      "InterceptOffset": {
+        "X": -90.0,
+        "Y": 0.0,
+        "Z": -65.0
+      },
+      "AdjustCurve": "EAlphaBlendOption::HermiteCubic",
+      "bCanAdjustZAxis": true,
+      "m_StartTime": {
+        "Offset": 0.03333333,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ablMotionAdjustTask'Default__ABL_JumpVault_C:ablMotionAdjustTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.16"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_JumpVault_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.JumpVault"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_FootMatch'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_FootMatch_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.5"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_OverrideBlendOut": true,
+      "m_BlendOut": {
+        "BlendTime": 0.5
+      },
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 2.4666667
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'emote_effort_jump_short'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Emotes/emote_effort_jump_short.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.33333334,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'Cloth_Foley_Sprint'",
+        "ObjectPath": "/Game/WWise/Events/Foley_Human/Cloth_Foley_Sprint.0"
+      },
+      "m_StartTime": {
+        "Offset": 0.033333335,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.3666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetRightArmStateTask",
+    "Name": "AblSetRightArmStateTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'AblSetRightArmStateTask'",
+    "ClassPath": "/Script/Phoenix.AblSetRightArmStateTask",
+    "Properties": {
+      "RightArmState": "ERightArmState::Optional_PlayHandOnlyMotion",
+      "bUseEndState": true,
+      "RightArmPriority": "ERightArmPriority::FullBodyAbleAbility",
+      "bBroadcastChange": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_JumpVault_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.18"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablTurnAdjustTask",
+    "Name": "ablTurnAdjustTask_0",
+    "Outer": "Default__ABL_JumpVault_C",
+    "Class": "UScriptClass'ablTurnAdjustTask'",
+    "ClassPath": "/Script/Phoenix.ablTurnAdjustTask",
+    "Properties": {
+      "m_Blend": {
+        "BlendOption": "EAlphaBlendOption::HermiteCubic"
+      },
+      "m_TargetDirectionGetter": {
+        "ObjectName": "TurnAdjust_LedgeNormalGetter'Default__ABL_JumpVault_C:ablTurnAdjustTask_0.TurnAdjust_LedgeNormalGetter_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.23"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.5666667,
+        "RelativeToObject": {
+          "ObjectName": "ABL_JumpVault_C'Default__ABL_JumpVault_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Jump/ABL_JumpVault.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "TurnAdjust_LedgeNormalGetter",
+    "Name": "TurnAdjust_LedgeNormalGetter_0",
+    "Outer": "ablTurnAdjustTask_0",
+    "Class": "UScriptClass'TurnAdjust_LedgeNormalGetter'",
+    "ClassPath": "/Script/Phoenix.TurnAdjust_LedgeNormalGetter"
+  }
+]

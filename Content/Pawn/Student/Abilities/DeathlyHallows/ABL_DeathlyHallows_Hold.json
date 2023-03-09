@@ -1,0 +1,139 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_DeathlyHallows_Hold_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_DeathlyHallows_Hold_C'Default__ABL_DeathlyHallows_Hold_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.1"
+    }
+  },
+  {
+    "Type": "ABL_DeathlyHallows_Hold_C",
+    "Name": "Default__ABL_DeathlyHallows_Hold_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.ABL_DeathlyHallows_Hold_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_DeathlyHallows_Hold_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Hold_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.5"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_DeathlyHallows_Hold_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.4"
+        }
+      ],
+      "m_AbilityNameHash": 3435165578,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBranchConditionFullBodyState",
+    "Name": "AblBranchConditionFullBodyState_1",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionFullBodyState'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionFullBodyState",
+    "Properties": {
+      "FullBodyState": "EFullBodyState::Moving",
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_DeathlyHallows_Hold_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_DeathlyHallows_Hold_Move_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold_Move.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_DeathlyHallows_Hold_C:AblBranchTask_0.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.3"
+        },
+        {
+          "ObjectName": "AblBranchConditionFullBodyState'Default__ABL_DeathlyHallows_Hold_C:AblBranchTask_0.AblBranchConditionFullBodyState_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.2"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_DeathlyHallows_Hold_C'Default__ABL_DeathlyHallows_Hold_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_DeathlyHallows_Hold_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_DeathlyHallows_Hold_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.DeathlyHallows_Hold",
+        "AA.Group.Stone"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.15
+      },
+      "m_Loop": true,
+      "m_PlayRate": 1.0000002,
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_DH_Hold_BlendWeights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DH_Hold_BlendWeights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_DeathlyHallows_Hold_C'Default__ABL_DeathlyHallows_Hold_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/DeathlyHallows/ABL_DeathlyHallows_Hold.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.3333333
+      }
+    }
+  }
+]

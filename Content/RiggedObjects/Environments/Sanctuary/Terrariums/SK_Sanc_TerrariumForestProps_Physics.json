@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Sanc_TerrariumForestProps_Physics",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Sanc_TerrariumForestProps_Physics:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/Terrariums/SK_Sanc_TerrariumForestProps_Physics.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Sanc_TerrariumForestProps_Physics:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/Terrariums/SK_Sanc_TerrariumForestProps_Physics.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Sanc_TerrariumForestProps_Physics:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/Terrariums/SK_Sanc_TerrariumForestProps_Physics.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Sanc_TerrariumForestProps_Physics:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/Terrariums/SK_Sanc_TerrariumForestProps_Physics.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Sanc_TerrariumForestProps_Physics:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/Terrariums/SK_Sanc_TerrariumForestProps_Physics.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "SK_Sanc_TerrariumForestProps_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "forestProps_WateringCanBody",
+        "ConstraintBone1": "forestProps_WateringCanBody",
+        "ConstraintBone2": "forestProps_root",
+        "Pos2": {
+          "X": 138.30055,
+          "Y": -12.964088,
+          "Z": -750.8042
+        },
+        "PriAxis2": {
+          "X": 0.8689297,
+          "Y": 0.0,
+          "Z": 0.49493557
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_Sanc_TerrariumForestProps_Physics",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "forestProps_shovel",
+        "ConstraintBone1": "forestProps_shovel",
+        "ConstraintBone2": "forestProps_root",
+        "Pos2": {
+          "X": 79.41426,
+          "Y": -107.49638,
+          "Z": -773.2993
+        },
+        "PriAxis2": {
+          "X": -0.03808987,
+          "Y": -4.6646543E-18,
+          "Z": -0.9992744
+        },
+        "SecAxis2": {
+          "X": -8.887022E-20,
+          "Y": 1.0,
+          "Z": -4.6646543E-18
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Sanc_TerrariumForestProps_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99999,
+              "Roll": 0.0
+            },
+            "Radius": 0.505,
+            "Length": 0.505,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "forestProps_root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E24AC6E64DE9811F939F999AA9AA86DB"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Sanc_TerrariumForestProps_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 13.794383,
+              "Y": -8.004518,
+              "Z": -0.18293762
+            },
+            "Rotation": {
+              "Pitch": 6.830189E-06,
+              "Yaw": -106.171394,
+              "Roll": -89.3414
+            },
+            "Radius": 20.841398,
+            "Length": 38.092422,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "forestProps_WateringCanBody",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "4F9E11EE4E77B19C661D1F82127E2353"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Sanc_TerrariumForestProps_Physics",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.174767,
+              "Y": 47.352547,
+              "Z": 1.3546028
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 174.60071,
+              "Roll": -88.35593
+            },
+            "Radius": 10.0299015,
+            "Length": 60.94837,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "forestProps_shovel",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "F4AE72DA4BEB140DF9D23EBFA4271220"
+  }
+]

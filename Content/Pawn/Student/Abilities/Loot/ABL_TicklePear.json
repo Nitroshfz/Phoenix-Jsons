@@ -1,0 +1,151 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_TicklePear_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+    }
+  },
+  {
+    "Type": "ABL_TicklePear_C",
+    "Name": "Default__ABL_TicklePear_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.ABL_TicklePear_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_TicklePear_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 11.766666,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_TicklePear_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.3"
+        },
+        {
+          "ObjectName": "ablTurnAssistTask'Default__ABL_TicklePear_C:ablTurnAssistTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.5"
+        },
+        {
+          "ObjectName": "AblPlayPostAkEvent'Default__ABL_TicklePear_C:AblPlayPostAkEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.4"
+        },
+        {
+          "ObjectName": "AblMovementModeTask'Default__ABL_TicklePear_C:AblMovementModeTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.2"
+        }
+      ],
+      "m_AbilityNameHash": 1915425332
+    }
+  },
+  {
+    "Type": "AblMovementModeTask",
+    "Name": "AblMovementModeTask_0",
+    "Outer": "Default__ABL_TicklePear_C",
+    "Class": "UScriptClass'AblMovementModeTask'",
+    "ClassPath": "/Script/Phoenix.AblMovementModeTask",
+    "Properties": {
+      "StartMovement": "MOVE_Custom",
+      "bUseEndMovement": true,
+      "EndMovement": "MOVE_Walking",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.9666668,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_TicklePear_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.TicklePear"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayPostAkEvent",
+    "Name": "AblPlayPostAkEvent_1",
+    "Outer": "Default__ABL_TicklePear_C",
+    "Class": "UScriptClass'AblPlayPostAkEvent'",
+    "ClassPath": "/Script/Phoenix.AblPlayPostAkEvent",
+    "Properties": {
+      "AkEvent": {
+        "ObjectName": "AkAudioEvent'alohomora_cast_loop_motion_start'",
+        "ObjectPath": "/Game/WWise/Events/Spells/Alohomora/Motion/alohomora_cast_loop_motion_start.0"
+      },
+      "bStopWhenAttachedToDestroyed": true,
+      "bPlayerInstigationOnly": true,
+      "m_StartTime": {
+        "Offset": 0.3,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.3000001,
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablTurnAssistTask",
+    "Name": "ablTurnAssistTask_0",
+    "Outer": "Default__ABL_TicklePear_C",
+    "Class": "UScriptClass'ablTurnAssistTask'",
+    "ClassPath": "/Script/Phoenix.ablTurnAssistTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_TicklePear_C'Default__ABL_TicklePear_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Loot/ABL_TicklePear.1"
+        }
+      }
+    }
+  }
+]

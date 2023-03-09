@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_DugbogDrop_Ingredient",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "3E6444D142CB32CA684CAFAC29BCC44D",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x541D"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_DugbogDrop_Ingredient",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x5481"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_DugbogDrop_Ingredient",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Potion_DugbogPellet'",
+            "ObjectPath": "/Game/Gameplay/InventoryObjects/PotionIngredients/Materials/MI_Potion_DugbogPellet.0"
+          },
+          "MaterialSlotName": "MI_Potion_DugbogPellet",
+          "ImportedMaterialSlotName": "MI_Potion_DugbogPellet",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 8.47651,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 8.47651,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.00817728,
+          "Y": -0.79398096,
+          "Z": -0.22264051
+        },
+        "BoxExtent": {
+          "X": 2.143274,
+          "Y": 1.435007,
+          "Z": 2.4961696
+        },
+        "SphereRadius": 2.9098692
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_DugbogDrop_Ingredient:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_DugbogDrop_Ingredient.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_DugbogDrop_Ingredient:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_DugbogDrop_Ingredient.1"
+    },
+    "LightingGuid": "0792F28B-4B00DA84-C9585EAD-31BA49D7",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 354,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 218,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.17948721,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 219
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 219,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.00817728,
+          "Y": -0.79398096,
+          "Z": -0.22264051
+        },
+        "BoxExtent": {
+          "X": 2.143274,
+          "Y": 1.435007,
+          "Z": 2.4961696
+        },
+        "SphereRadius": 2.9098692
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

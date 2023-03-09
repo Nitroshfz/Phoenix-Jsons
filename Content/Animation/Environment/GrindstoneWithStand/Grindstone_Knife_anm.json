@@ -1,0 +1,236 @@
+[
+  {
+    "Type": "AnimNotify_AkEvent_Ava",
+    "Name": "AnimNotify_AkEvent_Ava_0",
+    "Outer": "Grindstone_Knife_anm",
+    "Class": "UScriptClass'AnimNotify_AkEvent_Ava'",
+    "ClassPath": "/Script/Phoenix.AnimNotify_AkEvent_Ava",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'sharpening_wheel_knife_Play'",
+        "ObjectPath": "/Game/WWise/Events/InteractiveObjects/BP_Grindstone_interact/sharpening_wheel_knife_Play.0"
+      },
+      "SocketName": "oilCan"
+    }
+  },
+  {
+    "Type": "AnimNotify_PlayNiagaraEffect",
+    "Name": "AnimNotify_PlayNiagaraEffect_0",
+    "Outer": "Grindstone_Knife_anm",
+    "Class": "UScriptClass'AnimNotify_PlayNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NS_GrindingSparks'",
+        "ObjectPath": "/Game/VFX/Niagara/Basic/Sparks/VFX_NS_GrindingSparks.78"
+      },
+      "LocationOffset": {
+        "X": 29.297785,
+        "Y": -109.578026,
+        "Z": 42.0
+      },
+      "RotationOffset": {
+        "Pitch": 0.0,
+        "Yaw": 35.898575,
+        "Roll": 0.0
+      },
+      "SocketName": "root"
+    }
+  },
+  {
+    "Type": "AnimSequence",
+    "Name": "Grindstone_Knife_anm",
+    "Class": "UScriptClass'AnimSequence'",
+    "ClassPath": "/Script/Engine.AnimSequence",
+    "Properties": {
+      "NumFrames": 351,
+      "TrackToSkeletonMapTable": [
+        {
+          "BoneTreeIndex": 0
+        },
+        {
+          "BoneTreeIndex": 1
+        },
+        {
+          "BoneTreeIndex": 2
+        },
+        {
+          "BoneTreeIndex": 3
+        },
+        {
+          "BoneTreeIndex": 4
+        },
+        {
+          "BoneTreeIndex": 6
+        },
+        {
+          "BoneTreeIndex": 7
+        },
+        {
+          "BoneTreeIndex": 8
+        },
+        {
+          "BoneTreeIndex": 9
+        }
+      ],
+      "BoneCompressionSettings": {
+        "ObjectName": "AnimBoneCompressionSettings'AC_PhxAnimBoneCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings.4"
+      },
+      "CurveCompressionSettings": {
+        "ObjectName": "AnimCurveCompressionSettings'AC_PhxAnimCurveCompressionSettings'",
+        "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings.1"
+      },
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "AkEvent_Ava",
+          "Notify": {
+            "ObjectName": "AnimNotify_AkEvent_Ava'Grindstone_Knife_anm:AnimNotify_AkEvent_Ava_0'",
+            "ObjectPath": "/Game/Animation/Environment/GrindstoneWithStand/Grindstone_Knife_anm.0"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.06755254,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 1,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 11.666667,
+          "LinkValue": 0.06755254,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'Grindstone_Knife_anm'",
+            "ObjectPath": "/Game/Animation/Environment/GrindstoneWithStand/Grindstone_Knife_anm.2"
+          }
+        },
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayNiagaraEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayNiagaraEffect'Grindstone_Knife_anm:AnimNotify_PlayNiagaraEffect_0'",
+            "ObjectPath": "/Game/Animation/Environment/GrindstoneWithStand/Grindstone_Knife_anm.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 5.0560255,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": null,
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 11.666667,
+          "LinkValue": 5.0560255,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'Grindstone_Knife_anm'",
+            "ObjectPath": "/Game/Animation/Environment/GrindstoneWithStand/Grindstone_Knife_anm.2"
+          }
+        }
+      ],
+      "SequenceLength": 11.666667,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_Station_GrindstoneWithStand_Master_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Environments/KnifeSharpeningStation/SK_Station_GrindstoneWithStand_Master_Skeleton.0"
+      }
+    },
+    "SkeletonGuid": "D3EA3FAC-45FDCBCE-959010A4-DF1895CA",
+    "CompressedTrackToSkeletonMapTable": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9
+    ],
+    "CompressedCurveNames": [
+      {
+        "DisplayName": "AverageSpeed"
+      }
+    ],
+    "CompressedCurveData": {
+      "FloatCurves": [
+        {
+          "FloatCurve": {
+            "Keys": [
+              {
+                "InterpMode": "RCIM_Linear",
+                "TangentMode": "RCTM_Auto",
+                "TangentWeightMode": "RCTWM_WeightedNone",
+                "Time": 0.0,
+                "Value": 0.0,
+                "ArriveTangent": 0.0,
+                "ArriveTangentWeight": 0.0,
+                "LeaveTangent": 0.0,
+                "LeaveTangentWeight": 0.0
+              }
+            ],
+            "DefaultValue": 3.4028235E+38,
+            "PreInfinityExtrap": "RCCE_Constant",
+            "PostInfinityExtrap": "RCCE_Constant"
+          },
+          "Name": {
+            "DisplayName": "AverageSpeed"
+          },
+          "CurveTypeFlags": 4
+        }
+      ]
+    },
+    "CompressedDataStructure": {
+      "CompressedNumberOfFrames": 351
+    },
+    "BoneCompressionCodec": {
+      "ObjectName": "AnimBoneCompressionCodec_ACL'AC_PhxAnimBoneCompressionSettings:AnimBoneCompressionCodec_ACL_2'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimBoneCompressionSettings"
+    },
+    "CurveCompressionCodec": {
+      "ObjectName": "AnimCurveCompressionCodec_CompressedRichCurve'AC_PhxAnimCurveCompressionSettings:CurveCompressionCodec'",
+      "ObjectPath": "/Game/Animation/Settings/AC_PhxAnimCurveCompressionSettings"
+    },
+    "CompressedRawDataSize": 27488
+  }
+]

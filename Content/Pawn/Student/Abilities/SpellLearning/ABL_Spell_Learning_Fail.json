@@ -1,0 +1,165 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Spell_Learning_Fail_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Spell_Learning_Fail_C'Default__ABL_Spell_Learning_Fail_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.1"
+    }
+  },
+  {
+    "Type": "ABL_Spell_Learning_Fail_C",
+    "Name": "Default__ABL_Spell_Learning_Fail_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.ABL_Spell_Learning_Fail_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Spell_Learning_Fail_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 5.966666,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.4"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.5"
+        },
+        {
+          "ObjectName": "ablFacialAnimationStateTask'Default__ABL_Spell_Learning_Fail_C:ablFacialAnimationStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.2"
+        },
+        {
+          "ObjectName": "ablFacialAnimationStateTask'Default__ABL_Spell_Learning_Fail_C:ablFacialAnimationStateTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.3"
+        }
+      ],
+      "m_AbilityNameHash": 3185736597
+    }
+  },
+  {
+    "Type": "ablFacialAnimationStateTask",
+    "Name": "ablFacialAnimationStateTask_0",
+    "Outer": "Default__ABL_Spell_Learning_Fail_C",
+    "Class": "UScriptClass'ablFacialAnimationStateTask'",
+    "ClassPath": "/Script/Phoenix.ablFacialAnimationStateTask",
+    "Properties": {
+      "FacialAnimation": {
+        "Transition": 0.2,
+        "AnimTags": [
+          "AA.AnimPlayerName.Facial_SpellLearning_Fail"
+        ],
+        "bStartAtRandomTime": false
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablFacialAnimationStateTask",
+    "Name": "ablFacialAnimationStateTask_1",
+    "Outer": "Default__ABL_Spell_Learning_Fail_C",
+    "Class": "UScriptClass'ablFacialAnimationStateTask'",
+    "ClassPath": "/Script/Phoenix.ablFacialAnimationStateTask",
+    "Properties": {
+      "FacialAnimation": {
+        "Transition": 0.2,
+        "AnimTags": [
+          "AA.FacialStates.Concentration"
+        ],
+        "bStartAtRandomTime": false
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.5"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.5"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Spell_Learning_Fail_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.SpellLearning_Fail"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.5
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Spell_Learning_Fail_C'Default__ABL_Spell_Learning_Fail_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Spell_Learning_Fail_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.SpellLearning_Loop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Spell_Learning_Fail_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/SpellLearning/ABL_Spell_Learning_Fail.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.8333333
+      }
+    }
+  }
+]

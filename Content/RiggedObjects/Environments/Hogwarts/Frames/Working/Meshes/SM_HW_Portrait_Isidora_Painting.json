@@ -1,0 +1,181 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_HW_Portrait_Isidora_Painting",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "8A7F647C40C65BB21206678E538FE0D2",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2639"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_0",
+    "Outer": "SM_HW_Portrait_Isidora_Painting",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x269D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_HW_Portrait_Isidora_Painting",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_Isidora_Portrait_Painting'",
+            "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/Working/Materials/MI_HW_Isidora_Portrait_Painting.0"
+          },
+          "MaterialSlotName": "MI_IsidoraPortrait_Painting",
+          "ImportedMaterialSlotName": "MI_IsidoraPortrait_Painting",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 179.11746,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 179.11746,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": -1.6828285,
+          "Z": 116.23515
+        },
+        "BoxExtent": {
+          "X": 40.875847,
+          "Y": 3.0755997E-05,
+          "Z": 88.26012
+        },
+        "SphereRadius": 97.23832
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_HW_Portrait_Isidora_Painting:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/Working/Meshes/SM_HW_Portrait_Isidora_Painting.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_HW_Portrait_Isidora_Painting:NavCollision_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/Frames/Working/Meshes/SM_HW_Portrait_Isidora_Painting.1"
+    },
+    "LightingGuid": "8DC0C582-451CC779-27BED8AF-230B5C3C",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 35,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 36,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 37
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 37,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 7.6293945E-06,
+          "Y": -1.6828285,
+          "Z": 116.23515
+        },
+        "BoxExtent": {
+          "X": 40.875847,
+          "Y": 3.0755997E-05,
+          "Z": 88.26012
+        },
+        "SphereRadius": 97.23832
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.022286667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

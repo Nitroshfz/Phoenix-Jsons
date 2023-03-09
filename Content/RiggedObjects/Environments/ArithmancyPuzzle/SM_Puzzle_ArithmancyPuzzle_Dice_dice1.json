@@ -1,0 +1,243 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Puzzle_ArithmancyPuzzle_Dice_dice1",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "EF32B23B442BE368CC2E4F838276AE10",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x574C"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Puzzle_ArithmancyPuzzle_Dice_dice1",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x57B0"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Puzzle_ArithmancyPuzzle_Dice_dice1",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_HW_Puzzle_Arithmancy_Dice'",
+            "ObjectPath": "/Game/RiggedObjects/Environments/ArithmancyPuzzle/Materials/MI_HW_Puzzle_Arithmancy_Dice.0"
+          },
+          "MaterialSlotName": "MI_Puzzle_ArithmancyPuzzle_Dice",
+          "ImportedMaterialSlotName": "MI_Puzzle_ArithmancyPuzzle_Dice",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 68.09334,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 68.09334,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.045071125,
+          "Y": 0.0,
+          "Z": -0.0034060478
+        },
+        "BoxExtent": {
+          "X": 7.8939247,
+          "Y": 7.8501167,
+          "Z": 7.893926
+        },
+        "SphereRadius": 10.69853
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Puzzle_ArithmancyPuzzle_Dice_dice1:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/ArithmancyPuzzle/SM_Puzzle_ArithmancyPuzzle_Dice_dice1.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Puzzle_ArithmancyPuzzle_Dice_dice1:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/ArithmancyPuzzle/SM_Puzzle_ArithmancyPuzzle_Dice_dice1.1"
+    },
+    "LightingGuid": "942D49C6-45DDD8A8-205173AB-6B7CDD2A",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 736,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 621,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 622
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 622,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 184,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 195,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 1.3445292,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 196
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 196,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 92,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 106,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 4.515055,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 107
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 107,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.045071125,
+          "Y": 0.0,
+          "Z": -0.0034060478
+        },
+        "BoxExtent": {
+          "X": 7.8939247,
+          "Y": 7.8501167,
+          "Z": 7.893926
+        },
+        "SphereRadius": 10.69853
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.068085335,
+        0.032021333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

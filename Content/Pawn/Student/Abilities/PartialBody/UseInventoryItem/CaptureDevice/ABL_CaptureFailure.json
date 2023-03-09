@@ -1,0 +1,139 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_CaptureFailure_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_CaptureFailure_C'Default__ABL_CaptureFailure_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.1"
+    }
+  },
+  {
+    "Type": "ABL_CaptureFailure_C",
+    "Name": "Default__ABL_CaptureFailure_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.ABL_CaptureFailure_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_CaptureFailure_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.4333333,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CaptureFailure_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.4"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_CaptureFailure_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.2"
+        },
+        {
+          "ObjectName": "AblHermesSendMessageToTask'Default__ABL_CaptureFailure_C:AblHermesSendMessageToTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.3"
+        }
+      ],
+      "m_AbilityNameHash": 3442184823
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_CaptureFailure_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimCompletePartial"
+      },
+      "m_StartTime": {
+        "Offset": -0.20000005,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CaptureFailure_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.20000005,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_CaptureFailure_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblHermesSendMessageToTask",
+    "Name": "AblHermesSendMessageToTask_0",
+    "Outer": "Default__ABL_CaptureFailure_C",
+    "Class": "UScriptClass'AblHermesSendMessageToTask'",
+    "ClassPath": "/Script/AbleCore.AblHermesSendMessageToTask",
+    "Properties": {
+      "m_MessageTarget": "Instigator",
+      "m_MessageName": "CancelAnimationComplete",
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_CaptureFailure_C'Default__ABL_CaptureFailure_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.19999999,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_CaptureFailure_C'Default__ABL_CaptureFailure_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.1"
+        }
+      },
+      "m_TaskTargets": [
+        43
+      ]
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_CaptureFailure_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.UseCaptureDevice_Failure"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_FadeOut": {
+        "BlendTime": 0.2
+      },
+      "m_RootMode": {
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_BeastCaptureComplete_Blendweights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_BeastCaptureComplete_Blendweights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_CaptureFailure_C'Default__ABL_CaptureFailure_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/UseInventoryItem/CaptureDevice/ABL_CaptureFailure.1"
+        }
+      }
+    }
+  }
+]

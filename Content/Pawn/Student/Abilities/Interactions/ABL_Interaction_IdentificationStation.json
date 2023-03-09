@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_Interaction_IdentificationStation_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Interaction_IdentificationStation_C'Default__ABL_Interaction_IdentificationStation_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.1"
+    }
+  },
+  {
+    "Type": "ABL_Interaction_IdentificationStation_C",
+    "Name": "Default__ABL_Interaction_IdentificationStation_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.ABL_Interaction_IdentificationStation_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_Interaction_IdentificationStation_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 4.133333,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_IdentificationStation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.3"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Interaction_IdentificationStation_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.2"
+        }
+      ],
+      "m_AbilityNameHash": 2299731997
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Interaction_IdentificationStation_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimCompletePartial"
+      },
+      "m_StartTime": {
+        "Offset": 2.6333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_IdentificationStation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.3"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 2.6333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_IdentificationStation_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.3"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Interaction_IdentificationStation_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Interact_IdentificationStation"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.3
+      },
+      "m_FadeOut": {
+        "BlendTime": 0.5
+      },
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_FullRootMotion",
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'ABL_Interaction_IdentificationStation_BlendWeights'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation_BlendWeights.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Interaction_IdentificationStation_C'Default__ABL_Interaction_IdentificationStation_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_IdentificationStation.1"
+        }
+      }
+    }
+  }
+]

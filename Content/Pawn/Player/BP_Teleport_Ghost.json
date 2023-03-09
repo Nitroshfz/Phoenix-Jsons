@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_Teleport_Ghost_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_Teleport_Ghost_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.6"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "P_Apparition_Beacon",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'ParticleSystemComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": 2097153,
+        "ElementSize": 8,
+        "PropertyFlags": 17180393476,
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": 8652820,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_Teleport_Ghost_C'Default__BP_Teleport_Ghost_C'",
+      "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.1"
+    }
+  },
+  {
+    "Type": "BP_Teleport_Ghost_C",
+    "Name": "Default__BP_Teleport_Ghost_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Player/BP_Teleport_Ghost.BP_Teleport_Ghost_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'BP_Teleport_Ghost_C'",
+      "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.0"
+    },
+    "ClassPath": ""
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_Apparition_Beacon_GEN_VARIABLE",
+    "Outer": "BP_Teleport_Ghost_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "ClassPath": "/Script/Engine.ParticleSystemComponent",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_ApparitionBeacon_Ribbon'",
+        "ObjectPath": "/Game/VFX/Particles/Magic/Apparition/P_ApparitionBeacon_Ribbon.52"
+      },
+      "RelativeScale3D": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      },
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_Teleport_Ghost_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "ClassPath": "/Script/Engine.SceneComponent"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_Teleport_Ghost_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.3"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Teleport_Ghost_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.5"
+        }
+      ],
+      "VariableGuid": "97E33C2F-4DAB8897-3E6D37BB-CC83ADBE",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "ClassPath": "/Script/Engine.SCS_Node",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'BP_Teleport_Ghost_C:P_Apparition_Beacon_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.2"
+      },
+      "VariableGuid": "09E9A413-4C248A02-3B51BC85-4FC3C236",
+      "InternalVariableName": "P_Apparition_Beacon"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_Teleport_Ghost_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "ClassPath": "/Script/Engine.SimpleConstructionScript",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Teleport_Ghost_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_Teleport_Ghost_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.4"
+        },
+        {
+          "ObjectName": "SCS_Node'BP_Teleport_Ghost_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_Teleport_Ghost_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Pawn/Player/BP_Teleport_Ghost.4"
+      }
+    }
+  }
+]

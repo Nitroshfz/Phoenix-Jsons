@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Fluxweed_Ingredient",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "F49C965B4556F7989CD5ACB602AACDDD",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x2F03"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_Fluxweed_Ingredient",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x2F67"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Fluxweed_Ingredient",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Fluxweed'",
+            "ObjectPath": "/Game/Gameplay/Nurturing/Herbology/Herbs/Materials/MI_Fluxweed.0"
+          },
+          "MaterialSlotName": "MI_Fluxweed",
+          "ImportedMaterialSlotName": "MI_Fluxweed",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 9.75076,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 9.75076,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.0509325,
+          "Y": 0.0,
+          "Z": -1.0743957
+        },
+        "BoxExtent": {
+          "X": 1.6954693,
+          "Y": 3.3731961,
+          "Z": 2.4658055
+        },
+        "SphereRadius": 3.5563273
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Fluxweed_Ingredient:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_Fluxweed_Ingredient.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_Fluxweed_Ingredient:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_Fluxweed_Ingredient.1"
+    },
+    "LightingGuid": "10362A16-403330DB-5974C493-EC68C037",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 281,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 278,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 279
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 279,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 71,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 95,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.76643515,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 96
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 96,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1.0509325,
+          "Y": 0.0,
+          "Z": -1.0743957
+        },
+        "BoxExtent": {
+          "X": 1.6954693,
+          "Y": 3.3731961,
+          "Z": 2.4658055
+        },
+        "SphereRadius": 3.5563273
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.038358666,
+        0.024589667,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

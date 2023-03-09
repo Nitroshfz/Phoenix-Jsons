@@ -1,0 +1,355 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_LacewingFlies_Ingredient",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "E5150FFE4260CC7B1EC6C2853D97E4DB",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x17439"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_2",
+    "Outer": "SM_LacewingFlies_Ingredient",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x1749D"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_LacewingFlies_Ingredient",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_PotionIngredients_LacewingFlies_glass'",
+            "ObjectPath": "/Game/Gameplay/InventoryObjects/PotionIngredients/Materials/MI_PotionIngredients_LacewingFlies_glass.0"
+          },
+          "MaterialSlotName": "MI_PotionIngredients_LacewingFlies_glass",
+          "ImportedMaterialSlotName": "MI_PotionIngredients_LacewingFlies_glass",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 17.157475,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_PotionIngredients_LacewingFlies'",
+            "ObjectPath": "/Game/Gameplay/InventoryObjects/PotionIngredients/Materials/MI_PotionIngredients_LacewingFlies.0"
+          },
+          "MaterialSlotName": "MI_PotionIngredients_LacewingFlies",
+          "ImportedMaterialSlotName": "MI_PotionIngredients_LacewingFlies",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 11.882952,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 14.849734,
+      "LightMapResolution": 64,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket'SM_LacewingFlies_Ingredient:StaticMeshSocket_0'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_LacewingFlies_Ingredient.3"
+        }
+      ],
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -7.1525574E-07,
+          "Y": -5.065385,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 2.154771,
+          "Y": 5.1170425,
+          "Z": 2.2280679
+        },
+        "SphereRadius": 5.6906323
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_LacewingFlies_Ingredient:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_LacewingFlies_Ingredient.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'SM_LacewingFlies_Ingredient:NavCollision_2'",
+      "ObjectPath": "/Game/RiggedObjects/Environments/Sanctuary/PotionCauldron/Ingredients/SM_LacewingFlies_Ingredient.1"
+    },
+    "LightingGuid": "3220BBDE-494CA31E-97378CAF-5F5CC6B2",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 1152,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1073,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 3456,
+              "NumTriangles": 3900,
+              "MinVertexIndex": 1074,
+              "MaxVertexIndex": 4740,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 4741
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 4741,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 313,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 383,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 939,
+              "NumTriangles": 949,
+              "MinVertexIndex": 384,
+              "MaxVertexIndex": 1418,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.92664313,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1419
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1419,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 129,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 158,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 387,
+              "NumTriangles": 186,
+              "MinVertexIndex": 159,
+              "MaxVertexIndex": 352,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 1.9939196,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 353
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 353,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 42,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 54,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 126,
+              "NumTriangles": 36,
+              "MinVertexIndex": 55,
+              "MaxVertexIndex": 113,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 6.869432,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 114
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 114,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -7.1525574E-07,
+          "Y": -5.065385,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 2.154771,
+          "Y": 5.1170425,
+          "Z": 2.2280679
+        },
+        "SphereRadius": 5.6906323
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.35006404,
+        0.10251601,
+        0.040629,
+        0.02515725,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "SM_LacewingFlies_Ingredient",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "ClassPath": "/Script/Engine.StaticMeshSocket",
+    "Properties": {
+      "SocketName": "Pour",
+      "RelativeLocation": {
+        "X": -3.8146973E-05,
+        "Y": -9.761744,
+        "Z": 0.0
+      }
+    }
+  }
+]

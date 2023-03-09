@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_House_Chests_Collectibles_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_House_Chests_Collectibles_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/House_Chest_Collectibles/SK_House_Chests_Collectibles_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_House_Chests_Collectibles_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/House_Chest_Collectibles/SK_House_Chests_Collectibles_Master_PhysicsAsset.3"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_House_Chests_Collectibles_Master_PhysicsAsset:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Hogwarts/House_Chest_Collectibles/SK_House_Chests_Collectibles_Master_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "SK_House_Chests_Collectibles_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "lid",
+        "ConstraintBone1": "lid",
+        "ConstraintBone2": "chest",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -84.50208,
+          "Z": -38.467873
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_House_Chests_Collectibles_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0023965538,
+              "Y": -41.005116,
+              "Z": -0.036908895
+            },
+            "Rotation": {
+              "Pitch": -6.830189E-06,
+              "Yaw": -90.01957,
+              "Roll": -89.95644
+            },
+            "X": 83.129295,
+            "Y": 82.46378,
+            "Z": 184.24269,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "chest",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "877CC3F44B43AF7A579B928C9B091089"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_House_Chests_Collectibles_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.00018656254,
+              "Y": -22.713211,
+              "Z": 39.3143
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 90.00132,
+              "Roll": -89.98153
+            },
+            "X": 40.943607,
+            "Y": 84.18945,
+            "Z": 183.84999,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "lid",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "F55C9AC044BC41E7C50519902FB70EE1"
+  }
+]

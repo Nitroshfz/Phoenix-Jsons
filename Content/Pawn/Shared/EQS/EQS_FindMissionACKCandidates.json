@@ -1,0 +1,166 @@
+[
+  {
+    "Type": "EnvQuery",
+    "Name": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQuery'",
+    "ClassPath": "/Script/AIModule.EnvQuery",
+    "Properties": {
+      "QueryName": "EQS_FindSocialActionWitnesses1",
+      "Options": [
+        {
+          "ObjectName": "EnvQueryOption'EQS_FindMissionACKCandidates:EnvQueryOption_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindMissionACKCandidates.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryGenerator_ActorsOfClass",
+    "Name": "EnvQueryGenerator_ActorsOfClass_0",
+    "Outer": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQueryGenerator_ActorsOfClass'",
+    "ClassPath": "/Script/AIModule.EnvQueryGenerator_ActorsOfClass",
+    "Properties": {
+      "SearchedActorClass": {
+        "ObjectName": "Class'SocialReasoning'",
+        "ObjectPath": "/Script/Phoenix"
+      },
+      "SearchRadius": {
+        "DefaultValue": 600.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryOption",
+    "Name": "EnvQueryOption_1",
+    "Outer": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQueryOption'",
+    "ClassPath": "/Script/AIModule.EnvQueryOption",
+    "Properties": {
+      "Generator": {
+        "ObjectName": "EnvQueryGenerator_ActorsOfClass'EQS_FindMissionACKCandidates:EnvQueryGenerator_ActorsOfClass_0'",
+        "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindMissionACKCandidates.1"
+      },
+      "Tests": [
+        {
+          "ObjectName": "EnvQueryTest_Distance'EQS_FindMissionACKCandidates:EnvQueryTest_Distance_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindMissionACKCandidates.3"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Dot'EQS_FindMissionACKCandidates:EnvQueryTest_Dot_0'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindMissionACKCandidates.4"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Dot'EQS_FindMissionACKCandidates:EnvQueryTest_Dot_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindMissionACKCandidates.5"
+        },
+        {
+          "ObjectName": "EnvQueryTest_Trace'EQS_FindMissionACKCandidates:EnvQueryTest_Trace_1'",
+          "ObjectPath": "/Game/Pawn/Shared/EQS/EQS_FindMissionACKCandidates.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Distance",
+    "Name": "EnvQueryTest_Distance_1",
+    "Outer": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQueryTest_Distance'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Distance",
+    "Properties": {
+      "TestMode": "EEnvTestDistance::Distance2D",
+      "FloatValueMin": {
+        "DefaultValue": 100.0
+      },
+      "FloatValueMax": {
+        "DefaultValue": 600.0
+      },
+      "ScoringEquation": "EEnvTestScoreEquation::InverseLinear",
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Dot",
+    "Name": "EnvQueryTest_Dot_0",
+    "Outer": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQueryTest_Dot'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Dot",
+    "Properties": {
+      "LineA": {
+        "Rotation": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      "LineB": {
+        "LineFrom": {
+          "ObjectName": "Class'EnvQueryContext_Item'",
+          "ObjectPath": "/Script/AIModule"
+        },
+        "LineTo": {
+          "ObjectName": "Class'EnvQueryContext_Querier'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      "TestMode": "EEnvTestDot::Dot2D",
+      "TestOrder": 1,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "FloatValueMin": {
+        "DefaultValue": 0.5
+      },
+      "FloatValueMax": {
+        "DefaultValue": 1.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Dot",
+    "Name": "EnvQueryTest_Dot_1",
+    "Outer": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQueryTest_Dot'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Dot",
+    "Properties": {
+      "TestMode": "EEnvTestDot::Dot2D",
+      "TestOrder": 2,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "FloatValueMin": {
+        "DefaultValue": 0.5
+      },
+      "FloatValueMax": {
+        "DefaultValue": 1.0
+      },
+      "VerNum": 1
+    }
+  },
+  {
+    "Type": "EnvQueryTest_Trace",
+    "Name": "EnvQueryTest_Trace_1",
+    "Outer": "EQS_FindMissionACKCandidates",
+    "Class": "UScriptClass'EnvQueryTest_Trace'",
+    "ClassPath": "/Script/AIModule.EnvQueryTest_Trace",
+    "Properties": {
+      "TraceData": {
+        "VersionNum": 1,
+        "SerializedChannel": "ECC_Visibility"
+      },
+      "TraceFromContext": {
+        "DefaultValue": true
+      },
+      "ItemHeightOffset": {
+        "DefaultValue": 180.0
+      },
+      "ContextHeightOffset": {
+        "DefaultValue": 180.0
+      },
+      "Context": {
+        "ObjectName": "Class'EnvQueryContext_Item'",
+        "ObjectPath": "/Script/AIModule"
+      },
+      "TestOrder": 3,
+      "TestPurpose": "EEnvTestPurpose::Filter",
+      "VerNum": 1
+    }
+  }
+]

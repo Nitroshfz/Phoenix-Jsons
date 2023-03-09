@@ -1,0 +1,423 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:SkeletalBodySetup_36'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.8"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:SkeletalBodySetup_43'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.9"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.7"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.6"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:PhysicsConstraintTemplate_35'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:PhysicsConstraintTemplate_42'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Troll/Clothing/Lower_M/SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Hips",
+        "ConstraintBone1": "Hips",
+        "ConstraintBone2": "Reference",
+        "Pos1": {
+          "X": 0.0,
+          "Y": -1.5258793E-05,
+          "Z": -1.5258785E-05
+        },
+        "Pos2": {
+          "X": 2.10309E-14,
+          "Y": -193.62497,
+          "Z": -0.76898205
+        },
+        "ProfileInstance": {
+          "LinearLimit": {
+            "XMotion": "LCM_Free",
+            "YMotion": "LCM_Free",
+            "ZMotion": "LCM_Free"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_35",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "LeftUpLeg",
+        "ConstraintBone1": "LeftUpLeg",
+        "ConstraintBone2": "Hips",
+        "Pos2": {
+          "X": 38.408665,
+          "Y": 25.58078,
+          "Z": -1.4782562
+        },
+        "PriAxis2": {
+          "X": 0.27548176,
+          "Y": 0.6960336,
+          "Z": 0.6630606
+        },
+        "SecAxis2": {
+          "X": 0.18092686,
+          "Y": 0.63988084,
+          "Z": -0.7468729
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 15.0,
+            "Swing2LimitDegrees": 10.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 9.0,
+            "TwistMotion": "ACM_Locked"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Stiffness": 10.0,
+              "Damping": 500.0
+            },
+            "SwingDrive": {
+              "Stiffness": 10.0,
+              "Damping": 500.0
+            },
+            "SlerpDrive": {
+              "Stiffness": 10.0,
+              "Damping": 500.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_42",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "RightUpLeg",
+        "ConstraintBone1": "RightUpLeg",
+        "ConstraintBone2": "Hips",
+        "Pos2": {
+          "X": -38.4087,
+          "Y": 25.580954,
+          "Z": -1.4782516
+        },
+        "PriAxis2": {
+          "X": 0.30512893,
+          "Y": -0.66944736,
+          "Z": -0.6773019
+        },
+        "SecAxis2": {
+          "X": 0.20906375,
+          "Y": -0.6467807,
+          "Z": 0.73346436
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1LimitDegrees": 15.0,
+            "Swing2LimitDegrees": 10.0,
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistLimitDegrees": 9.0,
+            "TwistMotion": "ACM_Locked"
+          },
+          "AngularDrive": {
+            "TwistDrive": {
+              "Stiffness": 10.0,
+              "Damping": 500.0
+            },
+            "SwingDrive": {
+              "Stiffness": 10.0,
+              "Damping": 500.0
+            },
+            "SlerpDrive": {
+              "Stiffness": 10.0,
+              "Damping": 500.0
+            },
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.00028803525,
+              "Y": 35.971455,
+              "Z": 0.052886307
+            },
+            "Rotation": {
+              "Pitch": 84.374535,
+              "Yaw": -89.99989,
+              "Roll": -89.99989
+            },
+            "Radius": 50.0,
+            "Length": 37.75,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 5.0,
+        "MassScale": 0.1
+      },
+      "BoneName": "Hips",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "CD03BCB5490C0A10D86D1FA316883181"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 17.206903,
+              "Y": 4.706682,
+              "Z": -1.8621972
+            },
+            "Rotation": {
+              "Pitch": 89.01106,
+              "Yaw": 179.9974,
+              "Roll": 179.9974
+            },
+            "Radius": 32.25,
+            "Length": 33.25,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "LeftLeg",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "958C4CAE44F654AADC2C2A8B3CAD1FE2"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -17.261234,
+              "Y": -5.252575,
+              "Z": 3.382132
+            },
+            "Rotation": {
+              "Pitch": 89.00337,
+              "Yaw": 179.99626,
+              "Roll": 179.99623
+            },
+            "Radius": 32.25,
+            "Length": 33.25,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "RightLeg",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "42EFD63448916E13FE946CBF2DF985E3"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -89.99999,
+              "Roll": 0.0
+            },
+            "Radius": 0.505,
+            "Length": 0.505,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Reference",
+      "PhysicsType": "PhysType_Kinematic",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "CollisionReponse": "EBodyCollisionResponse::BodyCollision_Disabled"
+    },
+    "BodySetupGuid": "C631A8C341709BD4CD3655AEB9688EDD"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_36",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 30.56045,
+              "Y": -0.43128008,
+              "Z": 5.118424
+            },
+            "Rotation": {
+              "Pitch": 84.37603,
+              "Yaw": 1.4078093,
+              "Roll": -1.4080641
+            },
+            "Radius": 39.75,
+            "Length": 44.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 5.0,
+        "MassScale": 0.1
+      },
+      "BoneName": "LeftUpLeg",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "C1CDF58549E4834DBF414D8E802E9682"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_43",
+    "Outer": "SK_Troll_Low_MountainSkirt01_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -32.020576,
+              "Y": 2.3253517,
+              "Z": -5.2783422
+            },
+            "Rotation": {
+              "Pitch": 87.187,
+              "Yaw": 8.698396E-05,
+              "Roll": -5.625088
+            },
+            "Radius": 39.75,
+            "Length": 43.5,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "LinearDamping": 1.0,
+        "AngularDamping": 5.0,
+        "MassScale": 0.1
+      },
+      "BoneName": "RightUpLeg",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "017E1B0A431DD007A835BE9F7956289E"
+  }
+]

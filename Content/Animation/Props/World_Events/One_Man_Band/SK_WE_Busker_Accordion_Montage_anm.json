@@ -1,0 +1,190 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "SK_WE_Busker_Accordion_Montage_anm",
+    "Class": "UScriptClass'AnimMontage'",
+    "ClassPath": "/Script/Engine.AnimMontage",
+    "Properties": {
+      "BlendIn": {
+        "BlendTime": 0.05,
+        "BlendOption": "EAlphaBlendOption::ExpInOut"
+      },
+      "BlendOut": {
+        "BlendTime": 0.05,
+        "BlendOption": "EAlphaBlendOption::ExpInOut"
+      },
+      "CompositeSections": [
+        {
+          "SectionName": "broken",
+          "NextSectionName": "broken",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Accordion_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Proportional",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 5.5333333,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Broken_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Broken_anm.0"
+          }
+        },
+        {
+          "SectionName": "fixed_event",
+          "NextSectionName": "fixed",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Accordion_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Proportional",
+          "CachedLinkMethod": "EAnimLinkMethod::Proportional",
+          "SegmentBeginTime": 5.5333333,
+          "SegmentLength": 2.1333334,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Transition_BrokenToFixed_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Transition_BrokenToFixed_anm.0"
+          }
+        },
+        {
+          "SectionName": "fixed",
+          "NextSectionName": "fixed",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Accordion_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 2,
+          "LinkMethod": "EAnimLinkMethod::Proportional",
+          "CachedLinkMethod": "EAnimLinkMethod::Proportional",
+          "SegmentBeginTime": 7.666667,
+          "SegmentLength": 2.7666667,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Fixed_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Fixed_anm.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "DefaultSlot",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Broken_anm'",
+                  "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Broken_anm.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 5.5333333,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Transition_BrokenToFixed_anm'",
+                  "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Transition_BrokenToFixed_anm.0"
+                },
+                "StartPos": 5.5333333,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 2.1333334,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Fixed_anm'",
+                  "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Fixed_anm.0"
+                },
+                "StartPos": 7.666667,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 2.7666667,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "PlayNiagaraEffect",
+          "Notify": {
+            "ObjectName": "AnimNotify_PlayNiagaraEffect'SK_WE_Busker_Accordion_Montage_anm:AnimNotify_PlayNiagaraEffect_0'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Montage_anm.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 5.757947,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'SK_WE_Busker_Accordion_Montage_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Montage_anm.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 5.5333333,
+          "SegmentLength": 2.1333334,
+          "LinkValue": 5.8502707,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'SK_WE_Busker_Accordion_Transition_BrokenToFixed_anm'",
+            "ObjectPath": "/Game/Animation/Props/World_Events/One_Man_Band/SK_WE_Busker_Accordion_Transition_BrokenToFixed_anm.0"
+          }
+        }
+      ],
+      "SequenceLength": 10.433333,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SK_WE_Accordian_Skeleton'",
+        "ObjectPath": "/Game/RiggedObjects/Props/World_Events/Busker/Accordian/SK_WE_Accordian_Skeleton.0"
+      }
+    },
+    "SkeletonGuid": "C4551CA4-40194132-A16DF0A1-7718F07F"
+  },
+  {
+    "Type": "AnimNotify_PlayNiagaraEffect",
+    "Name": "AnimNotify_PlayNiagaraEffect_0",
+    "Outer": "SK_WE_Busker_Accordion_Montage_anm",
+    "Class": "UScriptClass'AnimNotify_PlayNiagaraEffect'",
+    "ClassPath": "/Script/NiagaraAnimNotifies.AnimNotify_PlayNiagaraEffect",
+    "Properties": {
+      "Template": {
+        "ObjectName": "NiagaraSystem'VFX_NE_WE_AccordionFix'",
+        "ObjectPath": "/Game/VFX/World_Events/One_Man_Band/VFX_NE_WE_AccordionFix.19"
+      },
+      "SocketName": "main"
+    }
+  }
+]

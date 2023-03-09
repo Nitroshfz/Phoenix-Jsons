@@ -1,0 +1,82 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_MineCart_Idle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_MineCart_Idle_C'Default__ABL_MineCart_Idle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/MineCart/ABL_MineCart_Idle.1"
+    }
+  },
+  {
+    "Type": "ABL_MineCart_Idle_C",
+    "Name": "Default__ABL_MineCart_Idle_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/MineCart/ABL_MineCart_Idle.ABL_MineCart_Idle_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_MineCart_Idle_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/MineCart/ABL_MineCart_Idle.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 2.0,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_MineCart_Idle_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/MineCart/ABL_MineCart_Idle.3"
+        }
+      ],
+      "m_AbilityNameHash": 2471476057
+    }
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_BodyLean2D",
+    "Name": "AblBlendSpaceParameterGetter_BodyLean2D_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_BodyLean2D'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_BodyLean2D",
+    "Properties": {
+      "MinMaxForwardAcceleration": 2100.0,
+      "MinMaxSideAcceleration": 2100.0,
+      "InterpAlphaX": 5.0,
+      "InterpAlphaY": 1.0
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_MineCart_Idle_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.MineCart_RideIdle"
+      ],
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_BodyLean2D'Default__ABL_MineCart_Idle_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_BodyLean2D_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/MineCart/ABL_MineCart_Idle.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_MineCart_Idle_C'Default__ABL_MineCart_Idle_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/MineCart/ABL_MineCart_Idle.1"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "MS_Goblin_Skeleton",
+    "Class": "UScriptClass'BodySetup'",
+    "ClassPath": "/Script/Engine.BodySetup",
+    "Properties": {
+      "DefaultInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Broom",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "LargeDestructible",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "FootIK",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MapTrace",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "InteractBlockers",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "EdgeCheck",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      }
+    },
+    "BodySetupGuid": "47FCD6684783CFA578D6BAA4096F2AF7",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 28,
+        "SizeOnDisk": 28,
+        "OffsetInFile": "0x5388B"
+      }
+    }
+  },
+  {
+    "Type": "NavCollision",
+    "Name": "NavCollision_1",
+    "Outer": "MS_Goblin_Skeleton",
+    "Class": "UScriptClass'NavCollision'",
+    "ClassPath": "/Script/NavigationSystem.NavCollision",
+    "CookedFormatData": {
+      "NavCollision_Chaos": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 21,
+        "SizeOnDisk": 21,
+        "OffsetInFile": "0x538EF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "MS_Goblin_Skeleton",
+    "Class": "UScriptClass'StaticMesh'",
+    "ClassPath": "/Script/Engine.StaticMesh",
+    "Properties": {
+      "MinLOD": {
+        "bCooked": true,
+        "Default": 0,
+        "Value": 0
+      },
+      "StaticMaterials": [
+        {
+          "MaterialInterface": {
+            "ObjectName": "MaterialInstanceConstant'MI_Goblin_Skeleton'",
+            "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Body/Skeleton_M/Materials/MI_Goblin_Skeleton.0"
+          },
+          "MaterialSlotName": "MI_Goblin_Skeleton",
+          "ImportedMaterialSlotName": "MI_Goblin_Skeleton",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 267.5848,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 267.5848,
+      "LightMapResolution": 64,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.7537804,
+          "Z": 65.43573
+        },
+        "BoxExtent": {
+          "X": 91.03298,
+          "Y": 24.190592,
+          "Z": 66.22123
+        },
+        "SphereRadius": 94.88168
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'MS_Goblin_Skeleton:BodySetup_0'",
+      "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Body/Skeleton_M/Meshes/MS_Goblin_Skeleton.0"
+    },
+    "NavCollision": {
+      "ObjectName": "NavCollision'MS_Goblin_Skeleton:NavCollision_1'",
+      "ObjectPath": "/Game/RiggedObjects/Characters/Creatures/Goblins/Body/Skeleton_M/Meshes/MS_Goblin_Skeleton.1"
+    },
+    "LightingGuid": "DA69A9A7-42794207-A570C59B-0A45B86D",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 14980,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 18202,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 18203
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 18203,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 3744,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 6811,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 10.337261,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 6812
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 6812,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 936,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 2027,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 39.188427,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 2028
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 2028,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 118,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 260,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 141.91583,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 261
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 261,
+            "Strides": -1,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -1.7537804,
+          "Z": 65.43573
+        },
+        "BoxExtent": {
+          "X": 91.03298,
+          "Y": 24.190592,
+          "Z": 66.22123
+        },
+        "SphereRadius": 94.88168
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.9986933,
+        0.26467332,
+        0.08116833,
+        0.02764604,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

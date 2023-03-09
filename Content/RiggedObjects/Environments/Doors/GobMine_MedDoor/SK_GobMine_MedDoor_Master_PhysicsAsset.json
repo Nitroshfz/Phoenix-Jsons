@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_GobMine_MedDoor_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GobMine_MedDoor_Master_PhysicsAsset:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Doors/GobMine_MedDoor/SK_GobMine_MedDoor_Master_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GobMine_MedDoor_Master_PhysicsAsset:SkeletalBodySetup_8'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Doors/GobMine_MedDoor/SK_GobMine_MedDoor_Master_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GobMine_MedDoor_Master_PhysicsAsset:SkeletalBodySetup_15'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Doors/GobMine_MedDoor/SK_GobMine_MedDoor_Master_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_GobMine_MedDoor_Master_PhysicsAsset:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Doors/GobMine_MedDoor/SK_GobMine_MedDoor_Master_PhysicsAsset.4"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_GobMine_MedDoor_Master_PhysicsAsset:PhysicsConstraintTemplate_14'",
+          "ObjectPath": "/Game/RiggedObjects/Environments/Doors/GobMine_MedDoor/SK_GobMine_MedDoor_Master_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_14",
+    "Outer": "SK_GobMine_MedDoor_Master_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "center",
+        "ConstraintBone1": "center",
+        "ConstraintBone2": "door_l",
+        "Pos2": {
+          "X": 171.406,
+          "Y": 0.8599511,
+          "Z": 4.9290338
+        },
+        "SecAxis2": {
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": -1.2246469E-16
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "SK_GobMine_MedDoor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": -86.53041,
+              "Y": -20.545998,
+              "Z": -5.1437054
+            },
+            "Rotation": {
+              "Pitch": -0.020756943,
+              "Yaw": 179.80533,
+              "Roll": -89.69715
+            },
+            "X": 173.59293,
+            "Y": 60.666985,
+            "Z": 273.82126,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "door_r",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "8F584F3D47C952A1581B0F8A2F1BC210"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_15",
+    "Outer": "SK_GobMine_MedDoor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -5.920201E-07,
+              "Y": -7.5888534E-06,
+              "Z": 1.9458063E-05
+            },
+            "Rotation": {
+              "Pitch": 0.119466834,
+              "Yaw": -89.99851,
+              "Roll": -179.66371
+            },
+            "Radius": 51.04311,
+            "Length": 21.010933,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "center",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "513C1DE648A69412DA70B49D9686119D"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "SK_GobMine_MedDoor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.003479004,
+              "Y": -284.94873,
+              "Z": -4.4686794
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 61.125,
+            "Length": 57.75,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "frame",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "B2EE6BAB4FF5A2B529C4BE8CF263C368"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_8",
+    "Outer": "SK_GobMine_MedDoor_Master_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 87.22196,
+              "Y": 20.493332,
+              "Z": 5.0985413
+            },
+            "Rotation": {
+              "Pitch": -0.019363586,
+              "Yaw": 179.7853,
+              "Roll": -89.75387
+            },
+            "X": 170.34192,
+            "Y": 60.492615,
+            "Z": 273.1611,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "door_l",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "87866A6A4226C9BC4610D8AFFB41F7F2"
+  }
+]

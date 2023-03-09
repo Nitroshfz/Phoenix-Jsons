@@ -1,0 +1,468 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Interaction_Knock_C'Default__ABL_Interaction_Knock_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.1"
+    }
+  },
+  {
+    "Type": "ABL_Interaction_Knock_C",
+    "Name": "Default__ABL_Interaction_Knock_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.ABL_Interaction_Knock_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Interaction_Knock_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 9.925149,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        },
+        {
+          "ObjectName": "AblSetHeadTrackingStateTask'Default__ABL_Interaction_Knock_C:AblSetHeadTrackingStateTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.15"
+        },
+        {
+          "ObjectName": "AblDisableCognitionSenseTask'Default__ABL_Interaction_Knock_C:AblDisableCognitionSenseTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.10"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_Interaction_Knock_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.14"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Interaction_Knock_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.9"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Interaction_Knock_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.6"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Interaction_Knock_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Interaction_Knock_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.7"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Interaction_Knock_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.8"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_Knock_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.12"
+        },
+        {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Interaction_Knock_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.2"
+        }
+      ],
+      "m_AbilityNameHash": 1647771595,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimNotifyEvent",
+    "Name": "AblAnimNotifyEvent_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblAnimNotifyEvent'",
+    "ClassPath": "/Script/AbleCore.AblAnimNotifyEvent",
+    "Properties": {
+      "bIsActive": true,
+      "m_StartTime": {
+        "Offset": 2.2335794,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      },
+      "m_EventName": "MakeInterruptible"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionTargetTracker_AnyValidTargets",
+    "Name": "AblBranchConditionTargetTracker_AnyValidTargets_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionTargetTracker_AnyValidTargets'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionTargetTracker_AnyValidTargets"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_Idle_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_Idle.3"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Interaction_Knock_C:AblBranchTask_0.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "BlueprintGeneratedClass'ABL_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Interaction_Knock_C:AblBranchTask_1.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_Knock_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_Knock_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StrafeMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StrafeMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionTargetTracker_AnyValidTargets'Default__ABL_Interaction_Knock_C:AblBranchTask_2.AblBranchConditionTargetTracker_AnyValidTargets_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_Knock_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.12"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Interaction_Knock_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.12"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimComplete"
+      },
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblDisableCognitionSenseTask",
+    "Name": "AblDisableCognitionSenseTask_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblDisableCognitionSenseTask'",
+    "ClassPath": "/Script/Phoenix.AblDisableCognitionSenseTask",
+    "Properties": {
+      "SensesToDisable": [
+        {
+          "ObjectName": "Class'AISense_CogGroup_Interact'",
+          "ObjectPath": "/Script/Phoenix"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noMoving",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLockOnMode",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLightWandCastAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Interaction_Knock_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.2"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "AblAnimNotifyEvent'Default__ABL_Interaction_Knock_C:AblAnimNotifyEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.2"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 3.8000002,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Interaction_Knock_C'Default__ABL_Interaction_Knock_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.1"
+        }
+      },
+      "m_EventName": "ToMove"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Interact_Knock"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Interaction_Knock_C'Default__ABL_Interaction_Knock_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_Interact'Default__ABL_Interaction_Knock_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_Interact_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.16"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetHeadTrackingStateTask",
+    "Name": "AblSetHeadTrackingStateTask_0",
+    "Outer": "Default__ABL_Interaction_Knock_C",
+    "Class": "UScriptClass'AblSetHeadTrackingStateTask'",
+    "ClassPath": "/Script/Phoenix.AblSetHeadTrackingStateTask",
+    "Properties": {
+      "HeadTrackingState": "EHeadTrackingState::Disallow",
+      "bUseEndState": true,
+      "HeadTrackingPriority": "EHeadTrackingPriority::UpperBodySpecialUsage",
+      "bBroadcastChange": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Interaction_Knock_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.13"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_Interact",
+    "Name": "RootMotionModifierProperties_Interact_0",
+    "Outer": "ablRootMotionModifiersTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_Interact'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_Interact",
+    "Properties": {
+      "bUseActorFromTracker": true,
+      "SpecificTargetID": "ETargetID::TemporaryTarget",
+      "Properties": {
+        "ObjectName": "RootMotionModProperties_Interact'Default__ABL_Interaction_Knock_C:ablRootMotionModifiersTask_0.RootMotionModifierProperties_Interact_0.RootMotionModProperties_Interact_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Interactions/ABL_Interaction_Knock.17"
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModProperties_Interact",
+    "Name": "RootMotionModProperties_Interact_0",
+    "Outer": "RootMotionModifierProperties_Interact_0",
+    "Class": "UScriptClass'RootMotionModProperties_Interact'",
+    "ClassPath": "/Script/Phoenix.RootMotionModProperties_Interact",
+    "Properties": {
+      "TurnToFaceRule": "EInteractTurnToFaceRules::TargetAxis",
+      "UseTargetAxisForFacing": "EInteractUseTargetAxis::NegYAxis",
+      "RotateInterpType": "ECustomInterpType::EaseInOut",
+      "RotateInterpSpeed": 0.7,
+      "OffsetRule": "EInteractOffsetRules::TargetPlane",
+      "UseTargetAxisForOffset": "EInteractUseTargetAxis::YAxis",
+      "MinOffset": 80.0,
+      "MaxOffset": 80.0,
+      "OffsetInterpType": "ECustomInterpType::EaseInOut",
+      "OffsetInterpSpeed": 0.7
+    }
+  }
+]

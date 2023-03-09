@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ABL_OpenDoorRightHand_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "ClassPath": "/Script/Engine.BlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_OpenDoorRightHand_C'Default__ABL_OpenDoorRightHand_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.1"
+    }
+  },
+  {
+    "Type": "ABL_OpenDoorRightHand_C",
+    "Name": "Default__ABL_OpenDoorRightHand_C",
+    "Class": "BlueprintGeneratedClass'/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.ABL_OpenDoorRightHand_C'",
+    "ClassRef": {
+      "ObjectName": "BlueprintGeneratedClass'ABL_OpenDoorRightHand_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.633333,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_OpenDoorRightHand_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.4"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_OpenDoorRightHand_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.3"
+        }
+      ],
+      "m_AbilityNameHash": 1419452032
+    }
+  },
+  {
+    "Type": "AblAnimRateGetter_OpenDoor",
+    "Name": "AblAnimRateGetter_OpenDoor_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimRateGetter_OpenDoor'",
+    "ClassPath": "/Script/Phoenix.AblAnimRateGetter_OpenDoor"
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_OpenDoorRightHand_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "AnimCompletePartial"
+      },
+      "m_StartTime": {
+        "Offset": 3.5762787E-07,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_OpenDoorRightHand_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.4"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.5762787E-07,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_OpenDoorRightHand_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.4"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_OpenDoorRightHand_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.DoorOpen_RightHand"
+      ],
+      "m_AnimRateGetter": {
+        "ObjectName": "AblAnimRateGetter_OpenDoor'Default__ABL_OpenDoorRightHand_C:AblPlayAnimationArchitectTask_0.AblAnimRateGetter_OpenDoor_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.2"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendOut": {
+        "BlendTime": 0.0
+      },
+      "m_FadeOut": {
+        "BlendTime": 0.2
+      },
+      "m_PlayRate": 1.0000002,
+      "m_BoneWeightAsset": {
+        "ObjectName": "AblBranchFilterBlendWeightAsset'DA_ABL_Door_Filter_RightHand'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/DA_ABL_Door_Filter_RightHand.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_OpenDoorRightHand_C'Default__ABL_OpenDoorRightHand_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/PartialBody/Doors/ABL_OpenDoorRightHand.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 1.6333333
+      }
+    }
+  }
+]

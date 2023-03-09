@@ -1,0 +1,421 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblRagdollReactionAbility'",
+      "ObjectPath": "/Script/Phoenix"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+    }
+  },
+  {
+    "Type": "ABL_RagdollPlayerBehavior_C",
+    "Name": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.ABL_RagdollPlayerBehavior_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RagdollPlayerBehavior_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 9.223372E+18,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_RagdollPlayerBehavior_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.15"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.8"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.9"
+        },
+        {
+          "ObjectName": "AblPhysicalReactionTask'Default__ABL_RagdollPlayerBehavior_C:AblPhysicalReactionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.14"
+        },
+        {
+          "ObjectName": "AblSetArchitectTagsTask'Default__ABL_RagdollPlayerBehavior_C:AblSetArchitectTagsTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.16"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.10"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_RagdollPlayerBehavior_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.13"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_RagdollPlayerBehavior_C:AblBTCustomActionTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.12"
+        }
+      ],
+      "m_AbilityNameHash": 642239924
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionGetupFromPhysicalReaction",
+    "Name": "AblBranchConditionGetupFromPhysicalReaction_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionGetupFromPhysicalReaction'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionGetupFromPhysicalReaction"
+  },
+  {
+    "Type": "AblBranchConditionIfDead",
+    "Name": "AblBranchConditionIfDead_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionIfDead'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIfDead",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIfDead",
+    "Name": "AblBranchConditionIfDead_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionIfDead'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIfDead",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionRecoverInWaterFromPhysicalReaction",
+    "Name": "AblBranchConditionRecoverInWaterFromPhysicalReaction_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionRecoverInWaterFromPhysicalReaction'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionRecoverInWaterFromPhysicalReaction"
+  },
+  {
+    "Type": "AblBranchConditionWasForcedOutOfRagdoll",
+    "Name": "AblBranchConditionWasForcedOutOfRagdoll_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionWasForcedOutOfRagdoll'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionWasForcedOutOfRagdoll"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_GetupFromRagdoll_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_GetupFromRagdoll.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionGetupFromPhysicalReaction'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_0.AblBranchConditionGetupFromPhysicalReaction_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.3"
+        },
+        {
+          "ObjectName": "AblBranchConditionIfDead'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_0.AblBranchConditionIfDead_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.4"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_TransitionBlend": {
+        "BlendTime": 0.0
+      },
+      "m_bOverrideTransitionBlend": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_RagdollPlayerWaterRecovery_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerWaterRecovery.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionRecoverInWaterFromPhysicalReaction'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_1.AblBranchConditionRecoverInWaterFromPhysicalReaction_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.6"
+        },
+        {
+          "ObjectName": "AblBranchConditionIfDead'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_1.AblBranchConditionIfDead_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_bOverrideTransitionBlend": false,
+      "m_StartTime": {
+        "Offset": 1.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_ForcedOutOfRagdoll_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_ForcedOutOfRagdoll.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.2"
+        }
+      ],
+      "m_StartTime": {
+        "Offset": 8.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 8.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_ForcedOutOfRagdoll_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_ForcedOutOfRagdoll.2"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionWasForcedOutOfRagdoll'Default__ABL_RagdollPlayerBehavior_C:AblBranchTask_3.AblBranchConditionWasForcedOutOfRagdoll_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.7"
+        }
+      ],
+      "m_TransitionBlend": {
+        "BlendTime": 0.05
+      },
+      "m_StartTime": {
+        "Offset": 1.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_0",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "EndBTCustomAction": {
+        "ActionName": "RagdollExit"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noHealthUseAllowed",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPhysicalReactionTask",
+    "Name": "AblPhysicalReactionTask_0",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblPhysicalReactionTask'",
+    "ClassPath": "/Script/Phoenix.AblPhysicalReactionTask",
+    "Properties": {
+      "Action": "EPhysicalReactionTaskAction::StartReaction",
+      "ReactionStrength": "EImpactReactionStrength::None",
+      "SetPoseDrivingMode": "ERagdollDrivingSetting::AlwaysOverride",
+      "PoseDrivingMode": "ERagdollPoseDrivingMode::Weak",
+      "PoseDrivingBlendDuration": 0.0,
+      "LocationDrivingMode": "ERagdollCOMLocationDrivingMode::DriveToCapsuleLocation",
+      "RotationDrivingMode": "ERagdollCOMRotationDrivingMode::DriveToCapsuleRotation",
+      "bEnableCcd": true,
+      "CcdTime": 3.0,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.RagdollPowering"
+      ],
+      "m_BlendIn": {
+        "BlendTime": 0.75
+      },
+      "m_Loop": true,
+      "m_RootMode": {
+        "m_UseSourceRootMotion": "EEvaluatorRootMotion::ERM_FullRootMotion",
+        "m_UseDestRootMotion": "EEvaluatorRootMotion::ERM_NoRootMotion"
+      },
+      "m_StartTime": {
+        "Offset": 0.2,
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblSetArchitectTagsTask",
+    "Name": "AblSetArchitectTagsTask_0",
+    "Outer": "Default__ABL_RagdollPlayerBehavior_C",
+    "Class": "UScriptClass'AblSetArchitectTagsTask'",
+    "ClassPath": "/Script/AbleCore.AblSetArchitectTagsTask",
+    "Properties": {
+      "ArchitectTags": [
+        "IA.ReactorCurrentAction.Ragdolling"
+      ],
+      "RemoveTagsAtEndOfTask": true,
+      "AddTheseTags": true,
+      "Type": "INTERACTION_ARCHITECT",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_RagdollPlayerBehavior_C'Default__ABL_RagdollPlayerBehavior_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Reactions/ABL_RagdollPlayerBehavior.1"
+        }
+      }
+    }
+  }
+]

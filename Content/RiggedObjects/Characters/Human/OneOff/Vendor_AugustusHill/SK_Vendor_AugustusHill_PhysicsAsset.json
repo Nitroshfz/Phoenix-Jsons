@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SK_Vendor_AugustusHill_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "ClassPath": "/Script/Engine.PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Vendor_AugustusHill_PhysicsAsset:SkeletalBodySetup_6'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Human/OneOff/Vendor_AugustusHill/SK_Vendor_AugustusHill_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'SK_Vendor_AugustusHill_PhysicsAsset:SkeletalBodySetup_11'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Human/OneOff/Vendor_AugustusHill/SK_Vendor_AugustusHill_PhysicsAsset.2"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'SK_Vendor_AugustusHill_PhysicsAsset:PhysicsConstraintTemplate_10'",
+          "ObjectPath": "/Game/RiggedObjects/Characters/Human/OneOff/Vendor_AugustusHill/SK_Vendor_AugustusHill_PhysicsAsset.1"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_10",
+    "Outer": "SK_Vendor_AugustusHill_PhysicsAsset",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "ClassPath": "/Script/Engine.PhysicsConstraintTemplate",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Head",
+        "ConstraintBone1": "Head",
+        "ConstraintBone2": "Spine3",
+        "Pos2": {
+          "X": 25.330778,
+          "Y": 3.143054,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": 0.99098223,
+          "Y": 0.1339933,
+          "Z": 2.8515455E-08
+        },
+        "SecAxis2": {
+          "X": -0.1339933,
+          "Y": 0.99098223,
+          "Z": -1.9190933E-09
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_11",
+    "Outer": "SK_Vendor_AugustusHill_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 1.3427566,
+              "Y": 2.3333964,
+              "Z": -0.24530832
+            },
+            "Rotation": {
+              "Pitch": 90.0,
+              "Yaw": 176.42366,
+              "Roll": 167.98596
+            },
+            "Radius": 10.124852,
+            "Length": 10.080984,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Head",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "629123184FA938E08D32A1A38EFF3646"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_6",
+    "Outer": "SK_Vendor_AugustusHill_PhysicsAsset",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "ClassPath": "/Script/Engine.SkeletalBodySetup",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 4.354951,
+              "Y": -0.83705777,
+              "Z": -0.13627575
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 11.793612,
+            "Length": 15.731251,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "Spine3",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "94AFB507497040C71EA27A85ABC3302A"
+  }
+]

@@ -1,0 +1,497 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Crouch_TurnMove_Start_C'Default__ABL_Crouch_TurnMove_Start_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.1"
+    }
+  },
+  {
+    "Type": "ABL_Crouch_TurnMove_Start_C",
+    "Name": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.ABL_Crouch_TurnMove_Start_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Crouch_TurnMove_Start_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 1.8199934,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        },
+        {
+          "ObjectName": "ablRootMotionModifiersTask'Default__ABL_Crouch_TurnMove_Start_C:ablRootMotionModifiersTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.18"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.13"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.10"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.12"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_4'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.14"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Crouch_TurnMove_Start_C:ablInputContextTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.15"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Crouch_TurnMove_Start_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.16"
+        }
+      ],
+      "m_AbilityNameHash": 3265982335,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblAnimationTagChooser_CrouchTurnMoveStart",
+    "Name": "AblAnimationTagChooser_CrouchTurnMoveStart_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimationTagChooser_CrouchTurnMoveStart'",
+    "ClassPath": "/Script/Phoenix.AblAnimationTagChooser_CrouchTurnMoveStart",
+    "Properties": {
+      "AnimationTags": [
+        [
+          "AA.AnimPlayerName.Crouch_LF_Turn_Start_Lft_180"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_LF_Turn_Start_Lft_90"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_LF_Walk_Start_Fwd"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_LF_Turn_Start_Rht_90"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_LF_Turn_Start_Rht_180"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_RF_Turn_Start_Lft_180"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_RF_Turn_Start_Lft_90"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_RF_Walk_Start_Fwd"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_RF_Turn_Start_Rht_90"
+        ],
+        [
+          "AA.AnimPlayerName.Crouch_RF_Turn_Start_Rht_180"
+        ]
+      ]
+    }
+  },
+  {
+    "Type": "AblAnimRateGetter_SpeedAdjust",
+    "Name": "AblAnimRateGetter_SpeedAdjust_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblAnimRateGetter_SpeedAdjust'",
+    "ClassPath": "/Script/Phoenix.AblAnimRateGetter_SpeedAdjust"
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_MoveStart",
+    "Name": "AblBlendSpaceParameterGetter_MoveStart_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_MoveStart'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_MoveStart"
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_0",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Stealth"
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_1",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode",
+    "Properties": {
+      "BasicMobilityMode": "EBasicMobilityMode::Crouching"
+    }
+  },
+  {
+    "Type": "AblBranchConditionBasicMobilityMode",
+    "Name": "AblBranchConditionBasicMobilityMode_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionBasicMobilityMode'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionBasicMobilityMode"
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement",
+    "Properties": {
+      "m_Negate": true
+    }
+  },
+  {
+    "Type": "AblBranchConditionIsMovement",
+    "Name": "AblBranchConditionIsMovement_0",
+    "Outer": "AblBranchTask_4",
+    "Class": "UScriptClass'AblBranchConditionIsMovement'",
+    "ClassPath": "/Script/Phoenix.AblBranchConditionIsMovement"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_0",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_StealthMoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_StealthMoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_0.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.5"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_1",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Crouch_Move_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_Move_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_1.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.6"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_MoveFwd_Loop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/ABL_MoveFwd_Loop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionBasicMobilityMode'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_2.AblBranchConditionBasicMobilityMode_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.7"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": -0.2,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Crouch_TurnMove_Stop_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Stop.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_3.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.8"
+        },
+        null
+      ],
+      "m_MustPassAllConditions": true,
+      "bPreBranchTick": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_4",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Crouch_TurnMove_Start_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionIsMovement'Default__ABL_Crouch_TurnMove_Start_C:AblBranchTask_4.AblBranchConditionIsMovement_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.9"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Crouch_TurnMove_Start_C:AblPlaceableEvent_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.16"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_0",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noFullBodySpellCasting",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noJumping",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noLockOnMode",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_0",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 0.9333334
+      },
+      "m_EventName": "DiscreteSpeedChanged"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.Crouch_LF_Idle_turn_Lft_180"
+      ],
+      "m_AnimationTagChooser": {
+        "ObjectName": "AblAnimationTagChooser_CrouchTurnMoveStart'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0.AblAnimationTagChooser_CrouchTurnMoveStart_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.2"
+      },
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_MoveStart'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_MoveStart_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.4"
+      },
+      "m_AnimRateGetter": {
+        "ObjectName": "AblAnimRateGetter_SpeedAdjust'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0.AblAnimRateGetter_SpeedAdjust_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.3"
+      },
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_PlayRate": 1.0073297,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Crouch_TurnMove_Start_C'Default__ABL_Crouch_TurnMove_Start_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 4.5141473
+      }
+    }
+  },
+  {
+    "Type": "ablRootMotionModifiersTask",
+    "Name": "ablRootMotionModifiersTask_0",
+    "Outer": "Default__ABL_Crouch_TurnMove_Start_C",
+    "Class": "UScriptClass'ablRootMotionModifiersTask'",
+    "ClassPath": "/Script/Phoenix.ablRootMotionModifiersTask",
+    "Properties": {
+      "m_RootMotionModifierPropertiesArray": [
+        {
+          "ObjectName": "RootMotionModifierProperties_TurnAssist'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0.RootMotionModifierProperties_TurnAssist_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.19"
+        }
+      ],
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Crouch_TurnMove_Start_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Crouch_TurnMove_Start.17"
+        }
+      }
+    }
+  },
+  {
+    "Type": "RootMotionModifierProperties_TurnAssist",
+    "Name": "RootMotionModifierProperties_TurnAssist_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'RootMotionModifierProperties_TurnAssist'",
+    "ClassPath": "/Script/Phoenix.RootMotionModifierProperties_TurnAssist",
+    "Properties": {
+      "bUseFixedDirection": true,
+      "TurnAssistCurve": {
+        "ObjectName": "CurveFloat'TurnAssistCurve'",
+        "ObjectPath": "/Game/Pawn/Shared/Ambulatory/TurnAssistCurve.0"
+      }
+    }
+  }
+]

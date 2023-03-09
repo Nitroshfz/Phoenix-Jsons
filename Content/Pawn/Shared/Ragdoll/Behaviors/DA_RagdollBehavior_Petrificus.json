@@ -1,0 +1,28 @@
+[
+  {
+    "Type": "RagdollBehavior",
+    "Name": "DA_RagdollBehavior_Petrificus",
+    "Class": "UScriptClass'RagdollBehavior'",
+    "ClassPath": "/Script/Ragdoll.RagdollBehavior",
+    "Properties": {
+      "DriveAnimationMode": "ERagdollDriveAnimEnum::DriveToAnim",
+      "DriveToAnimationTags": [
+        "AA.RagdollPowerAnims.PetrificusTotalus",
+        "AA.AnimPlayerName.RagdollPowering"
+      ],
+      "PoseDriveMode": "ERagdollPoseDrivingMode::Petrified",
+      "StrengthOverTime": {
+        "ObjectName": "CurveFloat'C_AccioBasePhysicsImpulse_1'",
+        "ObjectPath": "/Game/Gameplay/ToolSet/Spells/Accio/C_AccioBasePhysicsImpulse_1.0"
+      },
+      "RequireStatesAlways": {
+        "RequiredAll": [
+          {
+            "ObjectName": "RagdollSensoryState'DA_RagdollState_IsPetrified'",
+            "ObjectPath": "/Game/Pawn/Shared/Ragdoll/SensoryStates/DA_RagdollState_IsPetrified.0"
+          }
+        ]
+      }
+    }
+  }
+]

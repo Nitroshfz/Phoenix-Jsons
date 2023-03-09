@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Swim_Move_Loop_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Swim_Move_Loop_C'Default__ABL_Swim_Move_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.1"
+    }
+  },
+  {
+    "Type": "ABL_Swim_Move_Loop_C",
+    "Name": "Default__ABL_Swim_Move_Loop_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.ABL_Swim_Move_Loop_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Swim_Move_Loop_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": "Infinity",
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Swim_Move_Loop_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.5"
+        },
+        {
+          "ObjectName": "ablNPC_TurnAssistTask'Default__ABL_Swim_Move_Loop_C:ablNPC_TurnAssistTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.4"
+        },
+        {
+          "ObjectName": "AblEnemyDynamicBranchTask'Default__ABL_Swim_Move_Loop_C:AblEnemyDynamicBranchTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.3"
+        }
+      ],
+      "m_AbilityNameHash": 4290990289,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBlendSpaceParameterGetter_EnemyMove",
+    "Name": "AblBlendSpaceParameterGetter_EnemyMove_0",
+    "Outer": "AblPlayAnimationArchitectTask_0",
+    "Class": "UScriptClass'AblBlendSpaceParameterGetter_EnemyMove'",
+    "ClassPath": "/Script/Phoenix.AblBlendSpaceParameterGetter_EnemyMove"
+  },
+  {
+    "Type": "AblEnemyDynamicBranchTask",
+    "Name": "AblEnemyDynamicBranchTask_0",
+    "Outer": "Default__ABL_Swim_Move_Loop_C",
+    "Class": "UScriptClass'AblEnemyDynamicBranchTask'",
+    "ClassPath": "/Script/Phoenix.AblEnemyDynamicBranchTask",
+    "Properties": {
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Swim_Move_Loop_C'Default__ABL_Swim_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Swim_Move_Loop_C'Default__ABL_Swim_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablNPC_TurnAssistTask",
+    "Name": "ablNPC_TurnAssistTask_0",
+    "Outer": "Default__ABL_Swim_Move_Loop_C",
+    "Class": "UScriptClass'ablNPC_TurnAssistTask'",
+    "ClassPath": "/Script/Phoenix.ablNPC_TurnAssistTask",
+    "Properties": {
+      "TurnAssistMode": "ENPC_TurnAssist::Mobility",
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Swim_Move_Loop_C'Default__ABL_Swim_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Swim_Move_Loop_C'Default__ABL_Swim_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Swim_Move_Loop_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.MoveType.Swim",
+        "AA.AnimPlayerName.Move"
+      ],
+      "m_BlendSpaceParameterGetter": {
+        "ObjectName": "AblBlendSpaceParameterGetter_EnemyMove'Default__ABL_Swim_Move_Loop_C:AblPlayAnimationArchitectTask_0.AblBlendSpaceParameterGetter_EnemyMove_0'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.2"
+      },
+      "m_BlendIn": {
+        "BlendTime": 0.0
+      },
+      "m_BlendOut": {
+        "BlendTime": 0.0
+      },
+      "m_Loop": true,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Swim_Move_Loop_C'Default__ABL_Swim_Move_Loop_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Locomotion/Crouching/ABL_Swim_Move_Loop.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.99999994
+      }
+    }
+  }
+]

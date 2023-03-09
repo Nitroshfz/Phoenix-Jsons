@@ -1,0 +1,324 @@
+[
+  {
+    "Type": "AblAbilityBlueprintGeneratedClass",
+    "Name": "ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblAbilityBlueprintGeneratedClass'",
+    "ClassPath": "/Script/AbleCore.AblAbilityBlueprintGeneratedClass",
+    "SuperStruct": {
+      "ObjectName": "Class'AblAbility'",
+      "ObjectPath": "/Script/AbleCore"
+    },
+    "ClassFlags": 8652816,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+    }
+  },
+  {
+    "Type": "ABL_Reparo_AOE_C",
+    "Name": "Default__ABL_Reparo_AOE_C",
+    "Class": "AblAbilityBlueprintGeneratedClass'/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.ABL_Reparo_AOE_C'",
+    "ClassRef": {
+      "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Reparo_AOE_C'",
+      "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.0"
+    },
+    "ClassPath": "",
+    "Properties": {
+      "m_Length": 12.809944,
+      "m_LoopEnd": 0.0,
+      "m_Tasks": [
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Reparo_AOE_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.9"
+        },
+        {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Reparo_AOE_C:AblPlayAnimationArchitectTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.10"
+        },
+        {
+          "ObjectName": "AblBTCustomActionTask'Default__ABL_Reparo_AOE_C:AblBTCustomActionTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.6"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Reparo_AOE_C:AblBranchTask_2'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.4"
+        },
+        {
+          "ObjectName": "ablInputContextTask'Default__ABL_Reparo_AOE_C:ablInputContextTask_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.7"
+        },
+        {
+          "ObjectName": "AblPlayDialogTask'Default__ABL_Reparo_AOE_C:AblPlayDialogTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.11"
+        },
+        {
+          "ObjectName": "AblBranchTask'Default__ABL_Reparo_AOE_C:AblBranchTask_3'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.5"
+        }
+      ],
+      "m_Events": [
+        {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Reparo_AOE_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.8"
+        }
+      ],
+      "m_AbilityNameHash": 3686419584,
+      "m_AbilityRealm": "EAblAbilityTaskRealm::ClientAndServer"
+    }
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_2",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchConditionAlways",
+    "Name": "AblBranchConditionAlways_0",
+    "Outer": "AblBranchTask_3",
+    "Class": "UScriptClass'AblBranchConditionAlways'",
+    "ClassPath": "/Script/AbleCore.AblBranchConditionAlways"
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_2",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Reparo_End_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_End.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Reparo_AOE_C:AblBranchTask_2.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.2"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Reparo_AOE_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.8"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.0,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlaceableEvent'Default__ABL_Reparo_AOE_C:AblPlaceableEvent_1'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.8"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBranchTask",
+    "Name": "AblBranchTask_3",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblBranchTask'",
+    "ClassPath": "/Script/AbleCore.AblBranchTask",
+    "Properties": {
+      "m_BranchAbility": {
+        "ObjectName": "AblAbilityBlueprintGeneratedClass'ABL_Reparo_End_C'",
+        "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_End.0"
+      },
+      "m_Conditions": [
+        {
+          "ObjectName": "AblBranchConditionAlways'Default__ABL_Reparo_AOE_C:AblBranchTask_3.AblBranchConditionAlways_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.3"
+        }
+      ],
+      "m_MustPassAllConditions": true,
+      "m_StartTime": {
+        "Offset": 7.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 7.0,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblBTCustomActionTask",
+    "Name": "AblBTCustomActionTask_1",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblBTCustomActionTask'",
+    "ClassPath": "/Script/AbleCore.AblBTCustomActionTask",
+    "Properties": {
+      "BTCustomAction": {
+        "ActionName": "FireWand"
+      },
+      "m_StartTime": {
+        "Offset": 0.8333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Reparo_AOE_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.9"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 0.8333334,
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Reparo_AOE_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.9"
+        }
+      }
+    }
+  },
+  {
+    "Type": "ablInputContextTask",
+    "Name": "ablInputContextTask_1",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'ablInputContextTask'",
+    "ClassPath": "/Script/Phoenix.ablInputContextTask",
+    "Properties": {
+      "Contexts": [
+        {
+          "ContextName": "noDodging",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        },
+        {
+          "ContextName": "noProtego",
+          "ContextLogicType": "EInputContextLogicType::Binary",
+          "bInitialValue": false,
+          "bDebugValueChange": false
+        }
+      ],
+      "ContextTaskOperation": "EContextTaskOperationType::Clear",
+      "m_StartTime": {
+        "Offset": 3.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      },
+      "m_EndTime": {
+        "Offset": 3.0,
+        "OffsetType": "EOffsetTypeEnum::OFFSETTYPE_FRAMES",
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlaceableEvent",
+    "Name": "AblPlaceableEvent_1",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblPlaceableEvent'",
+    "ClassPath": "/Script/AbleCore.AblPlaceableEvent",
+    "Properties": {
+      "m_StartTime": {
+        "Offset": 8.3,
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      },
+      "m_EventName": "ReparoDone"
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_0",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.CmbtWandAtk_AOE_Reparo_Start"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.15
+      },
+      "m_OverrideBlendOut": true,
+      "m_BlendOut": {
+        "BlendTime": 0.5
+      },
+      "m_ScaleWithAbilityPlayRate": false,
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      }
+    }
+  },
+  {
+    "Type": "AblPlayAnimationArchitectTask",
+    "Name": "AblPlayAnimationArchitectTask_1",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblPlayAnimationArchitectTask'",
+    "ClassPath": "/Script/AbleCore.AblPlayAnimationArchitectTask",
+    "Properties": {
+      "m_AnimationTags": [
+        "AA.AnimPlayerName.CmbtWandAtk_AOE_Reparo_Loop"
+      ],
+      "m_StateMachineName": "AbilityStateMachine",
+      "m_AbilityStateName": "AbilityLoco1",
+      "m_BlendIn": {
+        "BlendTime": 0.5
+      },
+      "m_OverrideBlendOut": true,
+      "m_Loop": true,
+      "m_StartTime": {
+        "Offset": -0.16666663,
+        "RelativeToType": "ERelativeToEnum::RELATIVETO_END",
+        "RelativeToObject": {
+          "ObjectName": "AblPlayAnimationArchitectTask'Default__ABL_Reparo_AOE_C:AblPlayAnimationArchitectTask_0'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.9"
+        }
+      },
+      "m_EndTime": {
+        "Offset": "Infinity"
+      }
+    }
+  },
+  {
+    "Type": "AblPlayDialogTask",
+    "Name": "AblPlayDialogTask_0",
+    "Outer": "Default__ABL_Reparo_AOE_C",
+    "Class": "UScriptClass'AblPlayDialogTask'",
+    "ClassPath": "/Script/Phoenix.AblPlayDialogTask",
+    "Properties": {
+      "DialogEvent": {
+        "ObjectName": "AvaAudioDialogueEvent'VO_Spell'",
+        "ObjectPath": "/Game/WWise/DialogueEvents/Events/VO_Spell.0"
+      },
+      "m_StartTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      },
+      "m_EndTime": {
+        "RelativeToObject": {
+          "ObjectName": "ABL_Reparo_AOE_C'Default__ABL_Reparo_AOE_C'",
+          "ObjectPath": "/Game/Pawn/Student/Abilities/Attacks/ABL_Reparo_AOE.1"
+        }
+      }
+    }
+  }
+]
